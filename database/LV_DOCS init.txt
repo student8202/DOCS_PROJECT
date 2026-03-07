@@ -1,0 +1,173 @@
+-- =============================================
+-- Dự án: LaVie Project
+-- Database: LV_DOCS
+-- Mô tả: Hệ thống lưu trữ và ký hồ sơ độc lập
+-- =============================================
+
+USE master;
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'LV_DOCS')
+BEGIN
+    CREATE DATABASE LV_DOCS;
+END
+GO
+
+USE LV_DOCS;
+GO
+
+-- 1. TẠO CÁC SCHEMA PHÂN HỆ
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'FO') EXEC('CREATE SCHEMA FO');
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'BO') EXEC('CREATE SCHEMA BO');
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'HR') EXEC('CREATE SCHEMA HR');
+GO
+
+-- =============================================
+-- PHÂN HỆ HỆ THỐNG & PHÂN QUYỀN (RBAC)
+-- =============================================
+
+-- Danh mục tất cả hành động (VIEW_FO, SIGN_FO, v.v.)
+CREATE TABLE dbo.tbl_PermissionList (
+    PermissionCode NVARCHAR(50) PRIMARY KEY,
+    PermissionName NVARCHAR(255),
+    ModuleName     NVARCHAR(20), -- FO, BO, HR, SYSTEM
+    CreatedBy      NVARCHAR(50),
+    CreatedAt      DATETIME DEFAULT GETDATE(),
+    UpdatedBy      NVARCHAR(50),
+    UpdatedAt      DATETIME
+);
+
+-- Danh mục các Nhóm quyền (ADMIN, RECEPTIONIST, v.v.)
+CREATE TABLE dbo.tbl_Roles (
+    RoleCode    NVARCHAR(20) PRIMARY KEY,
+    RoleName    NVARCHAR(100),
+    Description NVARCHAR(MAX),
+    CreatedBy   NVARCHAR(50),
+    CreatedAt   DATETIME DEFAULT GETDATE(),
+    UpdatedBy   NVARCHAR(50),
+    UpdatedAt   DATETIME
+);
+
+-- Bảng nối Nhóm quyền và Hành động (Không dùng Khóa ngoại để tối ưu)
+CREATE TABLE dbo.tbl_RolePermissions (
+    RoleCode       NVARCHAR(20),
+    PermissionCode NVARCHAR(50),
+    CreatedBy      NVARCHAR(50),
+    CreatedAt      DATETIME DEFAULT GETDATE(),
+    UpdatedBy      NVARCHAR(50),
+    UpdatedAt      DATETIME
+);
+CREATE INDEX idx_rp_role ON dbo.tbl_RolePermissions(RoleCode);
+
+-- Bảng Người dùng Độc lập (Đăng nhập trực tiếp tại LaVie)
+CREATE TABLE dbo.tbl_Users (
+    Username      NVARCHAR(50) PRIMARY KEY,
+    Password_Hash NVARCHAR(255) NOT NULL,
+    FullName      NVARCHAR(255),
+    Department    NVARCHAR(100),
+    IsActive      BIT DEFAULT 1,
+    LastLogin     DATETIME,
+    CreatedBy     NVARCHAR(50),
+    CreatedAt     DATETIME DEFAULT GETDATE(),
+    UpdatedBy     NVARCHAR(50),
+    UpdatedAt     DATETIME
+);
+
+-- Bảng gán Nhóm quyền cho Người dùng (1 User nhiều Role)
+CREATE TABLE dbo.tbl_UserRoles (
+    Username  NVARCHAR(50),
+    RoleCode  NVARCHAR(20),
+    CreatedBy NVARCHAR(50),
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    UpdatedBy NVARCHAR(50),
+    UpdatedAt DATETIME
+);
+CREATE INDEX idx_ur_user ON dbo.tbl_UserRoles(Username);
+
+-- =============================================
+-- PHÂN HỆ TIỀN SẢNH (FRONT OFFICE)
+-- =============================================
+
+-- Quản lý Mẫu hồ sơ (Template)
+CREATE TABLE FO.tbl_Templates (
+    TemplateID   INT IDENTITY(1,1) PRIMARY KEY,
+    TemplateCode NVARCHAR(50),
+    TemplateName NVARCHAR(255),
+    IsCustom     BIT DEFAULT 0, -- 0: Dev code, 1: Admin thiết kế
+    HtmlContent  NVARCHAR(MAX),
+    FilePath     NVARCHAR(500),
+    IsActive     BIT DEFAULT 1,
+    CreatedBy    NVARCHAR(50),
+    CreatedAt    DATETIME DEFAULT GETDATE(),
+    UpdatedBy    NVARCHAR(50),
+    UpdatedAt    DATETIME
+);
+
+-- Quản lý Hồ sơ đã ký & Snapshot dữ liệu
+CREATE TABLE FO.tbl_SignedDocuments (
+    Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Booking_ID       NVARCHAR(50),
+    Group_Code       NVARCHAR(50), -- NULL = Lẻ, Có giá trị = Đoàn
+    Folio_Num        NVARCHAR(50),
+    Doc_Type         NVARCHAR(50), -- Regcard, Confirm, v.v.
+    
+    -- Dữ liệu Snapshot (Đóng băng từ SMILE_FO)
+    Guest_Name_SS    NVARCHAR(255),
+    Total_Amount_SS  DECIMAL(18, 2),
+    Data_JSON_Full_SS NVARCHAR(MAX), 
+    
+    FilePath         NVARCHAR(500),
+    Signature_Base64 NVARCHAR(MAX),
+    Status           TINYINT DEFAULT 1, -- 1:Signed, 2:Reject, 3:Void
+    Version          INT DEFAULT 1,
+    IsDeleted        BIT DEFAULT 0,
+    
+    CreatedBy        NVARCHAR(50),
+    CreatedAt        DATETIME DEFAULT GETDATE(),
+    UpdatedBy        NVARCHAR(50),
+    UpdatedAt        DATETIME
+);
+CREATE INDEX idx_fo_booking ON FO.tbl_SignedDocuments(Booking_ID);
+CREATE INDEX idx_fo_group   ON FO.tbl_SignedDocuments(Group_Code);
+
+-- =============================================
+-- HỆ THỐNG NHẬT KÝ (LOGS)
+-- =============================================
+
+-- Ghi vết mọi hành động xem/truy cập thông tin nhạy cảm
+CREATE TABLE dbo.tbl_AuditLogs (
+    LogID       BIGINT IDENTITY(1,1) PRIMARY KEY,
+    Username    NVARCHAR(50),
+    ActionName  NVARCHAR(100), -- VIEW, SIGN, VOID, LOGIN
+    ModuleName  NVARCHAR(10),  -- FO, BO, HR
+    TargetID    NVARCHAR(100), -- BookingID hoặc DocGUID
+    Description NVARCHAR(MAX),
+    IPAddress   NVARCHAR(50),
+    CreatedAt   DATETIME DEFAULT GETDATE()
+);
+
+-- =============================================
+-- DỮ LIỆU MẪU KHỞI TẠO (SEED DATA)
+-- =============================================
+
+INSERT INTO dbo.tbl_PermissionList (PermissionCode, PermissionName, ModuleName, CreatedBy)
+VALUES 
+('VIEW_FO', N'Xem hồ sơ Tiền sảnh', 'FO', 'SYSTEM'),
+('SIGN_FO', N'Ký hồ sơ Tiền sảnh', 'FO', 'SYSTEM'),
+('VOID_FO', N'Hủy hồ sơ Tiền sảnh', 'FO', 'SYSTEM'),
+('VIEW_HR', N'Xem hồ sơ Nhân sự', 'HR', 'SYSTEM'),
+('DESIGN_TEMPLATE', N'Thiết kế mẫu hồ sơ', 'SYSTEM', 'SYSTEM');
+
+INSERT INTO dbo.tbl_Roles (RoleCode, RoleName, CreatedBy)
+VALUES ('ADMIN', N'Quản trị hệ thống', 'SYSTEM');
+
+INSERT INTO dbo.tbl_RolePermissions (RoleCode, PermissionCode, CreatedBy)
+SELECT 'ADMIN', PermissionCode, 'SYSTEM' FROM dbo.tbl_PermissionList;
+
+-- Mật khẩu mặc định sẽ được băm (hash) qua FastAPI sau này.
+-- Tài khoản admin đầu tiên để bạn đăng nhập.
+INSERT INTO dbo.tbl_Users (Username, Password_Hash, FullName, CreatedBy)
+VALUES ('admin', 'Sẽ_Cập_Nhật_Sau_Khi_Hash', N'Administrator', 'SYSTEM');
+
+INSERT INTO dbo.tbl_UserRoles (Username, RoleCode, CreatedBy)
+VALUES ('admin', 'ADMIN', 'SYSTEM');
