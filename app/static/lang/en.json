@@ -1,0 +1,46 @@
+{
+    "tab_emp": "Employees",
+    "tab_dept": "Departments",
+    "lbl_fullname": "Full Name",
+    "lbl_dept": "Department",
+    "btn_add": "Add New",
+    "btn_save": "Save Changes",
+    "btn_edit": "Update",
+    "btn_delete": "Delete",
+    "btn_add_emp": "Add Employee",
+    "confirm_del": "Delete employee {name}?",
+    "msg_success": "Success!",
+    "msg_err_dept": "This department still has employees!",
+    "confirm_delete": "Are you sure?",
+    "confirm_delete_emp": "Do you want to delete employee <b>{name}</b>?",
+    "delete_success": "Deleted successfully!",
+    "save_success": "Saved successfully!",
+    "error_dept_has_emp": "Cannot delete! This department has employees.",
+    "btn_yes": "Yes, delete it!",
+    "btn_cancel": "Cancel",
+    "placeholder_dept": "-- Select Department --",
+    "col_action": "Operation",
+    "err_dept_exists": "This department name already exists!",
+    "labels": {
+        "login_title": "System Login",
+        "username": "Username",
+        "password": "Password",
+        "no_permission": "No Permission",
+        "view_only": "View Only"
+    },
+    "buttons": {
+        "login": "Login",
+        "logout": "Logout",
+        "download_template": "Download Template",
+        "export_excel": "Export Excel",
+        "import_excel": "Import Data"
+    },
+    "messages": {
+        "login_failed": "Invalid username or password!",
+        "import_success": "Successfully imported {count} employees.",
+        "import_error": "Import failed!"
+    },
+    "tab_perm": "Phân quyền",
+    "lbl_viewable_depts": "Bộ phận quản lý",
+    "placeholder_select_multiple": "-- Chọn nhiều bộ phận --"
+}

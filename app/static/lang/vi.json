@@ -1,0 +1,46 @@
+{
+    "tab_emp": "Nhân viên",
+    "tab_dept": "Bộ phận",
+    "lbl_fullname": "Họ và tên",
+    "lbl_dept": "Phòng ban",
+    "btn_add": "Thêm mới",
+    "btn_save": "Lưu dữ liệu",
+    "btn_edit": "Sửa",
+    "btn_delete": "Xóa",
+    "btn_add_emp": "Thên nhân viên",
+    "confirm_del": "Xóa nhân viên {name}?",
+    "msg_success": "Thành công!",
+    "msg_err_dept": "Bộ phận này vẫn còn nhân viên, không thể xóa!",
+    "confirm_delete": "Xác nhận xóa?",
+    "confirm_delete_emp": "Bạn chắc chắn muốn xóa nhân viên <b>{name}</b>?",
+    "delete_success": "Đã xóa thành công!",
+    "save_success": "Lưu dữ liệu thành công!",
+    "error_dept_has_emp": "Không thể xóa! Bộ phận này đang có nhân viên.",
+    "btn_yes": "Đồng ý",
+    "btn_cancel": "Hủy bỏ",
+    "placeholder_dept": "-- Chọn bộ phận --",
+    "col_action": "Thao tác",
+    "err_dept_exists": "Tên bộ phận này đã tồn tại trong hệ thống!",
+    "labels": {
+        "login_title": "Đăng nhập hệ thống",
+        "username": "Tên đăng nhập",
+        "password": "Mật khẩu",
+        "no_permission": "Không có quyền",
+        "view_only": "Chỉ xem"
+    },
+    "buttons": {
+        "login": "Đăng nhập",
+        "logout": "Đăng xuất",
+        "download_template": "Tải file mẫu",
+        "export_excel": "Xuất Excel",
+        "import_excel": "Nhập dữ liệu"
+    },
+    "messages": {
+        "login_failed": "Tài khoản hoặc mật khẩu không đúng!",
+        "import_success": "Đã nhập thành công {count} nhân viên.",
+        "import_error": "Lỗi khi nhập dữ liệu!"
+    },
+    "tab_perm": "Phân quyền",
+    "lbl_viewable_depts": "Bộ phận quản lý",
+    "placeholder_select_multiple": "-- Chọn nhiều bộ phận --"
+}

@@ -1,0 +1,43 @@
+<div class="p-3">
+    <h5 data-i18n="tab_perm">Quản lý phân quyền</h5>
+    <div class="table-responsive mt-3">
+        <table id="permTable" class="table table-bordered table-hover w-100">
+            <thead class="table-light">
+                <tr>
+                    <th data-i18n="lbl_fullname">Họ và tên</th>
+                    <th data-i18n="lbl_viewable_depts">Bộ phận được xem</th>
+                    <th data-i18n="col_action">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal Gán quyền riêng biệt -->
+<div class="modal fade" id="permModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" data-i18n="tab_perm">Cấu hình quyền xem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="permEmpId">
+                <div class="mb-3">
+                    <label class="form-label fw-bold" data-i18n="lbl_viewable_depts">Chọn các bộ phận:</label>
+                    <!-- Nút chọn nhanh -->
+                    <button type="button" class="btn btn-link btn-sm p-0 text-decoration-none"
+                        onclick="PermissionModule.selectAll()">
+                        <i class="fa-solid fa-check-double"></i> Chọn tất cả
+                    </button>
+                    <select id="viewDeptsSelect" class="form-select" multiple="multiple"></select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="btn_cancel">Hủy</button>
+                <button class="btn btn-primary" onclick="PermissionModule.save()" data-i18n="btn_save">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>

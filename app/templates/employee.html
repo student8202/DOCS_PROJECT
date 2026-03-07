@@ -1,0 +1,56 @@
+<div class="p-3">
+    <div class="d-flex justify-content-between mb-3 align-items-center">
+        <!-- Nút Thêm mới -->
+        <button class="btn btn-primary" onclick="openEmpModal()" data-i18n="btn_add_emp">+ Thêm nhân viên</button>
+
+        <!-- Nhóm nút Excel -->
+        <div class="btn-group">
+            <!-- Tải Template -->
+            <button class="btn btn-outline-info" onclick="downloadEmpTemplate()" data-i18n="buttons.download_template">
+                <i class="fas fa-file-download"></i> Mẫu Import
+            </button>
+
+            <!-- Export -->
+            <button class="btn btn-outline-success" onclick="exportEmpExcel()">
+                <i class="fas fa-file-export"></i> <span data-i18n="buttons.export_excel">Xuất Excel</span>
+            </button>
+
+            <!-- Import -->
+            <button class="btn btn-success" onclick="document.getElementById('importFile').click()">
+                <i class="fas fa-upload"></i> <span data-i18n="buttons.import_excel">Nhập Excel</span>
+            </button>
+            <!-- Input file ẩn -->
+            <input type="file" id="importFile" hidden accept=".xlsx, .xls" onchange="handleImportEmp(this)">
+        </div>
+    </div>
+    <!-- <button class="btn btn-primary mb-3" onclick="openEmpModal()" data-i18n="btn_add_emp">+ Thêm nhân viên</button> -->
+    <table id="empTable" class="table table-striped table-bordered w-100">
+        <thead>
+            <tr><th>ID</th><th data-i18n="lbl_fullname">Họ Tên</th><th data-i18n="tab_dept">Bộ Phận</th><th data-i18n="col_action">Thao tác</th></tr>
+        </thead>
+    </table>
+</div>
+
+<div class="modal fade" id="empModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5 data-i18n="tab_emp">Nhân viên</h5>
+            <button type="button" class="btn-close btn-sm-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="empId">
+                <input type="text" id="empName" class="form-control mb-2" data-i18n-placeholder="placeholder_name" placeholder="Họ tên">
+                <div class="mb-3">
+                    <label class="form-label">Chọn Bộ phận</label>
+                    <select id="empDeptSelect" class="form-control select2-searchable">
+                        <option value="">Đang tải dữ liệu...</option>
+                    </select>
+                </div>
+                <!-- <select id="empDeptSelect" class="form-select select2-enable"></select> -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="saveEmp()">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>

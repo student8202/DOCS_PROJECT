@@ -1,0 +1,4 @@
+.btn-sm-custom {
+    font-size: 0.75rem; /* Giảm kích thước icon bên trong */
+    opacity: 0.8;       /* Làm mờ nhẹ cho tinh tế */
+}

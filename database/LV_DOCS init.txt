@@ -66,6 +66,7 @@ CREATE TABLE dbo.tbl_Users (
     FullName      NVARCHAR(255),
     Department    NVARCHAR(100),
     IsActive      BIT DEFAULT 1,
+    Source_Map NVARCHAR(50),
     LastLogin     DATETIME,
     CreatedBy     NVARCHAR(50),
     CreatedAt     DATETIME DEFAULT GETDATE(),

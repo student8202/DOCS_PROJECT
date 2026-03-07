@@ -1,0 +1,67 @@
+DOCS_FASTAPI/
+├── app/
+│   ├── core/                   # Cấu hình hệ thống & Bảo mật
+│   │   ├── config.py           # Đọc file .env (Connection strings)
+│   │   └── security.py         # Hash mật khẩu bcrypt, JWT Token
+│   ├── database/               # Kết nối SQL Server (pyodbc)
+│   │   └── db_connection.py    # Quản lý kết nối tới SMILE_FO và LV_DOCS
+│   ├── models/                 # Định nghĩa cấu trúc dữ liệu (Pydantic)
+│   │   ├── user.py
+│   │   ├── document.py         # Chứa snapshot folio, booking
+│   │   └── auth.py
+│   ├── services/               # Logic nghiệp vụ & Gọi Store Procedures
+│   │   ├── auth_service.py     # Clone user, kiểm tra role
+│   │   ├── fo_service.py       # Lấy dữ liệu từ SMILE_FO, tạo hồ sơ
+│   │   ├── bo_service.py       # Kế toán đối soát
+│   │   └── hr_service.py       # Quản lý nhân sự
+│   ├── routers/                # Điều phối Request (Endpoints)
+│   ├── schemas/                # <--- ĐÂY LÀ SCHEMA (Pydantic Models)
+│   │   ├── auth.py             # Schema Login, Token
+│   │   ├── fo.py               # Schema Booking, Folio, Regcard
+│   │   ├── hr.py               # Schema Employee, Contract
+│   │   └── base.py             # Schema chứa 4 cột di sản (CreatedBy, UpdateAt...)
+│   ├── controllers/            # <--- ĐÂY LÀ CONTROLLER (Điều phối logic)
+│   │   ├── auth_controller.py
+│   │   ├── fo_controller.py
+│   │   └── hr_controller.py
+│   │   ├── auth.py
+│   │   ├── fo.py
+│   │   ├── bo.py
+│   │   └── hr.py
+│   ├── tests/                      # <--- ĐÂY LÀ UNITTEST (Kiểm tra lỗi)
+│   │   ├── conftest.py             # Cấu hình chung cho test
+│   │   ├── test_auth.py            # Test logic đăng nhập LV_DOCS
+│   │   ├── test_fo.py              # Test lấy dữ liệu SMILE_FO và Clone
+│   │   └── test_docs.py            # Test lưu trữ file và snapshot
+│   ├── run_unittest.bat            # File chạy nhanh tất cả test
+│   ├── static/                 # Tài liệu vật lý & Chữ ký (Bản lưu di sản)
+│   │   ├── pdf_templates/      # Các file HTML mẫu cho WeasyPrint
+│   │   ├── signatures/         # Lưu ảnh chữ ký tạm (nếu cần)
+│   │   └── archives/           # Nơi lưu PDF đã ký (Phân cấp Năm/Tháng/Ngày)
+│   ├── templates/              # Giao diện CoreUI (Jinja2)
+│   │   ├── layouts/
+│   │   ├── fo/                 # Trang tìm kiếm, ký hồ sơ
+│   │   ├── admin/              # Trang thiết kế mẫu, phân quyền
+│   │   └── login.html
+│   └── main.py                 # Khởi tạo App & Kết nối Middleware
+├── logs/                       # Lưu vết hệ thống (NSSM ghi vào đây)
+│   ├── app_error.log
+│   └── access.log
+├── .env                        # Biến môi trường (Mật khẩu DB, Secret Key)
+├── requirements.txt            # Danh sách thư viện (pyodbc, fastapi, passlib...)
+├── run_app.bat                 # File chạy ứng dụng cho NSSM
+└── README.md                   # Hướng dẫn vận hành di sản LaVie
+-----------------------------
+1 Model (class database)
+Trong dự án LaVie: Vì bạn dùng pyodbc và gọi Store Procedure (truy vấn thuần), thư mục models/ của bạn thực chất sẽ chứa các Class đại diện cho dữ liệu trả về từ SQL để Python hiểu được.
+Ví dụ: Một Model SignedDocument sẽ có đầy đủ tất cả các trường snapshot và chữ ký để lưu xuống ổ cứng.
+2. Schema (validate data) Nhiệm vụ:
+Validate (Kiểm tra): Nếu nhân viên FO gửi lên một chuỗi chữ ký bị trống, Schema sẽ báo lỗi ngay lập tức trước khi nó kịp chạm vào Database.
+Filter (Lọc): Bạn có 100 cột trong Database, nhưng bạn chỉ muốn trả về cho Lễ tân 5 cột (Tên, Phòng, Mã đơn). Schema giúp bạn "giấu" các thông tin nhạy cảm đi.
+Ví dụ: Schema DocumentCreate sẽ không có trường CreatedAt (vì database tự sinh), nhưng Schema DocumentOut sẽ có CreatedAt để hiện lên màn hình CoreUI.
+ Tại sao bạn cần tách biệt cả hai? Model Schemas
+Để LaVie Project không bao giờ bị lỗi dữ liệu, bạn sẽ dùng luồng này:
+Client gửi dữ liệu lên -> Schema kiểm tra (Ví dụ: Tuổi phải là số, Tên không được để trống).
+Dữ liệu "sạch" từ Schema được đưa vào Controller.
+Controller gọi Service để map dữ liệu đó vào Model (thêm các trường tự động như UpdateAt, UpdateBy).
+Model được đẩy xuống SQL Server qua pyodbc.
