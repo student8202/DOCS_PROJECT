@@ -1,0 +1,36 @@
+    <!-- 1. jQuery (Bắt buộc cho DataTables & Select2) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- 2. CoreUI 4 Bundle JS (Đã bao gồm Popper.js và Bootstrap 5 bên trong) -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.0/dist/js/coreui.bundle.min.js"></script>
+
+    <!-- 3. DataTables Core & Extensions -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    
+    <!-- 4. Export File Support (Zip/PDF) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    
+    <!-- 5. DataTables Buttons -->
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+    <!-- 6. Select2 & SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 7. LaVie Project Custom JS (Lưu vết di sản) -->
+    <script src="{{ url_for('static', path='js/languages.js') }}"></script>
+    <script src="{{ url_for('static', path='js/auth_handler.js') }}"></script>
+    <script src="{{ url_for('static', path='js/app.js') }}"></script>
+    
+    <!-- Scripts theo từng Module FO/BO/HR -->
+    <script src="{{ url_for('static', path='js/fo_handler.js') }}"></script>
+    <script src="{{ url_for('static', path='js/bo_handler.js') }}"></script>
+    <script src="{{ url_for('static', path='js/hr_handler.js') }}"></script>
+
+    

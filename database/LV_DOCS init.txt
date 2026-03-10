@@ -128,6 +128,14 @@ CREATE TABLE FO.tbl_SignedDocuments (
     UpdatedBy        NVARCHAR(50),
     UpdatedAt        DATETIME
 );
+ALTER TABLE FO.tbl_SignedDocuments ADD 
+    TA_Code         NVARCHAR(50),
+    TA_Name         NVARCHAR(255),
+    Market_Segment  NVARCHAR(100),
+    Sub_Segment     NVARCHAR(100),
+    Booking_Source  NVARCHAR(100),
+    Geographic      NVARCHAR(100),
+    Sales_Person    NVARCHAR(100);
 CREATE INDEX idx_fo_booking ON FO.tbl_SignedDocuments(Booking_ID);
 CREATE INDEX idx_fo_group   ON FO.tbl_SignedDocuments(Group_Code);
 

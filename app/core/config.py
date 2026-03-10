@@ -1,35 +1,43 @@
 import os
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    # Khai báo các biến, không gán giá trị mặc định nhạy cảm ở đây
-    PROJECT_NAME: str = "SMILE HR PROFESSIONAL"
-    SECRET_KEY: str 
+    PROJECT_NAME: str = "LaVie Project - Digital Archive" 
     
-    # THÊM 2 DÒNG NÀY ĐỂ KHỚP VỚI FILE .ENV
-    DEBUG: bool = True
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
+    # LV_DOCS
+    LV_DOCS_SERVER: str
+    LV_DOCS_DB: str
+    LV_DOCS_UID: str
+    LV_DOCS_PWD: str
     
-    DB_DRIVER: str = "{ODBC Driver 17 for SQL Server}"
-    DB_SERVER: str 
-    DB_NAME: str 
-    DB_USER: str 
-    DB_PASSWORD: str 
+    # SMILE_FO
+    SMILE_FO_SERVER: str
+    SMILE_FO_DB: str
+    SMILE_FO_UID: str
+    SMILE_FO_PWD: str
+    
+    # SMILE_BO
+    SMILE_BO_SERVER: str
+    SMILE_BO_DB: str
+    SMILE_BO_UID: str
+    SMILE_BO_PWD: str
+    
+    # SMILE_HR
+    SMILE_HR_SERVER: str
+    SMILE_HR_DB: str
+    SMILE_HR_UID: str
+    SMILE_HR_PWD: str
+    
+    # Auth
+    SECRET_KEY: str
+    ALGORITHM: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int
 
-    @property
-    def connection_string(self) -> str:
-        return (
-            f"DRIVER={self.DB_DRIVER};"
-            f"SERVER={self.DB_SERVER};"
-            f"DATABASE={self.DB_NAME};"
-            f"UID={self.DB_USER};"
-            f"PWD={self.DB_PASSWORD};"
-            "Trusted_Connection=no;" 
-        )
-
-    class Config:
-        # Pydantic sẽ tự tìm file .env ở thư mục gốc và map vào các biến trên
-        env_file = ".env" 
-        case_sensitive = True
+    # Cấu hình nạp file .env
+    model_config = SettingsConfigDict(
+        env_file=os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"),
+        env_file_encoding="utf-8",
+        extra="ignore"
+    )
 
 settings = Settings()
