@@ -3,6 +3,7 @@ import uvicorn
 import sys
 import io
 import secrets
+import time
 from loguru import logger
 from fastapi import FastAPI, Request, Depends, HTTPException, status
 from fastapi.responses import HTMLResponse, RedirectResponse
@@ -13,7 +14,15 @@ from fastapi.templating import Jinja2Templates
 
 from core.config import settings
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from routers import auth  # Import các router đã bàn
+from routers import auth_rt, ui_rt  # Import các router đã bàn
+from core.security import get_password_hash
+#swagger
+from fastapi.openapi.docs import get_swagger_ui_html
+from fastapi.openapi.utils import get_openapi
+
+from fastapi.responses import FileResponse,Response
+from starlette.middleware.sessions import SessionMiddleware
+from core.config import settings
 
 # Gộp tất cả cấu hình vào một nơi
 app = FastAPI(
@@ -22,6 +31,15 @@ app = FastAPI(
     redoc_url=None   # Tắt ReDoc mặc định
 )
 
+# Thêm Middleware này ngay sau khi khởi tạo app = FastAPI(...)
+app.add_middleware(
+    SessionMiddleware, 
+    secret_key=settings.SECRET_KEY, # Dùng key trong .env để mã hóa cookie session
+    session_cookie="lavie_session",
+    max_age=28800 # 8 tiếng làm việc (giây)
+)
+
+# Swagger
 security = HTTPBasic()
 def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
     # Thay 'admin' và 'secret_key' bằng thông tin bạn muốn
@@ -35,6 +53,21 @@ def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
         )
     return credentials.username
 
+# 2. Tạo Route riêng có yêu cầu đăng nhập Basic Auth
+@app.get("/admin/api-docs", include_in_schema=False)
+async def get_documentation(username: str = Depends(get_current_username)):
+    return get_swagger_ui_html(
+        openapi_url="/admin/openapi.json",
+        title="LaVie Project - API Schema"
+    )
+
+@app.get("/admin/openapi.json", include_in_schema=False)
+async def openapi_endpoint(username: str = Depends(get_current_username)):
+    return get_openapi(
+        title="LaVie Project",
+        version="1.0.0",
+        routes=app.routes,
+    )
 # Ép terminal dùng UTF-8 để hiện tiếng Việt
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 # Xóa cấu hình mặc định và thêm cấu hình hỗ trợ UTF-8 cho Terminal
@@ -58,6 +91,35 @@ logger.add(
     rotation="10 MB",
     retention="10 days"
 )
+####
+# --- LOGGING MIDDLEWARE ---
+@app.middleware("http")
+async def log_requests_middleware(request: Request, call_next):
+    # 1. Bắt đầu đo thời gian và xác định vị trí truy cập
+    start_time = time.time()
+    path = request.url.path
+    method = request.method
+    client_ip = request.client.host
+
+    logger.info(f"START | {method} {path} | IP: {client_ip}")
+
+    try:
+        # 2. Cho phép request đi tiếp vào Controller/Router
+        response = await call_next(request)
+        
+        # 3. Tính toán thời gian xử lý xong
+        process_time = (time.time() - start_time) * 1000
+        formatted_process_time = "{0:.2f}".format(process_time)
+        
+        logger.info(f"END   | {method} {path} | Status: {response.status_code} | Time: {formatted_process_time}ms")
+        
+        return response
+
+    except Exception as e:
+        # 4. Nếu có lỗi sập nguồn ở bất kỳ đâu, Middleware sẽ bắt được và ghi log
+        process_time = (time.time() - start_time) * 1000
+        logger.error(f"FAIL  | {method} {path} | Error: {str(e)} | Time: {process_time:.2f}ms")
+        raise e
 
 # 1. Cấu hình thư mục chứa file vật lý (JS, CSS, PDF)
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -66,25 +128,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 # 3. Đăng ký các API Routers
-app.include_router(auth.router)
+app.include_router(auth_rt.router,include_in_schema=False)
+# 3. Kết nối các "Mảnh ghép" Router
+app.include_router(ui_rt.router)   # Router Giao diện (HTML)
 # app.include_router(fo.router) # Mở ra khi làm module FO
-
-# --- ROUTES GIAO DIỆN (UI) ---
-
-@app.get("/", response_class=HTMLResponse)
-async def login_page(request: Request):
-    """Trang đăng nhập hệ thống"""
-    return templates.TemplateResponse("login.html", {"request": request})
-
-@app.get("/dashboard", response_class=HTMLResponse)
-async def dashboard_page(request: Request):
-    """Trang chủ Dashboard với 3 nút Sync"""
-    return templates.TemplateResponse("dashboard.html", {"request": request})
-
-@app.get("/fo", response_class=HTMLResponse)
-async def fo_page(request: Request):
-    """Trang Tiền sảnh (Search Booking)"""
-    return templates.TemplateResponse("fo_search.html", {"request": request})
 
 # Middleware xử lý lỗi 404 (Nếu gõ sai link)
 @app.exception_handler(404)

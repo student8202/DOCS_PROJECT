@@ -166,6 +166,7 @@ VALUES
 ('VOID_FO', N'Hủy hồ sơ Tiền sảnh', 'FO', 'SYSTEM'),
 ('VIEW_HR', N'Xem hồ sơ Nhân sự', 'HR', 'SYSTEM'),
 ('DESIGN_TEMPLATE', N'Thiết kế mẫu hồ sơ', 'SYSTEM', 'SYSTEM');
+('admin', N'Quản trị', 'FO,POS,HR', 'SYSTEM'),
 
 INSERT INTO dbo.tbl_Roles (RoleCode, RoleName, CreatedBy)
 VALUES ('ADMIN', N'Quản trị hệ thống', 'SYSTEM');
@@ -173,10 +174,18 @@ VALUES ('ADMIN', N'Quản trị hệ thống', 'SYSTEM');
 INSERT INTO dbo.tbl_RolePermissions (RoleCode, PermissionCode, CreatedBy)
 SELECT 'ADMIN', PermissionCode, 'SYSTEM' FROM dbo.tbl_PermissionList;
 
+INSERT INTO tbl_RolePermissions ([RoleCode], [PermissionCode], [CreatedBy], [CreatedAt], [UpdatedBy], [UpdatedAt])
+VALUES
+( N'ADMIN', N'admin', N'SYSTEM', N'2026-03-10T21:25:08.833', NULL, NULL )
+
 -- Mật khẩu mặc định sẽ được băm (hash) qua FastAPI sau này.
 -- Tài khoản admin đầu tiên để bạn đăng nhập.
 INSERT INTO dbo.tbl_Users (Username, Password_Hash, FullName, CreatedBy)
 VALUES ('admin', 'Sẽ_Cập_Nhật_Sau_Khi_Hash', N'Administrator', 'SYSTEM');
+
+UPDATE dbo.tbl_Users 
+SET Password_Hash = '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6L6s57THc7LXmSL2' 
+WHERE Username = 'admin';
 
 INSERT INTO dbo.tbl_UserRoles (Username, RoleCode, CreatedBy)
 VALUES ('admin', 'ADMIN', 'SYSTEM');

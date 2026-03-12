@@ -2,11 +2,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaVie Project | Digital Archive</title>
-    
+
     <!-- 1. CoreUI 4 CSS (Thay thế Bootstrap thuần) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.0/dist/css/coreui.min.css">
-    
+
     <!-- 2. CoreUI Icons -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@coreui/icons@3.0.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- 3. DataTables CSS (Dùng bản Bootstrap 5 để tương thích CoreUI) -->
@@ -20,10 +21,17 @@
 
     <!-- 5. Project Custom CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
-    
+
     <style>
         /* Tùy chỉnh nhẹ để CoreUI mượt hơn */
-        .sidebar-brand { background: #3c4b64; color: white; font-weight: bold; }
-        .nav-link.active { background: rgba(255,255,255,0.1); }
+        .sidebar-brand {
+            background: #3c4b64;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>

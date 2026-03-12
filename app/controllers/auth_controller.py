@@ -1,35 +1,45 @@
-from fastapi import HTTPException, status
+from fastapi import HTTPException, Request
 from services.auth_service import AuthService
 from core.security import verify_password, create_access_token
-from database.db_connection import get_lv_docs_db
+# from database.db_connection import get_lv_docs_db
+from loguru import logger
 
 class AuthController:
     @staticmethod
-    def login(username, password):
-        conn = get_lv_docs_db()
-        cursor = conn.cursor()
+    def login(request: Request, username, password):
+        # 1. Gọi Service lấy dữ liệu
+        user = AuthService.get_user_by_username(username)
         
-        # 1. Tìm User trong LaVie Docs (Độc lập hoàn toàn)
-        cursor.execute("SELECT Username, Password_Hash, IsActive, FullName FROM dbo.tbl_Users WHERE Username = ?", (username,))
-        user = cursor.fetchone()
-        conn.close()
-
         if not user:
-            raise HTTPException(status_code=401, detail="Tài khoản không tồn tại trong LaVie")
+            raise HTTPException(status_code=401, detail="Tài khoản không tồn tại")
         
-        if not user.IsActive:
+        # user[1] là Password_Hash, user[2] là IsActive
+        if not user[2]:
             raise HTTPException(status_code=403, detail="Tài khoản đã bị khóa")
 
-        # 2. Kiểm tra mật khẩu băm
-        if not verify_password(password, user.Password_Hash):
-            raise HTTPException(status_code=401, detail="Mật khẩu không chính xác")
+        if not verify_password(password, user[1]):
+            raise HTTPException(status_code=401, detail="Sai mật khẩu")
 
-        # 3. Tạo Token kèm thông tin Username để lưu vết CreatedBy/UpdatedBy sau này
-        access_token = create_access_token(data={"sub": user.Username, "name": user.FullName})
+        # 2. Lấy quyền và ghi vào Session để lưu Log/Audit sau này
+        permissions = AuthService.get_user_permissions(username)
+        
+        request.session["username"] = user[0]
+        request.session["full_name"] = user[3]
+        request.session["permissions"] = permissions
+
+        # 3. Trả về Token (nếu cần dùng cho API/Mobile)
+        token = create_access_token(data={"sub": user[0], "name": user[3]})
+        
+        logger.info(f"User {username} logged in successfully with {len(permissions)} perms")
         
         return {
-            "access_token": access_token, 
-            "token_type": "bearer", 
-            "username": user.Username,
-            "full_name": user.FullName
+            "access_token": token,
+            "username": user[0],
+            "full_name": user[3],
+            "permissions": permissions
         }
+
+    @staticmethod
+    def logout(request: Request):
+        request.session.clear() # Xóa sạch Username và Quyền trong Session
+        return {"status": "success", "message": "Đã đăng xuất"}

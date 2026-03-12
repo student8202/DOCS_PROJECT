@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html lang="vi">
-{% include 'header.html' %}
+{% include 'includes/header.html' %}
 
 <body>
-    <!-- SIDEBAR COREUI -->
-    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
-        <div class="sidebar-brand d-none d-md-flex">
-            <h4 class="mb-0">LaVie Project</h4>
+    <!-- 1. SIDEBAR (Dùng class của v5) -->
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brand">
+                <!-- Hiện khi Sidebar mở rộng -->
+                <span class="sidebar-brand-full fw-bold fs-4">LaVie Project</span>
+                <!-- Hiện khi Sidebar thu nhỏ (Viết tắt) -->
+                <span class="sidebar-brand-narrow fw-bold fs-4">LV</span>
+            </div>
         </div>
-        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
-            <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="nav-icon fas fa-tachometer-alt"></i> Dashboard</a></li>
-            
+
+        <ul class="sidebar-nav" data-coreui="navigation">
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard">
+                    <i class="nav-icon fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
             <li class="nav-title">Nghiệp vụ</li>
-            <!-- Hiển thị Menu FO/BO/HR dựa trên quyền thực tế -->
-            <li class="nav-item"><a class="nav-link" href="/fo"><i class="nav-icon fas fa-concierge-bell"></i> Tiền sảnh (FO)</a></li>
-            <li class="nav-item"><a class="nav-link" href="/bo"><i class="nav-icon fas fa-file-invoice-dollar"></i> Kế toán (BO)</a></li>
-            <li class="nav-item"><a class="nav-link" href="/hr"><i class="nav-icon fas fa-users"></i> Nhân sự (HR)</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/fo">
+                    <i class="nav-icon fas fa-concierge-bell"></i> Tiền sảnh (FO)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/bo">
+                    <i class="nav-icon fas fa-file-invoice-dollar"></i> Kế toán (BO)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/hr">
+                    <i class="nav-icon fas fa-users"></i> Nhân sự (HR)
+                </a>
+            </li>
         </ul>
-        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+        <div class="sidebar-footer border-top d-none d-md-flex">
+            <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+        </div>
     </div>
 
-    <!-- MAIN WRAPPER -->
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
-        <!-- TOP HEADER -->
-        <header class="header header-sticky mb-4">
-            <div class="container-fluid">
-                <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+    <!-- 2. MAIN WRAPPER (Đây là chỗ bản v5 tự động đẩy nội dung sang phải) -->
+    <div class="wrapper d-flex flex-column min-vh-100">
+
+        <!-- HEADER TRÊN CÙNG -->
+        <header class="header header-sticky p-0 mb-4 border-bottom">
+            <div class="container-fluid border-bottom px-4">
+                <button class="header-toggler" type="button"
+                    onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="header-nav ms-auto">
-                    <li class="nav-item"><span class="nav-link fw-bold" id="user_display_name">Admin</span></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i></a></li>
+                    <li class="nav-item px-3"><span id="user_display_name" class="fw-bold">Admin</span></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="logout()"><i
+                                class="fas fa-sign-out-alt"></i></a></li>
                 </ul>
             </div>
         </header>
 
-        <!-- CONTENT -->
-        <div class="body flex-grow-1 px-3">
-            <div class="container-lg">
+        <!-- NỘI DUNG CHÍNH -->
+        <div class="body flex-grow-1">
+            <div class="container-lg px-4">
                 {% block content %}{% endblock %}
             </div>
         </div>
 
-        <!-- FOOTER DI SẢN -->
-        <footer class="footer border-top px-4 py-3 bg-white">
+        <!-- FOOTER -->
+        <footer class="footer px-4">
             <div><strong>LaVie Project</strong> &copy; 2024 dành cho con gái.</div>
-            <div class="ms-auto">Version 1.0.0</div>
+            <div class="ms-auto">v5.6.0</div>
         </footer>
     </div>
 
-    {% include 'footer.html' %}
+    {% include 'includes/footer.html' %}
 </body>
+
 </html>

@@ -2,3 +2,37 @@
     font-size: 0.75rem; /* Giảm kích thước icon bên trong */
     opacity: 0.8;       /* Làm mờ nhẹ cho tinh tế */
 }
+
+/* Đảm bảo nội dung không bao giờ bị Sidebar đè trong CoreUI 5 */
+
+@media (min-width: 992px) {
+  /* Khi Sidebar đang hiển thị đầy đủ */
+  .sidebar-fixed ~ .wrapper {
+    margin-left: 256px !important;
+    transition: margin-left 0.15s ease-in-out;
+  }
+
+  /* Khi Sidebar ở chế độ thu nhỏ (narrow) */
+  .sidebar-narrow.sidebar-fixed ~ .wrapper,
+  .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
+    margin-left: 64px !important;
+  }
+
+  /* Khi Sidebar bị ẩn hoàn toàn */
+  .sidebar-hide.sidebar-fixed ~ .wrapper {
+    margin-left: 0 !important;
+  }
+}
+
+/* Fix tiêu đề bị tràn khi Sidebar thu nhỏ */
+.sidebar-brand-narrow {
+    display: none;
+}
+.sidebar-narrow .sidebar-brand-full {
+    display: none;
+}
+.sidebar-narrow .sidebar-brand-narrow {
+    display: block;
+    font-size: 1.2rem;
+}
+

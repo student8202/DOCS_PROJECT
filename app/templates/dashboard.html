@@ -11,7 +11,11 @@
         </div>
     </div>
 </div>
-
+<!-- <div class="alert alert-info">
+    Quyền của bạn trong Session: {{ user_permissions }}
+</div> -->
+<!-- CHỈ HIỆN PHẦN ĐỒNG BỘ NẾU LÀ ADMIN -->
+{% if 'admin' in user_permissions %}
 <!-- KHU VỰC 3 NÚT SYNC THÔNG MINH -->
 <div class="row gx-4">
     <!-- Nút Sync FO -->
@@ -107,4 +111,5 @@
         }
     }
 </script>
+{% endif %}
 {% endblock %}

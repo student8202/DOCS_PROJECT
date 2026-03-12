@@ -1,4 +1,4 @@
-[Tue 03/10/2026 21:58:57.89] Dang kiem tra thu vien FastAPI...
+[Thu 03/12/2026 14:17:01.57] Dang kiem tra thu vien FastAPI...
 Requirement already satisfied: fastapi in c:\program files\python312\lib\site-packages (0.135.1)
 Requirement already satisfied: uvicorn in c:\program files\python312\lib\site-packages (0.41.0)
 Requirement already satisfied: jinja2 in c:\windows\system32\config\systemprofile\appdata\roaming\python\python312\site-packages (3.1.6)
@@ -44,192 +44,441 @@ Requirement already satisfied: pycparser in c:\program files\python312\lib\site-
 
 [notice] A new release of pip is available: 25.0.1 -> 26.0.1
 [notice] To update, run: C:\Program Files\Python312\python.exe -m pip install --upgrade pip
-[Tue 03/10/2026 21:59:03.10] Dang khoi dong FastAPI Server...
+
+Usage:   
+  C:\Program Files\Python312\python.exe -m pip uninstall [options] <package> ...
+  C:\Program Files\Python312\python.exe -m pip uninstall [options] -r <requirements file> ...
+
+no such option: --user
+Requirement already satisfied: bcrypt==3.2.0 in c:\windows\system32\config\systemprofile\appdata\roaming\python\python312\site-packages (3.2.0)
+Requirement already satisfied: cffi>=1.1 in c:\program files\python312\lib\site-packages (from bcrypt==3.2.0) (2.0.0)
+Requirement already satisfied: six>=1.4.1 in c:\program files\python312\lib\site-packages (from bcrypt==3.2.0) (1.17.0)
+Requirement already satisfied: pycparser in c:\program files\python312\lib\site-packages (from cffi>=1.1->bcrypt==3.2.0) (3.0)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.0.1
+[notice] To update, run: C:\Program Files\Python312\python.exe -m pip install --upgrade pip
+Requirement already satisfied: itsdangerous in c:\windows\system32\config\systemprofile\appdata\roaming\python\python312\site-packages (2.2.0)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.0.1
+[notice] To update, run: C:\Program Files\Python312\python.exe -m pip install --upgrade pip
+[Thu 03/12/2026 14:17:11.92] Dang khoi dong FastAPI Server...
 INFO:     Will watch for changes in these directories: ['C:\\SMILE PMS\\DOCS_PROJECT\\app']
 WARNING:  "workers" flag is ignored when reloading is enabled.
 INFO:     Uvicorn running on http://127.0.0.1:6066 (Press CTRL+C to quit)
-INFO:     Started reloader process [7308] using StatReload
-INFO:     Started server process [3768]
+INFO:     Started reloader process [11796] using StatReload
+INFO:     Started server process [20760]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
-    await super().__call__(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
-    raise exc
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
-    await route.handle(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
-    await self.app(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    raise exc
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
-    response = await f(request)
-               ^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
-    raw_response = await run_endpoint_function(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
-    return await dependant.call(**values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 77, in login_page
-    return templates.TemplateResponse("login.html", {"request": request})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 210, in TemplateResponse
-    return _TemplateResponse(
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 41, in __init__
-    content = template.render(context)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "templates\login.html", line 3, in top-level template code
-    {% include 'header.html' %}
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 209, in get_source
-    raise TemplateNotFound(
-jinja2.exceptions.TemplateNotFound: 'header.html' not found in search path: 'templates'
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 766, in app
-    await self.default(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 652, in not_found
-    raise HTTPException(status_code=404)
-starlette.exceptions.HTTPException: 404: Not Found
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
-    await super().__call__(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
-    raise exc
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
-    response = await handler(conn, exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 92, in not_found_exception_handler
-    return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
-    template = self.get_template(name)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 132, in get_template
-    return self.env.get_template(name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1016, in get_template
-    return self._load_template(name, globals)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 975, in _load_template
-    template = self.loader.load(self, name, self.make_globals(globals))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 126, in load
-    source, filename, uptodate = self.get_source(environment, name)
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 209, in get_source
-    raise TemplateNotFound(
-jinja2.exceptions.TemplateNotFound: '404.html' not found in search path: 'templates'
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
-    await app(scope, receive, sender)
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
-    await self.app(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 766, in app
-    await self.default(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 652, in not_found
-    raise HTTPException(status_code=404)
-starlette.exceptions.HTTPException: 404: Not Found
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
-    await super().__call__(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
-    raise exc
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 59, in wrapped_app
-    response = await handler(conn, exc)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 92, in not_found_exception_handler
-    return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
-    template = self.get_template(name)
-               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 132, in get_template
-    return self.env.get_template(name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1016, in get_template
-    return self._load_template(name, globals)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 975, in _load_template
-    template = self.loader.load(self, name, self.make_globals(globals))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 126, in load
-    source, filename, uptodate = self.get_source(environment, name)
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 209, in get_source
-    raise TemplateNotFound(
-jinja2.exceptions.TemplateNotFound: '404.html' not found in search path: 'templates'
+[32m2026-03-12 14:17:16[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:16[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 9.86ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:16[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:16[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.10ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.12ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 2.10ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:18[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:18[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:17:22[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:22[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 401 | Time: 356.76ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+[32m2026-03-12 14:17:31[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:31[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 303 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 303 See Other
+[32m2026-03-12 14:17:31[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:31[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /?error=timeout HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:33[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:33[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:17:43[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:43[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 5 perms[0m
+[32m2026-03-12 14:17:43[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 326.03ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:44[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:44[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 5.97ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:45[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:45[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.09ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:17:58[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:58[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 14:17:58[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:17:58[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.25ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:18:00[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:00[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:02[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 303 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 303 See Other
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.55ms[0m
+INFO:     127.0.0.1:0 - "GET /?error=timeout HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:06[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:18:25[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:25[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 303 | Time: 1.20ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 303 See Other
+[32m2026-03-12 14:18:25[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:25[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /?error=timeout HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:28[0m | [1mINFO    [0m | [36mSTART | GET /gen_pass/admin | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:28[0m | [1mINFO    [0m | [36mEND   | GET /gen_pass/admin | Status: 200 | Time: 281.19ms[0m
+INFO:     127.0.0.1:0 - "GET /gen_pass/admin HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:28[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:28[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:18:37[0m | [1mINFO    [0m | [36mSTART | GET /gen_pass/project | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:37[0m | [1mINFO    [0m | [36mEND   | GET /gen_pass/project | Status: 200 | Time: 276.90ms[0m
+INFO:     127.0.0.1:0 - "GET /gen_pass/project HTTP/1.1" 200 OK
+[32m2026-03-12 14:18:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:18:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:19:08[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:09[0m | [1mINFO    [0m | [36mUser sml logged in successfully with 0 perms[0m
+[32m2026-03-12 14:19:09[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 310.28ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-12 14:19:10[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:10[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.44ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 14:19:10[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:10[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.24ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:19:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.19ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:19:18[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:18[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-12 14:19:19[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:19[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:19:19[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:19:19[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+WARNING:  StatReload detected changes in 'routers\ui_rt.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20760]
+INFO:     Started server process [3120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-12 14:24:50[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 14:24:50[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 9.50ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 14:24:51[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:24:51[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.50ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 14:24:55[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 14:24:56[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 401 | Time: 360.04ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+[32m2026-03-12 14:25:00[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 14:25:01[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 5 perms[0m
+[32m2026-03-12 14:25:01[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 303.86ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-12 14:25:02[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 14:25:02[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 57.89ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 14:25:02[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 14:25:02[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.36ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+WARNING:  StatReload detected changes in 'routers\auth_rt.py'. Reloading...
+ [32m2026-03-12 15:09:35[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:35[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 50.47ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:35[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:35[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.06ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:36[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:36[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:09:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:09:40[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:40[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 28.20ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:41[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:41[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:09:47[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+[32m2026-03-12 15:09:47[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 5 perms[0m
+[32m2026-03-12 15:09:47[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 299.40ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3120]
+INFO:     Started server process [8664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-12 15:09:48[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:48[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 12.75ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:49[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:49[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:09:51[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:51[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.53ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 3.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.05ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.15ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 3.23ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:53[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:53[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.44ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:56[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 4.15ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:57[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 4.09ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:09:58[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:09:58[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.02ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:25[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:25[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.50ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:25[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.40ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.15ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.03ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.02ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.50ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.05ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.53ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.58ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:28[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:29[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:29[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.30ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.20ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.15ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:33[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.21ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.34ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.32ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:34[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.57ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 3.20ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.98ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:38[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.03ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 3.61ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 2.04ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.50ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.19ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.50ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.17ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:41[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 2.22ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:42[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:42[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:47[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:47[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 5 perms[0m
+[32m2026-03-12 15:10:47[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 431.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:49[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:49[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.37ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:10:49[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:49[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:10:59[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:10:59[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.21ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:11:04[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-12 15:11:04[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-12 15:11:04[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-12 15:11:04[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.64ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-12 15:11:05[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:11:05[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.33ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-12 15:12:39[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-12 15:12:39[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 5 perms[0m
+[32m2026-03-12 15:12:39[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 331.97ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-12 15:12:40[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-12 15:12:40[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.03ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-12 15:12:41[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-12 15:12:41[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.52ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content

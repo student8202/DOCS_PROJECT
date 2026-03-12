@@ -1,10 +1,25 @@
-from pydantic import BaseModel
-from typing import Optional, List
-from base import BaseAuditSchema
+from pydantic import BaseModel, ConfigDict
+from typing import List, Optional
+from datetime import datetime
 
-class UserOut(BaseAuditSchema):
+# Schema cho dữ liệu Login gửi lên
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+# Schema cho dữ liệu User trả về (Mapping từ Database)
+class UserInDB(BaseModel):
     Username: str
-    FullName: Optional[str]
-    Source_Map: Optional[str]
+    FullName: Optional[str] = None
     IsActive: bool
-    Department: Optional[str]
+    Source_Map: Optional[str] = None
+    
+    model_config = ConfigDict(from_attributes=True) # Thay cho class Config cũ
+
+# Schema trả về cho Client sau khi Login thành công
+class LoginResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    username: str
+    full_name: str
+    permissions: List[str] = []

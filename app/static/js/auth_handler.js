@@ -46,8 +46,10 @@ $(document).ready(function () {
 });
 
 // Hàm đăng xuất dùng chung
-function logout() {
-    Swal.fire({
+// Thêm async ở đầu hàm
+async function logout() {
+    // Chờ người dùng nhấn xác nhận từ SweetAlert2
+    const result = await Swal.fire({
         title: 'Đăng xuất?',
         text: "Bạn muốn thoát khỏi LaVie Project?",
         icon: 'warning',
@@ -55,10 +57,23 @@ function logout() {
         confirmButtonColor: '#3c4b64',
         confirmButtonText: 'Đồng ý',
         cancelButtonText: 'Hủy'
-    }).then((result) => {
-        if (result.isConfirmed) {
+    });
+
+    // Nếu người dùng đồng ý
+    if (result.isConfirmed) {
+        try {
+            // 1. Gọi Server xóa Session (Bắt buộc để xóa thẻ bài ở Backend)
+            await fetch('/auth/logout', { method: 'POST' });
+
+            // 2. Xóa dữ liệu ở trình duyệt
             localStorage.clear();
+
+            // 3. Chuyển về trang chủ
+            window.location.href = '/';
+        } catch (error) {
+            console.error("Lỗi đăng xuất:", error);
+            // Vẫn cho về trang chủ nếu lỗi mạng để đảm bảo thoát được giao diện
             window.location.href = '/';
         }
-    });
+    }
 }

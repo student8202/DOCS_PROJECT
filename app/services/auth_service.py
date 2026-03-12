@@ -87,3 +87,33 @@ class AuthService:
         finally:
             conn_source.close()
             conn_lv.close()
+
+    @staticmethod
+    def get_user_by_username(username: str):
+        """Lấy thông tin User từ Database"""
+        conn = get_lv_docs_db()
+        if not conn: return None
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SELECT Username, Password_Hash, IsActive, FullName FROM dbo.tbl_Users WHERE Username = ?", (username,))
+            return cursor.fetchone()
+        finally:
+            conn.close()
+
+    @staticmethod
+    def get_user_permissions(username: str):
+        """Lấy danh sách quyền (RBAC) của User"""
+        conn = get_lv_docs_db()
+        if not conn: return []
+        try:
+            cursor = conn.cursor()
+            sql = """
+                SELECT DISTINCT PermissionCode 
+                FROM dbo.tbl_RolePermissions 
+                WHERE RoleCode IN (SELECT RoleCode FROM dbo.tbl_UserRoles WHERE Username = ?)
+            """
+            cursor.execute(sql, (username,))
+            # .lower() để biến tất cả 'ADMIN', 'Admin' thành 'admin'
+            return [str(row[0]).strip().lower() for row in cursor.fetchall()]
+        finally:
+            conn.close()
