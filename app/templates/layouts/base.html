@@ -14,27 +14,103 @@
             </div>
         </div>
 
-        <ul class="sidebar-nav" data-coreui="navigation">
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+            <!-- DASHBOARD -->
             <li class="nav-item">
                 <a class="nav-link" href="/dashboard">
                     <i class="nav-icon fas fa-tachometer-alt"></i> Dashboard
                 </a>
             </li>
+
             <li class="nav-title">Nghiệp vụ</li>
-            <li class="nav-item">
-                <a class="nav-link" href="/fo">
+
+            <!-- NHÓM TIỀN SẢNH (FO) -->
+            <li class="nav-group">
+                <a class="nav-link nav-group-toggle" href="#">
                     <i class="nav-icon fas fa-concierge-bell"></i> Tiền sảnh (FO)
                 </a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="/fo/search"><span
+                                class="nav-icon fas fa-search"></span>
+                            Tìm kiếm & Ký</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/fo/history"><span class="nav-icon fas fa-history"></span> Lịch sử
+                            hồ sơ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/fo/reports"><span class="nav-icon fas fa-chart-pie"></span> Báo cáo
+                            FO</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/bo">
+
+            <!-- NHÓM KẾ TOÁN (BO) -->
+            <li class="nav-group">
+                <a class="nav-link nav-group-toggle" href="#">
                     <i class="nav-icon fas fa-file-invoice-dollar"></i> Kế toán (BO)
                 </a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="/bo/folios"><span class="nav-icon fas fa-file-invoice-dollar"></span> Quản lý
+                            Folio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bo/reconcile"><span class="nav-icon fas fa-receipt"></span> Đối
+                            soát dữ liệu</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/hr">
+
+            <!-- NHÓM NHÂN SỰ (HR) -->
+            <li class="nav-group">
+                <a class="nav-link nav-group-toggle" href="#">
                     <i class="nav-icon fas fa-users"></i> Nhân sự (HR)
                 </a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="/hr/employees"><span class="nav-icon  fas fa-id-card"></span> Danh
+                            sách nhân viên</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hr/contracts"><span class="nav-icon fas fa-file-signature"></span> Hợp
+                            đồng lao động</a></li>
+                </ul>
+            </li>
+
+            <!-- NHÓM CẤU HÌNH HỆ THỐNG (SYSTEM) -->
+            <li class="nav-title">Hệ thống</li>
+
+            <!-- NHÓM QUẢN TRỊ NGƯỜI DÙNG (USER & RBAC) -->
+            <li class="nav-group">
+                <a class="nav-link nav-group-toggle" href="#">
+                    <i class="nav-icon fas fa-user-cog"></i> Quản trị người dùng
+                </a>
+                <ul class="nav-group-items">
+                    <!-- Tính năng bạn vừa yêu cầu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/sync-users">
+                            <i class="nav-icon fas fa-sync"></i> Đồng bộ nhân sự
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rbac/manage">
+                            <i class="nav-icon fas fa-user-shield"></i> Phân quyền (RBAC)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/users-list">
+                            <i class="nav-icon fas fa-users-cog"></i> Danh sách tài khoản
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- NHÓM CẤU HÌNH HỆ THỐNG -->
+            <li class="nav-group">
+                <a class="nav-link nav-group-toggle" href="#">
+                    <i class="nav-icon fas fa-cogs"></i> Cấu hình hệ thống
+                </a>
+                <ul class="nav-group-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/system/templates">
+                            <i class="nav-icon fas fa-file-code"></i> Mẫu hồ sơ (Template)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/system/logs">
+                            <i class="nav-icon fas fa-history"></i> Nhật ký Audit
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
         <div class="sidebar-footer border-top d-none d-md-flex">
@@ -53,7 +129,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="header-nav ms-auto">
-                    <li class="nav-item px-3"><span id="user_display_name" class="fw-bold">Admin</span></li>
+                    <li class="nav-item px-3"><span id="user_display_name" class="fw-bold">Noname Guest</span></li>
                     <li class="nav-item"><a class="nav-link" href="#" onclick="logout()"><i
                                 class="fas fa-sign-out-alt"></i></a></li>
                 </ul>

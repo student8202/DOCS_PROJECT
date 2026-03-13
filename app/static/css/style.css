@@ -35,4 +35,59 @@
     display: block;
     font-size: 1.2rem;
 }
+/* menu slide bar */
+/* --- TÙY CHỈNH SIDEBAR LAVIE PROJECT --- */
+
+/* 1. Menu Cha (Group): Chữ in hoa nhẹ, màu sáng hơn và có nền khi mở */
+.nav-group-toggle {
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-group.show {
+    background: rgba(0, 0, 0, 0.15); /* Làm tối vùng menu cha đang mở */
+}
+
+/* 2. Menu Con (Items): Thụt đầu dòng và chữ nhỏ hơn một chút */
+.nav-group-items .nav-item .nav-link {
+    padding-left: 3.5rem !important; /* Thụt vào để phân biệt với cha */
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6) !important;
+    position: relative;
+}
+
+/* 3. Tạo đường kẻ dọc "xương cá" để nối các menu con */
+.nav-group-items {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+/* 4. Hiệu ứng khi Hover hoặc Active menu con */
+.nav-group-items .nav-item .nav-link:hover,
+.nav-group-items .nav-item .nav-link.active {
+    color: #fff !important;
+    background: transparent !important;
+}
+
+.nav-group-items .nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background: #321fdb; /* Màu xanh đặc trưng CoreUI */
+    border-radius: 50%;
+}
+
+/* 5. Icon của menu cha to hơn một chút */
+.nav-group-toggle .nav-icon {
+    font-size: 1.1rem;
+    margin-right: 0.8rem;
+    color: #4f5d73;
+}
+
 

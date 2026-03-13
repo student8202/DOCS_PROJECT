@@ -1,0 +1,47 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="card border-top-primary shadow-sm">
+    <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-primary fw-bold"><i class="fas fa-user-shield me-2"></i>QUẢN LÝ PHÂN QUYỀN NGƯỜI DÙNG</h5>
+    </div>
+    <div class="card-body">
+        <table id="tblUsers" class="table table-hover table-striped border w-100">
+            <thead>
+                <tr class="bg-light">
+                    <th>Username (ClerkID)</th>
+                    <th>Họ và Tên</th>
+                    <th>Vai trò (Roles)</th>
+                    <th class="text-center">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu load qua AJAX -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal Gán Quyền -->
+<div class="modal fade" id="modalRole" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-top border-4 border-primary">
+            <div class="modal-header">
+                <h5 class="modal-title">Gán vai trò cho: <span id="displayUsername" class="text-primary"></span></h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="roleListContainer" class="p-2">
+                    <!-- Danh sách Checkbox Role sẽ load ở đây -->
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary fw-bold" onclick="saveUserRoles()">
+                    <i class="fas fa-save me-2"></i>CẬP NHẬT QUYỀN
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

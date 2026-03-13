@@ -52,16 +52,78 @@ DOCS_FASTAPI/
 ├── run_app.bat                 # File chạy ứng dụng cho NSSM
 └── README.md                   # Hướng dẫn vận hành di sản LaVie
 -----------------------------
-1 Model (class database)
-Trong dự án LaVie: Vì bạn dùng pyodbc và gọi Store Procedure (truy vấn thuần), thư mục models/ của bạn thực chất sẽ chứa các Class đại diện cho dữ liệu trả về từ SQL để Python hiểu được.
-Ví dụ: Một Model SignedDocument sẽ có đầy đủ tất cả các trường snapshot và chữ ký để lưu xuống ổ cứng.
-2. Schema (validate data) Nhiệm vụ:
-Validate (Kiểm tra): Nếu nhân viên FO gửi lên một chuỗi chữ ký bị trống, Schema sẽ báo lỗi ngay lập tức trước khi nó kịp chạm vào Database.
-Filter (Lọc): Bạn có 100 cột trong Database, nhưng bạn chỉ muốn trả về cho Lễ tân 5 cột (Tên, Phòng, Mã đơn). Schema giúp bạn "giấu" các thông tin nhạy cảm đi.
-Ví dụ: Schema DocumentCreate sẽ không có trường CreatedAt (vì database tự sinh), nhưng Schema DocumentOut sẽ có CreatedAt để hiện lên màn hình CoreUI.
- Tại sao bạn cần tách biệt cả hai? Model Schemas
-Để LaVie Project không bao giờ bị lỗi dữ liệu, bạn sẽ dùng luồng này:
-Client gửi dữ liệu lên -> Schema kiểm tra (Ví dụ: Tuổi phải là số, Tên không được để trống).
-Dữ liệu "sạch" từ Schema được đưa vào Controller.
-Controller gọi Service để map dữ liệu đó vào Model (thêm các trường tự động như UpdateAt, UpdateBy).
-Model được đẩy xuống SQL Server qua pyodbc.
+Ví dụ ngắn gọn:
+Router: "tới địa chỉ này -> controller Này Service, tạo cho tôi User với dữ liệu từ Schema này. Nếu Service bảo trùng Email thì tôi trả về cho controller Ngoại lệ nghiệp vụ EmailAlreadyExistsError. Controller thấy ngoại lệ trả về lỗi 400 cho Client."
+Service: "Để tôi check Database (Model). Ồ, Email này có rồi, tôi báo lỗi nhé. Nếu chưa có, tôi sẽ tính toán mã hóa mật khẩu rồi bảo Model lưu vào DB."
+1. Router (Chỉ là cái biển chỉ dẫn): Nhiệm vụ: Định nghĩa phương thức (POST/GET), đường dẫn (/users) và gọi đúng hàm ở Controller. Không xử lý bất kỳ logic nào khác.
+2. Controller (Người điều phối): Nhiệm vụ: Tiếp nhận dữ liệu từ Router, điều phối các Service cần thiết, và quyết định trả về mã lỗi HTTP nào (400, 404, 201...).
+3. Service (Bộ não logic): Nhiệm vụ: Kiểm tra nghiệp vụ (check trùng email, mã hóa mật khẩu, gửi mail chào mừng...). Không biết gì về HTTP hay Router.
+Tóm tắt vai trò để không bị nhầm:
+Router: "Cửa vào" (Đường dẫn này dẫn đến đâu?).
+Controller: "Người tiếp tân" (Lấy dữ liệu, bảo Service làm việc, rồi trả lời khách hàng bằng mã HTTP).
+Service: "Thợ xử lý" (Thực hiện tính toán, kiểm tra đúng/sai về mặt nghiệp vụ).
+Schema: "Mẫu tờ khai" (Định dạng dữ liệu gửi đi/nhận về).
+Model: "Kho lưu trữ" (Cấu trúc dữ liệu dưới Database).
+-----------------------------
+Để đúng chuẩn Clean Architecture, luồng nên là:
+1. Service: Không biết "lỗi 400" là gì (vì nó không biết về HTTP). Nó chỉ quăng ra một cái Ngoại lệ nghiệp vụ (ví dụ: UserAlreadyExistsError).
+2. Controller: Hứng cái "Ngoại lệ" đó và phiên dịch nó thành HTTP 400.
+Tóm tắt lại "Tôn chỉ" của từng lớp:
+Router: Tuyệt đối không có if/else. Chỉ có khai báo URL và gọi Controller.
+Controller: Không có logic tính toán. Chỉ có try/except để chuyển đổi kết quả từ Service thành mã HTTP (200, 400, 500).
+Service: Không có mã HTTP. Chỉ có logic nghiệp vụ và raise lỗi nếu dữ liệu sai.
+Schema: Không có logic. Chỉ có định nghĩa kiểu dữ liệu (String, Int, Email...).
+Model: Không có logic. Chỉ có định nghĩa bảng (Table, Column).
+-----------------------------
+Để xây dựng hệ thống Phân quyền (RBAC) chuẩn mực cho LaVie Project, chúng ta sẽ đi theo đúng cấu trúc 4 lớp: Schema (định dạng dữ liệu), Service (truy vấn DB), Controller (logic nghiệp vụ) và Router (điểm cuối API).
+---------------------------------
+. Models (Đại diện cho Database)
+Công cụ: Thường dùng SQLAlchemy hoặc SQL thuần (như bạn đang dùng với pyodbc).
+Nhiệm vụ: Định nghĩa cấu trúc bảng dưới SQL Server (tên cột, kiểu dữ liệu NVARCHAR, INT, khóa chính PK).
+Mục đích: Để Python "nói chuyện" với Database. Nó là "Cái gương" phản chiếu bảng dbo.tbl_Users.
+2. Schemas (Đại diện cho Giao tiếp/API)
+Công cụ: Dùng thư viện Pydantic (Class kế thừa BaseModel).
+Nhiệm vụ: Định nghĩa dữ liệu đi Vào (Request) và đi Ra (Response) qua trình duyệt.
+Mục đích:
+Validation: Kiểm tra xem User gửi lên có đúng định dạng không (Vd: Email phải có chữ @, mật khẩu không được rỗng).
+Bảo mật: Lọc dữ liệu. Ví dụ: Database có cột Password_Hash, nhưng khi trả về thông tin User cho trình duyệt, Schema sẽ loại bỏ cột này để hacker không thấy.
+---------------------------
+Luồng dữ liệu:
+Client ↔ Router ↔ Service ↔ Model ↔ Database
+(Dữ liệu đi qua Router và Service được định hình bởi Schema)
+-- bắt đầu để đi đúng cấu trúc
+Router: Tuyệt đối không có if/else. Chỉ có khai báo URL và gọi Controller.
+Controller: Không có logic tính toán. Chỉ có try/except để chuyển đổi kết quả từ Service thành mã HTTP (200, 400, 500).
+Service: Không có mã HTTP. Chỉ có logic nghiệp vụ và raise lỗi nếu dữ liệu sai.
+Schema: Không có logic. Chỉ có định nghĩa kiểu dữ liệu (String, Int, Email...).
+Model: Không có logic. Chỉ có định nghĩa bảng (Table, Column).
+Dưới đây là sơ đồ luồng chạy thực tế dựa trên đúng mô tả của bạn để bạn chốt lại kiến thức:
+Client ➔ Gửi yêu cầu kèm JSON (Khớp với Schema).
+Router ➔ Nhận yêu cầu tại /users, gọi ngay Controller.
+Controller ➔ Gọi Service.
+Service ➔ Kiểm tra Model (DB).
+Nếu trùng: raise EmailAlreadyExistsError (Ngoại lệ nghiệp vụ).
+Controller ➔ except EmailAlreadyExistsError ➔ Trả về HTTP 400.
+Client ➔ Nhận thông báo lỗi rõ ràng.
+Template ➔ Hiển thị frontend
+JS -> Xử lý cho frontend 
+Lưu ý nhỏ để "Master" hơn:
+Về Schema: Nên chia làm 2 loại: UserCreate (dữ liệu khách gửi) và UserRead (dữ liệu trả về, ví dụ không chứa mật khẩu).
+Về Exception: Nên tạo một file exceptions.py riêng để định nghĩa các lỗi như EmailAlreadyExistsError, giúp Service và Controller dùng chung một "ngôn ngữ" lỗi.
+------------------------------
+vấn đề khi khai báo template ở từng router
+Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.
+=> Để giải quyết triệt để và đúng chuẩn cấu trúc LaVie Project, chúng ta cần tách phần khai báo Jinja2Templates ra một file độc lập.
+Thực tế, dữ liệu đã nằm trong Session rồi, nhưng có sự khác biệt giữa việc Backend (Python) đọc và Frontend (Jinja2 HTML) hiển thị:
+Dữ liệu trong Session: Lưu ở máy chủ. Khi bạn muốn kiểm tra quyền để cho phép vào trang hay không (trong Controller), bạn dùng request.session.get("permissions"). Cái này chạy rất tốt ở phần "chìm".
+Vấn đề ở phần "nổi" (HTML): Jinja2 là một bộ máy render độc lập. Nó không tự ý lục lọi vào request.session để lấy dữ liệu ra trừ khi bạn chỉ định rõ ràng.
+Nếu không dùng Global Context, bạn sẽ phải làm thế này:
+Ở mọi hàm render trang, bạn đều phải lặp lại việc bốc dữ liệu từ Session ra để ném vào Template
+python
+# Trong Controller nào cũng phải viết thế này -> Rất mệt và dễ quên
+return templates.TemplateResponse("dashboard.html", {
+    "request": request, 
+    "user_permissions": request.session.get("permissions") 
+})
+Hãy thận trọng khi sử dụng mã.
+

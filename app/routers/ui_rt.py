@@ -4,10 +4,10 @@ from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse, Resp
 from fastapi.templating import Jinja2Templates
 from core.security import get_password_hash
 from passlib.hash import bcrypt
+from core.deps import templates # Import từ deps
 
 # Khai báo Router cho giao diện
 router = APIRouter(include_in_schema=False)
-templates = Jinja2Templates(directory="templates")
 
 # --- ROUTES GIAO DIỆN (UI) ---
 def login_required(request: Request):

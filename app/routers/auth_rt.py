@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, Form, HTTPException, Request, status # Thêm Request, status
 from controllers.auth_controller import AuthController
 from services.auth_service import AuthService
+from core.deps import templates # Import từ deps
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
@@ -14,7 +15,7 @@ async def sync_users(source_type: str, request: Request): # Thêm request vào �
     user_perms = request.session.get("permissions", [])
     
     # 2. Kiểm tra quyền ADMIN
-    if "ADMIN" not in user_perms:
+    if "admin" not in user_perms:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN, 
             detail="Bạn không có quyền thực hiện lệnh này"

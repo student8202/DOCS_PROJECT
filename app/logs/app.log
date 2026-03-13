@@ -2124,3 +2124,662 @@
 2026-03-12 16:21:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.99ms
 2026-03-12 16:21:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
 2026-03-12 16:21:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-12 16:58:49 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-12 16:58:49 | INFO     | END   | POST /auth/sync/FO | Status: 403 | Time: 1.56ms
+2026-03-12 16:58:55 | INFO     | START | POST /auth/sync/BO | IP: 127.0.0.1
+2026-03-12 16:58:55 | INFO     | END   | POST /auth/sync/BO | Status: 403 | Time: 2.54ms
+2026-03-12 16:58:59 | INFO     | START | POST /auth/sync/HR | IP: 127.0.0.1
+2026-03-12 16:58:59 | INFO     | END   | POST /auth/sync/HR | Status: 403 | Time: 1.51ms
+2026-03-12 16:59:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 16:59:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-12 16:59:08 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-12 16:59:08 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.53ms
+2026-03-12 16:59:08 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-12 16:59:08 | INFO     | END   | GET / | Status: 200 | Time: 3.46ms
+2026-03-12 16:59:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 16:59:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.30ms
+2026-03-12 16:59:22 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-12 16:59:22 | INFO     | User admin logged in successfully with 6 perms
+2026-03-12 16:59:22 | INFO     | END   | POST /auth/login | Status: 200 | Time: 303.81ms
+2026-03-12 16:59:23 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-12 16:59:23 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-12 16:59:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 16:59:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.07ms
+2026-03-12 16:59:25 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-12 16:59:25 | INFO     | END   | POST /auth/sync/FO | Status: 403 | Time: 1.00ms
+2026-03-12 16:59:58 | INFO     | START | POST /auth/sync/BO | IP: 127.0.0.1
+2026-03-12 16:59:58 | INFO     | END   | POST /auth/sync/BO | Status: 403 | Time: 2.28ms
+2026-03-12 17:01:25 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-12 17:01:25 | INFO     | END   | GET /dashboard | Status: 200 | Time: 6.31ms
+2026-03-12 17:01:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-12 17:01:28 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-12 17:01:28 | INFO     | END   | POST /auth/sync/FO | Status: 403 | Time: 2.14ms
+2026-03-12 17:01:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.06ms
+2026-03-12 17:01:32 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-12 17:01:32 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.02ms
+2026-03-12 17:01:32 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-12 17:01:32 | INFO     | END   | GET / | Status: 200 | Time: 1.00ms
+2026-03-12 17:01:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-12 17:01:38 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-12 17:01:38 | INFO     | User admin logged in successfully with 6 perms
+2026-03-12 17:01:38 | INFO     | END   | POST /auth/login | Status: 200 | Time: 296.53ms
+2026-03-12 17:01:40 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-12 17:01:40 | INFO     | END   | GET /dashboard | Status: 200 | Time: 11.50ms
+2026-03-12 17:01:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-12 17:01:42 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-12 17:01:42 | INFO     | END   | POST /auth/sync/FO | Status: 200 | Time: 462.95ms
+2026-03-12 17:01:45 | INFO     | START | POST /auth/sync/BO | IP: 127.0.0.1
+2026-03-12 17:01:46 | INFO     | END   | POST /auth/sync/BO | Status: 200 | Time: 375.17ms
+2026-03-12 17:01:48 | INFO     | START | POST /auth/sync/HR | IP: 127.0.0.1
+2026-03-12 17:01:49 | INFO     | END   | POST /auth/sync/HR | Status: 200 | Time: 329.44ms
+2026-03-12 17:01:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.34ms
+2026-03-12 17:01:55 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-12 17:01:55 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 3.00ms
+2026-03-12 17:01:55 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-12 17:01:55 | INFO     | END   | GET / | Status: 200 | Time: 4.63ms
+2026-03-12 17:01:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:01:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-12 17:01:59 | INFO     | START | GET /gen_pass/project | IP: 127.0.0.1
+2026-03-12 17:02:00 | INFO     | END   | GET /gen_pass/project | Status: 200 | Time: 318.48ms
+2026-03-12 17:02:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-12 17:02:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 10:36:24 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 10:36:24 | INFO     | END   | GET / | Status: 200 | Time: 14.42ms
+2026-03-13 10:36:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:36:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-13 10:36:30 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 10:36:31 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 10:36:31 | INFO     | END   | POST /auth/login | Status: 200 | Time: 457.23ms
+2026-03-13 10:36:33 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 10:36:33 | INFO     | END   | GET /dashboard | Status: 200 | Time: 17.71ms
+2026-03-13 10:36:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:36:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 10:36:36 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-13 10:36:37 | INFO     | END   | POST /auth/sync/FO | Status: 200 | Time: 398.42ms
+2026-03-13 10:36:39 | INFO     | START | POST /auth/sync/BO | IP: 127.0.0.1
+2026-03-13 10:36:40 | INFO     | END   | POST /auth/sync/BO | Status: 200 | Time: 392.72ms
+2026-03-13 10:36:43 | INFO     | START | POST /auth/sync/HR | IP: 127.0.0.1
+2026-03-13 10:36:43 | INFO     | END   | POST /auth/sync/HR | Status: 200 | Time: 347.45ms
+2026-03-13 10:36:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:36:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.17ms
+2026-03-13 10:36:50 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-13 10:36:50 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 2.01ms
+2026-03-13 10:36:50 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 10:36:50 | INFO     | END   | GET / | Status: 200 | Time: 3.28ms
+2026-03-13 10:36:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:36:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 10:36:58 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 10:36:59 | INFO     | User sml logged in successfully with 0 perms
+2026-03-13 10:36:59 | INFO     | END   | POST /auth/login | Status: 200 | Time: 326.00ms
+2026-03-13 10:37:00 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 10:37:00 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.82ms
+2026-03-13 10:37:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:37:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 10:37:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:37:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 10:37:11 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-13 10:37:11 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.30ms
+2026-03-13 10:37:11 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 10:37:11 | INFO     | END   | GET / | Status: 200 | Time: 2.52ms
+2026-03-13 10:37:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:37:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 10:37:16 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 10:37:17 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 10:37:17 | INFO     | END   | POST /auth/login | Status: 200 | Time: 279.95ms
+2026-03-13 10:37:18 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 10:37:18 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 10:37:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 10:37:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 14:48:59 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 14:48:59 | INFO     | END   | GET / | Status: 200 | Time: 50.64ms
+2026-03-13 14:49:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:49:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-13 14:49:07 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 14:49:08 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 14:49:08 | INFO     | END   | POST /auth/login | Status: 200 | Time: 358.63ms
+2026-03-13 14:49:09 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 14:49:09 | INFO     | END   | GET /dashboard | Status: 200 | Time: 29.82ms
+2026-03-13 14:49:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:49:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.57ms
+2026-03-13 14:49:28 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-13 14:49:28 | INFO     | END   | GET /rbac/manage | Status: 404 | Time: 4.51ms
+2026-03-13 14:49:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:49:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 14:49:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:49:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 14:54:21 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 14:54:21 | INFO     | END   | GET /dashboard | Status: 200 | Time: 18.22ms
+2026-03-13 14:54:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:54:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 14:54:39 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 14:54:39 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.14ms
+2026-03-13 14:54:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 14:54:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:19:58 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:19:58 | INFO     | END   | GET /dashboard | Status: 200 | Time: 8.33ms
+2026-03-13 15:20:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:20:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:20:05 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:20:05 | INFO     | END   | GET /admin/sync-users | Status: 404 | Time: 1.56ms
+2026-03-13 15:20:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:20:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.49ms
+2026-03-13 15:21:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:21:01 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:01 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.05ms
+2026-03-13 15:21:02 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:02 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-13 15:21:02 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:02 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 15:21:02 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:02 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.04ms
+2026-03-13 15:21:02 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:02 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 15:21:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:21:08 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:21:08 | INFO     | END   | GET /admin/sync-users | Status: 404 | Time: 1.04ms
+2026-03-13 15:21:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.21ms
+2026-03-13 15:21:15 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 15:21:15 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-13 15:21:19 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:21:19 | INFO     | END   | GET /admin/sync-users | Status: 404 | Time: 0.00ms
+2026-03-13 15:21:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 15:21:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.03ms
+2026-03-13 15:21:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.21ms
+2026-03-13 15:21:40 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 15:21:40 | INFO     | END   | GET / | Status: 200 | Time: 1.50ms
+2026-03-13 15:21:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 15:21:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-13 15:21:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:21:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:21:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.26ms
+2026-03-13 15:21:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 15:21:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-13 15:21:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:21:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:22:17 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:22:17 | INFO     | END   | GET /admin/sync-users | Status: 404 | Time: 1.14ms
+2026-03-13 15:22:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:22:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.50ms
+2026-03-13 15:22:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:22:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:22:50 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 15:22:50 | INFO     | END   | GET / | Status: 200 | Time: 14.51ms
+2026-03-13 15:22:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:22:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:22:58 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:22:58 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 15:22:58 | INFO     | END   | POST /auth/login | Status: 200 | Time: 343.80ms
+2026-03-13 15:22:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:22:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 6.15ms
+2026-03-13 15:23:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:23:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:23:03 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:23:03 | INFO     | END   | GET /admin/sync-users | Status: 404 | Time: 2.27ms
+2026-03-13 15:23:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:23:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:27:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:27:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 9.78ms
+2026-03-13 15:27:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:27:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.50ms
+2026-03-13 15:27:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:27:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 11.01ms
+2026-03-13 15:27:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:27:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:27:31 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:27:31 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.05ms
+2026-03-13 15:27:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:27:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.52ms
+2026-03-13 15:28:27 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:28:27 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.02ms
+2026-03-13 15:28:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:28:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 7.12ms
+2026-03-13 15:28:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:28:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.26ms
+2026-03-13 15:28:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:28:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:28:37 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:28:37 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.40ms
+2026-03-13 15:28:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:28:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.08ms
+2026-03-13 15:28:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:28:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-13 15:28:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:28:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:29:07 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:29:07 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.39ms
+2026-03-13 15:29:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:29:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.86ms
+2026-03-13 15:29:18 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:29:18 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 15:29:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:29:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:29:55 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:29:55 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 31.42ms
+2026-03-13 15:29:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:29:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.06ms
+2026-03-13 15:29:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:29:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-13 15:29:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:29:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.35ms
+2026-03-13 15:30:06 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:30:06 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.17ms
+2026-03-13 15:30:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:30:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:36:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:36:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 15:36:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:36:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:38:16 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:38:16 | INFO     | END   | GET /dashboard | Status: 200 | Time: 29.19ms
+2026-03-13 15:38:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:38:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:38:23 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:38:23 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-13 15:38:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:38:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.54ms
+2026-03-13 15:38:27 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:38:27 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 3.51ms
+2026-03-13 15:38:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:38:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-13 15:40:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.15ms
+2026-03-13 15:40:33 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:40:33 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 13.04ms
+2026-03-13 15:40:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:40:40 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:40:40 | INFO     | END   | GET /dashboard | Status: 200 | Time: 13.54ms
+2026-03-13 15:40:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:40:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:40:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-13 15:40:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:40:48 | INFO     | START | GET /fo/search | IP: 127.0.0.1
+2026-03-13 15:40:48 | INFO     | END   | GET /fo/search | Status: 404 | Time: 3.05ms
+2026-03-13 15:40:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:40:49 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 15:40:49 | INFO     | END   | GET / | Status: 200 | Time: 3.44ms
+2026-03-13 15:40:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:40:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.24ms
+2026-03-13 15:40:56 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:40:57 | INFO     | END   | POST /auth/login | Status: 401 | Time: 353.59ms
+2026-03-13 15:41:01 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:01 | INFO     | END   | POST /auth/login | Status: 401 | Time: 297.59ms
+2026-03-13 15:41:02 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:02 | INFO     | END   | POST /auth/login | Status: 401 | Time: 283.74ms
+2026-03-13 15:41:03 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:03 | INFO     | END   | POST /auth/login | Status: 401 | Time: 276.01ms
+2026-03-13 15:41:04 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:04 | INFO     | END   | POST /auth/login | Status: 401 | Time: 271.57ms
+2026-03-13 15:41:05 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:05 | INFO     | END   | POST /auth/login | Status: 401 | Time: 297.87ms
+2026-03-13 15:41:10 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:41:10 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 15:41:10 | INFO     | END   | POST /auth/login | Status: 200 | Time: 281.72ms
+2026-03-13 15:41:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:41:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 15:41:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:41:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.94ms
+2026-03-13 15:41:16 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:41:16 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.10ms
+2026-03-13 15:41:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:41:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:42:15 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:15 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 34.05ms
+2026-03-13 15:42:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.80ms
+2026-03-13 15:42:17 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:17 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.00ms
+2026-03-13 15:42:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-13 15:42:19 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:19 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.99ms
+2026-03-13 15:42:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:42:20 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:20 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.53ms
+2026-03-13 15:42:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.54ms
+2026-03-13 15:42:20 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:20 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.00ms
+2026-03-13 15:42:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.66ms
+2026-03-13 15:42:20 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:20 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.00ms
+2026-03-13 15:42:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.10ms
+2026-03-13 15:42:20 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:20 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 2.01ms
+2026-03-13 15:42:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.59ms
+2026-03-13 15:42:21 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:21 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.14ms
+2026-03-13 15:42:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:42:23 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:23 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.00ms
+2026-03-13 15:42:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.51ms
+2026-03-13 15:42:23 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:23 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.01ms
+2026-03-13 15:42:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.54ms
+2026-03-13 15:42:23 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:23 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.00ms
+2026-03-13 15:42:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:42:24 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:24 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.00ms
+2026-03-13 15:42:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:42:24 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:24 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.00ms
+2026-03-13 15:42:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:42:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.06ms
+2026-03-13 15:42:30 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:42:30 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 1.23ms
+2026-03-13 15:42:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:42:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-13 15:44:42 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:44:42 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 13.75ms
+2026-03-13 15:44:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:44:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-03-13 15:44:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:44:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:44:47 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:44:48 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 15:44:48 | INFO     | END   | POST /auth/login | Status: 200 | Time: 354.70ms
+2026-03-13 15:44:49 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:44:49 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.00ms
+2026-03-13 15:44:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:44:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:44:51 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:44:51 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 0.00ms
+2026-03-13 15:44:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:44:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:47:59 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 15:47:59 | INFO     | END   | GET / | Status: 200 | Time: 8.65ms
+2026-03-13 15:47:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:47:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:48:06 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:48:07 | INFO     | END   | POST /auth/login | Status: 401 | Time: 339.86ms
+2026-03-13 15:48:12 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 15:48:12 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 15:48:12 | INFO     | END   | POST /auth/login | Status: 200 | Time: 285.43ms
+2026-03-13 15:48:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 15:48:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 9.68ms
+2026-03-13 15:48:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:48:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 15:48:16 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:48:16 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 8.37ms
+2026-03-13 15:48:16 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:48:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:54:42 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 15:54:42 | ERROR    | FAIL  | GET /admin/sync-users | Error: 'get_perms' is undefined | Time: 4.01ms
+2026-03-13 15:54:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:54:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 15:54:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 15:54:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:03:27 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 16:03:27 | INFO     | END   | GET / | Status: 200 | Time: 5.34ms
+2026-03-13 16:03:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:03:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:03:34 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-13 16:03:35 | INFO     | User admin logged in successfully with 6 perms
+2026-03-13 16:03:35 | INFO     | END   | POST /auth/login | Status: 200 | Time: 351.33ms
+2026-03-13 16:03:36 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:03:36 | INFO     | END   | GET /dashboard | Status: 200 | Time: 7.27ms
+2026-03-13 16:03:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:03:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.20ms
+2026-03-13 16:03:39 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:03:39 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 3.55ms
+2026-03-13 16:03:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:03:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:08:24 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:08:24 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 46.08ms
+2026-03-13 16:08:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:08:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:08:31 | INFO     | START | POST /auth/sync/FO | IP: 127.0.0.1
+2026-03-13 16:08:32 | INFO     | END   | POST /auth/sync/FO | Status: 200 | Time: 350.00ms
+2026-03-13 16:08:36 | INFO     | START | POST /auth/sync/BO | IP: 127.0.0.1
+2026-03-13 16:08:36 | INFO     | END   | POST /auth/sync/BO | Status: 200 | Time: 315.37ms
+2026-03-13 16:08:39 | INFO     | START | POST /auth/sync/HR | IP: 127.0.0.1
+2026-03-13 16:08:39 | INFO     | END   | POST /auth/sync/HR | Status: 200 | Time: 310.85ms
+2026-03-13 16:08:49 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:08:49 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.25ms
+2026-03-13 16:08:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:08:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:08:59 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:08:59 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.11ms
+2026-03-13 16:08:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:08:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:09:16 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 16:09:16 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.17ms
+2026-03-13 16:10:29 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:10:29 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 24.36ms
+2026-03-13 16:10:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 16:10:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-13 16:10:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:10:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.33ms
+2026-03-13 16:10:55 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:10:55 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:10:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:10:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:12:32 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:12:32 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.24ms
+2026-03-13 16:12:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:12:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:12:38 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:12:38 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.94ms
+2026-03-13 16:12:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:12:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:13:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-13 16:13:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-13 16:17:41 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:41 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 40.86ms
+2026-03-13 16:17:43 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:17:43 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.02ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 3.04ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:17:49 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:49 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:17:50 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:17:50 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.12ms
+2026-03-13 16:17:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:17:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-03-13 16:19:59 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 31.84ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.03ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.54ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.34ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:20:00 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:00 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:20:01 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:01 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:20:01 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:01 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:20:01 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:20:01 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.50ms
+2026-03-13 16:20:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:20:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:21:44 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:21:44 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 35.16ms
+2026-03-13 16:21:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:21:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.61ms
+2026-03-13 16:22:35 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:22:35 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 22.93ms
+2026-03-13 16:22:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:22:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:26:08 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:08 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.01ms
+2026-03-13 16:26:08 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:08 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.13ms
+2026-03-13 16:26:08 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:08 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.02ms
+2026-03-13 16:26:08 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:08 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.53ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.57ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.00ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.02ms
+2026-03-13 16:26:09 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:09 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.15ms
+2026-03-13 16:26:10 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:10 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.00ms
+2026-03-13 16:26:10 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:26:10 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.03ms
+2026-03-13 16:26:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:26:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:28:27 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:28:27 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 33.21ms
+2026-03-13 16:28:28 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:28:28 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:28:28 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:28:28 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.52ms
+2026-03-13 16:28:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:28:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.08ms
+2026-03-13 16:29:47 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:29:47 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 23.79ms
+2026-03-13 16:29:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:29:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.49ms
+2026-03-13 16:35:58 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:35:58 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 24.77ms
+2026-03-13 16:36:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:36:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:39:07 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:39:07 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 6.03ms
+2026-03-13 16:39:07 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:39:07 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.50ms
+2026-03-13 16:39:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-13 16:39:41 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:39:41 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.38ms
+2026-03-13 16:39:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:39:45 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-13 16:39:45 | INFO     | END   | GET /rbac/manage | Status: 404 | Time: 1.00ms
+2026-03-13 16:39:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.06ms
+2026-03-13 16:39:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:39:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:39:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.46ms
+2026-03-13 16:39:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:39:53 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:39:53 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.54ms
+2026-03-13 16:39:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:39:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.50ms
+2026-03-13 16:40:16 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-13 16:40:16 | INFO     | END   | GET /rbac/manage | Status: 404 | Time: 1.14ms
+2026-03-13 16:40:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:40:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.23ms
+2026-03-13 16:40:18 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 16:40:18 | INFO     | END   | GET / | Status: 200 | Time: 1.03ms
+2026-03-13 16:40:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:40:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-13 16:40:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:40:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:40:28 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 16:40:28 | INFO     | END   | GET / | Status: 200 | Time: 1.00ms
+2026-03-13 16:40:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:40:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.47ms
+2026-03-13 16:41:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.15ms
+2026-03-13 16:41:11 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-13 16:41:11 | INFO     | END   | GET / | Status: 200 | Time: 1.00ms
+2026-03-13 16:41:12 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 16:41:16 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:16 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-13 16:41:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:41:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.43ms
+2026-03-13 16:41:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.10ms
+2026-03-13 16:41:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 16:41:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.06ms
+2026-03-13 16:41:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-13 16:41:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.14ms
+2026-03-13 16:41:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:41:23 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:41:23 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-13 16:41:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-13 16:41:30 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-13 16:41:30 | INFO     | END   | GET /rbac/manage | Status: 404 | Time: 23.38ms
+2026-03-13 16:41:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 16:41:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-13 16:41:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:41:37 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:41:37 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.04ms
+2026-03-13 16:41:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 16:41:40 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-13 16:41:40 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.16ms
+2026-03-13 16:41:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:41:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-13 16:43:06 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-13 16:43:06 | INFO     | END   | GET /rbac/manage | Status: 404 | Time: 1.02ms
+2026-03-13 16:43:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:43:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:43:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:43:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-13 16:43:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:43:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:43:11 | INFO     | START | GET /system/templates | IP: 127.0.0.1
+2026-03-13 16:43:11 | INFO     | END   | GET /system/templates | Status: 404 | Time: 0.00ms
+2026-03-13 16:43:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:43:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-13 16:43:12 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-13 16:43:12 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.65ms
+2026-03-13 16:43:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:43:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-13 16:43:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-13 16:43:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
