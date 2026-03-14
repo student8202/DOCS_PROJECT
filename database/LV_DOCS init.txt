@@ -47,6 +47,8 @@ CREATE TABLE dbo.tbl_Roles (
     UpdatedBy   NVARCHAR(50),
     UpdatedAt   DATETIME
 );
+ALTER TABLE dbo.tbl_Roles
+ADD [ModuleName] [nvarchar] (20)
 
 -- Bảng nối Nhóm quyền và Hành động (Không dùng Khóa ngoại để tối ưu)
 CREATE TABLE dbo.tbl_RolePermissions (

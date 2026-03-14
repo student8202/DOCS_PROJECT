@@ -64,6 +64,7 @@ Controller: "Người tiếp tân" (Lấy dữ liệu, bảo Service làm việc
 Service: "Thợ xử lý" (Thực hiện tính toán, kiểm tra đúng/sai về mặt nghiệp vụ).
 Schema: "Mẫu tờ khai" (Định dạng dữ liệu gửi đi/nhận về).
 Model: "Kho lưu trữ" (Cấu trúc dữ liệu dưới Database).
+Để SQL ở Model giúp LaVie Project trở thành một "di sản" ngăn nắp. Người sau tiếp quản (hoặc chính bạn sau 1 năm nữa) chỉ cần nhìn vào Model là hiểu toàn bộ cấu trúc dữ liệu của hệ thống.
 -----------------------------
 Để đúng chuẩn Clean Architecture, luồng nên là:
 1. Service: Không biết "lỗi 400" là gì (vì nó không biết về HTTP). Nó chỉ quăng ra một cái Ngoại lệ nghiệp vụ (ví dụ: UserAlreadyExistsError).
@@ -91,7 +92,7 @@ Bảo mật: Lọc dữ liệu. Ví dụ: Database có cột Password_Hash, như
 Luồng dữ liệu:
 Client ↔ Router ↔ Service ↔ Model ↔ Database
 (Dữ liệu đi qua Router và Service được định hình bởi Schema)
--- bắt đầu để đi đúng cấu trúc
+-- bắt đầu cung cấp AI thông tin để đi đúng cấu trúc
 Router: Tuyệt đối không có if/else. Chỉ có khai báo URL và gọi Controller.
 Controller: Không có logic tính toán. Chỉ có try/except để chuyển đổi kết quả từ Service thành mã HTTP (200, 400, 500).
 Service: Không có mã HTTP. Chỉ có logic nghiệp vụ và raise lỗi nếu dữ liệu sai.
@@ -110,6 +111,7 @@ JS -> Xử lý cho frontend
 Lưu ý nhỏ để "Master" hơn:
 Về Schema: Nên chia làm 2 loại: UserCreate (dữ liệu khách gửi) và UserRead (dữ liệu trả về, ví dụ không chứa mật khẩu).
 Về Exception: Nên tạo một file exceptions.py riêng để định nghĩa các lỗi như EmailAlreadyExistsError, giúp Service và Controller dùng chung một "ngôn ngữ" lỗi.
+Lưu ý mỗi lần cung cấp cho tôi 1 file tôi làm xong bạn sẽ gửi cái khác theo thứ tự sau model -> schema -> service -> controller -> router -> template -> js
 ------------------------------
 vấn đề khi khai báo template ở từng router
 Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.

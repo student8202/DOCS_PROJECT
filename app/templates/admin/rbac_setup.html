@@ -1,0 +1,147 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="row">
+    <!-- CỘT TRÁI: DANH MỤC QUYỀN (PERMISSIONS) -->
+    <div class="col-md-6">
+        <div class="card border-top-info shadow-sm mb-4">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                <h6 class="mb-0 fw-bold text-info"><i class="fas fa-key me-2"></i>DANH MỤC QUYỀN (ACTIONS)</h6>
+                <button class="btn btn-sm btn-info text-white" onclick="openAddPermModal()">
+                    <i class="fas fa-plus"></i> Thêm quyền
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="tblPermissions" class="table table-sm table-hover border w-100">
+                    <thead>
+                        <tr>
+                            <th>Code (Chữ thường)</th>
+                            <th>Tên hiển thị</th>
+                            <th>Module</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- CỘT PHẢI: NHÓM VAI TRÒ (ROLES) -->
+    <div class="col-md-6">
+        <div class="card border-top-warning shadow-sm mb-4">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                <h6 class="mb-0 fw-bold text-warning"><i class="fas fa-users-cog me-2"></i>NHÓM VAI TRÒ (ROLES)</h6>
+                <button class="btn btn-sm btn-warning text-white" onclick="openAddRoleModal()">
+                    <i class="fas fa-plus"></i> Thêm vai trò
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="tblRoles" class="table table-sm table-hover border w-100">
+                    <thead>
+                        <tr>
+                            <th>Mã vai trò</th>
+                            <th>Tên vai trò</th>
+                            <th>Phân hệ</th> <!-- Cột ModuleName -->
+                            <th class="text-center">Cấu hình</th> <!-- Cột nút Răng cưa -->
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Thêm Quyền (Sử dụng Schema PermissionCreate) -->
+<div class="modal fade" id="modalAddPerm" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="formAddPerm">
+                <div class="modal-header">Thêm hành động mới</div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Mã quyền (vd: view_fo)</label>
+                        <input type="text" name="code" class="form-control" required
+                            placeholder="Chỉ dùng chữ thường và gạch dưới">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Tên hiển thị</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Phân hệ (Module)</label>
+                        <select name="module" class="form-select">
+                            <option value="FO">Tiền sảnh (FO)</option>
+                            <option value="BO">Kế toán (BO)</option>
+                            <option value="HR">Nhân sự (HR)</option>
+                            <option value="SYSTEM">Hệ thống</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info text-white">Lưu dữ liệu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal Thêm Vai trò (Sử dụng Schema RoleCreate) -->
+<div class="modal fade" id="modalAddRole" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content border-top-warning border-4">
+            <form id="formAddRole">
+                <div class="modal-header">Thêm Vai trò (Nhóm quyền)</div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Mã vai trò (vd: fo_staff)</label>
+                        <input type="text" name="code" class="form-control" required
+                            placeholder="Chữ thường, không dấu">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Tên vai trò</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Thuộc phân hệ</label>
+                        <select name="module_name" class="form-select">
+                            <option value="FO">Tiền sảnh (FO)</option>
+                            <option value="BO">Kế toán (BO)</option>
+                            <option value="HR">Nhân sự (HR)</option>
+                            <option value="SYSTEM">Hệ thống</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Mô tả ngắn</label>
+                        <textarea name="description" class="form-control" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-warning text-white fw-bold">LƯU VAI TRÒ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- CHÈN VÀO ĐÂY: Modal Mapping Permission to Role -->
+<div class="modal fade" id="modalConfigRole" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cấu hình quyền cho: <span id="configRoleTitle"
+                        class="text-primary fw-bold"></span></h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted small">Tích chọn các hành động được phép thực hiện cho vai trò này.</p>
+                <div id="permCheckboxContainer" class="row">
+                    <!-- Checkbox các Permission sẽ được JS đổ vào đây -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Đóng</button>
+                <button class="btn btn-primary fw-bold" onclick="saveRoleMapping()">
+                    <i class="fas fa-save me-2"></i>CẬP NHẬT CẤU HÌNH
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

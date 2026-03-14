@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, Form, HTTPException, Request, status # T
 from controllers.auth_controller import AuthController
 from services.auth_service import AuthService
 from core.deps import templates # Import từ deps
+from schemas.rbac_sh import PermissionRead, RoleRead
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 

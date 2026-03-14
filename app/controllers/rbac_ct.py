@@ -1,34 +1,64 @@
+# app/controllers/rbac_ct.py
+from fastapi import HTTPException, status, Request
+from fastapi.responses import RedirectResponse
 from services.rbac_sv import RBACService
-from fastapi import HTTPException, Request, status
+from core.deps import templates  # Import từ deps
+from core.exceptions import DuplicateError
 
 
 class RBACController:
     @staticmethod
-    def get_my_permissions(username: str):
-        # Chỉ gọi Service và trả về kết quả
-        perms = RBACService.get_user_permissions_logic(username)
-        return {"username": username, "permissions": perms}
+    def render_setup_page(request: Request):
+        # Sử dụng hàm get_perms đã khai báo toàn cục để check
+        user_perms = request.session.get("permissions", [])
+        if "admin" not in user_perms:
+            return RedirectResponse(url="/dashboard")
+
+        return templates.TemplateResponse("admin/rbac_setup.html", {"request": request})
 
     @staticmethod
-    def guard(request: Request, required_perm: str):
-        # Controller chỉ điều phối và ném lỗi HTTP
-        if not RBACService.check_permission_logic(request, required_perm):
-            raise HTTPException(
-                status_code=status.HTTP_403_FORBIDDEN,
-                detail=f"Bạn không có quyền: {required_perm.lower()}",
-            )
-        return True
-
-    @staticmethod
-    def get_roles_list():
-        return RBACService.get_all_roles_logic()
-
-    @staticmethod
-    def apply_user_roles(data, admin_user: str):
+    def add_permission(data, admin_user: str):
         try:
-            RBACService.update_user_roles_logic(
-                data.username, data.role_codes, admin_user
+            RBACService.create_permission_logic(data, admin_user)
+            return {"status": "success", "message": "Đã thêm quyền mới"}
+        except DuplicateError as e:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="Lỗi hệ thống")
+
+    @staticmethod
+    def update_role_mapping(data, admin_user: str):
+        try:
+            RBACService.map_role_permissions_logic(
+                data.role_code, data.permission_codes, admin_user
             )
-            return {"status": "success"}
+            return {
+                "status": "success",
+                "message": "Cập nhật quyền cho Vai trò thành công",
+            }
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
+
+    @staticmethod
+    def list_permissions():
+        try:
+            return RBACService.get_permissions_logic()
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @staticmethod
+    def list_roles():
+        try:
+            return RBACService.get_roles_logic()
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+
+    @staticmethod
+    def add_role(data, admin_user: str):
+        try:
+            RBACService.create_role_logic(data, admin_user)
+            return {"status": "success", "message": "Đã thêm vai trò mới thành công"}
+        except DuplicateError as e:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+        except Exception as e:
+            raise HTTPException(status_code=500, detail="Lỗi hệ thống khi thêm vai trò")

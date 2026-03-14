@@ -10,3 +10,11 @@ class RoleAlreadyAssignedError(LaVieError):
 class UserNotFoundError(LaVieError):
     """Lỗi không tìm thấy User trong hệ thống"""
     pass
+
+class DuplicateError(LaVieError):
+    """Lỗi khi dữ liệu (Username, RoleCode, PermissionCode) đã tồn tại"""
+    pass
+
+class DatabaseError(LaVieError):
+    """Lỗi kết nối hoặc thao tác Database thất bại"""
+    pass
