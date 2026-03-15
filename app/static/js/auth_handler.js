@@ -77,3 +77,27 @@ async function logout() {
         }
     }
 }
+//  start change password
+function openChangePasswordModal() {
+    $('#formChangePass').trigger("reset");
+    $('#modalChangePass').modal('show');
+}
+
+$('#formChangePass').on('submit', async function(e) {
+    e.preventDefault();
+    const formData = Object.fromEntries(new FormData(this));
+
+    const res = await fetch('/auth/change-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+    });
+
+    if (res.ok) {
+        Swal.fire('Thành công', 'Mật khẩu đã được thay đổi!', 'success');
+        $('#modalChangePass').modal('hide');
+    } else {
+        const err = await res.json();
+        Swal.fire('Lỗi', err.detail, 'error');
+    }
+});

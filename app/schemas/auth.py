@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict,Field
 from typing import List, Optional
 from datetime import datetime
 
@@ -23,3 +23,9 @@ class LoginResponse(BaseModel):
     username: str
     full_name: str
     permissions: List[str] = []
+
+# user change password   
+class ChangePasswordRequest(BaseModel):
+    old_password: str
+    new_password: str = Field(..., min_length=6)
+    confirm_password: str

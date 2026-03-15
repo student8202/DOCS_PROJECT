@@ -3,6 +3,7 @@ from controllers.auth_controller import AuthController
 from services.auth_service import AuthService
 from core.deps import templates # Import từ deps
 from schemas.rbac_sh import PermissionRead, RoleRead
+from schemas.auth import ChangePasswordRequest
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
@@ -32,3 +33,13 @@ async def sync_users(source_type: str, request: Request): # Thêm request vào �
 async def logout(request: Request):
     """API xóa Session từ Backend"""
     return AuthController.logout(request)
+
+#user change password
+@router.post("/change-password")
+async def api_user_change_password(request: Request, data: ChangePasswordRequest):
+    # Lấy username của chính người đang đăng nhập từ Session
+    username = request.session.get("username")
+    if not username:
+        raise HTTPException(status_code=401, detail="Vui lòng đăng nhập")
+        
+    return AuthController.user_change_password(username, data)

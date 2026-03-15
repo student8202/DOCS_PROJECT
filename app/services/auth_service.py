@@ -3,6 +3,8 @@ from datetime import datetime
 from database.db_connection import (
     get_lv_docs_db, get_smile_fo_db, get_smile_bo_db, get_smile_hr_db
 )
+from models.rbac_md import RBACModel
+from core.security import verify_password, get_password_hash # Hàm băm bạn đã có
 
 DEFAULT_PASSWORD = "Lavie@123" # Mật khẩu mặc định cho lần đầu Sync
 
@@ -115,5 +117,44 @@ class AuthService:
             cursor.execute(sql, (username,))
             # .lower() để biến tất cả 'ADMIN', 'Admin' thành 'admin'
             return [str(row[0]).strip().lower() for row in cursor.fetchall()]
+        finally:
+            conn.close()
+#admin reset pass
+    @staticmethod
+    def admin_reset_password_logic(username: str, new_pass: str, admin_user: str):
+        conn = get_lv_docs_db()
+        try:
+            cursor = conn.cursor()
+            # 1. Băm mật khẩu mới
+            hashed_password = get_password_hash(new_pass)
+            
+            # 2. Cập nhật vào DB
+            cursor.execute(RBACModel.SQL_ADMIN_RESET_PASSWORD, (hashed_password, admin_user, username))
+            conn.commit()
+            return True
+        finally:
+            conn.close()
+    #user change password
+    @staticmethod
+    def change_password_logic(username: str, data: dict):
+        conn = get_lv_docs_db()
+        try:
+            cursor = conn.cursor()
+            # 1. Lấy mật khẩu cũ từ Database
+            cursor.execute(RBACModel.SQL_GET_USER_PASSWORD_HASH, (username,))
+            user = cursor.fetchone()
+            
+            if not user:
+                raise ValueError("Người dùng không tồn tại")
+
+            # 2. Kiểm tra mật khẩu cũ (verify_password là hàm băm của bạn)
+            if not verify_password(data['old_password'], user.Password_Hash):
+                raise ValueError("Mật khẩu cũ không chính xác")
+            
+            # 3. Băm mật khẩu mới và cập nhật
+            new_hash = get_password_hash(data['new_password'])
+            cursor.execute(RBACModel.SQL_UPDATE_USER_PASSWORD, (new_hash, username))
+            conn.commit()
+            return True
         finally:
             conn.close()

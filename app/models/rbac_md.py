@@ -75,4 +75,16 @@ class RBACModel:
         GROUP BY r.RoleCode, r.RoleName, r.ModuleName
         ORDER BY r.ModuleName, r.RoleName
     """
+    # SQL Admin đặt lại mật khẩu cho User
+    SQL_ADMIN_RESET_PASSWORD = """
+        UPDATE dbo.tbl_Users 
+        SET Password_Hash = ?, UpdatedBy = ?, UpdatedAt = GETDATE() 
+        WHERE Username = ?
+    """
+    # user change password
+    # Lấy hash mật khẩu hiện tại để so khớp
+    SQL_GET_USER_PASSWORD_HASH = "SELECT Password_Hash FROM dbo.tbl_Users WHERE Username = ?"
+
+    # Cập nhật mật khẩu mới (do chính User thực hiện)
+    SQL_UPDATE_USER_PASSWORD = "UPDATE dbo.tbl_Users SET Password_Hash = ?, UpdatedAt = GETDATE() WHERE Username = ?"
     

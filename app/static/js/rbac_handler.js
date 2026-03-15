@@ -26,6 +26,9 @@ $(document).ready(function () {
             <button class="btn btn-sm btn-outline-primary fw-bold" onclick="showAssignRole('${data}')">
                 <i class="fas fa-user-edit me-1"></i> Gán quyền
             </button>
+            <button class="btn btn-sm btn-outline-warning fw-bold ms-1" onclick="openAdminResetPass('${data}')" title="Đặt lại mật khẩu">
+                <i class="fas fa-key"></i> Reset password
+            </button>
         `;
                 }
             }
@@ -218,5 +221,32 @@ async function saveBulkUserRoles() {
         // 3. Tải lại dữ liệu mới từ Server
         $('#tblUsers').DataTable().ajax.reload(null, false);
         // null, false: Giúp giữ nguyên trang (pagination) đang xem
+    }
+}
+// ADMIN RESET PASS
+function openAdminResetPass(username) {
+    $('#resetTargetUser').text(username);
+    $('#admin_new_pass').val('');
+    $('#modalAdminResetPass').modal('show');
+}
+
+async function submitAdminResetPass() {
+    const username = $('#resetTargetUser').text();
+    const newPass = $('#admin_new_pass').val();
+
+    if (newPass.length < 6) {
+        Swal.fire('Chú ý', 'Mật khẩu phải từ 6 ký tự trở lên', 'warning');
+        return;
+    }
+
+    const res = await fetch('/rbac/users/admin-reset-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: username, new_password: newPass })
+    });
+
+    if (res.ok) {
+        Swal.fire('Thành công', 'Mật khẩu đã được đặt lại!', 'success');
+        $('#modalAdminResetPass').modal('hide');
     }
 }

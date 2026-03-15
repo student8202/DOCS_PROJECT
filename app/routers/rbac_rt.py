@@ -1,8 +1,10 @@
 # app/routers/rbac_rt.py
 from fastapi import APIRouter, Request
 from controllers.rbac_ct import RBACController
+from controllers.auth_controller import AuthController
 from schemas.rbac_sh import (PermissionCreate, RolePermissionMap,PermissionRead, 
-                             RoleRead, RoleCreate,UserRoleUpdate,RoleWithPermsRead,BulkRoleAssignRequest)
+                             RoleRead, RoleCreate,UserRoleUpdate,RoleWithPermsRead,BulkRoleAssignRequest,
+                             AdminResetPassRequest)
 from typing import List  
 
 router = APIRouter(prefix="/rbac", tags=["RBAC"])
@@ -90,3 +92,12 @@ async def api_bulk_save_roles(request: Request, data: BulkRoleAssignRequest):
     
     # Router mỏng, chỉ chuyển tiếp sang Controller
     return RBACController.bulk_assign_user_roles(data, admin_user)
+
+# admin reset password
+@router.post("/users/admin-reset-password")
+async def api_admin_reset_pass(request: Request, data: AdminResetPassRequest):
+    # 1. Lấy Username của người đang thực hiện (Admin) từ Session để ghi log UpdatedBy
+    admin_executor = request.session.get("username", "SYSTEM")
+    
+    # 2. Router gọi Controller xử lý
+    return AuthController.admin_reset_pass(data, admin_executor)

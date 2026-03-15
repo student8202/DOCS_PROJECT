@@ -55,3 +55,12 @@ class RoleWithPermsRead(BaseModel):
 class BulkRoleAssignRequest(BaseModel):
     usernames: List[str]  # Danh sách các User được chọn
     role_codes: List[str] # Các Role muốn gán cho nhóm này
+    
+class AdminResetPassRequest(BaseModel):
+    username: str
+    new_password: str = Field(..., min_length=6)
+ # user change password   
+class ChangePasswordRequest(BaseModel):
+    old_password: str
+    new_password: str = Field(..., min_length=6)
+    confirm_password: str
