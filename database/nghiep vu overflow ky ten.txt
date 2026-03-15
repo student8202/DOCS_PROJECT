@@ -1,0 +1,9 @@
+Tại sao đây là bước hoàn tất Phân quyền?
+Giờ đây bạn đã có một chu trình khép kín:
+1. Sync User từ SMILE.
+2. Khai báo Permission (vd: view_fo).
+3. Khai báo Role (vd: receptionist).
+4. Gán Permission vào Role (Dùng nút Răng cưa).
+5. Gán Role cho User (Dùng trang Manage này).
+Hệ thống RBAC của bạn đã chính thức hoàn thành 100%
+----------------------------------

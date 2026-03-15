@@ -1,40 +1,217 @@
 .btn-sm-custom {
-    font-size: 0.75rem; /* Giảm kích thước icon bên trong */
-    opacity: 0.8;       /* Làm mờ nhẹ cho tinh tế */
+    font-size: 0.75rem;
+    /* Giảm kích thước icon bên trong */
+    opacity: 0.8;
+    /* Làm mờ nhẹ cho tinh tế */
 }
 
+/* --- CHẾ ĐỘ COMPACT (THU NHỎ) TOÀN HỆ THỐNG --- */
+
+/* 1. Thu nhỏ Font chữ gốc của toàn bộ trang web */
+html,
+body {
+    font-size: 13px !important;
+    /* Giảm từ 16px xuống 13px */
+    line-height: 1.4;
+    color: #2f353a;
+}
+/* Triệt tiêu lề âm mặc định của row trong container-fluid */
+.container-fluid .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Đảm bảo nội dung luôn sát lề trái */
+.body .container-fluid {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* 2. Thu nhỏ Sidebar (Menu trái) */
+.sidebar-nav .nav-link {
+    padding: 0.5rem 0.8rem !important;
+    /* Giảm khoảng cách giữa các menu */
+    font-size: 0.85rem !important;
+}
+
+.sidebar-nav .nav-icon {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    font-size: 1rem !important;
+}
+
+.nav-title {
+    padding: 0.5rem 1rem 0.25rem !important;
+    font-size: 0.7rem !important;
+    /* Chữ tiêu đề nhóm menu nhỏ lại */
+}
+
+/* 3. Thu nhỏ Card và Header */
+.card-header {
+    padding: 0.5rem 1rem !important;
+}
+
+.card-title {
+    font-size: 1rem !important;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 0.75rem !important;
+}
+
+/* 4. Thu nhỏ các ô nhập liệu (Input, Select) */
+.form-control,
+.form-select,
+.btn {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.6rem !important;
+    /* Làm các ô nhập liệu mỏng lại */
+}
+
+.form-label {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* 5. Thu nhỏ các tiêu đề (H1 -> H6) */
+h1 {
+    font-size: 1.5rem !important;
+}
+
+h2 {
+    font-size: 1.3rem !important;
+}
+
+h3 {
+    font-size: 1.1rem !important;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1rem !important;
+}
+
+/* 6. Fix lại DataTables để đồng bộ hoàn toàn */
+.dataTables_wrapper {
+    font-size: 0.85rem !important;
+}
+
+/* --- TỐI ƯU KHOẢNG TRỐNG TUYỆT ĐỐI (ULTRA COMPACT) --- */
+
+/* 1. Reset Wrapper và Body */
+.wrapper {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.body {
+    padding: 0 !important; /* Xóa sạch padding của body */
+    background-color: #edeff1;
+}
+
+/* 2. Ép Container-fluid sát Sidebar nhất có thể */
+.container-fluid {
+    padding-left: 6px !important;  /* Khoảng hở 6px cực nhỏ giữa Sidebar và nội dung */
+    padding-right: 6px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* 3. Thu hẹp khoảng cách giữa các bảng (Cột Trái/Phải) */
+.row {
+    --cui-gutter-x: 10px !important; 
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 4. ĐIỀU KHIỂN ĐỘ ĐẨY CỦA SIDEBAR (QUAN TRỌNG NHẤT) */
+@media (min-width: 992px) {
+    /* Khi Sidebar mở rộng: Đẩy đúng 256px */
+    .sidebar-fixed ~ .wrapper {
+        margin-left: 256px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
+
+    /* Khi Sidebar thu nhỏ (Narrow/Unfoldable): Đẩy đúng 64px */
+    .sidebar-narrow.sidebar-fixed ~ .wrapper,
+    .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
+        margin-left: 64px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
+
+    /* Khi Sidebar bị ẩn hoàn toàn */
+    .sidebar-hide.sidebar-fixed ~ .wrapper {
+        margin-left: 0 !important;
+    }
+}
+
+/* 5. Làm Header mỏng và sát lề */
+.header {
+    min-height: 40px !important;
+    margin-bottom: 5px !important; /* Khoảng cách nhỏ giữa Header và nội dung */
+    padding: 0 !important;
+}
+
+.header .container-fluid {
+    height: 40px !important;
+    padding-left: 15px !important; /* Thụt vào một chút cho nút Menu dễ bấm */
+}
+
+/* 6. Footer mỏng lại */
+.footer {
+    padding: 5px 15px !important;
+    min-height: 30px !important;
+}
+/* --- END TỐI ƯU KHOẢNG TRỐNG (TIGHTEN LAYOUT) --- */
+/* --- END CHẾ ĐỘ COMPACT (THU NHỎ) TOÀN HỆ THỐNG --- */
 /* Đảm bảo nội dung không bao giờ bị Sidebar đè trong CoreUI 5 */
 
 @media (min-width: 992px) {
-  /* Khi Sidebar đang hiển thị đầy đủ */
-  .sidebar-fixed ~ .wrapper {
-    margin-left: 256px !important;
-    transition: margin-left 0.15s ease-in-out;
-  }
+    /* 1. Đẩy Wrapper khít tuyệt đối với độ rộng Sidebar */
+    .sidebar-fixed ~ .wrapper {
+        margin-left: 210px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
 
-  /* Khi Sidebar ở chế độ thu nhỏ (narrow) */
-  .sidebar-narrow.sidebar-fixed ~ .wrapper,
-  .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
-    margin-left: 64px !important;
-  }
+    /* 2. Khi Sidebar thu nhỏ (narrow/unfoldable) */
+    .sidebar-narrow.sidebar-fixed ~ .wrapper,
+    .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
+        margin-left: 60px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
 
-  /* Khi Sidebar bị ẩn hoàn toàn */
-  .sidebar-hide.sidebar-fixed ~ .wrapper {
-    margin-left: 0 !important;
-  }
+    /* 3. Khi Sidebar bị ẩn hoàn toàn */
+    .sidebar-hide.sidebar-fixed ~ .wrapper {
+        margin-left: 0 !important;
+    }
+
+    /* 4. ĐÒN QUYẾT ĐỊNH: Triệt tiêu padding của nội dung bên trong */
+    /* Đây mới là thứ tạo ra cái khe hở bạn nhìn thấy */
+    .wrapper .body .container-fluid {
+        padding-left: 2px !important;   /* Chỉ để 2px để Card không chạm hẳn vào Sidebar */
+        padding-right: 5px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 }
 
 /* Fix tiêu đề bị tràn khi Sidebar thu nhỏ */
 .sidebar-brand-narrow {
     display: none;
 }
+
 .sidebar-narrow .sidebar-brand-full {
     display: none;
 }
+
 .sidebar-narrow .sidebar-brand-narrow {
     display: block;
     font-size: 1.2rem;
 }
+
 /* menu slide bar */
 /* --- TÙY CHỈNH SIDEBAR LAVIE PROJECT --- */
 
@@ -46,12 +223,14 @@
 }
 
 .nav-group.show {
-    background: rgba(0, 0, 0, 0.15); /* Làm tối vùng menu cha đang mở */
+    background: rgba(0, 0, 0, 0.15);
+    /* Làm tối vùng menu cha đang mở */
 }
 
 /* 2. Menu Con (Items): Thụt đầu dòng và chữ nhỏ hơn một chút */
 .nav-group-items .nav-item .nav-link {
-    padding-left: 3.5rem !important; /* Thụt vào để phân biệt với cha */
+    padding-left: 3.5rem !important;
+    /* Thụt vào để phân biệt với cha */
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.6) !important;
     position: relative;
@@ -79,7 +258,8 @@
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
-    background: #321fdb; /* Màu xanh đặc trưng CoreUI */
+    background: #321fdb;
+    /* Màu xanh đặc trưng CoreUI */
     border-radius: 50%;
 }
 
@@ -90,4 +270,137 @@
     color: #4f5d73;
 }
 
+/* xử lý thêm phân quyền cho role*/
+.cursor-pointer {
+    cursor: pointer;
+}
 
+.transition-all {
+    transition: all 0.2s ease-in-out;
+}
+
+.hover-shadow-sm:hover {
+    border-color: #3c4b64 !important;
+    background-color: #f8f9fa;
+}
+
+/* Căn giữa tuyệt đối cho cột checkbox */
+.dt-center {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Làm checkbox to và đẹp hơn trang phân quyền user */
+.user-checkbox,
+#checkAll {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Xóa khoảng trống thừa của DataTables ở cột đầu tiên */
+#tblUsers thead th:first-child {
+    padding-right: 10px !important;
+    /* Bỏ chỗ cho icon sort */
+    width: 40px !important;
+}
+
+/* Tránh chữ bị xuống dòng quá nhiều làm hàng quá cao trên mobile */
+#tblUsers td,
+#tblUsers th {
+    white-space: nowrap;
+    /* Không cho xuống dòng tự do */
+    vertical-align: middle;
+    font-size: 13px;
+    /* Giảm nhẹ size chữ trên mobile */
+}
+
+/* Trên mobile, cột Username và Họ Tên có thể dài, ta cho phép nó co giãn */
+@media (max-width: 768px) {
+    #tblUsers td:nth-child(3) {
+        white-space: normal;
+        /* Cho phép cột Họ Tên xuống dòng nếu quá dài */
+        min-width: 120px;
+    }
+
+    /* Nút gán quyền trên mobile làm nhỏ lại cho gọn */
+    .btn-sm {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* --- PHONG CÁCH BẢNG NHỎ GỌN (COMPACT MODE) CHO TOÀN DỰ ÁN --- */
+
+/* 1. Ép tất cả các ô trong bảng nhỏ lại */
+.dataTable td,
+.dataTable th {
+    padding: 0.4rem 0.5rem !important;
+    /* Giảm padding */
+    font-size: 0.85rem !important;
+    /* Chữ nhỏ lại (khoảng 13px) */
+    vertical-align: middle !important;
+    white-space: nowrap;
+    /* Ngăn xuống dòng lung tung */
+}
+
+/* 2. Ép tất cả các nút TRONG bảng phải là nút nhỏ (btn-sm) */
+.dataTable .btn {
+    padding: 0.2rem 0.4rem !important;
+    font-size: 0.75rem !important;
+    /* Chữ trong nút cực nhỏ gọn */
+    line-height: 1.2;
+}
+
+/* 3. Icon trong nút cũng phải nhỏ theo */
+.dataTable .btn i {
+    font-size: 0.75rem;
+    margin-right: 2px;
+}
+
+/* 4. Tùy chỉnh thanh cuộn ngang trên điện thoại cho mượt */
+.table-responsive {
+    border: none !important;
+    margin-bottom: 0;
+}
+
+/* 5. Highlight dòng khi hover cho dễ nhìn */
+.dataTable tbody tr:hover {
+    background-color: rgba(60, 75, 100, 0.05) !important;
+}
+/* 1. Nới rộng ô select một chút để hiện đủ số 10, 25, 50 */
+.dataTables_length select {
+    min-width: 65px !important;      /* Đảm bảo đủ chỗ cho 2 chữ số và mũi tên */
+    padding-right: 1.2rem !important; /* Khoảng trống cho icon mũi tên */
+    text-align: center;
+    display: inline-block !important;
+}
+
+/* 2. Cân đối lại chữ "Xem ... bản ghi" cho đẹp */
+.dataTables_length label {
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Khoảng cách giữa chữ và ô chọn */
+}
+/* --- END PHONG CÁCH BẢNG NHỎ GỌN (COMPACT MODE) CHO TOÀN DỰ ÁN --- */
+
+/* Tinh chỉnh Dropdown Header */
+.dropdown-item:active {
+    background-color: #3c4b64 !important;
+}
+
+.dropdown-item i {
+    opacity: 0.8;
+}
+
+/* Hiệu ứng mờ nhẹ cho Avatar */
+.avatar {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50%;
+}

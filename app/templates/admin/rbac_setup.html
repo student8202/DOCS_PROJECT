@@ -55,7 +55,9 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <form id="formAddPerm">
-                <div class="modal-header">Thêm hành động mới</div>
+                <div class="modal-header">Thêm hành động mới
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
+                </div>
                 <div class="modal-body">
                     <div class="mb-3">
                         <label class="form-label small fw-bold">Mã quyền (vd: view_fo)</label>
@@ -88,10 +90,12 @@
     <div class="modal-dialog">
         <div class="modal-content border-top-warning border-4">
             <form id="formAddRole">
-                <div class="modal-header">Thêm Vai trò (Nhóm quyền)</div>
+                <div class="modal-header">Thêm Vai trò (Nhóm quyền)
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
+                </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="form-label small fw-bold">Mã vai trò (vd: fo_staff)</label>
+                        <label class="form-label small fw-bold">Mã vai trò (vd: Reservation)</label>
                         <input type="text" name="code" class="form-control" required
                             placeholder="Chữ thường, không dấu">
                     </div>
@@ -120,25 +124,31 @@
         </div>
     </div>
 </div>
-<!-- CHÈN VÀO ĐÂY: Modal Mapping Permission to Role -->
-<div class="modal fade" id="modalConfigRole" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+<!-- Modal Cấu hình Quyền cho Role -->
+<div class="modal fade" id="modalConfigRole" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg border-top border-4 border-warning">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cấu hình quyền cho: <span id="configRoleTitle"
+                <h5 class="modal-title">Cấu hình quyền cho vai trò: <span id="configRoleTitle"
                         class="text-primary fw-bold"></span></h5>
                 <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p class="text-muted small">Tích chọn các hành động được phép thực hiện cho vai trò này.</p>
-                <div id="permCheckboxContainer" class="row">
-                    <!-- Checkbox các Permission sẽ được JS đổ vào đây -->
+                <div class="alert alert-light border small mb-3">
+                    <i class="fas fa-info-circle me-2"></i> Hệ thống tự động lọc danh sách Quyền theo đúng Phân hệ của
+                    Vai trò này.
+                </div>
+                <!-- Nơi JS đổ Checkbox vào -->
+                <div id="permCheckboxContainer" class="row g-3">
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary"></div>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Đóng</button>
-                <button class="btn btn-primary fw-bold" onclick="saveRoleMapping()">
-                    <i class="fas fa-save me-2"></i>CẬP NHẬT CẤU HÌNH
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Hủy</button>
+                <button class="btn btn-warning text-white fw-bold" onclick="saveRoleMapping()">
+                    <i class="fas fa-save me-2"></i> CẬP NHẬT CẤU HÌNH
                 </button>
             </div>
         </div>

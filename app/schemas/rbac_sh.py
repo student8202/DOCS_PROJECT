@@ -28,7 +28,7 @@ class RoleRead(BaseModel):
 # Schema dùng để gán danh sách Quyền vào 1 Vai trò (LỖI Ở ĐÂY)
 class RolePermissionMap(BaseModel):
     role_code: str
-    permission_codes: List[str] # Danh sách mã quyền chữ thường
+    permission_codes: List[str]  # Danh sách các mã quyền (chữ thường) được tích chọn
 
 # Schema dùng để gán Role cho User (Để dùng cho rbac_manage.html)
 class UserRoleUpdate(BaseModel):
@@ -46,3 +46,12 @@ class PermissionRead(BaseModel):
     PermissionName: str
     ModuleName: str
 
+class RoleWithPermsRead(BaseModel):
+    RoleCode: str
+    RoleName: Optional[str] = None
+    ModuleName: Optional[str] = None
+    PermList: Optional[str] = "N/A"
+
+class BulkRoleAssignRequest(BaseModel):
+    usernames: List[str]  # Danh sách các User được chọn
+    role_codes: List[str] # Các Role muốn gán cho nhóm này

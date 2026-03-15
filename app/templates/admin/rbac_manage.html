@@ -5,20 +5,30 @@
     <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
         <h5 class="mb-0 text-primary fw-bold"><i class="fas fa-user-shield me-2"></i>QUẢN LÝ PHÂN QUYỀN NGƯỜI DÙNG</h5>
     </div>
-    <div class="card-body">
-        <table id="tblUsers" class="table table-hover table-striped border w-100">
-            <thead>
-                <tr class="bg-light">
-                    <th>Username (ClerkID)</th>
-                    <th>Họ và Tên</th>
-                    <th>Vai trò (Roles)</th>
-                    <th class="text-center">Thao tác</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Dữ liệu load qua AJAX -->
-            </tbody>
-        </table>
+    <div class="card-body p-0 p-md-3"> <!-- Giảm padding trên mobile cho rộng chỗ -->
+        <div class="mb-3 d-flex justify-content-between align-items-center">
+            <div id="bulkActionArea" style="display: none;">
+                <button class="btn btn-warning fw-bold text-white shadow-sm" onclick="openBulkRoleModal()">
+                    <i class="fas fa-users-cog me-2"></i> GÁN QUYỀN CHO <span id="selectedCount">0</span> NHÂN VIÊN
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table id="tblUsers" class="table table-hover table-striped border w-100">
+                <thead>
+                    <tr class="bg-light">
+                        <th class="text-center"><input type="checkbox" id="checkAll"></th> <!-- Cột chọn hàng loạt -->
+                        <th>Username (ClerkID)</th>
+                        <th>Họ và Tên</th>
+                        <th>Vai trò (Roles)</th>
+                        <th class="text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dữ liệu load qua AJAX -->
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
@@ -27,7 +37,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-top border-4 border-primary">
             <div class="modal-header">
-                <h5 class="modal-title">Gán vai trò cho: <span id="displayUsername" class="text-primary"></span></h5>
+                <h5 class="modal-title">Gán vai trò cho: <span id="targetUser" class="text-primary fw-bold"></span></h5>
                 <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
             </div>
             <div class="modal-body">

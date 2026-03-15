@@ -1,0 +1,30 @@
+<!-- Cấp 1: Phân hệ -->
+{% for module, roles in grouped_roles.items() %}
+<div class="fw-bold text-primary mt-3 mb-2 border-bottom pb-1 small">
+    <i class="fas fa-folder-open me-2"></i> PHÂN HỆ: {{ module }}
+</div>
+
+<!-- Cấp 2: Vai trò -->
+{% for r in roles %}
+<div class="card shadow-none border-light mb-2 bg-light bg-opacity-10">
+    <div class="form-check p-2 ms-2">
+        <input class="form-check-input chk-user-role" type="checkbox" value="{{ r.RoleCode }}" 
+               id="r_{{ r.RoleCode }}" {% if r.RoleCode in my_roles %}checked{% endif %}>
+        <label class="form-check-label w-100 cursor-pointer" for="r_{{ r.RoleCode }}">
+            <div class="fw-bold text-dark small">{{ r.RoleName }} 
+                <span class="badge bg-secondary-light text-secondary ms-1" style="font-size: 9px;">{{ r.RoleCode }}</span>
+            </div>
+        </label>
+    </div>
+    
+    <!-- Cấp 3: Danh sách quyền con (Mỗi quyền một dòng) -->
+    <div class="pb-2">
+        {% for p in r.PermList.split(' | ') %}
+        <div class="text-muted ps-4 mb-1" style="font-size: 11px;">
+            <i class="fas fa-caret-right me-2 text-secondary"></i>{{ p }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+{% endfor %}

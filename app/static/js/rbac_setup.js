@@ -96,3 +96,42 @@ $('#formAddRole').on('submit', async function (e) {
         Swal.fire('Lỗi', error.detail, 'error');
     }
 });
+// phần cấu hình quyền cho role
+// 1. Hàm mở Modal và load dữ liệu (Lọc theo Module từ Backend)
+async function openConfigRole(roleCode) {
+    $('#configRoleTitle').text(roleCode);
+    $('#modalConfigRole').modal('show');
+    
+    // JS chỉ việc "đi lấy mẩu HTML" đã nấu sẵn về và dán vào
+    const response = await fetch(`/rbac/role-config-html/${roleCode}`);
+    const html = await response.text();
+    
+    $('#permCheckboxContainer').html(html);
+}
+
+// 2. Hàm lưu dữ liệu (Xóa cũ - Ghi mới)
+async function saveRoleMapping() {
+    const roleCode = $('#configRoleTitle').text();
+    const selectedPerms = [];
+    
+    // Thu thập tất cả các quyền đã được tích
+    $('.chk-role-perm:checked').each(function() {
+        selectedPerms.push($(this).val());
+    });
+
+    const res = await fetch('/rbac/roles/save-permissions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            role_code: roleCode, 
+            permission_codes: selectedPerms 
+        })
+    });
+
+    if (res.ok) {
+        Swal.fire('Thành công', `Đã cập nhật quyền cho nhóm ${roleCode}!`, 'success');
+        $('#modalConfigRole').modal('hide');
+    } else {
+        Swal.fire('Lỗi', 'Không thể lưu cấu hình quyền', 'error');
+    }
+}

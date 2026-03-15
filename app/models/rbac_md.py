@@ -46,4 +46,33 @@ class RBACModel:
         INSERT INTO {TABLE_ROLE_PERMISSIONS} (RoleCode, PermissionCode, CreatedBy, CreatedAt)
         VALUES (?, ?, ?, GETDATE())
     """
+    ## phân quyền role cho users
+    # SQL lấy User kèm chuỗi Role (ngăn cách bởi dấu phẩy)
+    SQL_GET_USERS_WITH_ROLES = """
+        SELECT u.Username, u.FullName, u.Department, u.IsActive,
+               ISNULL(STRING_AGG(ur.RoleCode, ', '), '') as Roles
+        FROM dbo.tbl_Users u
+        LEFT JOIN dbo.tbl_UserRoles ur ON u.Username = ur.Username
+        GROUP BY u.Username, u.FullName, u.Department, u.IsActive
+    """
+    # SQL lấy danh sách RoleCode mà một User đang có
+    SQL_GET_ROLES_BY_USER = f"SELECT RoleCode FROM {TABLE_USER_ROLES} WHERE Username = ?"
+
+    # SQL xóa sạch Role cũ của User (Cơ chế Sync)
+    SQL_DELETE_USER_ROLES = f"DELETE FROM {TABLE_USER_ROLES} WHERE Username = ?"
+
+    # SQL gán một Role mới cho User
+    SQL_INSERT_USER_ROLE = f"""
+        INSERT INTO {TABLE_USER_ROLES} (Username, RoleCode, CreatedBy, CreatedAt)
+        VALUES (?, ?, ?, GETDATE())
+    """
+    SQL_GET_ROLES_WITH_PERMS = """
+        SELECT r.RoleCode, r.RoleName, r.ModuleName,
+               ISNULL(STRING_AGG('[' + p.PermissionCode + '] ' + p.PermissionName, ' | '), 'N/A') as PermList
+        FROM dbo.tbl_Roles r
+        LEFT JOIN dbo.tbl_RolePermissions rp ON r.RoleCode = rp.RoleCode
+        LEFT JOIN dbo.tbl_PermissionList p ON rp.PermissionCode = p.PermissionCode
+        GROUP BY r.RoleCode, r.RoleName, r.ModuleName
+        ORDER BY r.ModuleName, r.RoleName
+    """
     

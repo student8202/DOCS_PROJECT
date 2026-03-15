@@ -1,0 +1,25 @@
+<!-- rbac_perm_items.html -->
+{% for module, perms in grouped_perms.items() %}
+    <div class="col-12 mt-3 mb-2">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1 border-bottom border-2"></div>
+            <span class="px-3 fw-bold text-primary small text-uppercase">{{ module }}</span>
+            <div class="flex-grow-1 border-bottom border-2"></div>
+        </div>
+    </div>
+    {% for p in perms %}
+    <div class="col-md-6 mb-2">
+        <div class="form-check card h-100 p-2 border-light shadow-none hover-shadow-sm cursor-pointer">
+            <div class="d-flex align-items-center">
+                <input class="form-check-input chk-role-perm ms-1" type="checkbox" 
+                       value="{{ p.PermissionCode }}" id="p_{{ p.PermissionCode }}"
+                       {% if p.PermissionCode in current_perms %}checked{% endif %}>
+                <label class="form-check-label w-100 ms-3 cursor-pointer" for="p_{{ p.PermissionCode }}">
+                    <div class="fw-bold text-dark">{{ p.PermissionCode }}</div>
+                    <div class="text-medium-emphasis small">{{ p.PermissionName }}</div>
+                </label>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endfor %}
