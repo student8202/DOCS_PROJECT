@@ -1,115 +1,36 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-<div class="row mb-4">
+<!-- PHẦN CHÀO MỪNG CHUNG -->
+<div class="row mb-2">
     <div class="col-12">
-        <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
-                <h3 class="card-title text-primary">Chào mừng đến với LaVie Project</h3>
-                <p class="text-muted">Hệ thống lưu trữ hồ sơ và quản trị nhân sự tập trung - Di sản dành cho con gái.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- <div class="alert alert-info">
-    Quyền của bạn trong Session: {{ user_permissions }}
-</div> -->
-<!-- CHỈ HIỆN PHẦN ĐỒNG BỘ NẾU LÀ ADMIN -->
-{% if 'admin' in user_permissions %}
-<!-- KHU VỰC 3 NÚT SYNC THÔNG MINH -->
-<div class="row gx-4">
-    <!-- Nút Sync FO -->
-    <div class="col-md-4 mb-4">
-        <div class="card border-start border-start-4 border-start-info h-100 shadow-sm">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <div class="text-medium-emphasis small text-uppercase fw-semibold">Phân hệ Tiền sảnh</div>
-                        <div class="fs-4 fw-bold">SMILE_FO</div>
-                    </div>
-                    <i class="fas fa-concierge-bell fa-2x text-info opacity-50"></i>
-                </div>
-                <div class="d-grid mt-4">
-                    <button onclick="handleSync('FO')" class="btn btn-info text-white fw-bold">
-                        <i class="fas fa-sync-alt me-2"></i> ĐỒNG BỘ USER FO
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Nút Sync BO -->
-    <div class="col-md-4 mb-4">
-        <div class="card border-start border-start-4 border-start-success h-100 shadow-sm">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <div class="text-medium-emphasis small text-uppercase fw-semibold">Phân hệ Kế toán</div>
-                        <div class="fs-4 fw-bold">SMILE_BO</div>
-                    </div>
-                    <i class="fas fa-file-invoice-dollar fa-2x text-success opacity-50"></i>
-                </div>
-                <div class="d-grid mt-4">
-                    <button onclick="handleSync('BO')" class="btn btn-success text-white fw-bold">
-                        <i class="fas fa-sync-alt me-2"></i> ĐỒNG BỘ USER BO
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Nút Sync HR -->
-    <div class="col-md-4 mb-4">
-        <div class="card border-start border-start-4 border-start-warning h-100 shadow-sm">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <div class="text-medium-emphasis small text-uppercase fw-semibold">Phân hệ Nhân sự</div>
-                        <div class="fs-4 fw-bold">SMILE_HR</div>
-                    </div>
-                    <i class="fas fa-users fa-2x text-warning opacity-50"></i>
-                </div>
-                <div class="d-grid mt-4">
-                    <button onclick="handleSync('HR')" class="btn btn-warning text-white fw-bold">
-                        <i class="fas fa-sync-alt me-2"></i> ĐỒNG BỘ USER HR
-                    </button>
-                </div>
+        <div class="card shadow-sm border-0 border-start border-4 border-primary bg-white py-1">
+            <div class="card-body py-1 px-3 d-flex justify-content-between align-items-center">
+                <h6 class="mb-0 fw-bold">DASHBOARD: {{ target_view | upper }}</h6>
+                <span class="small text-muted">Hệ thống LaVie - {{ request.session.get('full_name') }}</span>
             </div>
         </div>
     </div>
 </div>
 
-<script>
-    async function handleSync(type) {
-        const result = await Swal.fire({
-            title: `Đồng bộ từ SMILE_${type}?`,
-            text: `Hệ thống sẽ quét User mới và cập nhật trạng thái từ database SMILE_${type}.`,
-            icon: 'question',
-            showCancelButton: true,
-            confirmButtonText: 'Bắt đầu ngay',
-            cancelButtonText: 'Hủy bỏ'
-        });
+<!-- PHẦN NỘI DUNG BIẾN ĐỔI (DYNAMIC) -->
+<div class="row">
+    <div class="col-12">
+        {% if target_view == 'fo' %}
+            {% include 'dashboard/db_fo_inhouse.html' %}
+        {% elif target_view == 'bo' %}
+            {% include 'dashboard/db_bo_vouchers.html' %}
+        {% elif target_view == 'hr' %}
+            {% include 'dashboard/db_hr_employees.html' %}
+        {% else %}
+            <!-- Dashboard mặc định cho người không có quyền chuyên biệt -->
+            <div class="card p-5 text-center text-muted">Vui lòng liên hệ Admin để gán quyền phân hệ.</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
 
-        if (result.isConfirmed) {
-            Swal.fire({ title: 'Đang xử lý...', allowOutsideClick: false, didOpen: () => { Swal.showLoading(); } });
-            
-            try {
-                const response = await fetch(`/auth/sync/${type}`, { 
-                    method: 'POST',
-                    headers: { 'Authorization': `Bearer ${localStorage.getItem('access_token')}` }
-                });
-                const data = await response.json();
-                
-                if (response.ok) {
-                    Swal.fire('Thành công!', data.message, 'success');
-                } else {
-                    Swal.fire('Thất bại', data.detail || 'Lỗi không xác định', 'error');
-                }
-            } catch (err) {
-                Swal.fire('Lỗi kết nối', 'Không thể kết nối đến server LaVie', 'error');
-            }
-        }
-    }
-</script>
-{% endif %}
+{% block scripts %}
+    <!-- Nạp JS tương ứng với view đang hiển thị -->
+    <script src="/static/js/dashboards/{{ target_view }}_handler.js"></script>
 {% endblock %}

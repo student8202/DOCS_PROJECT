@@ -112,6 +112,8 @@ Lưu ý nhỏ để "Master" hơn:
 Về Schema: Nên chia làm 2 loại: UserCreate (dữ liệu khách gửi) và UserRead (dữ liệu trả về, ví dụ không chứa mật khẩu).
 Về Exception: Nên tạo một file exceptions.py riêng để định nghĩa các lỗi như EmailAlreadyExistsError, giúp Service và Controller dùng chung một "ngôn ngữ" lỗi.
 Lưu ý mỗi lần cung cấp cho tôi 1 file tôi làm xong bạn sẽ gửi cái khác theo thứ tự sau model -> schema -> service -> controller -> router -> template -> js
+Về phần js:  tổ chức JS theo mô hình Module Pattern. Thay vì viết một file dài dằng dặc, ta chia thành các "phân khu" chức năng rõ rệt. Theo luồng: Cấu hình (Config) -> Phụ trợ (UI Helpers) -> Hành động (Actions) -> Sự kiện (Events).
+Tóm lại: 5 lớp Backend và cấu trúc 4 phần JS
 ------------------------------
 vấn đề khi khai báo template ở từng router
 Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.

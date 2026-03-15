@@ -59,8 +59,4 @@ class BulkRoleAssignRequest(BaseModel):
 class AdminResetPassRequest(BaseModel):
     username: str
     new_password: str = Field(..., min_length=6)
- # user change password   
-class ChangePasswordRequest(BaseModel):
-    old_password: str
-    new_password: str = Field(..., min_length=6)
-    confirm_password: str
+ 

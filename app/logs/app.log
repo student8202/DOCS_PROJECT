@@ -7800,3 +7800,300 @@
 2026-03-15 15:50:22 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 6.10ms
 2026-03-15 15:52:50 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
 2026-03-15 15:52:50 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 12.06ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.13ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 15:55:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.03ms
+2026-03-15 15:55:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.35ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.00ms
+2026-03-15 15:55:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 15:55:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.09ms
+2026-03-15 15:55:10 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:10 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.22ms
+2026-03-15 15:55:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.31ms
+2026-03-15 15:55:11 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.06ms
+2026-03-15 15:55:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:55:11 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.07ms
+2026-03-15 15:55:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:55:11 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 15:55:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 15:55:11 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.25ms
+2026-03-15 15:55:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.09ms
+2026-03-15 15:55:11 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:11 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.99ms
+2026-03-15 15:55:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.47ms
+2026-03-15 15:55:12 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:55:12 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.05ms
+2026-03-15 15:55:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:55:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:55:13 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 15:55:13 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 15.80ms
+2026-03-15 15:55:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 15:55:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.37ms
+2026-03-15 15:55:22 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 15:55:22 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 4.63ms
+2026-03-15 15:55:25 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 15:55:25 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 3.59ms
+2026-03-15 15:55:25 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 15:55:26 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.55ms
+2026-03-15 15:55:32 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 15:55:32 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 17.84ms
+2026-03-15 15:55:35 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 15:55:35 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 4.13ms
+2026-03-15 15:55:35 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 15:55:35 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.04ms
+2026-03-15 15:55:43 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 15:55:43 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 4.84ms
+2026-03-15 15:56:05 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 15:56:05 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 3.14ms
+2026-03-15 15:56:24 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
+2026-03-15 15:56:24 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 3.05ms
+2026-03-15 15:57:01 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 15:57:01 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 1.07ms
+2026-03-15 15:57:23 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 127.0.0.1
+2026-03-15 15:57:23 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 4.54ms
+2026-03-15 15:57:35 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 127.0.0.1
+2026-03-15 15:57:35 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 3.00ms
+2026-03-15 15:59:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.27ms
+2026-03-15 15:59:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.01ms
+2026-03-15 15:59:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.01ms
+2026-03-15 15:59:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 15:59:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 15:59:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.11ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.31ms
+2026-03-15 15:59:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.05ms
+2026-03-15 15:59:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.59ms
+2026-03-15 15:59:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.34ms
+2026-03-15 15:59:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:23 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 15:59:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:59:23 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.38ms
+2026-03-15 15:59:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-15 15:59:23 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 15:59:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 15:59:23 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.06ms
+2026-03-15 15:59:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.89ms
+2026-03-15 15:59:23 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:23 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 15:59:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.29ms
+2026-03-15 15:59:24 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:59:24 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.37ms
+2026-03-15 15:59:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:59:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.25ms
+2026-03-15 15:59:25 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 15:59:25 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 18.07ms
+2026-03-15 15:59:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 15:59:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 15:59:28 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
+2026-03-15 15:59:28 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 5.65ms
+2026-03-15 15:59:32 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 15:59:32 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 3.77ms
+2026-03-15 15:59:37 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 15:59:37 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.02ms
+2026-03-15 15:59:44 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 15:59:44 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 1.99ms
+2026-03-15 15:59:49 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 127.0.0.1
+2026-03-15 15:59:49 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 4.34ms
+2026-03-15 15:59:53 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 15:59:53 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 3.26ms
+2026-03-15 15:59:55 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 15:59:55 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.99ms
+2026-03-15 16:04:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 16:04:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 16:04:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 16:04:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.06ms
+2026-03-15 16:04:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.81ms
+2026-03-15 16:04:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 16:04:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:04:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.51ms
+2026-03-15 16:04:28 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:04:28 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.53ms
+2026-03-15 16:04:29 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 16:04:29 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 22.11ms
+2026-03-15 16:04:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 16:04:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.22ms
+2026-03-15 16:04:35 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 16:04:35 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 7.88ms
+2026-03-15 16:04:46 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 16:04:46 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.01ms
+2026-03-15 16:04:53 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 16:04:53 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 4.00ms
+2026-03-15 16:05:04 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 16:05:04 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.15ms
+2026-03-15 16:05:15 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 16:05:15 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 1.99ms
+2026-03-15 16:05:19 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 16:05:19 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 7.69ms
+2026-03-15 16:05:19 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 16:05:19 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.16ms
+2026-03-15 16:05:24 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 16:05:24 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 3.34ms
+2026-03-15 16:05:27 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 16:05:27 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 3.61ms
+2026-03-15 16:05:28 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 16:05:28 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 16:05:33 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 127.0.0.1
+2026-03-15 16:05:33 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 6.56ms
+2026-03-15 16:05:36 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 16:05:36 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 3.56ms
+2026-03-15 16:05:36 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 16:05:36 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 1.88ms
+2026-03-15 16:07:03 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:07:03 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.03ms
+2026-03-15 16:07:03 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:07:03 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.03ms
+2026-03-15 16:07:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:07:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-15 16:07:03 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 16:07:03 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.02ms
+2026-03-15 16:07:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 16:07:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.14ms
+2026-03-15 16:07:05 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 16:07:05 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 25.48ms
+2026-03-15 16:07:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 16:07:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 16:26:44 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 16:26:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.60ms
+2026-03-15 16:26:45 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 16:26:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.77ms
+2026-03-15 16:26:47 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 16:26:47 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-15 16:26:48 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 16:26:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.09ms
+2026-03-15 16:26:52 | INFO     | START | POST /auth/sync/FO | IP: 192.168.1.47
+2026-03-15 16:26:53 | INFO     | END   | POST /auth/sync/FO | Status: 200 | Time: 339.89ms
+2026-03-15 16:26:55 | INFO     | START | POST /auth/sync/BO | IP: 192.168.1.47
+2026-03-15 16:26:55 | INFO     | END   | POST /auth/sync/BO | Status: 200 | Time: 326.96ms
+2026-03-15 16:26:58 | INFO     | START | POST /auth/sync/HR | IP: 192.168.1.47
+2026-03-15 16:26:58 | INFO     | END   | POST /auth/sync/HR | Status: 200 | Time: 293.15ms
+2026-03-15 16:27:05 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 16:27:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 6.59ms
+2026-03-15 16:27:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 16:27:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 16:27:05 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 16:27:05 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 1.55ms
+2026-03-15 16:27:14 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 16:27:14 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 7.60ms
+2026-03-15 16:27:20 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 192.168.1.47
+2026-03-15 16:27:20 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 15.92ms
+2026-03-15 16:27:20 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 16:27:20 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 16:27:28 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 192.168.1.47
+2026-03-15 16:27:28 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 10.24ms
+2026-03-15 16:27:31 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 16:27:31 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 2.01ms
+2026-03-15 16:27:32 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 16:27:32 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 10.37ms
+2026-03-15 16:28:04 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 192.168.1.47
+2026-03-15 16:28:04 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 4.27ms
+2026-03-15 16:28:07 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 16:28:07 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 15.82ms
+2026-03-15 16:28:07 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 16:28:07 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 12.22ms
+2026-03-15 16:28:12 | INFO     | START | GET /rbac/setup | IP: 192.168.1.47
+2026-03-15 16:28:12 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 0.00ms
+2026-03-15 16:28:13 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 16:28:13 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.00ms
+2026-03-15 16:28:13 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 16:28:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-03-15 16:28:13 | INFO     | START | GET /rbac/permissions-list | IP: 192.168.1.47
+2026-03-15 16:28:13 | INFO     | END   | GET /rbac/permissions-list | Status: 200 | Time: 4.02ms
+2026-03-15 16:28:34 | INFO     | START | GET /rbac/role-config-html/ADMIN | IP: 192.168.1.47
+2026-03-15 16:28:34 | INFO     | END   | GET /rbac/role-config-html/ADMIN | Status: 200 | Time: 14.78ms
+2026-03-15 16:28:42 | INFO     | START | GET /rbac/role-config-html/Reservation | IP: 192.168.1.47
+2026-03-15 16:28:42 | INFO     | END   | GET /rbac/role-config-html/Reservation | Status: 200 | Time: 5.90ms
+2026-03-15 16:28:48 | INFO     | START | GET /rbac/role-config-html/Reservation | IP: 192.168.1.47
+2026-03-15 16:28:48 | INFO     | END   | GET /rbac/role-config-html/Reservation | Status: 200 | Time: 6.81ms
+2026-03-15 16:28:55 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 16:28:55 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.90ms
+2026-03-15 16:28:56 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 16:28:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.38ms
+2026-03-15 21:40:32 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-15 21:40:32 | INFO     | END   | GET / | Status: 200 | Time: 4.14ms
+2026-03-15 21:40:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 21:40:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 21:40:41 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-15 21:40:41 | INFO     | User admin logged in successfully with 8 perms
+2026-03-15 21:40:41 | INFO     | END   | POST /auth/login | Status: 200 | Time: 306.45ms
+2026-03-15 21:40:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 21:40:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 16.01ms
+2026-03-15 21:40:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 21:40:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 21:40:57 | INFO     | START | GET /rbac/setup | IP: 127.0.0.1
+2026-03-15 21:40:57 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 8.08ms
+2026-03-15 21:40:59 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 21:40:59 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 65.20ms
+2026-03-15 21:40:59 | INFO     | START | GET /rbac/permissions-list | IP: 127.0.0.1
+2026-03-15 21:40:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 21:40:59 | INFO     | END   | GET /rbac/permissions-list | Status: 200 | Time: 3.76ms
+2026-03-15 21:40:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.90ms
+2026-03-15 21:41:03 | INFO     | START | GET /rbac/role-config-html/Accounting | IP: 127.0.0.1
+2026-03-15 21:41:03 | INFO     | END   | GET /rbac/role-config-html/Accounting | Status: 200 | Time: 11.43ms
+2026-03-15 21:41:06 | INFO     | START | GET /rbac/role-config-html/ADMIN | IP: 127.0.0.1
+2026-03-15 21:41:06 | INFO     | END   | GET /rbac/role-config-html/ADMIN | Status: 200 | Time: 5.08ms
+2026-03-15 21:41:10 | INFO     | START | GET /rbac/role-config-html/Reservation | IP: 127.0.0.1
+2026-03-15 21:41:10 | INFO     | END   | GET /rbac/role-config-html/Reservation | Status: 200 | Time: 5.11ms
+2026-03-15 22:27:29 | INFO     | START | GET /rbac/setup | IP: 127.0.0.1
+2026-03-15 22:27:29 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 25.05ms
+2026-03-15 22:27:30 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 22:27:30 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 41.98ms

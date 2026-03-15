@@ -4,6 +4,7 @@ from core.security import verify_password, create_access_token
 from schemas.auth import ChangePasswordRequest
 # from database.db_connection import get_lv_docs_db
 from loguru import logger
+from core.deps import templates 
 
 class AuthController:
     @staticmethod
@@ -79,3 +80,23 @@ class AuthController:
             raise HTTPException(status_code=400, detail=str(e))
         except Exception:
             raise HTTPException(status_code=500, detail="Lỗi hệ thống")
+        
+    # dynamic dashboard
+    @staticmethod
+    def render_dashboard(request: Request):
+        user_perms = request.session.get("permissions", [])
+        
+        # 1. Xác định "Phân hệ ưu tiên" để hiển thị Dashboard
+        # Ưu tiên: FO -> BO -> HR -> Default
+        target_view = "default"
+        if "view_fo" in user_perms:
+            target_view = "fo"
+        elif "view_bo" in user_perms:
+            target_view = "bo"
+        elif "view_hr" in user_perms:
+            target_view = "hr"
+            
+        return templates.TemplateResponse("dashboard.html", {
+            "request": request,
+            "target_view": target_view
+        })

@@ -1,14 +1,20 @@
 from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
 from controllers.rbac_ct import RBACController
+from controllers.fo_ct import FOController
 from models.rbac_md import RBACModel # Import Model
 from core.deps import templates # Import từ deps
 
 router = APIRouter(prefix="/fo", tags=["Front Office"])
 
-@router.get("/search", include_in_schema=False)
-async def fo_search_page(request: Request):
-    # Người gác cổng check quyền
-    RBACController.guard(request, RBACModel.PERM_VIEW_FO)
+# @router.get("/search", include_in_schema=False)
+# async def fo_search_page(request: Request):
+#     # Người gác cổng check quyền
+#     RBACController.guard(request, RBACModel.PERM_VIEW_FO)
     
-    return templates.TemplateResponse("fo_search.html", {"request": request})
+#     return templates.TemplateResponse("fo_search.html", {"request": request})
+
+@router.get("/inhouse-list")
+async def api_inhouse_list(request: Request):
+    # (Có thể thêm kiểm tra quyền view_fo ở đây)
+    return FOController.get_inhouse_list()

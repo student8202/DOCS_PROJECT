@@ -1,0 +1,30 @@
+<!-- Mẩu giao diện FO In-house -->
+<div class="card shadow-sm border-top border-4 border-success">
+    <div class="card-header bg-white py-1 d-flex justify-content-between align-items-center">
+        <span class="small fw-bold text-success">
+            <i class="fas fa-bed me-1"></i> KHÁCH ĐANG Ở (IN-HOUSE)
+        </span>
+        <div class="btn-group">
+            <button class="btn btn-sm py-0 text-secondary" onclick="FO_ACTIONS.reload()" title="Tải lại">
+                <i class="fas fa-sync-alt" style="font-size: 10px;"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table id="tblInHouseDash" class="table table-sm table-hover table-striped mb-0 w-100 border-0">
+                <thead>
+                    <tr class="bg-light text-uppercase" style="font-size: 10px;">
+                        <th class="text-center" style="width: 50px;">Phòng</th>
+                        <th style="width: 80px;">Booking</th>
+                        <th>Tên khách hàng</th>
+                        <th class="text-center">PA/CH/EN</th>
+                        <th>Ngày đến</th>
+                        <th>Ngày đi</th>
+                        <th>Công ty / Đại lý</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
