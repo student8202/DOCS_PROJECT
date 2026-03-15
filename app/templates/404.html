@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head><title>404 - Không tìm thấy</title></head>
+<html lang="vi">
+{% include 'includes/header.html' %}
 <body>
-    <h2>Opps! Trang bạn tìm không tồn tại.</h2>
-    <a href="/dashboard">Quay lại trang chủ</a>
+    <div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <div class="clearfix">
+                        <!-- Con số 404 lớn -->
+                        <h1 class="error-code float-start me-4">404</h1>
+                        <h4 class="pt-3">Oops! Bạn bị lạc đường rồi.</h4>
+                        <p class="error-desc">Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển sang phân hệ khác.</p>
+                    </div>
+                    
+                    <!-- Ô tìm kiếm nhanh (cho chuyên nghiệp) -->
+                    <div class="input-group mb-4 shadow-sm">
+                        <span class="input-group-text bg-white"><i class="fas fa-search text-muted"></i></span>
+                        <input class="form-control" type="text" placeholder="Bạn đang tìm gì?">
+                        <button class="btn btn-info text-white" type="button">Tìm</button>
+                    </div>
+
+                    <!-- Nút quay lại -->
+                    <a href="/dashboard" class="btn btn-primary btn-home shadow-sm">
+                        <i class="fas fa-home me-2"></i> Quay lại Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -64,59 +64,75 @@ $(document).ready(function () {
 
 // Hàm mở Modal gán quyền cho từng User
 async function showAssignRole(username) {
-    console.log(username)
+    // 1. Đưa tên User vào tiêu đề
     $('#targetUser').text(username);
+    
+    // 2. ÉP NÚT LƯU LUÔN GỌI saveUserRoles
+    $('#btnSaveRole').attr('onclick', 'saveUserRoles()');
+
     $('#modalRole').modal('show');
     $('#roleListContainer').html('<div class="text-center py-3"><div class="spinner-border text-primary"></div></div>');
 
-    // Gọi API lấy mẩu HTML đã được Server "vẽ" sẵn
+    // Đổi thuộc tính nút Lưu để biết là đang lưu 1 user
+    $('#modalRole .btn-primary').attr('onclick', 'saveUserRoles()');
+
+    // 3. Gọi API lấy HTML (Fragment)
     const response = await fetch(`/rbac/user-role-config-html/${username}`);
     const html = await response.text();
-
-    // Dán vào là xong, không cần xử lý chuỗi trong JS nữa
     $('#roleListContainer').html(html);
 }
 
 // Hàm lưu dữ liệu gán quyền (Xóa cũ - Ghi mới)
 async function saveUserRoles() {
-    // 1. Lấy Username từ nhãn hiển thị trên Modal
-    const username = $('#targetUser').text().trim();
-
-    if (!username) {
-        Swal.fire('Lỗi', 'Không tìm thấy tên người dùng để gán quyền!', 'error');
-        return;
-    }
-
-    // 2. Thu thập danh sách các Role đã được tích chọn
+    const titleText = $('#targetUser').text().trim();
+    // Kiểm tra xem tiêu đề có chữ "nhân viên đã chọn" không
+    const isBulk = titleText.includes("nhân viên đã chọn");
+    
     const selectedRoles = [];
-    $('.chk-user-role:checked').each(function () {
+    // Quét tất cả checkbox TRONG MODAL
+    $('#modalRole input.chk-user-role:checked').each(function () {
         selectedRoles.push($(this).val());
     });
 
-    // 3. Hiện loading
-    Swal.fire({ title: 'Đang cập nhật...', allowOutsideClick: false, didOpen: () => { Swal.showLoading(); } });
+    // --- LOGIC BẠN CẦN ---
+    if (isBulk && selectedRoles.length === 0) {
+        Swal.fire('Chú ý', 'Khi gán hàng loạt, bạn phải chọn ít nhất 1 vai trò!', 'warning');
+        return;
+    }
+    // Nếu không phải Bulk (gán 1 người), mảng rỗng [] vẫn cho qua
 
-    // 4. Gửi dữ liệu về API Backend (Router: /rbac/users/save-roles)
-    const res = await fetch('/rbac/users/save-roles', {
+    Swal.fire({ title: 'Đang lưu...', allowOutsideClick: false, didOpen: () => { Swal.showLoading(); } });
+
+    // Xác định dữ liệu và URL
+    let payload = {};
+    let url = isBulk ? '/rbac/users/bulk-save-roles' : '/rbac/users/save-roles';
+
+    if (isBulk) {
+        const selectedUsers = [];
+        $('.user-checkbox:checked').each(function() { selectedUsers.push($(this).val()); });
+        payload = { usernames: selectedUsers, role_codes: selectedRoles };
+    } else {
+        payload = { username: titleText, role_codes: selectedRoles };
+    }
+
+    const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            username: username,
-            role_codes: selectedRoles
-        })
+        body: JSON.stringify(payload)
     });
 
     if (res.ok) {
-        const result = await res.json();
-        // Thông báo thành công và reload lại bảng dữ liệu
-        Swal.fire('Thành công', result.message, 'success');
+        Swal.fire('Thành công', 'Đã cập nhật quyền!', 'success');
         $('#modalRole').modal('hide');
-        $('#tblUsers').DataTable().ajax.reload();
+        $('#tblUsers').DataTable().ajax.reload(null, false);
+        $('.user-checkbox, #checkAll').prop('checked', false);
+        $('#bulkActionArea').fadeOut();
     } else {
         const err = await res.json();
-        Swal.fire('Thất bại', err.detail || 'Lỗi hệ thống', 'error');
+        Swal.fire('Lỗi', err.detail, 'error');
     }
 }
+
 
 // Hàm xử lý nhấn nút "Gán quyền hàng loạt" (Nút này bạn đặt trên đầu bảng)
 async function showBulkAssignRole() {
@@ -130,12 +146,19 @@ async function showBulkAssignRole() {
         return;
     }
 
-    // Mở Modal gán quyền (Dùng chung Modal cũ nhưng đổi logic Lưu)
+    // 1. Đưa thông báo số lượng vào tiêu đề để hàm Lưu biết là đang gán hàng loạt
     $('#targetUser').text(`${selectedUsers.length} nhân viên đã chọn`);
-    $('#modalRole').modal('show');
+    
+    // 2. VẪN GỌI saveUserRoles (Không gọi hàm Bulk nữa)
+    $('#btnSaveRole').attr('onclick', 'saveUserRoles()');
 
-    // Đổi thuộc tính nút Lưu để biết là đang lưu hàng loạt
-    $('#btnSaveRole').attr('onclick', 'saveBulkUserRoles()');
+    $('#modalRole').modal('show');
+    $('#roleListContainer').html('<div class="text-center py-3"><div class="spinner-border text-primary"></div></div>');
+
+    // 3. Gọi API lấy HTML trắng (hoặc của người đầu tiên) để hiện danh sách Role
+    const response = await fetch(`/rbac/user-role-config-html/dummy`); // Hoặc một user mẫu
+    const html = await response.text();
+    $('#roleListContainer').html(html);
 }
 
 

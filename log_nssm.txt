@@ -1727,3 +1727,905 @@ INFO:     127.0.0.1:0 - "GET /rbac/permissions-list?_=1773547816554 HTTP/1.1" 20
 [32m2026-03-15 11:10:16[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
 [32m2026-03-15 11:10:16[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:27[0m | [1mINFO    [0m | [36mSTART | GET /rbac/setup | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:27[0m | [1mINFO    [0m | [36mEND   | GET /rbac/setup | Status: 200 | Time: 2.07ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/setup HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:27[0m | [1mINFO    [0m | [36mSTART | GET /rbac/setup | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:27[0m | [1mINFO    [0m | [36mEND   | GET /rbac/setup | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/setup HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mSTART | GET /rbac/roles-list | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mEND   | GET /rbac/roles-list | Status: 200 | Time: 15.09ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/roles-list?_=1773548127879 HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mSTART | GET /rbac/permissions-list | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mEND   | GET /rbac/permissions-list | Status: 200 | Time: 5.29ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/permissions-list?_=1773548127880 HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:28[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.99ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:31[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:31[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.75ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:34[0m | [1mINFO    [0m | [36mSTART | GET /profile | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:34[0m | [1mINFO    [0m | [36mEND   | GET /profile | Status: 404 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "GET /profile HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:15:34[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:34[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:35[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:35[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:42[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:42[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.30ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:48[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:48[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.12ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:15:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:15:52[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:15:52[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:17:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.07ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:17:26[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:26[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.33ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:17:27[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:27[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.28ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 18.90ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773548271442 HTTP/1.1" 200 OK
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:17:51[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+WARNING:  StatReload detected changes in 'models\rbac_md.py'. Reloading...
+ [32m2026-03-15 11:37:46[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:37:46[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 11.97ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:37:47[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:37:47[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 21.71ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773549466932 HTTP/1.1" 200 OK
+[32m2026-03-15 11:37:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:37:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.18ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22700]
+INFO:     Started server process [12596]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-15 11:39:38[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:39:38[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.13ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:40:41[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:41[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 12.62ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:40:41[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:41[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:40:42[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:42[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 1.38ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:40:42[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:42[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.09ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:40:43[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:43[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 119.56ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773549642610 HTTP/1.1" 200 OK
+[32m2026-03-15 11:40:43[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:40:43[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:41:10[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:41:10[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 2.07ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+[32m2026-03-15 11:41:12[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:41:12[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 2.26ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+[32m2026-03-15 11:41:13[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:41:13[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 2.44ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+[32m2026-03-15 11:41:26[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:41:26[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.40ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:41:28[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:41:28[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+WARNING:  StatReload detected changes in 'controllers\auth_controller.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12596]
+INFO:     Started server process [12784]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 20.45ms[0m
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 1.31ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.50ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:38[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:39[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:39[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:40[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:40[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 66.74ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773549999391 HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:40[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:40[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.45ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:46:48[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:48[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 1.21ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 3.07ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.48ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.53ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.03ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.51ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:53[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:46:55[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:55[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 5.99ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773550014305 HTTP/1.1" 200 OK
+[32m2026-03-15 11:46:55[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:46:55[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.18ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:47:03[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:47:03[0m | [31m[1mERROR   [0m | [36mFAIL  | POST /rbac/users/admin-reset-password | Error: type object 'RBACController' has no attribute 'admin_reset_pass' | Time: 1.02ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 102, in api_admin_reset_pass
+    return RBACController.admin_reset_pass(data, admin_executor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'RBACController' has no attribute 'admin_reset_pass'
+WARNING:  StatReload detected changes in 'routers\rbac_rt.py'. Reloading...
+ [32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.44ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 3.03ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:30[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 3.99ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 2.51ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:31[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.38ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:48:32[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:32[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 39.09ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773550111643 HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:32[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:32[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.50ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12784]
+INFO:     Started server process [16968]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-15 11:48:41[0m | [1mINFO    [0m | [36mSTART | POST /rbac/users/admin-reset-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:41[0m | [1mINFO    [0m | [36mEND   | POST /rbac/users/admin-reset-password | Status: 200 | Time: 332.94ms[0m
+INFO:     127.0.0.1:0 - "POST /rbac/users/admin-reset-password HTTP/1.1" 200 OK
+[32m2026-03-15 11:48:58[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:48:58[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 2.04ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 14.58ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:00[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.16ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 2.16ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:01[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.45ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 11:49:02[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:02[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.94ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:10[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:10[0m | [1mINFO    [0m | [36mUser sml logged in successfully with 8 perms[0m
+[32m2026-03-15 11:49:10[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 281.75ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:11[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:11[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 8.23ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:12[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:12[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:34[0m | [1mINFO    [0m | [36mSTART | POST /auth/sync/FO | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:35[0m | [1mINFO    [0m | [36mEND   | POST /auth/sync/FO | Status: 200 | Time: 360.71ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/sync/FO HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:40[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:40[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.11ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:40[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:40[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.50ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:41[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:41[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:45[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:45[0m | [1mINFO    [0m | [36mUser sml logged in successfully with 8 perms[0m
+[32m2026-03-15 11:49:45[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 274.60ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:47[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:47[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 11:49:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:49:52[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 11:49:52[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 11:50:20[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 11:50:20[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+WARNING:  StatReload detected changes in 'models\rbac_md.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16968]
+INFO:     Started server process [24120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'services\auth_service.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24120]
+INFO:     Started server process [8100]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'schemas\auth.py'. Reloading...
+ [32m2026-03-15 12:02:44[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:02:44[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 16.19ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:02:44[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:02:44[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:02:45[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:02:45[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.22ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:02:45[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 12:02:45[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 12:03:02[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:02[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:07[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:07[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:08[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:08[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:08[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:08[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:09[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:09[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:09[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:09[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:11[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:11[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 2.25ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:11[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:11[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 2.04ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.37ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.06ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:12[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.32ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:13[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:13[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.42ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:14[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.25ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:03:15[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 404 | Time: 1.02ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8100]
+INFO:     Started server process [1764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-15 12:13:04[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:04[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 14.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.47ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.37ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.34ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.99ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 4.36ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.50ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 3.13ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:07[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:07[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 12:13:27[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:27[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 200 | Time: 601.16ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:45[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:45[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.25ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:46[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:46[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 3.16ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:46[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:46[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.13ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 12:13:53[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:53[0m | [1mINFO    [0m | [36mUser sml logged in successfully with 8 perms[0m
+[32m2026-03-15 12:13:53[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 286.57ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:54[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:54[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-15 12:13:54[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:54[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-15 12:13:55[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:55[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.25ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 12:13:57[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-15 12:13:57[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-15 12:14:08[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:14:08[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 400 | Time: 273.99ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 400 Bad Request
+[32m2026-03-15 12:14:16[0m | [1mINFO    [0m | [36mSTART | POST /auth/change-password | IP: 127.0.0.1[0m
+[32m2026-03-15 12:14:17[0m | [1mINFO    [0m | [36mEND   | POST /auth/change-password | Status: 200 | Time: 533.23ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/change-password HTTP/1.1" 200 OK

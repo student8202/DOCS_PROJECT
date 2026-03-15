@@ -6527,3 +6527,1276 @@
 2026-03-15 12:03:15 | INFO     | END   | POST /auth/change-password | Status: 404 | Time: 1.00ms
 2026-03-15 12:03:15 | INFO     | START | POST /auth/change-password | IP: 127.0.0.1
 2026-03-15 12:03:15 | INFO     | END   | POST /auth/change-password | Status: 404 | Time: 1.02ms
+2026-03-15 12:13:04 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:04 | INFO     | END   | GET /dashboard | Status: 200 | Time: 14.99ms
+2026-03-15 12:13:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.47ms
+2026-03-15 12:13:05 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.37ms
+2026-03-15 12:13:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-15 12:13:05 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.99ms
+2026-03-15 12:13:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.34ms
+2026-03-15 12:13:05 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.99ms
+2026-03-15 12:13:05 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.99ms
+2026-03-15 12:13:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-15 12:13:05 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-15 12:13:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 12:13:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.36ms
+2026-03-15 12:13:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 12:13:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-15 12:13:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.50ms
+2026-03-15 12:13:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.13ms
+2026-03-15 12:13:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 12:13:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:13:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 12:13:27 | INFO     | START | POST /auth/change-password | IP: 127.0.0.1
+2026-03-15 12:13:27 | INFO     | END   | POST /auth/change-password | Status: 200 | Time: 601.16ms
+2026-03-15 12:13:45 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-15 12:13:45 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.25ms
+2026-03-15 12:13:46 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-15 12:13:46 | INFO     | END   | GET / | Status: 200 | Time: 3.16ms
+2026-03-15 12:13:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.13ms
+2026-03-15 12:13:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:13:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 12:13:53 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-15 12:13:53 | INFO     | User sml logged in successfully with 8 perms
+2026-03-15 12:13:53 | INFO     | END   | POST /auth/login | Status: 200 | Time: 286.57ms
+2026-03-15 12:13:54 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:13:54 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 12:13:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:13:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-15 12:13:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:13:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-03-15 12:13:57 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:13:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:14:08 | INFO     | START | POST /auth/change-password | IP: 127.0.0.1
+2026-03-15 12:14:08 | INFO     | END   | POST /auth/change-password | Status: 400 | Time: 273.99ms
+2026-03-15 12:14:16 | INFO     | START | POST /auth/change-password | IP: 127.0.0.1
+2026-03-15 12:14:17 | INFO     | END   | POST /auth/change-password | Status: 200 | Time: 533.23ms
+2026-03-15 12:15:15 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-15 12:15:15 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.51ms
+2026-03-15 12:15:15 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-15 12:15:15 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-15 12:15:16 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:15:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.16ms
+2026-03-15 12:15:20 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-15 12:15:21 | INFO     | User sml logged in successfully with 8 perms
+2026-03-15 12:15:21 | INFO     | END   | POST /auth/login | Status: 200 | Time: 273.06ms
+2026-03-15 12:15:22 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:15:22 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-15 12:15:22 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:15:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:15:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:33 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-15 12:15:33 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.42ms
+2026-03-15 12:15:33 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-15 12:15:33 | INFO     | END   | GET / | Status: 200 | Time: 1.01ms
+2026-03-15 12:15:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:15:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.54ms
+2026-03-15 12:15:39 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:15:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:40 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 12:15:40 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 12:15:40 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 12:15:40 | INFO     | END   | GET / | Status: 200 | Time: 1.01ms
+2026-03-15 12:15:42 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:15:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:50 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:15:50 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 12:15:50 | INFO     | END   | POST /auth/login | Status: 200 | Time: 279.01ms
+2026-03-15 12:15:51 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:15:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.58ms
+2026-03-15 12:15:52 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:15:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:58 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:15:58 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 12.42ms
+2026-03-15 12:15:58 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:15:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:15:58 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:15:58 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.10ms
+2026-03-15 12:16:12 | INFO     | START | POST /rbac/users/admin-reset-password | IP: 192.168.1.47
+2026-03-15 12:16:12 | INFO     | END   | POST /rbac/users/admin-reset-password | Status: 200 | Time: 276.72ms
+2026-03-15 12:16:22 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:16:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.44ms
+2026-03-15 12:16:23 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 12:16:23 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 12:16:23 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 12:16:23 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-15 12:16:24 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:16:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.37ms
+2026-03-15 12:16:40 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:16:40 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 12:16:40 | INFO     | END   | POST /auth/login | Status: 200 | Time: 288.53ms
+2026-03-15 12:16:41 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:16:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 12:16:42 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:16:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:18:53 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-15 12:18:54 | INFO     | User sml logged in successfully with 8 perms
+2026-03-15 12:18:54 | INFO     | END   | POST /auth/login | Status: 200 | Time: 314.77ms
+2026-03-15 12:18:55 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:18:55 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.51ms
+2026-03-15 12:18:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:18:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:19:01 | INFO     | START | GET /fo/history | IP: 127.0.0.1
+2026-03-15 12:19:01 | INFO     | END   | GET /fo/history | Status: 404 | Time: 24.45ms
+2026-03-15 12:19:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-03-15 12:19:12 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:19:12 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-15 12:19:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-15 12:19:19 | INFO     | START | GET /fo/search | IP: 127.0.0.1
+2026-03-15 12:19:19 | INFO     | END   | GET /fo/search | Status: 404 | Time: 1.00ms
+2026-03-15 12:19:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.93ms
+2026-03-15 12:19:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:19:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.51ms
+2026-03-15 12:19:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:19:36 | INFO     | START | GET /fo/search | IP: 127.0.0.1
+2026-03-15 12:19:36 | INFO     | END   | GET /fo/search | Status: 404 | Time: 1.47ms
+2026-03-15 12:19:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.87ms
+2026-03-15 12:19:54 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:19:54 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.13ms
+2026-03-15 12:19:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:19:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-15 12:37:03 | INFO     | START | GET /fo/search | IP: 192.168.1.47
+2026-03-15 12:37:03 | INFO     | END   | GET /fo/search | Status: 404 | Time: 18.79ms
+2026-03-15 12:37:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 12.38ms
+2026-03-15 12:37:15 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:37:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.53ms
+2026-03-15 12:37:15 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:37:19 | INFO     | START | GET /bo/folios | IP: 192.168.1.47
+2026-03-15 12:37:19 | INFO     | END   | GET /bo/folios | Status: 404 | Time: 1.54ms
+2026-03-15 12:37:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-03-15 12:37:28 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:37:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 12:37:29 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 7.08ms
+2026-03-15 12:37:35 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 12:37:35 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 12:37:35 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-03-15 12:37:36 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:37:36 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-15 12:37:37 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 6.22ms
+2026-03-15 12:37:39 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:37:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.15ms
+2026-03-15 12:38:05 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:38:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:38:06 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:38:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 9.80ms
+2026-03-15 12:38:06 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:38:06 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 15.74ms
+2026-03-15 12:38:12 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:38:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.93ms
+2026-03-15 12:38:45 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:38:45 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 13.41ms
+2026-03-15 12:38:46 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:38:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-15 12:38:46 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:38:46 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 16.17ms
+2026-03-15 12:38:48 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 12:38:48 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 15.88ms
+2026-03-15 12:38:49 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:38:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:39:21 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 12:39:21 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 0.00ms
+2026-03-15 12:39:22 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:39:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.12ms
+2026-03-15 12:39:32 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 12:39:32 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 12:39:34 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:39:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.59ms
+2026-03-15 12:39:35 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:39:35 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.18ms
+2026-03-15 12:39:37 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:39:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 8.78ms
+2026-03-15 12:39:41 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 12:39:41 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 1.89ms
+2026-03-15 12:39:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:39:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-15 12:40:15 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:19 | INFO     | START | GET /rbac/setup | IP: 192.168.1.47
+2026-03-15 12:40:19 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 5.16ms
+2026-03-15 12:40:20 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 12:40:20 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 14.70ms
+2026-03-15 12:40:20 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:20 | INFO     | START | GET /rbac/permissions-list | IP: 192.168.1.47
+2026-03-15 12:40:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-03-15 12:40:20 | INFO     | END   | GET /rbac/permissions-list | Status: 200 | Time: 2.01ms
+2026-03-15 12:40:21 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.28ms
+2026-03-15 12:40:32 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 12:40:32 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 4.43ms
+2026-03-15 12:40:33 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:35 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:35 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:36 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:36 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:36 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 16.63ms
+2026-03-15 12:40:41 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:41 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:42 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.66ms
+2026-03-15 12:40:42 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:42 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:45 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:46 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:46 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 10.16ms
+2026-03-15 12:40:47 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 10.18ms
+2026-03-15 12:40:47 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:47 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 6.38ms
+2026-03-15 12:40:48 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:48 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 6.90ms
+2026-03-15 12:40:48 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:48 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:48 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:49 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:49 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:49 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.67ms
+2026-03-15 12:40:49 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:49 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 6.31ms
+2026-03-15 12:40:49 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:49 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.73ms
+2026-03-15 12:40:50 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:50 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:50 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 16.09ms
+2026-03-15 12:40:51 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.06ms
+2026-03-15 12:40:52 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.02ms
+2026-03-15 12:40:52 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:52 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.57ms
+2026-03-15 12:40:52 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:40:53 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.24ms
+2026-03-15 12:40:53 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:53 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 6.84ms
+2026-03-15 12:40:53 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:40:53 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.01ms
+2026-03-15 12:40:53 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:40:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:40:53 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:40:53 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 2.06ms
+2026-03-15 12:46:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:46:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.13ms
+2026-03-15 12:46:47 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-15 12:46:47 | INFO     | END   | GET / | Status: 200 | Time: 1.50ms
+2026-03-15 12:46:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:46:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-15 12:46:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:46:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:47:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:47:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.20ms
+2026-03-15 12:47:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 12:47:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 12:48:05 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.02ms
+2026-03-15 12:48:06 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:06 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:06 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:07 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:07 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:07 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 16.04ms
+2026-03-15 12:48:13 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:13 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 5.11ms
+2026-03-15 12:48:14 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:14 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:14 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.47ms
+2026-03-15 12:48:22 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:23 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:23 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:23 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:25 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:25 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 11.15ms
+2026-03-15 12:48:25 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:25 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:25 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:28 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:28 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.03ms
+2026-03-15 12:48:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:28 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:28 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.15ms
+2026-03-15 12:48:32 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:48:32 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:33 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.63ms
+2026-03-15 12:48:33 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:48:33 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:36 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 12:48:36 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:36 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 12:48:36 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-15 12:48:36 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:48:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:48:59 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:48:59 | INFO     | END   | POST /auth/login | Status: 401 | Time: 0.00ms
+2026-03-15 12:49:13 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:13 | INFO     | END   | POST /auth/login | Status: 401 | Time: 7.26ms
+2026-03-15 12:49:14 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:14 | INFO     | END   | POST /auth/login | Status: 401 | Time: 0.00ms
+2026-03-15 12:49:15 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:15 | INFO     | END   | POST /auth/login | Status: 401 | Time: 12.44ms
+2026-03-15 12:49:23 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:23 | INFO     | END   | POST /auth/login | Status: 401 | Time: 2.63ms
+2026-03-15 12:49:23 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:23 | INFO     | END   | POST /auth/login | Status: 401 | Time: 0.00ms
+2026-03-15 12:49:24 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:24 | INFO     | END   | POST /auth/login | Status: 401 | Time: 8.06ms
+2026-03-15 12:49:26 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:26 | INFO     | END   | POST /auth/login | Status: 401 | Time: 9.86ms
+2026-03-15 12:49:34 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:34 | INFO     | END   | POST /auth/login | Status: 401 | Time: 270.70ms
+2026-03-15 12:49:42 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:49:42 | INFO     | User Admin logged in successfully with 8 perms
+2026-03-15 12:49:42 | INFO     | END   | POST /auth/login | Status: 200 | Time: 276.60ms
+2026-03-15 12:49:43 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:49:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.84ms
+2026-03-15 12:49:44 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:49:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:49:50 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:49:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:49:59 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 12:49:59 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 12:50:00 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:50:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-15 12:50:00 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 12:50:00 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 9.89ms
+2026-03-15 12:50:14 | INFO     | START | POST /rbac/users/admin-reset-password | IP: 192.168.1.47
+2026-03-15 12:50:15 | INFO     | END   | POST /rbac/users/admin-reset-password | Status: 200 | Time: 272.58ms
+2026-03-15 12:51:03 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:05 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 12:51:05 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 12:51:05 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 12:51:05 | INFO     | END   | GET / | Status: 200 | Time: 6.26ms
+2026-03-15 12:51:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:14 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 12:51:14 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 12:51:14 | INFO     | END   | POST /auth/login | Status: 200 | Time: 281.85ms
+2026-03-15 12:51:15 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:51:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 7.70ms
+2026-03-15 12:51:16 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:21 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:26 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 12:51:26 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 12:51:26 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:27 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:51:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 12:51:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:36 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:43 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 12:51:43 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 12:51:43 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:43 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:44 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:51:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 12:51:45 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:51:47 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:51:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:52:05 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 12:52:05 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 12:52:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:52:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:52:06 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 12:52:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.52ms
+2026-03-15 12:52:07 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 12:52:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:53:33 | INFO     | START | GET /fo/search | IP: 127.0.0.1
+2026-03-15 12:53:33 | INFO     | END   | GET /fo/search | Status: 404 | Time: 3.00ms
+2026-03-15 12:53:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:53:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.15ms
+2026-03-15 12:53:40 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 12:53:40 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.45ms
+2026-03-15 12:53:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:53:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 12:54:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 12:54:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:02:34 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 13:02:34 | INFO     | END   | GET /dashboard | Status: 200 | Time: 7.06ms
+2026-03-15 13:02:34 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 13:02:34 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:02:34 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 13:02:34 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.27ms
+2026-03-15 13:02:34 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-15 13:02:34 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-15 13:02:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:02:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:02:56 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:02:56 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:02:56 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:02:56 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 20.20ms
+2026-03-15 13:02:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:02:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.08ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.30ms
+2026-03-15 13:03:02 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:03:02 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.46ms
+2026-03-15 13:03:03 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:03:03 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 12.10ms
+2026-03-15 13:03:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:03:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-03-15 13:03:40 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:03:40 | INFO     | END   | GET /dashboard | Status: 200 | Time: 9.52ms
+2026-03-15 13:03:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:03:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:03:42 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:03:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:03:42 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:03:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:03:45 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:03:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.06ms
+2026-03-15 13:03:45 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:03:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:03:48 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:03:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.59ms
+2026-03-15 13:03:50 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 13:03:50 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 13:03:50 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:03:50 | INFO     | END   | GET / | Status: 200 | Time: 4.04ms
+2026-03-15 13:03:50 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:03:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:03 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:05:03 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 13:05:03 | INFO     | END   | POST /auth/login | Status: 200 | Time: 284.75ms
+2026-03-15 13:05:04 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:05:04 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:10 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:17 | INFO     | START | GET /profile | IP: 192.168.1.47
+2026-03-15 13:05:17 | INFO     | END   | GET /profile | Status: 404 | Time: 0.00ms
+2026-03-15 13:05:17 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:18 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:05:18 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.09ms
+2026-03-15 13:05:20 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:23 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:05:23 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.64ms
+2026-03-15 13:05:23 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 6.67ms
+2026-03-15 13:05:27 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:28 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:28 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 2.02ms
+2026-03-15 13:05:35 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:39 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 7.17ms
+2026-03-15 13:05:41 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:41 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.60ms
+2026-03-15 13:05:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.06ms
+2026-03-15 13:05:55 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:55 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:55 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:55 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:55 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 11.21ms
+2026-03-15 13:05:56 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:56 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 7.80ms
+2026-03-15 13:05:57 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:57 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:57 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:57 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:57 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:57 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:57 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:57 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.43ms
+2026-03-15 13:05:58 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:58 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:05:58 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:05:58 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:05:58 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 8.77ms
+2026-03-15 13:05:59 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:05:59 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.52ms
+2026-03-15 13:05:59 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:05:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:06:00 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:06:00 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 13:06:01 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:06:01 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:06:01 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:06:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 8.21ms
+2026-03-15 13:06:01 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:06:01 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 13:06:39 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:06:39 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-15 13:06:40 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:06:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:06:49 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:06:49 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 13:06:49 | INFO     | END   | POST /auth/login | Status: 200 | Time: 268.80ms
+2026-03-15 13:06:51 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:06:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:06:51 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:06:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 7.90ms
+2026-03-15 13:06:57 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:06:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:07:12 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:07:12 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.46ms
+2026-03-15 13:07:12 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:07:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:07:35 | INFO     | START | POST /auth/sync/FO | IP: 192.168.1.47
+2026-03-15 13:07:36 | INFO     | END   | POST /auth/sync/FO | Status: 200 | Time: 337.53ms
+2026-03-15 13:07:39 | INFO     | START | POST /auth/sync/BO | IP: 192.168.1.47
+2026-03-15 13:07:40 | INFO     | END   | POST /auth/sync/BO | Status: 200 | Time: 350.26ms
+2026-03-15 13:07:42 | INFO     | START | POST /auth/sync/HR | IP: 192.168.1.47
+2026-03-15 13:07:42 | INFO     | END   | POST /auth/sync/HR | Status: 200 | Time: 313.08ms
+2026-03-15 13:07:56 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:07:56 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:07:56 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:07:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:07:56 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:07:56 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 13:08:10 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:08:10 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 16.07ms
+2026-03-15 13:08:30 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 13:08:30 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 0.00ms
+2026-03-15 13:08:34 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 192.168.1.47
+2026-03-15 13:08:34 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 4.90ms
+2026-03-15 13:08:34 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:08:34 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 8.54ms
+2026-03-15 13:08:41 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:08:41 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 0.00ms
+2026-03-15 13:08:58 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:08:58 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 11.72ms
+2026-03-15 13:09:17 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:09:17 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 24.78ms
+2026-03-15 13:09:34 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:09:34 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 4.04ms
+2026-03-15 13:09:51 | INFO     | START | GET /rbac/user-role-config-html/ACC | IP: 192.168.1.47
+2026-03-15 13:09:51 | INFO     | END   | GET /rbac/user-role-config-html/ACC | Status: 200 | Time: 10.91ms
+2026-03-15 13:10:00 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:10:00 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:10:00 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:10:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:10:01 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:10:01 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 15.85ms
+2026-03-15 13:10:04 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:10:04 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 8.71ms
+2026-03-15 13:10:07 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:10:07 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 0.00ms
+2026-03-15 13:10:07 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:10:07 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.41ms
+2026-03-15 13:10:13 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:10:13 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 4.81ms
+2026-03-15 13:10:15 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:10:15 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 16.22ms
+2026-03-15 13:10:15 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:10:15 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.12ms
+2026-03-15 13:10:25 | INFO     | START | GET /rbac/user-role-config-html/AC2 | IP: 192.168.1.47
+2026-03-15 13:10:25 | INFO     | END   | GET /rbac/user-role-config-html/AC2 | Status: 200 | Time: 16.16ms
+2026-03-15 13:10:29 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:10:29 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 0.00ms
+2026-03-15 13:10:29 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:10:29 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 22.69ms
+2026-03-15 13:10:37 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 13:10:37 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 11.51ms
+2026-03-15 13:10:50 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 13:10:50 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 0.00ms
+2026-03-15 13:10:53 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 192.168.1.47
+2026-03-15 13:10:53 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 1.07ms
+2026-03-15 13:10:53 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:10:53 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.74ms
+2026-03-15 13:11:12 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:11:12 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 9.01ms
+2026-03-15 13:11:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:11:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 13:11:28 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:11:28 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.90ms
+2026-03-15 13:11:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:11:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-15 13:11:34 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:11:34 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.99ms
+2026-03-15 13:11:37 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 13:11:37 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 7.34ms
+2026-03-15 13:11:37 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:11:37 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.35ms
+2026-03-15 13:11:41 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:11:41 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 10.92ms
+2026-03-15 13:12:00 | INFO     | START | GET /rbac/user-role-config-html/AC3 | IP: 192.168.1.47
+2026-03-15 13:12:00 | INFO     | END   | GET /rbac/user-role-config-html/AC3 | Status: 200 | Time: 1.54ms
+2026-03-15 13:12:03 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 192.168.1.47
+2026-03-15 13:12:03 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 23.52ms
+2026-03-15 13:12:05 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:12:05 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 7.17ms
+2026-03-15 13:17:19 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:17:19 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 13:17:20 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:17:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:17:20 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:17:20 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 21.30ms
+2026-03-15 13:17:26 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:17:26 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 15.67ms
+2026-03-15 13:17:27 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:17:27 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 7.28ms
+2026-03-15 13:17:27 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:17:27 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 10.23ms
+2026-03-15 13:17:33 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:17:33 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 4.80ms
+2026-03-15 13:17:34 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:17:34 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 1.55ms
+2026-03-15 13:17:34 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:17:34 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.53ms
+2026-03-15 13:17:42 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 13:17:42 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 9.06ms
+2026-03-15 13:17:50 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 192.168.1.47
+2026-03-15 13:17:50 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 8.08ms
+2026-03-15 13:18:12 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:18:12 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 24.36ms
+2026-03-15 13:18:15 | INFO     | START | GET /rbac/user-role-config-html/AC6 | IP: 192.168.1.47
+2026-03-15 13:18:15 | INFO     | END   | GET /rbac/user-role-config-html/AC6 | Status: 200 | Time: 0.00ms
+2026-03-15 13:18:24 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:18:27 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:18:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.39ms
+2026-03-15 13:18:36 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:18:36 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-15 13:18:37 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.52ms
+2026-03-15 13:18:45 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:18:45 | INFO     | User Sml logged in successfully with 8 perms
+2026-03-15 13:18:45 | INFO     | END   | POST /auth/login | Status: 200 | Time: 289.24ms
+2026-03-15 13:18:46 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:18:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.02ms
+2026-03-15 13:18:47 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:18:55 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 13:18:55 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 2.73ms
+2026-03-15 13:18:56 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:18:58 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:18:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.52ms
+2026-03-15 13:26:56 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:26:56 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.23ms
+2026-03-15 13:26:56 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:26:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.79ms
+2026-03-15 13:26:56 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:26:56 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 15.89ms
+2026-03-15 13:27:05 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:27:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 5.78ms
+2026-03-15 13:27:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.58ms
+2026-03-15 13:27:05 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:27:05 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 0.00ms
+2026-03-15 13:27:10 | INFO     | START | GET /rbac/setup | IP: 192.168.1.47
+2026-03-15 13:27:10 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 0.00ms
+2026-03-15 13:27:11 | INFO     | START | GET /rbac/roles-list | IP: 192.168.1.47
+2026-03-15 13:27:11 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 4.70ms
+2026-03-15 13:27:11 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:11 | INFO     | START | GET /rbac/permissions-list | IP: 192.168.1.47
+2026-03-15 13:27:11 | INFO     | END   | GET /rbac/permissions-list | Status: 200 | Time: 0.00ms
+2026-03-15 13:27:16 | INFO     | START | GET /fo/search | IP: 192.168.1.47
+2026-03-15 13:27:16 | INFO     | END   | GET /fo/search | Status: 404 | Time: 0.00ms
+2026-03-15 13:27:16 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:29 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:27:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.38ms
+2026-03-15 13:27:29 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:39 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:48 | INFO     | START | GET /fo/search | IP: 192.168.1.47
+2026-03-15 13:27:48 | INFO     | END   | GET /fo/search | Status: 404 | Time: 1.07ms
+2026-03-15 13:27:48 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:50 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:27:50 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.96ms
+2026-03-15 13:27:50 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:27:53 | INFO     | START | GET /bo/folios | IP: 192.168.1.47
+2026-03-15 13:27:53 | INFO     | END   | GET /bo/folios | Status: 404 | Time: 0.00ms
+2026-03-15 13:27:53 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:27:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.01ms
+2026-03-15 13:28:01 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:28:01 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.64ms
+2026-03-15 13:28:02 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:28:25 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.78ms
+2026-03-15 13:28:26 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 13:28:26 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 3.94ms
+2026-03-15 13:28:26 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:28:26 | INFO     | END   | GET / | Status: 200 | Time: 5.01ms
+2026-03-15 13:28:27 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.18ms
+2026-03-15 13:28:37 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:28:37 | INFO     | User Admin logged in successfully with 8 perms
+2026-03-15 13:28:37 | INFO     | END   | POST /auth/login | Status: 200 | Time: 288.01ms
+2026-03-15 13:28:38 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:28:38 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.26ms
+2026-03-15 13:28:39 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.66ms
+2026-03-15 13:28:46 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:28:46 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.66ms
+2026-03-15 13:28:46 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:28:46 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:28:46 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 10.09ms
+2026-03-15 13:28:51 | INFO     | START | GET /rbac/user-role-config-html/SML | IP: 192.168.1.47
+2026-03-15 13:28:51 | INFO     | END   | GET /rbac/user-role-config-html/SML | Status: 200 | Time: 22.38ms
+2026-03-15 13:28:54 | INFO     | START | POST /rbac/users/save-roles | IP: 192.168.1.47
+2026-03-15 13:28:54 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 11.13ms
+2026-03-15 13:28:55 | INFO     | START | GET /rbac/users-roles-data | IP: 192.168.1.47
+2026-03-15 13:28:55 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.87ms
+2026-03-15 13:28:59 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:28:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.65ms
+2026-03-15 13:29:00 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 13:29:00 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 2.00ms
+2026-03-15 13:29:00 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:29:00 | INFO     | END   | GET / | Status: 200 | Time: 5.47ms
+2026-03-15 13:29:01 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:29:09 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:29:09 | INFO     | User Sml logged in successfully with 5 perms
+2026-03-15 13:29:09 | INFO     | END   | POST /auth/login | Status: 200 | Time: 277.13ms
+2026-03-15 13:29:10 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:29:11 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:29:18 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 13:29:18 | INFO     | END   | GET /admin/sync-users | Status: 307 | Time: 3.60ms
+2026-03-15 13:29:19 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:29:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.61ms
+2026-03-15 13:29:22 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:29:22 | INFO     | END   | GET /rbac/manage | Status: 307 | Time: 2.01ms
+2026-03-15 13:29:22 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:22 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.06ms
+2026-03-15 13:29:23 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.40ms
+2026-03-15 13:29:28 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:29:28 | INFO     | END   | GET /rbac/manage | Status: 307 | Time: 1.06ms
+2026-03-15 13:29:28 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:29:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-03-15 13:29:32 | INFO     | START | GET /rbac/setup | IP: 192.168.1.47
+2026-03-15 13:29:32 | INFO     | END   | GET /rbac/setup | Status: 307 | Time: 3.39ms
+2026-03-15 13:29:32 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:32 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.98ms
+2026-03-15 13:29:32 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:29:45 | INFO     | START | GET /rbac/manage | IP: 192.168.1.47
+2026-03-15 13:29:45 | INFO     | END   | GET /rbac/manage | Status: 307 | Time: 7.79ms
+2026-03-15 13:29:45 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.64ms
+2026-03-15 13:29:45 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.10ms
+2026-03-15 13:29:48 | INFO     | START | GET /admin/sync-users | IP: 192.168.1.47
+2026-03-15 13:29:48 | INFO     | END   | GET /admin/sync-users | Status: 307 | Time: 2.31ms
+2026-03-15 13:29:48 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:29:48 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:29:49 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:29:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.51ms
+2026-03-15 13:30:53 | INFO     | START | GET /fo/search | IP: 192.168.1.47
+2026-03-15 13:30:53 | INFO     | END   | GET /fo/search | Status: 404 | Time: 0.00ms
+2026-03-15 13:30:53 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:30:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:30:55 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:30:55 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.38ms
+2026-03-15 13:30:55 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:30:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:31:02 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:31:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.19ms
+2026-03-15 13:31:03 | INFO     | START | POST /auth/logout | IP: 192.168.1.47
+2026-03-15 13:31:03 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-15 13:31:03 | INFO     | START | GET / | IP: 192.168.1.47
+2026-03-15 13:31:03 | INFO     | END   | GET / | Status: 200 | Time: 4.41ms
+2026-03-15 13:31:03 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:31:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:31:13 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:31:13 | INFO     | END   | POST /auth/login | Status: 401 | Time: 273.99ms
+2026-03-15 13:31:21 | INFO     | START | POST /auth/login | IP: 192.168.1.47
+2026-03-15 13:31:21 | INFO     | User Admin logged in successfully with 8 perms
+2026-03-15 13:31:21 | INFO     | END   | POST /auth/login | Status: 200 | Time: 283.48ms
+2026-03-15 13:31:23 | INFO     | START | GET /dashboard | IP: 192.168.1.47
+2026-03-15 13:31:23 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-15 13:31:24 | INFO     | START | GET /favicon.ico | IP: 192.168.1.47
+2026-03-15 13:31:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:43:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:43:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.04ms
+2026-03-15 13:43:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:43:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.54ms
+2026-03-15 13:43:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:43:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.40ms
+2026-03-15 13:43:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:43:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.04ms
+2026-03-15 13:43:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:43:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.52ms
+2026-03-15 13:43:52 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:43:52 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 23.97ms
+2026-03-15 13:43:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:43:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.64ms
+2026-03-15 13:43:55 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:43:55 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 3.57ms
+2026-03-15 13:43:59 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 13:43:59 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 4.83ms
+2026-03-15 13:43:59 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:43:59 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.87ms
+2026-03-15 13:44:08 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:44:08 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.06ms
+2026-03-15 13:44:14 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 13:44:14 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 5.97ms
+2026-03-15 13:44:14 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:44:14 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.50ms
+2026-03-15 13:44:17 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:44:17 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 8.28ms
+2026-03-15 13:44:26 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:26 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:44:26 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:26 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.55ms
+2026-03-15 13:44:26 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:26 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.02ms
+2026-03-15 13:44:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.21ms
+2026-03-15 13:44:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.65ms
+2026-03-15 13:44:27 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:44:27 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.51ms
+2026-03-15 13:44:28 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:44:28 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 9.63ms
+2026-03-15 13:44:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:44:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 13:44:33 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:44:33 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.09ms
+2026-03-15 13:44:41 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:44:41 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.00ms
+2026-03-15 13:44:49 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 13:44:49 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 6.56ms
+2026-03-15 13:44:49 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:44:49 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.12ms
+2026-03-15 13:44:54 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:44:54 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 3.38ms
+2026-03-15 13:45:03 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:03 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.27ms
+2026-03-15 13:45:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:45:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.02ms
+2026-03-15 13:45:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.99ms
+2026-03-15 13:45:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.52ms
+2026-03-15 13:45:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.52ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.01ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.25ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.11ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 13:45:05 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:45:05 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 13:45:06 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:45:06 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.12ms
+2026-03-15 13:45:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:45:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 13:45:18 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:45:18 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 11.90ms
+2026-03-15 13:45:24 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 13:45:24 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 5.88ms
+2026-03-15 13:45:24 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:45:24 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 6.25ms
+2026-03-15 13:45:28 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 127.0.0.1
+2026-03-15 13:45:28 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 7.80ms
+2026-03-15 13:45:31 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 13:45:31 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 4.04ms
+2026-03-15 13:45:31 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:45:31 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.36ms
+2026-03-15 13:45:38 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:45:38 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 2.03ms
+2026-03-15 13:45:41 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 13:45:41 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 5.92ms
+2026-03-15 13:45:41 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:45:41 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.51ms
+2026-03-15 13:45:43 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:45:43 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 3.70ms
+2026-03-15 13:47:20 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:20 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 6.16ms
+2026-03-15 13:47:20 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:20 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 13:47:20 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:20 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.54ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.51ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:47:21 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:21 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:47:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.12ms
+2026-03-15 13:47:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 13:47:22 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:47:22 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.01ms
+2026-03-15 13:47:23 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:47:23 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 18.86ms
+2026-03-15 13:47:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:47:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 13:47:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 13:47:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-03-15 13:47:37 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:47:37 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 5.50ms
+2026-03-15 13:47:42 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 13:47:42 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 7.05ms
+2026-03-15 13:47:42 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:47:42 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.72ms
+2026-03-15 13:48:11 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 127.0.0.1
+2026-03-15 13:48:11 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 16.24ms
+2026-03-15 13:48:15 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 13:48:15 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 4.43ms
+2026-03-15 13:52:29 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 13:52:29 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 12.97ms
+2026-03-15 13:54:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:54:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.39ms
+2026-03-15 13:54:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 13:54:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.52ms
+2026-03-15 13:54:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:54:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.99ms
+2026-03-15 13:54:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 13:54:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-15 13:54:04 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 13:54:04 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 13:54:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 13:54:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.99ms
+2026-03-15 13:54:06 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 13:54:06 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 40.63ms
+2026-03-15 13:54:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 13:54:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.32ms
+2026-03-15 13:54:08 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 13:54:08 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 12.42ms
+2026-03-15 14:00:34 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:00:34 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.29ms
+2026-03-15 14:00:34 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:00:34 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.55ms
+2026-03-15 14:00:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:00:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.35ms
+2026-03-15 14:00:35 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:00:35 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 14:00:35 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:00:35 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-15 14:00:35 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:00:35 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 14:00:35 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:00:35 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 14:00:36 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:00:36 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 19.60ms
+2026-03-15 14:00:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 14:00:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 14:00:38 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 14:00:38 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 11.20ms
+2026-03-15 14:00:44 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 14:00:44 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 4.56ms
+2026-03-15 14:00:44 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:00:44 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.84ms
+2026-03-15 14:02:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.99ms
+2026-03-15 14:02:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.48ms
+2026-03-15 14:02:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.01ms
+2026-03-15 14:02:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.06ms
+2026-03-15 14:02:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.51ms
+2026-03-15 14:02:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:02:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:02:51 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:02:52 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 29.57ms
+2026-03-15 14:02:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 14:02:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-15 14:02:54 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 14:02:54 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 10.23ms
+2026-03-15 14:02:58 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 14:02:58 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 4.01ms
+2026-03-15 14:02:58 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:02:58 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 9.12ms
+2026-03-15 14:03:06 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 14:03:06 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 3.26ms
+2026-03-15 14:03:10 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 14:03:10 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 3.35ms
+2026-03-15 14:03:10 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:03:10 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.69ms
+2026-03-15 14:03:21 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 14:03:21 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 1.65ms
+2026-03-15 14:03:23 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 14:03:23 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 5.19ms
+2026-03-15 14:03:23 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:03:23 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.31ms
+2026-03-15 14:03:27 | INFO     | START | GET /rbac/user-role-config-html/AC5 | IP: 127.0.0.1
+2026-03-15 14:03:27 | INFO     | END   | GET /rbac/user-role-config-html/AC5 | Status: 200 | Time: 5.35ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.08ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.03ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.03ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.22ms
+2026-03-15 14:03:39 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:39 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.51ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 4.75ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.67ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.51ms
+2026-03-15 14:03:40 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:40 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.61ms
+2026-03-15 14:03:41 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:41 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 14:03:41 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:41 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 0.00ms
+2026-03-15 14:03:41 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:03:41 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.10ms
+2026-03-15 14:03:42 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:03:42 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 9.73ms
+2026-03-15 14:03:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 14:03:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.81ms
+2026-03-15 14:03:47 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 14:03:47 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 3.59ms
+2026-03-15 14:03:50 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 14:03:50 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 0.00ms
+2026-03-15 14:03:50 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:03:50 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 4.23ms
+2026-03-15 14:03:59 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 14:03:59 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.32ms
+2026-03-15 14:04:03 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 14:04:03 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 12.16ms
+2026-03-15 14:04:03 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:04:03 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 7.90ms
+2026-03-15 14:04:08 | INFO     | START | GET /rbac/user-role-config-html/AC3 | IP: 127.0.0.1
+2026-03-15 14:04:08 | INFO     | END   | GET /rbac/user-role-config-html/AC3 | Status: 200 | Time: 10.92ms
+2026-03-15 14:04:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.53ms
+2026-03-15 14:04:37 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:37 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 14:04:37 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:37 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:04:37 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:37 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 14:04:37 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:37 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:04:37 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:37 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.09ms
+2026-03-15 14:04:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:04:38 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 14:04:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-15 14:04:38 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.16ms
+2026-03-15 14:04:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.03ms
+2026-03-15 14:04:38 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 14:04:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:04:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.48ms
+2026-03-15 14:04:40 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:04:40 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.13ms
+2026-03-15 14:04:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 14:04:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 14:04:45 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 14:04:45 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 5.38ms
+2026-03-15 14:04:47 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 14:04:47 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 4.83ms
+2026-03-15 14:04:47 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:04:47 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.59ms
+2026-03-15 14:04:50 | INFO     | START | GET /rbac/user-role-config-html/AC4 | IP: 127.0.0.1
+2026-03-15 14:04:50 | INFO     | END   | GET /rbac/user-role-config-html/AC4 | Status: 200 | Time: 4.35ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 5.25ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.10ms
+2026-03-15 14:06:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.26ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 14:06:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.10ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.22ms
+2026-03-15 14:06:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.00ms
+2026-03-15 14:06:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.07ms
+2026-03-15 14:06:50 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:50 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.02ms
+2026-03-15 14:06:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:06:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.32ms
+2026-03-15 14:06:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-15 14:06:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.04ms
+2026-03-15 14:06:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.30ms
+2026-03-15 14:06:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 8.84ms
+2026-03-15 14:06:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-15 14:06:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.44ms
+2026-03-15 14:06:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.07ms
+2026-03-15 14:06:51 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:51 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-15 14:06:52 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.27ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.47ms
+2026-03-15 14:06:52 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.26ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.38ms
+2026-03-15 14:06:52 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.48ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.10ms
+2026-03-15 14:06:52 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.00ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 14:06:52 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.23ms
+2026-03-15 14:06:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 14:06:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.03ms
+2026-03-15 14:06:54 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:06:54 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 22.14ms
+2026-03-15 14:06:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 14:06:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-15 14:06:57 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 14:06:57 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 9.83ms
+2026-03-15 14:07:00 | INFO     | START | POST /rbac/users/save-roles | IP: 127.0.0.1
+2026-03-15 14:07:00 | INFO     | END   | POST /rbac/users/save-roles | Status: 200 | Time: 5.93ms
+2026-03-15 14:07:00 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:07:00 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 3.51ms
+2026-03-15 14:07:06 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-15 14:07:06 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.45ms
+2026-03-15 14:07:11 | INFO     | START | POST /rbac/users/bulk-save-roles | IP: 127.0.0.1
+2026-03-15 14:07:11 | INFO     | END   | POST /rbac/users/bulk-save-roles | Status: 200 | Time: 4.36ms
+2026-03-15 14:07:11 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 14:07:11 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 5.92ms
+2026-03-15 14:07:15 | INFO     | START | GET /rbac/user-role-config-html/AC1 | IP: 127.0.0.1
+2026-03-15 14:07:15 | INFO     | END   | GET /rbac/user-role-config-html/AC1 | Status: 200 | Time: 10.03ms
+2026-03-15 15:50:00 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:50:00 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 3.39ms
+2026-03-15 15:50:00 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.01ms
+2026-03-15 15:50:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:50:01 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 2.39ms
+2026-03-15 15:50:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-15 15:50:01 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.35ms
+2026-03-15 15:50:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.48ms
+2026-03-15 15:50:01 | INFO     | START | GET /rbac/manage | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /rbac/manage | Status: 200 | Time: 1.99ms
+2026-03-15 15:50:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-15 15:50:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-03-15 15:50:02 | INFO     | START | GET /rbac/users-roles-data | IP: 127.0.0.1
+2026-03-15 15:50:02 | INFO     | END   | GET /rbac/users-roles-data | Status: 200 | Time: 32.37ms
+2026-03-15 15:50:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-15 15:50:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.99ms
+2026-03-15 15:50:10 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
+2026-03-15 15:50:10 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 14.77ms
+2026-03-15 15:50:22 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
+2026-03-15 15:50:22 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 6.10ms
+2026-03-15 15:52:50 | INFO     | START | GET /rbac/user-role-config-html/AC | IP: 127.0.0.1
+2026-03-15 15:52:50 | INFO     | END   | GET /rbac/user-role-config-html/AC | Status: 200 | Time: 12.06ms

@@ -78,11 +78,6 @@ async function logout() {
     }
 }
 //  start change password
-function openChangePasswordModal() {
-    $('#formChangePass').trigger("reset");
-    $('#modalChangePass').modal('show');
-}
-
 $('#formChangePass').on('submit', async function(e) {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(this));
@@ -101,3 +96,19 @@ $('#formChangePass').on('submit', async function(e) {
         Swal.fire('Lỗi', err.detail, 'error');
     }
 });
+
+// modal cho mobile
+function openChangePasswordModal() {
+    // 1. Tìm và đóng toàn bộ Dropdown đang mở trước
+    const dropdownElement = document.querySelector('.dropdown-toggle.show');
+    if (dropdownElement) {
+        const dropdown = coreui.Dropdown.getInstance(dropdownElement);
+        if (dropdown) dropdown.hide();
+    }
+
+    // 2. Delay nhẹ 100ms để trình duyệt mobile kịp xử lý hiệu ứng đóng
+    setTimeout(() => {
+        $('#formChangePass').trigger("reset");
+        $('#modalChangePass').modal('show');
+    }, 150);
+}

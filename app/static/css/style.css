@@ -15,6 +15,7 @@ body {
     line-height: 1.4;
     color: #2f353a;
 }
+
 /* Triệt tiêu lề âm mặc định của row trong container-fluid */
 .container-fluid .row {
     margin-right: 0 !important;
@@ -108,13 +109,15 @@ h6 {
 }
 
 .body {
-    padding: 0 !important; /* Xóa sạch padding của body */
+    padding: 0 !important;
+    /* Xóa sạch padding của body */
     background-color: #edeff1;
 }
 
 /* 2. Ép Container-fluid sát Sidebar nhất có thể */
 .container-fluid {
-    padding-left: 6px !important;  /* Khoảng hở 6px cực nhỏ giữa Sidebar và nội dung */
+    padding-left: 6px !important;
+    /* Khoảng hở 6px cực nhỏ giữa Sidebar và nội dung */
     padding-right: 6px !important;
     max-width: 100% !important;
     width: 100% !important;
@@ -122,28 +125,29 @@ h6 {
 
 /* 3. Thu hẹp khoảng cách giữa các bảng (Cột Trái/Phải) */
 .row {
-    --cui-gutter-x: 10px !important; 
+    --cui-gutter-x: 10px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
 /* 4. ĐIỀU KHIỂN ĐỘ ĐẨY CỦA SIDEBAR (QUAN TRỌNG NHẤT) */
 @media (min-width: 992px) {
+
     /* Khi Sidebar mở rộng: Đẩy đúng 256px */
-    .sidebar-fixed ~ .wrapper {
+    .sidebar-fixed~.wrapper {
         margin-left: 256px !important;
         transition: margin-left 0.15s ease-in-out;
     }
 
     /* Khi Sidebar thu nhỏ (Narrow/Unfoldable): Đẩy đúng 64px */
-    .sidebar-narrow.sidebar-fixed ~ .wrapper,
-    .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
+    .sidebar-narrow.sidebar-fixed~.wrapper,
+    .sidebar-narrow-unfoldable.sidebar-fixed~.wrapper {
         margin-left: 64px !important;
         transition: margin-left 0.15s ease-in-out;
     }
 
     /* Khi Sidebar bị ẩn hoàn toàn */
-    .sidebar-hide.sidebar-fixed ~ .wrapper {
+    .sidebar-hide.sidebar-fixed~.wrapper {
         margin-left: 0 !important;
     }
 }
@@ -151,13 +155,15 @@ h6 {
 /* 5. Làm Header mỏng và sát lề */
 .header {
     min-height: 40px !important;
-    margin-bottom: 5px !important; /* Khoảng cách nhỏ giữa Header và nội dung */
+    margin-bottom: 5px !important;
+    /* Khoảng cách nhỏ giữa Header và nội dung */
     padding: 0 !important;
 }
 
 .header .container-fluid {
     height: 40px !important;
-    padding-left: 15px !important; /* Thụt vào một chút cho nút Menu dễ bấm */
+    padding-left: 15px !important;
+    /* Thụt vào một chút cho nút Menu dễ bấm */
 }
 
 /* 6. Footer mỏng lại */
@@ -165,33 +171,36 @@ h6 {
     padding: 5px 15px !important;
     min-height: 30px !important;
 }
+
 /* --- END TỐI ƯU KHOẢNG TRỐNG (TIGHTEN LAYOUT) --- */
 /* --- END CHẾ ĐỘ COMPACT (THU NHỎ) TOÀN HỆ THỐNG --- */
 /* Đảm bảo nội dung không bao giờ bị Sidebar đè trong CoreUI 5 */
 
 @media (min-width: 992px) {
+
     /* 1. Đẩy Wrapper khít tuyệt đối với độ rộng Sidebar */
-    .sidebar-fixed ~ .wrapper {
+    .sidebar-fixed~.wrapper {
         margin-left: 210px !important;
         transition: margin-left 0.15s ease-in-out;
     }
 
     /* 2. Khi Sidebar thu nhỏ (narrow/unfoldable) */
-    .sidebar-narrow.sidebar-fixed ~ .wrapper,
-    .sidebar-narrow-unfoldable.sidebar-fixed ~ .wrapper {
+    .sidebar-narrow.sidebar-fixed~.wrapper,
+    .sidebar-narrow-unfoldable.sidebar-fixed~.wrapper {
         margin-left: 60px !important;
         transition: margin-left 0.15s ease-in-out;
     }
 
     /* 3. Khi Sidebar bị ẩn hoàn toàn */
-    .sidebar-hide.sidebar-fixed ~ .wrapper {
+    .sidebar-hide.sidebar-fixed~.wrapper {
         margin-left: 0 !important;
     }
 
     /* 4. ĐÒN QUYẾT ĐỊNH: Triệt tiêu padding của nội dung bên trong */
     /* Đây mới là thứ tạo ra cái khe hở bạn nhìn thấy */
     .wrapper .body .container-fluid {
-        padding-left: 2px !important;   /* Chỉ để 2px để Card không chạm hẳn vào Sidebar */
+        padding-left: 2px !important;
+        /* Chỉ để 2px để Card không chạm hẳn vào Sidebar */
         padding-right: 5px !important;
         max-width: 100% !important;
         width: 100% !important;
@@ -371,10 +380,13 @@ h6 {
 .dataTable tbody tr:hover {
     background-color: rgba(60, 75, 100, 0.05) !important;
 }
+
 /* 1. Nới rộng ô select một chút để hiện đủ số 10, 25, 50 */
 .dataTables_length select {
-    min-width: 65px !important;      /* Đảm bảo đủ chỗ cho 2 chữ số và mũi tên */
-    padding-right: 1.2rem !important; /* Khoảng trống cho icon mũi tên */
+    min-width: 65px !important;
+    /* Đảm bảo đủ chỗ cho 2 chữ số và mũi tên */
+    padding-right: 1.2rem !important;
+    /* Khoảng trống cho icon mũi tên */
     text-align: center;
     display: inline-block !important;
 }
@@ -385,8 +397,10 @@ h6 {
     font-weight: normal;
     display: flex;
     align-items: center;
-    gap: 5px; /* Khoảng cách giữa chữ và ô chọn */
+    gap: 5px;
+    /* Khoảng cách giữa chữ và ô chọn */
 }
+
 /* --- END PHONG CÁCH BẢNG NHỎ GỌN (COMPACT MODE) CHO TOÀN DỰ ÁN --- */
 
 /* Tinh chỉnh Dropdown Header */
@@ -403,4 +417,41 @@ h6 {
     width: 28px !important;
     height: 28px !important;
     border-radius: 50%;
+}
+
+/* adjust model mobile */
+@media (max-width: 768px) {
+
+    /* Tạo một vùng đệm "tàng hình" để ngón tay dễ chạm trúng */
+    .header-nav .nav-link {
+        padding: 8px 12px !important;
+        position: relative;
+    }
+
+    /* Ép Dropdown menu hiện lên trên cùng, không bị các khối khác đè */
+    .dropdown-menu {
+        z-index: 2000 !important;
+    }
+
+    /* Fix lỗi Modal bị mờ hoặc không hiện trên mobile */
+    .modal {
+        z-index: 2050 !important;
+    }
+
+    .modal-backdrop {
+        z-index: 2040 !important;
+    }
+
+    /* --- FIX LỖI SWEETALERT BỊ MODAL ĐÈ TRÊN MOBILE --- */
+
+    /* Lớp bao ngoài của SweetAlert2 */
+    .swal2-container {
+        z-index: 3000 !important;
+        /* Cao hơn mức 2050 của Modal */
+    }
+
+    /* Đảm bảo backdrop của Swal không bị lỗi hiển thị */
+    .swal2-backdrop-show {
+        z-index: 2999 !important;
+    }
 }
