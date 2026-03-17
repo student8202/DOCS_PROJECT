@@ -48,7 +48,7 @@ $(document).ready(function () {
         ],
         order: [[1, 'asc']], // Luôn mặc định sắp xếp theo cột Username (Cột 1)
         language: {
-            url: '/static/js/languages.json' // Để hiện tiếng Việt nếu bạn đã có file này
+        //     url: '/static/js/languages.json' // Để hiện tiếng Việt nếu bạn đã có file này
         }
     });
 

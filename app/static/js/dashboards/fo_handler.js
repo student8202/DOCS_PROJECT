@@ -179,8 +179,6 @@ FO_DASH.actions = {
                 { targets: 12, orderData: [32, 12] },
 
             ],
-
-
             // BƯỚC 1: Cấu hình Phân trang & Search
             lengthMenu: [[10, 20, 50, 100, -1], [10, 20, 50, 100, "Tất cả"]],
             pageLength: 20,
@@ -196,8 +194,9 @@ FO_DASH.actions = {
                 // Cập nhật con số vào Label
                 $('#lblTotalRooms').text(uniqueRooms.size);
             },
+            fixedColumns: true,
             language: {
-                url: '/static/js/languages.json',
+                // url: '/static/js/languages.json',
                 search: "Tìm:",
                 lengthMenu: "Xem _MENU_"
             }

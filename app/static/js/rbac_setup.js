@@ -10,7 +10,7 @@ $(document).ready(function () {
             { data: 'PermissionName' },
             { data: 'ModuleName' }
         ],
-        language: { url: '/static/js/languages.json' } // Nếu bạn có file ngôn ngữ tiếng Việt
+        // language: { url: '/static/js/languages.json' } // Nếu bạn có file ngôn ngữ tiếng Việt
     });
 
     $('#tblRoles').DataTable({

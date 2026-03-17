@@ -85,6 +85,7 @@ table.dataTable thead .sorting_asc:after {
     /* Nhóm 2: Xám xanh nhạt (Khác biệt rõ rệt) */
     .group-odd {
         --cui-table-bg: #f3f5f7 !important;
+        --bs-table-bg: #f3f5f7 !important;
         background-color: #f3f5f7 !important;
     }
 
@@ -93,3 +94,22 @@ table.dataTable thead .sorting_asc:after {
         --cui-table-accent-bg: rgba(0, 0, 0, 0.05) !important;
         background-color: #e9f0f7 !important;
     }
+
+    /* Màu nền cho các cột bị Neo (Fixed) */
+.DTFC_LeftWrapper table.dataTable thead tr,
+.DTFC_LeftWrapper table.dataTable tbody tr {
+    background-color: white !important;
+}
+
+/* Tăng trải nghiệm trên điện thoại */
+@media (max-width: 768px) {
+    #tblInHouseDash { font-size: 10px !important; }
+    .card-header { padding: 5px !important; }
+    /* Giới hạn độ rộng cột Tên khách trên mobile để không quá dài */
+    #tblInHouseDash td:nth-child(5) { 
+        max-width: 120px; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+    }
+}

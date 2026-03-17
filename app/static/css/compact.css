@@ -20,7 +20,7 @@ html, body {
 .card-body { padding: 0.75rem !important; }
 .form-control, .form-select, .btn {
     font-size: 0.85rem !important;
-    padding: 0.3rem 0.6rem !important;
+    /* padding: 0.3rem 0.6rem !important; */
 }
 
 
