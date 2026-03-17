@@ -118,6 +118,21 @@ Tóm lại: 5 lớp Backend và cấu trúc 4 phần JS
 vấn đề khi khai báo template ở từng router
 Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.
 => Để giải quyết triệt để và đúng chuẩn cấu trúc LaVie Project, chúng ta cần tách phần khai báo Jinja2Templates ra một file độc lập.
+-- global template
+# app/core/deps.py
+from fastapi.templating import Jinja2Templates
+
+# Khai báo templates duy nhất tại đây
+templates = Jinja2Templates(directory="templates")
+
+# # Đăng ký các hàm/biến toàn cục
+templates.env.globals.update(
+    # hàm lấy quyền
+    get_perms=lambda request: request.session.get("permissions", []),
+    # THÊM DÒNG NÀY: Hàm lấy ngày khách sạn từ Session
+    get_hotel_date=lambda request: request.session.get("hotel_date", "")
+)
+-------------------------------------------
 Thực tế, dữ liệu đã nằm trong Session rồi, nhưng có sự khác biệt giữa việc Backend (Python) đọc và Frontend (Jinja2 HTML) hiển thị:
 Dữ liệu trong Session: Lưu ở máy chủ. Khi bạn muốn kiểm tra quyền để cho phép vào trang hay không (trong Controller), bạn dùng request.session.get("permissions"). Cái này chạy rất tốt ở phần "chìm".
 Vấn đề ở phần "nổi" (HTML): Jinja2 là một bộ máy render độc lập. Nó không tự ý lục lọi vào request.session để lấy dữ liệu ra trừ khi bạn chỉ định rõ ràng.
@@ -130,4 +145,6 @@ return templates.TemplateResponse("dashboard.html", {
     "user_permissions": request.session.get("permissions") 
 })
 Hãy thận trọng khi sử dụng mã.
+---------------------------------------
+FolioNum (Số chính) phải là "đại diện" cho cả nhóm. Khi nhấn Sort theo bất kỳ cột nào, hệ thống phải sắp xếp các Nhóm Folio đó với nhau, còn các thành viên bên trong nhóm (các dòng khách đi cùng) thì phải luôn đi theo "ông chủ" Folio đó và giữ nguyên trật tự phòng.
 

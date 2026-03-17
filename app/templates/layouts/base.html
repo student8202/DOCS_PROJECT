@@ -231,6 +231,13 @@
     </div>
     {% include 'includes/footer.html' %}
     <!-- ĐÂY LÀ NƠI KHAI BÁO scripts -->
+     <script>
+        // 1. Phải dùng dấu nháy kép bao quanh tag Jinja2
+        const GLOBAL_HOTEL_DATE= "{{ get_hotel_date(request) }}";    
+        const HotelDate = moment(GLOBAL_HOTEL_DATE, "MM/DD/YYYY").toDate();
+        // In ra console để kiểm tra ngay tại đây
+        console.log("Hotel Date từ Session:", moment(HotelDate).format('DD/MM/YYYY'));
+    </script>
     {% block scripts %}{% endblock %}
 </body>
 

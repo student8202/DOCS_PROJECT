@@ -1,0 +1,54 @@
+.nav-group-toggle { font-weight: 600 !important; color: rgba(255, 255, 255, 0.9) !important; }
+.nav-group.show { background: rgba(0, 0, 0, 0.15); }
+.nav-group-items { border-left: 1px solid rgba(255, 255, 255, 0.1); margin-left: 2rem; }
+.nav-group-items .nav-item .nav-link { padding-left: 3.5rem !important; font-size: 0.875rem;white-space: normal; }
+
+.nav-group-items .nav-item .nav-link.active::before {
+    content: ""; position: relative; left: 0; top: 50%; width: 4px; height: 4px; background: #321fdb; border-radius: 50%;
+}
+/* Đảm bảo nội dung không bao giờ bị Sidebar đè trong CoreUI 5 */
+
+@media (min-width: 992px) {
+
+    /* 1. Đẩy Wrapper khít tuyệt đối với độ rộng Sidebar */
+    .sidebar-fixed~.wrapper {
+        margin-left: 210px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
+
+    /* 2. Khi Sidebar thu nhỏ (narrow/unfoldable) */
+    .sidebar-narrow.sidebar-fixed~.wrapper,
+    .sidebar-narrow-unfoldable.sidebar-fixed~.wrapper {
+        margin-left: 60px !important;
+        transition: margin-left 0.15s ease-in-out;
+    }
+
+    /* 3. Khi Sidebar bị ẩn hoàn toàn */
+    .sidebar-hide.sidebar-fixed~.wrapper {
+        margin-left: 0 !important;
+    }
+
+    /* 4. ĐÒN QUYẾT ĐỊNH: Triệt tiêu padding của nội dung bên trong */
+    /* Đây mới là thứ tạo ra cái khe hở bạn nhìn thấy */
+    .wrapper .body .container-fluid {
+        padding-left: 2px !important;
+        /* Chỉ để 2px để Card không chạm hẳn vào Sidebar */
+        padding-right: 5px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* Fix tiêu đề bị tràn khi Sidebar thu nhỏ */
+.sidebar-brand-narrow {
+    display: none;
+}
+
+.sidebar-narrow .sidebar-brand-full {
+    display: none;
+}
+
+.sidebar-narrow .sidebar-brand-narrow {
+    display: block;
+    font-size: 1.2rem;
+}

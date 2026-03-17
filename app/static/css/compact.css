@@ -1,0 +1,26 @@
+/* 1. Global Font & Spacing */
+html, body {
+    font-size: 13px !important;
+    line-height: 1.4;
+    color: #2f353a;
+}
+
+/* 2. Layout Ultra Compact */
+.wrapper { padding-left: 0 !important; margin-left: 0 !important; }
+.body { padding: 0 !important; background-color: #edeff1; }
+
+.container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    max-width: 100% !important;
+}
+
+/* 3. Components Compact */
+.card-header { padding: 0.5rem 1rem !important; }
+.card-body { padding: 0.75rem !important; }
+.form-control, .form-select, .btn {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.6rem !important;
+}
+
+

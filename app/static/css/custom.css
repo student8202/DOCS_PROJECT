@@ -1,0 +1,12 @@
+/* Ép màu cho Logo Sidebar */
+/* .sidebar .sidebar-brand {
+    background: #3c4b64 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+} */
+
+/* Làm nổi bật Menu đang chọn trong chế độ Compact */
+.sidebar-nav .nav-link.active {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left: 3px solid #321fdb; /* Thêm một vạch xanh nhỏ bên trái cho chuyên nghiệp */
+}

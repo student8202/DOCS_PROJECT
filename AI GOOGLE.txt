@@ -1,4 +1,79 @@
--- 3/7/2026
-https://www.google.com/search?q=alo&sca_esv=f611135b2ad8de8f&rlz=1C1PNBB_enVN988VN988&sxsrf=ANbL-n5Lo_aHsEY6FSsR3h5HUA45dWN3OQ%3A1772802038130&fbs=ADc_l-ZXQWBHI_L0epjkf31fijnbltHdB45MC_O_Dkxw77BoaVXPcfmHRvQ633efQsr_pI0gufsmvdmuIg_iaAEMlO92GZCjNCMEaqYBvbctcT22JXJv12KlWRgPRr6hMjmnUZo0XcxXzeL4d383KWkAHQgoRlBFQiPAi9TD05zAo58yhJjI5DFNVOPAFgebSMpAWt5z529yARrIK6MDd_Uz-fsmbMFSrwHm8lF0rE3K27uYlwsKhc7V1e2zwO_Z5YFmw6o0eGSM&aep=1&ntc=1&sa=X&ved=2ahUKEwjFqfWdqouTAxUO4zgGHRUxFOAQ2J8OegQICRAE&biw=1360&bih=633&dpr=1&mstk=AUtExfCt41SlqCBpSmvjKBa7u_X7ia3_DniRfVWi1b-CfpsMoii8Va0AbrOtp_ywOJq7dsVLiupPgV8UJSQGfVz4ETzlsQERU-mQDs3ryIWZyuRi6J2PLGnyNIrIsU83R3q6rbMJv1aUERCdFkQ4o526qAeoYVjC24_Zdxu8bzHSdxqNB4n1hG32QZII1ANeZnGYY8VcNQEA3a13v8nc223hIbouBrPGofp_t8ra5U4_abuG4d6qajYuNYEBIi2MStUCGOHFDpqEcHOFsR8q9YORcs506u7DDcMRobfNCllXzHoYzqlG8hntANCxL09H3YRj7Hb10-u06QU1yw&csuir=1&mtid=_M-qadifOZuN4-EPjLTBmQ8&udm=50
--- 09:22
-https://www.google.com/search?q=alo&sca_esv=f611135b2ad8de8f&rlz=1C1PNBB_enVN988VN988&sxsrf=ANbL-n5Lo_aHsEY6FSsR3h5HUA45dWN3OQ%3A1772802038130&fbs=ADc_l-ZXQWBHI_L0epjkf31fijnbltHdB45MC_O_Dkxw77BoaVXPcfmHRvQ633efQsr_pI0gufsmvdmuIg_iaAEMlO92GZCjNCMEaqYBvbctcT22JXJv12KlWRgPRr6hMjmnUZo0XcxXzeL4d383KWkAHQgoRlBFQiPAi9TD05zAo58yhJjI5DFNVOPAFgebSMpAWt5z529yARrIK6MDd_Uz-fsmbMFSrwHm8lF0rE3K27uYlwsKhc7V1e2zwO_Z5YFmw6o0eGSM&aep=1&ntc=1&sa=X&ved=2ahUKEwjFqfWdqouTAxUO4zgGHRUxFOAQ2J8OegQICRAE&biw=1360&bih=633&dpr=1&mstk=AUtExfAyCN6aMpdTY5mId-rZqhSTqFB6Uvz4oHGCQhsqURv0ffIsrK2f6iOOXEfl5fzxNR36os7UkDzPTNCLse8yy1NauD0OFjrJGdigGD0nYhVCszbo8PG1p9pZj5ycjz2NuHMF2etGIctE2gSQI9qnIiPw_VTwBEu2R9C3At1EYMDrhx1ANbwLY6pZ5UHJm-63FspUGE0aHoY0pdM5p_kLq5SUF0Ojeqivlfqs3sL75LfiLM02yBaCRtAfIIf37XljadqN5APkUcZMthj6axW1H4YJuBiTLAtua-Ha__YRTqllrJKQLFGZUdavT0KRUDr-CtSzMsje2lw2RQ&csuir=1&mtid=_M-qadifOZuN4-EPjLTBmQ8&udm=50
+Để tổ chức CSS hiệu quả, dễ bảo trì và mở rộng, bạn nên áp dụng các chiến lược sau:
+1. Sử dụng phương pháp đặt tên (Naming Convention)
+Phổ biến nhất là BEM (Block - Element - Modifier). Cách này giúp code minh bạch, tránh xung đột selector và dễ hiểu cấu trúc HTML chỉ thông qua class CSS.
+Block: Thành phần độc lập (vd: .card).
+Element: Phần con của block (vd: .card__title).
+Modifier: Biến thể của block/element (vd: .card--featured).
+2. Cấu trúc thư mục theo Module (7-1 Pattern)
+Đừng gom tất cả code vào một file. Hãy chia nhỏ thành các thư mục riêng biệt (thường dùng với Sass/SCSS):
+base/: Reset CSS, typography, thiết lập cơ bản.
+components/: Các thành phần nhỏ như button, card, navbar.
+layout/: Cấu trúc lớn như header, footer, grid.
+utils/: Các class tiện ích dùng nhanh (margin, padding, text-center).
+abstracts/: Biến (variables), mixins, functions (không tạo ra CSS thực tế).
+3. Tận dụng Biến (CSS Variables)
+Sử dụng CSS Custom Properties (--primary-color: #3498db;) thay vì viết mã màu trực tiếp. Điều này giúp bạn thay đổi giao diện (như Dark Mode) cực nhanh bằng cách chỉ cần cập nhật giá trị biến ở một nơi duy nhất.
+4. Ưu tiên tính Modular và Reusable
+Tránh Selector quá sâu: Đừng viết .header .nav .menu .item. Hãy dùng một class duy nhất như .nav-item để giảm độ ưu tiên (specificity) không cần thiết.
+Utility-first (tùy chọn): Học hỏi cách tiếp cận của Tailwind CSS bằng cách tạo các class nhỏ dùng chung cho các thuộc tính hay lặp lại.
+5. Sử dụng Công cụ hỗ trợ
+Preprocessors: Dùng Sass hoặc Less để có khả năng lồng (nesting), mixins và tách file (@import hoặc @use).
+PostCSS: Tự động thêm vendor prefixes (như -webkit-) để tương thích trình duyệt.
+--------------------------------------
+Khi bạn dùng CoreUI và Bootstrap, việc viết CSS thuần (Vanilla CSS) cần cực kỳ cẩn thận để không làm hỏng hệ thống Grid và Component có sẵn. Để dễ bảo trì và mở rộng cho 3 phân hệ (FO, BO, HR), bạn nên tổ chức theo hướng "Ghi đè có kiểm soát".
+Dưới đây là cách tổ chức file và tư duy viết code:
+1. Cấu trúc file CSS (Tách biệt logic)
+Thay vì dùng 1 file style.css khổng lồ, hãy chia nhỏ và nhúng chúng theo thứ tự vào HTML:
+text
+css/
+├── themes/
+│   ├── variables.css      /* Định nghĩa màu sắc, font cho từng phân hệ */
+│   ├── fo-theme.css       /* Tùy chỉnh riêng cho Front Office */
+│   ├── bo-theme.css       /* Tùy chỉnh riêng cho Back Office */
+│   └── hr-theme.css       /* Tùy chỉnh riêng cho HR */
+├── components/
+│   ├── signature-pad.css  /* CSS cho khung ký tên */
+│   ├── doc-viewer.css     /* CSS cho trình xem hồ sơ */
+│   └── status-badge.css   /* Các loại nhãn: Đã ký, Chờ duyệt... */
+└── main.css               /* File tổng hợp hoặc các tùy chỉnh chung */
+Hãy thận trọng khi sử dụng mã.
+
+2. Sử dụng CSS Variables (Cực kỳ quan trọng)
+Vì CoreUI/Bootstrap dựa trên các biến, bạn nên định nghĩa biến riêng để dễ đổi giao diện giữa các phân hệ mà không phải sửa từng dòng code:
+css
+/* variables.css */
+:root {
+  --sig-primary: #321fdb; /* Màu mặc định CoreUI */
+  --sig-border: #d8dbe0;
+  --sig-pad-height: 200px;
+}
+
+/* Trong file hr-theme.css, bạn chỉ cần ghi đè biến */
+.body-hr {
+  --sig-primary: #2eb85c; /* Màu xanh lá đặc trưng cho nhân sự */
+}
+Hãy thận trọng khi sử dụng mã.
+
+3. Quy tắc đặt tên "Namespace" (Tránh xung đột)
+Để không ghi đè nhầm CSS của Bootstrap/CoreUI, hãy thêm tiền tố (prefix) cho các class tự viết (ví dụ: sig- cho Signature system):
+❌ Tránh: .card { ... } (Sẽ làm hỏng card của Bootstrap)
+✅ Nên: .sig-card-signing { ... }, .sig-btn-approve { ... }
+4. Cách xử lý các thành phần đặc thù
+Với tính năng Ký hồ sơ, bạn sẽ cần các class thuần sau:
+Khung ký (Signature Pad): Dùng aspect-ratio để khung ký luôn tỉ lệ chuẩn trên mobile (FO) và desktop (BO).
+Trình xem tài liệu: Dùng sticky top cho thanh công cụ ký để khi user cuộn hồ sơ dài (hợp đồng HR) vẫn thấy nút "Ký".
+Trạng thái hồ sơ: Tận dụng class badge của Bootstrap nhưng bổ sung thêm trạng thái riêng:
+css
+.sig-status-signed { border-left: 4px solid var(--sig-primary); }
+Hãy thận trọng khi sử dụng mã.
+
+5. Chiến lược ghi đè (Override)
+Khi cần sửa một Component của CoreUI, hãy dùng Class cha để giới hạn phạm vi:
+css
+/* Chỉ sửa Table trong phân hệ HR, không ảnh hưởng FO/BO */
+.hr-module .table {
+    font-size: 0.9rem;
+}
+Hãy thận trọng khi sử dụng mã.
+
+Lời khuyên: Bạn nên ưu tiên dùng các Utility Classes của Bootstrap (me-2, d-flex, shadow-sm) trực tiếp trên HTML, chỉ viết CSS thuần cho những gì Bootstrap không có (như Canvas ký tên, hiệu ứng hover dòng hồ sơ, hoặc layout xem file PDF).

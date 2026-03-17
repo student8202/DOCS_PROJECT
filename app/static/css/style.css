@@ -381,7 +381,7 @@ h6 {
     background-color: rgba(60, 75, 100, 0.05) !important;
 }
 
-/* 1. Nới rộng ô select một chút để hiện đủ số 10, 25, 50 */
+/* 1. Nới rộng ô select search một chút để hiện đủ số 10, 25, 50 */
 .dataTables_length select {
     min-width: 65px !important;
     /* Đảm bảo đủ chỗ cho 2 chữ số và mũi tên */

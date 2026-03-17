@@ -1,5 +1,6 @@
 from fastapi import HTTPException, Request
 from services.auth_service import AuthService
+from services.fo_sv import FOService
 from core.security import verify_password, create_access_token
 from schemas.auth import ChangePasswordRequest
 # from database.db_connection import get_lv_docs_db
@@ -25,6 +26,11 @@ class AuthController:
         # 2. Lấy quyền và ghi vào Session để lưu Log/Audit sau này
         permissions = AuthService.get_user_permissions(username)
         
+        hotel_date = FOService.get_hotel_date() # Hàm "SELECT TOP 1 HotelDate..." bạn đã viết
+        request.session["hotel_date"] = hotel_date # Lưu vào Session
+        hotel_name = FOService.get_hotel_name() 
+        request.session["hotel_name"] = hotel_name
+        
         request.session["username"] = user[0]
         request.session["full_name"] = user[3]
         request.session["permissions"] = permissions
@@ -38,7 +44,9 @@ class AuthController:
             "access_token": token,
             "username": user[0],
             "full_name": user[3],
-            "permissions": permissions
+            "permissions": permissions,
+            "hotel_date":hotel_date,
+            "hotel_name":hotel_name
         }
 
     @staticmethod
@@ -84,19 +92,17 @@ class AuthController:
     # dynamic dashboard
     @staticmethod
     def render_dashboard(request: Request):
-        user_perms = request.session.get("permissions", [])
+        user_perms = [p.lower() for p in request.session.get("permissions", []) if p]
         
-        # 1. Xác định "Phân hệ ưu tiên" để hiển thị Dashboard
-        # Ưu tiên: FO -> BO -> HR -> Default
-        target_view = "default"
-        if "view_fo" in user_perms:
-            target_view = "fo"
-        elif "view_bo" in user_perms:
-            target_view = "bo"
-        elif "view_hr" in user_perms:
-            target_view = "hr"
-            
+        # Kiểm tra xem User có quyền ở những phân hệ nào
+        dash_modules = {
+            "show_fo": "view_fo" in user_perms or "admin" in user_perms,
+            "show_bo": "view_bo" in user_perms or "admin" in user_perms,
+            "show_hr": "view_hr" in user_perms or "admin" in user_perms
+        }
+        
         return templates.TemplateResponse("dashboard.html", {
             "request": request,
-            "target_view": target_view
+            "full_name": request.session.get("full_name"),
+            "dash_modules": dash_modules # Gửi dict chứa các cờ True/False
         })

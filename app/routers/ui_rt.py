@@ -4,6 +4,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse, Resp
 from fastapi.templating import Jinja2Templates
 from core.security import get_password_hash
 from passlib.hash import bcrypt
+from controllers.auth_controller import AuthController
 from core.deps import templates # Import từ deps
 
 # Khai báo Router cho giao diện
@@ -27,14 +28,8 @@ async def dashboard_page(request: Request):
     if not login_required(request):
         return RedirectResponse(url="/?error=timeout", status_code=303)
         
-    # Lấy danh sách quyền đã lưu lúc Login
-    user_permissions = request.session.get("permissions", [])
-    
-    return templates.TemplateResponse("dashboard.html", {
-        "request": request,
-        "full_name": request.session.get("full_name"),
-        "user_permissions": user_permissions # Gửi quyền sang HTML
-    })
+    # 2. Gọi Controller xử lý (Nội dung)
+    return AuthController.render_dashboard(request)
 
 @router.get("/fo", response_class=HTMLResponse)
 async def fo_page(request: Request):

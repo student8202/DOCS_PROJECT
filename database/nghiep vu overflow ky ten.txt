@@ -1,3 +1,23 @@
+Tính năng Quản lý và Ký hồ sơ trực tuyến cho phân hệ FO, BO, HR
+Để xây dựng tính năng Quản lý và Ký hồ sơ trực tuyến cho các phân hệ FO (Front Office), BO (Back Office) và HR (Human Resources) một cách chuyên nghiệp và dễ bảo trì về mặt giao diện (CSS), bạn nên tổ chức theo các nhóm chức năng đặc thù như sau:
+1. Phân loại tính năng theo phân hệ
+Mỗi phân hệ có nhu cầu về tài liệu và quy trình ký khác nhau, bạn cần module hóa CSS để phục vụ từng đối tượng:
+FO (Front Office - Tiếp xúc khách hàng):
+Tính năng: Ký hợp đồng dịch vụ, biểu mẫu đăng ký, xác nhận thanh toán trực tuyến.
+Giao diện: Cần tối ưu cho thiết bị di động (Mobile-first), giao diện đơn giản, hướng dẫn rõ ràng để khách hàng dễ dàng thao tác ký nhanh.
+BO (Back Office - Vận hành nội bộ):
+Tính năng: Ký duyệt đề xuất chi phí, hợp đồng nhà cung cấp, biên bản bàn giao.
+Giao diện: Tập trung vào bảng biểu (Table), bộ lọc (Filter) mạnh mẽ và danh sách hồ sơ chờ duyệt theo luồng (Workflow).
+HR (Human Resources - Quản lý nhân sự):
+Tính năng: Ký hợp đồng lao động, cam kết bảo mật (NDA), hồ sơ nhận việc (Onboarding) và đánh giá hiệu suất.
+Giao diện: Cần các biểu mẫu (Forms) dài, trình xem tài liệu (Document Viewer) trực quan và quản lý quyền truy cập nghiêm ngặt. 
+2. Các tính năng kỹ thuật cốt lõi
+Dù ở phân hệ nào, hệ thống ký hồ sơ trực tuyến cần đảm bảo các tiêu chuẩn sau:
+Tích hợp chữ ký số (E-Signature): Hỗ trợ ký bằng hình vẽ (Draw), tải ảnh chữ ký hoặc ký bằng USB Token/SIM CA.
+Luồng phê duyệt tự động (Workflow Automation): Tự động chuyển hồ sơ đến người tiếp theo trong danh sách sau khi một người đã ký xong.
+Lịch sử và bằng chứng pháp lý (Audit Trail): Ghi lại chi tiết ai đã ký, vào thời gian nào, từ địa chỉ IP nào để đảm bảo tính pháp lý.
+Kho lưu trữ tập trung: Số hóa và lưu trữ an toàn, cho phép tìm kiếm nhanh chóng theo tên, phòng ban hoặc loại tài liệu. 
+-------------------------------------
 Tại sao đây là bước hoàn tất Phân quyền?
 Giờ đây bạn đã có một chu trình khép kín:
 1. Sync User từ SMILE.
@@ -7,3 +27,4 @@ Giờ đây bạn đã có một chu trình khép kín:
 5. Gán Role cho User (Dùng trang Manage này).
 Hệ thống RBAC của bạn đã chính thức hoàn thành 100%
 ----------------------------------
+
