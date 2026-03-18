@@ -7,21 +7,21 @@
                 <span class="small fw-bold text-success me-2"><i class="fas fa-bed"></i> IN-HOUSE</span>
 
                 <!-- All Rooms -->
-                <span class="badge border border-secondary text-secondary btn-filter active" id="btnFilterAll"
-                    onclick="FO_DASH.actions.filterType('all')" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="Đang tính..." style="cursor:pointer; font-size: 10px;">
+                <span class="badge border border-secondary text-secondary btn-filter active btn-filter-stat"
+                    id="btnFilterAll" onclick="FO_DASH.actions.filterType('all')" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Đang tính..." style="cursor:pointer; font-size: 10px;">
                     All: <b id="lblTotalRooms">0</b>
                 </span>
 
                 <!-- FIT -->
-                <span class="badge border border-info text-info btn-filter" id="btnFilterGit"
+                <span class="badge border border-info text-info btn-filter btn-filter-stat" id="btnFilterGit"
                     onclick="FO_DASH.actions.filterType('git')" data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Đang tính..." style="cursor:pointer; font-size: 10px;">
                     FIT: <b id="lblTotalGit">0</b>
                 </span>
 
                 <!-- GIT (Group) -->
-                <span class="badge border border-warning text-warning btn-filter" id="btnFilterGroup"
+                <span class="badge border border-warning text-warning btn-filter btn-filter-stat" id="btnFilterGroup"
                     onclick="FO_DASH.actions.filterType('group')" data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Đang tính..." style="cursor:pointer; font-size: 10px;">
                     GIT: <b id="lblTotalGroup">0</b>
@@ -39,6 +39,13 @@
                     <i class="fas fa-sync-alt"></i> <small class="fw-bold">RELOAD</small>
                 </button>
             </div>
+        </div>
+        <!-- Vùng hiển thị chi tiết cho Điện thoại -->
+        <div id="paxInfoBox" class="mt-1 d-none border-top pt-1">
+            <small class="text-primary fw-bold" style="font-size: 10px;">
+                <i class="fas fa-info-circle me-1"></i>
+                <span id="lblPaxDetail">Chạm để xem chi tiết khách (A|C|E)...</span>
+            </small>
         </div>
     </div>
     <div class="card-body p-0">

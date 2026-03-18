@@ -208,7 +208,50 @@ FO_DASH.actions = {
             lengthMenu: [[10, 20, 50, 100, -1], [10, 20, 50, 100, "Tất cả"]],
             pageLength: 20,
             dom: '<"d-flex justify-content-between align-items-center mb-1"lf>rtip',
-            
+            drawCallback: function (settings) {
+                const api = this.api();
+                const allData = api.rows({ filter: 'applied' }).data().toArray();
+                if (allData.length === 0) return;
+
+                // 1. Hàm tính Pax (Giữ nguyên của bạn)
+                const getSummary = (dataList) => {
+                    let adt = 0, chl = 0, enf = 0;
+                    const uniqueRooms = new Set();
+                    for (let i = 0; i < dataList.length; i++) {
+                        uniqueRooms.add(dataList[i].FFolioNum);
+                        adt += (parseInt(dataList[i].NumAdt) || 0);
+                        chl += (parseInt(dataList[i].NumChild) || 0);
+                        enf += (parseInt(dataList[i].NumEnf) || 0);
+                    }
+                    return {
+                        rooms: uniqueRooms.size,
+                        pax: `Pax: ${adt + chl + enf} (A:${adt}|C:${chl}|E:${enf})`
+                    };
+                };
+
+                // 2. Tính toán
+                const allSum = getSummary(allData);
+                const fitSum = getSummary(allData.filter(i => !i.SortGroup || i.SortGroup.trim() === ""));
+                const groupSum = getSummary(allData.filter(i => i.SortGroup && i.SortGroup.trim() !== ""));
+
+                // 3. Cập nhật con số Badge
+                $('#lblTotalRooms').text(allSum.rooms);
+                $('#lblTotalGit').text(fitSum.rooms);
+                $('#lblTotalGroup').text(groupSum.rooms);
+
+                // 4. CẬP NHẬT DỮ LIỆU (Desktop dùng title, Mobile dùng data-pax)
+                const updateUI = (id, label, sum) => {
+                    const text = `${label} - ${sum.pax}`;
+                    $(id).attr('title', text).attr('data-pax', text);
+                };
+
+                updateUI('#btnFilterAll', 'TOTAL', allSum);
+                updateUI('#btnFilterGit', 'FIT', fitSum);
+                updateUI('#btnFilterGroup', 'GROUP', groupSum);
+
+                // Fix lỗi neo cột
+                setTimeout(() => { if (api.fixedColumns) api.fixedColumns().relayout(); }, 10);
+            },
             language: {
                 // url: '/static/js/languages.json',
                 search: "Tìm:",
@@ -258,7 +301,21 @@ FO_DASH.actions = {
         }
     }
 };
-
+// 3. EVENT XỬ LÝ RIÊNG CHO ĐIỆN THOẠI (Chạm để hiện InfoBox)
+$(document).on('click', '.btn-filter-stat', function() {
+    // Chỉ xử lý trên màn hình nhỏ (Mobile)
+    if (window.innerWidth <= 768) {
+        const paxInfo = $(this).attr('data-pax');
+        $('#paxInfoBox').removeClass('d-none');
+        $('#lblPaxDetail').text(paxInfo);
+        
+        // Hiệu ứng highlight nhẹ để báo hiệu đã nhận lệnh
+        $('#lblPaxDetail').css('color', '#dc3545').delay(200).queue(function(next){
+            $(this).css('color', '#007bff');
+            next();
+        });
+    }
+});
 // 4. EVENTS
 $(document).ready(() => {
     FO_DASH.actions.init();
@@ -268,10 +325,5 @@ $(document).ready(() => {
 
         // Gọi hàm đổi URL
         FO_DASH.actions.switchUrl(isChecked);
-    });
-    // Khởi tạo Tooltip cho 3 nút lọc (chỉ làm 1 lần)
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function (el) {
-        return new bootstrap.Tooltip(el, { trigger: 'click hover focus' }); // Thêm 'click' để chạy trên Mobile
     });
 });
