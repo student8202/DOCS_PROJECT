@@ -7,7 +7,8 @@
 const FO_DASH = {
     tableId: '#tblInHouseDash',
     apiUrl: '/fo/inhouse-list2',
-    instance: null
+    instance: null,
+    currentModule: 'ih', // Mặc định là In-House
 };
 
 // 2. UI HELPERS
@@ -70,6 +71,17 @@ const calcPax = (dataList) => {
 FO_DASH.actions = {
     init: () => {
         const hotelDateStr = GLOBAL_HOTEL_DATE;
+
+        // CÁCH 1: Gắn sự kiện TRƯỚC KHI init DataTable (Khuyên dùng)
+        $(FO_DASH.tableId).on('preXhr.dt', function (e, settings, data) {
+            // Hiện loader ngay khi bắt đầu gọi API
+            $('#global-loader').css('display', 'flex').show();
+        });
+
+        $(FO_DASH.tableId).on('xhr.dt', function (e, settings, json, xhr) {
+            // Ẩn loader khi server trả về kết quả (thành công hoặc lỗi)
+            $('#global-loader').fadeOut(300);
+        });
 
         FO_DASH.instance = $(FO_DASH.tableId).DataTable({
             ajax: { url: FO_DASH.apiUrl, dataSrc: '' },
@@ -249,8 +261,17 @@ FO_DASH.actions = {
                 updateUI('#btnFilterGit', 'FIT', fitSum);
                 updateUI('#btnFilterGroup', 'GROUP', groupSum);
 
-                // Fix lỗi neo cột
-                setTimeout(() => { if (api.fixedColumns) api.fixedColumns().relayout(); }, 10);
+                // --- ĐOẠN FIX LỖI MẤT NEO CỘT (FIXEDCOLUMNS) ---
+                // --- ĐOẠN FIX LỖI MẤT NEO CỘT (DÀNH CHO FIXEDCOLUMNS 5.X) ---
+                setTimeout(() => {
+                    if (FO_DASH.instance && FO_DASH.instance.fixedColumns) {
+                        // Với bản 5.x, chỉ cần gọi hàm này để nó tính toán lại vị trí các cột dính (sticky)
+                        FO_DASH.instance.fixedColumns();
+
+                        // Nếu vẫn thấy lệch, ép trình duyệt vẽ lại phần header ảo
+                        $(window).trigger('resize');
+                    }
+                }, 50);
             },
             language: {
                 // url: '/static/js/languages.json',
@@ -271,14 +292,27 @@ FO_DASH.actions = {
         FO_DASH.instance.draw(); // Vẽ lại bảng để thực thi search.push
     },
     // hàm show reservation name
+    // HÀM ĐIỀU HƯỚNG URL LINH HOẠT
     switchUrl: (isShowRes) => {
-        // Logic chọn URL
-        const newUrl = isShowRes ? '/fo/inhouse-list' : '/fo/inhouse-list2';
+        let baseUrl = '';
 
-        // Cập nhật API và nạp lại dữ liệu (load mới hoàn toàn)
-        FO_DASH.instance.ajax.url(newUrl).load();
+        // 1. Xác định Base URL dựa trên Module đang đứng (RS, IH, hay RSIH)
+        switch (FO_DASH.currentModule) {
+            case 'rs': baseUrl = 'reservation-list'; break;
+            case 'ih': baseUrl = 'inhouse-list'; break;
+            case 'rsih': baseUrl = 'reservation-ih-list'; break;
+        }
 
-        console.log("Đã đổi sang API:", newUrl);
+        // 2. Ghép hậu tố: Nếu Uncheck (Gom nhóm) thì thêm số '2'
+        const suffix = isShowRes ? '' : '2';
+        const finalUrl = `/fo/${baseUrl}${suffix}`;
+
+        console.log("==> Gọi API:", finalUrl);
+
+        // 3. Thực thi nạp dữ liệu (DataTables tự động hiện Loading)
+        if (FO_DASH.instance) {
+            FO_DASH.instance.ajax.url(finalUrl).load();
+        }
     },
 
     reload: () => {
@@ -299,18 +333,56 @@ FO_DASH.actions = {
                 Swal.fire({ toast: true, position: 'top-end', icon: 'success', title: 'Đã cập nhật dữ liệu mới', showConfirmButton: false, timer: 1500 });
             }, false);
         }
+    },
+    switchModule: (type) => {
+        FO_DASH.currentModule = type; // Lưu lại phân hệ vừa chọn
+        const isShowRes = $('#chkShowResName').is(':checked');
+        let url = '';
+        let label = '';
+        let colorClass = '';
+
+        switch (type) {
+            case 'rs': // Mode 1
+                $('#chkShowResName').prop('checked', false);
+                url = '/fo/reservation-list2';
+                label = '<i class="fas fa-calendar-alt me-1"></i> RESERVATION';
+                colorClass = 'text-primary';
+                break;
+            case 'ih': // Mode 2
+                $('#chkShowResName').prop('checked', false);
+                url = '/fo/inhouse-list2';
+                label = '<i class="fas fa-bed me-1"></i> IN-HOUSE';
+                colorClass = 'text-success';
+                break;
+            case 'rsih': // Mode 0
+                $('#chkShowResName').prop('checked', false);
+                url = '/fo/reservation-ih-list2';
+                label = '<i class="fas fa-history me-1"></i> RES_IH';
+                colorClass = 'text-info';
+                break;
+        }
+        console.log('call ' + url)
+        // 1. Cập nhật giao diện nút Dropdown (đổi chữ và đổi màu)
+        $('#ddlModule').html(label)
+            .removeClass('text-primary text-success text-info')
+            .addClass(colorClass);
+
+        // 2. Gọi API load lại dữ liệu (Cấu trúc JSON giống hệt nên bảng tự vẽ lại)
+        if (FO_DASH.instance) {
+            FO_DASH.instance.ajax.url(url).load();
+        }
     }
 };
 // 3. EVENT XỬ LÝ RIÊNG CHO ĐIỆN THOẠI (Chạm để hiện InfoBox)
-$(document).on('click', '.btn-filter-stat', function() {
+$(document).on('click', '.btn-filter-stat', function () {
     // Chỉ xử lý trên màn hình nhỏ (Mobile)
     if (window.innerWidth <= 768) {
         const paxInfo = $(this).attr('data-pax');
         $('#paxInfoBox').removeClass('d-none');
         $('#lblPaxDetail').text(paxInfo);
-        
+
         // Hiệu ứng highlight nhẹ để báo hiệu đã nhận lệnh
-        $('#lblPaxDetail').css('color', '#dc3545').delay(200).queue(function(next){
+        $('#lblPaxDetail').css('color', '#dc3545').delay(200).queue(function (next) {
             $(this).css('color', '#007bff');
             next();
         });
@@ -319,11 +391,17 @@ $(document).on('click', '.btn-filter-stat', function() {
 // 4. EVENTS
 $(document).ready(() => {
     FO_DASH.actions.init();
-    // SỰ KIỆN KHI NHẤN CHECKBOX
+    // SỰ KIỆN KHI NHẤN CHECKBOX show reservation
     $(document).on('change', '#chkShowResName', function () {
         const isChecked = $(this).is(':checked');
 
         // Gọi hàm đổi URL
         FO_DASH.actions.switchUrl(isChecked);
+    });
+
+    // KHỞI TẠO THỦ CÔNG DROPDOWN (Để chắc chắn nó hoạt động)
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
     });
 });

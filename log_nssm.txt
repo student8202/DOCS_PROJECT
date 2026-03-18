@@ -1,4 +1,4 @@
-[Wed 03/18/2026 14:39:43.73] Dang kiem tra thu vien FastAPI...
+[Wed 03/18/2026 20:19:54.30] Dang kiem tra thu vien FastAPI...
 Requirement already satisfied: fastapi in c:\program files\python312\lib\site-packages (0.135.1)
 Requirement already satisfied: uvicorn in c:\program files\python312\lib\site-packages (0.41.0)
 Requirement already satisfied: jinja2 in c:\windows\system32\config\systemprofile\appdata\roaming\python\python312\site-packages (3.1.6)
@@ -61,146 +61,486 @@ Requirement already satisfied: itsdangerous in c:\windows\system32\config\system
 
 [notice] A new release of pip is available: 25.0.1 -> 26.0.1
 [notice] To update, run: C:\Program Files\Python312\python.exe -m pip install --upgrade pip
-[Wed 03/18/2026 14:39:55.92] Dang khoi dong FastAPI Server...
+[Wed 03/18/2026 20:20:03.52] Dang khoi dong FastAPI Server...
 INFO:     Will watch for changes in these directories: ['C:\\SMILE PMS\\DOCS_PROJECT\\app']
 WARNING:  "workers" flag is ignored when reloading is enabled.
 INFO:     Uvicorn running on http://127.0.0.1:6066 (Press CTRL+C to quit)
-INFO:     Started reloader process [7116] using StatReload
-INFO:     Started server process [18736]
+INFO:     Started reloader process [2400] using StatReload
+INFO:     Started server process [15156]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-[32m2026-03-18 14:39:57[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:39:57[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 19.55ms[0m
+[32m2026-03-18 20:20:05[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:20:05[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 45.28ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:20:05[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:20:05[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.50ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:39:57[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:39:57[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 34.23ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:39:59[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:39:59[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 94.01ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:39:59[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:39:59[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:40:01[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
-[32m2026-03-18 14:40:01[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 793.15ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773819599814 HTTP/1.1" 200 OK
-[32m2026-03-18 14:40:01[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:40:01[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+[32m2026-03-18 20:21:18[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:18[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:41:06[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:06[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 30.14ms[0m
-INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
-[32m2026-03-18 14:41:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 1.61ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 13.55ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:19[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms[0m
 INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:41:07[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:07[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 35.67ms[0m
-INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1773819666286 HTTP/1.1" 200 OK
-[32m2026-03-18 14:41:07[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:07[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+[32m2026-03-18 20:21:20[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:20[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:41:16[0m | [1mINFO    [0m | [36mSTART | GET /rbac/setup | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:16[0m | [1mINFO    [0m | [36mEND   | GET /rbac/setup | Status: 200 | Time: 18.67ms[0m
-INFO:     127.0.0.1:0 - "GET /rbac/setup HTTP/1.1" 200 OK
-[32m2026-03-18 14:41:16[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:16[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms[0m
+[32m2026-03-18 20:21:23[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:24[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 401 | Time: 316.40ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+[32m2026-03-18 20:21:28[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:29[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 8 perms[0m
+[32m2026-03-18 20:21:29[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 306.62ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:30[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:30[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 17.15ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:30[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:30[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.12ms[0m
 INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:41:17[0m | [1mINFO    [0m | [36mSTART | GET /rbac/permissions-list | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:17[0m | [1mINFO    [0m | [36mEND   | GET /rbac/permissions-list | Status: 200 | Time: 16.03ms[0m
-INFO:     127.0.0.1:0 - "GET /rbac/permissions-list?_=1773819676771 HTTP/1.1" 200 OK
-[32m2026-03-18 14:41:17[0m | [1mINFO    [0m | [36mSTART | GET /rbac/roles-list | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:17[0m | [1mINFO    [0m | [36mEND   | GET /rbac/roles-list | Status: 200 | Time: 3.51ms[0m
-INFO:     127.0.0.1:0 - "GET /rbac/roles-list?_=1773819676772 HTTP/1.1" 200 OK
-[32m2026-03-18 14:41:18[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:41:18[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.19ms[0m
+[32m2026-03-18 20:21:31[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:31[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 358.60ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773840090441 HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:31[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:31[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:43:20[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:20[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 4.03ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:21[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:21[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.19ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:43:22[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:22[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 398.67ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773819801117 HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:22[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:22[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.77ms[0m
+[32m2026-03-18 20:21:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.32ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:43:24[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:24[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.05ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.69ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:25[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.30ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:43:26[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:26[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 103.45ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773819805660 HTTP/1.1" 200 OK
-[32m2026-03-18 14:43:27[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:43:27[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+[32m2026-03-18 20:21:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 7.07ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.07ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 3.56ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.07ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.62ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:45:06[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:06[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.99ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:45:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-18 14:45:07[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:08[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 562.89ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773819906464 HTTP/1.1" 200 OK
-[32m2026-03-18 14:45:08[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-18 14:45:08[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.03ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.09ms[0m
 INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:46:59[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 192.168.1.129[0m
-[32m2026-03-18 14:46:59[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 0.00ms[0m
-INFO:     192.168.1.129:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:46:59[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 192.168.1.129[0m
-[32m2026-03-18 14:47:00[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 287.19ms[0m
-INFO:     192.168.1.129:0 - "GET /fo/inhouse-list2?_=1773820018309 HTTP/1.1" 200 OK
-[32m2026-03-18 14:47:00[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.129[0m
-[32m2026-03-18 14:47:00[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     192.168.1.129:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.77ms[0m
-INFO:     192.168.1.129:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 276.96ms[0m
-INFO:     192.168.1.129:0 - "GET /fo/inhouse-list2?_=1773820086052 HTTP/1.1" 200 OK
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:07[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     192.168.1.129:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-18 14:48:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 14.00ms[0m
-INFO:     192.168.1.129:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-18 14:48:27[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:28[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.129[0m
-[32m2026-03-18 14:48:28[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 373.11ms[0m
-INFO:     192.168.1.129:0 - "GET /fo/inhouse-list2?_=1773820106532 HTTP/1.1" 200 OK
-[32m2026-03-18 14:48:28[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     192.168.1.129:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.02ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 1.30ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.06ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.70ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.24ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.52ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.75ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.23ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:38[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.17ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.35ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 4.15ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.11ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.03ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 5.76ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.08ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.16ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.06ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.28ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.62ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:40[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.03ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:41[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:41[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.83ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.20ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:46[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.78ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 4.93ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.63ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.45ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.60ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.92ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:47[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.69ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.75ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.16ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 8.49ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.50ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.49ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.45ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:49[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:49[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:21:50[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:50[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.98ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:21:51[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:21:51[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:02[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:02[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 5.22ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list?_=1773840090442 HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.07ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.25ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 4.71ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:13[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.36ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.42ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.77ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.77ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.03ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.16ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.26ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 8.39ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.14ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:16[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:16[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.27ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:16[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:16[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.05ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:46[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:46[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 2.00ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:46[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:46[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.81ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-18 20:22:47[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:48[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 335.03ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1773840166871 HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:48[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:48[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.42ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:58[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:58[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.49ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.05ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:22:59[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:00[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:00[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:00[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:00[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.13ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:01[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:01[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 7.21ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:01[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:01[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.03ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:29[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:29[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.12ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:30[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-18 20:23:31[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:31[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.39ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:33[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:33[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.07ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:33[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:33[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 9.19ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.12ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:34[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.08ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 1.54ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.99ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.36ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.11ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 1.09ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:35[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.08ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.05ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.69ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 6.66ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.16ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.20ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 1.86ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.20ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.15ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.61ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.11ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 2.17ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.87ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list | Status: 200 | Time: 3.13ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list HTTP/1.1" 200 OK
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-18 20:23:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content

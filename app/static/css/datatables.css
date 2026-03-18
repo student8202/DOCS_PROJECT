@@ -148,3 +148,30 @@ table.dataTable thead .sorting_asc:after {
     border-right: 1px solid #dee2e6 !important;
     box-shadow: 2px 0 5px rgba(0,0,0,0.05);
 }
+
+/* Ép lớp phủ Loading nằm chính giữa Card và có nền mờ */
+.dataTables_processing {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    z-index: 1060; /* Cao hơn FixedColumns */
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 10px 20px !important;
+    width: auto !important;
+}
+#global-loader {
+    display: none; /* Mặc định ẩn */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    /* Dùng flex để căn giữa con xoay */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

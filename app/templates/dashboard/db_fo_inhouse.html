@@ -1,10 +1,38 @@
+<!-- Preloader toàn màn hình -->
+<div id="global-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.7); z-index: 99999; display: none; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="spinner-border text-success" role="status"></div>
+    <span class="mt-2 fw-bold text-success small">ĐANG TẢI DỮ LIỆU...</span>
+</div>
 <!-- Cấu trúc Table Ultra Compact cho FO -->
 <div class="card shadow-sm border-top border-4 border-success">
     <div class="card-header bg-white py-2">
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
             <!-- Nhóm Thống kê & Bộ lọc -->
             <div class="d-flex flex-wrap align-items-center gap-1">
-                <span class="small fw-bold text-success me-2"><i class="fas fa-bed"></i> IN-HOUSE</span>
+                <!-- DROPDOWN MENU CHUYỂN PHÂN HỆ -->
+                <div class="dropdown me-2">
+                    <!-- Chuyển sang thẻ <a> để tăng độ nhạy click -->
+                    <a class="fw-bold text-success text-decoration-none dropdown-toggle p-0" href="#" role="button"
+                        id="ddlModule" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px;">
+                        <i class="fas fa-bed me-1"></i> IN-HOUSE
+                    </a>
+                    <!-- Thêm z-index cực cao để không bị bảng đè lên -->
+                    <ul class="dropdown-menu shadow border-0" aria-labelledby="ddlModule"
+                        style="font-size: 12px; z-index: 99999; position: absolute;">
+                        <li><a class="dropdown-item fw-bold text-primary" href="javascript:void(0)"
+                                onclick="FO_DASH.actions.switchModule('rs')">
+                                <i class="fas fa-calendar-alt me-2"></i>RESERVATION</a></li>
+                        <li><a class="dropdown-item fw-bold text-success" href="javascript:void(0)"
+                                onclick="FO_DASH.actions.switchModule('ih')">
+                                <i class="fas fa-check-circle me-2"></i>IN-HOUSE</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item small text-muted" href="javascript:void(0)"
+                                onclick="FO_DASH.actions.switchModule('rsih')"><i
+                                    class="fas fa-history me-2"></i>RESERVATION INHOUSE</a></li>
+                    </ul>
+                </div>
 
                 <!-- All Rooms -->
                 <span class="badge border border-secondary text-secondary btn-filter active btn-filter-stat"

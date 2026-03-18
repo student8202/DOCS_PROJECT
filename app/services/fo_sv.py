@@ -49,7 +49,7 @@ class FOService:
             conn.close()
         
     @staticmethod
-    def get_inhouse_list_logic():
+    def get_guest_list_logic(mode: int):
         hotel_date = FOService.get_hotel_date()
         if not hotel_date: return []
 
@@ -58,8 +58,15 @@ class FOService:
             cursor = conn.cursor()
             cursor.execute("SET NOCOUNT ON")
             
+            if mode == 0:
+                sql = FOModel.SQL_SEARCH_RS_IH
+            elif mode == 1:
+                sql = FOModel.SQL_SEARCH_RS
+            elif mode == 2:
+                sql = FOModel.SQL_SEARCH_INHOUSE
+            
             # 1. Gọi Store Procedure SMILE
-            cursor.execute(FOModel.SQL_SEARCH_INHOUSE, (hotel_date,))
+            cursor.execute(sql, (hotel_date,))
             while cursor.description is None:
                 if not cursor.nextset(): break
                 
@@ -150,7 +157,7 @@ class FOService:
             conn.close()
             
     @staticmethod
-    def get_inhouse_list_logic_booking():
+    def get_guest_list_logic_booking(mode: int):
         hotel_date = FOService.get_hotel_date()
         if not hotel_date: return []
 
@@ -159,8 +166,15 @@ class FOService:
             cursor = conn.cursor()
             cursor.execute("SET NOCOUNT ON")
             
+            if mode == 0:
+                sql = FOModel.SQL_SEARCH_RS_IH
+            elif mode == 1:
+                sql = FOModel.SQL_SEARCH_RS
+            elif mode == 2:
+                sql = FOModel.SQL_SEARCH_INHOUSE
+                
             # 1. Gọi Store Procedure SMILE
-            cursor.execute(FOModel.SQL_SEARCH_INHOUSE, (hotel_date,))
+            cursor.execute(sql, (hotel_date,))
             while cursor.description is None:
                 if not cursor.nextset(): break
                 

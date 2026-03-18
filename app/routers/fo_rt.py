@@ -22,11 +22,32 @@ router = APIRouter(prefix="/fo", tags=["Front Office"])
 #     # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
 #     return FOController.get_inhouse_list()
 @router.get("/inhouse-list")
-async def api_inhouse_list(request: Request):
+async def api_guest_list_ih(request: Request):
     # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
-    return FOController.get_inhouse_list()
+    return FOController.get_guest_list(mode=2)
 
 @router.get("/inhouse-list2")
-async def api_inhouse_list(request: Request):
+async def api_guest_list_ih2(request: Request):
     # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
-    return FOController.get_inhouse_list_booking()
+    return FOController.get_guest_list_booking(mode=2)
+
+@router.get("/reservation-list")
+async def api_guest_list_rs(request: Request):
+    # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
+    return FOController.get_guest_list(mode=1)
+
+@router.get("/reservation-list2")
+async def api_guest_list_rs2(request: Request):
+    # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
+    return FOController.get_guest_list_booking(mode=1)
+
+@router.get("/reservation-ih-list")
+async def api_guest_list_rsih(request: Request):
+    # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
+    return FOController.get_guest_list(mode=0)
+
+@router.get("/reservation-ih-list2")
+async def api_guest_list_rsih2(request: Request):
+    # Kiểm tra Session hoặc Quyền view_fo nếu cần tại đây
+    return FOController.get_guest_list_booking(mode=0)
+

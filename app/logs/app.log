@@ -15006,3 +15006,1153 @@
 2026-03-18 14:48:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
 2026-03-18 14:48:28 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 373.11ms
 2026-03-18 14:48:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 14:51:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-18 14:51:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 14:51:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.23ms
+2026-03-18 14:51:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.58ms
+2026-03-18 14:51:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 14:51:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.31ms
+2026-03-18 14:51:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 14:51:11 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.52ms
+2026-03-18 14:51:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:51:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.16ms
+2026-03-18 14:51:13 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 14:51:13 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 497.79ms
+2026-03-18 14:51:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 14:51:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.48ms
+2026-03-18 14:55:09 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:55:09 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.20ms
+2026-03-18 14:55:09 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:55:09 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 14:55:09 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:55:09 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.39ms
+2026-03-18 14:55:09 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:55:09 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.02ms
+2026-03-18 14:55:11 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 14:55:11 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 432.49ms
+2026-03-18 14:55:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 14:55:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 14:58:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-18 14:58:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 14:58:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.33ms
+2026-03-18 14:58:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.12ms
+2026-03-18 14:58:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 14:58:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.63ms
+2026-03-18 14:58:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-18 14:58:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.54ms
+2026-03-18 14:58:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-18 14:58:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.19ms
+2026-03-18 14:58:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.19ms
+2026-03-18 14:58:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 14:58:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 14:58:31 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 14:58:31 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 14:58:32 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 14:58:32 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 519.27ms
+2026-03-18 14:58:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 14:58:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 14:58:53 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 14:58:53 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.02ms
+2026-03-18 14:58:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 14:58:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 80.83ms
+2026-03-18 14:58:53 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 14:58:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 14:59:05 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 14:59:05 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 14:59:05 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 14:59:06 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 335.43ms
+2026-03-18 14:59:06 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 14:59:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 14:59:28 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 14:59:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.54ms
+2026-03-18 14:59:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 14:59:29 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 260.41ms
+2026-03-18 14:59:29 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 14:59:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 14:59:38 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 14:59:38 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 86.70ms
+2026-03-18 15:09:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:09:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 15.45ms
+2026-03-18 15:09:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:09:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:10:00 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:10:01 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 495.89ms
+2026-03-18 15:10:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:10:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 15:10:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.41ms
+2026-03-18 15:10:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.73ms
+2026-03-18 15:10:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.26ms
+2026-03-18 15:10:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:10:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.61ms
+2026-03-18 15:10:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:10:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.03ms
+2026-03-18 15:10:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:10:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:10:07 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:10:07 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.38ms
+2026-03-18 15:10:08 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:10:09 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 510.42ms
+2026-03-18 15:10:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:10:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 15:16:09 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 15:16:09 | INFO     | END   | GET /dashboard | Status: 200 | Time: 6.58ms
+2026-03-18 15:16:10 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:16:10 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 278.79ms
+2026-03-18 15:16:10 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 15:16:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 15:29:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 13.91ms
+2026-03-18 15:29:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.51ms
+2026-03-18 15:29:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:29:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.07ms
+2026-03-18 15:29:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:29:29 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 406.10ms
+2026-03-18 15:29:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:29:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 15:29:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.44ms
+2026-03-18 15:29:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 15:29:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-18 15:29:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.08ms
+2026-03-18 15:29:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.55ms
+2026-03-18 15:29:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:29:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.21ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.51ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.25ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.99ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.19ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.51ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.16ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.85ms
+2026-03-18 15:29:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.51ms
+2026-03-18 15:29:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.48ms
+2026-03-18 15:29:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:29:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.04ms
+2026-03-18 15:29:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:29:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 15:29:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-18 15:29:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.51ms
+2026-03-18 15:29:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.06ms
+2026-03-18 15:29:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.00ms
+2026-03-18 15:29:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:29:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 15:29:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:29:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 15:29:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.26ms
+2026-03-18 15:29:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-18 15:29:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.52ms
+2026-03-18 15:29:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:29:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.54ms
+2026-03-18 15:29:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:29:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 15:29:46 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:29:47 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 637.34ms
+2026-03-18 15:29:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:29:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 15:30:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 15:30:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 831.30ms
+2026-03-18 15:30:08 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:30:08 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 110.26ms
+2026-03-18 15:30:10 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:30:10 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 94.19ms
+2026-03-18 15:30:18 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 15:30:18 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 15:30:18 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:30:19 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 85.85ms
+2026-03-18 15:30:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 15:30:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-03-18 15:30:20 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 15:30:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 15:30:21 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:30:21 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 99.89ms
+2026-03-18 15:30:21 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 15:30:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 15:30:40 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 15:30:40 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 15:30:40 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:30:41 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 98.39ms
+2026-03-18 15:30:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 15:30:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 15:30:45 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:30:45 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 78.95ms
+2026-03-18 15:30:50 | INFO     | START | GET /fo/inhouse-list | IP: 192.168.1.129
+2026-03-18 15:30:51 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1081.97ms
+2026-03-18 15:30:51 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:30:52 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 280.02ms
+2026-03-18 15:33:01 | INFO     | START | GET /dashboard | IP: 192.168.1.129
+2026-03-18 15:33:01 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:33:01 | INFO     | START | GET /fo/inhouse-list2 | IP: 192.168.1.129
+2026-03-18 15:33:01 | INFO     | START | GET /favicon.ico | IP: 192.168.1.129
+2026-03-18 15:33:02 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 350.16ms
+2026-03-18 15:33:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 350.16ms
+2026-03-18 15:40:04 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:04 | INFO     | END   | GET /dashboard | Status: 200 | Time: 20.30ms
+2026-03-18 15:40:04 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:04 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.57ms
+2026-03-18 15:40:05 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:05 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.25ms
+2026-03-18 15:40:06 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:40:07 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 444.94ms
+2026-03-18 15:40:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:40:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.34ms
+2026-03-18 15:40:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.02ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.03ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.53ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.52ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.47ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.50ms
+2026-03-18 15:40:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.15ms
+2026-03-18 15:40:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.05ms
+2026-03-18 15:40:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 15:40:21 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.15ms
+2026-03-18 15:40:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 15:40:21 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.16ms
+2026-03-18 15:40:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 15:40:21 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:40:21 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:21 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.26ms
+2026-03-18 15:40:22 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:40:22 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 114.50ms
+2026-03-18 15:40:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:40:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.32ms
+2026-03-18 15:40:32 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:32 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.28ms
+2026-03-18 15:40:32 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:32 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 15:40:32 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:32 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 15:40:32 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:32 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.78ms
+2026-03-18 15:40:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 15:40:33 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:33 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.17ms
+2026-03-18 15:40:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.12ms
+2026-03-18 15:40:33 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:40:33 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:40:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:40:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.91ms
+2026-03-18 15:40:34 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:40:34 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 187.58ms
+2026-03-18 15:40:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:40:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.51ms
+2026-03-18 15:51:08 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:51:08 | INFO     | END   | GET /dashboard | Status: 200 | Time: 28.15ms
+2026-03-18 15:51:08 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:51:08 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.28ms
+2026-03-18 15:51:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:51:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.07ms
+2026-03-18 15:51:08 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:51:08 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-18 15:51:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:51:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:51:10 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:51:10 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 435.77ms
+2026-03-18 15:51:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:51:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.48ms
+2026-03-18 15:54:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 5.64ms
+2026-03-18 15:54:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.64ms
+2026-03-18 15:54:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.02ms
+2026-03-18 15:54:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:54:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.52ms
+2026-03-18 15:54:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.02ms
+2026-03-18 15:54:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.56ms
+2026-03-18 15:54:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:54:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.21ms
+2026-03-18 15:54:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.99ms
+2026-03-18 15:54:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:54:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.02ms
+2026-03-18 15:54:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.36ms
+2026-03-18 15:54:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.14ms
+2026-03-18 15:54:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.99ms
+2026-03-18 15:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:54:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.19ms
+2026-03-18 15:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.15ms
+2026-03-18 15:54:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.99ms
+2026-03-18 15:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-18 15:54:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.33ms
+2026-03-18 15:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-18 15:54:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-18 15:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-18 15:54:45 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:45 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.53ms
+2026-03-18 15:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:54:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.12ms
+2026-03-18 15:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.39ms
+2026-03-18 15:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-18 15:54:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.56ms
+2026-03-18 15:54:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:54:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-18 15:54:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:54:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:54:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:54:49 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 517.97ms
+2026-03-18 15:54:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:54:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 15:57:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.11ms
+2026-03-18 15:57:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-18 15:57:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.99ms
+2026-03-18 15:57:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:57:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-18 15:57:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.25ms
+2026-03-18 15:57:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.13ms
+2026-03-18 15:57:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:57:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 15:57:49 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:57:49 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 490.50ms
+2026-03-18 15:57:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:57:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 15:59:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:59:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.17ms
+2026-03-18 15:59:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:59:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.53ms
+2026-03-18 15:59:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 15:59:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 15:59:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:59:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 15:59:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 15:59:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-03-18 15:59:27 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 15:59:28 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 471.25ms
+2026-03-18 15:59:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 15:59:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 16:02:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 16.48ms
+2026-03-18 16:02:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.56ms
+2026-03-18 16:02:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.20ms
+2026-03-18 16:02:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 16:02:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 16:02:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 16:02:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.55ms
+2026-03-18 16:02:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 16:02:14 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.55ms
+2026-03-18 16:02:14 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-18 16:02:14 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.32ms
+2026-03-18 16:02:14 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.68ms
+2026-03-18 16:02:14 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.52ms
+2026-03-18 16:02:14 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:14 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.86ms
+2026-03-18 16:02:15 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:02:16 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 436.18ms
+2026-03-18 16:02:16 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:02:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.29ms
+2026-03-18 16:02:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:02:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-03-18 16:02:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 16:02:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.52ms
+2026-03-18 16:02:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 16:02:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.17ms
+2026-03-18 16:02:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.13ms
+2026-03-18 16:02:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 16:02:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.52ms
+2026-03-18 16:02:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 16:02:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.12ms
+2026-03-18 16:02:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 16:02:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 16:02:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-18 16:02:27 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.23ms
+2026-03-18 16:02:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:02:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.70ms
+2026-03-18 16:02:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:02:29 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 384.85ms
+2026-03-18 16:02:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:02:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-18 16:03:50 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:03:50 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.80ms
+2026-03-18 16:03:50 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:03:50 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.15ms
+2026-03-18 16:03:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:03:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-18 16:03:50 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:03:50 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 16:03:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:03:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.28ms
+2026-03-18 16:03:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:03:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.05ms
+2026-03-18 16:03:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:03:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-18 16:03:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:03:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.52ms
+2026-03-18 16:03:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:03:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 16:03:52 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:03:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 371.93ms
+2026-03-18 16:03:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:03:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-18 16:08:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:08:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 20.03ms
+2026-03-18 16:08:15 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:08:15 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.01ms
+2026-03-18 16:08:17 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:08:17 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 398.53ms
+2026-03-18 16:08:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:08:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 16:08:31 | INFO     | START | GET /fo/reservation-list | IP: 127.0.0.1
+2026-03-18 16:08:31 | INFO     | END   | GET /fo/reservation-list | Status: 404 | Time: 2.52ms
+2026-03-18 16:08:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 16:08:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 898.00ms
+2026-03-18 16:08:44 | INFO     | START | GET /fo/reservation-list | IP: 127.0.0.1
+2026-03-18 16:08:44 | INFO     | END   | GET /fo/reservation-list | Status: 404 | Time: 1.32ms
+2026-03-18 16:08:58 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 16:08:59 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 758.44ms
+2026-03-18 16:53:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:53:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.74ms
+2026-03-18 16:53:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:53:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 7.87ms
+2026-03-18 16:53:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:53:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 12.56ms
+2026-03-18 16:53:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:53:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.59ms
+2026-03-18 16:53:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:53:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 560.81ms
+2026-03-18 16:53:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:53:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-18 16:54:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:54:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 14.58ms
+2026-03-18 16:54:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:54:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.20ms
+2026-03-18 16:54:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 16:54:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.05ms
+2026-03-18 16:54:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 16:54:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-03-18 16:54:50 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 16:54:50 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 211.19ms
+2026-03-18 16:54:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 16:54:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 19:50:53 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-18 19:50:53 | INFO     | END   | GET / | Status: 200 | Time: 12.22ms
+2026-03-18 19:50:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 19:50:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.62ms
+2026-03-18 19:58:24 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-18 19:58:25 | INFO     | User admin logged in successfully with 8 perms
+2026-03-18 19:58:25 | INFO     | END   | POST /auth/login | Status: 200 | Time: 431.39ms
+2026-03-18 19:58:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 19:58:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 21.28ms
+2026-03-18 19:58:27 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 19:58:27 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 414.43ms
+2026-03-18 19:58:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 19:58:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:11:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:11:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 38.12ms
+2026-03-18 20:11:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:11:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-03-18 20:11:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:11:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.39ms
+2026-03-18 20:11:30 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:11:30 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 349.73ms
+2026-03-18 20:11:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:11:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-03-18 20:11:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:11:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.45ms
+2026-03-18 20:12:14 | INFO     | START | GET /Fo/reservation-list | IP: 127.0.0.1
+2026-03-18 20:12:14 | INFO     | END   | GET /Fo/reservation-list | Status: 404 | Time: 2.00ms
+2026-03-18 20:12:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:12:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:12:23 | INFO     | START | GET /fo/reservation-list | IP: 127.0.0.1
+2026-03-18 20:12:23 | INFO     | END   | GET /fo/reservation-list | Status: 200 | Time: 5.57ms
+2026-03-18 20:12:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:12:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:14:27 | INFO     | START | GET /fo/reservation-list | IP: 127.0.0.1
+2026-03-18 20:14:27 | INFO     | END   | GET /fo/reservation-list | Status: 200 | Time: 45.00ms
+2026-03-18 20:14:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:14:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-18 20:14:59 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:14:59 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.05ms
+2026-03-18 20:14:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:14:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:15:02 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:02 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.54ms
+2026-03-18 20:15:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-18 20:15:03 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:03 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms
+2026-03-18 20:15:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.20ms
+2026-03-18 20:15:03 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:03 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.03ms
+2026-03-18 20:15:03 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:03 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:15:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.21ms
+2026-03-18 20:15:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:04 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:04 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms
+2026-03-18 20:15:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.64ms
+2026-03-18 20:15:04 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:04 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.57ms
+2026-03-18 20:15:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.95ms
+2026-03-18 20:15:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:15:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 18.91ms
+2026-03-18 20:15:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:15:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.52ms
+2026-03-18 20:15:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-18 20:15:07 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 20:15:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.15ms
+2026-03-18 20:15:07 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.30ms
+2026-03-18 20:15:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.67ms
+2026-03-18 20:15:07 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:15:07 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-03-18 20:15:08 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:15:08 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 384.89ms
+2026-03-18 20:15:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.74ms
+2026-03-18 20:15:24 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:24 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 16.08ms
+2026-03-18 20:15:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.73ms
+2026-03-18 20:15:25 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:25 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.19ms
+2026-03-18 20:15:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.36ms
+2026-03-18 20:15:26 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:26 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.56ms
+2026-03-18 20:15:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 20:15:26 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:26 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms
+2026-03-18 20:15:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:26 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:26 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.24ms
+2026-03-18 20:15:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.61ms
+2026-03-18 20:15:27 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:27 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.32ms
+2026-03-18 20:15:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.99ms
+2026-03-18 20:15:29 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:15:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:29 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.08ms
+2026-03-18 20:15:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 8.75ms
+2026-03-18 20:15:29 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.39ms
+2026-03-18 20:15:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-18 20:15:29 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.04ms
+2026-03-18 20:15:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.66ms
+2026-03-18 20:15:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:49 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:49 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 6.57ms
+2026-03-18 20:15:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.50ms
+2026-03-18 20:15:49 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:49 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.51ms
+2026-03-18 20:15:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-18 20:15:50 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:50 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.18ms
+2026-03-18 20:15:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.70ms
+2026-03-18 20:15:50 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:15:50 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.54ms
+2026-03-18 20:15:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:15:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:15:57 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-18 20:15:57 | INFO     | END   | GET / | Status: 200 | Time: 4.50ms
+2026-03-18 20:16:00 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:00 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.15ms
+2026-03-18 20:16:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:05 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:05 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.64ms
+2026-03-18 20:16:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 20:16:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:16:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:16:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:16:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 20:16:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.60ms
+2026-03-18 20:16:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.16ms
+2026-03-18 20:16:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.01ms
+2026-03-18 20:16:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:06 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:06 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.00ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:07 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.21ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.52ms
+2026-03-18 20:16:07 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.21ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:07 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 9.93ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:07 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.68ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:07 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.16ms
+2026-03-18 20:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:08 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:08 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.14ms
+2026-03-18 20:16:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:09 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 6.08ms
+2026-03-18 20:16:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:09 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.78ms
+2026-03-18 20:16:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.79ms
+2026-03-18 20:16:09 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.46ms
+2026-03-18 20:16:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.08ms
+2026-03-18 20:16:09 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.41ms
+2026-03-18 20:16:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:16:09 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.27ms
+2026-03-18 20:16:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:16:10 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:10 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 6.08ms
+2026-03-18 20:16:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:16:16 | INFO     | START | GET /admin/sync-users | IP: 127.0.0.1
+2026-03-18 20:16:16 | INFO     | END   | GET /admin/sync-users | Status: 200 | Time: 44.46ms
+2026-03-18 20:16:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:16:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-18 20:16:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.64ms
+2026-03-18 20:16:19 | INFO     | START | GET /rbac/setup | IP: 127.0.0.1
+2026-03-18 20:16:19 | INFO     | END   | GET /rbac/setup | Status: 200 | Time: 6.87ms
+2026-03-18 20:16:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:16:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-18 20:16:19 | INFO     | START | GET /rbac/permissions-list | IP: 127.0.0.1
+2026-03-18 20:16:19 | INFO     | END   | GET /rbac/permissions-list | Status: 200 | Time: 29.87ms
+2026-03-18 20:16:19 | INFO     | START | GET /rbac/roles-list | IP: 127.0.0.1
+2026-03-18 20:16:19 | INFO     | END   | GET /rbac/roles-list | Status: 200 | Time: 3.08ms
+2026-03-18 20:16:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.40ms
+2026-03-18 20:16:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:16:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.68ms
+2026-03-18 20:16:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:16:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-18 20:16:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:16:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 474.80ms
+2026-03-18 20:16:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:16:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-03-18 20:16:56 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:16:56 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 5.30ms
+2026-03-18 20:17:02 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:17:02 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 85.14ms
+2026-03-18 20:17:04 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:17:04 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.90ms
+2026-03-18 20:17:20 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:17:20 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 90.38ms
+2026-03-18 20:20:05 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:20:05 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 45.28ms
+2026-03-18 20:20:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:20:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.50ms
+2026-03-18 20:21:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 20:21:19 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-18 20:21:19 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 1.61ms
+2026-03-18 20:21:19 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-18 20:21:19 | INFO     | END   | GET / | Status: 200 | Time: 13.55ms
+2026-03-18 20:21:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:21:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-18 20:21:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:21:23 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-18 20:21:24 | INFO     | END   | POST /auth/login | Status: 401 | Time: 316.40ms
+2026-03-18 20:21:28 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-18 20:21:29 | INFO     | User admin logged in successfully with 8 perms
+2026-03-18 20:21:29 | INFO     | END   | POST /auth/login | Status: 200 | Time: 306.62ms
+2026-03-18 20:21:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:21:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 17.15ms
+2026-03-18 20:21:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:21:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.12ms
+2026-03-18 20:21:31 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:21:31 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 358.60ms
+2026-03-18 20:21:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.32ms
+2026-03-18 20:21:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 7.07ms
+2026-03-18 20:21:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.07ms
+2026-03-18 20:21:37 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.03ms
+2026-03-18 20:21:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-03-18 20:21:37 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:21:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-18 20:21:37 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1.30ms
+2026-03-18 20:21:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.00ms
+2026-03-18 20:21:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.06ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.70ms
+2026-03-18 20:21:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.24ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.52ms
+2026-03-18 20:21:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.75ms
+2026-03-18 20:21:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.23ms
+2026-03-18 20:21:38 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:38 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.17ms
+2026-03-18 20:21:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.35ms
+2026-03-18 20:21:39 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.15ms
+2026-03-18 20:21:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:21:39 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.11ms
+2026-03-18 20:21:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:21:39 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.03ms
+2026-03-18 20:21:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.76ms
+2026-03-18 20:21:39 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.08ms
+2026-03-18 20:21:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:39 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:39 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.16ms
+2026-03-18 20:21:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:21:40 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.06ms
+2026-03-18 20:21:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.28ms
+2026-03-18 20:21:40 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.62ms
+2026-03-18 20:21:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-03-18 20:21:40 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:40 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.03ms
+2026-03-18 20:21:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:46 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:46 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.83ms
+2026-03-18 20:21:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.20ms
+2026-03-18 20:21:46 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:46 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms
+2026-03-18 20:21:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.78ms
+2026-03-18 20:21:47 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.93ms
+2026-03-18 20:21:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.63ms
+2026-03-18 20:21:47 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.45ms
+2026-03-18 20:21:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 20:21:47 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.60ms
+2026-03-18 20:21:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:21:47 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.92ms
+2026-03-18 20:21:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 20:21:47 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:47 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.69ms
+2026-03-18 20:21:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-18 20:21:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.75ms
+2026-03-18 20:21:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-18 20:21:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.16ms
+2026-03-18 20:21:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 8.49ms
+2026-03-18 20:21:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.50ms
+2026-03-18 20:21:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.49ms
+2026-03-18 20:21:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-18 20:21:48 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:48 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.45ms
+2026-03-18 20:21:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:21:50 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:21:50 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.98ms
+2026-03-18 20:21:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:21:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:22:02 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:02 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 5.22ms
+2026-03-18 20:22:13 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.07ms
+2026-03-18 20:22:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-03-18 20:22:13 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 4.71ms
+2026-03-18 20:22:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:22:13 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms
+2026-03-18 20:22:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.36ms
+2026-03-18 20:22:14 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.42ms
+2026-03-18 20:22:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:22:14 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.77ms
+2026-03-18 20:22:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-03-18 20:22:14 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.01ms
+2026-03-18 20:22:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:22:14 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.77ms
+2026-03-18 20:22:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:22:14 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:22:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-18 20:22:15 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.16ms
+2026-03-18 20:22:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:22:15 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms
+2026-03-18 20:22:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.26ms
+2026-03-18 20:22:15 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:22:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:22:15 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 8.39ms
+2026-03-18 20:22:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:22:15 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.02ms
+2026-03-18 20:22:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.14ms
+2026-03-18 20:22:16 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:16 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.27ms
+2026-03-18 20:22:16 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-18 20:22:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-18 20:22:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-18 20:22:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:22:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.81ms
+2026-03-18 20:22:47 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-18 20:22:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 335.03ms
+2026-03-18 20:22:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.42ms
+2026-03-18 20:22:58 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:58 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.49ms
+2026-03-18 20:22:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-18 20:22:59 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:22:59 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:22:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:22:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:23:00 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:00 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:23:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.13ms
+2026-03-18 20:23:01 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:01 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 7.21ms
+2026-03-18 20:23:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-18 20:23:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-03-18 20:23:30 | INFO     | START | POST /auth/logout | IP: 127.0.0.1
+2026-03-18 20:23:30 | INFO     | END   | POST /auth/logout | Status: 200 | Time: 0.00ms
+2026-03-18 20:23:30 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-18 20:23:30 | INFO     | END   | GET / | Status: 200 | Time: 0.00ms
+2026-03-18 20:23:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-18 20:23:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-18 20:23:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.39ms
+2026-03-18 20:23:33 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:33 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.07ms
+2026-03-18 20:23:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:23:34 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 9.19ms
+2026-03-18 20:23:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-03-18 20:23:34 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1.04ms
+2026-03-18 20:23:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:23:34 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:23:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:23:34 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:34 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.08ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:23:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 0.00ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:23:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1.54ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.99ms
+2026-03-18 20:23:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.36ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-03-18 20:23:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.11ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-18 20:23:35 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1.09ms
+2026-03-18 20:23:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.08ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.05ms
+2026-03-18 20:23:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.69ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 6.66ms
+2026-03-18 20:23:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.16ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.20ms
+2026-03-18 20:23:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 1.86ms
+2026-03-18 20:23:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.20ms
+2026-03-18 20:23:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.15ms
+2026-03-18 20:23:36 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:36 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.61ms
+2026-03-18 20:23:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.11ms
+2026-03-18 20:23:37 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:37 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 2.17ms
+2026-03-18 20:23:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.87ms
+2026-03-18 20:23:37 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:23:37 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 3.13ms
+2026-03-18 20:23:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-18 20:23:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-18 20:30:57 | INFO     | START | GET /fo/inhouse-list | IP: 127.0.0.1
+2026-03-18 20:30:57 | INFO     | END   | GET /fo/inhouse-list | Status: 200 | Time: 26.09ms
