@@ -201,7 +201,7 @@
                 <form id="formChangePass">
                     <div class="modal-header py-2 bg-light">
                         <h6 class="modal-title fw-bold"><i class="fas fa-lock me-2"></i>ĐỔI MẬT KHẨU</h6>
-                        <button type="button" class="btn-close" data-coreui-dismiss="modal"></button>
+                        <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body py-3">
                         <div class="mb-2">
@@ -231,12 +231,22 @@
     </div>
     {% include 'includes/footer.html' %}
     <!-- ĐÂY LÀ NƠI KHAI BÁO scripts -->
-     <script>
+    <script>
         // 1. Phải dùng dấu nháy kép bao quanh tag Jinja2
-        const GLOBAL_HOTEL_DATE= "{{ get_hotel_date(request) }}";    
+        const GLOBAL_HOTEL_DATE = "{{ get_hotel_date(request) }}";
         const HotelDate = moment(GLOBAL_HOTEL_DATE, "MM/DD/YYYY").toDate();
         // In ra console để kiểm tra ngay tại đây
         console.log("Hotel Date từ Session:", moment(HotelDate).format('DD/MM/YYYY'));
+        // close modal
+        $(document).on('click', '[data-coreui-dismiss="modal"]', function () {
+            // Tìm cái modal cha gần nhất của nút vừa bấm
+            const modalElement = $(this).closest('.modal')[0];
+            if (modalElement) {
+                // Gọi thư viện CoreUI để ẩn modal
+                const modalInstance = coreui.Modal.getOrCreateInstance(modalElement);
+                modalInstance.hide();
+            }
+        });
     </script>
     {% block scripts %}{% endblock %}
 </body>

@@ -118,7 +118,30 @@ FO_DASH.actions = {
                 { data: 'ConfirmNum', render: (d, t, r, m) => renderSmileGroup(d, t, r, m, true) }, // 4
                 { data: 'Title', defaultContent: "" }, // 5
                 { data: 'LastName', defaultContent: "" }, // 6
-                { data: 'FirstName', defaultContent: "" }, // 7 (Giá)
+                {
+                    data: 'FirstName', defaultContent: "",
+                    className: 'text-end fw-bold text-primary',
+                    render: function (data, type, row) {
+                        if (!data || data === "0") return "-";
+
+                        // Ví dụ: "4,000,000.00" -> "4000000.00"
+                        let cleanData = data.toString().replace(/,/g, '');
+
+                        const num = parseFloat(cleanData);
+                        // Kiểm tra xem sau khi dọn dẹp có phải là số không
+                        const isNumeric = !isNaN(num) && isFinite(cleanData);
+
+                        if (isNumeric) {
+                            // ĐỊNH DẠNG SỐ VIỆT NAM - KHÔNG SỐ LẺ
+                            return new Intl.NumberFormat('vi-VN', {
+                                maximumFractionDigits: 0
+                            }).format(num);
+                        }
+
+                        // NẾU LÀ CHỮ (Ví dụ "FIT", "CORP") -> Giữ nguyên chuỗi
+                        return data;
+                    }
+                }, // 7 (Giá)
                 { data: 'VipLevel', defaultContent: "" }, // 8
                 { data: 'FRoomCode', defaultContent: "" }, // 9
                 { data: 'RoomTypeCode', render: (d, t, r, m) => renderSmileGroup(d, t, r, m, true) }, // 10

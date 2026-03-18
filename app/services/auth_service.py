@@ -5,6 +5,7 @@ from database.db_connection import (
 )
 from models.rbac_md import RBACModel
 from core.security import verify_password, get_password_hash # Hàm băm bạn đã có
+from core.utils import tcvn3_to_unicode
 
 DEFAULT_PASSWORD = "Lavie@123" # Mật khẩu mặc định cho lần đầu Sync
 
@@ -41,7 +42,9 @@ class AuthService:
 
             for row in src_users:
                 username = row.ClerkID.strip() if row.ClerkID else None
-                fullname = row.LastName.strip() if row.LastName else ""
+                fullname_raw = row.LastName.strip() if row.LastName else ""
+                # CHUYỂN ĐỔI SANG UNICODE
+                fullname_unicode = tcvn3_to_unicode(fullname_raw)
                 # SMILE: DisabledFlag thường là 1 (Bị khóa) hoặc 0 (Hoạt động)
                 is_disabled = row.DisabledFlag 
 
@@ -60,7 +63,7 @@ class AuthService:
                         ) VALUES (?, ?, ?, ?, ?, ?, ?)
                     """
                     cursor_lv.execute(sql_ins, (
-                        username, hashed_default, fullname, 
+                        username, hashed_default, fullname_unicode, 
                         0 if is_disabled else 1, 
                         source_type, current_admin, datetime.now()
                     ))
@@ -78,7 +81,7 @@ class AuthService:
                         WHERE Username = ?
                     """
                     cursor_lv.execute(sql_upd, (
-                        new_map, fullname, 
+                        new_map, fullname_unicode, 
                         0 if is_disabled else 1, 
                         current_admin, datetime.now(), username
                     ))
