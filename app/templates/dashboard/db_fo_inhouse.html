@@ -1,24 +1,45 @@
 <!-- Cấu trúc Table Ultra Compact cho FO -->
 <div class="card shadow-sm border-top border-4 border-success">
-    <div class="card-header bg-white py-1 d-flex justify-content-between align-items-center">
-        <span class="small fw-bold text-success">
-            <i class="fas fa-bed me-1"></i> KHÁCH ĐANG Ở (IN-HOUSE) - SMILE FO
-        </span>
-        <!-- LABEL HIỂN THỊ TỔNG FFOLIONUM -->
-        <span class="badge bg-secondary-light text-secondary border border-secondary px-2 py-1" style="font-size: 10px;">
-            Total Rooms: <b id="lblTotalRooms">0</b>
-        </span>
-        <!-- NÚT SWITCH CHECKBOX -->
-        <div class="form-check form-switch mb-0">
-            <input class="form-check-input" type="checkbox" id="chkShowResName">
-            <label class="form-check-label small fw-bold text-secondary" for="chkShowResName" style="cursor:pointer">
-                Show Reservation Name
-            </label>
+    <div class="card-header bg-white py-2">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <!-- Nhóm Thống kê & Bộ lọc -->
+            <div class="d-flex flex-wrap align-items-center gap-1">
+                <span class="small fw-bold text-success me-2"><i class="fas fa-bed"></i> IN-HOUSE</span>
+
+                <!-- All Rooms -->
+                <span class="badge border border-secondary text-secondary btn-filter active" id="btnFilterAll"
+                    onclick="FO_DASH.actions.filterType('all')" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Đang tính..." style="cursor:pointer; font-size: 10px;">
+                    All: <b id="lblTotalRooms">0</b>
+                </span>
+
+                <!-- FIT -->
+                <span class="badge border border-info text-info btn-filter" id="btnFilterGit"
+                    onclick="FO_DASH.actions.filterType('git')" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Đang tính..." style="cursor:pointer; font-size: 10px;">
+                    FIT: <b id="lblTotalGit">0</b>
+                </span>
+
+                <!-- GIT (Group) -->
+                <span class="badge border border-warning text-warning btn-filter" id="btnFilterGroup"
+                    onclick="FO_DASH.actions.filterType('group')" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Đang tính..." style="cursor:pointer; font-size: 10px;">
+                    GIT: <b id="lblTotalGroup">0</b>
+                </span>
+            </div>
+
+            <!-- Nhóm Điều khiển -->
+            <div class="d-flex align-items-center gap-2">
+                <div class="form-check form-switch mb-0">
+                    <input class="form-check-input" type="checkbox" id="chkShowResName">
+                    <label class="form-check-label small fw-bold text-secondary" for="chkShowResName"
+                        style="font-size: 10px;">Show Res</label>
+                </div>
+                <button class="btn btn-sm btn-light border py-0" onclick="FO_DASH.actions.reload()">
+                    <i class="fas fa-sync-alt"></i> <small class="fw-bold">RELOAD</small>
+                </button>
+            </div>
         </div>
-        <button class="btn btn-sm py-0 text-secondary" onclick="FO_DASH.actions.reload()" title="Tải lại">
-            <i class="fas fa-sync-alt" style="font-size: 10px;"></i>
-            <span style="font-size: 10px; font-weight: bold;">TẢI LẠI</span>
-        </button>
     </div>
     <div class="card-body p-0">
         <div class="table-responsive px-2 py-1">

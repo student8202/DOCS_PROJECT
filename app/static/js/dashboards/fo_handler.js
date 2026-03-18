@@ -43,6 +43,29 @@ const renderSmileGroup = (data, type, row, meta, isBold = false) => {
     const displayData = data || '';
     return isBold ? `<b>${displayData}</b>` : displayData;
 };
+let currentFilter = 'all'; // Biến lưu trạng thái lọc: all, git, group
+
+// 1. CẤU HÌNH BỘ LỌC SEARCH.PUSH (Lọc theo GIT/Group)
+$.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+    if (settings.nTable.id !== 'tblInHouseDash') return true;
+
+    const rowData = settings.aoData[dataIndex]._aData;
+    const hasGroup = (rowData.SortGroup && rowData.SortGroup.trim() !== "");
+
+    if (currentFilter === 'git') return !hasGroup;    // Chỉ hiện khách lẻ (không có SortGroup)
+    if (currentFilter === 'group') return hasGroup;  // Chỉ hiện khách đoàn (có SortGroup)
+    return true; // Mặc định hiện tất cả
+});
+// Thêm hàm bổ trợ tính toán Pax
+const calcPax = (dataList) => {
+    let adt = 0, chl = 0, enf = 0;
+    dataList.forEach(i => {
+        adt += parseInt(i.NumAdt || 0);
+        chl += parseInt(i.NumChild || 0);
+        enf += parseInt(i.NumEnf || 0);
+    });
+    return `Pax: ${adt + chl + enf} (Adt: ${adt}, Chl: ${chl}, Enf: ${enf})`;
+};
 // 3. ACTIONS
 FO_DASH.actions = {
     init: () => {
@@ -50,6 +73,8 @@ FO_DASH.actions = {
 
         FO_DASH.instance = $(FO_DASH.tableId).DataTable({
             ajax: { url: FO_DASH.apiUrl, dataSrc: '' },
+            scrollX: true,
+            fixedColumns: { left: 2 },
             columns: [
                 { data: 'FolioNum', render: d => `<button class="btn btn-xs btn-primary py-0 px-1" onclick="signFolio('${d}')">Ký</button>` }, // 0
                 {
@@ -88,11 +113,11 @@ FO_DASH.actions = {
                 { data: 'RoomTypeBooked', render: (d, t, r, m) => renderSmileGroup(d, t, r, m, true) }, // 11
                 {
                     data: 'ArrivalDate',
-                    render: (d, t, r, m) => renderSmileGroup(d ? moment(d).format('DD/MM/YY') : '', t, r, m)
+                    render: (d, t, r, m) => renderSmileGroup(d ? moment(d).format('DD/MM/YYYY') : '', t, r, m)
                 }, // 12
                 {
                     data: 'DepartureDate',
-                    render: (d, t, r, m) => renderSmileGroup(d ? moment(d).format('DD/MM/YY') : '', t, r, m)
+                    render: (d, t, r, m) => renderSmileGroup(d ? moment(d).format('DD/MM/YYYY') : '', t, r, m)
                 }, // 13
                 { data: 'NumGuest', defaultContent: "" }, // 14
                 { data: 'ViewShare', defaultContent: "" }, // 15
@@ -143,8 +168,8 @@ FO_DASH.actions = {
                 { data: 'Notice', defaultContent: "" }, // 31
                 { data: 'FFolioNum', visible: false, searchable: true }, // 32: Cột ẩn
                 { data: 'IdAddition', visible: false, searchable: false },// 33: Cột ẩn
-                { data: 'SortGroup', defaultContent: "",visible: false, searchable: true }, // 34: Cột ẩn
-                { data: 'SortCompany', defaultContent: "",visible: false, searchable: true }, // 35: Cột ẩn
+                { data: 'SortGroup', defaultContent: "", visible: false, searchable: true }, // 34: Cột ẩn
+                { data: 'SortCompany', defaultContent: "", visible: false, searchable: true }, // 35: Cột ẩn
             ],
             // BƯỚC 1: Reset trạng thái trước mỗi lần vẽ lại bảng (sort/filter)
             preDrawCallback: function () {
@@ -183,18 +208,7 @@ FO_DASH.actions = {
             lengthMenu: [[10, 20, 50, 100, -1], [10, 20, 50, 100, "Tất cả"]],
             pageLength: 20,
             dom: '<"d-flex justify-content-between align-items-center mb-1"lf>rtip',
-            drawCallback: function (settings) {
-                // Lấy toàn bộ dữ liệu đang có trong bảng (đã qua lọc/search)
-                const api = this.api();
-                const data = api.rows({ filter: 'applied' }).data().toArray();
-
-                // Dùng Set để đếm các FFolioNum duy nhất (không trùng lặp)
-                const uniqueRooms = new Set(data.map(item => item.FFolioNum));
-
-                // Cập nhật con số vào Label
-                $('#lblTotalRooms').text(uniqueRooms.size);
-            },
-            fixedColumns: true,
+            
             language: {
                 // url: '/static/js/languages.json',
                 search: "Tìm:",
@@ -202,6 +216,18 @@ FO_DASH.actions = {
             }
         });
     },
+    // HÀM LỌC KHI NHẤN VÀO BADGE
+    filterType: (type) => {
+        currentFilter = type;
+        // Cập nhật UI (active badge)
+        $('.btn-filter').removeClass('bg-secondary text-white bg-info bg-warning').addClass('text-secondary text-info text-warning');
+        if (type === 'all') $('#btnFilterAll').addClass('bg-secondary text-white');
+        if (type === 'git') $('#btnFilterGit').addClass('bg-info text-white');
+        if (type === 'group') $('#btnFilterGroup').addClass('bg-warning text-white');
+
+        FO_DASH.instance.draw(); // Vẽ lại bảng để thực thi search.push
+    },
+    // hàm show reservation name
     switchUrl: (isShowRes) => {
         // Logic chọn URL
         const newUrl = isShowRes ? '/fo/inhouse-list' : '/fo/inhouse-list2';
@@ -233,15 +259,19 @@ FO_DASH.actions = {
     }
 };
 
-
 // 4. EVENTS
 $(document).ready(() => {
     FO_DASH.actions.init();
     // SỰ KIỆN KHI NHẤN CHECKBOX
-    $(document).on('change', '#chkShowResName', function() {
+    $(document).on('change', '#chkShowResName', function () {
         const isChecked = $(this).is(':checked');
-        
+
         // Gọi hàm đổi URL
         FO_DASH.actions.switchUrl(isChecked);
+    });
+    // Khởi tạo Tooltip cho 3 nút lọc (chỉ làm 1 lần)
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (el) {
+        return new bootstrap.Tooltip(el, { trigger: 'click hover focus' }); // Thêm 'click' để chạy trên Mobile
     });
 });

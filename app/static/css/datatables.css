@@ -1,115 +1,150 @@
+/* --- 1. CẤU HÌNH CHUNG: NÉN CỰC HẠN --- */
 .dataTable td, .dataTable th {
-    padding: 0.4rem 0.5rem !important;
-    font-size: 0.85rem !important;
+    padding: 3px 5px !important; /* Nén padding nhỏ lại để hiện nhiều cột hơn */
+    font-size: 0.82rem !important; /* Thu nhỏ chữ một chút để vừa màn hình điện thoại */
     vertical-align: middle !important;
-    white-space: nowrap;
+    white-space: nowrap !important; /* Ép không cho xuống dòng để hiện thanh cuộn ngang */
+    line-height: 1.2 !important;
 }
+
 .dt-center { text-align: center !important; }
-.user-checkbox, #checkAll { width: 18px; height: 18px; cursor: pointer; }
 
-/* Responsive Table */
-@media (max-width: 768px) {
-    #tblUsers td:nth-child(3) { white-space: normal; min-width: 120px; }
-    .btn-sm { padding: 0.25rem 0.4rem; font-size: 0.75rem; }
-}
-
-/* 1. Nới rộng ô select search một chút để hiện đủ số 10, 25, 50 */
-.dataTables_length select {
-    min-width: 65px !important;
-    /* Đảm bảo đủ chỗ cho 2 chữ số và mũi tên */
-    padding-right: 1.2rem !important;
-    /* Khoảng trống cho icon mũi tên */
-    text-align: center;
-    display: inline-block !important;
-}
-
-/* 2. Cân đối lại chữ "Xem ... bản ghi" cho đẹp */
-.dataTables_length label {
-    font-size: 0.8rem;
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    /* Khoảng cách giữa chữ và ô chọn */
-}
-/* xử lý datatable tiêu đề bị đè nút sort */
-/* 1. Tạo khoảng trống bên phải cho tất cả tiêu đề để không đè icon sort */
+/* --- 2. XỬ LÝ TIÊU ĐỀ & ICON SORT (CHỐNG ĐÈ CHỮ) --- */
 table.dataTable thead th {
     position: relative;
-    padding-right: 20px !important; /* Tạo khe hở cho mũi tên */
-    white-space: nowrap;          /* Ép chữ không được xuống dòng */
-    vertical-align: middle;
-    font-size: 9px;               /* Giữ đúng cỡ chữ nhỏ bạn đang dùng */
+    padding-right: 15px !important; /* Tạo khe hở vừa đủ cho mũi tên */
+    font-size: 9px !important;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6 !important;
 }
 
-/* 2. Căn chỉnh icon sort của DataTable cho đẹp */
+/* Thu nhỏ và đẩy icon sort sát lề để không chiếm diện tích */
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting_asc:before,
 table.dataTable thead .sorting_asc:after {
-    right: 5px !important;        /* Đẩy icon sát lề phải của ô */
-    opacity: 0.3;
-}
-
-/* 3. Đảm bảo bảng có thanh cuộn ngang khi quá nhiều cột */
-.dataTables_wrapper .table-responsive {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* 4. Fix độ rộng tối thiểu cho các cột quan trọng để không bị mất chữ */
-#tblInHouseDash th {
-    min-width: 25px;
-}
-/* #tblInHouseDash th:nth-child(4) { min-width: 150px; }  */
-
-/* Thu nhỏ icon sort để không đè chữ ở các cột hẹp */
-#tblInHouseDash thead th.sorting:before, 
-#tblInHouseDash thead th.sorting:after {
     right: 2px !important;
-    font-size: 0.7rem !important;
-}
-/* end xử lý datatable tiêu đề bị đè nút sort */
-/* phân màu dòng (Zebra Stripes) */
-/* Màu cho nhóm chẵn */
-/* .group-even { background-color: #ffffff !important; } 
-/* Màu cho nhóm lẻ (xám nhạt giống SMILE) */
-/* .group-odd { background-color: #142663 !important; }  */
-
-/* Nhóm 1: Trắng */
-    .group-even {
-        --cui-table-bg: #ffffff !important;
-        background-color: #ffffff !important;
-    }
-    
-    /* Nhóm 2: Xám xanh nhạt (Khác biệt rõ rệt) */
-    .group-odd {
-        --cui-table-bg: #f3f5f7 !important;
-        --bs-table-bg: #f3f5f7 !important;
-        background-color: #f3f5f7 !important;
-    }
-
-    /* Hiệu ứng Hover cho cả 2 nhóm */
-    .group-even:hover, .group-odd:hover {
-        --cui-table-accent-bg: rgba(0, 0, 0, 0.05) !important;
-        background-color: #e9f0f7 !important;
-    }
-
-    /* Màu nền cho các cột bị Neo (Fixed) */
-.DTFC_LeftWrapper table.dataTable thead tr,
-.DTFC_LeftWrapper table.dataTable tbody tr {
-    background-color: white !important;
+    font-size: 0.6rem !important;
+    opacity: 0.2;
 }
 
-/* Tăng trải nghiệm trên điện thoại */
+/* ẨN ICON SORT ở các cột quá hẹp để tiết kiệm từng milimet */
+#tblInHouseDash thead th:nth-child(1), /* Cột Ký */
+#tblInHouseDash thead th:nth-child(2), /* Cột Sts */
+#tblInHouseDash thead th:nth-child(3), /* Cột Folio */
+#tblInHouseDash thead th:nth-child(17), /* Cột Adl */
+#tblInHouseDash thead th:nth-child(18), /* Cột Chl */
+#tblInHouseDash thead th:nth-child(19)  /* Cột Enf */ {
+    padding-right: 2px !important;
+    background-image: none !important;
+}
+
+/* --- 3. ÉP ĐỘ RỘNG CỐ ĐỊNH CHO CÁC CỘT MÃ SỐ (STS, FOLIO, ROOM, PAX) --- */
+/* Cột 2 (Sts) và Cột 3 (Folio) */
+#tblInHouseDash thead th:nth-child(2), #tblInHouseDash tbody td:nth-child(2),
+#tblInHouseDash thead th:nth-child(3), #tblInHouseDash tbody td:nth-child(3) {
+    width: 38px !important;
+    max-width: 42px !important;
+    min-width: 35px !important;
+    text-align: center !important;
+}
+
+/* Cột 6 (Room), 17 (Adl), 18 (Chl), 19 (Enf) - Các cột chỉ chứa số ngắn */
+#tblInHouseDash th:nth-child(6), #tblInHouseDash td:nth-child(6),
+#tblInHouseDash th:nth-child(17), #tblInHouseDash td:nth-child(17),
+#tblInHouseDash th:nth-child(18), #tblInHouseDash td:nth-child(18),
+#tblInHouseDash th:nth-child(19), #tblInHouseDash td:nth-child(19) {
+    width: 30px !important;
+    min-width: 28px !important;
+    max-width: 35px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+/* --- 4. CẤU HÌNH FIXED COLUMNS (NEO CỘT) --- */
+/* Đổ màu nền đặc để không bị xuyên thấu khi kéo ngang */
+.dtfc-fixed-left {
+    background-color: #ffffff !important;
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+/* Ép kích thước cột neo phải khớp với cột bảng chính */
+.dtfc-fixed-left:nth-child(2),
+.dtfc-fixed-left:nth-child(3) {
+    width: 38px !important;
+    min-width: 38px !important;
+}
+
+/* --- 5. HIỆU ỨNG PHÂN MÀU NHÓM (ZEBRA GROUPING) --- */
+.group-even {
+    --cui-table-bg: #ffffff !important;
+    --bs-table-bg: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+.group-odd {
+    --cui-table-bg: #f4f6f8 !important;
+    --bs-table-bg: #f4f6f8 !important;
+    background-color: #f4f6f8 !important; /* Xám xanh rất nhạt để dịu mắt */
+}
+
+.group-even:hover, .group-odd:hover {
+    background-color: #e9f0f7 !important;
+}
+
+/* --- 6. TỐI ƯU CHO ĐIỆN THOẠI (RESPONSIVE) --- */
 @media (max-width: 768px) {
     #tblInHouseDash { font-size: 10px !important; }
-    .card-header { padding: 5px !important; }
-    /* Giới hạn độ rộng cột Tên khách trên mobile để không quá dài */
-    #tblInHouseDash td:nth-child(5) { 
-        max-width: 120px; 
+    
+    /* Giới hạn Tên khách và Công ty để không đẩy các cột bên phải đi quá xa */
+    #tblInHouseDash td:nth-child(5), /* Guest Name */
+    #tblInHouseDash td:nth-child(11) /* Company */ { 
+        max-width: 100px !important; 
         overflow: hidden; 
         text-overflow: ellipsis; 
-        white-space: nowrap; 
+        white-space: nowrap !important; 
     }
+
+    .dataTables_length, .dataTables_filter { font-size: 10px; }
+}
+
+/* --- 7. CÁC TIỆN ÍCH KHÁC --- */
+.user-checkbox, #checkAll { width: 17px; height: 17px; cursor: pointer; }
+
+#tblInHouseDash {
+    table-layout: auto !important; /* Cho phép bảng tự co lại theo nội dung nén */
+    border-collapse: collapse !important;
+}
+/* --- SỬA LỖI MẤT MÀU KHI NEO CỘT --- */
+
+/* 1. Ép các ô được neo phải trong suốt để hiện màu của dòng cha */
+#tblInHouseDash thead th.dtfc-fixed-left,
+#tblInHouseDash tbody td.dtfc-fixed-left {
+    background-color: inherit !important; /* Lấy màu từ dòng cha */
+    z-index: 10;
+}
+
+/* 2. Thiết lập màu cho dòng chẵn (Trắng) */
+#tblInHouseDash tbody tr.group-even,
+#tblInHouseDash tbody tr.group-even td.dtfc-fixed-left {
+    background-color: #ffffff !important;
+}
+
+/* 3. Thiết lập màu cho dòng lẻ (Xám nhạt) - FIX LỖI Ở ĐÂY */
+#tblInHouseDash tbody tr.group-odd,
+#tblInHouseDash tbody tr.group-odd td.dtfc-fixed-left {
+    background-color: #f3f5f7 !important; /* Màu xám xanh nhạt bạn đã chọn */
+}
+
+/* 4. Hiệu ứng Hover cho cả dòng bao gồm cả phần cột neo */
+#tblInHouseDash tbody tr:hover,
+#tblInHouseDash tbody tr:hover td.dtfc-fixed-left {
+    background-color: #e9f0f7 !important;
+}
+
+/* 5. Đổ bóng nhẹ cho mép cột neo cuối cùng để phân biệt khi cuộn */
+#tblInHouseDash .dtfc-fixed-left:last-child {
+    border-right: 1px solid #dee2e6 !important;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
 }
