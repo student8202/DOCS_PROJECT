@@ -106,11 +106,22 @@
                     <i class="nav-icon fas fa-cogs"></i> Cấu hình hệ thống
                 </a>
                 <ul class="nav-group-items">
+                    <!-- 1. DÀNH CHO ADMIN/MANAGER (Người không biết code) -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/system/templates">
-                            <i class="nav-icon fas fa-file-code"></i> Mẫu hồ sơ (Template)
+                        <a class="nav-link" href="/fo/templates/custom-view">
+                            <i class="nav-icon fas fa-file-signature text-warning"></i> Mẫu tùy chỉnh (Manager)
+                            <span class="badge badge-sm bg-info ms-auto">CKEditor</span>
                         </a>
                     </li>
+
+                    <!-- 2. DÀNH CHO DEV/IT (Người biết code) -->
+                    <li class="nav-item border-top mt-1">
+                        <a class="nav-link" href="/fo/templates/system-view">
+                            <i class="nav-icon fas fa-code text-danger"></i> Mẫu hệ thống (Dev Only)
+                            <span class="badge badge-sm bg-secondary ms-auto">Jinja2</span>
+                        </a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/system/logs">
                             <i class="nav-icon fas fa-history"></i> Nhật ký Audit

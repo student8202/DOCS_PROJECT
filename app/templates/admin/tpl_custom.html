@@ -1,0 +1,120 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<style>
+    /* Chỉnh chiều cao cho CKEditor 4 */
+    #cke_editor-ck .cke_contents {
+        height: 500px !important;
+        /* Ép ảnh hiển thị đúng theo kích thước (width/height) bạn nhập trong Editor */
+        /* Lưu ý: CKEditor 4 dùng iframe nên ta phải tác động vào class bao ngoài */
+    }
+
+    /* Chỉ áp dụng khi màn hình nhỏ hơn 768px (Điện thoại/Tablet) */
+    @media (max-width: 768px) {
+
+        /* Ép tất cả các hộp thoại của CKEditor co lại theo chiều rộng màn hình */
+        .cke_dialog {
+            width: 95% !important;
+            left: 2.5% !important;
+            top: 50px !important;
+        }
+
+        /* Ép các ô input bên trong hộp thoại không được tràn ra ngoài */
+        .cke_dialog_contents_body {
+            width: 100% !important;
+            padding: 5px !important;
+        }
+
+        .cke_dialog_ui_input_text,
+        .cke_dialog_ui_input_select {
+            width: 100% !important;
+            /* Các ô Width/Height/URL dàn hàng ngang 100% */
+        }
+
+        /* Thu nhỏ các tab (Image Info, Link, Upload...) để không bị tràn dòng */
+        .cke_dialog_tabs {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cke_dialog_tabs a {
+            padding: 5px !important;
+            font-size: 11px !important;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="card shadow-sm border-top border-4 border-success">
+        <div class="card-header bg-white py-2 fw-bold text-success">
+            <i class="fas fa-file-signature me-1"></i> QUẢN LÝ MẪU TÙY CHỈNH (MANAGER)
+        </div>
+        <div class="card-body p-0">
+            <div class="p-2 border-bottom bg-light d-flex justify-content-between">
+                <small class="text-muted italic">Thiết kế các mẫu đơn giản: Welcome Letter, Phụ lục...</small>
+                <button class="btn btn-sm btn-success" onclick="TPL_CUSTOM.actions.openModal(null)">
+                    <i class="fas fa-plus"></i> Thêm mẫu mới
+                </button>
+            </div>
+            <table id="tblTplCustom" class="table table-sm table-hover mb-0 w-100">
+                <thead>
+                    <tr class="small bg-light">
+                        <th>ID</th>
+                        <th>Mã</th>
+                        <th>Tên mẫu</th>
+                        <th>Người tạo</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL CKEDITOR -->
+<div class="modal fade" id="modalCustom" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header py-2 bg-success text-white">
+                <h6 class="modal-title small fw-bold">BIÊN TẬP NỘI DUNG (WORD/EXCEL STYLE)</h6>
+                <button type="button" class="btn-close btn-close-white" data-coreui-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-0 d-flex flex-column">
+                <div class="row g-2 p-2 bg-light border-bottom">
+                    <div class="col-md-3"><input type="text" id="cust_code" class="form-control form-control-sm"
+                            placeholder="Mã mẫu"></div>
+                    <div class="col-md-9"><input type="text" id="cust_name" class="form-control form-control-sm"
+                            placeholder="Tên mẫu"></div>
+                </div>
+                <div class="flex-grow-1 overflow-auto bg-white p-2">
+                    <!-- THAY THẾ Ở ĐÂY: Dùng textarea thay vì div -->
+                    <textarea id="editor-ck" class="ck_editor"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer py-1">
+                <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-sm btn-primary px-4" onclick="TPL_CUSTOM.actions.save()">LƯU THIẾT
+                    KẾ</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/ckeditor/ckeditor.js"></script>
+<script src="/static/js/admin/tpl_custom_handler.js"></script>
+<script>
+    // FIX TRIỆT ĐỂ CHO BOOTSTRAP 5 / COREUI
+    // Chèn đoạn này để ngăn Bootstrap 5 "giam cầm" focus trong Modal
+    document.addEventListener('focusin', (e) => {
+        if (e.target.closest(".cke_dialog_container, .cke_dialog, .cke_input_text, .cke_input_select")) {
+            e.stopImmediatePropagation();
+        }
+    }, true);
+
+    // Vô hiệu hóa hàm kiểm tra focus của Bootstrap 5 một cách trực tiếp
+    if (window.bootstrap && bootstrap.Modal) {
+        bootstrap.Modal.prototype._focustrap = function () { };
+        // Hoặc với một số bản CoreUI:
+        bootstrap.Modal.prototype._initializeFocusTrap = function () { return { activate: () => { }, deactivate: () => { } }; };
+    }
+</script>
+{% endblock %}

@@ -27,4 +27,4 @@ Giờ đây bạn đã có một chu trình khép kín:
 5. Gán Role cho User (Dùng trang Manage này).
 Hệ thống RBAC của bạn đã chính thức hoàn thành 100%
 ----------------------------------
-
+Xây dựng trang Quản lý Template tích hợp cả hai chế độ: Manager (CKEditor 5) cho người không biết code và Developer (Monaco Editor) cho người biết code.

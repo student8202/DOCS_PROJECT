@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<style>
+    #container-monaco { height: 75vh; border-top: 1px solid #444; }
+    /* Hiệu ứng phát sáng cho nút Preview */
+    .btn-glow-info {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+        border: 1px solid #0dcaf0 !important;
+        transition: all 0.3s ease;
+    }
+    .btn-glow-info:hover {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+        background-color: #0dcaf0 !important;
+        color: #000 !important;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="card shadow-sm border-top border-4 border-danger">
+        <div class="card-header bg-white py-2 fw-bold text-danger d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-code me-1"></i> QUẢN LÝ MẪU HỆ THỐNG (DEV ONLY)</span>
+            <button class="btn btn-sm btn-danger px-3" onclick="TPL_SYS.actions.openModal(null)">
+                <i class="fas fa-plus me-1"></i> THÊM MẪU CODE
+            </button>
+        </div>
+        <div class="table-responsive" class="card-body p-0">
+            <table id="tblTplSystem" class="table table-sm table-hover mb-0 w-100">
+                <thead><tr class="small bg-light"><th>ID</th><th>Mã</th><th>Tên mẫu</th><th>Đường dẫn File</th><th>Thao tác</th></tr></thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL MONACO -->
+<div class="modal fade" id="modalSystem" data-bs-backdrop="static">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header py-2 border-secondary d-flex justify-content-between">
+                <h6 class="modal-title small fw-bold text-danger">DEVELOPER EDITOR (JINJA2 / HTML)</h6>
+                <div>
+                    <!-- NÚT PREVIEW MỚI - SÁNG LÊN -->
+                    <button type="button" class="btn btn-sm btn-outline-info btn-glow-info fw-bold me-3 px-4" onclick="TPL_SYS.actions.preview()">
+                        <i class="fas fa-eye me-1"></i> XEM TRƯỚC (PREVIEW)
+                    </button>
+                    <button type="button" class="btn-close btn-close-white" data-coreui-dismiss="modal"></button>
+                </div>
+            </div>
+            <div class="modal-body p-0 d-flex flex-column bg-dark">
+                <div class="row g-2 p-2 bg-dark border-bottom border-secondary">
+                    <div class="col-md-2"><input type="text" id="sys_code" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Mã"></div>
+                    <div class="col-md-5"><input type="text" id="sys_name" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Tên mẫu"></div>
+                    <div class="col-md-5"><input type="text" id="sys_path" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Path: templates/fo/reg_card.html"></div>
+                </div>
+                <div id="container-monaco" class="flex-grow-1"></div>
+            </div>
+            <div class="modal-footer py-1 border-secondary">
+                <button type="button" class="btn btn-sm btn-outline-light" data-coreui-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-sm btn-danger px-4 fw-bold" onclick="TPL_SYS.actions.save()">
+                    <i class="fas fa-save me-1"></i> XÁC NHẬN LƯU CODE
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<!-- 2. Nạp Loader của Monaco Editor (Bản mới nhất 2026 cực nhanh) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.46.0/min/vs/loader.min.js"></script>
+<script src="/static/js/admin/tpl_system_handler.js"></script>
+{% endblock %}

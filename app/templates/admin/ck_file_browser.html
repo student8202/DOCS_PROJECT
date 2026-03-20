@@ -1,0 +1,93 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="card shadow-sm border-top border-4 border-primary">
+        <div class="card-header bg-white py-2 fw-bold text-primary d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-images me-1"></i> THƯ VIỆN ẢNH NỘI BỘ</span>
+            <small class="text-muted">Click vào dòng để chọn ảnh cho Editor</small>
+            <div>
+                <!-- Nút upload mới -->
+                <input type="file" id="fileUploadInput" style="display: none;" onchange="uploadFile(this)">
+                <button class="btn btn-sm btn-success" onclick="$('#fileUploadInput').click()">
+                    <i class="fas fa-upload"></i> Tải ảnh lên
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive" class="card-body p-2">
+            <table id="tblFileBrowser" class="table table-sm table-hover w-100">
+                <thead>
+                    <tr class="small bg-light">
+                        <th width="10%">Xem trước</th>
+                        <th>Tên file</th>
+                        <th>Kích thước</th>
+                        <th width="15%">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for file in files %}
+                    <tr style="cursor: pointer;" onclick="returnFileUrl('/static/uploads/{{ file.name }}')">
+                        <td class="text-center">
+                            <img src="/static/uploads/{{ file.name }}"
+                                style="height: 40px; width: 40px; object-fit: cover;" class="rounded border">
+                        </td>
+                        <td class="align-middle"><strong>{{ file.name }}</strong></td>
+                        <td class="align-middle text-muted small">{{ file.size }} KB</td>
+                        <td class="align-middle text-center">
+                            <button class="btn btn-sm btn-outline-primary py-0">Chọn</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#tblFileBrowser').DataTable({
+            pageLength: 10,
+            lengthMenu: [5, 10, 20],
+            language: { url: "//cdn.datatables.net/plug-ins/1.10.24/i18n/Vietnamese.json" }
+        });
+    });
+
+    function returnFileUrl(url) {
+        // Lấy CKEditorFuncNum từ URL của FastAPI trả về
+        const urlParams = new URLSearchParams(window.location.search);
+        const funcNum = urlParams.get('CKEditorFuncNum');
+
+        if (window.opener && window.opener.CKEDITOR) {
+            window.opener.CKEDITOR.tools.callFunction(funcNum, url);
+            window.close();
+        } else {
+            Swal.fire('Lỗi', 'Không tìm thấy cửa sổ Editor gốc!', 'error');
+        }
+    }
+    function uploadFile(input) {
+        if (input.files && input.files[0]) {
+            let formData = new FormData();
+            formData.append("upload", input.files[0]); // Key phải trùng với tham số trong Python
+
+            $.ajax({
+                url: '/admin/ckeditor/upload',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (res) {
+                    if (res.uploaded) {
+                        Swal.fire('Thành công', 'Đã tải ảnh lên!', 'success').then(() => {
+                            location.reload(); // Load lại để thấy ảnh mới trong danh sách
+                        });
+                    } else {
+                        Swal.fire('Lỗi', res.error.message, 'error');
+                    }
+                }
+            });
+        }
+    }
+</script>
+{% endblock %}

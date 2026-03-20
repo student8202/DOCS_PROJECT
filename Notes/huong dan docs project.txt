@@ -92,7 +92,7 @@ Bảo mật: Lọc dữ liệu. Ví dụ: Database có cột Password_Hash, như
 Luồng dữ liệu:
 Client ↔ Router ↔ Service ↔ Model ↔ Database
 (Dữ liệu đi qua Router và Service được định hình bởi Schema)
--- bắt đầu cung cấp AI thông tin để đi đúng cấu trúc
+-- start bắt đầu cung cấp AI thông tin để đi đúng cấu trúc
 Router: Tuyệt đối không có if/else. Chỉ có khai báo URL và gọi Controller.
 Controller: Không có logic tính toán. Chỉ có try/except để chuyển đổi kết quả từ Service thành mã HTTP (200, 400, 500).
 Service: Không có mã HTTP. Chỉ có logic nghiệp vụ và raise lỗi nếu dữ liệu sai.
@@ -114,6 +114,7 @@ Về Exception: Nên tạo một file exceptions.py riêng để định nghĩa 
 Lưu ý mỗi lần cung cấp cho tôi 1 file tôi làm xong bạn sẽ gửi cái khác theo thứ tự sau model -> schema -> service -> controller -> router -> template -> js
 Về phần js:  tổ chức JS theo mô hình Module Pattern. Thay vì viết một file dài dằng dặc, ta chia thành các "phân khu" chức năng rõ rệt. Theo luồng: Cấu hình (Config) -> Phụ trợ (UI Helpers) -> Hành động (Actions) -> Sự kiện (Events).
 Tóm lại: 5 lớp Backend và cấu trúc 4 phần JS
+-- end AI
 ------------------------------
 vấn đề khi khai báo template ở từng router
 Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.
@@ -147,4 +148,33 @@ return templates.TemplateResponse("dashboard.html", {
 Hãy thận trọng khi sử dụng mã.
 ---------------------------------------
 FolioNum (Số chính) phải là "đại diện" cho cả nhóm. Khi nhấn Sort theo bất kỳ cột nào, hệ thống phải sắp xếp các Nhóm Folio đó với nhau, còn các thành viên bên trong nhóm (các dòng khách đi cùng) thì phải luôn đi theo "ông chủ" Folio đó và giữ nguyên trật tự phòng.
+--------------------------------------
+Để dễ hình dung, hãy tưởng tượng quy trình như một tiệm may:
+CKEditor 5 & Monaco Editor (Phần thiết kế): Là các công cụ để bạn vẽ ra mẫu áo (Template).
+Manager dùng CKEditor gõ văn bản.
+IT dùng Monaco viết code HTML/Jinja2.
+Kết quả: Một chuỗi mã HTML được lưu vào Database.
+Jinja2 (Phần lắp ráp): Khi khách nhấn nút "Ký", Jinja2 lấy thông tin khách từ SMILE (Tên, Số phòng...) "đắp" vào các chỗ trống {{GuestName}} trên mẫu thiết kế.
+Kết quả: Một file HTML đã có đầy đủ nội dung khách hàng.
+WeasyPrint (Máy in xuất bản): Đây là lúc WeasyPrint xuất hiện. Nó nhận file HTML từ Jinja2 và "in" ra một bản PDF hoặc Ảnh chất lượng cao cực kỳ sắc nét.
+Tại sao cần nó? Nếu chỉ hiện HTML lên điện thoại, đôi khi căn lề bị lệch, bảng biểu bị méo. WeasyPrint ép nó vào đúng khổ giấy A4, đúng font chữ, đúng vị trí để khách ký vào nhìn chuyên nghiệp nhất.
+Tóm tắt vị trí của WeasyPrint:
+Công cụ			Nơi chạy		Nhiệm vụ
+CKEditor / Monaco	Trình duyệt (Admin)	Soạn thảo ra mẫu (Template)
+Jinja2			Server (Python)		Đổ dữ liệu SMILE vào mẫu
+WeasyPrint		Server (Python)		Chuyển HTML thành bản ký PDF/PNG chuẩn
+----------------------------
+Registration Card (RC), Information Bill (Pro-forma), Booking Confirmation.
+Welcome Letter, Phụ lục hợp đồng, Thông báo nội khu, Quy định chung.
+https://www.idrsolutions.com/online-pdf-to-html5-converter
+Dùng AI google chụp hình và nhờ làm file html -> Monaco python là ok
+
+https://www.youtube.com/watch?v=_UNHA0y9jbU
+-- ckeditor
+E:\Mr Hoang\BAO CAO\source_211117\admin
+Bạn có muốn tôi phác thảo cấu trúc code FastAPI cho phần "Duyệt File" (File Browser) này không?
+Nó sẽ gồm:
+1 Route Python: Đọc thư mục và trả về danh sách file.
+1 File HTML đơn giản: Hiển thị danh sách ảnh để user chọn.
+Cấu hình CKEditor: Trỏ filebrowserBrowseUrl về Route mới này.
 

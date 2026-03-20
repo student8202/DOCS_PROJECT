@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "MSMincho";
+    src: url( admin/ckeditor/fonts/MSMincho.eot ); /* IE */
+    src: local("MSMincho"), url("admin/ckeditor/fonts/MSMincho.ttf") format("truetype"); /*non-IE*/
+}
+@font-face {
+    font-family: "msgothic";
+    src: url( admin/ckeditor/fonts/msgothic.eot ); /* IE */
+    src: local("msgothic"), url("admin/ckeditor/fonts/msgothic.ttf") format("truetype"); /*non-IE*/
+}
+@font-face {
+    font-family: "UVNTinTucHepThem_R";
+    src: url( admin/ckeditor/fonts/UVNTinTucHepThem_R.eot ); /* IE */
+    src: local("UVNTinTucHepThem_R"), url("admin/ckeditor/fonts/UVNTinTucHepThem_R.ttf") format("truetype"); /*non-IE*/
+}
+@font-face {
+    font-family: "UVNTinTucHep_R";
+    src: url( admin/ckeditor/fonts/UVNTinTucHep_R.eot ); /* IE */
+    src: local("UVNTinTucHep_R"), url("admin/ckeditor/fonts/UVNTinTucHep_R.ttf") format("truetype"); /*non-IE*/
+}

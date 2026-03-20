@@ -8,7 +8,8 @@ const FO_DASH = {
     tableId: '#tblInHouseDash',
     apiUrl: '/fo/inhouse-list2',
     instance: null,
-    currentModule: 'ih', // Mặc định là In-House
+    // Lấy module đã lưu, nếu chưa có gì (mới mở máy) thì lấy 'ih'
+    currentModule: localStorage.getItem('fo_last_module') || 'ih'
 };
 
 // 2. UI HELPERS
@@ -88,7 +89,18 @@ FO_DASH.actions = {
             scrollX: true,
             fixedColumns: { left: 2 },
             columns: [
-                { data: 'FolioNum', render: d => `<button class="btn btn-xs btn-primary py-0 px-1" onclick="signFolio('${d}')">Ký</button>` }, // 0
+                {
+                    data: 'FolioNum',
+                    render: (data, type, row) => {
+                        // Xử lý GroupCode/SortGroup nếu null thì truyền chuỗi rỗng
+                        const sGroup = row.SortGroup ? `'${row.SortGroup}'` : 'null';
+
+                        return `<button class="btn btn-xs btn-primary py-0 px-1" 
+                        onclick="FO_DASH.actions.openSignProcess('${row.FFolioNum}', ${sGroup}, ${row.IdAddition})">
+                        Ký
+                        </button>`;
+                    }
+                },// 0
                 {
                     data: 'AdtStatus',
                     render: function (data, type, row) {
@@ -284,8 +296,7 @@ FO_DASH.actions = {
                 updateUI('#btnFilterGit', 'FIT', fitSum);
                 updateUI('#btnFilterGroup', 'GROUP', groupSum);
 
-                // --- ĐOẠN FIX LỖI MẤT NEO CỘT (FIXEDCOLUMNS) ---
-                // --- ĐOẠN FIX LỖI MẤT NEO CỘT (DÀNH CHO FIXEDCOLUMNS 5.X) ---
+                // --- ĐOẠN FIX LỖI MẤT NEO CỘT (FIXEDCOLUMNS) --
                 setTimeout(() => {
                     if (FO_DASH.instance && FO_DASH.instance.fixedColumns) {
                         // Với bản 5.x, chỉ cần gọi hàm này để nó tính toán lại vị trí các cột dính (sticky)
@@ -359,7 +370,11 @@ FO_DASH.actions = {
     },
     switchModule: (type) => {
         FO_DASH.currentModule = type; // Lưu lại phân hệ vừa chọn
+        // LƯU LẠI VÀO TRÌNH DUYỆT
+        localStorage.setItem('fo_last_module', type);
+
         const isShowRes = $('#chkShowResName').is(':checked');
+
         let url = '';
         let label = '';
         let colorClass = '';
@@ -422,9 +437,12 @@ $(document).ready(() => {
         FO_DASH.actions.switchUrl(isChecked);
     });
 
-    // KHỞI TẠO THỦ CÔNG DROPDOWN (Để chắc chắn nó hoạt động)
+    // KHỞI TẠO THỦ CÔNG DROPDOWN (Để chắc chắn nó hoạt động) rs. ih, rsih
     var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
     var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
         return new bootstrap.Dropdown(dropdownToggleEl)
     });
+
+    // F5 XONG THÌ TỰ ĐỘNG CHẠY LẠI MODULE CUỐI CÙNG
+    FO_DASH.actions.switchModule(FO_DASH.currentModule);
 });
