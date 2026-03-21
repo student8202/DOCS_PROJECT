@@ -28,3 +28,9 @@ Giờ đây bạn đã có một chu trình khép kín:
 Hệ thống RBAC của bạn đã chính thức hoàn thành 100%
 ----------------------------------
 Xây dựng trang Quản lý Template tích hợp cả hai chế độ: Manager (CKEditor 5) cho người không biết code và Developer (Monaco Editor) cho người biết code.
+---------------------------------
+Tổng kết phân loại template đề xuất cho bạn:
+FO + RESERVATION: RegCard, Welcome Letter, Confirmation.
+FO + CASHIER: Folio, Invoice, VAT Receipt.
+BO + ACCOUNTING: Payment Voucher, Receipt Voucher.
+HR + EMPLOYEE: Labor Contract, Decision.

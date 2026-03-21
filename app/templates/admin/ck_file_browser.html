@@ -25,9 +25,9 @@
                 </thead>
                 <tbody>
                     {% for file in files %}
-                    <tr style="cursor: pointer;" onclick="returnFileUrl('/static/uploads/{{ file.name }}')">
+                    <tr style="cursor: pointer;" onclick="returnFileUrl('/static/uploads/images/{{ file.name }}')">
                         <td class="text-center">
-                            <img src="/static/uploads/{{ file.name }}"
+                            <img src="/static/uploads/images/{{ file.name }}"
                                 style="height: 40px; width: 40px; object-fit: cover;" class="rounded border">
                         </td>
                         <td class="align-middle"><strong>{{ file.name }}</strong></td>
@@ -50,7 +50,7 @@
         $('#tblFileBrowser').DataTable({
             pageLength: 10,
             lengthMenu: [5, 10, 20],
-            language: { url: "//cdn.datatables.net/plug-ins/1.10.24/i18n/Vietnamese.json" }
+            // language: { url: "//cdn.datatables.net/plug-ins/1.10.24/i18n/Vietnamese.json" }
         });
     });
 

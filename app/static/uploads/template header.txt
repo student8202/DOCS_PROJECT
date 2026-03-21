@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<style>
+        /* Thiết lập khổ giấy A4 chuẩn cho in ấn */
+        @page { size: A4; margin: 0; }
+        body { margin: 0; padding: 0; font-family: "Times New Roman", Times, serif; background: #eee; }
+        
+        .a4-container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        /* Vùng chữ ký */
+        .signature-section { margin-top: 40px; display: flex; justify-content: space-between; text-align: center; }
+        .sig-box { width: 45%; }
+        .sig-canvas-area { 
+            height: 120px; 
+            margin-top: 10px; 
+            border-bottom: 1px solid #000; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sig-canvas-area img { max-height: 100%; max-width: 100%; object-fit: contain; }
+        .sig-label { font-weight: bold; text-decoration: underline; margin-top: 5px; font-size: 11pt; }
+
+        /* Chỉnh sửa cho Mobile khi ký tên */
+        @media screen and (max-width: 768px) {
+            .a4-container { width: 100%; margin: 0; padding: 10px; height: auto; }
+            .info-table td { display: block; width: 100%; border: none; }
+            .label { font-weight: bold; color: #666; }
+            .value { border-bottom: 1px solid #eee; margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+</body>

@@ -8,8 +8,8 @@ from core.deps import templates
 
 router = APIRouter(prefix="/admin/ckeditor", tags=["CKEditor"])
 
-UPLOAD_DIR = Path("static/uploads")
-UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+UPLOAD_DIR = Path("static/uploads/images")
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True) # Tự động tạo folder nếu chưa có
 
 @router.get("/browser", response_class=HTMLResponse)
 async def file_browser(request: Request):
@@ -41,7 +41,7 @@ async def quick_upload(upload: UploadFile = File(...)):
         return {
             "uploaded": 1,
             "fileName": clean_name,
-            "url": f"/static/uploads/{clean_name}"
+            "url": f"/static/uploads/images/{clean_name}"
         }
     except Exception as e:
         return {"uploaded": 0, "error": {"message": str(e)}}

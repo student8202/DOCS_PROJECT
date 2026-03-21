@@ -87,15 +87,16 @@ CREATE TABLE dbo.tbl_UserRoles (
 );
 CREATE INDEX idx_ur_user ON dbo.tbl_UserRoles(Username);
 
--- =============================================
--- PHÂN HỆ TIỀN SẢNH (FRONT OFFICE)
--- =============================================
+
 
 -- Quản lý Mẫu hồ sơ (Template)
-CREATE TABLE FO.tbl_Templates (
+CREATE TABLE tbl_Templates (
     TemplateID   INT IDENTITY(1,1) PRIMARY KEY,
     TemplateCode NVARCHAR(50),
     TemplateName NVARCHAR(255),
+    ModuleName   NVARCHAR(10),  -- FO, POS, BO, HR
+    SubModule    NVARCHAR(50),  -- RESERVATION, CASHIER, ACCOUNTING, v.v.
+    Category     NVARCHAR(50), -- REG_CARD, WELCOME_LETTER, INVOICE, v.v.
     IsCustom     BIT DEFAULT 0, -- 0: Dev code, 1: Admin thiết kế
     HtmlContent  NVARCHAR(MAX),
     FilePath     NVARCHAR(500),
@@ -104,8 +105,29 @@ CREATE TABLE FO.tbl_Templates (
     CreatedAt    DATETIME DEFAULT GETDATE(),
     UpdatedBy    NVARCHAR(50),
     UpdatedAt    DATETIME
+)
+CREATE TABLE tbl_TemplateTags (
+    TagID       INT IDENTITY(1,1) PRIMARY KEY,
+    TagName     NVARCHAR(100), -- Tên hiển thị (VD: Tên khách)
+    TagCode     NVARCHAR(100), -- Mã tag (VD: {{GuestName}})
+    ModuleName   NVARCHAR(10),  -- Thuộc phân hệ (FO, POS, BO, HR)
+    IsActive    BIT DEFAULT 1,
+    SortOrder   INT DEFAULT 0
 );
 
+-- Dữ liệu mẫu (Seed Data)
+INSERT INTO tbl_TemplateTags (TagName, TagCode, ModuleName, SortOrder) VALUES 
+(N'Tên khách', '{{GuestName}}', 'FO', 1),
+(N'Ngày đến', '{{ArrivalDate}}', 'FO', 2),
+(N'Mã đặt phòng', '{{BookingID}}', 'FO', 3),
+(N'Tổng tiền', '{{TotalAmount}}', 'FO', 4),
+(N'Tên nhà hàng', '{{OutletName}}', 'POS', 1),
+(N'Số bàn', '{{TableNum}}', 'POS', 2),
+(N'Số hóa đơn', '{{BillNo}}', 'POS', 3);
+-- =============================================
+-- PHÂN HỆ TIỀN SẢNH (FRONT OFFICE)
+-- =============================================
+-----------------------------
 -- Quản lý Hồ sơ đã ký & Snapshot dữ liệu
 CREATE TABLE FO.tbl_SignedDocuments (
     Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),

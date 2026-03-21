@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <style>
+        /* Thiết lập khổ giấy A4 chuẩn cho in ấn */
+        @page { size: A4; margin: 0; }
+        body { margin: 0; padding: 0; font-family: "Times New Roman", Times, serif; background: #eee; }
+        
+        .a4-container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .title { text-align: center; font-size: 20pt; font-weight: bold; margin-bottom: 20px; text-transform: uppercase; }
+
+        /* Bảng thông tin khách hàng */
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+        .info-table td { padding: 6px 4px; font-size: 11pt; border-bottom: 1px dotted #ccc; }
+        .label { font-weight: normal; width: 22%; }
+        .value { font-weight: bold; width: 28%; }
+
+        /* Nhóm Payment Mode */
+        .payment-section { margin-top: 15px; border-top: 2px solid #000; padding-top: 10px; }
+        .payment-title { font-weight: bold; text-decoration: underline; margin-bottom: 10px; }
+        .checkbox-group { display: flex; justify-content: space-between; margin-bottom: 15px; }
+        .check-item { display: flex; align-items: center; gap: 8px; }
+        .box { width: 18px; height: 18px; border: 1.5px solid #000; display: inline-block; }
+
+        /* Nội dung điều khoản */
+        .terms { font-size: 9.5pt; text-align: justify; line-height: 1.3; margin-top: 15px; }
+        .terms-en { font-style: italic; margin-top: 8px; border-top: 1px solid #eee; padding-top: 5px; }
+
+        /* Vùng chữ ký */
+        .signature-section { margin-top: 40px; display: flex; justify-content: space-between; text-align: center; }
+        .sig-box { width: 45%; }
+        .sig-canvas-area { 
+            height: 120px; 
+            margin-top: 10px; 
+            border-bottom: 1px solid #000; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sig-canvas-area img { max-height: 100%; max-width: 100%; object-fit: contain; }
+        .sig-label { font-weight: bold; text-decoration: underline; margin-top: 5px; font-size: 11pt; }
+
+        /* Chỉnh sửa cho Mobile khi ký tên */
+        @media screen and (max-width: 768px) {
+            .a4-container { width: 100%; margin: 0; padding: 10px; height: auto; }
+            .info-table td { display: block; width: 100%; border: none; }
+            .label { font-weight: bold; color: #666; }
+            .value { border-bottom: 1px solid #eee; margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-container">
+        <div class="title">REGISTRATION FORM</div>
+
+        <table class="info-table">
+            <tr>
+                <td class="label">Ngày đến (Arrival Date)*:</td>
+                <td class="value">{{ ArrivalDate }}</td>
+                <td class="label">Ngày đi (Departure Date)*:</td>
+                <td class="value">{{ DepartureDate }}</td>
+            </tr>
+            <tr>
+                <td class="label">Họ (Last name)*:</td>
+                <td class="value">{{ LastName }}</td>
+                <td class="label">Tên (First name)*:</td>
+                <td class="value">{{ FirstName }}</td>
+            </tr>
+            <tr>
+                <td class="label">Số lượng khách (No.Guest):</td>
+                <td class="value">{{ NumGuest }}</td>
+                <td class="label">Số đêm ở (No of Night):</td>
+                <td class="value">{{ NumNight }}</td>
+            </tr>
+            <tr>
+                <td class="label">Giá phòng (Room rates):</td>
+                <td class="value">{{ FirstName_Formatted }}</td>
+                <td class="label">Loại Phòng (Room type):</td>
+                <td class="value">{{ RoomTypeCode }}</td>
+            </tr>
+            <tr>
+                <td class="label">Năm sinh (Birth date):</td>
+                <td class="value">{{ BirthDate or '' }}</td>
+                <td class="label">Tỉnh/Thành phố (City):</td>
+                <td class="value">{{ City or '' }}</td>
+            </tr>
+            <tr>
+                <td class="label">Địa chỉ (Address):</td>
+                <td class="value" colspan="3">{{ Address or '' }}</td>
+            </tr>
+            <tr>
+                <td class="label">Điện thoại (Telephone)*:</td>
+                <td class="value">{{ Telephone or '' }}</td>
+                <td class="label">CCCD/ID/Passport No:</td>
+                <td class="value">{{ IdNo or '' }}</td>
+            </tr>
+            <tr>
+                <td class="label">Email:</td>
+                <td class="value">{{ Email or '' }}</td>
+                <td class="label">Quốc tịch (Nationality)*:</td>
+                <td class="value">{{ NAT or '' }}</td>
+            </tr>
+            <tr>
+                <td class="label">Công ty (Company):</td>
+                <td class="value" colspan="3">{{ CompanyName or '' }}</td>
+            </tr>
+        </table>
+
+        <div class="payment-section">
+            <div class="payment-title">PAYMENT MODE:</div>
+            <div class="checkbox-group">
+                <div class="check-item"><div class="box"></div> TIỀN MẶT (CASH)</div>
+                <div class="check-item"><div class="box"></div> CREDIT CARD</div>
+                <div class="check-item"><div class="box"></div> VISA</div>
+                <div class="check-item"><div class="box"></div> MASTER</div>
+                <div class="check-item"><div class="box"></div> OTHERS</div>
+            </div>
+            <div style="font-size: 10pt;">Thông tin hóa đơn (Invoice information): .....................................................................................................</div>
+        </div>
+
+        <div class="terms">
+            Bằng việc ký tên trên thẻ này, tôi đồng ý tuân thủ theo đúng các chính sách, quy định và điều lệ của khách sạn. 
+            Tôi thừa nhận rằng tôi phải có trách nhiệm tập thể và hoàn toàn đối với những người, công ty, hiệp hội đã đề cập 
+            ở trên đối với các khoản thanh toán cho tất cả các dịch vụ cung cấp bởi khách sạn.
+            <div class="terms-en">
+                By signing this registration card I agree to be bound with the hotel’s policies, rules and regulations. 
+                I hereby acknowledge that I am jointly and severally liable with the foregoing, company or association 
+                for the payment of the cost and charges payable or incurred...
+            </div>
+        </div>
+
+        <div class="signature-section">
+            <div class="sig-box">
+                <div class="sig-label">Guest Signature:</div>
+                <div class="sig-canvas-area">
+                    {% if SignatureData %}
+                        <img src="{{ SignatureData }}" alt="Guest Signature">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="sig-box">
+                <div class="sig-label">Receptionist Signature:</div>
+                <div class="sig-canvas-area">
+                    <div style="font-style: italic; color: #555;">{{ CreatedBy }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

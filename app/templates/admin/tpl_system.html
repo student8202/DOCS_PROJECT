@@ -1,7 +1,13 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 <style>
-    #container-monaco { height: 75vh; border-top: 1px solid #444; }
+    /* Vùng chứa Editor chiếm trọn chiều cao còn lại của Modal */
+    #container-monaco { 
+        height: calc(100vh - 180px); 
+        border-top: 1px solid #444; 
+        background-color: #1e1e1e;
+    }
+    
     /* Hiệu ứng phát sáng cho nút Preview */
     .btn-glow-info {
         box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
@@ -13,57 +19,129 @@
         background-color: #0dcaf0 !important;
         color: #000 !important;
     }
+
+    /* Input style cho Dark Mode */
+    .input-dark {
+        background-color: #2d2d2d !important;
+        color: #fff !important;
+        border: 1px solid #444 !important;
+    }
+    .input-dark:focus {
+        border-color: #dc3545 !important;
+        box-shadow: none !important;
+    }
+    .label-sys { font-size: 10px; color: #aaa; text-transform: uppercase; margin-bottom: 2px; display: block; }
 </style>
 
 <div class="container-fluid">
     <div class="card shadow-sm border-top border-4 border-danger">
         <div class="card-header bg-white py-2 fw-bold text-danger d-flex justify-content-between align-items-center">
             <span><i class="fas fa-code me-1"></i> QUẢN LÝ MẪU HỆ THỐNG (DEV ONLY)</span>
-            <button class="btn btn-sm btn-danger px-3" onclick="TPL_SYS.actions.openModal(null)">
-                <i class="fas fa-plus me-1"></i> THÊM MẪU CODE
+            <button class="btn btn-sm btn-danger px-3 shadow-sm" onclick="TPL_SYS.actions.openModal(null)">
+                <i class="fas fa-plus me-1"></i> THÊM MẪU CODE MỚI
             </button>
         </div>
-        <div class="table-responsive" class="card-body p-0">
-            <table id="tblTplSystem" class="table table-sm table-hover mb-0 w-100">
-                <thead><tr class="small bg-light"><th>ID</th><th>Mã</th><th>Tên mẫu</th><th>Đường dẫn File</th><th>Thao tác</th></tr></thead>
-            </table>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table id="tblTplSystem" class="table table-sm table-hover mb-0 w-100">
+                    <thead>
+                        <tr class="small bg-light text-uppercase">
+                            <th width="5%">ID</th>
+                            <th width="8%">Module</th>
+                            <th width="12%">Sub</th>
+                            <th width="10%">Mã</th>
+                            <th>Tên mẫu hệ thống</th>
+                            <th width="25%">Đường dẫn File (Path)</th>
+                            <th width="10%" class="text-center">Thao Tác</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- MODAL MONACO -->
-<div class="modal fade" id="modalSystem" data-bs-backdrop="static">
+<!-- MODAL MONACO EDITOR -->
+<div class="modal fade" id="modalSystem" data-bs-backdrop="static" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content bg-dark text-white">
-            <div class="modal-header py-2 border-secondary d-flex justify-content-between">
-                <h6 class="modal-title small fw-bold text-danger">DEVELOPER EDITOR (JINJA2 / HTML)</h6>
-                <div>
-                    <!-- NÚT PREVIEW MỚI - SÁNG LÊN -->
-                    <button type="button" class="btn btn-sm btn-outline-info btn-glow-info fw-bold me-3 px-4" onclick="TPL_SYS.actions.preview()">
-                        <i class="fas fa-eye me-1"></i> XEM TRƯỚC (PREVIEW)
+        <div class="modal-content bg-dark text-white border-0">
+            <div class="modal-header py-2 border-secondary d-flex justify-content-between align-items-center">
+                <h6 class="modal-title small fw-bold text-danger">
+                    <i class="fas fa-terminal me-2"></i>DEVELOPER EDITOR (SYSTEM TEMPLATE)
+                </h6>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-info btn-glow-info fw-bold me-3 px-4 rounded-pill" onclick="TPL_SYS.actions.preview()">
+                        <i class="fas fa-eye me-1"></i> PREVIEW
                     </button>
                     <button type="button" class="btn-close btn-close-white" data-coreui-dismiss="modal"></button>
                 </div>
             </div>
+            
             <div class="modal-body p-0 d-flex flex-column bg-dark">
-                <div class="row g-2 p-2 bg-dark border-bottom border-secondary">
-                    <div class="col-md-2"><input type="text" id="sys_code" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Mã"></div>
-                    <div class="col-md-5"><input type="text" id="sys_name" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Tên mẫu"></div>
-                    <div class="col-md-5"><input type="text" id="sys_path" class="form-control form-control-sm bg-secondary text-white border-0" placeholder="Path: templates/fo/reg_card.html"></div>
+                <!-- TOOLBAR PHÂN LOẠI & THÔNG TIN -->
+                <div class="row g-2 p-2 m-0 bg-dark border-bottom border-secondary shadow-sm">
+                    <div class="col-md-2">
+                        <label class="label-sys">Hệ thống (Module)</label>
+                        <select id="sys_module" class="form-select form-select-sm input-dark">
+                            <option value="FO" selected>FRONT OFFICE (FO)</option>
+                            <option value="POS">POINT OF SALES (POS)</option>
+                            <option value="BO">BACK OFFICE (BO)</option>
+                            <option value="HR">HUMAN RESOURCE (HR)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="label-sys">Vị trí (SubModule)</label>
+                        <select id="sys_sub" class="form-select form-select-sm input-dark">
+                            <option value="RESERVATION" selected>Reservation</option>
+                            <option value="CASHIER">Cashier</option>
+                            <option value="OUTLET">Outlet / Restaurant</option>
+                            <option value="ACCOUNTING">Accounting</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="label-sys">Loại (Category)</label>
+                        <select id="sys_category" class="form-select form-select-sm input-dark">
+                            <option value="" selected>-- Chọn Loại Mẫu --</option>
+                            <option value="REG_CARD">Registration Card</option>
+                            <option value="INVOICE">Invoice / Folio</option>
+                            <option value="CONFIRMATION">Confirmation</option>
+                            <option value="OTHER">Other...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="label-sys">Mã (Code)</label>
+                        <input type="text" id="sys_code" class="form-control form-control-sm input-dark" placeholder="FO_REGCARD_DEV">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="label-sys">Tên Mẫu</label>
+                        <input type="text" id="sys_name" class="form-control form-control-sm input-dark" placeholder="Tên mẫu hiển thị trong hệ thống">
+                    </div>
                 </div>
+
+                <!-- DÒNG NHẬP PATH RIÊNG BIỆT -->
+                <div class="p-2 m-0 bg-dark border-bottom border-secondary">
+                    <label class="label-sys text-info">Đường dẫn file vật lý (Relative Path từ Project Root):</label>
+                    <input type="text" id="sys_path" class="form-control form-control-sm input-dark font-monospace" placeholder="VD: app/templates/prints/fo/reg_card.html">
+                </div>
+                
+                <!-- VÙNG SOẠN THẢO CODE -->
                 <div id="container-monaco" class="flex-grow-1"></div>
             </div>
-            <div class="modal-footer py-1 border-secondary">
-                <button type="button" class="btn btn-sm btn-outline-light" data-coreui-dismiss="modal">Hủy</button>
-                <button type="button" class="btn btn-sm btn-danger px-4 fw-bold" onclick="TPL_SYS.actions.save()">
-                    <i class="fas fa-save me-1"></i> XÁC NHẬN LƯU CODE
+
+            <div class="modal-footer py-1 border-secondary bg-dark">
+                <span class="me-auto small text-secondary italic">
+                    <i class="fas fa-exclamation-triangle me-1 text-warning"></i> Chế độ DEV: Lưu sẽ ghi đè trực tiếp lên file vật lý của Server.
+                </span>
+                <button type="button" class="btn btn-sm btn-outline-light px-3" data-coreui-dismiss="modal">ĐÓNG</button>
+                <input type="hidden" id="tpl_sys_id">
+                <button type="button" class="btn btn-sm btn-danger px-5 fw-bold shadow" onclick="TPL_SYS.actions.save()">
+                    <i class="fas fa-save me-1"></i> XÁC NHẬN GHI FILE (SAVE SYSTEM CODE)
                 </button>
             </div>
         </div>
     </div>
 </div>
 {% endblock %}
-
 
 {% block scripts %}
 <!-- 2. Nạp Loader của Monaco Editor (Bản mới nhất 2026 cực nhanh) -->

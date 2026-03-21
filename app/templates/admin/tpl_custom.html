@@ -8,38 +8,23 @@
         /* Lưu ý: CKEditor 4 dùng iframe nên ta phải tác động vào class bao ngoài */
     }
 
-    /* Chỉ áp dụng khi màn hình nhỏ hơn 768px (Điện thoại/Tablet) */
-    @media (max-width: 768px) {
+    /* CSS cho vùng Header của bảng danh sách */
+    #tblTplCustom thead th {
+        font-size: 11px;
+        text-transform: uppercase;
+    }
 
-        /* Ép tất cả các hộp thoại của CKEditor co lại theo chiều rộng màn hình */
-        .cke_dialog {
-            width: 95% !important;
-            left: 2.5% !important;
-            top: 50px !important;
-        }
+    /* CSS cho Editor giả lập khổ giấy A4 */
+    .cke_wysiwyg_frame,
+    .cke_wysiwyg_div {
+        background-color: #f0f0f0 !important;
+        /* Nền xám cho Editor */
+    }
 
-        /* Ép các ô input bên trong hộp thoại không được tràn ra ngoài */
-        .cke_dialog_contents_body {
-            width: 100% !important;
-            padding: 5px !important;
-        }
-
-        .cke_dialog_ui_input_text,
-        .cke_dialog_ui_input_select {
-            width: 100% !important;
-            /* Các ô Width/Height/URL dàn hàng ngang 100% */
-        }
-
-        /* Thu nhỏ các tab (Image Info, Link, Upload...) để không bị tràn dòng */
-        .cke_dialog_tabs {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .cke_dialog_tabs a {
-            padding: 5px !important;
-            font-size: 11px !important;
-        }
+    /* Ép ảnh trong Editor tuân thủ kích thước nhập liệu */
+    .cke_editable img {
+        max-width: none !important;
+        height: auto !important;
     }
 </style>
 <div class="container-fluid">
@@ -57,11 +42,15 @@
             <table id="tblTplCustom" class="table table-sm table-hover mb-0 w-100">
                 <thead>
                     <tr class="small bg-light">
-                        <th>ID</th>
-                        <th>Mã</th>
-                        <th>Tên mẫu</th>
-                        <th>Người tạo</th>
-                        <th>Thao tác</th>
+                        <th width="5%">ID</th>
+                        <th width="8%">Hệ thống</th> <!-- ModuleName: FO, POS... -->
+                        <th width="12%">Vị trí</th> <!-- SubModule: RESERVATION... -->
+                        <th width="12%">Phân loại</th> <!-- Category: REG_CARD... -->
+                        <th width="10%">Mã mẫu</th>
+                        <th>Tên mẫu hiển thị</th>
+                        <th width="8%">T.Thái</th>
+                        <th width="10%">Người tạo</th>
+                        <th width="8%">Thao tác</th>
                     </tr>
                 </thead>
             </table>
@@ -73,26 +62,130 @@
 <div class="modal fade" id="modalCustom" data-bs-backdrop="static">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
+            <!-- 1. HEADER -->
             <div class="modal-header py-2 bg-success text-white">
                 <h6 class="modal-title small fw-bold">BIÊN TẬP NỘI DUNG (WORD/EXCEL STYLE)</h6>
                 <button type="button" class="btn-close btn-close-white" data-coreui-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-0 d-flex flex-column">
-                <div class="row g-2 p-2 bg-light border-bottom">
-                    <div class="col-md-3"><input type="text" id="cust_code" class="form-control form-control-sm"
-                            placeholder="Mã mẫu"></div>
-                    <div class="col-md-9"><input type="text" id="cust_name" class="form-control form-control-sm"
-                            placeholder="Tên mẫu"></div>
+
+            <div class="modal-body p-0 d-flex flex-column bg-light">
+                <!-- 2. TOOLBAR: PHÂN LOẠI MẪU -->
+                <div class="row g-2 p-2 m-0 bg-white border-bottom align-items-center">
+                    <div class="col-md-2">
+                        <select id="sel_module" class="form-select form-select-sm fw-bold border-success">
+                            <option value="FO" selected>FRONT OFFICE (FO)</option>
+                            <option value="POS">POINT OF SALES (POS)</option>
+                            <option value="BO">BACK OFFICE (BO)</option>
+                            <option value="HR">HUMAN RESOURCE (HR)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select id="sel_sub" class="form-select form-select-sm border-success">
+                            <option value="RESERVATION" selected>Reservation</option>
+                            <option value="CASHIER">Cashier</option>
+                            <option value="OUTLET">Outlet / Restaurant</option>
+                            <option value="ACCOUNTING">Accounting</option>
+                            <option value="HR">HR</option>
+                        </select>
+                    </div>
+                    <!-- THÊM MỚI CỘT CATEGORY Ở ĐÂY -->
+                    <div class="col-md-2">
+                        <select id="sel_category" class="form-select form-select-sm border-success">
+                            <option value="" selected>-- Chọn Loại Mẫu --</option>
+                            <option value="REG_CARD">Registration Card</option>
+                            <option value="WELCOME_LETTER">Welcome Letter</option>
+                            <option value="CONFIRMATION">Confirmation</option>
+                            <option value="INVOICE">Invoice/Folio</option>
+                            <option value="OTHER">Khác...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" id="cust_code" class="form-control form-control-sm border-success"
+                            placeholder="Mã mẫu (VD: REGCARD)">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" id="cust_name" class="form-control form-control-sm border-success"
+                            placeholder="Tên mẫu hiển thị">
+                    </div>
+                    <div class="col-md-2">
+                        <select id="sel_active" class="form-select form-select-sm border-success">
+                            <option value="1">Đang hoạt động</option>
+                            <option value="0">Tạm ngưng</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="flex-grow-1 overflow-auto bg-white p-2">
-                    <!-- THAY THẾ Ở ĐÂY: Dùng textarea thay vì div -->
-                    <textarea id="editor-ck" class="ck_editor"></textarea>
+
+                <!-- 3. MAIN CONTENT: EDITOR + SIDEBAR -->
+                <div class="d-flex flex-grow-1 overflow-hidden">
+                    <!-- BÊN TRÁI: EDITOR (9 PHẦN) -->
+                    <div class="flex-grow-1 bg-white p-2 border-end overflow-auto" id="editor-wrapper">
+                        <textarea id="editor-ck" class="ck_editor"></textarea>
+                    </div>
+
+                    <!-- BÊN PHẢI: SIDEBAR TAGS (3 PHẦN - CỐ ĐỊNH 250PX) -->
+                    <div class="bg-light d-flex flex-column border-start" style="width: 280px;">
+                        <div class="p-2 border-bottom bg-white">
+                            <h6 class="small fw-bold mb-2 text-success"><i class="fas fa-tags me-1"></i> THẺ NỘI DUNG
+                                ĐỘNG</h6>
+                            <input type="text" class="form-control form-control-sm" id="searchTag"
+                                placeholder="Tìm tên thẻ...">
+                        </div>
+
+                        <div class="p-2 overflow-auto flex-grow-1" id="list-tags">
+                            <!-- Bọc toàn bộ danh sách Tag bằng thẻ RAW của Jinja2 -->
+                            {% raw %}
+                            <!-- Nhóm FO -->
+                            <!-- <div class="tag-group mb-3" data-module="FO">
+                                <div class="badge bg-success w-100 mb-2 text-start">FRONT OFFICE</div>
+                                <div class="list-group">
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{GuestName}}')">Tên khách</button>
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{ArrivalDate}}')">Ngày đến</button>
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{BookingID}}')">Mã đặt phòng</button>
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{TotalAmount}}')">Tổng tiền</button>
+                                </div>
+                            </div> -->
+
+                            <!-- Nhóm POS -->
+                            <!-- <div class="tag-group mb-3" data-module="POS" style="display:none;">
+                                <div class="badge bg-primary w-100 mb-2 text-start">POS / NHÀ HÀNG</div>
+                                <div class="list-group">
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{OutletName}}')">Tên nhà hàng</button>
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{TableNum}}')">Số bàn</button>
+                                    <button
+                                        class="list-group-item list-group-item-action p-2 small border-0 shadow-sm mb-1 rounded"
+                                        onclick="TPL_CUSTOM.helpers.insertTag('{{BillNo}}')">Số hóa đơn</button>
+                                </div>
+                            </div> -->
+                            {% endraw %}
+                        </div>
+                        <div class="p-2 bg-white border-top">
+                            <small class="text-muted italic d-block" style="font-size: 11px;">* Click vào thẻ để chèn
+                                vào vị trí con trỏ trong văn bản.</small>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer py-1">
-                <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-sm btn-primary px-4" onclick="TPL_CUSTOM.actions.save()">LƯU THIẾT
-                    KẾ</button>
+
+                <!-- 4. FOOTER -->
+                <div class="modal-footer py-1 bg-white border-top">
+                    <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Hủy bỏ</button>
+                    <input type="hidden" id="tpl_id">
+                    <button type="button" class="btn btn-sm btn-success px-4 fw-bold"
+                        onclick="TPL_CUSTOM.actions.save()">
+                        <i class="fas fa-save me-1"></i> LƯU THIẾT KẾ
+                    </button>
+                </div>
             </div>
         </div>
     </div>

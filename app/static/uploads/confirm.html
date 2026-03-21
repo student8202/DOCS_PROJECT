@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <style>
+        /* Thiết lập khổ giấy A4 chuẩn cho in ấn */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            background: #eee;
+            color: #000;
+        }
+
+        .a4-container {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Header & Tables */
+        .table-full {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .border-table th,
+        .border-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            font-size: 10pt;
+        }
+
+        .text-brown {
+            color: #b08d57;
+            font-weight: bold;
+        }
+
+        .text-red {
+            color: #800000;
+            font-weight: bold;
+        }
+
+        .text-navy {
+            color: #000080;
+            font-weight: bold;
+        }
+
+        /* Vùng chữ ký */
+        .signature-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .sig-box {
+            width: 45%;
+        }
+
+        .sig-canvas-area {
+            height: 100px;
+            margin-top: 10px;
+            border-bottom: 1px dotted #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sig-canvas-area img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .sig-label {
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 11pt;
+        }
+
+        @media screen and (max-width: 768px) {
+            .a4-container {
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+                height: auto;
+                min-height: unset;
+            }
+
+            .sig-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .signature-section {
+                flex-direction: column;
+            }
+
+            .border-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="a4-container">
+        <!-- HEADER SECTION -->
+        <table class="table-full">
+            <tr>
+                <td style="width: 45%; vertical-align: top;">
+                    <img alt="" src="/static/uploads/images/receipt.png" style="width: 80px; height: 56px;" />
+                    <div class="text-brown" style="font-size: 14pt;">VIRGO HOTEL</div>
+                    <div style="font-size: 9pt; color: #555;">
+                        Địa chỉ: 39 - 41 Nguyễn Thị Minh Khai, Nha Trang<br>
+                    Điện thoại: 0258 390 7777
+                    </div>
+                </td>
+                <td style="width: 55%; text-align: right; vertical-align: top;">
+                    <div class="text-red" style="font-size: 18pt; margin-bottom: 2px;">BOOKING CONFIRMATION</div>
+                    <div class="text-red" style="font-size: 13pt;">PHIẾU XÁC NHẬN ĐẶT PHÒNG</div>
+                    <div class="text-navy" style="font-size: 16pt; margin-top: 5px;">{{BookingID}}</div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- INFO BOX -->
+        <table class="table-full" style="margin-top: 10px;">
+            <tr>
+                <td style="width: 55%; vertical-align: bottom;">
+                    <div style="font-weight: bold; font-size: 11pt;">SMILE</div>
+                </td>
+                <td style="width: 45%; border-left: 1px solid #000; padding-left: 15px;">
+                    <table style="width: 100%; font-size: 10pt;">
+                        <tr>
+                            <td style="width: 40px;">To:</td>
+                            <td><strong>{{ToGuest}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Attn:</td>
+                            <td>{{AttnName}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tel:</td>
+                            <td>{{GuestTel}}</td>
+                        </tr>
+                        <tr>
+                            <td>MP:</td>
+                            <td>{{GuestMP}}</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>{{GuestEmail}}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <div style="margin: 20px 0 10px 0;"><strong>DEAR:</strong> {{DearName}}</div>
+
+        <!-- MAIN DATA TABLE -->
+        <table class="table-full border-table">
+            <tr style="background: #f9f9f9;">
+                <th>Arrival date<br><i>Ngày đến</i></th>
+                <th>Departure date<br><i>Ngày đi</i></th>
+                <th>Room category<br><i>Loại phòng</i></th>
+                <th>No of rooms<br><i>Số lượng</i></th>
+                <th>No of nights<br><i>Số đêm</i></th>
+                <th>Room rate<br><i>Giá phòng</i></th>
+                <th>Total amount<br><i>Thành tiền</i></th>
+            </tr>
+            <tr>
+                <td>{{ArrivalDate}}</td>
+                <td>{{DepartureDate}}</td>
+                <td>{{RoomType}}</td>
+                <td>{{Qty}}</td>
+                <td>{{Nights}}</td>
+                <td style="text-align: right;">{{Price}}</td>
+                <td style="text-align: right;">{{TotalStay}}</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: left; font-size: 9pt;">
+                    Grand total amount including service charge and VAT / Tạm tính bao gồm phí dịch vụ và thuế VAT
+                </td>
+                <td style="text-align: right; font-weight: bold;">{{GrandTotalStay}}</td>
+            </tr>
+        </table>
+
+        <!-- OTHER SERVICES -->
+        <div style="margin-top: 15px; font-weight: bold; text-decoration: underline;">OTHER SERVICE / DỊCH VỤ KHÁC</div>
+        <table class="table-full border-table" style="margin-top: 10px;">
+            <tr style="background: #f9f9f9;">
+                <th>Date<br><i>Ngày</i></th>
+                <th>Time<br><i>Giờ</i></th>
+                <th>Service<br><i>Dịch vụ</i></th>
+                <th>Quantity<br><i>Số lượng</i></th>
+                <th>Unit<br><i>Đơn vị</i></th>
+                <th>Unit Rate<br><i>Giá</i></th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>{{SvcDate}}</td>
+                <td>{{SvcTime}}</td>
+                <td>{{SvcName}}</td>
+                <td>{{SvcQty}}</td>
+                <td>{{SvcUnit}}</td>
+                <td style="text-align: right;">{{SvcRate}}</td>
+                <td style="text-align: right;">{{SvcTotal}}</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: left; font-size: 9pt;">
+                    Grand total amount including service charge and VAT / Tạm tính bao gồm phí dịch vụ và thuế VAT
+                </td>
+                <td style="text-align: right; font-weight: bold;">{{GrandTotalSvc}}</td>
+            </tr>
+        </table>
+
+        <!-- NOTICE AREA -->
+        <div style="margin-top: 15px; font-size: 10pt;">
+            <strong>Notice:</strong> {{NoticeContent}}
+        </div>
+
+        <div style="margin-top: 30px; font-size: 11pt;">
+            Thanks and regards,<br>
+            <strong>Trân trọng cảm ơn.</strong>
+        </div>
+
+        <!-- SIGNATURE SECTION -->
+        <div class="signature-section">
+            <div class="sig-box">
+                <div class="sig-label">GUEST'S SIGNATURE</div>
+                <div class="sig-canvas-area">
+                    <!-- Chỗ này sẽ đổ thẻ <img> chứa base64 chữ ký vào -->
+                    {{GuestSignature}}
+                </div>
+                <div style="font-size: 9pt; margin-top: 5px;">(Ký và ghi rõ họ tên)</div>
+            </div>
+            <div class="sig-box">
+                <div class="sig-label">RESERVATION AGENT</div>
+                <div class="sig-canvas-area">
+                    <!-- Chữ ký của nhân viên nếu có -->
+                </div>
+                <div style="font-size: 9pt; margin-top: 5px;">{{StaffName}}</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

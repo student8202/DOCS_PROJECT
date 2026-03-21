@@ -1,43 +1,55 @@
-from fastapi import HTTPException
+from fastapi import HTTPException, status
 from services.tpl_sv import TPLService
+from schemas.tpl_sh import TemplateCreateSchema
 from loguru import logger
 
 class TPLController:
-    @staticmethod
-    def get_list(is_custom: int):
-        try:
-            # Gọi Service để lấy danh sách
-            return TPLService.get_list_logic(is_custom)
-        except Exception as e:
-            logger.error(f"Lỗi lấy danh sách Template: {str(e)}")
-            raise HTTPException(status_code=500, detail="Không thể tải danh sách mẫu hồ sơ")
+    def __init__(self):
+        # Khởi tạo Service để sử dụng trong các hàm bên dưới
+        self.service = TPLService()
 
-    @staticmethod
-    def get_detail(tpl_id: int):
+    def get_list(self, is_custom: int):
         try:
-            data = TPLService.get_detail_logic(tpl_id)
+            # Controller chỉ gọi Service, không xử lý logic dữ liệu
+            return self.service.get_list_logic(is_custom)
+        except Exception as e:
+            logger.error(f"Lỗi Controller get_list: {str(e)}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
+                detail="Không thể tải danh sách mẫu hồ sơ"
+            )
+
+    def get_detail(self, tpl_id: int):
+        try:
+            data = self.service.get_detail_logic(tpl_id)
             if not data:
-                raise HTTPException(status_code=404, detail="Mẫu hồ sơ không tồn tại")
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND, 
+                    detail="Mẫu hồ sơ không tồn tại"
+                )
             return data
+        except HTTPException as he:
+            raise he
         except Exception as e:
-            logger.error(f"Lỗi lấy chi tiết Template ID {tpl_id}: {str(e)}")
-            raise HTTPException(status_code=500, detail="Lỗi hệ thống khi tải chi tiết mẫu")
+            logger.error(f"Lỗi Controller get_detail ID {tpl_id}: {str(e)}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
+                detail="Lỗi hệ thống khi tải chi tiết mẫu"
+            )
 
-    @staticmethod
-    def save(data: dict):
+    def save(self, data: TemplateCreateSchema, username: str): # Nhận thêm username
         try:
-            # 1. Kiểm tra các trường bắt buộc
-            if not data.get('TemplateCode') or not data.get('TemplateName'):
-                raise HTTPException(status_code=400, detail="Mã và Tên mẫu không được để trống")
-
-            # 2. Lấy tên người dùng thực hiện (Giả định bạn dùng username từ session/token)
-            # Ở đây tôi tạm để 'Admin' - Bạn có thể thay bằng logic lấy user thực tế
-            current_user = "Admin" 
-
-            # 3. Gọi Service để thực hiện Insert/Update
-            result = TPLService.save_logic(data, current_user)
+            # Chuyển username xuống Service để ghi vào CreatedBy/UpdatedBy
+            result = self.service.save_logic(data, username)
             return result
-            
         except Exception as e:
-            logger.error(f"Lỗi lưu Template: {str(e)}")
-            raise HTTPException(status_code=500, detail=f"Lỗi khi lưu mẫu hồ sơ: {str(e)}")
+            logger.error(f"Lỗi Controller save: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+        
+    def get_tags(self):
+        try:
+            # Gọi service lấy danh sách tags
+            return self.service.get_tags_logic()
+        except Exception as e:
+            logger.error(f"Lỗi lấy Tags: {str(e)}")
+            raise HTTPException(status_code=500, detail="Không thể tải danh sách thẻ động")

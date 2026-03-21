@@ -112,6 +112,8 @@ Lưu ý nhỏ để "Master" hơn:
 Về Schema: Nên chia làm 2 loại: UserCreate (dữ liệu khách gửi) và UserRead (dữ liệu trả về, ví dụ không chứa mật khẩu).
 Về Exception: Nên tạo một file exceptions.py riêng để định nghĩa các lỗi như EmailAlreadyExistsError, giúp Service và Controller dùng chung một "ngôn ngữ" lỗi.
 Lưu ý mỗi lần cung cấp cho tôi 1 file tôi làm xong bạn sẽ gửi cái khác theo thứ tự sau model -> schema -> service -> controller -> router -> template -> js
+Về phần html cũng phân loại
+Về phần static cũng phân loại
 Về phần js:  tổ chức JS theo mô hình Module Pattern. Thay vì viết một file dài dằng dặc, ta chia thành các "phân khu" chức năng rõ rệt. Theo luồng: Cấu hình (Config) -> Phụ trợ (UI Helpers) -> Hành động (Actions) -> Sự kiện (Events).
 Tóm lại: 5 lớp Backend và cấu trúc 4 phần JS
 -- end AI
@@ -177,4 +179,11 @@ Nó sẽ gồm:
 1 Route Python: Đọc thư mục và trả về danh sách file.
 1 File HTML đơn giản: Hiển thị danh sách ảnh để user chọn.
 Cấu hình CKEditor: Trỏ filebrowserBrowseUrl về Route mới này.
+----------------------------------
+1. Cách bạn đang dùng (Static Method)
+return AuthController.login(request, username, password)
+Nếu AuthController cần gọi AuthService, bạn lại phải viết AuthService.logic() (tất cả phải là Static). Điều này làm code bị "cứng", rất khó để viết Unit Test hoặc thay đổi DB linh hoạt sau này.
+2. Cách dùng Depends (FastAPI Standard)
+
+Với các tác vụ đơn giản như Login (ít logic, ít phụ thuộc), cách của bạn vẫn ổn. Nhưng với Template Manager (phải làm việc với nhiều DB: LV_DOCS, SMILE_FO), bạn nên dùng Depends.
 

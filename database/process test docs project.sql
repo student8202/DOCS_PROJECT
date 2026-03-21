@@ -6,6 +6,8 @@ WHERE Username = 'admin';
 
 SELECT * FROM dbo.tbl_Users WHERE Username = 'sml'
 
+delete tbl_Users WHERE Username <> 'admin'
+
 SELECT * FROM dbo.tbl_PermissionList
 SELECT * FROM dbo.tbl_RolePermissions
 SELECT * FROM dbo.tbl_Roles
