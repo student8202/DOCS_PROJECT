@@ -28,10 +28,14 @@ class TemplateCreateSchema(BaseModel):
     class Config:
         from_attributes = True
         
-class TemplateSystemSchema(BaseModel):
+class TemplateSystemSaveSchema(BaseModel):
     TemplateID: Optional[int] = None
-    TemplateCode: str = Field(..., pattern="^[a-zA-Z0-9_]+$")
-    TemplateName: str = Field(..., min_length=2)
-    FilePath: str = Field(..., min_length=5) # Bắt buộc có đường dẫn file
-    IsCustom: int = 0 # Fix cứng là 0
+    TemplateCode: str = Field(..., pattern="^[A-Z0-9_]+$")
+    TemplateName: str = Field(..., min_length=5)
+    FilePath: str = Field(..., min_length=5)
+    HtmlContent: str # Nội dung code từ Monaco
+    ModuleName: str
+    SubModule: str
+    Category: str
+    IsCustom: int = 0
     IsActive: bool = True

@@ -106,6 +106,12 @@ CREATE TABLE tbl_Templates (
     UpdatedBy    NVARCHAR(50),
     UpdatedAt    DATETIME
 )
+
+ALTER TABLE FO.tbl_Templates ADD 
+    ModuleName   NVARCHAR(10),  -- FO, BO, HR
+    SubModule    NVARCHAR(50),  -- RESERVATION, CASHIER, ACCOUNTING, v.v.
+    Category     NVARCHAR(50); -- REG_CARD, WELCOME_LETTER, INVOICE, v.v.
+GO
 CREATE TABLE tbl_TemplateTags (
     TagID       INT IDENTITY(1,1) PRIMARY KEY,
     TagName     NVARCHAR(100), -- Tên hiển thị (VD: Tên khách)

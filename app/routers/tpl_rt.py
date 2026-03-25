@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request, Query, Depends
 from controllers.tpl_ct import TPLController
-from schemas.tpl_sh import TemplateCreateSchema # Import Schema để validate
+from schemas.tpl_sh import TemplateCreateSchema, TemplateSystemSaveSchema # Import Schema để validate
 from core.deps import templates
 
 router = APIRouter(prefix="/fo/templates", tags=["Template Management"])
@@ -30,6 +30,10 @@ async def get_tpl_detail(
 ):
     return controller.get_detail(tpl_id)
 
+@router.get("/system-detail/{tpl_id}")
+async def get_system_detail(tpl_id: int, controller: TPLController = Depends(TPLController)):
+    return controller.get_system_detail(tpl_id)
+
 @router.get("/tags")
 async def get_tags(controller: TPLController = Depends(TPLController)):
     """API trả về danh sách thẻ động cho Sidebar"""
@@ -48,3 +52,12 @@ async def save_tpl(
         raise HTTPException(status_code=401, detail="Phiên làm việc hết hạn")
         
     return controller.save(data, current_user)
+
+@router.post("/save-system")
+async def save_system_tpl(
+    request: Request,
+    data: TemplateSystemSaveSchema,
+    controller: TPLController = Depends(TPLController)
+):
+    username = request.session.get("username", "DevAdmin")
+    return controller.save_system(data, username)

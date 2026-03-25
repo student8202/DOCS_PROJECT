@@ -212,7 +212,7 @@ TPL_CUSTOM.actions = {
         const name = nameInput.val().trim();
         codeInput.val(code);
 
-        // ALIDATE CATEGORY (BẮT LỖI Ở ĐÂY)
+        // VALIDATE CATEGORY (BẮT LỖI Ở ĐÂY)
         if (!cate || cate === "" || cate === null) {
             cateInput.addClass('is-invalid').focus();
             Swal.fire('Lỗi Phân loại', 'Vui lòng chọn loại template (Category)!', 'error');

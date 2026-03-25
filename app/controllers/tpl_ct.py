@@ -1,6 +1,6 @@
 from fastapi import HTTPException, status
 from services.tpl_sv import TPLService
-from schemas.tpl_sh import TemplateCreateSchema
+from schemas.tpl_sh import TemplateCreateSchema,TemplateSystemSaveSchema
 from loguru import logger
 
 class TPLController:
@@ -36,7 +36,16 @@ class TPLController:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
                 detail="Lỗi hệ thống khi tải chi tiết mẫu"
             )
-
+    # Dành cho Developer (Lấy Metadata + Nội dung file vật lý)
+    def get_system_detail(self, tpl_id: int):
+        # Lấy metadata (Code, Name, Path...)
+        data = self.service.get_detail_logic(tpl_id)
+        if not data: raise HTTPException(404, "Không tìm thấy mẫu")
+        
+        # Lấy nội dung code từ file vật lý
+        data['HtmlContent'] = self.service.get_system_content_logic(data['FilePath'])
+        return data
+    
     def save(self, data: TemplateCreateSchema, username: str): # Nhận thêm username
         try:
             # Chuyển username xuống Service để ghi vào CreatedBy/UpdatedBy
@@ -53,3 +62,13 @@ class TPLController:
         except Exception as e:
             logger.error(f"Lỗi lấy Tags: {str(e)}")
             raise HTTPException(status_code=500, detail="Không thể tải danh sách thẻ động")
+        
+    def save_system(self, data: TemplateSystemSaveSchema, username: str):
+        try:
+            # Controller gọi Service thực hiện ghi file và DB
+            return self.service.save_system_tpl_logic(data, username)
+        except PermissionError:
+            raise HTTPException(status_code=403, detail="Server không có quyền ghi vào thư mục này!")
+        except Exception as e:
+            logger.error(f"Lỗi Save System TPL: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))

@@ -49,9 +49,10 @@
                             <th width="5%">ID</th>
                             <th width="8%">Module</th>
                             <th width="12%">Sub</th>
-                            <th width="10%">Mã</th>
-                            <th>Tên mẫu hệ thống</th>
-                            <th width="25%">Đường dẫn File (Path)</th>
+                            <th width="12%">Mã</th>
+                            <th width="10%">Tên mẫu hệ thống</th>
+                            <th>Đường dẫn File (Path)</th>
+                            <th width="8%">T.Thái</th>
                             <th width="10%" class="text-center">Thao Tác</th>
                         </tr>
                     </thead>
@@ -112,9 +113,16 @@
                         <label class="label-sys">Mã (Code)</label>
                         <input type="text" id="sys_code" class="form-control form-control-sm input-dark" placeholder="FO_REGCARD_DEV">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label class="label-sys">Tên Mẫu</label>
                         <input type="text" id="sys_name" class="form-control form-control-sm input-dark" placeholder="Tên mẫu hiển thị trong hệ thống">
+                    </div>
+                    <div class="col-md-1">
+                        <label class="label-sys">Trạng thái</label>
+                        <select id="sys_active" class="form-select form-select-sm input-dark">
+                            <option value="1">Đang hoạt động</option>
+                            <option value="0">Tạm ngưng</option>
+                        </select>
                     </div>
                 </div>
 
