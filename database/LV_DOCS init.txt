@@ -87,7 +87,7 @@ CREATE TABLE dbo.tbl_UserRoles (
 );
 CREATE INDEX idx_ur_user ON dbo.tbl_UserRoles(Username);
 
-
+------------------------------------------------------
 
 -- Quản lý Mẫu hồ sơ (Template)
 CREATE TABLE tbl_Templates (
@@ -107,11 +107,6 @@ CREATE TABLE tbl_Templates (
     UpdatedAt    DATETIME
 )
 
-ALTER TABLE FO.tbl_Templates ADD 
-    ModuleName   NVARCHAR(10),  -- FO, BO, HR
-    SubModule    NVARCHAR(50),  -- RESERVATION, CASHIER, ACCOUNTING, v.v.
-    Category     NVARCHAR(50); -- REG_CARD, WELCOME_LETTER, INVOICE, v.v.
-GO
 CREATE TABLE tbl_TemplateTags (
     TagID       INT IDENTITY(1,1) PRIMARY KEY,
     TagName     NVARCHAR(100), -- Tên hiển thị (VD: Tên khách)
@@ -184,7 +179,62 @@ CREATE TABLE dbo.tbl_AuditLogs (
     IPAddress   NVARCHAR(50),
     CreatedAt   DATETIME DEFAULT GETDATE()
 );
+-------------------------------------------------- phần ký
+CREATE TABLE dbo.tbl_SignatureQueue (
+    QueueID          BIGINT IDENTITY(1,1) PRIMARY KEY,
+    
+    -- ĐIỀU PHỐI PHÂN HỆ
+    ModuleName       NVARCHAR(10),  -- FO, POS, HR, BO
+    RefType          NVARCHAR(20),  -- BOOKING, BILL, CONTRACT, PAYSLIP
+    RefID            NVARCHAR(50),  -- ID thực tế của đối tượng (BookingID, BillNo...)
+    
+    -- THÔNG TIN HIỂN THỊ
+    TemplateID       INT,           -- Liên kết bảng tbl_Templates
+    RenderedHtml     NVARCHAR(MAX), -- Nội dung HTML đã trộn sẵn dữ liệu
+    
+    -- ĐIỀU PHỐI THIẾT BỊ
+    DeviceID         NVARCHAR(50),  -- Định danh máy tính bảng (VD: RECEPTION_01, OUTLET_01)
+    SessionToken     UNIQUEIDENTIFIER DEFAULT NEWID(), -- Dùng cho QR Code
+    SignMethod       NVARCHAR(20),  -- 'TABLET', 'QR_CODE', 'LINK'
+    
+    -- TRẠNG THÁI
+    Status           TINYINT DEFAULT 0, -- 0: Chờ, 1: Đang xem, 2: Đã ký, 3: Từ chối, 4: Hủy
+    
+    -- AUDIT
+    CreatedBy        NVARCHAR(50),
+    CreatedAt        DATETIME DEFAULT GETDATE(),
+    ExpiredAt        DATETIME       -- Link ký có thời hạn (ví dụ 15 phút)
+);
 
+CREATE INDEX idx_queue_lookup ON dbo.tbl_SignatureQueue(ModuleName, DeviceID, Status);
+
+CREATE TABLE dbo.tbl_Devices (
+    DeviceID      NVARCHAR(50) PRIMARY KEY, -- Cố định: FO01, FO02, POS01...
+    DeviceName    NVARCHAR(100),            -- Tên hiển thị: Quầy Lễ Tân 01, Nhà Hàng 02...
+    DeviceType    NVARCHAR(20),             -- TABLET, MOBILE, DESKTOP
+    ModuleName    NVARCHAR(10),             -- FO, POS, HR, BO
+    
+    -- Cột quan trọng để xử lý "Chiếm quyền"
+    ConnectionID  NVARCHAR(255),            -- Lưu UUID duy nhất của trình duyệt đang giữ máy
+    
+    LastActive    DATETIME,                 -- Thời điểm cuối cùng thiết bị báo "Tôi còn sống"
+    
+    -- Cột tính toán tự động: Nếu quá 30 giây không báo danh thì coi như Offline
+    IsOnline      AS (CASE WHEN DATEDIFF(SECOND, LastActive, GETDATE()) < 30 THEN 1 ELSE 0 END)
+);
+
+-- Dữ liệu mẫu ban đầu cho các quầy
+INSERT INTO dbo.tbl_Devices (DeviceID, DeviceName, ModuleName) VALUES 
+('FO01', N'Lễ tân - Quầy 01', 'FO'),
+('FO02', N'Lễ tân - Quầy 02', 'FO'),
+('POS01', N'Nhà hàng - Bar', 'POS'),
+('HR01', N'Văn phòng - Ký HĐ', 'HR');
+Cột ConnectionID (Chiếm quyền): Khi nhân viên cầm một chiếc iPad mới ra quầy FO01 và đăng ký, bạn chỉ cần cập nhật ConnectionID mới vào đây. Máy cũ sẽ bị "lệch" ID và tự động bị ngắt kết nối.
+Cột IsOnline (Computed Column): Đây là một kỹ thuật thông minh. Bạn không cần viết code để cập nhật trạng thái Offline; SQL tự tính toán dựa trên thời gian. Nếu thiết bị tắt màn hình hoặc mất mạng quá 30s, nó tự hiện "Offline" trên màn hình quản lý của nhân viên.
+Bảng tbl_SignatureQueue đa năng: Nhờ có RefType và RefID, bạn có thể dùng chung bảng này cho mọi thứ:
+Ký Regcard (FO).
+Ký Bill nợ phòng (POS).
+Ký Hợp đồng lao động (HR)
 -- =============================================
 -- DỮ LIỆU MẪU KHỞI TẠO (SEED DATA)
 -- =============================================

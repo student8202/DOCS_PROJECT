@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hotel - Digital Signature</title>
+    
+    <!-- 1. CoreUI 5 CSS (Thay thế Bootstrap thuần) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.0/dist/css/coreui.min.css">
+
+    <!-- 2. CoreUI Icons -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@coreui/icons@3.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- 3. DataTables CSS (Dùng bản Bootstrap 5 để tương thích CoreUI) -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.5/css/fixedColumns.bootstrap5.css">
+
+
+    <!-- 4. Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        /* Tối ưu cho thiết bị di động/máy tính bảng */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-overflow-scrolling: touch; /* Mượt hơn trên iPad */
+            background-color: #f8f9fa;
+        }
+        
+        /* Chặn việc bôi đen chữ khi khách ký */
+        * {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        /* Font chữ sang trọng cho khách sạn */
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+    <!-- VÙNG CHỨA NỘI DUNG BIẾN ĐỔI -->
+    {% block content %}{% endblock %}
+
+    <!-- 1. jQuery (Bắt buộc cho DataTables & Select2) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- 2. CoreUI 5 Bundle JS (Đã bao gồm Popper.js và Bootstrap 5 bên trong) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.6.0/dist/js/coreui.bundle.min.js"></script>
+
+<!-- 3. DataTables Core & Extensions -->
+<script src="https://cdn.datatables.net/2.3.7/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.7/js/dataTables.bootstrap5.min.js"></script>
+
+<!-- 4. Export File Support (Zip/PDF) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+<!-- 5. DataTables Buttons -->
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+<!-- <script src="https://cdn.datatables.net"></script> -->
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/5.0.5/js/dataTables.fixedColumns.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/5.0.5/js/fixedColumns.bootstrap5.js"></script>
+
+<!-- 6. Select2 & SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- VÙNG CHỨA SCRIPT RIÊNG CỦA TỪNG TRANG -->
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

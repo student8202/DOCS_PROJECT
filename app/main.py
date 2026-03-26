@@ -14,7 +14,7 @@ from fastapi.templating import Jinja2Templates
 
 from core.config import settings
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from routers import (auth_rt, ui_rt, admin_rt, rbac_rt,fo_rt,tpl_rt,ckeditor_rt)  # Import các router đã bàn
+from routers import (auth_rt, ui_rt, admin_rt, rbac_rt,fo_rt,tpl_rt,ckeditor_rt,device_rt,queue_rt, sign_view_rt)  # Import các router đã bàn
 from core.security import get_password_hash
 #swagger
 from fastapi.openapi.docs import get_swagger_ui_html
@@ -137,6 +137,9 @@ app.include_router(rbac_rt.router)
 app.include_router(fo_rt.router) 
 app.include_router(tpl_rt.router) 
 app.include_router(ckeditor_rt.router) 
+app.include_router(sign_view_rt.router) 
+app.include_router(device_rt.router) 
+app.include_router(queue_rt.router) 
 # app.include_router(fo.router) # Mở ra khi làm module FO
 
 # Middleware xử lý lỗi 404 (Nếu gõ sai link)

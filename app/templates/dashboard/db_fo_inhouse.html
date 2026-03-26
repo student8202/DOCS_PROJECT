@@ -81,7 +81,7 @@
             <table id="tblInHouseDash" class="table table-sm table-hover mb-0 w-100 border-0">
                 <thead>
                     <tr class="bg-light text-uppercase" style="font-size: 9px;">
-                        <th></th>
+                        <th>Thao tác</th>
                         <th class="text-center">Sts</th>
                         <th class="text-center">Sts</th>
                         <th>Folio</th>
@@ -119,4 +119,43 @@
         </div>
     </div>
 
+</div>
+
+<!-- pop up modal sign -->
+ <div class="modal fade" id="modalSelectSign" data-bs-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content shadow-lg border-0">
+            <div class="modal-header bg-primary text-white py-2">
+                <h6 class="modal-title small fw-bold">GỬI HỒ SƠ KÝ KỸ THUẬT SỐ</h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body bg-light">
+                <!-- THÔNG TIN BOOKING -->
+                <div class="alert alert-info py-2 mb-3">
+                    <small class="d-block fw-bold" id="info-booking-sign"></small>
+                </div>
+
+                <!-- CHỌN MẪU HỒ SƠ -->
+                <div class="mb-3">
+                    <label class="x-small fw-bold text-uppercase text-secondary">1. Chọn mẫu hồ sơ:</label>
+                    <select id="sign-select-tpl" class="form-select form-select-sm border-primary"></select>
+                </div>
+
+                <!-- CHỌN THIẾT BỊ ĐANG ONLINE -->
+                <div class="mb-3">
+                    <label class="x-small fw-bold text-uppercase text-secondary">2. Gửi đến thiết bị (iPad/Tablet):</label>
+                    <div id="list-devices-online" class="list-group shadow-sm">
+                        <!-- Danh sách thiết bị online sẽ nạp vào đây -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer py-1">
+                <button class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <input type="hidden" id="tpl_id_selected"> <!-- Thêm input ẩn để giữ ID mẫu -->
+                <button class="btn btn-sm btn-primary px-4 fw-bold" id="btn-confirm-send" disabled onclick="FO_DASH.actions.sendToQueue()">
+                    XÁC NHẬN GỬI KÝ <i class="fas fa-paper-plane ms-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>

@@ -34,3 +34,27 @@ FO + RESERVATION: RegCard, Welcome Letter, Confirmation.
 FO + CASHIER: Folio, Invoice, VAT Receipt.
 BO + ACCOUNTING: Payment Voucher, Receipt Voucher.
 HR + EMPLOYEE: Labor Contract, Decision.
+-------------------------------------------------------
+Quy trình chia làm 3 bước Signature Flow như sau:
+1. Phân loại luồng hiển thị (Logic lọc Template)
+Khi nhân viên nhấn nút "Ký", hệ thống không được hiện ra tất cả các mẫu mà phải lọc theo ngữ cảnh (Context):
+Nếu là Khách Lẻ (FIT): Chỉ hiện các mẫu thuộc Category là REG_CARD, WELCOME_LETTER... (Bỏ qua các mẫu liên quan đến Group).
+Nếu là Khách Đoàn (Group): Phải hiện thêm các mẫu GROUP_CONFIRM, ROOMING_LIST...
+Nếu là In hóa đơn (POS/Cashier): Chỉ hiện các mẫu BILL, INVOICE. Luồng này thường in trực tiếp hoặc ký xác nhận nợ (Charge to Room).
+Giải pháp: Ta sẽ dùng ModuleName, SubModule và Category đã thiết kế ở các bước trước để tạo một cái Popup chọn nhanh mẫu.
+2. Hai phương thức ký (Dual-Sign Method)
+Chúng ta sẽ cung cấp 2 lựa chọn để linh hoạt trong vận hành:
+Lựa chọn A: Màn hình chờ (Màn hình phụ/Tablet)
+Thích hợp cho quầy lễ tân có sẵn máy tính bảng (iPad/Surface) quay ra hướng khách.
+Cơ chế: Khi nhân viên nhấn "Gửi ký", dữ liệu sẽ được đẩy vào một bảng tạm (Buffer/Queue). Màn hình máy tính bảng (đang ở trang Waiting) sẽ tự động nhận diện có hồ sơ mới và hiển thị nội dung HTML đã được "trộn" dữ liệu để khách ký.
+Lựa chọn B: QR Code (Ký trên điện thoại khách)
+Thích hợp khi khách đông hoặc không có máy tính bảng tại quầy.
+Cơ chế: Hệ thống sinh ra một mã QR chứa link duy nhất (Unique Token). Khách dùng điện thoại quét mã -> Mở trình duyệt điện thoại -> Hiện Form ký -> Khách ký xong nhấn "Hoàn tất" -> Màn hình lễ tân tự động thông báo "Đã ký xong".
+3. Cấu trúc dữ liệu "Snapshot" (Trước khi ký)
+Để đảm bảo tính pháp lý, chúng ta không được lấy dữ liệu trực tiếp từ SMILE lúc đang hiển thị, mà phải:
+Chụp ảnh dữ liệu (Snapshot): Chuyển toàn bộ thông tin Booking thành chuỗi JSON (qua Store Procedure).
+Đóng băng: Lưu chuỗi JSON này vào bảng tbl_SignedDocuments kèm với ID của Template.
+Render: Trộn JSON đó vào Template để ra bản HTML cuối cùng cho khách đọc.
+--------------------------- detail sign
+Điểm mấu chốt của file này là việc tạo ra một browser_uuid duy nhất để thực hiện cơ chế "Chiếm quyền" (Take Over). Nếu một máy khác đăng ký cùng DeviceID, máy cũ sẽ nhận diện được mình đã mất quyền và tự động quay về màn hình khóa.
+*** http://localhost/sign/waiting

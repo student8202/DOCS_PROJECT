@@ -1,0 +1,81 @@
+{% extends "layouts/base_empty.html" %} <!-- Dùng layout không có sidebar/header -->
+{% block content %}
+<style>
+    body { background: #000; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
+    
+    /* 1. Hình nền/Video chạy ngầm */
+    .bg-video {
+        position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;
+        opacity: 0.6; filter: blur(5px); z-index: -1;
+    }
+
+    /* 2. Màn hình chờ chính */
+    #screen-waiting {
+        height: 100vh; display: flex; flex-direction: column;
+        justify-content: center; align-items: center; text-align: center;
+        color: white; transition: all 0.5s ease;
+    }
+    .hotel-logo { width: 200px; margin-bottom: 30px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.5)); }
+    .welcome-text { font-size: 2.5rem; font-weight: 300; letter-spacing: 2px; }
+    .status-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+    .online { background: #28a745; box-shadow: 0 0 10px #28a745; }
+    .offline { background: #dc3545; }
+
+    /* 3. Nút cấu hình quầy (Ẩn, chỉ hiện khi click góc màn hình) */
+    #btn-config { position: fixed; top: 10px; right: 10px; opacity: 0.1; background: none; border: none; color: #fff; }
+    #btn-config:hover { opacity: 1; }
+
+    /* 4. Form đăng ký thiết bị (Modal style) */
+    #setup-box {
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 15px;
+        width: 400px; display: none; z-index: 1000; color: #333;
+    }
+</style>
+
+<!-- Background động (Video hoặc Ảnh) -->
+<video autoplay muted loop class="bg-video">
+    <source src="/static/videos/hotel_ambience.mp4" type="video/mp4">
+</video>
+
+<!-- MÀN HÌNH CHỜ -->
+<div id="screen-waiting">
+    <img src="/static/images/logo_gold.png" class="hotel-logo" alt="Logo">
+    <div class="welcome-text">WELCOME TO HOTEL</div>
+    <div class="mt-4 p-3 rounded" style="background: rgba(0,0,0,0.4)">
+        <span id="dot-status" class="status-dot offline"></span>
+        <span id="display-device" class="fw-bold">CHƯA CẤU HÌNH VỊ TRÍ</span>
+    </div>
+    <p class="mt-2 x-small text-secondary" id="display-uuid"></p>
+</div>
+
+<!-- NÚT CẤU HÌNH NGẦM (Click 5 lần vào góc phải để hiện) -->
+<button id="btn-config" onclick="WAITING.actions.showSetup()"><i class="fas fa-cog"></i></button>
+
+<!-- BOX CẤU HÌNH NHANH -->
+<div id="setup-box" class="shadow-lg">
+    <h5 class="fw-bold border-bottom pb-2 mb-3">CẤU HÌNH QUẦY KÝ</h5>
+    <div class="mb-3">
+        <label class="small fw-bold">Chọn phân hệ:</label>
+        <select id="set-module" class="form-select border-success">
+            <option value="FO">Lễ tân (Front Office)</option>
+            <option value="POS">Nhà hàng (POS)</option>
+            <option value="HR">Nhân sự (HR)</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="small fw-bold">Mã số quầy (Device ID):</label>
+        <input type="text" id="set-device-id" class="form-control border-success text-center fw-bold" placeholder="Ví dụ: FO01, POS02">
+        <small class="text-muted">Nhập đúng ID để nhận hồ sơ từ quầy tương ứng.</small>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-success fw-bold" onclick="WAITING.actions.register()">XÁC NHẬN CHIẾM QUYỀN</button>
+        <button class="btn btn-link btn-sm text-secondary" onclick="$('#setup-box').fadeOut()">Đóng</button>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/sign/waiting_handler.js"></script>
+{% endblock %}

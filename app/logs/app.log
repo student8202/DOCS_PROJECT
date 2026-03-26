@@ -23463,3 +23463,1604 @@
 2026-03-23 15:50:55 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
 2026-03-23 15:50:56 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
 2026-03-23 15:50:56 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 26.46ms
+2026-03-23 15:50:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-23 15:50:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.03ms
+2026-03-23 15:51:41 | INFO     | START | POST /fo/templates/save-system | IP: 127.0.0.1
+2026-03-23 15:51:41 | INFO     | END   | POST /fo/templates/save-system | Status: 200 | Time: 53.33ms
+2026-03-23 15:51:41 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-23 15:51:41 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.23ms
+2026-03-23 15:51:43 | INFO     | START | GET /fo/templates/system-detail/13 | IP: 127.0.0.1
+2026-03-23 15:51:43 | INFO     | END   | GET /fo/templates/system-detail/13 | Status: 200 | Time: 30.52ms
+2026-03-23 15:51:47 | INFO     | START | POST /fo/templates/save-system | IP: 127.0.0.1
+2026-03-23 15:51:47 | INFO     | END   | POST /fo/templates/save-system | Status: 200 | Time: 5.35ms
+2026-03-23 15:51:47 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-23 15:51:47 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 6.21ms
+2026-03-23 15:51:57 | INFO     | START | GET /fo/templates/system-detail/14 | IP: 127.0.0.1
+2026-03-23 15:51:57 | INFO     | END   | GET /fo/templates/system-detail/14 | Status: 200 | Time: 14.10ms
+2026-03-23 15:58:22 | INFO     | START | GET /fo/templates/system-view | IP: 127.0.0.1
+2026-03-23 15:58:23 | INFO     | END   | GET /fo/templates/system-view | Status: 200 | Time: 33.34ms
+2026-03-23 15:58:23 | INFO     | START | GET /fo/templates/system-view | IP: 127.0.0.1
+2026-03-23 15:58:23 | INFO     | END   | GET /fo/templates/system-view | Status: 200 | Time: 0.00ms
+2026-03-23 15:58:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-23 15:58:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.01ms
+2026-03-23 15:58:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-23 15:58:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-23 21:07:22 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-23 21:07:22 | INFO     | END   | GET / | Status: 200 | Time: 2.91ms
+2026-03-25 14:24:44 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-25 14:24:44 | INFO     | END   | GET / | Status: 200 | Time: 41.34ms
+2026-03-25 14:24:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:24:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.70ms
+2026-03-25 14:24:50 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-03-25 14:24:50 | INFO     | User admin logged in successfully with 8 perms
+2026-03-25 14:24:50 | INFO     | END   | POST /auth/login | Status: 200 | Time: 515.72ms
+2026-03-25 14:24:52 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 14:24:52 | INFO     | END   | GET /dashboard | Status: 200 | Time: 22.78ms
+2026-03-25 14:24:52 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 14:24:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 738.62ms
+2026-03-25 14:24:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:24:53 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 14:24:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 306.73ms
+2026-03-25 14:24:53 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 306.73ms
+2026-03-25 14:24:55 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 14:24:55 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 14:24:55 | INFO     | END   | GET /api/v1/devices/online-list | Status: 404 | Time: 19.22ms
+2026-03-25 14:24:55 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 23.29ms
+2026-03-25 14:25:54 | INFO     | START | GET / | IP: 127.0.0.1
+2026-03-25 14:25:54 | INFO     | END   | GET / | Status: 200 | Time: 1.84ms
+2026-03-25 14:26:47 | INFO     | START | GET /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 14:26:47 | INFO     | END   | GET /api/v1/devices/register | Status: 404 | Time: 1.20ms
+2026-03-25 14:26:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:26:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 14:33:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:33:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.49ms
+2026-03-25 14:33:35 | INFO     | START | GET /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 14:33:35 | INFO     | END   | GET /api/v1/devices/register | Status: 405 | Time: 0.00ms
+2026-03-25 14:33:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:33:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 14:56:45 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 14:56:45 | INFO     | END   | GET /sign/waiting | Status: 404 | Time: 6.85ms
+2026-03-25 14:56:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 14:56:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 15:42:15 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:42:15 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 7.44ms
+2026-03-25 15:42:16 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:42:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:42:45 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:42:45 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:42:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:42:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-03-25 15:42:56 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:42:56 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 77.64ms
+2026-03-25 15:42:56 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:42:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:42:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 7.51ms
+2026-03-25 15:42:56 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.02ms
+2026-03-25 15:43:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:43:06 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:06 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.17ms
+2026-03-25 15:43:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.01ms
+2026-03-25 15:43:12 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:12 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.11ms
+2026-03-25 15:43:17 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:17 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:17 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.24ms
+2026-03-25 15:43:17 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.57ms
+2026-03-25 15:43:22 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:22 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:43:27 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:27 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:27 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.66ms
+2026-03-25 15:43:27 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 7.85ms
+2026-03-25 15:43:32 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:32 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.01ms
+2026-03-25 15:43:37 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:37 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:37 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 13.36ms
+2026-03-25 15:43:37 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 8.90ms
+2026-03-25 15:43:42 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:42 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.23ms
+2026-03-25 15:43:47 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:47 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:47 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.01ms
+2026-03-25 15:43:47 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.38ms
+2026-03-25 15:43:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.15ms
+2026-03-25 15:43:56 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:43:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:43:56 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.40ms
+2026-03-25 15:43:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.40ms
+2026-03-25 15:44:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:06 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:06 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 11.28ms
+2026-03-25 15:44:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 15:44:08 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:08 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:44:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:44:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:44:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.89ms
+2026-03-25 15:44:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.01ms
+2026-03-25 15:44:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.04ms
+2026-03-25 15:44:20 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:20 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.10ms
+2026-03-25 15:44:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.65ms
+2026-03-25 15:44:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:44:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:44:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-25 15:44:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.02ms
+2026-03-25 15:44:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.04ms
+2026-03-25 15:44:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 15:44:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:44:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.15ms
+2026-03-25 15:44:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.30ms
+2026-03-25 15:44:39 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:39 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.70ms
+2026-03-25 15:44:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:44:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.51ms
+2026-03-25 15:44:47 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:47 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 14.96ms
+2026-03-25 15:44:47 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:47 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:44:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:44:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.15ms
+2026-03-25 15:44:52 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:52 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:44:57 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:57 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.01ms
+2026-03-25 15:44:57 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:57 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:57 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.99ms
+2026-03-25 15:44:57 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 15:44:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:44:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.51ms
+2026-03-25 15:44:59 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:59 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.51ms
+2026-03-25 15:44:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:44:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:44:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.13ms
+2026-03-25 15:44:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.14ms
+2026-03-25 15:44:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:44:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 15:44:59 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:44:59 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:45:00 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:00 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:00 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.49ms
+2026-03-25 15:45:00 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.32ms
+2026-03-25 15:45:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:45:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:45:05 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:05 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:10 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:10 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.29ms
+2026-03-25 15:45:10 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:10 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:15 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:15 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:20 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:20 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:20 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.39ms
+2026-03-25 15:45:20 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.58ms
+2026-03-25 15:45:25 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:25 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.58ms
+2026-03-25 15:45:30 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:30 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.42ms
+2026-03-25 15:45:30 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:30 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.37ms
+2026-03-25 15:45:35 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:35 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:40 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:40 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:40 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.51ms
+2026-03-25 15:45:40 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:45 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:45 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:45:50 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:45:50 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:50 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.15ms
+2026-03-25 15:45:50 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.38ms
+2026-03-25 15:45:55 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:45:55 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.45ms
+2026-03-25 15:46:00 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:00 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:00 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.78ms
+2026-03-25 15:46:00 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.78ms
+2026-03-25 15:46:05 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:05 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:46:09 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:46:09 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.00ms
+2026-03-25 15:46:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 12.22ms
+2026-03-25 15:46:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.54ms
+2026-03-25 15:46:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:46:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:46:10 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:46:10 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:46:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.27ms
+2026-03-25 15:46:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.27ms
+2026-03-25 15:46:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:46:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:46:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:46:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.73ms
+2026-03-25 15:46:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.61ms
+2026-03-25 15:46:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:46:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:46:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:46:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.30ms
+2026-03-25 15:46:41 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:41 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:41 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:46:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:46:46 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:46 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.96ms
+2026-03-25 15:46:51 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:46:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:51 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.06ms
+2026-03-25 15:46:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.99ms
+2026-03-25 15:46:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:46:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:47:01 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:47:01 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:47:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:47:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.18ms
+2026-03-25 15:47:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:47:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.08ms
+2026-03-25 15:47:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.20ms
+2026-03-25 15:47:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.69ms
+2026-03-25 15:47:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:47:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.21ms
+2026-03-25 15:47:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.58ms
+2026-03-25 15:47:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:47:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.12ms
+2026-03-25 15:48:27 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:48:27 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 16.40ms
+2026-03-25 15:48:27 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:48:27 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.02ms
+2026-03-25 15:49:28 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:49:28 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:49:28 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 14.43ms
+2026-03-25 15:49:28 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.04ms
+2026-03-25 15:50:26 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:50:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:26 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.43ms
+2026-03-25 15:50:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.14ms
+2026-03-25 15:50:28 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:50:28 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:50:28 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:50:28 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:28 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.76ms
+2026-03-25 15:50:28 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.77ms
+2026-03-25 15:50:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:50:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:50:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:50:39 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:50:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:39 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.41ms
+2026-03-25 15:50:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:50:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.56ms
+2026-03-25 15:50:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:50:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.59ms
+2026-03-25 15:50:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:50:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.33ms
+2026-03-25 15:50:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:50:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:50:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.53ms
+2026-03-25 15:50:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.68ms
+2026-03-25 15:51:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.02ms
+2026-03-25 15:51:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:51:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.29ms
+2026-03-25 15:51:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.85ms
+2026-03-25 15:51:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.07ms
+2026-03-25 15:51:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:51:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.77ms
+2026-03-25 15:51:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.96ms
+2026-03-25 15:51:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.13ms
+2026-03-25 15:51:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:51:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:51:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.46ms
+2026-03-25 15:51:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:52:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 15:52:04 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:04 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.46ms
+2026-03-25 15:52:08 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:08 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:08 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.53ms
+2026-03-25 15:52:08 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.84ms
+2026-03-25 15:52:13 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:13 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.22ms
+2026-03-25 15:52:18 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:18 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.14ms
+2026-03-25 15:52:18 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:18 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.75ms
+2026-03-25 15:52:20 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:52:20 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 5.12ms
+2026-03-25 15:52:20 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:20 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.02ms
+2026-03-25 15:52:20 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:52:20 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 1.06ms
+2026-03-25 15:52:25 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:52:25 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 8.02ms
+2026-03-25 15:52:30 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:30 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:52:30 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 3.08ms
+2026-03-25 15:52:30 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.08ms
+2026-03-25 15:52:35 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:52:35 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 3.64ms
+2026-03-25 15:52:40 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:40 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:52:40 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 2.19ms
+2026-03-25 15:52:40 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.21ms
+2026-03-25 15:52:44 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:52:44 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 6.50ms
+2026-03-25 15:52:44 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:44 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.13ms
+2026-03-25 15:52:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.29ms
+2026-03-25 15:52:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:52:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.22ms
+2026-03-25 15:52:48 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:52:48 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:52:48 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:52:48 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.29ms
+2026-03-25 15:52:48 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.55ms
+2026-03-25 15:52:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:52:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:52:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:52:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:52:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:52:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.35ms
+2026-03-25 15:52:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.51ms
+2026-03-25 15:53:03 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:03 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.33ms
+2026-03-25 15:53:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:53:13 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:13 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.25ms
+2026-03-25 15:53:14 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:14 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 23.49ms
+2026-03-25 15:53:14 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:14 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.29ms
+2026-03-25 15:53:15 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:15 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.50ms
+2026-03-25 15:53:15 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.02ms
+2026-03-25 15:53:15 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.99ms
+2026-03-25 15:53:15 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:53:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:53:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 15:53:20 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:20 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.58ms
+2026-03-25 15:53:21 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:21 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:53:21 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:21 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.06ms
+2026-03-25 15:53:21 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:21 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:21 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:21 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.51ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.01ms
+2026-03-25 15:53:22 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:22 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.01ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.11ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.62ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-25 15:53:23 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:23 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.02ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.51ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.50ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.29ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.99ms
+2026-03-25 15:53:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.42ms
+2026-03-25 15:53:25 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:25 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.17ms
+2026-03-25 15:53:25 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:25 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.02ms
+2026-03-25 15:53:25 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:25 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.59ms
+2026-03-25 15:53:25 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:53:25 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.52ms
+2026-03-25 15:53:26 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:26 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.99ms
+2026-03-25 15:53:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.02ms
+2026-03-25 15:53:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:53:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-25 15:53:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.13ms
+2026-03-25 15:53:36 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.71ms
+2026-03-25 15:53:36 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.95ms
+2026-03-25 15:53:41 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.13ms
+2026-03-25 15:53:46 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:46 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.54ms
+2026-03-25 15:53:46 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:46 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.93ms
+2026-03-25 15:53:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:53:56 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:53:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:53:56 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 12.95ms
+2026-03-25 15:53:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 9.40ms
+2026-03-25 15:54:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:06 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:06 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 19.10ms
+2026-03-25 15:54:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 9.11ms
+2026-03-25 15:54:08 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:54:08 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.01ms
+2026-03-25 15:54:08 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:54:08 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.02ms
+2026-03-25 15:54:08 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:54:08 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.55ms
+2026-03-25 15:54:08 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:54:08 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.00ms
+2026-03-25 15:54:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.30ms
+2026-03-25 15:54:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.30ms
+2026-03-25 15:54:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:54:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.50ms
+2026-03-25 15:54:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.65ms
+2026-03-25 15:54:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.12ms
+2026-03-25 15:54:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.55ms
+2026-03-25 15:54:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.12ms
+2026-03-25 15:54:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:54:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.35ms
+2026-03-25 15:54:39 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:39 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.55ms
+2026-03-25 15:54:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 15:54:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 15:54:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.74ms
+2026-03-25 15:54:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:49 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:54:49 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 6.10ms
+2026-03-25 15:54:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:54:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:54:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.45ms
+2026-03-25 15:54:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:54:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:54:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.18ms
+2026-03-25 15:54:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.48ms
+2026-03-25 15:55:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:55:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.14ms
+2026-03-25 15:55:08 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:55:08 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 6.41ms
+2026-03-25 15:55:08 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:08 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:55:08 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.94ms
+2026-03-25 15:55:08 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 3.82ms
+2026-03-25 15:55:13 | INFO     | START | GET /api/v1/signature-queue/check/FO02 | IP: 127.0.0.1
+2026-03-25 15:55:13 | INFO     | END   | GET /api/v1/signature-queue/check/FO02 | Status: 404 | Time: 2.03ms
+2026-03-25 15:55:16 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:55:16 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 5.41ms
+2026-03-25 15:55:16 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:16 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:16 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.28ms
+2026-03-25 15:55:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 3.28ms
+2026-03-25 15:55:21 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 1.75ms
+2026-03-25 15:55:26 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:26 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:26 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.70ms
+2026-03-25 15:55:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 0.00ms
+2026-03-25 15:55:31 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 0.00ms
+2026-03-25 15:55:36 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:36 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:36 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.32ms
+2026-03-25 15:55:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 4.33ms
+2026-03-25 15:55:41 | INFO     | START | GET /api/v1/signature-queue/check/FO03 | IP: 127.0.0.1
+2026-03-25 15:55:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO03 | Status: 404 | Time: 4.91ms
+2026-03-25 15:55:42 | INFO     | START | POST /api/v1/devices/register | IP: 127.0.0.1
+2026-03-25 15:55:42 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 4.10ms
+2026-03-25 15:55:42 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:42 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:55:42 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.59ms
+2026-03-25 15:55:42 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.01ms
+2026-03-25 15:55:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.01ms
+2026-03-25 15:55:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-25 15:55:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.49ms
+2026-03-25 15:55:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-25 15:55:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.00ms
+2026-03-25 15:55:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 15:55:47 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 15:55:47 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.52ms
+2026-03-25 15:55:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:55:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.10ms
+2026-03-25 15:55:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:55:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 27.58ms
+2026-03-25 15:55:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.02ms
+2026-03-25 15:55:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:55:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 15:55:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:55:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.05ms
+2026-03-25 15:55:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:55:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:55:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.16ms
+2026-03-25 15:55:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.73ms
+2026-03-25 15:56:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:56:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.39ms
+2026-03-25 15:56:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:56:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.17ms
+2026-03-25 15:56:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.21ms
+2026-03-25 15:56:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.03ms
+2026-03-25 15:56:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:56:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.14ms
+2026-03-25 15:56:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:56:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.56ms
+2026-03-25 15:56:39 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:39 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.61ms
+2026-03-25 15:56:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:56:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.63ms
+2026-03-25 15:56:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.73ms
+2026-03-25 15:56:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:56:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.15ms
+2026-03-25 15:56:58 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:56:58 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-25 15:56:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:56:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:56:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.31ms
+2026-03-25 15:56:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:57:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:57:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.04ms
+2026-03-25 15:57:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:57:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:57:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.60ms
+2026-03-25 15:57:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.52ms
+2026-03-25 15:57:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:57:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:57:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:57:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:57:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.43ms
+2026-03-25 15:57:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:57:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 15:57:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 16.80ms
+2026-03-25 15:57:30 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 15:57:30 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-25 15:57:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 15:57:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-25 15:57:31 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 15:57:32 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 626.28ms
+2026-03-25 15:57:32 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 15:57:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:57:32 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 327.30ms
+2026-03-25 15:57:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.51ms
+2026-03-25 15:57:34 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 15:57:34 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 15:57:34 | INFO     | END   | GET /api/v1/devices/online-list | Status: 404 | Time: 1.52ms
+2026-03-25 15:57:34 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 11.95ms
+2026-03-25 15:57:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:57:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-25 15:57:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 15:57:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.16ms
+2026-03-25 15:57:47 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 15:57:47 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 15:57:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 15:57:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 94.83ms
+2026-03-25 15:57:48 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 15:57:49 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 355.89ms
+2026-03-25 15:57:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:57:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 15:57:51 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 15:57:51 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 15:57:51 | INFO     | END   | GET /api/v1/devices/online-list | Status: 404 | Time: 1.00ms
+2026-03-25 15:57:51 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.24ms
+2026-03-25 15:58:15 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:15 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:58:15 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:15 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.14ms
+2026-03-25 15:58:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.63ms
+2026-03-25 15:58:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.12ms
+2026-03-25 15:58:21 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 15:58:21 | INFO     | END   | GET /api/v1/devices/online-list | Status: 404 | Time: 1.90ms
+2026-03-25 15:58:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 15:58:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.13ms
+2026-03-25 15:58:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 15:58:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.72ms
+2026-03-25 15:58:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 15:58:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.66ms
+2026-03-25 15:58:39 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:39 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:58:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:58:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.18ms
+2026-03-25 15:58:49 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:49 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 15:58:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 15:58:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 8.15ms
+2026-03-25 15:58:59 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:58:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:58:59 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.02ms
+2026-03-25 15:58:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.02ms
+2026-03-25 15:59:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:59:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.67ms
+2026-03-25 15:59:09 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:59:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:59:09 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.33ms
+2026-03-25 15:59:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.25ms
+2026-03-25 15:59:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:59:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.40ms
+2026-03-25 15:59:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 15:59:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 15:59:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.88ms
+2026-03-25 15:59:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 16:00:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:00:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:00:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.07ms
+2026-03-25 16:00:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.35ms
+2026-03-25 16:01:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:01:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:01:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:01:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:02:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:02:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:02:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 6.24ms
+2026-03-25 16:02:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.87ms
+2026-03-25 16:03:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:03:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:03:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.50ms
+2026-03-25 16:03:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:04:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:04:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.88ms
+2026-03-25 16:04:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:04:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 16:05:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:05:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:05:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.08ms
+2026-03-25 16:05:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.26ms
+2026-03-25 16:06:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:06:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:06:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.06ms
+2026-03-25 16:06:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.67ms
+2026-03-25 16:07:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:07:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:07:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.13ms
+2026-03-25 16:07:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.02ms
+2026-03-25 16:08:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:08:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:08:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.89ms
+2026-03-25 16:08:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.51ms
+2026-03-25 16:09:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:09:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:09:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:09:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.03ms
+2026-03-25 16:10:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:10:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:10:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.52ms
+2026-03-25 16:10:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.52ms
+2026-03-25 16:11:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:11:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:11:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.43ms
+2026-03-25 16:11:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:12:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:12:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:12:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:12:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.02ms
+2026-03-25 16:12:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:12:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-03-25 16:12:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:12:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.51ms
+2026-03-25 16:12:42 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:12:42 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-25 16:12:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:12:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.08ms
+2026-03-25 16:12:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:12:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-25 16:12:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:12:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-03-25 16:12:44 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:12:45 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 667.44ms
+2026-03-25 16:12:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:12:45 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 16:12:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 299.62ms
+2026-03-25 16:12:45 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 301.16ms
+2026-03-25 16:12:48 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:12:48 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:12:48 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 76.41ms
+2026-03-25 16:12:48 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 75.57ms
+2026-03-25 16:13:17 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:17 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:17 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 27.41ms
+2026-03-25 16:13:17 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 30.93ms
+2026-03-25 16:13:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.39ms
+2026-03-25 16:13:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.95ms
+2026-03-25 16:13:19 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 16:13:19 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 7.14ms
+2026-03-25 16:13:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:13:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:13:20 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:20 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:20 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.59ms
+2026-03-25 16:13:20 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.35ms
+2026-03-25 16:13:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:13:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.99ms
+2026-03-25 16:13:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.16ms
+2026-03-25 16:13:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.38ms
+2026-03-25 16:13:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.56ms
+2026-03-25 16:13:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:13:41 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:41 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.52ms
+2026-03-25 16:13:41 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.02ms
+2026-03-25 16:13:46 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:46 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:13:51 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:13:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:51 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.05ms
+2026-03-25 16:13:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.05ms
+2026-03-25 16:13:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:13:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:14:01 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:14:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:01 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.50ms
+2026-03-25 16:14:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.50ms
+2026-03-25 16:14:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:14:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:14:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 12.90ms
+2026-03-25 16:14:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.94ms
+2026-03-25 16:14:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.22ms
+2026-03-25 16:14:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:14:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.89ms
+2026-03-25 16:14:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.06ms
+2026-03-25 16:14:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:14:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:15:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:15:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 18.13ms
+2026-03-25 16:15:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:15:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.06ms
+2026-03-25 16:16:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:16:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.61ms
+2026-03-25 16:16:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:16:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.52ms
+2026-03-25 16:17:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:17:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:17:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:17:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:18:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:18:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:18:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.95ms
+2026-03-25 16:18:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.45ms
+2026-03-25 16:19:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 33.08ms
+2026-03-25 16:19:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:19:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.51ms
+2026-03-25 16:19:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.12ms
+2026-03-25 16:19:20 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-03-25 16:19:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:19:22 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:19:23 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 519.27ms
+2026-03-25 16:19:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:19:23 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 16:19:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 339.16ms
+2026-03-25 16:19:23 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 338.16ms
+2026-03-25 16:19:24 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:19:24 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 3.66ms
+2026-03-25 16:19:24 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:19:24 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 3.79ms
+2026-03-25 16:19:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:19:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.07ms
+2026-03-25 16:19:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:19:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:19:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.99ms
+2026-03-25 16:19:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.03ms
+2026-03-25 16:19:33 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 16:19:33 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-25 16:19:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-25 16:19:34 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:19:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:34 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 1.13ms
+2026-03-25 16:19:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:19:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:19:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.18ms
+2026-03-25 16:19:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.07ms
+2026-03-25 16:19:44 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:19:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:44 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.93ms
+2026-03-25 16:19:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:19:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:19:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-25 16:19:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-25 16:19:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.50ms
+2026-03-25 16:19:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-25 16:19:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.62ms
+2026-03-25 16:19:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:19:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-25 16:19:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:19:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 179.94ms
+2026-03-25 16:19:53 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 16:19:53 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 408.45ms
+2026-03-25 16:19:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:19:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-25 16:19:54 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:19:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:54 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 1.01ms
+2026-03-25 16:19:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:19:55 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:19:55 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:19:55 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 9.30ms
+2026-03-25 16:19:55 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 9.28ms
+2026-03-25 16:19:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:19:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:20:04 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:20:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:04 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:20:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 10.64ms
+2026-03-25 16:20:06 | INFO     | START | POST /api/v1/queue/process-and-send | IP: 127.0.0.1
+2026-03-25 16:20:06 | INFO     | END   | POST /api/v1/queue/process-and-send | Status: 404 | Time: 1.38ms
+2026-03-25 16:20:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 16:20:14 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:20:14 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 1.98ms
+2026-03-25 16:20:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:20:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.66ms
+2026-03-25 16:20:24 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:20:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:24 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.41ms
+2026-03-25 16:20:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.90ms
+2026-03-25 16:20:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 6.55ms
+2026-03-25 16:20:34 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:20:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:34 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:20:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:20:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:20:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 16:20:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:20:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.01ms
+2026-03-25 16:20:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:20:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:20:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:20:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.25ms
+2026-03-25 16:20:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:20:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.68ms
+2026-03-25 16:21:00 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:21:00 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.00ms
+2026-03-25 16:21:00 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:21:00 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:21:01 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:21:01 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 119.98ms
+2026-03-25 16:21:01 | INFO     | START | GET /fo/reservation-ih-list2 | IP: 127.0.0.1
+2026-03-25 16:21:01 | INFO     | END   | GET /fo/reservation-ih-list2 | Status: 200 | Time: 320.55ms
+2026-03-25 16:21:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:21:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 16:21:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:21:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-25 16:21:23 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:21:24 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 248.41ms
+2026-03-25 16:21:26 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:21:27 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 158.15ms
+2026-03-25 16:21:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:21:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.36ms
+2026-03-25 16:21:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:21:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:21:30 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:21:30 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:21:30 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.16ms
+2026-03-25 16:21:30 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 5.41ms
+2026-03-25 16:21:52 | INFO     | START | POST /api/v1/queue/process-and-send | IP: 127.0.0.1
+2026-03-25 16:21:52 | INFO     | END   | POST /api/v1/queue/process-and-send | Status: 404 | Time: 1.00ms
+2026-03-25 16:22:22 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:22:22 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:22 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.14ms
+2026-03-25 16:22:22 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.39ms
+2026-03-25 16:22:24 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:22:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:24 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.88ms
+2026-03-25 16:22:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.63ms
+2026-03-25 16:22:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:22:34 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:22:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:34 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.63ms
+2026-03-25 16:22:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.81ms
+2026-03-25 16:22:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.10ms
+2026-03-25 16:22:44 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:22:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:44 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:22:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:22:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:22:54 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:22:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:54 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 11.29ms
+2026-03-25 16:22:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 11.29ms
+2026-03-25 16:22:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:22:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.26ms
+2026-03-25 16:23:04 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:04 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:23:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:23:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.05ms
+2026-03-25 16:23:14 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:14 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.70ms
+2026-03-25 16:23:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.50ms
+2026-03-25 16:23:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.48ms
+2026-03-25 16:23:24 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:24 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.11ms
+2026-03-25 16:23:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.79ms
+2026-03-25 16:23:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.99ms
+2026-03-25 16:23:34 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:34 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.87ms
+2026-03-25 16:23:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.01ms
+2026-03-25 16:23:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.14ms
+2026-03-25 16:23:44 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:44 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.76ms
+2026-03-25 16:23:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.63ms
+2026-03-25 16:23:49 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:49 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.23ms
+2026-03-25 16:23:54 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:23:54 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:54 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.54ms
+2026-03-25 16:23:54 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.04ms
+2026-03-25 16:23:59 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:23:59 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.12ms
+2026-03-25 16:24:04 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:24:04 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:04 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.26ms
+2026-03-25 16:24:04 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.34ms
+2026-03-25 16:24:09 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:09 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.99ms
+2026-03-25 16:24:14 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:24:14 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:14 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.21ms
+2026-03-25 16:24:14 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.05ms
+2026-03-25 16:24:19 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:19 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:24:24 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:24:24 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:24 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.16ms
+2026-03-25 16:24:24 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.09ms
+2026-03-25 16:24:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.05ms
+2026-03-25 16:24:34 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:24:34 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:34 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.83ms
+2026-03-25 16:24:34 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.14ms
+2026-03-25 16:24:39 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:39 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:24:44 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:24:44 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:24:44 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.12ms
+2026-03-25 16:24:44 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:25:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:25:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:25:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.21ms
+2026-03-25 16:25:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.05ms
+2026-03-25 16:26:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:26:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:26:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.35ms
+2026-03-25 16:26:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.51ms
+2026-03-25 16:27:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:27:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.20ms
+2026-03-25 16:27:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:27:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:28:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:28:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:28:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.18ms
+2026-03-25 16:28:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.50ms
+2026-03-25 16:29:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:29:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:29:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.24ms
+2026-03-25 16:29:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.07ms
+2026-03-25 16:30:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:30:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.56ms
+2026-03-25 16:30:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:30:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:31:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:31:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.04ms
+2026-03-25 16:31:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:31:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.26ms
+2026-03-25 16:32:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:32:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:32:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.51ms
+2026-03-25 16:32:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:33:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:33:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:33:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.68ms
+2026-03-25 16:33:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.50ms
+2026-03-25 16:34:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:34:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:34:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.87ms
+2026-03-25 16:34:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:35:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:35:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.03ms
+2026-03-25 16:35:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:35:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.35ms
+2026-03-25 16:36:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:36:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.40ms
+2026-03-25 16:36:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:36:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:37:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:37:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.53ms
+2026-03-25 16:37:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:37:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:38:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:38:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.80ms
+2026-03-25 16:38:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:38:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.74ms
+2026-03-25 16:39:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:39:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.84ms
+2026-03-25 16:39:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:39:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.23ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.90ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 6.29ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.99ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.45ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.02ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:40:10 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:40:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:40:12 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:40:12 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 590.75ms
+2026-03-25 16:40:12 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:40:12 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:40:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 321.72ms
+2026-03-25 16:40:13 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 322.76ms
+2026-03-25 16:40:14 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:40:14 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:40:14 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 10.25ms
+2026-03-25 16:40:14 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 9.41ms
+2026-03-25 16:40:22 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.05ms
+2026-03-25 16:40:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-25 16:40:22 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.63ms
+2026-03-25 16:40:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-25 16:40:22 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:40:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.32ms
+2026-03-25 16:40:23 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:40:23 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 122.31ms
+2026-03-25 16:40:23 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:40:23 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 252.30ms
+2026-03-25 16:40:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:40:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 16:40:25 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:40:25 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:40:25 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.69ms
+2026-03-25 16:40:25 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 5.71ms
+2026-03-25 16:40:28 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:40:28 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:28 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.87ms
+2026-03-25 16:40:28 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.85ms
+2026-03-25 16:40:30 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 16:40:30 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.02ms
+2026-03-25 16:40:30 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:30 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-25 16:40:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:40:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.12ms
+2026-03-25 16:40:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.79ms
+2026-03-25 16:40:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:40:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-25 16:40:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.13ms
+2026-03-25 16:40:41 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:40:41 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:41 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.51ms
+2026-03-25 16:40:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:40:44 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:40:44 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 125.13ms
+2026-03-25 16:40:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:40:44 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:40:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 212.80ms
+2026-03-25 16:40:44 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 212.80ms
+2026-03-25 16:40:45 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:40:45 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:40:45 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 13.44ms
+2026-03-25 16:40:45 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 13.45ms
+2026-03-25 16:40:46 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:46 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:40:50 | INFO     | START | POST /api/v1/queue/process-and-send | IP: 127.0.0.1
+2026-03-25 16:40:50 | INFO     | END   | POST /api/v1/queue/process-and-send | Status: 404 | Time: 1.01ms
+2026-03-25 16:40:51 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:40:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:51 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.48ms
+2026-03-25 16:40:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:40:51 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:40:51 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:40:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:40:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:40:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:40:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:40:57 | INFO     | START | POST /api/v1/queue/process-and-send | IP: 127.0.0.1
+2026-03-25 16:40:57 | INFO     | END   | POST /api/v1/queue/process-and-send | Status: 404 | Time: 2.75ms
+2026-03-25 16:41:01 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:41:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:01 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:41:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:41:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.52ms
+2026-03-25 16:41:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:41:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.39ms
+2026-03-25 16:41:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:41:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.19ms
+2026-03-25 16:41:17 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:41:17 | INFO     | END   | GET /dashboard | Status: 200 | Time: 4.05ms
+2026-03-25 16:41:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:41:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-25 16:41:17 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:41:17 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:41:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:41:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.32ms
+2026-03-25 16:41:18 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:41:18 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-25 16:41:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:41:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-25 16:41:18 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:41:18 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-03-25 16:41:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:41:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:41:19 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:41:20 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 512.32ms
+2026-03-25 16:41:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:41:20 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:41:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 285.13ms
+2026-03-25 16:41:20 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 285.13ms
+2026-03-25 16:41:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:41:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.14ms
+2026-03-25 16:41:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.04ms
+2026-03-25 16:41:22 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:41:22 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:41:22 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 11.07ms
+2026-03-25 16:41:22 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 10.89ms
+2026-03-25 16:41:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.64ms
+2026-03-25 16:41:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:41:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 29.63ms
+2026-03-25 16:41:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:41:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:41:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:42:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:42:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:42:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.48ms
+2026-03-25 16:42:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.15ms
+2026-03-25 16:43:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:43:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.12ms
+2026-03-25 16:43:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:43:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.92ms
+2026-03-25 16:44:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:44:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:44:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:44:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:45:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:45:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:45:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.38ms
+2026-03-25 16:45:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 6.04ms
+2026-03-25 16:46:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:46:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:46:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.21ms
+2026-03-25 16:46:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.21ms
+2026-03-25 16:47:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:47:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:47:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.77ms
+2026-03-25 16:47:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.48ms
+2026-03-25 16:48:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:48:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.42ms
+2026-03-25 16:48:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:48:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:49:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:49:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:49:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:49:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:49:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:49:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-03-25 16:49:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:49:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:49:48 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:49:48 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.58ms
+2026-03-25 16:49:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:49:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-25 16:49:49 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:49:50 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 451.81ms
+2026-03-25 16:49:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:49:50 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:49:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 245.97ms
+2026-03-25 16:49:50 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 247.49ms
+2026-03-25 16:49:51 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:49:51 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:49:51 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 7.85ms
+2026-03-25 16:49:51 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 7.54ms
+2026-03-25 16:49:51 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:49:51 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.44ms
+2026-03-25 16:49:57 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-25 16:49:57 | INFO     | END   | POST /api/v1/queue/send | Status: 422 | Time: 4.26ms
+2026-03-25 16:50:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:50:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:50:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:50:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 6.15ms
+2026-03-25 16:51:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:51:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.87ms
+2026-03-25 16:51:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:51:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.31ms
+2026-03-25 16:52:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:52:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:52:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.76ms
+2026-03-25 16:52:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:53:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:53:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.26ms
+2026-03-25 16:53:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:53:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:54:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:54:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:54:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:54:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 11.32ms
+2026-03-25 16:54:56 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:54:56 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.72ms
+2026-03-25 16:54:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:54:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.21ms
+2026-03-25 16:54:56 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:54:56 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:54:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:54:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.04ms
+2026-03-25 16:54:57 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:54:57 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.17ms
+2026-03-25 16:54:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:54:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-25 16:54:58 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:54:58 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 568.02ms
+2026-03-25 16:54:58 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:54:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:54:59 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 253.17ms
+2026-03-25 16:54:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 251.15ms
+2026-03-25 16:55:00 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:55:00 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:55:00 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 84.58ms
+2026-03-25 16:55:00 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 85.41ms
+2026-03-25 16:55:00 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:55:00 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.23ms
+2026-03-25 16:55:05 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:05 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.38ms
+2026-03-25 16:55:05 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:05 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 9.15ms
+2026-03-25 16:55:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.11ms
+2026-03-25 16:55:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 6.45ms
+2026-03-25 16:55:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:55:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.06ms
+2026-03-25 16:55:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:55:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.27ms
+2026-03-25 16:55:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:55:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:31 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:55:31 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 7.34ms
+2026-03-25 16:55:36 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:36 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:55:41 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:41 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:41 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.07ms
+2026-03-25 16:55:41 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.84ms
+2026-03-25 16:55:46 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:46 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:55:51 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:55:51 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:51 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.10ms
+2026-03-25 16:55:51 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:55:56 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:55:56 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:56:01 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:01 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:01 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.48ms
+2026-03-25 16:56:01 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:56:06 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:06 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:56:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:11 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:56:11 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 8.92ms
+2026-03-25 16:56:16 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:16 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:56:21 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:21 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 7.53ms
+2026-03-25 16:56:21 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.01ms
+2026-03-25 16:56:24 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-25 16:56:24 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 5.33ms
+2026-03-25 16:56:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:56:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.51ms
+2026-03-25 16:56:25 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:25 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:25 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.86ms
+2026-03-25 16:56:25 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 16:56:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:56:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-03-25 16:56:30 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:30 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:56:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:56:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 17.84ms
+2026-03-25 16:56:31 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:56:31 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.48ms
+2026-03-25 16:56:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:56:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.99ms
+2026-03-25 16:56:31 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:56:31 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.72ms
+2026-03-25 16:56:32 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:56:33 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:56:33 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 845.97ms
+2026-03-25 16:56:33 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 234.86ms
+2026-03-25 16:56:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:56:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-25 16:56:34 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-25 16:56:34 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:56:34 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 6.76ms
+2026-03-25 16:56:34 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 9.27ms
+2026-03-25 16:56:34 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-25 16:56:34 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 4.28ms
+2026-03-25 16:56:35 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:35 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:35 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.04ms
+2026-03-25 16:56:35 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.00ms
+2026-03-25 16:56:40 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:40 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.08ms
+2026-03-25 16:56:45 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:45 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.43ms
+2026-03-25 16:56:45 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:45 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:56:50 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:50 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 16:56:55 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:56:55 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:56:55 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 1.09ms
+2026-03-25 16:56:55 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:57:00 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:00 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.86ms
+2026-03-25 16:57:05 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:57:05 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 16:57:05 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:05 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 5.14ms
+2026-03-25 16:57:10 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:10 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.98ms
+2026-03-25 16:57:15 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:57:15 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:15 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.03ms
+2026-03-25 16:57:15 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.99ms
+2026-03-25 16:57:20 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:20 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.01ms
+2026-03-25 16:57:25 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:57:25 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:57:25 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 11.31ms
+2026-03-25 16:57:25 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 16:58:26 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:58:26 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:58:26 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.50ms
+2026-03-25 16:58:26 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.66ms
+2026-03-25 16:59:24 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:59:24 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.13ms
+2026-03-25 16:59:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:59:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.29ms
+2026-03-25 16:59:25 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:59:25 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.16ms
+2026-03-25 16:59:25 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:59:25 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-25 16:59:25 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-03-25 16:59:25 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.52ms
+2026-03-25 16:59:25 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-25 16:59:25 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.93ms
+2026-03-25 16:59:26 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-03-25 16:59:27 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 491.08ms
+2026-03-25 16:59:27 | INFO     | START | GET /fo/reservation-list2 | IP: 127.0.0.1
+2026-03-25 16:59:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-25 16:59:27 | INFO     | END   | GET /fo/reservation-list2 | Status: 200 | Time: 399.76ms
+2026-03-25 16:59:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 400.78ms
+2026-03-25 16:59:27 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 16:59:27 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 16:59:27 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 4.56ms
+2026-03-25 16:59:27 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 12.38ms
+2026-03-25 17:00:28 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 17:00:28 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 3.88ms
+2026-03-25 17:00:28 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 17:00:28 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-25 17:01:29 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 17:01:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 17:01:29 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 0.00ms
+2026-03-25 17:01:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.68ms
+2026-03-25 17:01:33 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 17:01:33 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 1.00ms
+2026-03-25 17:01:35 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-25 17:01:35 | INFO     | START | GET /api/v1/signature-queue/check/FO01 | IP: 127.0.0.1
+2026-03-25 17:01:35 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 9.13ms
+2026-03-25 17:01:35 | INFO     | END   | GET /api/v1/signature-queue/check/FO01 | Status: 404 | Time: 2.78ms

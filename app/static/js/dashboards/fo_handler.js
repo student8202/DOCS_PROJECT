@@ -409,6 +409,121 @@ FO_DASH.actions = {
         if (FO_DASH.instance) {
             FO_DASH.instance.ajax.url(url).load();
         }
+    },
+    // xử lý phần sign
+    // Biến tạm để giữ thông tin dòng đang chọn
+    selectedRow: {},
+
+    openSignProcess: function (folio, group, idAdd) {
+        // 1. Lưu thông tin để dùng cho bước Gửi
+        this.selectedRow = { folio, group, idAdd };
+
+        // Gán chính xác vào selectedData
+        this.selectedData = {
+            folio: folio,    // Chính là row.FFolioNum truyền vào
+            group: group,    // Chính là row.SortGroup truyền vào
+            idAdd: idAdd     // Chính là row.IdAddition truyền vào
+        };
+
+        console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
+        // 2. Hiện Modal chọn Mẫu & Thiết bị (Modal này bạn đã tạo ở bước trước)
+        $('#modalSelectSign').modal('show');
+        $('#info-booking-sign').text(`Đang xử lý Folio: ${folio} | Group: ${group || 'Lẻ'}`);
+
+        // 3. Tải danh sách Mẫu (Chỉ lấy FO - REGCARD/CONFIRM)
+        $.get('/fo/templates/list?module=FO', (res) => {
+            let html = res.map(t => `<option value="${t.TemplateID}">${t.TemplateName}</option>`).join('');
+            $('#sign-select-tpl').html(html);
+        });
+
+        // 4. Tải danh sách iPad đang Online tại quầy
+        $.get('/api/v1/devices/online-list?module=FO', (res) => {
+            let html = res.map(d => `
+                <button class="list-group-item list-group-item-action p-2 small device-item" 
+                        onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
+                    <i class="fas fa-tablet-alt me-2"></i> ${d.DeviceName} [${d.DeviceID}]
+                </button>
+            `).join('');
+            $('#list-devices-online').html(html || '<div class="text-danger p-2">Không có iPad nào Online!</div>');
+        });
+        // Tự động load danh sách thiết bị Online ngay khi mở modal
+        this.loadOnlineDevices();
+    },
+
+    loadOnlineDevices: function () {
+        const container = $('#list-devices-online');
+        container.html('<div class="text-center p-2 small"><i class="fas fa-spinner fa-spin"></i> Đang tìm iPad...</div>');
+
+        // Gọi API lấy danh sách máy đang Online (IsOnline = 1)
+        $.get('/api/v1/devices/online-list?module=FO', (res) => {
+            let html = '';
+            if (res && res.length > 0) {
+                res.forEach(d => {
+                    html += `
+                    <button type="button" class="list-group-item list-group-item-action p-2 small device-item border-0 mb-1 rounded shadow-sm" 
+                            onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
+                        <span class="status-dot online"></span> 
+                        <span class="fw-bold text-dark">${d.DeviceName}</span> 
+                        <span class="badge bg-light text-secondary float-end">${d.DeviceID}</span>
+                    </button>`;
+                });
+            } else {
+                html = '<div class="alert alert-warning py-1 small text-center">Không có iPad nào Online tại quầy!</div>';
+            }
+            container.html(html);
+        }).fail(() => {
+            container.html('<div class="text-danger small text-center">Lỗi kết nối API thiết bị!</div>');
+        });
+    },
+
+    // Hàm chọn thiết bị (để bật nút Gửi)
+    selectDevice: function (deviceId, el) {
+        $('.device-item').removeClass('active bg-primary text-white');
+        $(el).addClass('active bg-primary text-white');
+
+        // Lưu ID thiết bị đã chọn vào biến tạm
+        this.selectedData.deviceId = deviceId;
+
+        // Mở khóa nút "XÁC NHẬN GỬI KÝ"
+        $('#btn-confirm-send').prop('disabled', false);
+    },
+
+    // 2. Hàm thực hiện gửi (Sửa lại payload cho khớp)
+    sendToQueue: function () {
+        const tplId = $('#sign-select-tpl').val();
+        const deviceId = this.selectedData.deviceId;
+
+        if (!deviceId) {
+            Swal.fire("Lỗi", "Vui lòng chọn một thiết bị (iPad) để ký!", "warning");
+            return;
+        }
+
+        const payload = {
+            ModuleName: "FO",
+            RefType: "BOOKING",
+            // Lấy từ biến tạm đã gán ở bước 1
+            RefID: this.selectedData.folio,
+            FolioNum: this.selectedData.folio,
+            GroupCode: this.selectedData.group === 'null' ? null : this.selectedData.group,
+            IdAddition: parseInt(this.selectedData.idAdd),
+            TemplateID: parseInt(tplId),
+            DeviceID: deviceId
+            // CreatedBy: Server tự lấy từ session như đã bàn
+        };
+
+        $.ajax({
+            url: '/api/v1/queue/send',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(payload),
+            success: function (res) {
+                Swal.fire("Thành công", "Hồ sơ đã gửi đến iPad!", "success");
+                $('#modalSelectSign').modal('hide');
+            },
+            error: function (err) {
+                Swal.fire("Lỗi", err.responseJSON?.detail || "Không thể gửi hồ sơ", "error");
+            }
+        });
     }
 };
 // 3. EVENT XỬ LÝ RIÊNG CHO ĐIỆN THOẠI (Chạm để hiện InfoBox)
