@@ -1,5 +1,6 @@
 from schemas.queue_sh import QueueSendSchema
 from database.db_connection import get_lv_docs_db
+from fastapi import HTTPException
 
 class QueueService:
     # 1. NHÂN VIÊN GỬI HỒ SƠ VÀO HÀNG ĐỢI
@@ -12,7 +13,25 @@ class QueueService:
             # Nếu chưa có, tạm thời lấy HtmlContent gốc của Template
             cursor.execute("SELECT HtmlContent FROM tbl_Templates WHERE TemplateID = ?", (data.TemplateID,))
             tpl_row = cursor.fetchone()
-            html_final = tpl_row[0] if tpl_row else "Template Error"
+            
+            if not tpl_row:
+                return {"status": "error", "message": "Không tìm thấy mẫu"}
+
+            html_final = tpl_row[0] # Lấy chuỗi HTML từ Tuple
+            # Thay thế thẻ đánh dấu bằng một thẻ img có ID cụ thể
+            # Cấy vùng chứa cho Khách
+            html_final = html_final.replace("{{GuestSignatureImg}}", 
+                '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'guest\')">'
+                '<img id="img-guest-sig" src="" style="display:none; max-height:80px;" />'
+                '<span class="placeholder-text">Chạm để ký / Touch to sign</span>'
+                '</div>')
+
+            # Cấy vùng chứa cho Lễ tân
+            html_final = html_final.replace("{{ReceptionSignatureImg}}", 
+                '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
+                '<img id="img-recep-sig" src="" style="display:none; max-height:80px;" />'
+                '<span class="placeholder-text">Chạm để ký / Staff Sign</span>'
+                '</div>')
 
             # 2. Hủy hồ sơ cũ của thiết bị
             cursor.execute("UPDATE dbo.tbl_SignatureQueue SET Status = 4 WHERE DeviceID = ? AND Status = 0", (data.DeviceID,))
@@ -30,6 +49,9 @@ class QueueService:
             
             conn.commit()
             return {"status": "success"}
+        except Exception as e:
+            # Các lỗi hệ thống khác (SQL, kết nối...)
+            raise HTTPException(status_code=500, detail=str(e))
         finally:
             conn.close()
 
@@ -59,3 +81,22 @@ class QueueService:
 # Cơ chế Độc quyền (Exclusive Waiting): Khi nhân viên gửi hồ sơ mới, lệnh UPDATE Status = 4 sẽ hủy bỏ các hồ sơ cũ mà khách chưa kịp ký. Điều này giúp Tablet luôn hiển thị đúng và duy nhất hồ sơ hiện tại.
 # Chuyển trạng thái (State Machine): Ngay khi Tablet lấy được dữ liệu (check_new_doc), nó chuyển Status từ 0 sang 1. Nhân viên ở máy tính nhìn vào bảng Queue sẽ thấy ngay trạng thái: "Khách đang xem hồ sơ".
 # Dữ liệu đóng gói (Self-contained): RenderedHtml đã được trộn sẵn dữ liệu ở máy nhân viên. Tablet chỉ việc "đổ" nó ra màn hình, không cần query lại SQL phức tạp, giúp tốc độ phản hồi cực nhanh.
+
+    def get_queue_content_logic(self, queue_id: int):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Lấy nội dung HTML đã trộn và RefID (Số Folio)
+            sql = "SELECT RenderedHtml, RefID FROM dbo.tbl_SignatureQueue WHERE QueueID = ?"
+            cursor.execute(sql, (queue_id,))
+            row = cursor.fetchone()
+            
+            if row:
+                # Trả về đúng định dạng mà JS (sign_handler.js) đang chờ
+                return {
+                    "Html": row[0], 
+                    "RefID": row[1]
+                }
+            return {"Html": "Không tìm thấy nội dung hồ sơ", "RefID": ""}
+        finally:
+            conn.close()

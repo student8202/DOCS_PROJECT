@@ -17,8 +17,7 @@ async def ping_device(data: DevicePingSchema):
 
 @router.get("/online-list")
 async def get_online_list(
-    module: str = "FO", 
-    svc: DeviceService = Depends()
+    module: str = "FO"
 ):
     """API trả về danh sách iPad đang sẵn sàng nhận hồ sơ"""
-    return svc.get_online_devices_logic(module)
+    return service.get_online_devices_logic(module)

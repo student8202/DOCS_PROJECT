@@ -3,7 +3,7 @@ var WAITING = window.WAITING || {};
 // --- 1. CẤU HÌNH (CONFIG) ---
 WAITING.config = {
     apiBase: '/api/v1/devices', // URL API quản lý thiết bị
-    queueBase: '/api/v1/signature-queue', // URL API kiểm tra hồ sơ ký
+    queueBase: '/api/v1/queue', // URL API kiểm tra hồ sơ ký
     heartbeatInterval: 10000, // 10 giây báo danh 1 lần
     checkQueueInterval: 5000, // 5 giây kiểm tra hồ sơ mới 1 lần
     timerHeartbeat: null,
@@ -77,13 +77,20 @@ WAITING.actions = {
                 // Cập nhật giao diện ngay lập tức
                 $('#display-device').text(deviceId);
 
-                // Quan trọng: Khởi động lại vòng lặp báo danh với ID mới
+                // Cập nhật giao diện iPad ngay lập tức
+                WAITING.helpers.updateUIStatus(true, deviceId);
+
+                // KÍCH HOẠT THEO DÕI NGAY (Không đợi F5)
                 WAITING.actions.startMonitoring();
 
                 Swal.fire("Thành công", `Đã chuyển sang quầy ${deviceId}`, "success");
             },
             error: function (err) {
+                // Lấy nội dung lỗi "Mã quầy FO03 chưa khai báo" từ Backend trả về
+                const errorDetail = err.responseJSON?.detail || "Lỗi không xác định";
                 Swal.fire("Lỗi kết nối", err.responseJSON?.detail || "Không thể đăng ký thiết bị", "error");
+                // Highlight ô nhập lỗi
+                $('#set-device-id').addClass('is-invalid').focus();
             }
         });
     },
@@ -128,15 +135,22 @@ WAITING.actions = {
     },
 
     startMonitoring: function () {
+        // Xóa các timer cũ nếu có để tránh chạy chồng chéo
         clearInterval(WAITING.config.timerHeartbeat);
         clearInterval(WAITING.config.timerQueue);
 
-        WAITING.config.timerHeartbeat = setInterval(this.heartbeat, WAITING.config.heartbeatInterval);
-        WAITING.config.timerQueue = setInterval(this.checkNewDocument, WAITING.config.checkQueueInterval);
-
-        // Chạy ngay lần đầu
+        // ĐIỂM QUAN TRỌNG: Gọi ngay lập tức 2 hàm này trước khi đặt setInterval
         this.heartbeat();
         this.checkNewDocument();
+
+        // Sau đó mới thiết lập vòng lặp định kỳ
+        WAITING.config.timerHeartbeat = setInterval(() => {
+            this.heartbeat();
+        }, WAITING.config.heartbeatInterval);
+
+        WAITING.config.timerQueue = setInterval(() => {
+            this.checkNewDocument();
+        }, WAITING.config.checkQueueInterval);
     },
 
     stopMonitoring: function () {

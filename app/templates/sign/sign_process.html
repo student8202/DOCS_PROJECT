@@ -3,30 +3,117 @@
 <style>
     /* Bố cục chia 2 phần: Nội dung hồ sơ (Cuộn được) và Vùng ký (Cố định phía dưới) */
     #doc-viewer {
-        height: calc(100vh - 250px);
+        height: 100vh;
+        /* Cho phép cuộn toàn màn hình */
         overflow-y: auto;
-        padding: 40px;
+        padding: 20px 20px 100px 20px;
+        /* Thêm padding dưới 100px để không bị nút che */
         background: #fff;
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
     }
-    .signature-area {
-        height: 250px;
-        background: #f1f1f1;
-        border-top: 2px solid #ddd;
-        position: relative;
-        padding: 10px;
-    }
+
     #signature-pad {
         width: 100%;
         height: 160px;
         background: #fff;
         border: 1px dashed #ccc;
-        touch-action: none; /* Quan trọng: Chặn cuộn trang khi ký */
+        touch-action: none;
+        /* Quan trọng: Chặn cuộn trang khi ký */
     }
+
     .control-btns {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+    }
+
+    /* Style cho vùng chờ ký trên tờ giấy */
+    .sig-placeholder {
+        border: 1px dashed #ccc;
+        background: #fff9f9;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .placeholder-text {
+        font-size: 12px;
+        color: #999;
+        font-style: italic;
+    }
+
+    #img-guest-sig,
+    #img-recep-sig {
+        mix-blend-mode: multiply;
+    }
+
+    /* Modal vùng ký */
+    #modal-pad {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pad-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    #signature-pad {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #ddd;
+        background: #fff;
+        touch-action: none;
+    }
+
+    /* Style cho thanh điều khiển dưới cùng */
+    .fixed-bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid #dee2e6;
+        padding: 10px 15px;
+        z-index: 1030;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Tối ưu cho điện thoại (Màn hình < 576px) */
+    @media (max-width: 575.98px) {
+        .fixed-bottom-bar {
+            flex-direction: column;
+            /* Xếp chồng nút lên nhau nếu quá hẹp */
+            padding: 8px;
+        }
+
+        .fixed-bottom-bar button {
+            width: 100%;
+            /* Nút bấm tràn chiều ngang trên điện thoại */
+            margin: 2px 0;
+        }
+
+        #doc-viewer {
+            padding: 15px 15px 120px 15px;
+            /* Tăng padding dưới để không bị lấp nội dung */
+        }
     }
 </style>
 
@@ -41,24 +128,46 @@
             </div>
         </div>
     </div>
-
-    <!-- 2. VÙNG KÝ TÊN -->
-    <div class="signature-area">
-        <div class="small fw-bold text-secondary mb-1">
-            <i class="fas fa-pen-nib me-1"></i> VUI LÒNG KÝ VÀO KHUNG DƯỚI ĐÂY:
+    <!-- MODAL KÝ TÊN TỰ ĐỘNG HIỆN LÊN -->
+    <div id="modal-pad" style="display: none;"> <!-- Đảm bảo mặc định là ẩn -->
+        <div class="pad-container shadow-lg">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold m-0" id="pad-title">VUI LÒNG KÝ TÊN</h6>
+                <button class="btn-close" onclick="SIGN.actions.closePad()"></button>
+            </div>
+            <!-- Khung ký -->
+            <div style="background:#f9f9f9; border: 1px solid #eee;">
+                <canvas id="signature-pad-canvas" style="width: 100%; height: 300px; cursor: crosshair;"></canvas>
+            </div>
+            <!-- Cập nhật Nhóm nút bấm Responsive -->
+            <div class="d-flex flex-wrap justify-content-between mt-3 gap-2">
+                <div class="d-flex gap-2 w-sm-auto w-100">
+                    <button class="btn btn-secondary flex-grow-1 px-3" onclick="SIGN.actions.closePad()">HỦY</button>
+                    <button class="btn btn-outline-danger flex-grow-1 px-3" onclick="SIGN.actions.clear()">XÓA</button>
+                </div>
+                <button class="btn btn-success px-5 fw-bold shadow-sm w-sm-auto w-100"
+                    onclick="SIGN.actions.saveToDoc()">
+                    XÁC NHẬN <i class="fas fa-check ms-1"></i>
+                </button>
+            </div>
         </div>
-        <canvas id="signature-pad"></canvas>
-        
-        <div class="control-btns">
-            <button class="btn btn-outline-secondary px-4" onclick="SIGN.actions.clear()">
-                <i class="fas fa-eraser me-1"></i> KÝ LẠI
+    </div>
+
+    <!-- Nút Hoàn tất cuối cùng của trang -->
+    <div class="fixed-bottom-bar shadow-lg">
+        <div id="info-ref" class="small text-muted d-none d-sm-block">
+            <!-- Hiện mã hồ sơ trên iPad, ẩn trên iPhone cho gọn -->
+        </div>
+        <div class="d-flex gap-2 w-100 justify-content-end">
+            <button class="btn btn-outline-secondary px-3 fw-bold" onclick="location.reload()">
+                <i class="fas fa-undo"></i> LÀM MỚI
             </button>
-            <div id="info-ref" class="small text-muted align-self-center"></div>
-            <button class="btn btn-success px-5 fw-bold" onclick="SIGN.actions.submit()">
-                HOÀN TẤT & GỬI <i class="fas fa-paper-plane ms-1"></i>
+            <button class="btn btn-danger px-4 fw-bold shadow-sm" onclick="SIGN.actions.finalSubmit()">
+                HOÀN TẤT & GỬI <i class="fas fa-check-double ms-1"></i>
             </button>
         </div>
     </div>
+
 </div>
 
 <!-- Lưu QueueID để gửi lên backend -->
@@ -67,6 +176,6 @@
 
 {% block scripts %}
 <!-- Thư viện Signature Pad (CDN) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.4/signature_pad.min.js" integrity="sha512-Mtr2f9aMp/TVEdDWcRlcREy9NfgsvXvApdxrm3/gK8lAMWnXrFsYaoW01B5eJhrUpBT7hmIjLeaQe0hnL7Oh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@5.1.3/dist/signature_pad.umd.min.js"></script>
 <script src="/static/js/sign/sign_handler.js"></script>
 {% endblock %}

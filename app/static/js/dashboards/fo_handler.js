@@ -426,6 +426,9 @@ FO_DASH.actions = {
         };
 
         console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
+        // Tự động load danh sách thiết bị Online ngay khi mở modal
+        this.loadOnlineDevices();
+        
         // 2. Hiện Modal chọn Mẫu & Thiết bị (Modal này bạn đã tạo ở bước trước)
         $('#modalSelectSign').modal('show');
         $('#info-booking-sign').text(`Đang xử lý Folio: ${folio} | Group: ${group || 'Lẻ'}`);
@@ -446,8 +449,7 @@ FO_DASH.actions = {
             `).join('');
             $('#list-devices-online').html(html || '<div class="text-danger p-2">Không có iPad nào Online!</div>');
         });
-        // Tự động load danh sách thiết bị Online ngay khi mở modal
-        this.loadOnlineDevices();
+        
     },
 
     loadOnlineDevices: function () {
@@ -510,7 +512,7 @@ FO_DASH.actions = {
             DeviceID: deviceId
             // CreatedBy: Server tự lấy từ session như đã bàn
         };
-
+        console.log(payload);
         $.ajax({
             url: '/api/v1/queue/send',
             type: 'POST',
