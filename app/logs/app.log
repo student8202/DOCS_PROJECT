@@ -29010,3 +29010,1055 @@
 2026-03-26 20:30:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
 2026-03-26 20:31:42 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
 2026-03-26 20:31:42 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 7.33ms
+2026-03-26 20:38:59 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-26 20:38:59 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 10.32ms
+2026-03-26 20:38:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 20:38:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 8.98ms
+2026-03-26 20:39:00 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 20:39:00 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 65.48ms
+2026-03-26 20:39:00 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 20:39:00 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.99ms
+2026-03-26 20:39:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 20:39:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 20:39:04 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:39:04 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 6.15ms
+2026-03-26 20:39:04 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 20:39:04 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:39:04 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 13.18ms
+2026-03-26 20:39:04 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 5.02ms
+2026-03-26 20:39:06 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 20:39:06 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 6.69ms
+2026-03-26 20:39:07 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 20:39:07 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 7.88ms
+2026-03-26 20:39:11 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 20:39:11 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 20:39:11 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.76ms
+2026-03-26 20:39:11 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 8.13ms
+2026-03-26 20:39:11 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 20:39:11 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 17.38ms
+2026-03-26 20:39:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 20:39:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.24ms
+2026-03-26 20:39:12 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 20:39:12 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 7.58ms
+2026-03-26 20:39:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 20:39:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.41ms
+2026-03-26 20:45:10 | INFO     | START | GET /sign/waiting | IP: 192.168.1.247
+2026-03-26 20:45:10 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-26 20:45:12 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:45:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.97ms
+2026-03-26 20:45:21 | INFO     | START | POST /api/v1/devices/register | IP: 192.168.1.247
+2026-03-26 20:45:21 | INFO     | END   | POST /api/v1/devices/register | Status: 200 | Time: 19.88ms
+2026-03-26 20:45:21 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 20:45:21 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.50ms
+2026-03-26 20:45:21 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:45:21 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.01ms
+2026-03-26 20:45:26 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:45:26 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 8.17ms
+2026-03-26 20:45:31 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 20:45:31 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:45:31 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 11.93ms
+2026-03-26 20:45:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 28.10ms
+2026-03-26 20:45:36 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:45:36 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 5.76ms
+2026-03-26 20:45:37 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:45:37 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 20:45:37 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 7.08ms
+2026-03-26 20:45:37 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 10.56ms
+2026-03-26 20:45:37 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:45:37 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 0.00ms
+2026-03-26 20:45:39 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 20:45:39 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 8.20ms
+2026-03-26 20:45:41 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 20:45:41 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:45:41 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 24.35ms
+2026-03-26 20:45:41 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 31.45ms
+2026-03-26 20:45:42 | INFO     | START | GET /sign/process/15 | IP: 192.168.1.247
+2026-03-26 20:45:42 | INFO     | END   | GET /sign/process/15 | Status: 200 | Time: 0.00ms
+2026-03-26 20:45:42 | INFO     | START | GET /api/v1/queue/get-content/15 | IP: 192.168.1.247
+2026-03-26 20:45:42 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:45:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:45:42 | INFO     | END   | GET /api/v1/queue/get-content/15 | Status: 200 | Time: 6.78ms
+2026-03-26 20:45:50 | INFO     | START | GET /sign/process/15 | IP: 192.168.1.247
+2026-03-26 20:45:50 | INFO     | END   | GET /sign/process/15 | Status: 200 | Time: 0.00ms
+2026-03-26 20:45:50 | INFO     | START | GET /api/v1/queue/get-content/15 | IP: 192.168.1.247
+2026-03-26 20:45:50 | INFO     | END   | GET /api/v1/queue/get-content/15 | Status: 200 | Time: 0.00ms
+2026-03-26 20:45:50 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:45:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:46:07 | INFO     | START | GET /sign/waiting | IP: 192.168.1.247
+2026-03-26 20:46:07 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 3.52ms
+2026-03-26 20:46:08 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 20:46:08 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:46:08 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-03-26 20:46:08 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-03-26 20:46:08 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:46:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:46:13 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:46:13 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.70ms
+2026-03-26 20:46:16 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:46:16 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 0.00ms
+2026-03-26 20:46:17 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 20:46:17 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 1.98ms
+2026-03-26 20:46:17 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 20:46:17 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.62ms
+2026-03-26 20:46:18 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 20:46:18 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:46:18 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.51ms
+2026-03-26 20:46:18 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.51ms
+2026-03-26 20:46:22 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 20:46:22 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 4.17ms
+2026-03-26 20:46:23 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 20:46:23 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 9.42ms
+2026-03-26 20:46:23 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:46:23 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:46:24 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:46:24 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:46:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:46:24 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 4.01ms
+2026-03-26 20:52:09 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:52:09 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 24.02ms
+2026-03-26 20:52:09 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:52:09 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:52:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:52:09 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 14.68ms
+2026-03-26 20:52:16 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:52:16 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:17 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:52:17 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:17 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:52:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:52:18 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:52:18 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:19 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:52:19 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:52:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:52:26 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:52:26 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:27 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:52:27 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:52:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:52:27 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:37 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:52:37 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:52:37 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:52:37 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:52:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:52:37 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 4.04ms
+2026-03-26 20:55:43 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 20:55:43 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 23.47ms
+2026-03-26 20:55:43 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 20:55:43 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 13.64ms
+2026-03-26 20:55:43 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 20:55:43 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:56:27 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:56:27 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:56:27 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:56:27 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:56:27 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:56:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.34ms
+2026-03-26 20:56:29 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:56:29 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:56:29 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:56:29 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:56:29 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 4.22ms
+2026-03-26 20:56:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.22ms
+2026-03-26 20:56:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 20:56:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.55ms
+2026-03-26 20:58:16 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:58:16 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:58:16 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:58:16 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:58:16 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:58:16 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 15.89ms
+2026-03-26 20:58:27 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:58:27 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 1.01ms
+2026-03-26 20:58:28 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:58:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:58:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:58:28 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 10.96ms
+2026-03-26 20:59:16 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:59:16 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:59:17 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:59:17 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:59:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:59:17 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 11.90ms
+2026-03-26 20:59:24 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:59:24 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 1.51ms
+2026-03-26 20:59:24 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:59:24 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:59:24 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:59:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 20:59:36 | INFO     | START | GET /sign/process/16 | IP: 192.168.1.247
+2026-03-26 20:59:36 | INFO     | END   | GET /sign/process/16 | Status: 200 | Time: 0.00ms
+2026-03-26 20:59:37 | INFO     | START | GET /api/v1/queue/get-content/16 | IP: 192.168.1.247
+2026-03-26 20:59:37 | INFO     | END   | GET /api/v1/queue/get-content/16 | Status: 200 | Time: 6.55ms
+2026-03-26 20:59:37 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 20:59:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:00:04 | INFO     | START | GET /sign/waiting | IP: 192.168.1.247
+2026-03-26 21:00:04 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 2.55ms
+2026-03-26 21:00:05 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 21:00:05 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:05 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-03-26 21:00:05 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 19.78ms
+2026-03-26 21:00:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:00:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-26 21:00:10 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:10 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 3.63ms
+2026-03-26 21:00:15 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:15 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 21:00:15 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 11.52ms
+2026-03-26 21:00:15 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 11.52ms
+2026-03-26 21:00:20 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:20 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 6.88ms
+2026-03-26 21:00:22 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 21:00:22 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 21:00:22 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 6.10ms
+2026-03-26 21:00:22 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.77ms
+2026-03-26 21:00:22 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 21:00:22 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.01ms
+2026-03-26 21:00:25 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 21:00:25 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:25 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 5.95ms
+2026-03-26 21:00:25 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 16.34ms
+2026-03-26 21:00:27 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 21:00:27 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 6.11ms
+2026-03-26 21:00:30 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 21:00:30 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 14.41ms
+2026-03-26 21:00:30 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:00:30 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:00:30 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:00:30 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:00:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:00:30 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:07:01 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 21:07:01 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 21:07:01 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 20.82ms
+2026-03-26 21:07:01 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 17.39ms
+2026-03-26 21:07:01 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 21:07:01 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.62ms
+2026-03-26 21:11:55 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:11:55 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 27.40ms
+2026-03-26 21:11:55 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 21:11:55 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.39ms
+2026-03-26 21:11:56 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:11:56 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 19.24ms
+2026-03-26 21:11:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:11:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 21:12:07 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:12:07 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:12:07 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:12:07 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 15.74ms
+2026-03-26 21:12:07 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:12:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:12:13 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:12:13 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 12.04ms
+2026-03-26 21:12:14 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:12:14 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:12:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 10.94ms
+2026-03-26 21:12:14 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 18.93ms
+2026-03-26 21:12:19 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:12:19 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:12:19 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:12:19 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:12:19 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:12:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.25ms
+2026-03-26 21:12:24 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:12:24 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:12:25 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:12:25 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 1.09ms
+2026-03-26 21:12:25 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:12:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:15:18 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:15:18 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 43.91ms
+2026-03-26 21:15:18 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:15:18 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:15:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 21:15:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-26 21:15:19 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:15:19 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 12.53ms
+2026-03-26 21:15:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:15:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:16:05 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:16:05 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:16:06 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:16:06 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 6.26ms
+2026-03-26 21:16:06 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:16:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:19:25 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:25 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 21.84ms
+2026-03-26 21:19:26 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:19:26 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 16.81ms
+2026-03-26 21:19:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:19:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-03-26 21:19:28 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:28 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:19:28 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:28 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.51ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.01ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.01ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.39ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:19:29 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:29 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.99ms
+2026-03-26 21:19:30 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:19:30 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 4.61ms
+2026-03-26 21:19:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:19:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:19:40 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:40 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 21.41ms
+2026-03-26 21:19:40 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:40 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:19:41 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:41 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.01ms
+2026-03-26 21:19:41 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:19:41 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.99ms
+2026-03-26 21:19:41 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:19:41 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 2.53ms
+2026-03-26 21:19:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:19:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:21:36 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:21:36 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:21:36 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:21:36 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 15.85ms
+2026-03-26 21:21:36 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:21:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:29:28 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:29:28 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 10.55ms
+2026-03-26 21:29:28 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:29:28 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 19.22ms
+2026-03-26 21:29:28 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:29:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.51ms
+2026-03-26 21:29:30 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:29:30 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:29:30 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:29:30 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:29:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:29:30 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 8.27ms
+2026-03-26 21:57:07 | INFO     | START | POST /fo/templates/save | IP: 127.0.0.1
+2026-03-26 21:57:07 | INFO     | END   | POST /fo/templates/save | Status: 200 | Time: 19.51ms
+2026-03-26 21:57:07 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 21:57:07 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 2.36ms
+2026-03-26 21:57:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:57:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 40.19ms
+2026-03-26 21:57:17 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:57:17 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 15.24ms
+2026-03-26 21:57:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:57:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.14ms
+2026-03-26 21:57:31 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:57:31 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:57:31 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:57:31 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:57:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:57:31 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 7.39ms
+2026-03-26 21:57:41 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:57:41 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:57:41 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:57:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:57:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:57:41 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 4.01ms
+2026-03-26 21:57:52 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:57:52 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:57:52 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:57:52 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 14.03ms
+2026-03-26 21:57:52 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:57:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:57:58 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:57:58 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 4.88ms
+2026-03-26 21:57:58 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:57:58 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:57:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:57:58 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:58:37 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:58:37 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:58:38 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:58:38 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:58:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 9.46ms
+2026-03-26 21:58:38 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 9.46ms
+2026-03-26 21:58:48 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 21:58:48 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:58:49 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 21:58:49 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 0.00ms
+2026-03-26 21:58:49 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 21:58:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 21:59:26 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 21:59:26 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:59:26 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 21:59:26 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 0.00ms
+2026-03-26 21:59:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 21:59:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 21:59:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 21:59:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:02:55 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:02:55 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 27.55ms
+2026-03-26 22:02:55 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:02:55 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 15.33ms
+2026-03-26 22:02:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:02:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:03:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:03:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.22ms
+2026-03-26 22:03:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:03:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.32ms
+2026-03-26 22:03:19 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:03:19 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 2.01ms
+2026-03-26 22:03:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:03:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:03:32 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:03:32 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 33.17ms
+2026-03-26 22:03:32 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:03:32 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-03-26 22:03:34 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:03:34 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 2.99ms
+2026-03-26 22:03:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:03:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-26 22:04:22 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:04:22 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:08:44 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:08:44 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 30.83ms
+2026-03-26 22:10:23 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:10:23 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 26.54ms
+2026-03-26 22:10:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:10:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:10:24 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:10:24 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 11.30ms
+2026-03-26 22:10:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:10:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-26 22:10:38 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 22:10:38 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 22:10:38 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 22:10:38 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 0.00ms
+2026-03-26 22:10:38 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:10:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.74ms
+2026-03-26 22:11:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:11:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:12:39 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:12:39 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 22.56ms
+2026-03-26 22:12:39 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:12:39 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-03-26 22:12:41 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:12:41 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 14.45ms
+2026-03-26 22:12:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:12:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:13:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:13:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:15:05 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 22:15:05 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 15.18ms
+2026-03-26 22:15:05 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 22:15:05 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 17.65ms
+2026-03-26 22:15:05 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:15:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:15:39 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 22:15:39 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 0.00ms
+2026-03-26 22:15:39 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:15:39 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 22:15:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.72ms
+2026-03-26 22:15:39 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 3.73ms
+2026-03-26 22:16:06 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:16:06 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.12ms
+2026-03-26 22:16:06 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:16:06 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:16:07 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:16:07 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 3.59ms
+2026-03-26 22:16:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:16:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:17:14 | INFO     | START | GET /sign/process/17 | IP: 192.168.1.247
+2026-03-26 22:17:14 | INFO     | END   | GET /sign/process/17 | Status: 200 | Time: 4.35ms
+2026-03-26 22:17:15 | INFO     | START | GET /api/v1/queue/get-content/17 | IP: 192.168.1.247
+2026-03-26 22:17:15 | INFO     | END   | GET /api/v1/queue/get-content/17 | Status: 200 | Time: 36.01ms
+2026-03-26 22:17:15 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:17:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:18:01 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:18:01 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 21.34ms
+2026-03-26 22:18:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:18:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 52.99ms
+2026-03-26 22:18:02 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:18:02 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 67.68ms
+2026-03-26 22:18:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:18:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:18:43 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:18:43 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 7.22ms
+2026-03-26 22:18:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:18:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.52ms
+2026-03-26 22:18:44 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:18:44 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 1.99ms
+2026-03-26 22:18:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:18:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:24:57 | INFO     | START | POST /fo/templates/save | IP: 127.0.0.1
+2026-03-26 22:24:57 | INFO     | END   | POST /fo/templates/save | Status: 200 | Time: 16.50ms
+2026-03-26 22:24:57 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:24:57 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 3.80ms
+2026-03-26 22:25:01 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:25:01 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.00ms
+2026-03-26 22:25:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:25:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-03-26 22:25:02 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:25:02 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 4.14ms
+2026-03-26 22:25:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:25:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:25:20 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:25:20 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 22:25:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:25:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.53ms
+2026-03-26 22:25:21 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:25:21 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 3.00ms
+2026-03-26 22:25:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:25:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:26:51 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 22:26:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:26:51 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.02ms
+2026-03-26 22:26:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.44ms
+2026-03-26 22:26:51 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.18ms
+2026-03-26 22:26:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-26 22:26:51 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:26:51 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 22:26:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:26:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.08ms
+2026-03-26 22:26:52 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:26:52 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.58ms
+2026-03-26 22:26:52 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:26:52 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:26:53 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:26:53 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 14.52ms
+2026-03-26 22:26:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:26:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.40ms
+2026-03-26 22:27:19 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:27:19 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 2.56ms
+2026-03-26 22:28:43 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:28:43 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 16.98ms
+2026-03-26 22:29:01 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:01 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.22ms
+2026-03-26 22:29:01 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:01 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-03-26 22:29:02 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:29:02 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 5.30ms
+2026-03-26 22:29:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:29:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.51ms
+2026-03-26 22:29:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-26 22:29:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.07ms
+2026-03-26 22:29:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.01ms
+2026-03-26 22:29:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.00ms
+2026-03-26 22:29:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:29:18 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:18 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 0.00ms
+2026-03-26 22:29:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:29:18 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:29:18 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.00ms
+2026-03-26 22:29:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.04ms
+2026-03-26 22:29:19 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:29:19 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 3.10ms
+2026-03-26 22:29:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:29:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-03-26 22:29:55 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-26 22:29:55 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 45.70ms
+2026-03-26 22:29:55 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:29:55 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-26 22:29:57 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:29:57 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:29:57 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 31.89ms
+2026-03-26 22:29:57 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 7.51ms
+2026-03-26 22:29:57 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:29:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:30:01 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:30:01 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:30:01 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 3.39ms
+2026-03-26 22:30:01 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.97ms
+2026-03-26 22:30:01 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:30:01 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 1.02ms
+2026-03-26 22:30:02 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:30:02 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.27ms
+2026-03-26 22:30:03 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 22:30:03 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 15.18ms
+2026-03-26 22:30:07 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:30:07 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:30:07 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 14.49ms
+2026-03-26 22:30:07 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.06ms
+2026-03-26 22:30:07 | INFO     | START | GET /sign/process/18 | IP: 127.0.0.1
+2026-03-26 22:30:07 | INFO     | END   | GET /sign/process/18 | Status: 200 | Time: 0.00ms
+2026-03-26 22:30:07 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:30:07 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.13ms
+2026-03-26 22:30:07 | INFO     | START | GET /api/v1/queue/get-content/18 | IP: 127.0.0.1
+2026-03-26 22:30:08 | INFO     | END   | GET /api/v1/queue/get-content/18 | Status: 200 | Time: 3.21ms
+2026-03-26 22:30:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:30:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:30:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:30:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.59ms
+2026-03-26 22:30:12 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:30:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:30:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:30:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.91ms
+2026-03-26 22:30:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:30:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-03-26 22:30:18 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-26 22:30:18 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.50ms
+2026-03-26 22:30:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:30:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:30:19 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:30:19 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:30:19 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 5.62ms
+2026-03-26 22:30:19 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.01ms
+2026-03-26 22:30:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:30:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.42ms
+2026-03-26 22:30:23 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:30:23 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 1.50ms
+2026-03-26 22:30:23 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:30:23 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:30:23 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.27ms
+2026-03-26 22:30:23 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.40ms
+2026-03-26 22:30:24 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:30:24 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 0.00ms
+2026-03-26 22:30:27 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 22:30:27 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 1.29ms
+2026-03-26 22:30:29 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:30:29 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:30:29 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.04ms
+2026-03-26 22:30:29 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 3.71ms
+2026-03-26 22:30:29 | INFO     | START | GET /sign/process/19 | IP: 127.0.0.1
+2026-03-26 22:30:29 | INFO     | END   | GET /sign/process/19 | Status: 200 | Time: 1.00ms
+2026-03-26 22:30:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:30:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.06ms
+2026-03-26 22:30:29 | INFO     | START | GET /api/v1/queue/get-content/19 | IP: 127.0.0.1
+2026-03-26 22:30:29 | INFO     | END   | GET /api/v1/queue/get-content/19 | Status: 200 | Time: 2.54ms
+2026-03-26 22:30:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:30:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:32:03 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:03 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.03ms
+2026-03-26 22:32:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:32:04 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:32:05 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 16.86ms
+2026-03-26 22:32:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:32:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.07ms
+2026-03-26 22:32:08 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:08 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.00ms
+2026-03-26 22:32:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-26 22:32:09 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:32:09 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 1.51ms
+2026-03-26 22:32:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:32:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:32:10 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:10 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.51ms
+2026-03-26 22:32:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:32:10 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:10 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 2.03ms
+2026-03-26 22:32:11 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:11 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 13.13ms
+2026-03-26 22:32:11 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:11 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-26 22:32:11 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:11 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.04ms
+2026-03-26 22:32:11 | INFO     | START | GET /sign/process/14 | IP: 127.0.0.1
+2026-03-26 22:32:11 | INFO     | END   | GET /sign/process/14 | Status: 200 | Time: 1.39ms
+2026-03-26 22:32:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.06ms
+2026-03-26 22:32:12 | INFO     | START | GET /api/v1/queue/get-content/14 | IP: 127.0.0.1
+2026-03-26 22:32:12 | INFO     | END   | GET /api/v1/queue/get-content/14 | Status: 200 | Time: 2.10ms
+2026-03-26 22:32:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:32:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.32ms
+2026-03-26 22:32:28 | INFO     | START | GET /sign/process/19 | IP: 127.0.0.1
+2026-03-26 22:32:28 | INFO     | END   | GET /sign/process/19 | Status: 200 | Time: 2.10ms
+2026-03-26 22:32:28 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:32:28 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:32:29 | INFO     | START | GET /api/v1/queue/get-content/19 | IP: 127.0.0.1
+2026-03-26 22:32:29 | INFO     | END   | GET /api/v1/queue/get-content/19 | Status: 200 | Time: 0.00ms
+2026-03-26 22:32:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:32:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-26 22:35:01 | INFO     | START | POST /fo/templates/save | IP: 127.0.0.1
+2026-03-26 22:35:01 | INFO     | END   | POST /fo/templates/save | Status: 200 | Time: 15.46ms
+2026-03-26 22:35:01 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:35:01 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 2.04ms
+2026-03-26 22:35:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:35:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 125.67ms
+2026-03-26 22:35:06 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:35:06 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:35:06 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 2.53ms
+2026-03-26 22:35:06 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 11.15ms
+2026-03-26 22:35:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:35:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.71ms
+2026-03-26 22:35:19 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-03-26 22:35:19 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 1.00ms
+2026-03-26 22:35:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:35:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 5.63ms
+2026-03-26 22:35:20 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:35:20 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:35:20 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 16.10ms
+2026-03-26 22:35:20 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 5.58ms
+2026-03-26 22:35:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:35:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:35:23 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:35:23 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 5.75ms
+2026-03-26 22:35:23 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:35:23 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 3.29ms
+2026-03-26 22:35:23 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:35:23 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 3.53ms
+2026-03-26 22:35:26 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:35:26 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 0.00ms
+2026-03-26 22:35:28 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 22:35:28 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 9.52ms
+2026-03-26 22:35:31 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-03-26 22:35:31 | INFO     | START | GET /api/v1/queue/check/FO02 | IP: 127.0.0.1
+2026-03-26 22:35:31 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 4.01ms
+2026-03-26 22:35:31 | INFO     | END   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 8.27ms
+2026-03-26 22:35:31 | INFO     | START | GET /sign/process/20 | IP: 127.0.0.1
+2026-03-26 22:35:31 | INFO     | END   | GET /sign/process/20 | Status: 200 | Time: 0.00ms
+2026-03-26 22:35:31 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:35:31 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 22:35:32 | INFO     | START | GET /api/v1/queue/get-content/20 | IP: 127.0.0.1
+2026-03-26 22:35:32 | INFO     | END   | GET /api/v1/queue/get-content/20 | Status: 200 | Time: 9.45ms
+2026-03-26 22:35:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:35:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:36:09 | INFO     | START | GET /sign/waiting | IP: 192.168.1.247
+2026-03-26 22:36:09 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-03-26 22:36:10 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 22:36:10 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 22:36:10 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 5.56ms
+2026-03-26 22:36:10 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.61ms
+2026-03-26 22:36:10 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:36:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:36:15 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 22:36:15 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 1.22ms
+2026-03-26 22:36:16 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:36:16 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 4.40ms
+2026-03-26 22:36:16 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:36:16 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-03-26 22:36:16 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 6.66ms
+2026-03-26 22:36:16 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 4.76ms
+2026-03-26 22:36:20 | INFO     | START | POST /api/v1/devices/ping | IP: 192.168.1.247
+2026-03-26 22:36:20 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 22:36:20 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 11.86ms
+2026-03-26 22:36:20 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 14.93ms
+2026-03-26 22:36:20 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-03-26 22:36:20 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 8.41ms
+2026-03-26 22:36:25 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.247
+2026-03-26 22:36:25 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.77ms
+2026-03-26 22:36:25 | INFO     | START | GET /sign/process/21 | IP: 192.168.1.247
+2026-03-26 22:36:25 | INFO     | END   | GET /sign/process/21 | Status: 200 | Time: 1.12ms
+2026-03-26 22:36:25 | INFO     | START | GET /api/v1/queue/get-content/21 | IP: 192.168.1.247
+2026-03-26 22:36:25 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:36:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 10.85ms
+2026-03-26 22:36:25 | INFO     | END   | GET /api/v1/queue/get-content/21 | Status: 200 | Time: 15.17ms
+2026-03-26 22:36:48 | INFO     | START | GET /sign/process/21 | IP: 192.168.1.247
+2026-03-26 22:36:48 | INFO     | END   | GET /sign/process/21 | Status: 200 | Time: 0.00ms
+2026-03-26 22:36:48 | INFO     | START | GET /api/v1/queue/get-content/21 | IP: 192.168.1.247
+2026-03-26 22:36:48 | INFO     | START | GET /favicon.ico | IP: 192.168.1.247
+2026-03-26 22:36:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.45ms
+2026-03-26 22:36:48 | INFO     | END   | GET /api/v1/queue/get-content/21 | Status: 200 | Time: 6.03ms
+2026-03-26 22:37:45 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:37:45 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 3.54ms
+2026-03-26 22:40:12 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:40:12 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 20.04ms
+2026-03-26 22:40:23 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:40:23 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:40:50 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:40:50 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.13ms
+2026-03-26 22:40:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:40:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.57ms
+2026-03-26 22:40:51 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:40:51 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:40:51 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.88ms
+2026-03-26 22:40:51 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 7.10ms
+2026-03-26 22:40:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:40:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:40:55 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:40:55 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 2.56ms
+2026-03-26 22:41:40 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:41:40 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 4.16ms
+2026-03-26 22:41:48 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:41:48 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.03ms
+2026-03-26 22:41:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:41:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-03-26 22:41:49 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:41:49 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:41:49 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.96ms
+2026-03-26 22:41:49 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 2.96ms
+2026-03-26 22:41:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:41:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:41:51 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:41:51 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 3.22ms
+2026-03-26 22:41:57 | INFO     | START | GET /fo/templates/detail/2 | IP: 127.0.0.1
+2026-03-26 22:41:57 | INFO     | END   | GET /fo/templates/detail/2 | Status: 200 | Time: 1.17ms
+2026-03-26 22:42:55 | INFO     | START | GET /fo/templates/system-view | IP: 127.0.0.1
+2026-03-26 22:42:55 | INFO     | END   | GET /fo/templates/system-view | Status: 200 | Time: 26.92ms
+2026-03-26 22:42:55 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:42:55 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 3.99ms
+2026-03-26 22:42:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:42:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-03-26 22:43:01 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:43:01 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.00ms
+2026-03-26 22:43:01 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:43:01 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:43:02 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 8.71ms
+2026-03-26 22:43:02 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 7.44ms
+2026-03-26 22:43:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:43:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:43:13 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:43:13 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.41ms
+2026-03-26 22:43:14 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:43:14 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:43:14 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 6.75ms
+2026-03-26 22:43:14 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 6.76ms
+2026-03-26 22:43:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:43:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:47:02 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:02 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 18.76ms
+2026-03-26 22:47:03 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:47:03 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:47:03 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 18.12ms
+2026-03-26 22:47:03 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 17.81ms
+2026-03-26 22:47:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:47:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:47:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.02ms
+2026-03-26 22:47:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 22:47:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 7.74ms
+2026-03-26 22:47:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.22ms
+2026-03-26 22:47:05 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:05 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 3.26ms
+2026-03-26 22:47:06 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:47:06 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:47:06 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.78ms
+2026-03-26 22:47:06 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 3.74ms
+2026-03-26 22:47:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:47:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.27ms
+2026-03-26 22:47:08 | INFO     | START | GET /fo/templates/detail/3 | IP: 127.0.0.1
+2026-03-26 22:47:08 | INFO     | END   | GET /fo/templates/detail/3 | Status: 200 | Time: 1.72ms
+2026-03-26 22:47:14 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:14 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-26 22:47:49 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:49 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 22:47:49 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:49 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.04ms
+2026-03-26 22:47:49 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:49 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.01ms
+2026-03-26 22:47:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:47:50 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.43ms
+2026-03-26 22:47:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.11ms
+2026-03-26 22:47:50 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.01ms
+2026-03-26 22:47:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.51ms
+2026-03-26 22:47:50 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.73ms
+2026-03-26 22:47:50 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:50 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-03-26 22:47:51 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:47:51 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.02ms
+2026-03-26 22:47:51 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:47:51 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.75ms
+2026-03-26 22:47:52 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:47:52 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:47:52 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 10.68ms
+2026-03-26 22:47:52 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 9.67ms
+2026-03-26 22:47:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:47:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:47:55 | INFO     | START | GET /fo/templates/detail/3 | IP: 127.0.0.1
+2026-03-26 22:47:55 | INFO     | END   | GET /fo/templates/detail/3 | Status: 200 | Time: 3.90ms
+2026-03-26 22:48:46 | INFO     | START | GET /fo/templates/system-view | IP: 127.0.0.1
+2026-03-26 22:48:46 | INFO     | END   | GET /fo/templates/system-view | Status: 200 | Time: 1.02ms
+2026-03-26 22:48:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:48:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.11ms
+2026-03-26 22:48:47 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:48:47 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.65ms
+2026-03-26 22:48:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:48:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-03-26 22:48:53 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:48:53 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.09ms
+2026-03-26 22:48:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:48:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 22:48:54 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:48:54 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:48:54 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 10.85ms
+2026-03-26 22:48:54 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 10.61ms
+2026-03-26 22:48:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:48:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 22:49:13 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:49:13 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 22:49:13 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:49:13 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.58ms
+2026-03-26 22:49:14 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:49:14 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:49:14 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 3.48ms
+2026-03-26 22:49:14 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 4.04ms
+2026-03-26 22:49:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:49:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-03-26 22:52:16 | INFO     | START | GET /fo/templates/detail/1 | IP: 127.0.0.1
+2026-03-26 22:52:16 | INFO     | END   | GET /fo/templates/detail/1 | Status: 200 | Time: 15.09ms
+2026-03-26 22:52:21 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 22:52:21 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.16ms
+2026-03-26 22:52:22 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 22:52:22 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 22:52:22 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 10.01ms
+2026-03-26 22:52:22 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 9.47ms
+2026-03-26 22:52:22 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 22:52:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-26 22:58:47 | INFO     | START | GET /fo/templates/detail/3 | IP: 127.0.0.1
+2026-03-26 22:58:47 | INFO     | END   | GET /fo/templates/detail/3 | Status: 200 | Time: 10.18ms
+2026-03-26 22:58:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 22:58:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.19ms
+2026-03-26 23:02:39 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:39 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:02:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.12ms
+2026-03-26 23:02:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.01ms
+2026-03-26 23:02:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-03-26 23:02:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 4.28ms
+2026-03-26 23:02:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:02:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.51ms
+2026-03-26 23:02:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:02:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.20ms
+2026-03-26 23:02:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 23:02:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:02:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.05ms
+2026-03-26 23:02:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 4.04ms
+2026-03-26 23:02:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-26 23:02:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:02:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:02:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:02:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.39ms
+2026-03-26 23:02:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.54ms
+2026-03-26 23:02:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-26 23:02:42 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.18ms
+2026-03-26 23:02:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-03-26 23:02:42 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.01ms
+2026-03-26 23:02:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:02:42 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.13ms
+2026-03-26 23:02:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 23:02:42 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.94ms
+2026-03-26 23:02:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:02:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.38ms
+2026-03-26 23:02:43 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 23:02:43 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 23:02:43 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 18.92ms
+2026-03-26 23:02:43 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 23.17ms
+2026-03-26 23:02:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 23:02:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-03-26 23:03:37 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:37 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:03:37 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:37 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.42ms
+2026-03-26 23:03:38 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 23:03:38 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 5.99ms
+2026-03-26 23:03:38 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 23:03:38 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 7.58ms
+2026-03-26 23:03:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 23:03:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.07ms
+2026-03-26 23:03:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:03:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-03-26 23:03:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 0.00ms
+2026-03-26 23:03:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-03-26 23:03:40 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.50ms
+2026-03-26 23:03:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 23:03:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.00ms
+2026-03-26 23:03:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 5.04ms
+2026-03-26 23:03:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.51ms
+2026-03-26 23:03:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.77ms
+2026-03-26 23:03:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.02ms
+2026-03-26 23:03:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:03:41 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.84ms
+2026-03-26 23:03:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:03:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-03-26 23:03:42 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 23:03:42 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 23:03:42 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 4.05ms
+2026-03-26 23:03:42 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 4.05ms
+2026-03-26 23:03:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 23:03:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-03-26 23:04:39 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:04:39 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.04ms
+2026-03-26 23:04:39 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:04:39 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.72ms
+2026-03-26 23:04:40 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 23:04:40 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 23:04:40 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 7.19ms
+2026-03-26 23:04:40 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 6.45ms
+2026-03-26 23:04:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 23:04:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-03-26 23:06:32 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:06:32 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 1.29ms
+2026-03-26 23:06:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:06:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.55ms
+2026-03-26 23:06:33 | INFO     | START | GET /fo/templates/custom-view | IP: 127.0.0.1
+2026-03-26 23:06:33 | INFO     | END   | GET /fo/templates/custom-view | Status: 200 | Time: 2.01ms
+2026-03-26 23:06:33 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-03-26 23:06:33 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-03-26 23:06:34 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-03-26 23:06:34 | INFO     | START | GET /fo/templates/tags | IP: 127.0.0.1
+2026-03-26 23:06:34 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 16.84ms
+2026-03-26 23:06:34 | INFO     | END   | GET /fo/templates/tags | Status: 200 | Time: 3.91ms
+2026-03-26 23:06:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-03-26 23:06:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-03-26 23:06:38 | INFO     | START | GET /fo/templates/detail/3 | IP: 127.0.0.1
+2026-03-26 23:06:38 | INFO     | END   | GET /fo/templates/detail/3 | Status: 200 | Time: 6.96ms

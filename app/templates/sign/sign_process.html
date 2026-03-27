@@ -28,8 +28,8 @@
 
     /* Style cho vùng chờ ký trên tờ giấy */
     .sig-placeholder {
-        border: 1px dashed #ccc;
-        background: #fff9f9;
+        /* border: 1px dashed #ccc; */
+        /* background: #fff9f9; */
         min-height: 80px;
         display: flex;
         align-items: center;
@@ -114,6 +114,52 @@
             padding: 15px 15px 120px 15px;
             /* Tăng padding dưới để không bị lấp nội dung */
         }
+    }
+
+    /* 1. Vùng chứa ngoài: Luôn bằng màn hình điện thoại */
+    #doc-viewer {
+        width: 100%;
+        height: calc(100vh - 70px);
+        overflow: auto;
+        /* Tự hiện thanh cuộn ngang/dọc */
+        background: #525659;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* 2. Tờ giấy: Ép cứng chiều rộng A4 */
+    #rendered-content {
+        width: 900px;
+        /* Ép cứng để không nhảy chữ */
+        margin: 0 auto;
+        background: #fff;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Giữ nguyên layout như Desktop */
+    }
+
+    /* 3. Modal ký: Phải to theo màn hình điện thoại, không theo tờ giấy */
+    #modal-pad {
+        position: fixed;
+        /* Cố định theo khung hình thiết bị */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pad-container {
+        width: 95%;
+        /* To gần hết màn hình điện thoại */
+        max-width: 500px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 15px;
     }
 </style>
 

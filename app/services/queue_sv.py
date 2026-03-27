@@ -29,7 +29,7 @@ class QueueService:
             # Cấy vùng chứa cho Lễ tân
             html_final = html_final.replace("{{ReceptionSignatureImg}}", 
                 '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
-                '<img id="img-recep-sig" src="" style="display:none; max-height:80px;" />'
+                '<img id="img-recep-sig" src="" style="display:none; max-height:120px;" />'
                 '<span class="placeholder-text">Chạm để ký / Staff Sign</span>'
                 '</div>')
 
