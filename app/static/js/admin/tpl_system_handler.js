@@ -218,9 +218,10 @@ TPL_SYS.actions = {
 
         // Gán lại mã sạch vào giao diện
         codeInput.val(code);
-
+        // (Lấy từ input ẩn đã có data):
+        const currentId = $('#tpl_sys_id').val();
         const payload = {
-            TemplateID: TPL_SYS.config.currentId,
+            TemplateID: currentId ? parseInt(currentId) : 0,
             TemplateCode: code,
             TemplateName: name,
             ModuleName: $('#sys_module').val(),

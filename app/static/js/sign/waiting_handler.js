@@ -32,6 +32,30 @@ WAITING.helpers = {
             dot.addClass('offline').removeClass('online');
             txt.text('CHƯA KẾT NỐI').removeClass('text-success');
         }
+    },
+    // ID định danh máy (Vĩnh viễn trong Browser)
+    getBrowserUUID: function () {
+        let uuid = localStorage.getItem('device_browser_uuid');
+        if (!uuid) {
+            uuid = 'BRW-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+            localStorage.setItem('device_browser_uuid', uuid);
+        }
+        return uuid;
+    },
+
+    // ID định danh Tab (Duy nhất cho mỗi cửa sổ đang mở)
+    getTabID: function () {
+        let tabId = sessionStorage.getItem('device_tab_id');
+        if (!tabId) {
+            tabId = 'TAB-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+            sessionStorage.setItem('device_tab_id', tabId);
+        }
+        return tabId;
+    },
+
+    // Tạo chuỗi kết hợp để gửi lên Server
+    getFullConnectionID: function () {
+        return this.getBrowserUUID() + "|" + this.getTabID();
     }
 };
 
@@ -51,7 +75,7 @@ WAITING.actions = {
     register: function () {
         const deviceId = $('#set-device-id').val().trim().toUpperCase();
         const module = $('#set-module').val();
-        const browserUuid = WAITING.helpers.getBrowserUUID();
+        const browserUuid = WAITING.helpers.getFullConnectionID();
 
         if (!deviceId) {
             Swal.fire("Lỗi", "Vui lòng nhập Mã quầy (ID)", "error");
@@ -98,7 +122,8 @@ WAITING.actions = {
     // Báo danh định kỳ & Kiểm tra xem có bị máy khác "đá" ra không
     heartbeat: function () {
         const deviceId = localStorage.getItem('current_device_id');
-        const browserUuid = WAITING.helpers.getBrowserUUID();
+        // const browserUuid = WAITING.helpers.getBrowserUUID();
+        const fullConnId = WAITING.helpers.getFullConnectionID(); // Gửi cả UUID và TabID
 
         if (!deviceId) return;
 
@@ -106,7 +131,7 @@ WAITING.actions = {
             url: WAITING.config.apiBase + '/ping',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({ DeviceID: deviceId, ConnectionID: browserUuid }),
+            data: JSON.stringify({ DeviceID: deviceId, ConnectionID: fullConnId }),
             success: function (res) {
                 // Nếu server báo ConnectionID không khớp -> Máy khác đã chiếm quyền
                 if (res.status === 'conflict') {
@@ -156,11 +181,30 @@ WAITING.actions = {
     stopMonitoring: function () {
         clearInterval(WAITING.config.timerHeartbeat);
         clearInterval(WAITING.config.timerQueue);
+    },
+    resetDeviceQueue: function () {
+        const deviceId = localStorage.getItem('current_device_id');
+        if (!deviceId) return;
+
+        $.ajax({
+            url: '/api/v1/queue/reset-device',
+            type: 'POST',
+            contentType: 'application/json', // BẮT BUỘC phải có dòng này
+            data: JSON.stringify({ DeviceID: deviceId }), // Chuyển Object thành chuỗi JSON
+            success: function (res) {
+                console.log("Giải phóng thiết bị thành công");
+            },
+            error: function (err) {
+                console.error("Lỗi 422: Kiểm tra lại tên trường DeviceID trong Schema");
+            }
+        });
     }
 };
 
 // --- 4. SỰ KIỆN (EVENTS) ---
 $(document).ready(function () {
+    WAITING.actions.resetDeviceQueue();
+
     const savedId = localStorage.getItem('current_device_id');
     const browserUuid = WAITING.helpers.getBrowserUUID();
 
@@ -172,4 +216,6 @@ $(document).ready(function () {
     } else {
         WAITING.actions.showSetup();
     }
+
+
 });

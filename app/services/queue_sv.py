@@ -1,6 +1,7 @@
 from schemas.queue_sh import QueueSendSchema
 from database.db_connection import get_lv_docs_db
 from fastapi import HTTPException
+import os
 
 class QueueService:
     # 1. NHÂN VIÊN GỬI HỒ SƠ VÀO HÀNG ĐỢI
@@ -8,6 +9,20 @@ class QueueService:
         conn = get_lv_docs_db()
         cursor = conn.cursor()
         try:
+            # 1. KIỂM TRA TRẠNG THÁI THIẾT BỊ: Có hồ sơ nào chưa hoàn tất không?
+            # Status 0: Waiting, Status 1: Processing
+            cursor.execute("""
+                SELECT TOP 1 QueueID, RefID 
+                FROM dbo.tbl_SignatureQueue 
+                WHERE DeviceID = ? AND Status IN (0, 1)
+            """, (data.DeviceID,))
+            busy_doc = cursor.fetchone()
+
+            if busy_doc:
+                # NẾU ĐANG BẬN: Chặn đứng và báo lỗi về Dashboard
+                raise Exception(f"Thiết bị {data.DeviceID} đang bận xử lý hồ sơ {busy_doc[1]}. "
+                                f"Vui lòng đợi khách ký xong hoặc hủy hồ sơ cũ.")
+            
             # 1. LOGIC TRỘN DỮ LIỆU (RENDER)
             # Giả sử bạn đã có hàm render_tpl(template_id, folio, group, id_add)
             # Nếu chưa có, tạm thời lấy HtmlContent gốc của Template
@@ -100,3 +115,63 @@ class QueueService:
             return {"Html": "Không tìm thấy nội dung hồ sơ", "RefID": ""}
         finally:
             conn.close()
+            
+    def reset_device_queue(self, device_id: str):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Hủy tất cả hồ sơ đang ở trạng thái Chờ (0) hoặc Đang ký (1)
+            cursor.execute("""
+                UPDATE dbo.tbl_SignatureQueue 
+                SET Status = 4 
+                WHERE DeviceID = ? AND Status IN (0, 1)
+            """, (device_id,))
+            conn.commit()
+            return {"status": "success", "device": device_id}
+        finally:
+            conn.close()
+    #  Dual-Source (đọc từ File hoặc DB), nên tách thành 3 hàm nhỏ   
+    def _get_template_content(self, template_id: int):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT IsCustom, HtmlContent, FilePath FROM tbl_Templates WHERE TemplateID = ?", (template_id,))
+            row = cursor.fetchone()
+            if not row: return None
+
+            if row.IsCustom:
+                return row.HtmlContent
+            else:
+                # FilePath chỉ lưu tên file, ví dụ: "reg_card.html"
+                # Đường dẫn đầy đủ: app/static/templates/reg_card.html
+                base_path = os.path.join("app", "static", "templates")
+                full_path = os.path.join(base_path, row.FilePath)
+                
+                if os.path.exists(full_path):
+                    with open(full_path, 'r', encoding='utf-8') as f:
+                        return f.read()
+                return f"<!-- Error: File {row.FilePath} not found -->"
+        finally:
+            conn.close()
+    # Hàm này lo việc thay thế các tag {{...}} và cấy các vùng ký.
+    def _render_final_html(self, raw_html: str, snapshot_data: dict):
+        html = raw_html
+        
+        # 1. Mapping dữ liệu từ SMILE
+        for key, value in snapshot_data.items():
+            val_str = str(value if value is not None else "")
+            html = html.replace("{{" + key + "}}", val_str)
+            html = html.replace("{{ " + key + " }}", val_str)
+
+        # 2. Cấy vùng ký Khách & Lễ tân
+        html = html.replace("{{GuestSignatureImg}}", 
+            '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'guest\')">'
+            '<img id="img-guest-sig" src="" style="display:none; max-height:80px;" />'
+            '<span class="placeholder-text">Chạm để ký / Touch to sign</span></div>')
+
+        html = html.replace("{{ReceptionSignatureImg}}", 
+            '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
+            '<img id="img-recep-sig" src="" style="display:none; max-height:120px;" />'
+            '<span class="placeholder-text">Chạm để ký / Staff Sign</span></div>')
+            
+        return html

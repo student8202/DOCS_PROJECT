@@ -3,8 +3,10 @@ var SIGN = window.SIGN || {};
 // --- 1. CẤU HÌNH (CONFIG) ---
 SIGN.config = {
     apiBase: '/api/v1/queue',
+    deviceApi: '/api/v1/devices', // Thêm đường dẫn API thiết bị
     padInstance: null,
-    currentRole: null // 'guest' hoặc 'reception'
+    currentRole: null, // 'guest' hoặc 'reception'
+    timerHeartbeat: null // Biến quản lý vòng lặp
 };
 
 // --- 2. PHỤ TRỢ (HELPERS) ---
@@ -28,7 +30,12 @@ SIGN.helpers = {
                 penColor: 'rgb(0, 0, 128)' // Màu mực xanh truyền thống
             });
         }
-    }
+    },
+    getFullConnectionID: function () {
+        let browserId = localStorage.getItem('device_browser_uuid');
+        let tabId = sessionStorage.getItem('device_tab_id');
+        return browserId + "|" + tabId;
+    },
 };
 
 // --- 3. HÀNH ĐỘNG (ACTIONS) ---
@@ -125,10 +132,58 @@ SIGN.actions = {
                 });
             }
         });
-    }
+    },
+    // --- HÀM MỚI: HEARTBEAT KIỂM TRA QUYỀN ---
+    heartbeat: function () {
+        const deviceId = localStorage.getItem('current_device_id');
+        const fullConnId = SIGN.helpers.getFullConnectionID();
+
+        if (!deviceId) return;
+
+        $.ajax({
+            url: SIGN.config.deviceApi + '/ping',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ DeviceID: deviceId, ConnectionID: fullConnId }),
+            success: function (res) {
+                if (res.status === 'conflict') {
+                    // PHÁT HIỆN CHIẾM QUYỀN: Khóa nút hoàn tất ngay lập tức
+                    $('#btn-final-submit').prop('disabled', true).addClass('btn-secondary').removeClass('btn-danger');
+
+                    clearInterval(SIGN.config.timerHeartbeat); // Dừng ping
+
+                    // 3. Hiện thông báo có nút điều hướng
+                    Swal.fire({
+                        title: "Mất kết nối quầy!",
+                        text: "Thiết bị này đã bị thay thế hoặc mất quyền điều khiển. Bạn muốn làm gì?",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonText: '<i class="fas fa-sync"></i> Thử kết nối lại',
+                        cancelButtonText: '<i class="fas fa-home"></i> Về màn hình chờ',
+                        confirmButtonColor: '#28a745',
+                        cancelButtonColor: '#6c757d',
+                        allowOutsideClick: false,
+                        allowEscapeKey: false
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Thử đăng ký lại chính quầy này (Chiếm lại quyền)
+                            location.reload();
+                        } else {
+                            // Quay về trang waiting để nhân viên cấu hình lại hoặc chờ khách mới
+                            window.location.href = '/sign/waiting';
+                        }
+                    });
+                }
+            }
+        });
+    },
 };
 
 // --- 4. SỰ KIỆN (EVENTS) ---
 $(document).ready(function () {
     SIGN.actions.loadData();
+
+    // Kích hoạt Heartbeat ngay khi vào trang ký
+    SIGN.config.timerHeartbeat = setInterval(SIGN.actions.heartbeat, 10000); // 10 giây/lần
+    SIGN.actions.heartbeat(); // Chạy ngay lần đầu
 });

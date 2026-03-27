@@ -428,7 +428,7 @@ FO_DASH.actions = {
         console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
         // Tự động load danh sách thiết bị Online ngay khi mở modal
         this.loadOnlineDevices();
-        
+
         // 2. Hiện Modal chọn Mẫu & Thiết bị (Modal này bạn đã tạo ở bước trước)
         $('#modalSelectSign').modal('show');
         $('#info-booking-sign').text(`Đang xử lý Folio: ${folio} | Group: ${group || 'Lẻ'}`);
@@ -449,32 +449,26 @@ FO_DASH.actions = {
             `).join('');
             $('#list-devices-online').html(html || '<div class="text-danger p-2">Không có iPad nào Online!</div>');
         });
-        
+
     },
 
     loadOnlineDevices: function () {
-        const container = $('#list-devices-online');
-        container.html('<div class="text-center p-2 small"><i class="fas fa-spinner fa-spin"></i> Đang tìm iPad...</div>');
-
-        // Gọi API lấy danh sách máy đang Online (IsOnline = 1)
         $.get('/api/v1/devices/online-list?module=FO', (res) => {
             let html = '';
-            if (res && res.length > 0) {
-                res.forEach(d => {
-                    html += `
-                    <button type="button" class="list-group-item list-group-item-action p-2 small device-item border-0 mb-1 rounded shadow-sm" 
-                            onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
-                        <span class="status-dot online"></span> 
-                        <span class="fw-bold text-dark">${d.DeviceName}</span> 
-                        <span class="badge bg-light text-secondary float-end">${d.DeviceID}</span>
-                    </button>`;
-                });
-            } else {
-                html = '<div class="alert alert-warning py-1 small text-center">Không có iPad nào Online tại quầy!</div>';
-            }
-            container.html(html);
-        }).fail(() => {
-            container.html('<div class="text-danger small text-center">Lỗi kết nối API thiết bị!</div>');
+            res.forEach(d => {
+                // Giả sử API trả về thêm trạng thái IsBusy (1 nếu có hồ sơ chưa ký)
+                let statusCls = d.IsBusy ? 'bg-warning' : 'bg-success';
+                let statusTxt = d.IsBusy ? 'ĐANG KÝ' : 'RẢNH';
+                let disabledAttr = d.IsBusy ? 'disabled style="opacity:0.6; cursor:not-allowed;"' : '';
+
+                html += `
+                <button type="button" class="list-group-item list-group-item-action p-2 small device-item" 
+                        ${disabledAttr} onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
+                    <span class="badge ${statusCls} me-2">${statusTxt}</span>
+                    <span class="fw-bold">${d.DeviceName}</span>
+                </button>`;
+            });
+            $('#list-devices-online').html(html);
         });
     },
 

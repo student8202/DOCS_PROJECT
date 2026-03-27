@@ -229,12 +229,14 @@ INSERT INTO dbo.tbl_Devices (DeviceID, DeviceName, ModuleName) VALUES
 ('FO02', N'Lễ tân - Quầy 02', 'FO'),
 ('POS01', N'Nhà hàng - Bar', 'POS'),
 ('HR01', N'Văn phòng - Ký HĐ', 'HR');
+/*
 Cột ConnectionID (Chiếm quyền): Khi nhân viên cầm một chiếc iPad mới ra quầy FO01 và đăng ký, bạn chỉ cần cập nhật ConnectionID mới vào đây. Máy cũ sẽ bị "lệch" ID và tự động bị ngắt kết nối.
 Cột IsOnline (Computed Column): Đây là một kỹ thuật thông minh. Bạn không cần viết code để cập nhật trạng thái Offline; SQL tự tính toán dựa trên thời gian. Nếu thiết bị tắt màn hình hoặc mất mạng quá 30s, nó tự hiện "Offline" trên màn hình quản lý của nhân viên.
 Bảng tbl_SignatureQueue đa năng: Nhờ có RefType và RefID, bạn có thể dùng chung bảng này cho mọi thứ:
 Ký Regcard (FO).
 Ký Bill nợ phòng (POS).
 Ký Hợp đồng lao động (HR)
+*/
 -- =============================================
 -- DỮ LIỆU MẪU KHỞI TẠO (SEED DATA)
 -- =============================================
@@ -269,3 +271,88 @@ WHERE Username = 'admin';
 
 INSERT INTO dbo.tbl_UserRoles (Username, RoleCode, CreatedBy)
 VALUES ('admin', 'ADMIN', 'SYSTEM');
+-------------------------------------------------- từ sql server 2016
+SELECT 1 AS Test FOR JSON PATH;
+SELECT 1 AS Test FOR JSON PATH, WITHOUT_ARRAY_WRAPPER;
+-- store JSON
+CREATE PROCEDURE [dbo].[sp_GetBookingSnapshotJSON]
+    @FolioNum   NVARCHAR(50),
+    @GroupCode  NVARCHAR(50) = NULL,
+    @IdAddition INT = 0
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- TRUY VẤN TỔNG HỢP VỀ ĐỊNH DẠNG JSON
+    SELECT 
+        -- 1. THÔNG TIN ĐƠN (KEY-VALUE)
+        G.FolioNum AS FolioNum,
+        G.FullName AS GuestName,
+        CONVERT(VARCHAR, G.ArrivalDate, 103) AS ArrivalDate,   -- Định dạng dd/mm/yyyy
+        CONVERT(VARCHAR, G.DepartureDate, 103) AS DepartureDate,
+        G.RoomNum AS RoomNum,
+        G.RoomType AS RoomTypeCode,
+        (SELECT TotalAmount FROM dbo.v_FolioSummary WHERE FolioNum = G.FolioNum) AS TotalAmount,
+
+        -- 2. MẢNG DỊCH VỤ PHÒNG (ARRAY)
+        (
+            SELECT 
+                CONVERT(VARCHAR, TrDate, 103) AS [Date],
+                Description AS [Desc],
+                Amount AS Amount
+            FROM dbo.tbl_FolioDetails
+            WHERE FolioNum = G.FolioNum AND ServiceGroup = 'ROOM'
+            FOR JSON PATH
+        ) AS RoomServices,
+
+        -- 3. MẢNG DỊCH VỤ PHÁT SINH (ARRAY)
+        (
+            SELECT 
+                Description AS [Desc],
+                Quantity AS Qty,
+                Price AS Price,
+                Amount AS Amount
+            FROM dbo.tbl_FolioDetails
+            WHERE FolioNum = G.FolioNum AND ServiceGroup <> 'ROOM'
+            FOR JSON PATH
+        ) AS ExtraServices
+
+    FROM dbo.tbl_GuestInHouse G
+    WHERE G.FolioNum = @FolioNum
+    AND (@GroupCode IS NULL OR G.GroupCode = @GroupCode)
+    -- Nếu có IdAddition thì dùng để lọc khách share room
+    AND (@IdAddition = 0 OR G.IdAddition = @IdAddition)
+    
+    FOR JSON PATH, WITHOUT_ARRAY_WRAPPER; 
+    -- WITHOUT_ARRAY_WRAPPER giúp trả về dạng {...} thay vì [{...}]
+END
+--------- python
+import json
+from jinja2 import Template as JinjaTemplate
+
+def _get_smile_snapshot(self, folio, group, id_add):
+    conn = get_lv_docs_db()
+    cursor = conn.cursor()
+    try:
+        # Gọi Store Procedure
+        sql = "{CALL sp_GetBookingSnapshotJSON (?, ?, ?)}"
+        cursor.execute(sql, (folio, group, id_add))
+        
+        # SQL trả về một chuỗi JSON khổng lồ
+        row = cursor.fetchone()
+        if row and row[0]:
+            # Biến chuỗi JSON thành Dictionary của Python
+            return json.loads(row[0]) 
+        
+        return {} # Trả về rỗng nếu không thấy dữ liệu
+    finally:
+        conn.close()
+
+def _render_final_html(self, raw_html: str, snapshot_data: dict):
+    # Jinja2 sẽ tự động hiểu cả Key-Value và các Mảng (RoomServices, ExtraServices)
+    tpl = JinjaTemplate(raw_html)
+    html_rendered = tpl.render(**snapshot_data)
+    
+    # Cấy thêm vùng ký sau khi Jinja2 đã chạy xong
+    # ... logic replace {{GuestSignatureImg}} ...
+    return html_rendered

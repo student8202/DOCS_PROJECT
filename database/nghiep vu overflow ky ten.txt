@@ -58,3 +58,25 @@ Render: Trộn JSON đó vào Template để ra bản HTML cuối cùng cho khá
 --------------------------- detail sign
 Điểm mấu chốt của file này là việc tạo ra một browser_uuid duy nhất để thực hiện cơ chế "Chiếm quyền" (Take Over). Nếu một máy khác đăng ký cùng DeviceID, máy cũ sẽ nhận diện được mình đã mất quyền và tự động quay về màn hình khóa.
 *** http://localhost/sign/waiting
+------------------------------------ ký mở 2 tab khác nhau
+1. Bản chất của việc mở 2 cửa sổ (Tab)
+Khi bạn mở 2 cửa sổ trên cùng một trình duyệt và cùng đăng nhập:
+Cả 2 cửa sổ này đều dùng chung một localStorage.
+Vì vậy, cả 2 đều gửi lên cùng một ConnectionID (Mã định danh trình duyệt) và cùng một DeviceID (FO02).
+2. Điều gì sẽ xảy ra? (Xung đột hiển thị)
+Cả 2 cửa sổ đều hiện hồ sơ ký: Khi nhân viên nhấn "Gửi ký" cho FO02, cả 2 cửa sổ đều nhận được tín hiệu (vì chúng cùng lôi QueueID của FO02 về).
+Trạng thái "Đá" nhau: Nếu ở Cửa sổ 1 bạn ký và nhấn "Hoàn tất", Cửa sổ 2 vẫn đang mở hồ sơ đó. Nhưng khi Cửa sổ 2 nhấn "Hoàn tất" sau đó, nó sẽ bị lỗi (hoặc ghi đè) tùy vào cách bạn viết API complete.
+Tại Backend, trong bảng tbl_Devices, cột ConnectionID nên lưu chuỗi kết hợp: BrowserUUID + "|" + TabID.
+Kịch bản:
+Cửa sổ 1 mở FO02 -> Gửi UUID_A | TAB_01. Server ghi nhận FO02 thuộc về Tab 1.
+Cửa sổ 2 mở FO02 -> Gửi UUID_A | TAB_02. Server thấy khác TabID -> Ghi đè.
+Cửa sổ 1 Ping lên -> Server thấy TabID không khớp (TAB_01 != TAB_02) -> Trả về conflict -> Cửa sổ 1 tự động bị "đá" ra ngoài.
+Kết luận: Hiện tại hệ thống của bạn đang chạy đúng theo kiểu "máy nào/tab nào đăng ký sau cùng thì giữ quyền". Để tránh khách hàng ký nhầm, bạn hãy dùng sessionStorage như tôi hướng dẫn ở trên để "đá" các tab cũ ra ngay lập tức khi tab mới mở lên cùng ID quầy.
+---------------------------
+Tổng kết luồng "Hàng đợi thông minh":
+"Phải giải quyết xong hồ sơ cũ mới được đẩy hồ sơ mới".
+tôi đang gặp trường hợp 2 thiết bị đều ở màn hình chờ nhưng thiết bị lại báo đang chờ ký
+Trường hợp này trong kỹ thuật gọi là "Ghost Records" (Hồ sơ treo). Nguyên nhân là do hồ sơ đã được gửi vào Queue (Status 0 hoặc 1), nhưng khách hàng hoặc nhân viên không ký mà lại tắt trình duyệt, nhấn nút Back hoặc iPad bị nạp lại trang (F5) quay về màn hình chờ.
+Lúc này, iPad thì ở màn hình Waiting, nhưng trong Database vẫn còn dòng dữ liệu chưa hoàn tất, dẫn đến việc Dashboard báo "Bận".
+1. Giải pháp Tự động: iPad tự "giải phóng" mình
+Khi iPad truy cập vào trang waiting_screen.html, nó phải gửi một lệnh lên Server: "Tôi đã quay về màn hình chờ, hãy hủy tất cả hồ sơ cũ của tôi".

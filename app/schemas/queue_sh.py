@@ -22,3 +22,6 @@ class QueueSendSchema(BaseModel):
 class QueueSignSchema(BaseModel):
     QueueID: int
     Signature_Base64: str
+    
+class DeviceResetSchema(BaseModel):
+    DeviceID: str

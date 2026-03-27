@@ -193,3 +193,64 @@ class TPLService:
             raise Exception(f"Lỗi hệ thống tập tin hoặc SQL: {str(e)}")
         finally:
             if conn: conn.close()
+    # Hàm này chỉ lo việc ghi nội dung xuống ổ cứng.        
+    def _save_template_file(self, file_name: str, content: str):
+        try:
+            os.makedirs(self.TARGET_DIR, exist_ok=True)
+            # Chỉ lấy tên file để bảo mật, ép đuôi .html
+            safe_name = os.path.basename(file_name)
+            if not safe_name.endswith('.html'): safe_name += '.html'
+            
+            full_path = os.path.join(self.TARGET_DIR, safe_name)
+            with open(full_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            return safe_name
+        except Exception as e:
+            raise Exception(f"Lỗi ghi file vật lý: {str(e)}")
+    # Hàm này lo việc Update hoặc Insert
+    def _upsert_template_db(self, cursor, data, file_name, username):
+        # Kiểm tra tồn tại theo ID hoặc Code (nếu thêm mới mà trùng Code thì báo lỗi)
+        is_update = data.TemplateID and data.TemplateID > 0
+        
+        if is_update:
+            sql = """UPDATE tbl_Templates SET 
+                        TemplateCode=?, TemplateName=?, ModuleName=?, SubModule=?, 
+                        Category=?, FilePath=?, IsActive=?, UpdatedBy=?, UpdatedAt=GETDATE() 
+                    WHERE TemplateID=?"""
+            params = (data.TemplateCode, data.TemplateName, data.ModuleName, 
+                    data.SubModule, data.Category, file_name, data.IsActive, 
+                    username, data.TemplateID)
+        else:
+            # Chống Insert trùng mã nếu là thêm mới
+            cursor.execute("SELECT 1 FROM tbl_Templates WHERE TemplateCode=?", (data.TemplateCode,))
+            if cursor.fetchone():
+                raise Exception(f"Mã Template '{data.TemplateCode}' đã tồn tại!")
+
+            sql = """INSERT INTO tbl_Templates 
+                        (TemplateCode, TemplateName, ModuleName, SubModule, Category, 
+                        IsCustom, FilePath, IsActive, CreatedBy, CreatedAt) 
+                    VALUES (?, ?, ?, ?, ?, 0, ?, ?, ?, GETDATE())"""
+            params = (data.TemplateCode, data.TemplateName, data.ModuleName, 
+                    data.SubModule, data.Category, file_name, data.IsActive, username)
+        
+        cursor.execute(sql, params)
+    
+    def save_system_tpl_logic(self, data: TemplateSystemSaveSchema, username: str):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # 1. Ghi file trước (Nếu lỗi file thì dừng luôn chưa đụng tới DB)
+            saved_file_name = self._save_template_file(data.FilePath, data.HtmlContent)
+
+            # 2. Lưu DB (Cập nhật hoặc Thêm mới)
+            self._upsert_template_db(cursor, data, saved_file_name, username)
+
+            conn.commit()
+            return {"status": "success", "message": f"Đã lưu thành công mẫu {data.TemplateCode}"}
+        except Exception as e:
+            if conn: conn.rollback()
+            # Trả về HTTPException để Frontend nhận được message lỗi
+            from fastapi import HTTPException
+            raise HTTPException(status_code=400, detail=str(e))
+        finally:
+            if conn: conn.close()
