@@ -14,7 +14,7 @@ def login(request: Request, username: str = Form(...), password: str = Form(...)
 @router.post("/sync/{source_type}")
 async def sync_users(source_type: str, request: Request): # Thêm request vào đây
     # 1. Lấy danh sách quyền từ Session
-    user_perms = request.session.get("permissions", [])
+    user_perms = [p.get("code").lower() for p in request.session.get("permissions", []) if p.get("code")]
     
     # 2. Kiểm tra quyền ADMIN
     if "admin" not in user_perms:

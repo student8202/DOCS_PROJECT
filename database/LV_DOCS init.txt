@@ -16,11 +16,6 @@ GO
 USE LV_DOCS;
 GO
 
--- 1. TẠO CÁC SCHEMA PHÂN HỆ
-IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'FO') EXEC('CREATE SCHEMA FO');
-IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'BO') EXEC('CREATE SCHEMA BO');
-IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'HR') EXEC('CREATE SCHEMA HR');
-GO
 
 -- =============================================
 -- PHÂN HỆ HỆ THỐNG & PHÂN QUYỀN (RBAC)
@@ -36,6 +31,9 @@ CREATE TABLE dbo.tbl_PermissionList (
     UpdatedBy      NVARCHAR(50),
     UpdatedAt      DATETIME
 );
+
+ALTER TABLE dbo.tbl_PermissionList 
+ADD Action_Type NVARCHAR(20); -- Lưu các giá trị: VIEW, SIGN, EDIT, VOID
 
 -- Danh mục các Nhóm quyền (ADMIN, RECEPTIONIST, v.v.)
 CREATE TABLE dbo.tbl_Roles (
@@ -126,44 +124,126 @@ INSERT INTO tbl_TemplateTags (TagName, TagCode, ModuleName, SortOrder) VALUES
 (N'Số bàn', '{{TableNum}}', 'POS', 2),
 (N'Số hóa đơn', '{{BillNo}}', 'POS', 3);
 -- =============================================
--- PHÂN HỆ TIỀN SẢNH (FRONT OFFICE)
+-- PHÂN HỆ FO, POS, ACC
 -- =============================================
 -----------------------------
 -- Quản lý Hồ sơ đã ký & Snapshot dữ liệu
-CREATE TABLE FO.tbl_SignedDocuments (
+CREATE TABLE tbl_SignedDocuments (
+    -- 1. ĐỊNH DANH (IDENTIFIERS)
     Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    Booking_ID       NVARCHAR(50),
-    Group_Code       NVARCHAR(50), -- NULL = Lẻ, Có giá trị = Đoàn
-    Folio_Num        NVARCHAR(50),
-    Doc_Type         NVARCHAR(50), -- Regcard, Confirm, v.v.
+    Doc_Group_ID     UNIQUEIDENTIFIER,    -- Dùng để gom nhóm (VD: 1 bộ Regcard + Passport)
+    Booking_ID       NVARCHAR(50),        -- Từ SMILE
+    Folio_Num        NVARCHAR(50) NOT NULL, -- Trục xoay chính để tìm kiếm
+    Group_Code       NVARCHAR(50),        -- NULL = Lẻ, Có giá trị = Đoàn
+
+    -- 2. PHÂN LOẠI (CLASSIFICATION)
+    Doc_Type         NVARCHAR(50),        -- REGCARD, BILL, RECEIPT, PASSPORT, VISA
+    Source_Type      NVARCHAR(20),        -- DIGITAL (Ký iPad), SCAN (Upload file)
+    Owner_Dept       NVARCHAR(20),        -- Bộ phận quản lý: FO, ACC, HK
+    View_Rights      NVARCHAR(100),       -- Quyền xem: 'FO,ACC', 'ALL', 'ACC'
     
-    -- Dữ liệu Snapshot (Đóng băng từ SMILE_FO)
-    Guest_Name_SS    NVARCHAR(255),
-    Total_Amount_SS  DECIMAL(18, 2),
-    Data_JSON_Full_SS NVARCHAR(MAX), 
+    -- 3. NỘI DUNG & FILE (CONTENT)
+    Guest_Name_SS    NVARCHAR(255),       -- Snapshot tên khách lúc ký
+    Data_JSON_Full_SS NVARCHAR(MAX),      -- Toàn bộ JSON từ SMILE lúc đó (Để đối soát)
+    FilePath         NVARCHAR(500),       -- Đường dẫn file vật lý (PDF/JPG)
+    Signature_Base64 NVARCHAR(MAX),       -- Chữ ký (nếu là DIGITAL)
+    File_Extension   NVARCHAR(10),        -- .pdf, .jpg, .png
+    FileSize         INT,                 -- Dung lượng (Byte)
     
-    FilePath         NVARCHAR(500),
-    Signature_Base64 NVARCHAR(MAX),
-    Status           TINYINT DEFAULT 1, -- 1:Signed, 2:Reject, 3:Void
-    Version          INT DEFAULT 1,
+    -- 4. TRẠNG THÁI (STATUS)
+    Status           TINYINT DEFAULT 1,   -- 1: Hoàn tất, 2: Chờ duyệt, 3: Huỷ
+    Version          INT DEFAULT 1,       -- Tránh ghi đè hồ sơ cũ
     IsDeleted        BIT DEFAULT 0,
+    IsCurrent BIT DEFAULT 1,
+
+    -- 5. THỐNG KÊ (STATISTICS - COPY TỪ SMILE ĐỂ LỌC NHANH)
+    TA_Code          NVARCHAR(50),
+    TA_Name          NVARCHAR(255),
+    Market_Segment   NVARCHAR(100),
+    Sales_Person     NVARCHAR(100),
+
+    -- 6. NHẬT KÝ (AUDIT)
+    CreatedBy        NVARCHAR(50),
+    CreatedAt        DATETIME DEFAULT GETDATE(),
+    UpdatedBy        NVARCHAR(50),
+    UpdatedAt        DATETIME
+);    
+-- Tìm theo Booking/Folio
+CREATE INDEX idx_sign_booking ON tbl_SignedDocuments(Booking_ID);
+CREATE INDEX idx_sign_folio   ON tbl_SignedDocuments(Folio_Num);
+
+-- Tìm theo Đoàn (Chỉ index những dòng có mã đoàn)
+CREATE INDEX idx_sign_group   ON tbl_SignedDocuments(Group_Code) WHERE Group_Code IS NOT NULL;
+
+-- Phục vụ Dashboard của từng bộ phận
+CREATE INDEX idx_sign_dept    ON tbl_SignedDocuments(Owner_Dept, IsDeleted);
+
+-- Phục vụ tìm kiếm theo thời gian (Báo cáo ngày)
+CREATE INDEX idx_sign_date    ON tbl_SignedDocuments(CreatedAt);
+
+CREATE TABLE tbl_SignedDocuments (
+    -- 1. ĐỊNH DANH (IDENTIFIERS)
+    Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Doc_Group_ID     UNIQUEIDENTIFIER,    -- Dùng để gom nhóm (VD: 1 bộ Regcard + Passport)
+    Booking_ID       NVARCHAR(50),        -- Từ SMILE
+    Folio_Num        NVARCHAR(50) NOT NULL, -- Trục xoay chính để tìm kiếm
+    Group_Code       NVARCHAR(50),        -- NULL = Lẻ, Có giá trị = Đoàn
+
+    -- 2. PHÂN LOẠI (CLASSIFICATION)
+    Doc_Type         NVARCHAR(50),        -- REGCARD, BILL, RECEIPT, PASSPORT, VISA
+    Source_Type      NVARCHAR(20),        -- DIGITAL (Ký iPad), SCAN (Upload file)
+    Owner_Dept       NVARCHAR(20),        -- Bộ phận quản lý: FO, ACC, HK
+    View_Rights      NVARCHAR(100),       -- Quyền xem: 'FO,ACC', 'ALL', 'ACC'
     
+    -- 3. NỘI DUNG & FILE (CONTENT)
+    Guest_Name_SS    NVARCHAR(255),       -- Snapshot tên khách lúc ký
+    Data_JSON_Full_SS NVARCHAR(MAX),      -- Toàn bộ JSON từ SMILE lúc đó (Để đối soát)
+    FilePath         NVARCHAR(500),       -- Đường dẫn file vật lý (PDF/JPG)
+    Signature_Base64 NVARCHAR(MAX),       -- Chữ ký (nếu là DIGITAL)
+    File_Extension   NVARCHAR(10),        -- .pdf, .jpg, .png
+    FileSize         INT,                 -- Dung lượng (Byte)
+    
+    -- 4. TRẠNG THÁI (STATUS)
+    Status           TINYINT DEFAULT 1,   -- 1: Chờ ký, 2: Đã ký/Chờ duyệt, 3: Đã duyệt (Approved), 4: Từ chối (Rejected/Void)
+    Version          INT DEFAULT 1,       -- Tránh ghi đè hồ sơ cũ
+    IsDeleted        BIT DEFAULT 0,
+    IsCurrent BIT DEFAULT 1,
+
+    -- 5. THỐNG KÊ (STATISTICS - COPY TỪ SMILE ĐỂ LỌC NHANH)
+    TA_Code          NVARCHAR(50),
+    TA_Name          NVARCHAR(255),
+    Market_Segment   NVARCHAR(100),
+    Sales_Person     NVARCHAR(100),
+
+    -- 6. NHẬT KÝ (AUDIT)
     CreatedBy        NVARCHAR(50),
     CreatedAt        DATETIME DEFAULT GETDATE(),
     UpdatedBy        NVARCHAR(50),
     UpdatedAt        DATETIME
 );
-ALTER TABLE FO.tbl_SignedDocuments ADD 
-    TA_Code         NVARCHAR(50),
-    TA_Name         NVARCHAR(255),
-    Market_Segment  NVARCHAR(100),
-    Sub_Segment     NVARCHAR(100),
-    Booking_Source  NVARCHAR(100),
-    Geographic      NVARCHAR(100),
-    Sales_Person    NVARCHAR(100);
-CREATE INDEX idx_fo_booking ON FO.tbl_SignedDocuments(Booking_ID);
-CREATE INDEX idx_fo_group   ON FO.tbl_SignedDocuments(Group_Code);
 
+CREATE TABLE tbl_DocumentLogs (
+    Log_ID           BIGINT IDENTITY(1,1) PRIMARY KEY,
+    Doc_GUID         UNIQUEIDENTIFIER,    -- Liên kết tới bản ghi trong tbl_SignedDocuments
+    Folio_Num        NVARCHAR(50),        -- Để truy vấn nhanh theo phòng/khách
+    Action_Type      NVARCHAR(50),        -- SEND_SIGN, SIGNED, UPLOAD, VIEW, VOID, RESET
+    
+    -- Chi tiết hành động
+    Action_Detail    NVARCHAR(MAX),       -- Nội dung cụ thể (VD: "Gửi Regcard tới iPad FO01")
+    Device_ID        NVARCHAR(50),        -- Thiết bị thực hiện (iPad ID hoặc PC Name)
+    IP_Address       NVARCHAR(50),        -- Địa chỉ IP của máy thao tác
+    
+    -- Thông tin người thực hiện
+    UserName         NVARCHAR(50),        -- Tên nhân viên (từ Session)
+    UserDept         NVARCHAR(20),        -- Bộ phận: FO, ACC
+    
+    -- Dấu thời gian
+    CreatedAt        DATETIME DEFAULT GETDATE()
+);
+
+-- Index để Kế toán tra cứu lịch sử cực nhanh
+CREATE INDEX idx_log_folio ON tbl_DocumentLogs(Folio_Num);
+CREATE INDEX idx_log_doc   ON tbl_DocumentLogs(Doc_GUID);
 -- =============================================
 -- HỆ THỐNG NHẬT KÝ (LOGS)
 -- =============================================

@@ -20,7 +20,8 @@
     Context global {{ get_perms(request) }}
 </div> -->
 <!-- CHỈ HIỆN PHẦN ĐỒNG BỘ NẾU LÀ ADMIN -->
-{% if 'admin' in get_perms(request) %}
+<!-- {# {% if 'admin' in get_perms(request) %} #} -->
+{% if 'admin' in get_perms(request) | map(attribute='code') | list %}
 <!-- KHU VỰC 3 NÚT SYNC THÔNG MINH -->
 <div class="row gx-4">
     <!-- Nút Sync FO -->

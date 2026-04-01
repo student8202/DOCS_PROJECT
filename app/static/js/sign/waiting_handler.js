@@ -77,44 +77,64 @@ WAITING.actions = {
         const module = $('#set-module').val();
         const browserUuid = WAITING.helpers.getFullConnectionID();
 
+        // 1. Kiểm tra nhanh nếu chưa nhập ID quầy
         if (!deviceId) {
             Swal.fire("Lỗi", "Vui lòng nhập Mã quầy (ID)", "error");
+            $('#set-device-id').addClass('is-invalid').focus();
             return;
         }
 
-        const payload = {
-            DeviceID: deviceId,
-            ConnectionID: browserUuid,
-            ModuleName: module,
-            DeviceType: /Mobi|Android|iPad/i.test(navigator.userAgent) ? "TABLET" : "DESKTOP"
-        };
+        // 2. LỚP BẢO MẬT: Hiện popup yêu cầu gõ chữ "y"
+        Swal.fire({
+            title: 'XÁC NHẬN CHIẾM QUYỀN',
+            text: `Bạn muốn thiết lập máy này cho quầy ${deviceId}?`,
+            input: 'text',
+            inputPlaceholder: "Gõ chữ '...' để xác nhận...",
+            showCancelButton: true,
+            confirmButtonText: 'ĐỒNG Ý',
+            cancelButtonText: 'HỦY',
+            preConfirm: (value) => {
+                // Chỉ cho phép đi tiếp nếu gõ đúng chữ y (không phân biệt hoa thường)
+                if (value.toLowerCase() !== 'y') {
+                    Swal.showValidationMessage("Bạn phải gõ chữ '...' để thực hiện thao tác này!");
+                    return false;
+                }
+                return true;
+            }
+        }).then((result) => {
+            // 3. NẾU XÁC NHẬN ĐÚNG -> CHẠY AJAX
+            if (result.isConfirmed) {
+                const payload = {
+                    DeviceID: deviceId,
+                    ConnectionID: browserUuid,
+                    ModuleName: module,
+                    DeviceType: /Mobi|Android|iPad/i.test(navigator.userAgent) ? "TABLET" : "DESKTOP"
+                };
 
-        $.ajax({
-            url: WAITING.config.apiBase + '/register',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(payload),
-            success: function (res) {
-                localStorage.setItem('current_device_id', deviceId); // Cập nhật ID mới (FO02)
-                $('#setup-box').fadeOut();
+                $.ajax({
+                    url: WAITING.config.apiBase + '/register',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(payload),
+                    success: function (res) {
+                        localStorage.setItem('current_device_id', deviceId);
+                        $('#setup-box').fadeOut();
 
-                // Cập nhật giao diện ngay lập tức
-                $('#display-device').text(deviceId);
+                        // Cập nhật giao diện iPad ngay lập tức
+                        $('#display-device').text(deviceId);
+                        WAITING.helpers.updateUIStatus(true, deviceId);
 
-                // Cập nhật giao diện iPad ngay lập tức
-                WAITING.helpers.updateUIStatus(true, deviceId);
+                        // Kích hoạt báo danh ngay
+                        WAITING.actions.startMonitoring();
 
-                // KÍCH HOẠT THEO DÕI NGAY (Không đợi F5)
-                WAITING.actions.startMonitoring();
-
-                Swal.fire("Thành công", `Đã chuyển sang quầy ${deviceId}`, "success");
-            },
-            error: function (err) {
-                // Lấy nội dung lỗi "Mã quầy FO03 chưa khai báo" từ Backend trả về
-                const errorDetail = err.responseJSON?.detail || "Lỗi không xác định";
-                Swal.fire("Lỗi kết nối", err.responseJSON?.detail || "Không thể đăng ký thiết bị", "error");
-                // Highlight ô nhập lỗi
-                $('#set-device-id').addClass('is-invalid').focus();
+                        Swal.fire("Thành công", `Đã kích hoạt quầy ${deviceId}`, "success");
+                    },
+                    error: function (err) {
+                        const errorDetail = err.responseJSON?.detail || "Không thể đăng ký thiết bị";
+                        Swal.fire("Từ chối", errorDetail, "error");
+                        $('#set-device-id').addClass('is-invalid').focus();
+                    }
+                });
             }
         });
     },

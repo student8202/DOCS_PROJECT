@@ -1,5 +1,41 @@
+<style>
+    /* Ép chiều rộng nút để bảng đều nhau */
+    .btn-status-action {
+        width: 65px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    /* Hiển thị dropdown nổi lên trên DataTable */
+    .table-responsive {
+        overflow: inherit !important;
+    }
+
+    .dropdown-menu {
+        font-size: 13px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+/* Phá vây cho cột Fix bên trái */
+.DTFC_LeftWrapper, 
+.DTFC_LeftBodyWrapper, 
+.DTFC_LeftBodyLiner {
+    overflow: visible !important; /* Cho phép nội dung tràn ra ngoài */
+}
+
+/* Đảm bảo ô chứa nút (td) không cắt nội dung */
+table.dataTable tbody td.text-nowrap {
+    overflow: visible !important;
+}
+
+/* Loại bỏ mũi tên mặc định của thẻ <a> dropdown */
+.no-caret::after { display: none !important; }
+/* Đảm bảo icon 3 chấm dễ bấm hơn */
+.fas.fa-ellipsis-v { cursor: pointer; padding: 5px; }
+    
+</style>
 <!-- Preloader toàn màn hình -->
-<div id="global-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.7); z-index: 99999; display: none; flex-direction: column; justify-content: center; align-items: center;">
+<div id="global-loader"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.7); z-index: 99999; display: none; flex-direction: column; justify-content: center; align-items: center;">
     <div class="spinner-border text-success" role="status"></div>
     <span class="mt-2 fw-bold text-success small">ĐANG TẢI DỮ LIỆU...</span>
 </div>
@@ -122,7 +158,7 @@
 </div>
 
 <!-- pop up modal sign -->
- <div class="modal fade" id="modalSelectSign" data-bs-backdrop="static">
+<div class="modal fade" id="modalSelectSign" data-bs-backdrop="static">
     <div class="modal-dialog modal-md">
         <div class="modal-content shadow-lg border-0">
             <div class="modal-header bg-primary text-white py-2">
@@ -143,7 +179,8 @@
 
                 <!-- CHỌN THIẾT BỊ ĐANG ONLINE -->
                 <div class="mb-3">
-                    <label class="x-small fw-bold text-uppercase text-secondary">2. Gửi đến thiết bị (iPad/Tablet):</label>
+                    <label class="x-small fw-bold text-uppercase text-secondary">2. Gửi đến thiết bị
+                        (iPad/Tablet):</label>
                     <div id="list-devices-online" class="list-group shadow-sm">
                         <!-- Danh sách thiết bị online sẽ nạp vào đây -->
                     </div>
@@ -152,7 +189,8 @@
             <div class="modal-footer py-1">
                 <button class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Hủy</button>
                 <input type="hidden" id="tpl_id_selected"> <!-- Thêm input ẩn để giữ ID mẫu -->
-                <button class="btn btn-sm btn-primary px-4 fw-bold" id="btn-confirm-send" disabled onclick="FO_DASH.actions.sendToQueue()">
+                <button class="btn btn-sm btn-primary px-4 fw-bold" id="btn-confirm-send" disabled
+                    onclick="FO_DASH.actions.sendToQueue()">
                     XÁC NHẬN GỬI KÝ <i class="fas fa-paper-plane ms-1"></i>
                 </button>
             </div>

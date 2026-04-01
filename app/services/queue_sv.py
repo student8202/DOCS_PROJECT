@@ -175,3 +175,33 @@ class QueueService:
             '<span class="placeholder-text">Chạm để ký / Staff Sign</span></div>')
             
         return html
+    
+    def send_to_queue_logic(self, data: QueueSendSchema, username: str):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # 1. Kiểm tra thiết bị bận
+            cursor.execute("SELECT QueueID FROM dbo.tbl_SignatureQueue WHERE DeviceID = ? AND Status IN (0, 1)", (data.DeviceID,))
+            if cursor.fetchone():
+                raise HTTPException(status_code=400, detail=f"Thiết bị {data.DeviceID} đang bận.")
+
+            # 2. Lấy HTML thô (Từ File hoặc DB)
+            raw_html = self._get_template_content(data.TemplateID)
+            if not raw_html:
+                raise HTTPException(status_code=404, detail="Không tìm thấy mẫu.")
+
+            # 3. Lấy dữ liệu thực & Trộn (Render)
+            # Giả sử bạn đã có hàm lấy snapshot từ SMILE
+            snapshot = self._get_smile_snapshot(data.FolioNum, data.GroupCode, data.IdAddition)
+            html_final = self._render_final_html(raw_html, snapshot)
+
+            # 4. Lưu vào Queue
+            sql = """INSERT INTO dbo.tbl_SignatureQueue 
+                    (ModuleName, RefType, RefID, DeviceID, TemplateID, RenderedHtml, Status, CreatedBy, CreatedAt)
+                    VALUES (?, ?, ?, ?, ?, ?, 0, ?, GETDATE())"""
+            cursor.execute(sql, (data.ModuleName, data.RefType, data.RefID, data.DeviceID, 
+                                data.TemplateID, html_final, username))
+            conn.commit()
+            return {"status": "success"}
+        finally:
+            conn.close()

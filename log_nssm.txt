@@ -1,4 +1,4 @@
-[Fri 03/27/2026 12:00:42.41] Dang kiem tra thu vien FastAPI...
+[Mon 03/30/2026 22:57:05.30] Dang kiem tra thu vien FastAPI...
 Requirement already satisfied: fastapi in c:\program files\python312\lib\site-packages (0.135.1)
 Requirement already satisfied: uvicorn in c:\program files\python312\lib\site-packages (0.41.0)
 Requirement already satisfied: jinja2 in c:\windows\system32\config\systemprofile\appdata\roaming\python\python312\site-packages (3.1.6)
@@ -61,816 +61,1137 @@ Requirement already satisfied: itsdangerous in c:\windows\system32\config\system
 
 [notice] A new release of pip is available: 25.0.1 -> 26.0.1
 [notice] To update, run: C:\Program Files\Python312\python.exe -m pip install --upgrade pip
-[Fri 03/27/2026 12:00:52.69] Dang khoi dong FastAPI Server...
+[Mon 03/30/2026 22:57:14.24] Dang khoi dong FastAPI Server...
 INFO:     Will watch for changes in these directories: ['C:\\SMILE PMS\\DOCS_PROJECT\\app']
 WARNING:  "workers" flag is ignored when reloading is enabled.
 INFO:     Uvicorn running on http://127.0.0.1:6066 (Press CTRL+C to quit)
-INFO:     Started reloader process [21744] using StatReload
-INFO:     Started server process [18172]
+INFO:     Started reloader process [21764] using StatReload
+INFO:     Started server process [16608]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-[32m2026-03-27 12:01:17[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:17[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:17[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 58.65ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:17[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 63.74ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.19ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.67ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:30[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.65ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:31[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:31[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 6.68ms[0m
-INFO:     127.0.0.1:0 - "GET /sign/waiting HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:31[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:31[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.53ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/reset-device | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.99ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/reset-device | Status: 200 | Time: 23.17ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/queue/reset-device HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:32[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 20.67ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:33[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:33[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.50ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:01:37[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:37[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 3.37ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:42[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:42[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:42[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 10.61ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:42[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 17.29ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:47[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:47[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 3.72ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:52[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:52[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:52[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.74ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:52[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 4.07ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:01:57[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:01:57[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.60ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:02[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:02[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.67ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:02[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:02[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 6.20ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/send | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/send | Status: 200 | Time: 26.40ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/queue/send HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 9.10ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mSTART | GET /sign/process/33 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mEND   | GET /sign/process/33 | Status: 200 | Time: 3.53ms[0m
-INFO:     127.0.0.1:0 - "GET /sign/process/33 HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:07[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.71ms[0m
-INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/get-content/33 | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/get-content/33 | Status: 200 | Time: 5.72ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/get-content/33 HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.74ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:09[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.53ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:02:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.73ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.50ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.59ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:47[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/reset-device | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:47[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/reset-device | Status: 405 | Time: 1.32ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/queue/reset-device HTTP/1.1" 405 Method Not Allowed
-[32m2026-03-27 12:02:47[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:47[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.20ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:02:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.90ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:02:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:02:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.25ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.26ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 3.13ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.09ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.50ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.50ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.70ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.01ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.00ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:06[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:06[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.27ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.04ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:11[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:11[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:11[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.51ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:11[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.99ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.16ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 1.01ms[0m
-INFO:     192.168.1.111:0 - "GET /sign/waiting HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/reset-device | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 4.07ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/reset-device | Status: 200 | Time: 15.65ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/queue/reset-device HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 13.19ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:16[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.50ms[0m
-INFO:     192.168.1.111:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:03:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.04ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/devices/online-list | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/devices/online-list | Status: 200 | Time: 6.49ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/devices/online-list?module=FO HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 9.86ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?module=FO HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/devices/online-list | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:20[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/devices/online-list | Status: 200 | Time: 2.00ms[0m
-INFO:     127.0.0.1:0 - "GET /api/v1/devices/online-list?module=FO HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:21[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:21[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.47ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:22[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/send | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:22[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/send | Status: 200 | Time: 10.28ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/queue/send HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.11ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.96ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mSTART | GET /sign/process/34 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:26[0m | [1mINFO    [0m | [36mEND   | GET /sign/process/34 | Status: 200 | Time: 1.47ms[0m
-INFO:     192.168.1.111:0 - "GET /sign/process/34 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/get-content/34 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.74ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/get-content/34 | Status: 200 | Time: 6.25ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/get-content/34 HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:27[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
-INFO:     192.168.1.111:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:03:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:37[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:03:37[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.18ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.46ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:03:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:03:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.36ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:04:12[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:04:12[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.53ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:04:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:04:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.37ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:05:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:05:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.94ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:06:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:06:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.73ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:07:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:07:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.25ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:08:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:08:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.58ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:09:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:09:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.64ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:10:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:10:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.77ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:11:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:11:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.09ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:12:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:12:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 1.93ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:13:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:13:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.52ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:14:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:14:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.59ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:15:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:15:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:16:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:16:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.41ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:17:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:17:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.90ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:18:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:18:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.43ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:19:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:19:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.10ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:20:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:20:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.45ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:21:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:21:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.25ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.08ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.32ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.63ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:15[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.23ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:22:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.10ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:24[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:24[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.38ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:27[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:27[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 9.84ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:29[0m | [1mINFO    [0m | [36mSTART | GET /sign/process/34 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:29[0m | [1mINFO    [0m | [36mEND   | GET /sign/process/34 | Status: 200 | Time: 0.00ms[0m
-INFO:     192.168.1.111:0 - "GET /sign/process/34 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/get-content/34 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/get-content/34 | Status: 200 | Time: 3.55ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/get-content/34 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 3.98ms[0m
-INFO:     192.168.1.111:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:22:30[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.07ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:31[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:31[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 0.00ms[0m
-INFO:     192.168.1.111:0 - "GET /sign/waiting HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/reset-device | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 3.64ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.44ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/reset-device | Status: 200 | Time: 9.08ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/queue/reset-device HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:32[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     192.168.1.111:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 12:22:37[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:37[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 2.47ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:43[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:43[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:43[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.40ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:43[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.49ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:48[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:48[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.72ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:53[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:53[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:22:53[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.03ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:22:53[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.98ms[0m
-INFO:     192.168.1.111:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:23:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:23:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.70ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:23:39[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO02 | IP: 192.168.1.111[0m
-[32m2026-03-27 12:23:39[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO02 | Status: 200 | Time: 1.98ms[0m
-INFO:     192.168.1.111:0 - "GET /api/v1/queue/check/FO02 HTTP/1.1" 200 OK
-[32m2026-03-27 12:24:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:24:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.75ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:25:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:25:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.12ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:26:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:26:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.55ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:27:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:27:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.05ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:28:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:28:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.37ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:29:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:29:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.21ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:30:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:30:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.79ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:31:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:31:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.47ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:32:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:32:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.60ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:33:17[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:33:17[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.02ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:34:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:34:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.23ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:35:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:35:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.35ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:36:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:36:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.08ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:37:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:37:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.30ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:38:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:38:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.23ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:39:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:39:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.65ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:40:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:40:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.54ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:41:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:41:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.50ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:42:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:42:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.50ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:43:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:43:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.49ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:44:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:44:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.52ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:45:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:45:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.03ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:46:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:46:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.68ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:47:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:47:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.59ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:48:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:48:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.41ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:49:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:49:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.87ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:50:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:50:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.99ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:51:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:51:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.43ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:52:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:52:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.01ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:53:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:53:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.50ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:54:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:54:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.43ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:55:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:55:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.63ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:56:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:56:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.52ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:57:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:57:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:58:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:58:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.71ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 12:59:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 12:59:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.83ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:00:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:00:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.96ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:01:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:01:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.29ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:02:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:02:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.08ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:03:17[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:03:17[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.39ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:04:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:04:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.79ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:05:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:05:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.70ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:06:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:06:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:07:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:07:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.22ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:08:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:08:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.01ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:09:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:09:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.03ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:10:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:10:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.64ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:11:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:11:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.06ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:12:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:12:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.55ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:13:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:13:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.10ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:14:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:14:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.98ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:15:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:15:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:16:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:16:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 12.36ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:17:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:17:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.23ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:18:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:18:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.71ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.04ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:23[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:23[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.02ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.00ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.33ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.77ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:19:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:19:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.83ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:20:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:20:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.56ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:20:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:20:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.09ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:21:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:21:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:22:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:22:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.92ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:23:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:23:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.98ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:24:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:24:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.68ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:24:40[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:24:40[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.03ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:24:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:24:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.75ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:24:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:24:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.47ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.58ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.04ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.99ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.03ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.45ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:25:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:25:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.38ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.95ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.36ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.25ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.01ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:26:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:26:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.20ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:09[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:09[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 16.94ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:19[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:19[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.42ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:29[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:29[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:39[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:39[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.51ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:49[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:49[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.49ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:27:59[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:27:59[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.59ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:28:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:28:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.41ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:29:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:29:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.37ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 10.75ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:28[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:28[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 11.63ms[0m
+[32m2026-03-30 22:57:15[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:15[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 10.02ms[0m
 INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:29[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:29[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:30:34[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:34[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 1.00ms[0m
-INFO:     127.0.0.1:0 - "GET /sign/waiting HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:34[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:34[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 31.17ms[0m
-INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:35[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:36[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 747.01ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774593035090 HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:36[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:36[0m | [1mINFO    [0m | [36mSTART | GET /fo/reservation-list2 | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:37[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 510.20ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:30:37[0m | [1mINFO    [0m | [36mEND   | GET /fo/reservation-list2 | Status: 200 | Time: 510.20ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/reservation-list2?_=1774593035091 HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:39[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-view | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:39[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-view | Status: 200 | Time: 4.13ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-view HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:40[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:40[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 11.31ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774593039676 HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:40[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:40[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:30:58[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/custom-view | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:58[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/custom-view | Status: 200 | Time: 4.82ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/custom-view HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/tags | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 5.42ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?_=1774593058836 HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/tags | Status: 200 | Time: 11.20ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/tags HTTP/1.1" 200 OK
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:30:59[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:31:06[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-view | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:06[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-view | Status: 200 | Time: 3.03ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-view HTTP/1.1" 200 OK
-[32m2026-03-27 13:31:06[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:06[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 3.34ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774593066493 HTTP/1.1" 200 OK
-[32m2026-03-27 13:31:07[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:07[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:31:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 9.21ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:31:19[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-detail/14 | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:19[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-detail/14 | Status: 200 | Time: 2.64ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-detail/14 HTTP/1.1" 200 OK
-[32m2026-03-27 13:31:29[0m | [1mINFO    [0m | [36mSTART | POST /fo/templates/save-system | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:29[0m | [1mINFO    [0m | [36mEND   | POST /fo/templates/save-system | Status: 200 | Time: 13.27ms[0m
-INFO:     127.0.0.1:0 - "POST /fo/templates/save-system HTTP/1.1" 200 OK
-[32m2026-03-27 13:31:29[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:31:29[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 2.56ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774593066494 HTTP/1.1" 200 OK
-[32m2026-03-27 13:32:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:32:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.16ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:32:54[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-view | IP: 127.0.0.1[0m
-[32m2026-03-27 13:32:54[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-view | Status: 200 | Time: 2.52ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-view HTTP/1.1" 200 OK
-[32m2026-03-27 13:32:54[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:32:54[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 28.60ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774593174196 HTTP/1.1" 200 OK
-[32m2026-03-27 13:32:55[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
-[32m2026-03-27 13:32:55[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.01ms[0m
-INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
-[32m2026-03-27 13:33:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:33:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.51ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:34:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:34:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.82ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:35:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:35:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 16.75ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:36:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:36:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:37:06[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-detail/15 | IP: 127.0.0.1[0m
-[32m2026-03-27 13:37:06[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-detail/15 | Status: 200 | Time: 5.09ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-detail/15 HTTP/1.1" 200 OK
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mSTART | POST /fo/templates/save-system | IP: 127.0.0.1[0m
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mEND   | POST /fo/templates/save-system | Status: 200 | Time: 9.44ms[0m
-INFO:     127.0.0.1:0 - "POST /fo/templates/save-system HTTP/1.1" 200 OK
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 4.77ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774593174197 HTTP/1.1" 200 OK
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:37:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.29ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:37:57[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-detail/16 | IP: 127.0.0.1[0m
-[32m2026-03-27 13:37:57[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-detail/16 | Status: 200 | Time: 13.70ms[0m
-INFO:     127.0.0.1:0 - "GET /fo/templates/system-detail/16 HTTP/1.1" 200 OK
-[32m2026-03-27 13:38:05[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
-[32m2026-03-27 13:38:05[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms[0m
+[32m2026-03-30 22:57:15[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:15[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.18ms[0m
 INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
-[32m2026-03-27 13:38:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:38:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.65ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:39:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:39:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.88ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:40:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:40:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.35ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:41:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:41:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:42:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:42:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.05ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:43:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:43:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.41ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:44:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:44:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.57ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:45:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:45:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.02ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:46:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:46:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.16ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:47:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:47:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.15ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:48:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:48:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 13.41ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:49:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:49:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 13.96ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:50:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:50:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.12ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:51:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:51:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.22ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:52:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:52:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.49ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:53:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:53:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.16ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:54:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:54:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.09ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:55:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:55:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.79ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:56:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:56:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 6.10ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:57:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:57:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.08ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-WARNING:  StatReload detected changes in 'services\queue_sv.py'. Reloading...
- [32m2026-03-27 13:58:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:58:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.78ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 13:59:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 13:59:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 12.92ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:00:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:00:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 7.32ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:01:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:01:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 32.65ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:02:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:02:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.11ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:03:17[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:03:17[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.86ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:04:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:04:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 5.64ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:05:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:05:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.90ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:06:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:06:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.02ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
-[32m2026-03-27 14:07:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
-[32m2026-03-27 14:07:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 4.53ms[0m
-INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:17[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:18[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:18[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 22:57:19[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:19[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 22:57:25[0m | [1mINFO    [0m | [36mSTART | POST /auth/login | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:26[0m | [1mINFO    [0m | [36mUser admin logged in successfully with 8 perms[0m
+[32m2026-03-30 22:57:26[0m | [1mINFO    [0m | [36mEND   | POST /auth/login | Status: 200 | Time: 418.13ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/login HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:27[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:27[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 19.08ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:27[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:27[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.48ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 22:57:28[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:29[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 441.20ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886247562 HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:29[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:29[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:29[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 110.59ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 22:57:29[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 111.59ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886247563 HTTP/1.1" 200 OK
+[32m2026-03-30 22:57:32[0m | [1mINFO    [0m | [36mSTART | GET /admin/sync-users | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:32[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /admin/sync-users | Error: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'. | Time: 4.63ms[0m
+INFO:     127.0.0.1:0 - "GET /admin/sync-users HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\admin_rt.py", line 24, in sync_users_page
+    return templates.TemplateResponse("admin/sync_users.html", {"request": request})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "templates\admin\sync_users.html", line 121, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+[32m2026-03-30 22:57:32[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:32[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 22:57:32[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 22:57:32[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:02:00[0m | [1mINFO    [0m | [36mSTART | GET /admin/sync-users | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:00[0m | [1mINFO    [0m | [36mEND   | GET /admin/sync-users | Status: 200 | Time: 54.37ms[0m
+INFO:     127.0.0.1:0 - "GET /admin/sync-users HTTP/1.1" 200 OK
+[32m2026-03-30 23:02:00[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:00[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.17ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:02:01[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:01[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.09ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:02:06[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:06[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 0.92ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.get("code").lower()  for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:02:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:02:06[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:02:06[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.30ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+WARNING:  StatReload detected changes in 'controllers\rbac_ct.py'. Reloading...
+ [32m2026-03-30 23:06:11[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:11[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.57ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:11[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:11[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:11[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:11[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.08ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 10.41ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.40ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.22ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.42ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:14[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.85ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.38ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.52ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:15[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 2.68ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:06:18[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:18[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.19ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:19[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:19[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.61ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:06:22[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:22[0m | [31m[1mERROR   [0m | [36mFAIL  | GET /rbac/manage | Error: 'str' object has no attribute 'get' | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 122, in log_requests_middleware
+    raise e
+  File "C:\SMILE PMS\DOCS_PROJECT\app\main.py", line 108, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\sessions.py", line 85, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\routers\rbac_rt.py", line 25, in rbac_manage_page
+    return RBACController.render_manage_page(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SMILE PMS\DOCS_PROJECT\app\controllers\rbac_ct.py", line 113, in render_manage_page
+    if "admin" not in [p.lower() for p in user_perms if p]:
+                       ^^^^^
+AttributeError: 'str' object has no attribute 'get'
+[32m2026-03-30 23:06:22[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:22[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.26ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:06:22[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:06:22[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.13ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16608]
+INFO:     Started server process [4208]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'controllers\rbac_ct.py'. Reloading...
+ [32m2026-03-30 23:08:06[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:06[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 19.08ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:06[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:06[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.34ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:08:07[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:07[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 55.29ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1774886886268 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4208]
+INFO:     Started server process [19740]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[32m2026-03-30 23:08:08[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:08[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:08:18[0m | [1mINFO    [0m | [36mSTART | GET /rbac/setup | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:18[0m | [1mINFO    [0m | [36mEND   | GET /rbac/setup | Status: 200 | Time: 17.41ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/setup HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:18[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:18[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.74ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:08:19[0m | [1mINFO    [0m | [36mSTART | GET /rbac/permissions-list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:19[0m | [1mINFO    [0m | [36mEND   | GET /rbac/permissions-list | Status: 200 | Time: 32.43ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/permissions-list?_=1774886898824 HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:19[0m | [1mINFO    [0m | [36mSTART | GET /rbac/roles-list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:19[0m | [1mINFO    [0m | [36mEND   | GET /rbac/roles-list | Status: 200 | Time: 3.22ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/roles-list?_=1774886898825 HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:20[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:20[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:08:22[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:22[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 4.51ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:22[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:22[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:08:23[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:23[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 3.99ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1774886902394 HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:23[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:23[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.32ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:08:25[0m | [1mINFO    [0m | [36mSTART | GET /admin/sync-users | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:25[0m | [1mINFO    [0m | [36mEND   | GET /admin/sync-users | Status: 200 | Time: 6.70ms[0m
+INFO:     127.0.0.1:0 - "GET /admin/sync-users HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:25[0m | [1mINFO    [0m | [36mSTART | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:25[0m | [1mINFO    [0m | [36mEND   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.52ms[0m
+INFO:     127.0.0.1:0 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+[32m2026-03-30 23:08:26[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:26[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:08:36[0m | [1mINFO    [0m | [36mSTART | POST /auth/sync/FO | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:36[0m | [1mINFO    [0m | [36mEND   | POST /auth/sync/FO | Status: 200 | Time: 408.13ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/sync/FO HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:39[0m | [1mINFO    [0m | [36mSTART | POST /auth/sync/BO | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:39[0m | [1mINFO    [0m | [36mEND   | POST /auth/sync/BO | Status: 200 | Time: 383.57ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/sync/BO HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:42[0m | [1mINFO    [0m | [36mSTART | POST /auth/sync/HR | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:43[0m | [1mINFO    [0m | [36mEND   | POST /auth/sync/HR | Status: 200 | Time: 342.38ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/sync/HR HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:52[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:52[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 10.60ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:52[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:53[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 376.03ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886932347 HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:53[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:53[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:53[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 97.15ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:08:53[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 98.15ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886932348 HTTP/1.1" 200 OK
+[32m2026-03-30 23:08:56[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:08:56[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/custom-view | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/custom-view | Status: 200 | Time: 4.16ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/custom-view HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 6.99ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/list?_=1774886944118 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/tags | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/tags | Status: 200 | Time: 5.12ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/tags HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:04[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.03ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:08[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/system-view | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:08[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/system-view | Status: 200 | Time: 5.06ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/system-view HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:08[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:08[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 3.23ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/list?is_custom=0&_=1774886948326 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:09[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:09[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.05ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:11[0m | [1mINFO    [0m | [36mSTART | GET /rbac/manage | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:11[0m | [1mINFO    [0m | [36mEND   | GET /rbac/manage | Status: 200 | Time: 1.05ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/manage HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:12[0m | [1mINFO    [0m | [36mSTART | GET /rbac/users-roles-data | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:12[0m | [1mINFO    [0m | [36mEND   | GET /rbac/users-roles-data | Status: 200 | Time: 6.53ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/users-roles-data?_=1774886951767 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:12[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:12[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/setup | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mEND   | GET /rbac/setup | Status: 200 | Time: 2.19ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/setup HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/permissions-list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mEND   | GET /rbac/permissions-list | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/permissions-list?_=1774886954345 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mSTART | GET /rbac/roles-list | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mEND   | GET /rbac/roles-list | Status: 200 | Time: 2.10ms[0m
+INFO:     127.0.0.1:0 - "GET /rbac/roles-list?_=1774886954346 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:14[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:17[0m | [1mINFO    [0m | [36mSTART | GET /admin/sync-users | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:17[0m | [1mINFO    [0m | [36mEND   | GET /admin/sync-users | Status: 200 | Time: 2.24ms[0m
+INFO:     127.0.0.1:0 - "GET /admin/sync-users HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:17[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:17[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.04ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:22[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:22[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 1.51ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 93.56ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886962849 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 168.53ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1774886962850 HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:23[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:25[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:25[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.51ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-30 23:09:26[0m | [1mINFO    [0m | [36mSTART | POST /auth/logout | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:26[0m | [1mINFO    [0m | [36mEND   | POST /auth/logout | Status: 200 | Time: 2.05ms[0m
+INFO:     127.0.0.1:0 - "POST /auth/logout HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:26[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:26[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 13.21ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK
+[32m2026-03-30 23:09:27[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-03-30 23:09:27[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-03-31 10:05:37[0m | [1mINFO    [0m | [36mSTART | GET / | IP: 127.0.0.1[0m
+[32m2026-03-31 10:05:37[0m | [1mINFO    [0m | [36mEND   | GET / | Status: 200 | Time: 9.44ms[0m
+INFO:     127.0.0.1:0 - "GET / HTTP/1.1" 200 OK

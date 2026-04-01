@@ -2,6 +2,7 @@ from fastapi import APIRouter, Request, Query, Depends
 from controllers.tpl_ct import TPLController
 from schemas.tpl_sh import TemplateCreateSchema, TemplateSystemSaveSchema # Import Schema để validate
 from core.deps import templates
+from core.deps import require_permission
 
 router = APIRouter(prefix="/fo/templates", tags=["Template Management"])
 
@@ -61,3 +62,8 @@ async def save_system_tpl(
 ):
     username = request.session.get("username", "DevAdmin")
     return controller.save_system(data, username)
+
+# Router của Front Office
+# @router.post("/save", dependencies=[Depends(require_permission("edit_fo", "EDIT", "FO"))])
+# async def save_fo(data: TemplateCreateSchema, username: str = Depends(get_current_user)):
+#     return controller.save(data, username)

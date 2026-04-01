@@ -7,19 +7,24 @@
         <div class="card shadow-sm border-0 border-start border-4 border-primary bg-white py-1">
             <div class="card-body py-1 px-3 d-flex justify-content-between align-items-center">
                 <h6 class="mb-0 fw-bold">DASHBOARD: {{ get_hotel_name(request) }}</h6>
-                <span class="small text-muted">{{ get_hotel_date(request) }} - {{ request.session.get('full_name') }}</span>
+                <span class="small text-muted">{{ get_hotel_date(request) }} - {{ request.session.get('full_name')
+                    }}</span>
             </div>
         </div>
     </div>
 </div>
 <div class="alert alert-info">
-    Quyền của bạn trong Session: {{ user_permissions }}
+    Quyền của bạn trong Session:{{ get_perms(request) | map(attribute='code') | list | tojson }}
+    {% set perms = get_perms(request)|map(attribute='code') %}
+    {% if 'admin' in codes or 'view_fo' in perms %}
+    Chào sếp hoặc người xem!
+    {% endif %}
     Context global pers {{ get_perms(request) }}
     Context global hotel date: {{ get_hotel_date(request) }}
 </div>
 <!-- PHẦN NỘI DUNG BIẾN ĐỔI (DYNAMIC) -->
 <div class="row g-3"> <!-- g-3 để tạo khoảng cách giữa các khối -->
-    
+
     <!-- PHẦN TIỀN SẢNH (FO) -->
     {% if dash_modules.show_fo %}
     <div class="col-12">
@@ -33,7 +38,7 @@
         <div class="card border-top border-4 border-info shadow-sm">
             <div class="card-header bg-white py-1 fw-bold text-info">CHỨNG TỪ KẾ TOÁN MỚI</div>
             <div class="card-body p-0" style="min-height: 200px;">
-                 <!-- Sau này nhúng db_bo_vouchers.html vào đây -->
+                <!-- Sau này nhúng db_bo_vouchers.html vào đây -->
             </div>
         </div>
     </div>
@@ -45,7 +50,7 @@
         <div class="card border-top border-4 border-warning shadow-sm">
             <div class="card-header bg-white py-1 fw-bold text-warning">NHÂN SỰ MỚI ĐỒNG BỘ</div>
             <div class="card-body p-0" style="min-height: 200px;">
-                 <!-- Sau này nhúng db_hr_employees.html vào đây -->
+                <!-- Sau này nhúng db_hr_employees.html vào đây -->
             </div>
         </div>
     </div>
@@ -55,8 +60,11 @@
 {% endblock %}
 
 {% block scripts %}
-    <!-- Nạp JS theo quyền -->
-    {% if dash_modules.show_fo %}<script src="/static/js/dashboards/fo_handler.js"></script>{% endif %}
-    {% if dash_modules.show_bo %}<script src="/static/js/dashboards/bo_handler.js"></script>{% endif %}
-    {% if dash_modules.show_hr %}<script src="/static/js/dashboards/hr_handler.js"></script>{% endif %}
+<!-- Nạp JS theo quyền -->
+{% if dash_modules.show_fo %}
+<script src="/static/js/dashboards/fo_handler.js"></script>{% endif %}
+{% if dash_modules.show_bo %}
+<script src="/static/js/dashboards/bo_handler.js"></script>{% endif %}
+{% if dash_modules.show_hr %}
+<script src="/static/js/dashboards/hr_handler.js"></script>{% endif %}
 {% endblock %}

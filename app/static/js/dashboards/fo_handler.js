@@ -91,14 +91,59 @@ FO_DASH.actions = {
             columns: [
                 {
                     data: 'FolioNum',
+                    className: 'text-nowrap py-1',
                     render: (data, type, row) => {
-                        // Xử lý GroupCode/SortGroup nếu null thì truyền chuỗi rỗng
+                        const folio = row.FFolioNum;
                         const sGroup = row.SortGroup ? `'${row.SortGroup}'` : 'null';
+                        const idAdd = row.IdAddition;
 
-                        return `<button class="btn btn-xs btn-primary py-0 px-1" 
-                        onclick="FO_DASH.actions.openSignProcess('${row.FFolioNum}', ${sGroup}, ${row.IdAddition})">
-                        Ký
-                        </button>`;
+                        // GIẢ SỬ: 0-Chưa gửi, 1-Đang chờ ký, 2-Đã ký, 3-Hoàn tất (Đã vào SMILE)
+                        const sts = row.SignStatus || 0;
+
+                        let mainBtn = '';
+
+                        // --- LOGIC NÚT BẤM CHÍNH (PRIMARY ACTION) ---
+                        switch (sts) {
+                            case 1: // Đang chờ khách ký
+                                mainBtn = `<button class="btn btn-xs btn-warning btn-status-action py-0" 
+                            onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">GỬI LẠI</button>`;
+                                break;
+                            case 2: // Khách đã ký xong
+                                mainBtn = `<button class="btn btn-xs btn-success btn-status-action py-0" 
+                            onclick="FO_DASH.actions.openReview('${folio}', ${idAdd})">DUYỆT</button>`;
+                                break;
+                            case 3: // Đã hoàn tất đẩy vào SMILE
+                                mainBtn = `<button class="btn btn-xs btn-secondary btn-status-action py-0" 
+                            onclick="FO_DASH.actions.viewFinal('${folio}')"><i class="fas fa-eye"></i> XEM</button>`;
+                                break;
+                            default: // Chưa làm gì (Status 0 hoặc Null)
+                                mainBtn = `<button class="btn btn-xs btn-primary btn-status-action py-0" 
+                            onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">KÝ</button>`;
+                        }
+
+                        // --- CẤU TRÚC 3 CHẤM (SECONDARY ACTIONS) ---
+                        return `
+        <div class="d-flex align-items-center">
+            ${mainBtn}
+            <div class="dropdown ms-2 position-static">
+                <!-- Dùng thẻ <a> như cách cũ của bạn cho nhạy -->
+                <a class="text-muted p-1 dropdown-toggle no-caret" href="#" role="button" 
+                data-bs-toggle="dropdown" 
+                data-bs-boundary="viewport"  data-bs-display="static"
+                aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <ul class="dropdown-menu shadow border-0" style="z-index: 99999; min-width: 150px;">
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">
+                        <i class="fas fa-pen-nib me-2 text-primary"></i> Gửi hồ sơ mới</a></li>
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.changeDevice('${folio}')">
+                        <i class="fas fa-tablet-alt me-2 text-info"></i> Chuyển máy ký</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.forceCancel('${folio}')">
+                        <i class="fas fa-trash-alt me-2"></i> Hủy hồ sơ</a></li>
+                </ul>
+            </div>
+        </div>`;
                     }
                 },// 0
                 {
@@ -556,4 +601,26 @@ $(document).ready(() => {
 
     // F5 XONG THÌ TỰ ĐỘNG CHẠY LẠI MODULE CUỐI CÙNG
     FO_DASH.actions.switchModule(FO_DASH.currentModule);
+
+    // drop down ... ký
+    $(document).on('shown.bs.dropdown', '.dropdown', function () {
+        // Tìm cái menu vừa được mở
+        const menu = $(this).find('.dropdown-menu');
+
+        // Bốc nó ra khỏi table và gắn vào body
+        $('body').append(menu.detach());
+
+        // Tính toán vị trí dựa trên cái nút bấm
+        const offset = $(this).offset();
+        menu.css({
+            'display': 'block',
+            'top': offset.top + $(this).outerHeight(),
+            'left': offset.left - menu.outerWidth() + $(this).outerWidth()
+        });
+    });
+
+    $(document).on('hidden.bs.dropdown', '.dropdown', function () {
+        // Khi đóng thì dọn dẹp hoặc để Bootstrap tự lo
+        $('.dropdown-menu').css('display', '');
+    });
 });

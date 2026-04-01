@@ -14,7 +14,9 @@ router = APIRouter(prefix="/admin", tags=["Config"])
 @router.get("/sync-users", include_in_schema=False)
 async def sync_users_page(request: Request):
     # Kiểm tra quyền 'admin' trong session trước khi cho vào
-    user_perms = request.session.get("permissions", [])
+    raw_perms = request.session.get("permissions") or [] 
+    user_perms = [p.get("code").lower() for p in raw_perms if isinstance(p, dict) and p.get("code")]
+    
     if "admin" not in user_perms:
         
         return RedirectResponse(url="/dashboard")

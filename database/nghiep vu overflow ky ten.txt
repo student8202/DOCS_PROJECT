@@ -80,3 +80,36 @@ Trường hợp này trong kỹ thuật gọi là "Ghost Records" (Hồ sơ treo
 Lúc này, iPad thì ở màn hình Waiting, nhưng trong Database vẫn còn dòng dữ liệu chưa hoàn tất, dẫn đến việc Dashboard báo "Bận".
 1. Giải pháp Tự động: iPad tự "giải phóng" mình
 Khi iPad truy cập vào trang waiting_screen.html, nó phải gửi một lệnh lên Server: "Tôi đã quay về màn hình chờ, hãy hủy tất cả hồ sơ cũ của tôi".
+-------------------------
+2. Tại sao Kế toán (Income Auditor) lại thích điều này?
+Đối soát: Nếu nhân viên FO sửa tiền phòng thấp xuống rồi bắt khách ký lại để "ăn chênh lệch", Kế toán chỉ cần lọc theo Folio_Num là thấy ngay 2 bản ký: Bản cũ tiền cao, bản mới tiền thấp ➔ Xuất hiện dấu hiệu gian lận ngay lập tức.
+Minh bạch: Mọi thay đổi đều để lại dấu vết (Ai sửa, sửa lúc nào, nội dung Snapshot cũ là gì).
+3. Tối ưu Table để quản lý Version tốt hơn:
+Bạn nên thêm một trường IsCurrent (BIT) để Dashboard hiển thị nhanh bản mới nhất.
+-------------------- phân quyền doc
+bộ hồ sơ điện tử (E-Archive) kết hợp với các bảng đang có, chúng ta chỉ cần thực hiện bước "Ánh xạ quyền" (Permission Mapping).
+Dưới đây là cách vận hành để FO và Kế toán nhìn thấy đúng thứ họ cần dựa trên các bảng này:
+1. Định nghĩa Permission (Bảng tbl_PermissionList)
+Bạn cần thêm các mã quyền cụ thể cho bộ hồ sơ vào danh mục này:
+DOC_VIEW_FO: Quyền xem hồ sơ Lễ tân.
+DOC_SIGN_FO: Quyền gửi hồ sơ ký từ iPad.
+DOC_VIEW_ACC: Quyền xem hồ sơ dành cho Kế toán.
+DOC_UPLOAD_SCAN: Quyền upload bản scan Passport/Giấy tờ.
+2. Gán quyền cho Role (Bảng tbl_RolePermissions)
+Role RECEPTIONIST: Gán DOC_VIEW_FO, DOC_SIGN_FO, DOC_UPLOAD_SCAN.
+Role ACCOUNTANT: Gán DOC_VIEW_ACC, DOC_VIEW_FO (Nếu muốn kế toán xem được cả bản của FO).
+----------------
+1. Nguyên tắc "Chìa khóa và Ổ khóa"
+1. Ổ khóa (Dữ liệu - Bảng tbl_SignedDocuments)
+Mỗi hồ sơ (Regcard, Bill, Scan Passport...) là một thực thể nằm trong 01 bảng duy nhất.
+Nhãn dán (Owner_Dept): Xác định hồ sơ này thuộc "nhà" nào (Ví dụ: FO, ACC, HR).
+2. Chìa khóa (Phân quyền - Bảng tbl_PermissionList)
+Mỗi Permission là một chiếc chìa khóa định danh rõ ràng:
+Địa điểm (ModuleName): Chìa này dùng cho "nhà" nào (Khớp với Owner_Dept).
+Quyền năng (Action_Type): Chìa này được làm gì (VIEW, SIGN, EDIT, VOID).
+3. Quy tắc "Mở khóa" (Logic vận hành)
+Hệ thống sẽ thực hiện phép đối soát tự động:
+Nếu User có chìa (view_fo): Mở được mọi hồ sơ có nhãn FO để XEM.
+Nếu User có chìa (void_fo): Mở được mọi hồ sơ có nhãn FO để HỦY.
+Đặc biệt (Kế toán): Nếu bạn cấp chìa view_fo cho Kế toán -> Kế toán mở được hồ sơ của FO để xem, nhưng vì họ không có chìa void_fo nên không bao giờ xóa được hồ sơ của FO.
+*** Action_Type NVARCHAR(20); -- Lưu các giá trị: VIEW, SIGN, EDIT, VOID

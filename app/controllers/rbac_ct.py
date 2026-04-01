@@ -10,7 +10,7 @@ class RBACController:
     @staticmethod
     def render_setup_page(request: Request):
         # Sử dụng hàm get_perms đã khai báo toàn cục để check
-        user_perms = request.session.get("permissions", [])
+        user_perms = [p.get("code").lower() for p in request.session.get("permissions", []) if p.get("code")]
         if "admin" not in user_perms:
             return RedirectResponse(url="/dashboard")
 
@@ -106,11 +106,15 @@ class RBACController:
     ## gán role cho user
     @staticmethod
     def render_manage_page(request: Request):
-        # 1. Lấy danh sách quyền từ Session (đã lưu lúc Login)
-        user_perms = request.session.get("permissions", [])
+        # 1. Lấy và làm sạch danh sách mã quyền (chỉ lấy chuỗi code)
+        raw_data = request.session.get("permissions", [])
+        user_perm_codes = [
+            str(p.get("code") if isinstance(p, dict) else p).lower() 
+            for p in raw_data if p
+        ]
         
-        # 2. KIỂM TRA QUYỀN (Sử dụng chữ thường 'admin')
-        if "admin" not in [p.lower() for p in user_perms if p]:
+        # 2. Kiểm tra cực kỳ đơn giản và nhanh
+        if "admin" not in user_perm_codes:
             # Nếu không có quyền admin, đá về Dashboard
             return RedirectResponse(url="/dashboard")
             

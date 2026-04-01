@@ -186,4 +186,13 @@ Nếu AuthController cần gọi AuthService, bạn lại phải viết AuthServ
 2. Cách dùng Depends (FastAPI Standard)
 
 Với các tác vụ đơn giản như Login (ít logic, ít phụ thuộc), cách của bạn vẫn ổn. Nhưng với Template Manager (phải làm việc với nhiều DB: LV_DOCS, SMILE_FO), bạn nên dùng Depends.
+---------------------------------------
+Source_Type: Giúp hệ thống biết bản này là khách ký trực tiếp (có Signature_Base64) hay là nhân viên dùng máy scan rồi upload lên (chỉ có FilePath).
+Owner_Dept: Cực kỳ quan trọng để "chiều lòng" Kế toán. Khi Kế toán vào Dashboard của họ, hệ thống chỉ cần SELECT * WHERE Owner_Dept = 'ACC'. FO sẽ không bị lẫn hồ sơ của Kế toán và ngược lại.
+Doc_Group_ID: Giúp bạn gom các file đơn lẻ thành một "Bộ hồ sơ". Khi mở Folio 10100, bạn có thể gọi tất cả tài liệu có chung Doc_Group_ID hoặc chung Folio_Num.
+3. Tổ chức lại Doc_Type (Nghiệp vụ)
+Thay vì để Doc_Type tự do, bạn nên quy định chuẩn để nút 3 chấm hoạt động chính xác:
+Hồ sơ Ký số (FO): REGCARD, CONFIRMATION, DISCLAIMER.
+Hồ sơ Kế toán (ACC): GUEST_BILL, RECEIPT, PAYMENT_VOUCHER.
+Hồ sơ Scan (Attach): PASSPORT, VISA, CREDIT_CARD_FRONT.
 
