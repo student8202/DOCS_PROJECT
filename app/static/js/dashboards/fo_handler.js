@@ -70,6 +70,14 @@ const calcPax = (dataList) => {
 };
 // 3. ACTIONS
 FO_DASH.actions = {
+    // Thêm dòng này để làm "kho chứa" dữ liệu tạm
+    selectedData: {
+        folio: null,
+        group: null,
+        idAdd: null,
+        deviceId: null
+    },
+
     init: () => {
         const hotelDateStr = GLOBAL_HOTEL_DATE;
 
@@ -140,7 +148,7 @@ FO_DASH.actions = {
                            onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">
                         <i class="fas fa-pen-nib me-2 text-primary"></i> ${mode === 0 ? 'Gửi ký iPad' : 'Gửi lại bản mới'}</a></li>
                     
-                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.changeDevice('${folio}')">
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.changeDevice('${folio}', ${sGroup}, ${idAdd})">
                         <i class="fas fa-tablet-alt me-2 text-info"></i> Chuyển thiết bị</a></li>
 
                     <div class="dropdown-divider"></div>
@@ -156,7 +164,7 @@ FO_DASH.actions = {
                     ${mode === 2 ? `<li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.rejectSign('${folio}')">
                         <i class="fas fa-times-circle me-2"></i> Từ chối chữ ký này</a></li>` : ''}
                     
-                    <li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.forceCancel('${folio}')">
+                    <li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.forceCancel('${folio}', ${sGroup}, ${idAdd})">
                         <i class="fas fa-trash-alt me-2"></i> Hủy & Xóa yêu cầu</a></li>
                     
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.viewLogs('${folio}')">
@@ -491,28 +499,12 @@ FO_DASH.actions = {
         };
 
         console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
-        // Tự động load danh sách thiết bị Online ngay khi mở modal
-        this.loadOnlineDevices();
+        // Gọi hàm setup chung
+        this.setupSignModal(folio, group, idAdd, "Gửi hồ sơ ký iPad");
 
-        // 2. Hiện Modal chọn Mẫu & Thiết bị (Modal này bạn đã tạo ở bước trước)
-        $('#modalSelectSign').modal('show');
-        $('#info-booking-sign').text(`Đang xử lý Folio: ${folio} | Group: ${group || 'Lẻ'}`);
-
-        // 3. Tải danh sách Mẫu (Chỉ lấy FO - REGCARD/CONFIRM)
-        $.get('/fo/templates/list?module=FO', (res) => {
-            let html = res.map(t => `<option value="${t.TemplateID}">${t.TemplateName}</option>`).join('');
-            $('#sign-select-tpl').html(html);
-        });
-
-        // 4. Tải danh sách iPad đang Online tại quầy
-        $.get('/api/v1/devices/online-list?module=FO', (res) => {
-            let html = res.map(d => `
-                <button class="list-group-item list-group-item-action p-2 small device-item" 
-                        onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
-                    <i class="fas fa-tablet-alt me-2"></i> ${d.DeviceName} [${d.DeviceID}]
-                </button>
-            `).join('');
-            $('#list-devices-online').html(html || '<div class="text-danger p-2">Không có iPad nào Online!</div>');
+        // Gán sự kiện cho nút Xác nhận là GỬI MỚI
+        $('#btn-confirm-send').off('click').text('Gửi ký').on('click', () => {
+            this.sendToQueue();
         });
 
     },
@@ -520,19 +512,28 @@ FO_DASH.actions = {
     loadOnlineDevices: function () {
         $.get('/api/v1/devices/online-list?module=FO', (res) => {
             let html = '';
-            res.forEach(d => {
-                // Giả sử API trả về thêm trạng thái IsBusy (1 nếu có hồ sơ chưa ký)
-                let statusCls = d.IsBusy ? 'bg-warning' : 'bg-success';
-                let statusTxt = d.IsBusy ? 'ĐANG KÝ' : 'RẢNH';
-                let disabledAttr = d.IsBusy ? 'disabled style="opacity:0.6; cursor:not-allowed;"' : '';
+            if (res.length === 0) {
+                html = '<div class="text-center p-3 text-muted small italic">Không có iPad nào đang Online</div>';
+            } else {
+                res.forEach(d => {
+                    // IsBusy = 1 là đang có hồ sơ treo
+                    let statusCls = d.IsBusy ? 'bg-warning text-dark' : 'bg-success';
+                    let statusTxt = d.IsBusy ? 'BẬN' : 'RẢNH';
 
-                html += `
-                <button type="button" class="list-group-item list-group-item-action p-2 small device-item" 
+                    // Nghiệp vụ: Nếu đang KÝ MỚI thì chặn máy BẬN. 
+                    // Nếu đang CHUYỂN THIẾT BỊ thì có thể cho phép (tùy bạn quyết định)
+                    let isBusy = d.IsBusy ? true : false;
+                    let disabledAttr = isBusy ? 'disabled style="opacity:0.6; cursor:not-allowed;"' : '';
+
+                    html += `
+                <button type="button" class="list-group-item list-group-item-action p-2 small device-item d-flex align-items-center" 
                         ${disabledAttr} onclick="FO_DASH.actions.selectDevice('${d.DeviceID}', this)">
-                    <span class="badge ${statusCls} me-2">${statusTxt}</span>
+                    <span class="badge ${statusCls} me-2" style="min-width: 50px;">${statusTxt}</span>
                     <span class="fw-bold">${d.DeviceName}</span>
+                    <small class="ms-auto text-muted">(${d.DeviceID})</small>
                 </button>`;
-            });
+                });
+            }
             $('#list-devices-online').html(html);
         });
     },
@@ -627,7 +628,65 @@ FO_DASH.actions = {
             }
         });
     },
+    // Hàm dùng chung để đổ dữ liệu vào Modal
+    setupSignModal: function (folio, group, idAdd, title = "Gửi hồ sơ ký iPad") {
+        // 1. Lưu dữ liệu vào biến tạm để các nút Xác nhận truy cập được
+        this.selectedData = { folio, group, idAdd };
 
+        // 2. Cập nhật giao diện Modal
+        $('#modalSelectSign').modal('show');
+        $('#modalSelectSign .modal-title').text(title);
+        $('#info-booking-sign').text(`Folio: ${folio} | Group: ${group || 'Lẻ'}`);
+
+        // 3. Load danh sách thiết bị Online (Đã có hàm của bạn)
+        this.loadOnlineDevices();
+
+        // 4. Tải danh sách Mẫu (Chỉ tải nếu chưa có hoặc luôn tải mới)
+        $.get('/fo/templates/list?module=FO', (res) => {
+            let html = res.map(t => `<option value="${t.TemplateID}">${t.TemplateName}</option>`).join('');
+            $('#sign-select-tpl').html(html);
+        });
+    },
+    changeDevice: function (folio, group, idAdd) {
+        // 1. Lưu lại folio đang chọn vào biến tạm để tí nữa update
+        this.selectedData = this.selectedData || {};
+        this.selectedData.folio = folio;
+
+        // 2. Mở Modal chọn thiết bị (Dùng chung modal với nút Ký cho gọn)
+        // Gọi hàm setup chung
+        this.setupSignModal(folio, group, idAdd, "Chuyển thiết bị nhận hồ sơ");
+
+        // Gán sự kiện cho nút Xác nhận là CẬP NHẬT THIẾT BỊ
+        $('#btn-confirm-send').off('click').text('Xác nhận chuyển').on('click', () => {
+            this.confirmChangeDevice();
+        });
+    },
+
+    confirmChangeDevice: function () {
+        const newDeviceId = $('#sign-select-device').val(); // Lấy iPad mới từ Select
+        if (!newDeviceId) {
+            Swal.fire("Lỗi", "Vui lòng chọn iPad mới!", "warning");
+            return;
+        }
+
+        $.ajax({
+            url: '/api/v1/queue/change-device',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                FolioNum: this.selectedData.folio,
+                NewDeviceID: newDeviceId
+            }),
+            success: (res) => {
+                Swal.fire("Thành công", "Hồ sơ đã được chuyển sang " + newDeviceId, "success");
+                $('#modalSelectSign').modal('hide');
+                this.reload(); // Cập nhật lại Dashboard
+            },
+            error: (err) => {
+                Swal.fire("Lỗi", err.responseJSON?.detail || "Không thể chuyển thiết bị", "error");
+            }
+        });
+    },
     // 2. Hàm DUYỆT: Mở bản ký để Lễ tân xem trước khi chốt
     openReview: function (folio, idAdd) {
         // Mở Modal Review (Bạn cần tạo Modal này trong HTML)
@@ -646,7 +705,37 @@ FO_DASH.actions = {
             }
         });
     },
-
+    forceCancel: function (folio, group, idAdd) {
+        Swal.fire({
+            title: 'Hủy yêu cầu ký?',
+            text: `Bạn có chắc muốn hủy và xóa yêu cầu ký của Folio: ${folio}? Hồ sơ trên iPad (nếu có) sẽ bị đóng ngay lập tức.`,
+            icon: 'error',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Đồng ý hủy',
+            cancelButtonText: 'Bỏ qua'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: '/api/v1/queue/force-cancel',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        FolioNum: folio,
+                        IdAddition: idAdd
+                    }),
+                    success: (res) => {
+                        Swal.fire("Đã hủy", "Yêu cầu ký đã được xóa bỏ.", "success");
+                        this.reload(); // Cập nhật lại màu nút trên Dashboard về Xanh dương (KÝ)
+                    },
+                    error: (err) => {
+                        Swal.fire("Lỗi", err.responseJSON?.detail || "Không thể hủy hồ sơ", "error");
+                    }
+                });
+            }
+        });
+    },
     // 3. Hàm XÁC NHẬN DUYỆT: Đẩy dữ liệu vào SMILE
     confirmApprove: function (qid) {
         $.ajax({

@@ -51,3 +51,15 @@ async def reset_device_queue(
     # data.DeviceID là chuỗi (str) -> Truyền vào hàm Service đã sửa ở trên
     return svc.reset_device_queue(data.DeviceID)
 
+@router.post("/change-device")
+async def change_device(data: dict): # Bạn có thể tạo Schema riêng nếu muốn
+    folio = data.get("FolioNum")
+    new_device = data.get("NewDeviceID")
+    return queue_ctl.change_device_logic(folio, new_device)
+
+@router.post("/force-cancel")
+async def force_cancel(data: dict):
+    folio = data.get("FolioNum")
+    id_add = data.get("IdAddition")
+    return queue_ctl.force_cancel_logic(folio, id_add)
+

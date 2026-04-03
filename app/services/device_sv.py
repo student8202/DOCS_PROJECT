@@ -94,10 +94,20 @@ class DeviceService:
         try:
             # Lọc theo Module và trạng thái IsOnline = 1 (Computed column trong SQL)
             sql = """
-                SELECT DeviceID, DeviceName, DeviceType, ModuleName 
-                FROM dbo.tbl_Devices 
-                WHERE ModuleName = ? AND IsOnline = 1
-                ORDER BY DeviceID ASC
+                SELECT 
+                d.DeviceID, 
+                d.DeviceName, 
+                d.DeviceType, 
+                d.ModuleName,
+                CASE 
+                    WHEN EXISTS (
+                        SELECT 1 FROM dbo.tbl_SignatureQueue q 
+                        WHERE q.DeviceID = d.DeviceID AND q.Status IN (0, 1)
+                    ) THEN 1 ELSE 0 
+                END AS IsBusy
+            FROM dbo.tbl_Devices d
+            WHERE d.ModuleName = ? AND d.IsOnline = 1
+            ORDER BY d.DeviceID ASC
             """
             cursor.execute(sql, (module,))
             columns = [column[0] for column in cursor.description]

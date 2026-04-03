@@ -172,6 +172,40 @@ class QueueService:
             return {"status": "error", "message": str(e)}
         finally:
             conn.close()
+            
+    def update_queue_device(self, folio: str, new_device_id: str):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Tìm bản ghi đang chờ (0) hoặc đang ký (1) để đổi máy
+            sql = """
+                UPDATE dbo.tbl_SignatureQueue 
+                SET DeviceID = ?, UpdatedAt = GETDATE()
+                WHERE RefID = ? AND Status IN (0, 1)
+            """
+            cursor.execute(sql, (new_device_id, folio))
+            conn.commit()
+            return cursor.rowcount > 0 # Trả về True nếu có dòng được update
+        finally:
+            conn.close()   
+            
+    def cancel_queue_by_folio(self, folio: str, id_add: int):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Chuyển trạng thái sang 4 (Hủy) cho các bản ghi chưa hoàn tất (0, 1, 2)
+            sql = """
+                UPDATE dbo.tbl_SignatureQueue 
+                SET Status = 4, ExpiredAt = GETDATE()
+                WHERE RefID = ? AND Status IN (0, 1, 2)
+            """
+            # Nếu nghiệp vụ của bạn yêu cầu hủy chính xác theo cả IdAddition thì thêm vào WHERE
+            cursor.execute(sql, (folio,)) 
+            conn.commit()
+            return cursor.rowcount > 0
+        finally:
+            conn.close()
+             
     #  Dual-Source (đọc từ File hoặc DB), nên tách thành 3 hàm nhỏ   
     def _get_template_content(self, template_id: int):
         conn = get_lv_docs_db()
