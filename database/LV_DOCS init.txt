@@ -94,7 +94,7 @@ CREATE TABLE tbl_Templates (
     TemplateName NVARCHAR(255),
     ModuleName   NVARCHAR(10),  -- FO, POS, BO, HR
     SubModule    NVARCHAR(50),  -- RESERVATION, CASHIER, ACCOUNTING, v.v.
-    Category     NVARCHAR(50), -- REG_CARD, WELCOME_LETTER, INVOICE, v.v.
+    Category     NVARCHAR(50), -- REG_CARD, CONFIRM, WELCOME_LETTER, INVOICE, v.v.
     IsCustom     BIT DEFAULT 0, -- 0: Dev code, 1: Admin thiết kế
     HtmlContent  NVARCHAR(MAX),
     FilePath     NVARCHAR(500),

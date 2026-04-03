@@ -1,74 +1,76 @@
 from schemas.queue_sh import QueueSendSchema
 from database.db_connection import get_lv_docs_db
 from fastapi import HTTPException
+from loguru import logger
+import traceback
 import os
 
 class QueueService:
     # 1. NHÂN VIÊN GỬI HỒ SƠ VÀO HÀNG ĐỢI
-    def send_to_queue_logic(self, data: QueueSendSchema, username: str):
-        conn = get_lv_docs_db()
-        cursor = conn.cursor()
-        try:
-            # 1. KIỂM TRA TRẠNG THÁI THIẾT BỊ: Có hồ sơ nào chưa hoàn tất không?
-            # Status 0: Waiting, Status 1: Processing
-            cursor.execute("""
-                SELECT TOP 1 QueueID, RefID 
-                FROM dbo.tbl_SignatureQueue 
-                WHERE DeviceID = ? AND Status IN (0, 1)
-            """, (data.DeviceID,))
-            busy_doc = cursor.fetchone()
+    # def send_to_queue_logic(self, data: QueueSendSchema, username: str):
+    #     conn = get_lv_docs_db()
+    #     cursor = conn.cursor()
+    #     try:
+    #         # 1. KIỂM TRA TRẠNG THÁI THIẾT BỊ: Có hồ sơ nào chưa hoàn tất không?
+    #         # Status 0: Waiting, Status 1: Processing
+    #         cursor.execute("""
+    #             SELECT TOP 1 QueueID, RefID 
+    #             FROM dbo.tbl_SignatureQueue 
+    #             WHERE DeviceID = ? AND Status IN (0, 1)
+    #         """, (data.DeviceID,))
+    #         busy_doc = cursor.fetchone()
 
-            if busy_doc:
-                # NẾU ĐANG BẬN: Chặn đứng và báo lỗi về Dashboard
-                raise Exception(f"Thiết bị {data.DeviceID} đang bận xử lý hồ sơ {busy_doc[1]}. "
-                                f"Vui lòng đợi khách ký xong hoặc hủy hồ sơ cũ.")
+    #         if busy_doc:
+    #             # NẾU ĐANG BẬN: Chặn đứng và báo lỗi về Dashboard
+    #             raise Exception(f"Thiết bị {data.DeviceID} đang bận xử lý hồ sơ {busy_doc[1]}. "
+    #                             f"Vui lòng đợi khách ký xong hoặc hủy hồ sơ cũ.")
             
-            # 1. LOGIC TRỘN DỮ LIỆU (RENDER)
-            # Giả sử bạn đã có hàm render_tpl(template_id, folio, group, id_add)
-            # Nếu chưa có, tạm thời lấy HtmlContent gốc của Template
-            cursor.execute("SELECT HtmlContent FROM tbl_Templates WHERE TemplateID = ?", (data.TemplateID,))
-            tpl_row = cursor.fetchone()
+    #         # 1. LOGIC TRỘN DỮ LIỆU (RENDER)
+    #         # Giả sử bạn đã có hàm render_tpl(template_id, folio, group, id_add)
+    #         # Nếu chưa có, tạm thời lấy HtmlContent gốc của Template
+    #         cursor.execute("SELECT HtmlContent FROM tbl_Templates WHERE TemplateID = ?", (data.TemplateID,))
+    #         tpl_row = cursor.fetchone()
             
-            if not tpl_row:
-                return {"status": "error", "message": "Không tìm thấy mẫu"}
+    #         if not tpl_row:
+    #             return {"status": "error", "message": "Không tìm thấy mẫu"}
 
-            html_final = tpl_row[0] # Lấy chuỗi HTML từ Tuple
-            # Thay thế thẻ đánh dấu bằng một thẻ img có ID cụ thể
-            # Cấy vùng chứa cho Khách
-            html_final = html_final.replace("{{GuestSignatureImg}}", 
-                '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'guest\')">'
-                '<img id="img-guest-sig" src="" style="display:none; max-height:80px;" />'
-                '<span class="placeholder-text">Chạm để ký / Touch to sign</span>'
-                '</div>')
+    #         html_final = tpl_row[0] # Lấy chuỗi HTML từ Tuple
+    #         # Thay thế thẻ đánh dấu bằng một thẻ img có ID cụ thể
+    #         # Cấy vùng chứa cho Khách
+    #         html_final = html_final.replace("{{GuestSignatureImg}}", 
+    #             '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'guest\')">'
+    #             '<img id="img-guest-sig" src="" style="display:none; max-height:80px;" />'
+    #             '<span class="placeholder-text">Chạm để ký / Touch to sign</span>'
+    #             '</div>')
 
-            # Cấy vùng chứa cho Lễ tân
-            html_final = html_final.replace("{{ReceptionSignatureImg}}", 
-                '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
-                '<img id="img-recep-sig" src="" style="display:none; max-height:120px;" />'
-                '<span class="placeholder-text">Chạm để ký / Staff Sign</span>'
-                '</div>')
+    #         # Cấy vùng chứa cho Lễ tân
+    #         html_final = html_final.replace("{{ReceptionSignatureImg}}", 
+    #             '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
+    #             '<img id="img-recep-sig" src="" style="display:none; max-height:120px;" />'
+    #             '<span class="placeholder-text">Chạm để ký / Staff Sign</span>'
+    #             '</div>')
 
-            # 2. Hủy hồ sơ cũ của thiết bị
-            cursor.execute("UPDATE dbo.tbl_SignatureQueue SET Status = 4 WHERE DeviceID = ? AND Status = 0", (data.DeviceID,))
+    #         # 2. Hủy hồ sơ cũ của thiết bị
+    #         cursor.execute("UPDATE dbo.tbl_SignatureQueue SET Status = 4 WHERE DeviceID = ? AND Status = 0", (data.DeviceID,))
             
-            # 3. Insert với đầy đủ thông tin
-            sql = """
-                INSERT INTO dbo.tbl_SignatureQueue 
-                (ModuleName, RefType, RefID, DeviceID, TemplateID, RenderedHtml, Status, CreatedBy, CreatedAt)
-                VALUES (?, ?, ?, ?, ?, ?, 0, ?, GETDATE())
-            """
-            cursor.execute(sql, (
-                data.ModuleName, data.RefType, data.RefID, data.DeviceID, 
-                data.TemplateID, html_final, username
-            ))
+    #         # 3. Insert với đầy đủ thông tin
+    #         sql = """
+    #             INSERT INTO dbo.tbl_SignatureQueue 
+    #             (ModuleName, RefType, RefID, DeviceID, TemplateID, RenderedHtml, Status, CreatedBy, CreatedAt)
+    #             VALUES (?, ?, ?, ?, ?, ?, 0, ?, GETDATE())
+    #         """
+    #         cursor.execute(sql, (
+    #             data.ModuleName, data.RefType, data.RefID, data.DeviceID, 
+    #             data.TemplateID, html_final, username
+    #         ))
             
-            conn.commit()
-            return {"status": "success"}
-        except Exception as e:
-            # Các lỗi hệ thống khác (SQL, kết nối...)
-            raise HTTPException(status_code=500, detail=str(e))
-        finally:
-            conn.close()
+    #         conn.commit()
+    #         return {"status": "success"}
+    #     except Exception as e:
+    #         # Các lỗi hệ thống khác (SQL, kết nối...)
+    #         raise HTTPException(status_code=500, detail=str(e))
+    #     finally:
+    #         conn.close()
 
     # 2. TABLET KIỂM TRA HỒ SƠ MỚI (Polling)
     def check_new_doc_logic(self, device_id: str):
@@ -130,6 +132,46 @@ class QueueService:
             return {"status": "success", "device": device_id}
         finally:
             conn.close()
+            
+    def check_queue_valid(self, queue_id: int):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Kiểm tra trạng thái hiện tại
+            cursor.execute("SELECT Status FROM dbo.tbl_SignatureQueue WHERE QueueID = ?", (queue_id,))
+            row = cursor.fetchone()
+            # Nếu Status = 4 (Hủy) hoặc không tìm thấy
+            if not row or row[0] == 4:
+                return "cancelled"
+            return "active"
+        finally:
+            conn.close()
+                
+    def get_current_device_by_folio(self, folio: str):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # Tìm DeviceID của hồ sơ mới nhất đang ở trạng thái Chờ (0) hoặc Đang ký (1)
+            sql = """
+                SELECT TOP 1 DeviceID 
+                FROM dbo.tbl_SignatureQueue 
+                WHERE RefID = ? AND Status IN (0, 1) 
+                ORDER BY CreatedAt DESC
+            """
+            cursor.execute(sql, (folio,))
+            row = cursor.fetchone()
+            
+            if row:
+                # CHỐT HẠ: Phải lấy row[0] để lấy chuỗi 'FO01'
+                device_id = row[0] 
+                return {"status": "success", "DeviceID": device_id}
+            
+            return {"status": "success", "DeviceID": None}
+        except Exception as e:
+            logger.error(f"Lỗi lấy DeviceID từ Folio {folio}: {str(e)}")
+            return {"status": "error", "message": str(e)}
+        finally:
+            conn.close()
     #  Dual-Source (đọc từ File hoặc DB), nên tách thành 3 hàm nhỏ   
     def _get_template_content(self, template_id: int):
         conn = get_lv_docs_db()
@@ -175,7 +217,17 @@ class QueueService:
             '<span class="placeholder-text">Chạm để ký / Staff Sign</span></div>')
             
         return html
-    
+    def _get_smile_snapshot(self, folio: str, group: str, id_add: int):
+        # 
+        return {
+            "LastName": "NGUYEN",
+            "FirstName": "ANH QUYET",
+            "ArrivalDate": "02/04/2026",
+            "DepartureDate": "05/04/2026",
+            "RoomCode": "1001",
+            "RoomType": "DELUXE"
+        }
+        
     def send_to_queue_logic(self, data: QueueSendSchema, username: str):
         conn = get_lv_docs_db()
         cursor = conn.cursor()
@@ -203,5 +255,8 @@ class QueueService:
                                 data.TemplateID, html_final, username))
             conn.commit()
             return {"status": "success"}
+        except Exception as e:
+            logger.info(traceback.format_exc()) # In toàn bộ vết lỗi (dòng mấy, file nào) ra màn hình đen (Console)
+            raise HTTPException(status_code=500, detail=str(e))
         finally:
             conn.close()

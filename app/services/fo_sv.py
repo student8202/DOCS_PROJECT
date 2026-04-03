@@ -148,7 +148,8 @@ class FOService:
                         for key, value in g.items():
                             if isinstance(value, str):
                                 g[key] = tcvn3_to_unicode(value)
-            
+                    # GỌI HÀM TÁCH RIÊNG ĐỂ BƠM TRẠNG THÁI KÝ
+                    guests = FOService._check_sign_status_internal(guests, cursor)
             return guests
         except Exception as e:
             print(f"Error: {str(e)}")
@@ -267,14 +268,75 @@ class FOService:
                 for key, value in g.items():
                     if isinstance(value, str):
                         g[key] = tcvn3_to_unicode(value)
+            # GỌI HÀM TÁCH RIÊNG ĐỂ BƠM TRẠNG THÁI KÝ
+            final_guests = FOService._check_sign_status_internal(final_guests, cursor)
             
             return final_guests
 
         except Exception as e:
+            logger.error(f"Error: {str(e)}")
             print(f"Error: {str(e)}")
             return []
         finally:
             conn.close()
+    
+    @staticmethod       
+    def _check_sign_status_internal(guests_list, cursor):
+        """
+        Tách riêng logic kiểm tra trạng thái ký từ 2 bảng: Queue và SignedDocuments
+        """
+        logger.info(f"DEBUG: Checking status for {len(guests_list)} guests") # <-- Thêm dòng này
+        if not guests_list: return guests_list
+
+        # 1. Thu thập danh sách Folio để query 1 lần
+        all_folios = list(set([f"'{g['FolioNum']}'" for g in guests_list if g.get('FolioNum')]))
+        folios_str = ",".join(all_folios)
+        
+        # Bản đồ lưu trạng thái: { 'Folio123': {'REG_CARD', 'CONFIRM'} }
+        status_map = {}
+
+        if folios_str:
+            # 2. TRUY VẤN BẢNG QUEUE (Những bản khách VỪA KÝ XONG - Status 2)
+            sql_queue = f"""
+                SELECT q.RefID, t.Category
+                FROM LV_DOCS.dbo.tbl_SignatureQueue q
+                INNER JOIN LV_DOCS.dbo.tbl_Templates t ON q.TemplateID = t.TemplateID
+                WHERE q.RefID IN ({folios_str}) AND q.Status = 2
+            """
+            cursor.execute(sql_queue)
+            for r in cursor.fetchall():
+                f_id, cat = r[0], r[1].upper()
+                status_map.setdefault(f_id, set()).add(cat)
+
+            # 3. TRUY VẤN BẢNG SIGNED_DOCS (Những bản ĐÃ DUYỆT XONG - Status 3)
+            sql_signed = f"""
+                SELECT Folio_Num, Doc_Type 
+                FROM LV_DOCS.dbo.tbl_SignedDocuments 
+                WHERE Folio_Num IN ({folios_str}) AND Status = 3 AND IsDeleted = 0
+            """
+            cursor.execute(sql_signed)
+            for r in cursor.fetchall():
+                f_id, cat = r[0], r[1].upper() # Doc_Type lưu REG_CARD hoặc CONFIRM
+                status_map.setdefault(f_id, set()).add(cat)
+
+        # 4. BƠM DỮ LIỆU VÀO DANH SÁCH KHÁCH
+        for g in guests_list:
+            f_id = g['FolioNum']
+            ff_id = g['FFolioNum']
+            
+            # Check cả Folio lẻ (thường cho RegCard) và Folio tổng (thường cho Confirm)
+            signed = status_map.get(f_id, set()) | status_map.get(ff_id, set())
+            
+            has_reg = "REG_CARD" in signed
+            has_conf = "CONFIRM" in signed
+
+            if has_reg and has_conf: g['SignMode'] = 'FULL'
+            elif has_reg: g['SignMode'] = 'REG_ONLY'
+            elif has_conf: g['SignMode'] = 'CONF_ONLY'
+            else: g['SignMode'] = 'NONE'
+
+            logger.info(f"DEBUG: Sample SignMode: {guests_list[0].get('SignMode')}") # <-- Thêm dòng này
+        return guests_list
 
 
     

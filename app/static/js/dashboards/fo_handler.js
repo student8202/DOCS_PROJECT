@@ -97,50 +97,70 @@ FO_DASH.actions = {
                         const sGroup = row.SortGroup ? `'${row.SortGroup}'` : 'null';
                         const idAdd = row.IdAddition;
 
-                        // GIẢ SỬ: 0-Chưa gửi, 1-Đang chờ ký, 2-Đã ký, 3-Hoàn tất (Đã vào SMILE)
-                        const sts = row.SignStatus || 0;
+                        const mode = row.SignMode || 'EMPTY';
+                        let btnClass = 'btn-primary'; // Mặc định Xanh dương
+                        let btnText = 'KÝ';
+
+                        if (mode === 'REG_ONLY') { btnClass = 'btn-warning'; btnText = 'KÝ (R)'; }
+                        else if (mode === 'CONF_ONLY') { btnClass = 'btn-info'; btnText = 'KÝ (C)'; }
+                        else if (mode === 'FULL') { btnClass = 'btn-success'; btnText = 'XEM'; }
 
                         let mainBtn = '';
-
-                        // --- LOGIC NÚT BẤM CHÍNH (PRIMARY ACTION) ---
-                        switch (sts) {
-                            case 1: // Đang chờ khách ký
+                        // --- LOGIC NÚT BẤM CHÍNH (Tối ưu cho tốc độ FO) ---
+                        switch (mode) {
+                            case 1: // Đang trên iPad
                                 mainBtn = `<button class="btn btn-xs btn-warning btn-status-action py-0" 
-                            onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">GỬI LẠI</button>`;
+                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">GỬI LẠI</button>`;
                                 break;
-                            case 2: // Khách đã ký xong
+                            case 2: // Khách ký xong, chờ FO check
                                 mainBtn = `<button class="btn btn-xs btn-success btn-status-action py-0" 
-                            onclick="FO_DASH.actions.openReview('${folio}', ${idAdd})">DUYỆT</button>`;
+                           onclick="FO_DASH.actions.openReview('${folio}', ${idAdd})">DUYỆT</button>`;
                                 break;
-                            case 3: // Đã hoàn tất đẩy vào SMILE
+                            case 3: // Đã lưu vào tbl_SignedDocuments
                                 mainBtn = `<button class="btn btn-xs btn-secondary btn-status-action py-0" 
-                            onclick="FO_DASH.actions.viewFinal('${folio}')"><i class="fas fa-eye"></i> XEM</button>`;
+                           onclick="FO_DASH.actions.viewFinal('${folio}')"><i class="fas fa-eye"></i> XEM</button>`;
                                 break;
-                            default: // Chưa làm gì (Status 0 hoặc Null)
+                            default: // Chưa có hồ sơ hoặc đã bị Hủy (Quay về trạng thái ban đầu)
                                 mainBtn = `<button class="btn btn-xs btn-primary btn-status-action py-0" 
-                            onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">KÝ</button>`;
+                           onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">KÝ</button>`;
                         }
 
-                        // --- CẤU TRÚC 3 CHẤM (SECONDARY ACTIONS) ---
+                        // --- CẤU TRÚC 3 CHẤM (Đầy đủ nghiệp vụ số hóa) ---
                         return `
         <div class="d-flex align-items-center">
             ${mainBtn}
             <div class="dropdown ms-2 position-static">
-                <!-- Dùng thẻ <a> như cách cũ của bạn cho nhạy -->
                 <a class="text-muted p-1 dropdown-toggle no-caret" href="#" role="button" 
-                data-bs-toggle="dropdown" 
-                data-bs-boundary="viewport"  data-bs-display="static"
-                aria-expanded="false">
+                   data-bs-toggle="dropdown" data-bs-boundary="viewport" data-bs-display="static">
                     <i class="fas fa-ellipsis-v"></i>
                 </a>
-                <ul class="dropdown-menu shadow border-0" style="z-index: 99999; min-width: 150px;">
-                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">
-                        <i class="fas fa-pen-nib me-2 text-primary"></i> Gửi hồ sơ mới</a></li>
+                <ul class="dropdown-menu shadow border-0" style="z-index: 99999; min-width: 180px;">
+                    <!-- 1. Luồng Ký Tablet -->
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" 
+                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">
+                        <i class="fas fa-pen-nib me-2 text-primary"></i> ${mode === 0 ? 'Gửi ký iPad' : 'Gửi lại bản mới'}</a></li>
+                    
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.changeDevice('${folio}')">
-                        <i class="fas fa-tablet-alt me-2 text-info"></i> Chuyển máy ký</a></li>
-                    <hr class="dropdown-divider">
+                        <i class="fas fa-tablet-alt me-2 text-info"></i> Chuyển thiết bị</a></li>
+
+                    <div class="dropdown-divider"></div>
+
+                    <!-- 2. Luồng Số hóa thủ công (Upload file/ảnh hồ sơ giấy) -->
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" 
+                           onclick="FO_DASH.actions.openUploadModal('${folio}', '${row.GuestName}')">
+                        <i class="fas fa-cloud-upload-alt me-2 text-success"></i> Upload hồ sơ đã ký</a></li>
+
+                    <div class="dropdown-divider"></div>
+
+                    <!-- 3. Luồng Quản trị/Sửa sai -->
+                    ${mode === 2 ? `<li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.rejectSign('${folio}')">
+                        <i class="fas fa-times-circle me-2"></i> Từ chối chữ ký này</a></li>` : ''}
+                    
                     <li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.forceCancel('${folio}')">
-                        <i class="fas fa-trash-alt me-2"></i> Hủy hồ sơ</a></li>
+                        <i class="fas fa-trash-alt me-2"></i> Hủy & Xóa yêu cầu</a></li>
+                    
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.viewLogs('${folio}')">
+                        <i class="fas fa-history me-2 text-muted"></i> Nhật ký hồ sơ</a></li>
                 </ul>
             </div>
         </div>`;
@@ -558,13 +578,96 @@ FO_DASH.actions = {
             contentType: 'application/json',
             data: JSON.stringify(payload),
             success: function (res) {
-                Swal.fire("Thành công", "Hồ sơ đã gửi đến iPad!", "success");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Thành công',
+                    text: 'Hồ sơ đã gửi đến iPad!',
+                    timer: 1500, // Tự đóng sau 1.5s để FO đỡ phải click OK
+                    showConfirmButton: false
+                });
+
                 $('#modalSelectSign').modal('hide');
             },
             error: function (err) {
                 Swal.fire("Lỗi", err.responseJSON?.detail || "Không thể gửi hồ sơ", "error");
             }
         });
+    },
+    // 1. Hàm GỬI LẠI: Reset hồ sơ treo và mở lại màn hình gửi
+    resetAndResend: function (folio, sGroup, idAdd) {
+        // 1. Hỏi ý kiến Lễ tân trước
+        Swal.fire({
+            title: 'Xác nhận gửi lại?',
+            text: "Hồ sơ đang treo trên iPad sẽ bị hủy để bạn gửi bản mới.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Đồng ý'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // 2. Tìm xem Folio này đang nằm ở iPad nào (Dựa vào Status 0, 1 trong Queue)
+                $.get(`/api/v1/queue/get-current-device/${folio}`, (res) => {
+                    if (res && res.DeviceID) {
+                        // 3. Gọi hàm RESET-DEVICE có sẵn của bạn bằng DeviceID vừa tìm được
+                        $.ajax({
+                            url: '/api/v1/queue/reset-device',
+                            type: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({ DeviceID: res.DeviceID }),
+                            success: () => {
+                                // 4. Reset xong thì mở lại Modal chọn mẫu như ban đầu
+                                this.openSignProcess(folio, sGroup, idAdd);
+                            }
+                        });
+                    } else {
+                        // Nếu không tìm thấy iPad nào đang giữ Folio này (có thể đã ký xong hoặc đã hủy)
+                        // Cứ mở thẳng Modal chọn mẫu mới
+                        this.openSignProcess(folio, sGroup, idAdd);
+                    }
+                });
+            }
+        });
+    },
+
+    // 2. Hàm DUYỆT: Mở bản ký để Lễ tân xem trước khi chốt
+    openReview: function (folio, idAdd) {
+        // Mở Modal Review (Bạn cần tạo Modal này trong HTML)
+        $('#modalReviewSign').modal('show');
+        $('#review-content').html('<div class="text-center p-5"><i class="fas fa-spinner fa-spin fa-2x"></i></div>');
+
+        // Lấy nội dung đã ký từ Server
+        $.get(`/api/v1/queue/get-signed-content/${folio}`, function (res) {
+            if (res && res.Html) {
+                // Đổ HTML đã có chữ ký vào vùng xem trước
+                $('#review-content').html(res.Html);
+                // Lưu lại QueueID vào nút "Duyệt" trong Modal
+                $('#btn-approve-confirm').off('click').on('click', function () {
+                    FO_DASH.actions.confirmApprove(res.QueueID);
+                });
+            }
+        });
+    },
+
+    // 3. Hàm XÁC NHẬN DUYỆT: Đẩy dữ liệu vào SMILE
+    confirmApprove: function (qid) {
+        $.ajax({
+            url: '/api/v1/queue/approve',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ QueueID: qid }),
+            success: (res) => {
+                Swal.fire("Thành công", "Hồ sơ đã được duyệt và đẩy vào SMILE!", "success");
+                $('#modalReviewSign').modal('hide');
+                FO_DASH.actions.load(); // Refresh bảng
+            },
+            error: (err) => {
+                Swal.fire("Lỗi", "Phê duyệt thất bại", "error");
+            }
+        });
+    },
+
+    // 4. Hàm XEM: Xem lại bản PDF/HTML đã chốt
+    viewFinal: function (folio) {
+        window.open(`/api/v1/queue/view-final/${folio}`, '_blank');
     }
 };
 // 3. EVENT XỬ LÝ RIÊNG CHO ĐIỆN THOẠI (Chạm để hiện InfoBox)

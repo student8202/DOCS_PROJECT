@@ -113,3 +113,41 @@ Nếu User có chìa (view_fo): Mở được mọi hồ sơ có nhãn FO để 
 Nếu User có chìa (void_fo): Mở được mọi hồ sơ có nhãn FO để HỦY.
 Đặc biệt (Kế toán): Nếu bạn cấp chìa view_fo cho Kế toán -> Kế toán mở được hồ sơ của FO để xem, nhưng vì họ không có chìa void_fo nên không bao giờ xóa được hồ sơ của FO.
 *** Action_Type NVARCHAR(20); -- Lưu các giá trị: VIEW, SIGN, EDIT, VOID
+---------------------------------------
+Dưới đây là phân tích luồng nghiệp vụ "thông nòng" cho cả 2 trường hợp ký và upload:
+1. Luồng 1: Ký trên iPad (Digital Signature)
+Bước 1: Lễ tân nhấn [KÝ] -> Gửi hồ sơ sang iPad.
+Bước 2: Khách ký xong -> Dashboard hiện nút [DUYỆT].
+Bước 3: Lễ tân nhấn [DUYỆT] -> Hệ thống tự động Convert HTML thành PDF và đẩy vào SMILE.
+Lúc này file PDF được sinh ra từ dữ liệu số.
+2. Luồng 2: Upload file (Manual Upload)
+Khi nào dùng: Khách muốn ký trên giấy (vì lý do cá nhân), hoặc iPad bị hỏng, hoặc Lễ tân đã có sẵn bản cứng đã ký từ trước.
+Hành động: Trong menu 3 chấm, sẽ có nút [UPLOAD HỒ SƠ].
+Quy trình: Lễ tân chọn File (PDF hoặc Ảnh chụp hồ sơ) -> Upload trực tiếp.
+Kết quả: Hệ thống bỏ qua bước ký iPad, chuyển thẳng trạng thái hồ sơ sang [XEM] (Status 3) và lưu file đó vào SMILE.
+
+Bảng trạng thái tổng hợp để bạn kiểm soát Dashboard:
+Trạng thái thực tế	Bảng Queue (Status)	Bảng SignedDocs (Status)	Nút hiển thị
+Mới tinh		Không có		Không có			KÝ (Primary)
+Đang trên iPad		0 hoặc 1		Không có			GỬI LẠI (Warning)
+Khách ký xong		2			Không có			DUYỆT (Success)
+Đã duyệt/Xong		3			3				XEM (Secondary)
+Hủy/Lỗi			4			4				KÝ (Quay lại ban đầu)
+Các điểm nâng cấp nghiệp vụ ở đây:
+Tính năng "Từ chối chữ ký" (Reject): Chỉ hiện khi trạng thái là 2. Nếu Lễ tân thấy khách ký quẹt bừa hoặc không giống hộ chiếu, có thể nhấn từ chối để yêu cầu ký lại (Đẩy về Status 4).
+Tính năng "Upload hồ sơ đã ký": Đây là lối thoát khi iPad trục trặc hoặc khách đã ký bản cứng. Nó sẽ gọi Modal cho phép chọn file PDF/JPG và lưu thẳng vào tbl_SignedDocuments với Source_Type = 'SCAN'.
+Hủy & Xóa (Force Cancel): Xử lý dứt điểm rác trong tbl_SignatureQueue để dọn sạch Dashboard.
+Nhật ký hồ sơ (Logs): Truy vấn nhanh từ tbl_DocumentLogs để biết ai là người đã gửi hồ sơ này và lúc mấy giờ (Audit Trail).
+------------------------------------
+1. Định nghĩa "Bảng màu" trạng thái nút Ký
+Thay vì dùng số 0, 1, 2, 3, chúng ta sẽ dùng Bitmask hoặc so sánh chuỗi để ra màu nút:
+Màu Xanh dương (Mặc định): Chưa ký gì cả.
+Màu Vàng (Regcard): Đã ký Regcard nhưng thiếu Confirm.
+Màu Cam (Confirm): Đã ký Confirm nhưng thiếu Regcard.
+Màu Xanh lá (Hoàn tất): Đã ký cả hai (Full bộ).
+chuyển trang thai nut
+Cách 2: Dùng SignalR hoặc Long Polling (Đẳng cấp nhất)
+Đây là cách các phần mềm lớn làm:
+Khi Lễ tân gửi ký, Server nhận lệnh.
+Server phát một tín hiệu (Socket) xuống Dashboard: "Này, Folio 12345 vừa chuyển sang Status 1 đấy".
+Dashboard nghe thấy, tự động đổi màu nút cho Folio đó mà Lễ tân không cần làm gì cả.

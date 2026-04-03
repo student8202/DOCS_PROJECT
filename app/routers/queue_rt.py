@@ -1,9 +1,11 @@
-from fastapi import APIRouter, Request, Depends
+from fastapi import APIRouter, Request, Depends,HTTPException
 from schemas.queue_sh import QueueSendSchema, QueueSignSchema, DeviceResetSchema
 from services.queue_sv import QueueService
+from controllers.queue_ctl import QueueController
 
 router = APIRouter(prefix="/api/v1/queue", tags=["Signature Queue"])
 service = QueueService()
+queue_ctl = QueueController()
 
 
 @router.post("/send")
@@ -21,6 +23,21 @@ async def check_for_tablet(device_id: str):
 async def get_queue_content(queue_id: int, svc: QueueService = Depends()):
     """iPad gọi API này để lấy nội dung HTML đã trộn dữ liệu để hiển thị"""
     return svc.get_queue_content_logic(queue_id)
+
+@router.get("/get-current-device/{folio}")
+async def get_current_device(folio: str):
+    """
+    API lấy iPad đang xử lý Folio để chuẩn bị Reset
+    """
+    result = queue_ctl.get_current_device_logic(folio)
+    if result["status"] == "error":
+        raise HTTPException(status_code=400, detail=result["message"])
+    return result
+
+@router.get("/check-valid/{queue_id}")
+async def check_valid(queue_id: int, svc: QueueService = Depends()):
+    status = svc.check_queue_valid(queue_id)
+    return {"status": status}
 
 @router.post("/reset-device")
 async def reset_device_queue(
