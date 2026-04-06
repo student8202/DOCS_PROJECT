@@ -1,6 +1,6 @@
 from database.db_connection import get_lv_docs_db
 from schemas.device_sh import DeviceRegisterSchema, DevicePingSchema
-import datetime
+from datetime import datetime 
 from fastapi import HTTPException
 
 

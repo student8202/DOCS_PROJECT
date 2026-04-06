@@ -1,76 +1,15 @@
-from schemas.queue_sh import QueueSendSchema
+from schemas.queue_sh import QueueSendSchema, QueueCompleteSchema
+from models.signed_doc_md import SignedDocumentModel
 from database.db_connection import get_lv_docs_db
 from fastapi import HTTPException
 from loguru import logger
+from datetime import datetime
+from weasyprint import HTML
 import traceback
-import os
+import os,io
+import pdfkit, json
 
 class QueueService:
-    # 1. NHÂN VIÊN GỬI HỒ SƠ VÀO HÀNG ĐỢI
-    # def send_to_queue_logic(self, data: QueueSendSchema, username: str):
-    #     conn = get_lv_docs_db()
-    #     cursor = conn.cursor()
-    #     try:
-    #         # 1. KIỂM TRA TRẠNG THÁI THIẾT BỊ: Có hồ sơ nào chưa hoàn tất không?
-    #         # Status 0: Waiting, Status 1: Processing
-    #         cursor.execute("""
-    #             SELECT TOP 1 QueueID, RefID 
-    #             FROM dbo.tbl_SignatureQueue 
-    #             WHERE DeviceID = ? AND Status IN (0, 1)
-    #         """, (data.DeviceID,))
-    #         busy_doc = cursor.fetchone()
-
-    #         if busy_doc:
-    #             # NẾU ĐANG BẬN: Chặn đứng và báo lỗi về Dashboard
-    #             raise Exception(f"Thiết bị {data.DeviceID} đang bận xử lý hồ sơ {busy_doc[1]}. "
-    #                             f"Vui lòng đợi khách ký xong hoặc hủy hồ sơ cũ.")
-            
-    #         # 1. LOGIC TRỘN DỮ LIỆU (RENDER)
-    #         # Giả sử bạn đã có hàm render_tpl(template_id, folio, group, id_add)
-    #         # Nếu chưa có, tạm thời lấy HtmlContent gốc của Template
-    #         cursor.execute("SELECT HtmlContent FROM tbl_Templates WHERE TemplateID = ?", (data.TemplateID,))
-    #         tpl_row = cursor.fetchone()
-            
-    #         if not tpl_row:
-    #             return {"status": "error", "message": "Không tìm thấy mẫu"}
-
-    #         html_final = tpl_row[0] # Lấy chuỗi HTML từ Tuple
-    #         # Thay thế thẻ đánh dấu bằng một thẻ img có ID cụ thể
-    #         # Cấy vùng chứa cho Khách
-    #         html_final = html_final.replace("{{GuestSignatureImg}}", 
-    #             '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'guest\')">'
-    #             '<img id="img-guest-sig" src="" style="display:none; max-height:80px;" />'
-    #             '<span class="placeholder-text">Chạm để ký / Touch to sign</span>'
-    #             '</div>')
-
-    #         # Cấy vùng chứa cho Lễ tân
-    #         html_final = html_final.replace("{{ReceptionSignatureImg}}", 
-    #             '<div class="sig-placeholder" onclick="SIGN.actions.openPad(\'reception\')">'
-    #             '<img id="img-recep-sig" src="" style="display:none; max-height:120px;" />'
-    #             '<span class="placeholder-text">Chạm để ký / Staff Sign</span>'
-    #             '</div>')
-
-    #         # 2. Hủy hồ sơ cũ của thiết bị
-    #         cursor.execute("UPDATE dbo.tbl_SignatureQueue SET Status = 4 WHERE DeviceID = ? AND Status = 0", (data.DeviceID,))
-            
-    #         # 3. Insert với đầy đủ thông tin
-    #         sql = """
-    #             INSERT INTO dbo.tbl_SignatureQueue 
-    #             (ModuleName, RefType, RefID, DeviceID, TemplateID, RenderedHtml, Status, CreatedBy, CreatedAt)
-    #             VALUES (?, ?, ?, ?, ?, ?, 0, ?, GETDATE())
-    #         """
-    #         cursor.execute(sql, (
-    #             data.ModuleName, data.RefType, data.RefID, data.DeviceID, 
-    #             data.TemplateID, html_final, username
-    #         ))
-            
-    #         conn.commit()
-    #         return {"status": "success"}
-    #     except Exception as e:
-    #         # Các lỗi hệ thống khác (SQL, kết nối...)
-    #         raise HTTPException(status_code=500, detail=str(e))
-    #     finally:
-    #         conn.close()
 
     # 2. TABLET KIỂM TRA HỒ SƠ MỚI (Polling)
     def check_new_doc_logic(self, device_id: str):
@@ -251,6 +190,7 @@ class QueueService:
             '<span class="placeholder-text">Chạm để ký / Staff Sign</span></div>')
             
         return html
+    
     def _get_smile_snapshot(self, folio: str, group: str, id_add: int):
         # 
         return {
@@ -266,10 +206,13 @@ class QueueService:
         conn = get_lv_docs_db()
         cursor = conn.cursor()
         try:
-            # 1. Kiểm tra thiết bị bận
-            cursor.execute("SELECT QueueID FROM dbo.tbl_SignatureQueue WHERE DeviceID = ? AND Status IN (0, 1)", (data.DeviceID,))
-            if cursor.fetchone():
-                raise HTTPException(status_code=400, detail=f"Thiết bị {data.DeviceID} đang bận.")
+             # 1. Gọi hàm tách riêng để kiểm tra bận (Dùng self._)
+            busy_ref_id = self.is_device_busy(data.DeviceID, cursor)
+            
+            if busy_ref_id:
+                logger.warning(f"Thiết bị {data.DeviceID} đang bận hồ sơ {busy_ref_id}")
+                # CHỈ RAISE EXCEPTION - Không dùng HTTPException ở Service
+                raise ValueError(f"Thiết bị {data.DeviceID} đang bận xử lý hồ sơ {busy_ref_id}.")
 
             # 2. Lấy HTML thô (Từ File hoặc DB)
             raw_html = self._get_template_content(data.TemplateID)
@@ -294,3 +237,147 @@ class QueueService:
             raise HTTPException(status_code=500, detail=str(e))
         finally:
             conn.close()
+    
+    def is_device_busy(self, device_id: str, cursor):
+        """
+        Hàm bổ trợ: Kiểm tra thiết bị có hồ sơ chưa hoàn tất (Status 0, 1) không.
+        Truyền cursor vào để dùng chung kết nối với hàm gọi nó.
+        """
+        sql = """
+            SELECT TOP 1 RefID 
+            FROM dbo.tbl_SignatureQueue 
+            WHERE LTRIM(RTRIM(DeviceID)) = LTRIM(RTRIM(?)) 
+            AND Status IN (0, 1)
+        """
+        cursor.execute(sql, (device_id,))
+        row = cursor.fetchone()
+        
+        # Nếu có row nghĩa là bận, trả về RefID đó. Nếu không bận trả về None.
+        return row[0] if row else None
+
+    def _export_html_to_pdf(self, html_content: str, save_path: str):
+        """
+        Hàm chuyên biệt để xuất file PDF từ chuỗi HTML.
+        """
+        # 1. Cấu hình đường dẫn thực thi wkhtmltopdf
+        path_wkhtmlto = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+        config = pdfkit.configuration(wkhtmltopdf=path_wkhtmlto)
+        
+        # 2. Thiết lập Options tối ưu: Tắt JS, cho phép truy cập file nội bộ để tăng tốc
+        options = {
+            'encoding': "UTF-8",
+            'quiet': '',                       # Không in log ra console để đỡ tốn tài nguyên
+            'no-outline': None,                # Tắt mục lục
+            'disable-javascript': None,        # TẮT JS: Đây là nguyên nhân gây chậm nhất
+            'enable-local-file-access': None,  # Chỉ cho phép đọc file trên ổ cứng (ảnh chữ ký)
+            'disable-external-links': None,    # CẤM kết nối ra ngoài (Internet)
+            'page-size': 'A4',
+            'margin-top': '10mm',
+            'margin-right': '10mm',
+            'margin-bottom': '10mm',
+            'margin-left': '10mm',
+        }
+
+        try:
+            # Thực hiện chuyển đổi
+            try:
+                pdfkit.from_string(html_content, save_path, configuration=config, options=options)
+                return True
+            except OSError as e:
+                # Nếu lỗi chứa "Exit with code 1" nhưng file vẫn tồn tại thì coi như thành công
+                if 'code 1' in str(e) and os.path.exists(save_path):
+                    pass 
+                else:
+                    raise e
+        except Exception as e:
+            logger.error(f"Lỗi PDFKit nội bộ: {str(e)}")
+            raise Exception(f"Không thể tạo file PDF: {str(e)}")
+     
+    def _export_html_to_pdf_WS(self, html_content: str, save_path: str):
+        """
+        Sử dụng WeasyPrint để xuất PDF (Không cần wkhtmltopdf).
+        """
+        try:
+            # Chuyển đổi trực tiếp từ chuỗi HTML sang file PDF
+            HTML(string=html_content).write_pdf(save_path)
+            return True
+        except Exception as e:
+            print(f"Lỗi WeasyPrint: {e}")
+            return False
+
+       
+    def complete_and_archive_service(self, data, username):
+        conn = get_lv_docs_db()
+        cursor = conn.cursor()
+        try:
+            # 1. Lấy dữ liệu từ Queue và Template
+            sql_select = """
+                SELECT q.RefID, q.RenderedHtml, t.Category, q.ModuleName
+                FROM dbo.tbl_SignatureQueue q
+                JOIN dbo.tbl_Templates t ON q.TemplateID = t.TemplateID
+                WHERE q.QueueID = ?
+            """
+            cursor.execute(sql_select, (data.QueueID,))
+            row = cursor.fetchone()
+            if not row: 
+                raise ValueError(f"Không tìm thấy hồ sơ ID {data.QueueID}")
+            
+            folio, html_raw, category, module = row[0], row[1], row[2], row[3]
+
+            # 2. Chèn chữ ký Base64 vào HTML
+            html_signed = html_raw
+            if data.Guest_Signature:
+                html_signed = html_signed.replace('id="img-guest-sig" src=""', f'id="img-guest-sig" src="{data.Guest_Signature}" style="display:block; max-height:100px;"')
+            if data.Reception_Signature:
+                html_signed = html_signed.replace('id="img-recep-sig" src=""', f'id="img-recep-sig" src="{data.Reception_Signature}" style="display:block; max-height:100px;"')
+
+            # 3. Tạo cấu trúc thư mục lưu trữ YYYY/MM/DD
+            now = datetime.now()
+            sub_path = os.path.join(str(now.year), f"{now.month:02d}", f"{now.day:02d}")
+            dir_path = os.path.join("static", "storage", "signed_docs", sub_path)
+            os.makedirs(dir_path, exist_ok=True)
+
+            file_name = f"{folio}_{category}.pdf".replace(" ", "_")
+            full_physical_path = os.path.join(dir_path, file_name)
+            db_web_path = f"/static/storage/signed_docs/{sub_path}/{file_name}".replace("\\", "/")
+
+            # 4. XUẤT PDF (Đã thêm configuration và options)
+            self._export_html_to_pdf_WS(html_signed, full_physical_path)
+
+            # 5. Lấy Snapshot dữ liệu SMILE
+            snapshot = self._get_smile_snapshot(folio, None, 0) 
+            json_snapshot = json.dumps(snapshot, ensure_ascii=False)
+
+            # 6. Lưu vào kho hồ sơ vĩnh viễn (Sử dụng Model SQL đã bàn ở trên cho sạch)
+            
+            params = (
+                None,                # Doc_Group_ID
+                str(folio),          # Booking_ID (ConfirmNum)
+                str(folio),          # Folio_Num
+                None,                # Group_Code
+                str(category),       # Doc_Type
+                'DIGITAL',           # Source_Type
+                str(module),         # Owner_Dept
+                str(snapshot.get('LastName', '')), # Guest_Name_SS
+                json_snapshot,       # Data_JSON_Full_SS
+                db_web_path,         # FilePath
+                data.Guest_Signature,# Signature_Base64
+                '.pdf',              # File_Extension
+                username             # CreatedBy
+            )
+            cursor.execute(SignedDocumentModel.SQL_INSERT, params)
+
+            # 7. Cập nhật Queue sang trạng thái 2
+            cursor.execute("UPDATE dbo.tbl_SignatureQueue SET Status = 2 WHERE QueueID = ?", (data.QueueID,))
+            
+            conn.commit()
+            return True
+            
+        except Exception as e:
+            import traceback
+            print(traceback.format_exc())
+            raise e
+        finally:
+            conn.close()
+
+    

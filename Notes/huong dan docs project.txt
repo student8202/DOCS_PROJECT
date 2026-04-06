@@ -117,6 +117,7 @@ Về phần static cũng phân loại
 Về phần js:  tổ chức JS theo mô hình Module Pattern. Thay vì viết một file dài dằng dặc, ta chia thành các "phân khu" chức năng rõ rệt. Theo luồng: Cấu hình (Config) -> Phụ trợ (UI Helpers) -> Hành động (Actions) -> Sự kiện (Events).
 Tóm lại: 5 lớp Backend và cấu trúc 4 phần JS
 -- end AI
+Làm thật chậm bắt đầu từ Frontend hoàn tất, sau đó là Backend -> service -> controller -> router. Vì tôi rất chậm và cần hiểu rõ các bước.
 ------------------------------
 vấn đề khi khai báo template ở từng router
 Vấn đề nằm ở chỗ bạn đang khai báo templates ở nhiều nơi khác nhau.

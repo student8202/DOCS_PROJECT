@@ -10,6 +10,7 @@ echo [%date% %time%] Dang kiem tra thu vien FastAPI...
 "C:\Program Files\Python312\python.exe" -m pip uninstall bcrypt -y --user
 "C:\Program Files\Python312\python.exe" -m pip install bcrypt==3.2.0 --user
 "C:\Program Files\Python312\python.exe" -m pip install itsdangerous --user
+"C:\Program Files\Python312\python.exe" -m pip install pdfkit weasyprint xhtml2pdf --user
 :: Khởi động FastAPI với Uvicorn
 :: --port 6066: Giữ nguyên cổng cũ để không phải sửa Nginx
 :: --workers 4: Chạy đa luồng để xử lý nhanh hơn (tùy số nhân CPU)

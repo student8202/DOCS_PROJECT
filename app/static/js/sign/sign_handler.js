@@ -99,7 +99,7 @@ SIGN.actions = {
         const recepSig = $('#img-recep-sig').attr('src');
         const qid = $('#queue_id').val();
 
-        if (!guestSig || guestSig === "") {
+        if (!guestSig || guestSig === "" || guestSig.length < 100) {
             Swal.fire("Chưa ký", "Khách hàng vui lòng ký tên trước khi hoàn tất!", "error");
             return;
         }
@@ -113,6 +113,17 @@ SIGN.actions = {
             cancelButtonText: 'Hủy'
         }).then((result) => {
             if (result.isConfirmed) {
+                // --- BƯỚC 1: HIỆN LOADING ĐỂ THÔNG NÒNG CẢM GIÁC CHỜ ĐỢI ---
+                Swal.fire({
+                    title: 'Đang xử lý...',
+                    html: 'Hệ thống đang đóng gói hồ sơ PDF, vui lòng đợi trong giây lát.',
+                    allowOutsideClick: false,
+                    didOpen: () => {
+                        Swal.showLoading(); // Hiện icon xoay
+                    }
+                });
+
+                // --- BƯỚC 2: GỬI DỮ LIỆU ---
                 $.ajax({
                     url: `${SIGN.config.apiBase}/complete`,
                     type: 'POST',
@@ -122,12 +133,22 @@ SIGN.actions = {
                         Guest_Signature: guestSig,
                         Reception_Signature: recepSig
                     }),
-                    success: function () {
-                        Swal.fire("Thành công", "Hồ sơ đã được lưu trữ!", "success")
-                            .then(() => { window.location.href = '/sign/waiting'; });
+                    success: function (res) {
+                        // Tắt loading và báo thành công
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Thành công',
+                            text: 'Hồ sơ đã được lưu trữ!',
+                            timer: 2000,
+                            showConfirmButton: false
+                        }).then(() => {
+                            window.location.href = '/sign/waiting';
+                        });
                     },
-                    error: function () {
-                        Swal.fire("Lỗi", "Không thể lưu hồ sơ, vui lòng thử lại.", "error");
+                    error: function (err) {
+                        // Tắt loading và báo lỗi chi tiết từ Server
+                        const msg = err.responseJSON?.detail || "Không thể lưu hồ sơ, vui lòng thử lại.";
+                        Swal.fire("Lỗi hệ thống", msg, "error");
                     }
                 });
             }

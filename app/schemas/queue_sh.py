@@ -25,3 +25,8 @@ class QueueSignSchema(BaseModel):
     
 class DeviceResetSchema(BaseModel):
     DeviceID: str
+    
+class QueueCompleteSchema(BaseModel):
+    QueueID: int
+    Guest_Signature: str      # Chuỗi ảnh Base64 của khách
+    Reception_Signature: str  # Chuỗi ảnh Base64 của lễ tân (có thể rỗng)

@@ -351,6 +351,8 @@ WHERE Username = 'admin';
 
 INSERT INTO dbo.tbl_UserRoles (Username, RoleCode, CreatedBy)
 VALUES ('admin', 'ADMIN', 'SYSTEM');
+---------------------------- xuat pdf
+https://wkhtmltopdf.org/downloads.html
 -------------------------------------------------- từ sql server 2016
 SELECT 1 AS Test FOR JSON PATH;
 SELECT 1 AS Test FOR JSON PATH, WITHOUT_ARRAY_WRAPPER;

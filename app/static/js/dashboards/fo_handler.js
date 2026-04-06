@@ -155,7 +155,7 @@ FO_DASH.actions = {
 
                     <!-- 2. Luồng Số hóa thủ công (Upload file/ảnh hồ sơ giấy) -->
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" 
-                           onclick="FO_DASH.actions.openUploadModal('${folio}', '${row.GuestName}')">
+                           onclick="FO_DASH.actions.openUploadModal('${folio}', '${row.LastName}','${row.ConfirmNum}')">
                         <i class="fas fa-cloud-upload-alt me-2 text-success"></i> Upload hồ sơ đã ký</a></li>
 
                     <div class="dropdown-divider"></div>
@@ -488,6 +488,10 @@ FO_DASH.actions = {
     selectedRow: {},
 
     openSignProcess: function (folio, group, idAdd) {
+        console.trace();
+        // 1. Reset nút bấm về trạng thái ban đầu để FO có thể tương tác
+        const $btn = $('#btn-confirm-send');
+        $btn.prop('disabled', false).text('Gửi ký');
         // 1. Lưu thông tin để dùng cho bước Gửi
         this.selectedRow = { folio, group, idAdd };
 
@@ -495,17 +499,19 @@ FO_DASH.actions = {
         this.selectedData = {
             folio: folio,    // Chính là row.FFolioNum truyền vào
             group: group,    // Chính là row.SortGroup truyền vào
-            idAdd: idAdd     // Chính là row.IdAddition truyền vào
+            idAdd: idAdd,     // Chính là row.IdAddition truyền vào
+            deviceId: null // Ép buộc chọn lại iPad mới
         };
 
         console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
         // Gọi hàm setup chung
         this.setupSignModal(folio, group, idAdd, "Gửi hồ sơ ký iPad");
 
-        // Gán sự kiện cho nút Xác nhận là GỬI MỚI
-        $('#btn-confirm-send').off('click').text('Gửi ký').on('click', () => {
-            this.sendToQueue();
-        });
+        // 5. Gán duy nhất 1 sự kiện Click cho nút Xác nhận
+        // Dùng .off('click') để chắc chắn không bị chồng chéo sự kiện cũ
+        // $btn.off('click').on('click', () => {
+        //     this.sendToQueue();
+        // });
 
     },
 
@@ -734,6 +740,78 @@ FO_DASH.actions = {
                     }
                 });
             }
+        });
+    },
+    openUploadModal: function (folio, guestName, confirmNum) {
+        // 1. Việc đầu tiên: Lấy danh sách các loại hồ sơ (Category) từ Template
+        // Để Lễ tân chọn: REG_CARD hay CONFIRM...
+        $.get('/api/v1/docs/categories?module=FO', function (categories) {
+
+            // Tạo các dòng <option> cho cái hộp chọn (Select box)
+            let options = categories.map(c => `<option value="${c}">${c}</option>`).join('');
+
+            // 2. Hiện cái bảng thông báo (Swal)
+            Swal.fire({
+                title: 'SỐ HÓA HỒ SƠ',
+                html: `
+                <div class="text-start mb-3" style="font-size: 13px;">
+                    <p>Khách: <b>${guestName}</b></p>
+                    <p>Folio: <b>${folio}</b> | Booking: <b>${confirmNum}</b></p>
+                    
+                    <label class="fw-bold">1. Chọn loại hồ sơ:</label>
+                    <select id="upload-doc-type" class="form-select form-select-sm mb-2">
+                        ${options}
+                    </select>
+
+                    <label class="fw-bold">2. Chọn file (PDF hoặc Ảnh):</label>
+                    <input type="file" id="upload-file-input" class="form-control form-control-sm" accept="application/pdf,image/*">
+                </div>`,
+                showCancelButton: true,
+                confirmButtonText: 'Tải lên ngay',
+                cancelButtonText: 'Đóng lại',
+
+                // 3. Khi nhấn nút "Tải lên ngay", đoạn này sẽ chạy:
+                preConfirm: () => {
+                    const fileInput = document.getElementById('upload-file-input');
+                    const file = fileInput.files[0];
+                    const docType = $('#upload-doc-type').val();
+
+                    // Kiểm tra xem đã chọn file chưa
+                    if (!file) {
+                        Swal.showValidationMessage('Bạn chưa chọn file kìa!');
+                        return false;
+                    }
+
+                    // Đóng gói dữ liệu để gửi đi
+                    const formData = new FormData();
+                    formData.append('file', file);            // File vật lý
+                    formData.append('FolioNum', folio);       // Số phòng
+                    formData.append('BookingID', confirmNum); // Số đặt phòng (ConfirmNum)
+                    formData.append('GuestName', guestName);  // Tên khách
+                    formData.append('DocType', docType);      // Loại: REG_CARD/CONFIRM
+
+                    // Gửi "gói hàng" này lên Server
+                    return $.ajax({
+                        url: '/api/v1/docs/upload-manual',
+                        type: 'POST',
+                        data: formData,
+                        processData: false, // Bắt buộc khi gửi file
+                        contentType: false, // Bắt buộc khi gửi file
+                        success: function (res) {
+                            return res;
+                        },
+                        error: function (err) {
+                            Swal.showValidationMessage('Lỗi: ' + (err.responseJSON?.detail || 'Không gửi được'));
+                        }
+                    });
+                }
+            }).then((result) => {
+                // 4. Nếu gửi thành công hoàn toàn
+                if (result.isConfirmed) {
+                    Swal.fire("Thành công", "Đã lưu hồ sơ vào kho dữ liệu!", "success");
+                    FO_DASH.actions.reload(); // Load lại bảng để đổi màu nút sang Xanh lá
+                }
+            });
         });
     },
     // 3. Hàm XÁC NHẬN DUYỆT: Đẩy dữ liệu vào SMILE

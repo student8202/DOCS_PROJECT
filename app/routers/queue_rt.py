@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Request, Depends,HTTPException
-from schemas.queue_sh import QueueSendSchema, QueueSignSchema, DeviceResetSchema
+from schemas.queue_sh import (QueueSendSchema, QueueSignSchema, DeviceResetSchema, 
+                              QueueCompleteSchema)
 from services.queue_sv import QueueService
 from controllers.queue_ctl import QueueController
 
@@ -62,4 +63,16 @@ async def force_cancel(data: dict):
     folio = data.get("FolioNum")
     id_add = data.get("IdAddition")
     return queue_ctl.force_cancel_logic(folio, id_add)
+
+@router.post("/complete")
+async def complete_queue(request: Request, data: QueueCompleteSchema):
+    # 1. Lấy username từ Session
+    username = request.session.get("username") or "GUEST_IPAD"
+    
+    # 2. Gọi Controller
+    result = queue_ctl.complete_and_archive_controller(data, username)
+    
+    # 3. Trả về kết quả
+    from fastapi.responses import JSONResponse
+    return JSONResponse(status_code=result["status"], content=result)
 

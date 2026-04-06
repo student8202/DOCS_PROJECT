@@ -335,7 +335,7 @@ class FOService:
             elif has_conf: g['SignMode'] = 'CONF_ONLY'
             else: g['SignMode'] = 'NONE'
 
-            logger.info(f"DEBUG: Sample SignMode: {guests_list[0].get('SignMode')}") # <-- Thêm dòng này
+            # logger.info(f"DEBUG: Sample SignMode: {guests_list[0].get('SignMode')}") 
         return guests_list
 
 

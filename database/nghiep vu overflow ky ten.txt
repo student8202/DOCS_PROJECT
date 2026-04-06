@@ -151,3 +151,7 @@ Cách 2: Dùng SignalR hoặc Long Polling (Đẳng cấp nhất)
 Khi Lễ tân gửi ký, Server nhận lệnh.
 Server phát một tín hiệu (Socket) xuống Dashboard: "Này, Folio 12345 vừa chuyển sang Status 1 đấy".
 Dashboard nghe thấy, tự động đổi màu nút cho Folio đó mà Lễ tân không cần làm gì cả.
+-------------------------
+Python nhưng thiếu các file hệ thống (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
+# (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
+# https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer

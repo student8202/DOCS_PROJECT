@@ -14,7 +14,7 @@ from fastapi.templating import Jinja2Templates
 
 from core.config import settings
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from routers import (auth_rt, ui_rt, admin_rt, rbac_rt,fo_rt,tpl_rt,ckeditor_rt,device_rt,queue_rt, sign_view_rt)  # Import các router đã bàn
+from routers import (auth_rt, ui_rt, admin_rt, rbac_rt,fo_rt,tpl_rt,ckeditor_rt,device_rt,queue_rt, sign_view_rt, docs_rt)  # Import các router đã bàn
 from core.security import get_password_hash
 #swagger
 from fastapi.openapi.docs import get_swagger_ui_html
@@ -140,13 +140,19 @@ app.include_router(ckeditor_rt.router)
 app.include_router(sign_view_rt.router) 
 app.include_router(device_rt.router) 
 app.include_router(queue_rt.router) 
+app.include_router(docs_rt.router) 
 # app.include_router(fo.router) # Mở ra khi làm module FO
 
 # Middleware xử lý lỗi 404 (Nếu gõ sai link)
 @app.exception_handler(404)
 async def not_found_exception_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
-
+# (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
+# https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
+gtk_bin_path = r'C:\Program Files\GTK3-Runtime Win64\bin'
+if os.path.exists(gtk_bin_path):
+    os.add_dll_directory(gtk_bin_path)
+    
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 6066))
     uvicorn.run("main:app", host="127.0.0.1", port=port, reload=True)

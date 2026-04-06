@@ -1,4 +1,6 @@
-from services.queue_sv import QueueService
+from services.queue_sv import QueueService, QueueCompleteSchema
+import traceback
+from loguru import logger
 
 class QueueController:
     def __init__(self):
@@ -26,3 +28,15 @@ class QueueController:
         if success:
             return {"status": "success", "message": "Đã hủy yêu cầu"}
         return {"status": "error", "message": "Không tìm thấy hồ sơ đang treo để hủy"}
+    
+        
+    def complete_and_archive_controller(self, data, username):
+        try:
+            # Gọi Service xử lý toàn bộ quy trình
+            self.service.complete_and_archive_service(data, username)
+            return {"status": 200, "message": "Hồ sơ đã được ký và tạo file PDF thành công"}
+        except ValueError as ve:
+            return {"status": 400, "detail": str(ve)}
+        except Exception as e:
+            logger.error(traceback.format_exc())
+            return {"status": 500, "detail": "Lỗi hệ thống khi tạo file PDF"}
