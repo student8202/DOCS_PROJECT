@@ -147,7 +147,7 @@ app.include_router(docs_rt.router)
 @app.exception_handler(404)
 async def not_found_exception_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request}, status_code=404)
-# (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
+# (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này. GTK3
 # https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
 gtk_bin_path = r'C:\Program Files\GTK3-Runtime Win64\bin'
 if os.path.exists(gtk_bin_path):

@@ -112,3 +112,131 @@ INFO:     Started reloader process [2284] using StatReload
 INFO:     Started server process [18736]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+[32m2026-04-06 12:07:41[0m | [1mINFO    [0m | [36mSTART | GET /dashboard | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:41[0m | [1mINFO    [0m | [36mEND   | GET /dashboard | Status: 200 | Time: 28.86ms[0m
+INFO:     127.0.0.1:0 - "GET /dashboard HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mDEBUG: Checking status for 96 guests[0m
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 503.01ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1775452061855 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mSTART | GET /fo/inhouse-list2 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mDEBUG: Checking status for 96 guests[0m
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mEND   | GET /fo/inhouse-list2 | Status: 200 | Time: 115.96ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/inhouse-list2?_=1775452061856 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:42[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 118.17ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 6.39ms[0m
+INFO:     127.0.0.1:0 - "GET /sign/waiting HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/reset-device | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 17.43ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/reset-device | Status: 200 | Time: 20.51ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/queue/reset-device HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:45[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.33ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:46[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:46[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-04-06 12:07:50[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/devices/online-list | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:50[0m | [1mINFO    [0m | [36mSTART | GET /fo/templates/list | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:50[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/devices/online-list | Status: 200 | Time: 6.47ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/devices/online-list?module=FO HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:50[0m | [1mINFO    [0m | [36mEND   | GET /fo/templates/list | Status: 200 | Time: 6.20ms[0m
+INFO:     127.0.0.1:0 - "GET /fo/templates/list?module=FO HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:51[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:51[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 16.30ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:53[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/send | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:53[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/send | Status: 200 | Time: 11.46ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/queue/send HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.23ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mSTART | GET /sign/process/103 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:55[0m | [1mINFO    [0m | [36mEND   | GET /sign/process/103 | Status: 200 | Time: 8.00ms[0m
+INFO:     127.0.0.1:0 - "GET /sign/process/103 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/get-content/103 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/get-content/103 | Status: 200 | Time: 1.74ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/get-content/103 HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 3.81ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:56[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 1.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-04-06 12:07:59[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check-valid/103 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:07:59[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check-valid/103 | Status: 200 | Time: 7.92ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check-valid/103 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:02[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check-valid/103 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:02[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check-valid/103 | Status: 200 | Time: 2.04ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check-valid/103 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:02[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/complete | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:03[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/complete | Status: 200 | Time: 700.64ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/queue/complete HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mSTART | GET /sign/waiting | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mEND   | GET /sign/waiting | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /sign/waiting HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/queue/reset-device | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.15ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/queue/reset-device | Status: 200 | Time: 11.06ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/queue/reset-device HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 8.87ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mSTART | GET /favicon.ico | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:05[0m | [1mINFO    [0m | [36mEND   | GET /favicon.ico | Status: 204 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /favicon.ico HTTP/1.1" 204 No Content
+[32m2026-04-06 12:08:11[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:11[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:16[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:16[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:16[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:16[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:21[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:21[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 8.31ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:26[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:26[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:26[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 10.33ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:26[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 10.33ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:31[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:31[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:36[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:36[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:36[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:36[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:40[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:40[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 1.80ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:45[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:45[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:45[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:45[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:51[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:51[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.01ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:56[0m | [1mINFO    [0m | [36mSTART | POST /api/v1/devices/ping | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:56[0m | [1mINFO    [0m | [36mSTART | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1[0m
+[32m2026-04-06 12:08:56[0m | [1mINFO    [0m | [36mEND   | POST /api/v1/devices/ping | Status: 200 | Time: 2.66ms[0m
+INFO:     127.0.0.1:0 - "POST /api/v1/devices/ping HTTP/1.1" 200 OK
+[32m2026-04-06 12:08:56[0m | [1mINFO    [0m | [36mEND   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.55ms[0m
+INFO:     127.0.0.1:0 - "GET /api/v1/queue/check/FO01 HTTP/1.1" 200 OK

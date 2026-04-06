@@ -4515,3 +4515,89 @@ ValueError: Thiết bị FO01 đang bận xử lý hồ sơ 10060.
 2026-04-06 12:01:13 | INFO     | END   | POST /api/v1/queue/send | Status: 500 | Time: 125.29ms
 2026-04-06 12:01:13 | INFO     | END   | POST /api/v1/queue/send | Status: 500 | Time: 126.85ms
 2026-04-06 12:01:13 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 125.33ms
+2026-04-06 12:07:41 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-06 12:07:41 | INFO     | END   | GET /dashboard | Status: 200 | Time: 28.86ms
+2026-04-06 12:07:42 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-06 12:07:42 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-06 12:07:42 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 503.01ms
+2026-04-06 12:07:42 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-06 12:07:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-06 12:07:42 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-06 12:07:42 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 115.96ms
+2026-04-06 12:07:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 118.17ms
+2026-04-06 12:07:45 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-04-06 12:07:45 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 6.39ms
+2026-04-06 12:07:45 | INFO     | START | POST /api/v1/queue/reset-device | IP: 127.0.0.1
+2026-04-06 12:07:45 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:07:45 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 17.43ms
+2026-04-06 12:07:45 | INFO     | END   | POST /api/v1/queue/reset-device | Status: 200 | Time: 20.51ms
+2026-04-06 12:07:45 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:07:45 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.33ms
+2026-04-06 12:07:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-06 12:07:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-06 12:07:50 | INFO     | START | GET /api/v1/devices/online-list | IP: 127.0.0.1
+2026-04-06 12:07:50 | INFO     | START | GET /fo/templates/list | IP: 127.0.0.1
+2026-04-06 12:07:50 | INFO     | END   | GET /api/v1/devices/online-list | Status: 200 | Time: 6.47ms
+2026-04-06 12:07:50 | INFO     | END   | GET /fo/templates/list | Status: 200 | Time: 6.20ms
+2026-04-06 12:07:51 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:07:51 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 16.30ms
+2026-04-06 12:07:53 | INFO     | START | POST /api/v1/queue/send | IP: 127.0.0.1
+2026-04-06 12:07:53 | INFO     | END   | POST /api/v1/queue/send | Status: 200 | Time: 11.46ms
+2026-04-06 12:07:55 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:07:55 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:07:55 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.23ms
+2026-04-06 12:07:55 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:07:55 | INFO     | START | GET /sign/process/103 | IP: 127.0.0.1
+2026-04-06 12:07:55 | INFO     | END   | GET /sign/process/103 | Status: 200 | Time: 8.00ms
+2026-04-06 12:07:56 | INFO     | START | GET /api/v1/queue/get-content/103 | IP: 127.0.0.1
+2026-04-06 12:07:56 | INFO     | END   | GET /api/v1/queue/get-content/103 | Status: 200 | Time: 1.74ms
+2026-04-06 12:07:56 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:07:56 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 3.81ms
+2026-04-06 12:07:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-06 12:07:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-06 12:07:59 | INFO     | START | GET /api/v1/queue/check-valid/103 | IP: 127.0.0.1
+2026-04-06 12:07:59 | INFO     | END   | GET /api/v1/queue/check-valid/103 | Status: 200 | Time: 7.92ms
+2026-04-06 12:08:02 | INFO     | START | GET /api/v1/queue/check-valid/103 | IP: 127.0.0.1
+2026-04-06 12:08:02 | INFO     | END   | GET /api/v1/queue/check-valid/103 | Status: 200 | Time: 2.04ms
+2026-04-06 12:08:02 | INFO     | START | POST /api/v1/queue/complete | IP: 127.0.0.1
+2026-04-06 12:08:03 | INFO     | END   | POST /api/v1/queue/complete | Status: 200 | Time: 700.64ms
+2026-04-06 12:08:05 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-04-06 12:08:05 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:05 | INFO     | START | POST /api/v1/queue/reset-device | IP: 127.0.0.1
+2026-04-06 12:08:05 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:05 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:05 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.15ms
+2026-04-06 12:08:05 | INFO     | END   | POST /api/v1/queue/reset-device | Status: 200 | Time: 11.06ms
+2026-04-06 12:08:05 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 8.87ms
+2026-04-06 12:08:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-06 12:08:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-06 12:08:11 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:11 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:16 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:16 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:16 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:16 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:21 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:21 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 8.31ms
+2026-04-06 12:08:26 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:26 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:26 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 10.33ms
+2026-04-06 12:08:26 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 10.33ms
+2026-04-06 12:08:31 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:31 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:36 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:36 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:36 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:36 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:40 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:40 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 1.80ms
+2026-04-06 12:08:45 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:45 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:45 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:45 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.00ms
+2026-04-06 12:08:51 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:51 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 2.01ms
+2026-04-06 12:08:56 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-06 12:08:56 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-06 12:08:56 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 2.66ms
+2026-04-06 12:08:56 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 0.55ms
