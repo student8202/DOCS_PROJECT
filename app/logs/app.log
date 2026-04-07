@@ -12095,3 +12095,153 @@ AttributeError: 'DocsService' object has no attribute 'get_signed_docs_for_view_
 2026-04-07 14:10:38 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 15.86ms
 2026-04-07 14:10:38 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 192.168.1.141
 2026-04-07 14:10:38 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 5.43ms
+2026-04-07 14:19:38 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 192.168.1.114
+2026-04-07 14:19:38 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 18.09ms
+2026-04-07 14:19:38 | INFO     | START | GET /favicon.ico | IP: 192.168.1.114
+2026-04-07 14:19:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-07 14:19:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 192.168.1.114
+2026-04-07 14:19:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 6.03ms
+2026-04-07 14:19:41 | INFO     | START | GET /favicon.ico | IP: 192.168.1.114
+2026-04-07 14:19:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-07 14:31:10 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:31:10 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 52.41ms
+2026-04-07 14:31:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:31:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.13ms
+2026-04-07 14:31:16 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:31:16 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 2.62ms
+2026-04-07 14:31:17 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:31:17 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.22ms
+2026-04-07 14:31:17 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:31:17 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.89ms
+2026-04-07 14:31:17 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:31:17 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.85ms
+2026-04-07 14:31:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:31:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-04-07 14:32:38 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-07 14:32:38 | INFO     | END   | GET /dashboard | Status: 200 | Time: 22.21ms
+2026-04-07 14:32:38 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:32:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:32:39 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 490.09ms
+2026-04-07 14:32:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:32:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:32:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:32:39 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 95.81ms
+2026-04-07 14:32:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 95.81ms
+2026-04-07 14:32:47 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:32:47 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 34.03ms
+2026-04-07 14:32:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:32:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-07 14:32:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:32:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.70ms
+2026-04-07 14:33:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:33:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-07 14:40:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 70.60ms
+2026-04-07 14:40:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.42ms
+2026-04-07 14:40:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-07 14:40:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.24ms
+2026-04-07 14:40:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.96ms
+2026-04-07 14:40:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 29.39ms
+2026-04-07 14:40:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-07 14:40:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.26ms
+2026-04-07 14:40:40 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:40 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:40:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.77ms
+2026-04-07 14:40:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.34ms
+2026-04-07 14:40:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.54ms
+2026-04-07 14:40:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.40ms
+2026-04-07 14:40:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 28.96ms
+2026-04-07 14:40:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:40:42 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.09ms
+2026-04-07 14:40:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.14ms
+2026-04-07 14:40:42 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.52ms
+2026-04-07 14:40:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.02ms
+2026-04-07 14:40:42 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 1.99ms
+2026-04-07 14:40:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.08ms
+2026-04-07 14:40:43 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 2.01ms
+2026-04-07 14:40:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.05ms
+2026-04-07 14:40:43 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 22.04ms
+2026-04-07 14:40:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.80ms
+2026-04-07 14:40:43 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.77ms
+2026-04-07 14:40:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.80ms
+2026-04-07 14:40:43 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.48ms
+2026-04-07 14:40:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:40:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:40:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:40:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-07 14:45:29 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:29 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 65.95ms
+2026-04-07 14:45:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.64ms
+2026-04-07 14:45:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:45:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.55ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 10.10ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.35ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.50ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.60ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 10.09ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.90ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.04ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 15.61ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 4.71ms
+2026-04-07 14:45:34 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 9.73ms
+2026-04-07 14:45:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.13ms
+2026-04-07 14:45:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:45:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.97ms
+2026-04-07 14:45:46 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-07 14:45:46 | INFO     | END   | GET /dashboard | Status: 200 | Time: 24.34ms
+2026-04-07 14:45:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:45:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.02ms
+2026-04-07 14:45:47 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:45:48 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:45:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 529.00ms
+2026-04-07 14:45:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:45:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:45:48 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:45:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 104.15ms
+2026-04-07 14:45:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 103.68ms
+2026-04-07 14:45:54 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:45:54 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.22ms
+2026-04-07 14:45:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:45:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-07 14:47:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:47:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms

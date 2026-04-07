@@ -155,11 +155,12 @@
 {% endblock %}
 {% block scripts %}
 <script type="module">
-    // 1. Chỉ dùng 1 kiểu import duy nhất (Namespace Import)
-    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs';
+    // 1. Chỉ dùng 1 kiểu import duy nhất (Namespace Import) 
+    import * as pdfjsLib from "{{ url_for('static', path='/js/libs/pdfjs/pdf.min.js') }}";
 
-    // 2. Worker phải trùng phiên bản 4.10.38
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
+    // 2. Worker phải trùng phiên bản 4.10.38 https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs
+    // pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "{{ url_for('static', path='/js/libs/pdfjs/pdf.worker.min.js') }}";
 
     async function renderAllPDFs() {
         const items = document.querySelectorAll('.doc-item');

@@ -1,9 +1,5 @@
-import os
-import uvicorn
-import sys
-import io
-import secrets
-import time
+import os,uvicorn,sys,io,secrets,time
+import mimetypes
 from loguru import logger
 from fastapi import FastAPI, Request, Depends, HTTPException, status
 from fastapi.responses import HTMLResponse, RedirectResponse
@@ -23,6 +19,10 @@ from fastapi.openapi.utils import get_openapi
 from fastapi.responses import FileResponse,Response
 from starlette.middleware.sessions import SessionMiddleware
 from core.config import settings
+
+# ĐĂNG KÝ MIME TYPE CHO .MJS (QUAN TRỌNG)
+# Dòng này giúp Windows/Server trả về đúng loại JavaScript cho file .mjs
+mimetypes.add_type('application/javascript', '.mjs')
 
 # Gộp tất cả cấu hình vào một nơi
 app = FastAPI(
