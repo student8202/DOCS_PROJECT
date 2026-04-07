@@ -1,0 +1,218 @@
+{% extends "layouts/base_docs.html" %}
+
+{% block content %}
+<style>
+    /* --- CẤU HÌNH CHUNG --- */
+    body { 
+        background-color: #f4f7f6; 
+        /* Cho phép phóng to toàn trang và vuốt mượt mà */
+        touch-action: pan-y pinch-zoom; 
+    }
+
+    .header-bar {
+        background: #fff; border-bottom: 2px solid #321fdb;
+        padding: 15px 25px; position: sticky; top: 0; z-index: 1000;
+    }
+
+    .doc-grid {
+        display: grid; padding: 25px; gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .doc-item {
+        background: #fff; border-radius: 12px; overflow: hidden;
+        border: 1px solid #e0e0e0; transition: all 0.3s ease;
+        position: relative; display: block; text-decoration: none; color: inherit;
+        /* Mở khóa tương tác để trình duyệt cho phép Zoom */
+        user-select: auto !important; -webkit-user-select: auto !important;
+    }
+
+    /* Hiệu ứng trên Desktop */
+    @media (min-width: 769px) {
+        .doc-item:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border-color: #321fdb; z-index: 100;
+        }
+        .preview-box { height: 450px; overflow-y: auto; }
+    }
+
+    /* --- CẤU HÌNH XEM TRƯỚC PDF --- */
+    .preview-box {
+        background: #e4e7ea; border-bottom: 1px solid #eee;
+        /* Quan trọng: pan-y để vuốt lên xuống, pinch-zoom để 2 ngón tay phóng to */
+        touch-action: pan-y pinch-zoom; 
+    }
+
+    .pdf-canvas {
+        width: 100% !important; height: auto !important;
+        display: block; background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Ngăn canvas chặn sự kiện vuốt của ngón tay */
+        pointer-events: none; 
+    }
+
+    /* Thanh cuộn Desktop */
+    .preview-box::-webkit-scrollbar { width: 6px; }
+    .preview-box::-webkit-scrollbar-thumb { background: #321fdb; border-radius: 10px; }
+
+    /* --- THÔNG TIN CHI TIẾT --- */
+    .doc-info { padding: 12px; background: #fff; position: relative; z-index: 2; }
+    .doc-title { font-weight: 700; font-size: 0.9rem; color: #2c3e50; text-transform: uppercase; }
+    .doc-meta { font-size: 0.75rem; color: #7f8c8d; }
+
+    .badge-new {
+        position: absolute; top: 10px; left: 10px; z-index: 5;
+        background: #2eb85c; color: #fff; font-weight: bold;
+        font-size: 0.65rem; padding: 4px 8px; border-radius: 5px;
+    }
+
+    /* --- TỐI ƯU RIÊNG CHO MOBILE/IPAD (THÔNG NÒNG VUỐT) --- */
+    @media (max-width: 768px) {
+        .doc-grid { grid-template-columns: 1fr; padding: 15px; gap: 20px; }
+        
+        .preview-box { 
+            height: auto !important; /* Để PDF dài tự nhiên theo nội dung */
+            overflow: visible !important; 
+        }
+
+        .doc-item:hover { transform: none; box-shadow: none; } /* Tắt hover gây lag trên mobile */
+    }
+</style>
+
+<div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
+    <div>
+        <h5 class="mb-0 text-dark"><i class="fas fa-images text-primary me-2"></i> KHO HỒ SƠ SỐ - FOLIO: {{ folio }}
+        </h5>
+        <small class="text-muted">Nhấn vào hồ sơ để xem chi tiết ở Tab mới</small>
+    </div>
+    <button class="btn btn-outline-secondary btn-sm" onclick="window.close()">
+        <i class="fas fa-times me-1"></i> Đóng
+    </button>
+</div>
+
+<div class="doc-grid">
+    {% for doc in docs %}
+    <div class="doc-item shadow-sm">
+        {% if doc.IsCurrent %}
+        <div class="badge-new shadow-sm">BẢN MỚI NHẤT</div>
+        {% endif %}
+
+        <!-- Chỉ phần ảnh mới dùng link mở PDF chính -->
+        <!-- <a href="{{ doc.FilePath }}" target="_blank" class="link-pdf" style="text-decoration: none; color: inherit;">
+            <div class="preview-box border-bottom">
+                <canvas class="pdf-canvas"></canvas>
+            </div>
+        </a> -->
+        <div class="link-pdf preview-box border-bottom" data-pdf="{{ doc.FilePath }}" style="cursor: pointer;"
+            onclick="viewFullScreen('{{ doc.FilePath }}')">
+            <canvas class="pdf-canvas"></canvas>
+        </div>
+
+        <div class="doc-info border-top">
+            <div class="d-flex justify-content-between align-items-start">
+                <!-- Click vào text vẫn mở PDF chính -->
+                <a href="{{ doc.FilePath }}" target="_blank"
+                    style="text-decoration: none; color: inherit; flex-grow: 1;">
+                    <div>
+                        <div class="doc-title text-uppercase">{{ doc.Doc_Type }}</div>
+                        <div class="doc-meta">v{{ doc.Version }} | ID: {{ doc.IdAddition }}</div>
+                    </div>
+                </a>
+
+                <!-- NÚT XEM LỊCH SỬ (Đã sửa tên biến và tách khỏi thẻ a chính) -->
+                {% if doc.history_list and doc.history_list|length > 0 %}
+                <div class="dropdown">
+                    <button class="btn btn-link btn-sm text-muted p-0 border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-history"></i> <i class="fas fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0"
+                        style="font-size: 0.8rem; min-width: 200px;">
+                        <li class="dropdown-header text-dark fw-bold border-bottom mb-1">Lịch sử phiên bản</li>
+                        {% for hist in doc.history_list %}
+                        <li>
+                            <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                href="{{ hist.FilePath }}" target="_blank">
+                                <div class="me-3">
+                                    <i class="far fa-file-pdf text-danger me-2"></i>
+                                    <span class="fw-bold">v{{ hist.Version }}</span>
+                                </div>
+                                <small class="text-muted">{{ hist.CreatedAt }}</small>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            <div class="doc-meta mt-1 small"><i class="fas fa-user-edit"></i> {{ doc.CreatedBy }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+{% block scripts %}
+<script type="module">
+    // 1. Chỉ dùng 1 kiểu import duy nhất (Namespace Import)
+    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs';
+
+    // 2. Worker phải trùng phiên bản 4.10.38
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
+
+    async function renderAllPDFs() {
+        const items = document.querySelectorAll('.doc-item');
+
+        for (const item of items) {
+            // SỬA TẠI ĐÂY: Tìm thẻ <a> bên trong item để lấy href
+            // 1. Tìm thẻ div có chứa data-pdf
+            const linkTag = item.querySelector('.link-pdf');
+
+            // 2. Lấy 'data-pdf' thay vì 'href'
+            const url = linkTag ? linkTag.getAttribute('data-pdf') : null;
+
+            const canvas = item.querySelector('.pdf-canvas');
+            if (!url || !canvas) continue;
+
+            const context = canvas.getContext('2d');
+
+            try {
+                const loadingTask = pdfjsLib.getDocument(url);
+                const pdf = await loadingTask.promise;
+                const page = await pdf.getPage(1);
+
+                // Scale 1.5 giúp chữ nét căng khi cuộn
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                await page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                }).promise;
+
+            } catch (error) {
+                console.error("Lỗi vẽ PDF:", url, error);
+            }
+        }
+    }
+
+    // Chạy khi trang đã nạp xong
+    window.addEventListener('load', renderAllPDFs);
+
+    function viewFullScreen(url) {
+        // Kiểm tra nếu là thiết bị di động
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // Trên Mobile: Mở link trực tiếp để trình duyệt kích hoạt PDF Viewer xịn (có Pinch-to-zoom)
+            window.location.href = url;
+        } else {
+            // Trên PC: Mở tab mới như cũ
+            window.open(url, '_blank');
+        }
+    }
+</script>
+{% endblock %}

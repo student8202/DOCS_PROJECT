@@ -129,65 +129,14 @@ INSERT INTO tbl_TemplateTags (TagName, TagCode, ModuleName, SortOrder) VALUES
 -----------------------------
 -- Quản lý Hồ sơ đã ký & Snapshot dữ liệu
 CREATE TABLE tbl_SignedDocuments (
+    DocID       BIGINT IDENTITY(1,1) PRIMARY KEY,
     -- 1. ĐỊNH DANH (IDENTIFIERS)
-    Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Doc_GUID         UNIQUEIDENTIFIER DEFAULT NEWID(),
     Doc_Group_ID     UNIQUEIDENTIFIER,    -- Dùng để gom nhóm (VD: 1 bộ Regcard + Passport)
     Booking_ID       NVARCHAR(50),        -- Từ SMILE
     Folio_Num        NVARCHAR(50) NOT NULL, -- Trục xoay chính để tìm kiếm
     Group_Code       NVARCHAR(50),        -- NULL = Lẻ, Có giá trị = Đoàn
-
-    -- 2. PHÂN LOẠI (CLASSIFICATION)
-    Doc_Type         NVARCHAR(50),        -- REGCARD, BILL, RECEIPT, PASSPORT, VISA
-    Source_Type      NVARCHAR(20),        -- DIGITAL (Ký iPad), SCAN (Upload file)
-    Owner_Dept       NVARCHAR(20),        -- Bộ phận quản lý: FO, ACC, HK
-    View_Rights      NVARCHAR(100),       -- Quyền xem: 'FO,ACC', 'ALL', 'ACC'
-    
-    -- 3. NỘI DUNG & FILE (CONTENT)
-    Guest_Name_SS    NVARCHAR(255),       -- Snapshot tên khách lúc ký
-    Data_JSON_Full_SS NVARCHAR(MAX),      -- Toàn bộ JSON từ SMILE lúc đó (Để đối soát)
-    FilePath         NVARCHAR(500),       -- Đường dẫn file vật lý (PDF/JPG)
-    Signature_Base64 NVARCHAR(MAX),       -- Chữ ký (nếu là DIGITAL)
-    File_Extension   NVARCHAR(10),        -- .pdf, .jpg, .png
-    FileSize         INT,                 -- Dung lượng (Byte)
-    
-    -- 4. TRẠNG THÁI (STATUS)
-    Status           TINYINT DEFAULT 1,   -- 1: Hoàn tất, 2: Chờ duyệt, 3: Huỷ
-    Version          INT DEFAULT 1,       -- Tránh ghi đè hồ sơ cũ
-    IsDeleted        BIT DEFAULT 0,
-    IsCurrent BIT DEFAULT 1,
-
-    -- 5. THỐNG KÊ (STATISTICS - COPY TỪ SMILE ĐỂ LỌC NHANH)
-    TA_Code          NVARCHAR(50),
-    TA_Name          NVARCHAR(255),
-    Market_Segment   NVARCHAR(100),
-    Sales_Person     NVARCHAR(100),
-
-    -- 6. NHẬT KÝ (AUDIT)
-    CreatedBy        NVARCHAR(50),
-    CreatedAt        DATETIME DEFAULT GETDATE(),
-    UpdatedBy        NVARCHAR(50),
-    UpdatedAt        DATETIME
-);    
--- Tìm theo Booking/Folio
-CREATE INDEX idx_sign_booking ON tbl_SignedDocuments(Booking_ID);
-CREATE INDEX idx_sign_folio   ON tbl_SignedDocuments(Folio_Num);
-
--- Tìm theo Đoàn (Chỉ index những dòng có mã đoàn)
-CREATE INDEX idx_sign_group   ON tbl_SignedDocuments(Group_Code) WHERE Group_Code IS NOT NULL;
-
--- Phục vụ Dashboard của từng bộ phận
-CREATE INDEX idx_sign_dept    ON tbl_SignedDocuments(Owner_Dept, IsDeleted);
-
--- Phục vụ tìm kiếm theo thời gian (Báo cáo ngày)
-CREATE INDEX idx_sign_date    ON tbl_SignedDocuments(CreatedAt);
-
-CREATE TABLE tbl_SignedDocuments (
-    -- 1. ĐỊNH DANH (IDENTIFIERS)
-    Doc_GUID         UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    Doc_Group_ID     UNIQUEIDENTIFIER,    -- Dùng để gom nhóm (VD: 1 bộ Regcard + Passport)
-    Booking_ID       NVARCHAR(50),        -- Từ SMILE
-    Folio_Num        NVARCHAR(50) NOT NULL, -- Trục xoay chính để tìm kiếm
-    Group_Code       NVARCHAR(50),        -- NULL = Lẻ, Có giá trị = Đoàn
+    IdAddition INT,
 
     -- 2. PHÂN LOẠI (CLASSIFICATION)
     Doc_Type         NVARCHAR(50),        -- REGCARD, BILL, RECEIPT, PASSPORT, VISA
@@ -220,7 +169,20 @@ CREATE TABLE tbl_SignedDocuments (
     CreatedAt        DATETIME DEFAULT GETDATE(),
     UpdatedBy        NVARCHAR(50),
     UpdatedAt        DATETIME
-);
+);    
+-- Tìm theo Booking/Folio
+CREATE INDEX idx_sign_booking ON tbl_SignedDocuments(Booking_ID);
+CREATE INDEX idx_sign_folio   ON tbl_SignedDocuments(Folio_Num);
+
+-- Tìm theo Đoàn (Chỉ index những dòng có mã đoàn)
+CREATE INDEX idx_sign_group   ON tbl_SignedDocuments(Group_Code) WHERE Group_Code IS NOT NULL;
+
+-- Phục vụ Dashboard của từng bộ phận
+CREATE INDEX idx_sign_dept    ON tbl_SignedDocuments(Owner_Dept, IsDeleted);
+
+-- Phục vụ tìm kiếm theo thời gian (Báo cáo ngày)
+CREATE INDEX idx_sign_date    ON tbl_SignedDocuments(CreatedAt);
+
 
 CREATE TABLE tbl_DocumentLogs (
     Log_ID           BIGINT IDENTITY(1,1) PRIMARY KEY,
@@ -266,7 +228,11 @@ CREATE TABLE dbo.tbl_SignatureQueue (
     -- ĐIỀU PHỐI PHÂN HỆ
     ModuleName       NVARCHAR(10),  -- FO, POS, HR, BO
     RefType          NVARCHAR(20),  -- BOOKING, BILL, CONTRACT, PAYSLIP
-    RefID            NVARCHAR(50),  -- ID thực tế của đối tượng (BookingID, BillNo...)
+    RefID            NVARCHAR(50),  -- ID thực tế của đối tượng (BookingID, FolioNum, BillNo...)
+    Booking_ID NVARCHAR(50),
+    FolioNum NVARCHAR(50),
+    GroupCode NVARCHAR(50),
+    IdAddition INT,
     
     -- THÔNG TIN HIỂN THỊ
     TemplateID       INT,           -- Liên kết bảng tbl_Templates
@@ -317,6 +283,52 @@ Ký Regcard (FO).
 Ký Bill nợ phòng (POS).
 Ký Hợp đồng lao động (HR)
 */
+---------------------------------
+USE master;
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'LV_DOCS_ARCHIVE')
+BEGIN
+    CREATE DATABASE LV_DOCS_ARCHIVE;
+END
+GO
+
+USE LV_DOCS_ARCHIVE;
+GO
+
+-- Tại Database: LV_DOCS_ARCHIVE
+CREATE TABLE tbl_SignedDocuments_Archive (
+    Archive_ID       BIGINT IDENTITY(1,1) PRIMARY KEY,
+    
+    -- 1. LIÊN KẾT & ĐỊNH DANH (Để khớp với bảng chính)
+    Doc_GUID         UNIQUEIDENTIFIER NOT NULL, -- Khóa chính từ LV_DOCS
+    Booking_ID       NVARCHAR(50),              -- ConfirmNum từ SMILE
+    Folio_Num        NVARCHAR(50) NOT NULL,     -- Trục xoay chính
+    Group_Code       NVARCHAR(50),              -- NULL = Lẻ, Có giá trị = Đoàn
+
+    -- 2. PHÂN LOẠI
+    Doc_Type         NVARCHAR(50),              -- REGCARD, BILL, PASSPORT...
+    Source_Type      NVARCHAR(20),              -- DIGITAL hoặc SCAN
+    Owner_Dept       NVARCHAR(20),              -- FO, ACC, HK
+
+    -- 3. DỮ LIỆU NHỊ PHÂN (QUAN TRỌNG NHẤT)
+    -- VARBINARY(MAX) lưu trực tiếp nội dung file PDF/JPG
+    FileBinary       VARBINARY(MAX) NOT NULL,   
+    
+    FileName_Original NVARCHAR(255),            -- Tên file lúc lưu (10349_REGCARD.pdf)
+    File_Extension   NVARCHAR(10),              -- .pdf, .jpg
+    FileSize_Byte    BIGINT,                    -- Kích thước file thực tế
+    FileHash_SHA256  NVARCHAR(64),              -- Mã băm để chống sửa đổi file
+
+    -- 4. NHẬT KÝ
+    CreatedBy        NVARCHAR(50),
+    CreatedAt        DATETIME DEFAULT GETDATE()
+);
+
+-- Tạo Index để tìm kiếm cực nhanh trên kho lưu trữ
+CREATE INDEX IX_Arch_Folio ON tbl_SignedDocuments_Archive(Folio_Num);
+CREATE INDEX IX_Arch_Booking ON tbl_SignedDocuments_Archive(Booking_ID);
+CREATE INDEX IX_Arch_GUID ON tbl_SignedDocuments_Archive(Doc_GUID);
 -- =============================================
 -- DỮ LIỆU MẪU KHỞI TẠO (SEED DATA)
 -- =============================================

@@ -47,3 +47,8 @@ def get_smile_hr_db():
     """Nguồn Nhân sự - Có thể rớt mạng"""
     return create_conn(settings.SMILE_HR_SERVER, settings.SMILE_HR_DB, 
                        settings.SMILE_HR_UID, settings.SMILE_HR_PWD, "SMILE_HR")
+    
+def get_lv_docs_ar_db():
+    """Lưu trữ hồ sơ"""
+    return create_conn(settings.LV_DOCS_AR_SERVER, settings.LV_DOCS_AR_DB, 
+                       settings.LV_DOCS_AR_UID, settings.LV_DOCS_AR_PWD, "LV_DOCS_ARCHIVE")

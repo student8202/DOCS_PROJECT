@@ -4,3 +4,4 @@
 *.log          # Không đẩy file log
 #*.env          # Không đẩy file env
 secrets.sql    # File chứa mật khẩu/thông số riêng
+app/static/storage/signed_docs/

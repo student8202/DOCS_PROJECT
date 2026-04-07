@@ -10,6 +10,12 @@ class Settings(BaseSettings):
     LV_DOCS_UID: str
     LV_DOCS_PWD: str
     
+    # LV_DOCS
+    LV_DOCS_AR_SERVER: str
+    LV_DOCS_AR_DB: str
+    LV_DOCS_AR_UID: str
+    LV_DOCS_AR_PWD: str
+    
     # SMILE_FO
     SMILE_FO_SERVER: str
     SMILE_FO_DB: str

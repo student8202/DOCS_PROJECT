@@ -72,6 +72,7 @@ const calcPax = (dataList) => {
 FO_DASH.actions = {
     // Thêm dòng này để làm "kho chứa" dữ liệu tạm
     selectedData: {
+        confirmNum: null,
         folio: null,
         group: null,
         idAdd: null,
@@ -101,6 +102,7 @@ FO_DASH.actions = {
                     data: 'FolioNum',
                     className: 'text-nowrap py-1',
                     render: (data, type, row) => {
+                        const confirmNum = row.FConfirmNum;
                         const folio = row.FFolioNum;
                         const sGroup = row.SortGroup ? `'${row.SortGroup}'` : 'null';
                         const idAdd = row.IdAddition;
@@ -118,7 +120,7 @@ FO_DASH.actions = {
                         switch (mode) {
                             case 1: // Đang trên iPad
                                 mainBtn = `<button class="btn btn-xs btn-warning btn-status-action py-0" 
-                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">GỬI LẠI</button>`;
+                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd},'${confirmNum}')">GỬI LẠI</button>`;
                                 break;
                             case 2: // Khách ký xong, chờ FO check
                                 mainBtn = `<button class="btn btn-xs btn-success btn-status-action py-0" 
@@ -130,7 +132,7 @@ FO_DASH.actions = {
                                 break;
                             default: // Chưa có hồ sơ hoặc đã bị Hủy (Quay về trạng thái ban đầu)
                                 mainBtn = `<button class="btn btn-xs btn-primary btn-status-action py-0" 
-                           onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd})">KÝ</button>`;
+                           onclick="FO_DASH.actions.openSignProcess('${folio}', ${sGroup}, ${idAdd},'${confirmNum}')">KÝ</button>`;
                         }
 
                         // --- CẤU TRÚC 3 CHẤM (Đầy đủ nghiệp vụ số hóa) ---
@@ -145,7 +147,7 @@ FO_DASH.actions = {
                 <ul class="dropdown-menu shadow border-0" style="z-index: 99999; min-width: 180px;">
                     <!-- 1. Luồng Ký Tablet -->
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" 
-                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd})">
+                           onclick="FO_DASH.actions.resetAndResend('${folio}', ${sGroup}, ${idAdd},'${confirmNum}')">
                         <i class="fas fa-pen-nib me-2 text-primary"></i> ${mode === 0 ? 'Gửi ký iPad' : 'Gửi lại bản mới'}</a></li>
                     
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.changeDevice('${folio}', ${sGroup}, ${idAdd})">
@@ -155,7 +157,7 @@ FO_DASH.actions = {
 
                     <!-- 2. Luồng Số hóa thủ công (Upload file/ảnh hồ sơ giấy) -->
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" 
-                           onclick="FO_DASH.actions.openUploadModal('${folio}', '${row.LastName}','${row.ConfirmNum}')">
+                           onclick="FO_DASH.actions.openUploadModal('${folio}', '${row.LastName}',${idAdd},'${confirmNum}')">
                         <i class="fas fa-cloud-upload-alt me-2 text-success"></i> Upload hồ sơ đã ký</a></li>
 
                     <div class="dropdown-divider"></div>
@@ -166,7 +168,8 @@ FO_DASH.actions = {
                     
                     <li><a class="dropdown-item py-2 text-danger" href="javascript:void(0)" onclick="FO_DASH.actions.forceCancel('${folio}', ${sGroup}, ${idAdd})">
                         <i class="fas fa-trash-alt me-2"></i> Hủy & Xóa yêu cầu</a></li>
-                    
+                    <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.viewSignedDocs('${folio}')">
+                        <i class="fas fa-file-pdf me-2 text-danger"></i> Xem hồ sơ đã ký</a></li>
                     <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="FO_DASH.actions.viewLogs('${folio}')">
                         <i class="fas fa-history me-2 text-muted"></i> Nhật ký hồ sơ</a></li>
                 </ul>
@@ -487,7 +490,7 @@ FO_DASH.actions = {
     // Biến tạm để giữ thông tin dòng đang chọn
     selectedRow: {},
 
-    openSignProcess: function (folio, group, idAdd) {
+    openSignProcess: function (folio, group, idAdd, confirmNum) {
         console.trace();
         // 1. Reset nút bấm về trạng thái ban đầu để FO có thể tương tác
         const $btn = $('#btn-confirm-send');
@@ -497,6 +500,7 @@ FO_DASH.actions = {
 
         // Gán chính xác vào selectedData
         this.selectedData = {
+            confirmNum: confirmNum,    // Chính là row.FFolioNum truyền vào
             folio: folio,    // Chính là row.FFolioNum truyền vào
             group: group,    // Chính là row.SortGroup truyền vào
             idAdd: idAdd,     // Chính là row.IdAddition truyền vào
@@ -505,7 +509,7 @@ FO_DASH.actions = {
 
         console.log("Dữ liệu đã nạp:", this.selectedData); // Debug kiểm tra
         // Gọi hàm setup chung
-        this.setupSignModal(folio, group, idAdd, "Gửi hồ sơ ký iPad");
+        this.setupSignModal(folio, group, idAdd, confirmNum, "Gửi hồ sơ ký iPad");
 
         // 5. Gán duy nhất 1 sự kiện Click cho nút Xác nhận
         // Dùng .off('click') để chắc chắn không bị chồng chéo sự kiện cũ
@@ -571,6 +575,7 @@ FO_DASH.actions = {
             RefType: "BOOKING",
             // Lấy từ biến tạm đã gán ở bước 1
             RefID: this.selectedData.folio,
+            ConfirmNum: this.selectedData.confirmNum,
             FolioNum: this.selectedData.folio,
             GroupCode: this.selectedData.group === 'null' ? null : this.selectedData.group,
             IdAddition: parseInt(this.selectedData.idAdd),
@@ -601,7 +606,7 @@ FO_DASH.actions = {
         });
     },
     // 1. Hàm GỬI LẠI: Reset hồ sơ treo và mở lại màn hình gửi
-    resetAndResend: function (folio, sGroup, idAdd) {
+    resetAndResend: function (folio, sGroup, idAdd, confirmNum) {
         // 1. Hỏi ý kiến Lễ tân trước
         Swal.fire({
             title: 'Xác nhận gửi lại?',
@@ -622,22 +627,22 @@ FO_DASH.actions = {
                             data: JSON.stringify({ DeviceID: res.DeviceID }),
                             success: () => {
                                 // 4. Reset xong thì mở lại Modal chọn mẫu như ban đầu
-                                this.openSignProcess(folio, sGroup, idAdd);
+                                this.openSignProcess(folio, sGroup, idAdd, confirmNum);
                             }
                         });
                     } else {
                         // Nếu không tìm thấy iPad nào đang giữ Folio này (có thể đã ký xong hoặc đã hủy)
                         // Cứ mở thẳng Modal chọn mẫu mới
-                        this.openSignProcess(folio, sGroup, idAdd);
+                        this.openSignProcess(folio, sGroup, idAdd, confirmNum);
                     }
                 });
             }
         });
     },
     // Hàm dùng chung để đổ dữ liệu vào Modal
-    setupSignModal: function (folio, group, idAdd, title = "Gửi hồ sơ ký iPad") {
+    setupSignModal: function (folio, group, idAdd, confirmNum, title = "Gửi hồ sơ ký iPad") {
         // 1. Lưu dữ liệu vào biến tạm để các nút Xác nhận truy cập được
-        this.selectedData = { folio, group, idAdd };
+        this.selectedData = { folio, group, idAdd, confirmNum };
 
         // 2. Cập nhật giao diện Modal
         $('#modalSelectSign').modal('show');
@@ -653,14 +658,14 @@ FO_DASH.actions = {
             $('#sign-select-tpl').html(html);
         });
     },
-    changeDevice: function (folio, group, idAdd) {
+    changeDevice: function (folio, group, idAdd, confirmNum) {
         // 1. Lưu lại folio đang chọn vào biến tạm để tí nữa update
         this.selectedData = this.selectedData || {};
         this.selectedData.folio = folio;
 
         // 2. Mở Modal chọn thiết bị (Dùng chung modal với nút Ký cho gọn)
         // Gọi hàm setup chung
-        this.setupSignModal(folio, group, idAdd, "Chuyển thiết bị nhận hồ sơ");
+        this.setupSignModal(folio, group, idAdd, confirmNum, "Chuyển thiết bị nhận hồ sơ");
 
         // Gán sự kiện cho nút Xác nhận là CẬP NHẬT THIẾT BỊ
         $('#btn-confirm-send').off('click').text('Xác nhận chuyển').on('click', () => {
@@ -742,7 +747,7 @@ FO_DASH.actions = {
             }
         });
     },
-    openUploadModal: function (folio, guestName, confirmNum) {
+    openUploadModal: function (folio, guestName, idAddition, confirmNum) {
         // 1. Việc đầu tiên: Lấy danh sách các loại hồ sơ (Category) từ Template
         // Để Lễ tân chọn: REG_CARD hay CONFIRM...
         $.get('/api/v1/docs/categories?module=FO', function (categories) {
@@ -788,6 +793,7 @@ FO_DASH.actions = {
                     formData.append('FolioNum', folio);       // Số phòng
                     formData.append('BookingID', confirmNum); // Số đặt phòng (ConfirmNum)
                     formData.append('GuestName', guestName);  // Tên khách
+                    formData.append('IdAddition', idAddition);  // id khách
                     formData.append('DocType', docType);      // Loại: REG_CARD/CONFIRM
 
                     // Gửi "gói hàng" này lên Server
@@ -813,6 +819,18 @@ FO_DASH.actions = {
                 }
             });
         });
+    },
+    viewSignedDocs: function (folio) {
+        const url = `/api/v1/docs/view-list/${folio}`;
+        // Mở Pop-up rộng 1100px để hiện được khoảng 4 cột hồ sơ
+        const width = 1100;
+        const height = 850;
+        const left = (window.screen.width / 2) - (width / 2);
+        const top = (window.screen.height / 2) - (height / 2);
+
+        window.open(url, 'ViewDocsPopup',
+            `width=${width},height=${height},top=${top},left=${left},scrollbars=yes,resizable=yes`
+        );
     },
     // 3. Hàm XÁC NHẬN DUYỆT: Đẩy dữ liệu vào SMILE
     confirmApprove: function (qid) {

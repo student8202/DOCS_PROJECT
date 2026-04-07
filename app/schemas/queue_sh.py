@@ -14,6 +14,7 @@ class QueueSendSchema(BaseModel):
     CreatedBy: Optional[str] = None
     
     # Các trường mở rộng cho SMILE
+    ConfirmNum: Optional[str] = None
     FolioNum: Optional[str] = None
     GroupCode: Optional[str] = None
     IdAddition: Optional[int] = None
