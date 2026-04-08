@@ -1,0 +1,371 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<!-- THANH TIÊU ĐỀ (GIỮ GIỐNG DASHBOARD) -->
+{% include 'includes/fo_bill_header.html' %}
+
+<div class="row g-2 mb-2">
+    <!-- TẦNG 1: TÌM KIẾM VÀ DANH SÁCH FOLIO -->
+    <!-- CỘT TRÁI: BỘ LỌC & THÔNG TIN CHI TIẾT KHÁCH -->
+    <div class="col-md-4 col-lg-3">
+        <div class="card border-top border-4 border-primary shadow-sm h-100">
+            <div class="card-body p-2" style="background-color: #f8f9fa;">
+                <!-- Nhóm Tìm kiếm (Giống hệt SMILE) -->
+                <div class="row g-1 mb-2 align-items-center">
+                    <div class="col-4 small fw-bold">Guest Infor:</div>
+                    <div class="col-5"><input type="text" id="search_guest" class="form-control form-control-sm"></div>
+                    <div class="col-3"><button class="btn btn-sm btn-light border w-100 py-0 small"
+                            onclick="searchFolio()">Search</button></div>
+                </div>
+                <div class="row g-1 mb-2 align-items-center">
+                    <div class="col-4 small fw-bold">Group Infor:</div>
+                    <div class="col-5"><input type="text" id="search_group" class="form-control form-control-sm"></div>
+                    <div class="col-3"><button class="btn btn-sm btn-light border w-100 py-0 small"
+                            data-coreui-toggle="modal" data-coreui-target="#modalSearchMore">
+                            More...
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-1 mb-3 align-items-center">
+                    <div class="col-4 small fw-bold">TA/Company:</div>
+                    <div class="col-5">
+                        <input type="text" id="search_ta" class="form-control form-control-sm" placeholder="Mã TA...">
+                    </div>
+                    <div class="col-3">
+                        <!-- Nút gọi Popup tìm kiếm TA -->
+                        <button class="btn btn-sm btn-light border w-100 py-0 small" data-coreui-toggle="modal"
+                            data-coreui-target="#modalSearchTA">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <hr class="my-2">
+
+                <!-- Nhóm Summary (Hiển thị khi click chọn dòng bên phải) -->
+                <div id="folio_summary_area" class="small">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="text-primary fw-bold">Folio# <span id="sm_folio">-----</span></span>
+                        <span class="text-primary">Status: <span id="sm_status">--</span></span>
+                    </div>
+                    <div class="fw-bold mb-1 text-danger" id="sm_guest_name">GUEST NAME</div>
+
+                    <div class="row g-0 mb-1">
+                        <div class="col-6">Room# <span class="fw-bold text-primary" id="sm_room">--</span></div>
+                        <div class="col-6 text-end">Arr/Dept <span id="sm_dates">--/--/-- --/--/--</span></div>
+                    </div>
+
+                    <div class="row g-0 mb-1">
+                        <div class="col-6">Rate: <span class="text-danger" id="sm_rate">0</span></div>
+                        <div class="col-6 text-end">ExRate: <span id="sm_exrate">1.0</span></div>
+                    </div>
+
+                    <div class="row g-0 mb-1">
+                        <div class="col-6">Balance: <span class="fw-bold text-primary" id="sm_balance">0</span></div>
+                        <div class="col-6 text-end text-danger fw-bold">NO POST <input type="checkbox" disabled></div>
+                    </div>
+
+                    <div class="small text-success mt-2 border-top pt-1">
+                        TA Code: <span id="sm_ta_code">----</span><br>
+                        Notice: <span id="sm_notice" class="fst-italic">None</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CỘT PHẢI: BẢNG DANH SÁCH (GIỐNG ẢNH SMILE) -->
+    <div class="col-md-8 col-lg-9">
+        <div class="card border-top border-4 border-primary shadow-sm h-100">
+            <div class="card-body p-0">
+                <div class="table-responsive" style="max-height: 250px; min-height: 250px;">
+                    <table class="table table-sm table-hover table-bordered mb-0 small text-nowrap" id="table_folio">
+                        <thead class="bg-light sticky-top">
+                            <tr class="text-center" style="font-size: 11px; background: #e9ecef;">
+                                <th width="30">Sts</th>
+                                <th>Folio#</th>
+                                <th>Confirm#</th>
+                                <th>Guest Name</th>
+                                <th width="40">Rm</th>
+                                <th>Balance</th>
+                                <th>MCF</th>
+                                <th>Group</th>
+                                <th>Arrival</th>
+                                <th>Departure</th>
+                            </tr>
+                        </thead>
+                        <tbody id="folio_list_body">
+                            <!-- Dòng dữ liệu mẫu tương tự ảnh -->
+                            <tr onclick="selectFolioRow(this, '10123')">
+                                <td class="text-center">2</td>
+                                <td>10123</td>
+                                <td>100125</td>
+                                <td class="fw-bold">A, Q1</td>
+                                <td class="text-center">02</td>
+                                <td class="text-end">200,000</td>
+                                <td>10025</td>
+                                <td></td>
+                                <td>04/02/26</td>
+                                <td>06/02/26</td>
+                            </tr>
+                            <!-- Thêm các dòng khác... -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TẦNG 2: CHI TIẾT GIAO DỊCH (TRANSACTIONS) -->
+    <div class="col-12">
+        <div class="card shadow-sm border-0" style="background-color: #f1f1f1; border: 1px solid #00daff !important;">
+
+            <!-- BẢNG DỮ LIỆU (GRID) -->
+            <div class="card-body p-0 bg-white" style="height: 350px; overflow-y: auto;">
+                <table class="table table-sm table-bordered mb-0 small text-nowrap" id="table_trans">
+                    <thead style="background-color: #e3e3e3;">
+                        <tr class="text-center" style="font-size: 11px;">
+                            <th width="80">Date</th>
+                            <th width="60">Code</th>
+                            <th>Description</th>
+                            <th width="100">Ref #</th>
+                            <th width="100">Sub Amt</th>
+                            <th width="100">Amount</th>
+                            <th width="40">Org</th>
+                            <th width="40">Rm</th>
+                            <th width="40">Tax</th>
+                            <th width="80">Inv Date</th>
+                            <th width="80">User</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trans_list_body">
+                        <!-- Data render here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- THANH BALANCE & ACTIONS (ĐƯỜNG KẺ MẢNH) -->
+            <div class="d-flex justify-content-between align-items-center px-2 py-1 border-top border-bottom bg-light">
+                <div class="d-flex align-items-center">
+                    <span class="small text-danger me-2" style="font-size: 11px;">Balance</span>
+                    <span class="fw-bold text-danger" id="total_balance_display"
+                        style="font-size: 16px;">3,645,600</span>
+                </div>
+                <div class="btn-group shadow-none">
+                    <button class="btn btn-outline-secondary btn-sm py-0 px-2" style="font-size: 10px;">Ext Dsc</button>
+                    <button class="btn btn-outline-secondary btn-sm py-0 px-2" style="font-size: 10px;">Print
+                        P-Out</button>
+                    <button class="btn btn-outline-secondary btn-sm py-0 px-2" style="font-size: 10px;">Origin
+                        Tms</button>
+                </div>
+            </div>
+
+            <!-- THANH TAB (DƯỚI CÙNG) -->
+            <div class="card-footer p-1 border-0 bg-white d-flex justify-content-between align-items-center">
+                <!-- Khu vực Tab: Làm rộng và thoáng hơn -->
+                <div class="d-flex gap-2" id="smile_tabs">
+                    <div class="smile-tab-modern active" data-tab="A">
+                        <i class="fas fa-file-invoice me-1"></i> A - A
+                    </div>
+                    <div class="smile-tab-modern" data-tab="B">
+                        <i class="fas fa-file-invoice me-1"></i> B - B
+                    </div>
+                    <div class="smile-tab-modern text-danger d-none" id="tab-v" data-tab="V">
+                        <i class="fas fa-trash-alt me-1"></i> VOID
+                    </div>
+                    <div class="smile-tab-modern text-success d-none" id="tab-p" data-tab="P">
+                        <i class="fas fa-box-open me-1"></i> PKG
+                    </div>
+                </div>
+
+                <!-- Checkbox Show All Bal -->
+                <div class="form-check mb-0 pe-2">
+                    <input class="form-check-input border-secondary" type="checkbox" id="chk_show_all_bal"
+                        style="width: 18px; height: 18px;">
+                    <label class="form-check-label ms-1" for="chk_show_all_bal"
+                        style="font-size: 13px; font-weight: 500; cursor: pointer;">
+                        Show All Bal
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TẦNG 3: NÚT THAO TÁC GỬI KÝ -->
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-light">
+            <div class="card-body py-2 d-flex align-items-center">
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-outline-dark"><i class="fas fa-eye me-1"></i> Preview PDF</button>
+                    <button class="btn btn-sm btn-outline-dark"><i class="fas fa-print me-1"></i> Print Bill</button>
+                </div>
+
+                <div class="ms-auto d-flex align-items-center gap-3 p-1 bg-white border rounded shadow-sm px-3">
+                    <div class="small fw-bold text-primary"><i class="fas fa-tablet-alt me-1"></i> GỬI KÝ IPAD:</div>
+                    <select class="form-select form-select-sm" id="select_ipad" style="width: 200px;">
+                        <option value="">-- Chọn thiết bị --</option>
+                        <!-- Data devices will be here -->
+                    </select>
+                    <button class="btn btn-danger btn-sm px-4 fw-bold shadow-sm" onclick="sendBillToIpad()">
+                        <i class="fas fa-paper-plane me-1"></i> GỬI NGAY
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL TÌM KIẾM TRAVEL AGENT / COMPANY -->
+<div class="modal fade" id="modalSearchTA" tabindex="-1" aria-labelledby="modalSearchTALabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content shadow-lg border-top border-4 border-info">
+            <div class="modal-header py-2 bg-light">
+                <h6 class="modal-title fw-bold" id="modalSearchTALabel">
+                    <i class="fas fa-search-dollar me-2 text-info"></i>SEARCH TRAVEL AGENT / COMPANY
+                </h6>
+                <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-3">
+                <!-- Bộ lọc trong Popup -->
+                <div class="row g-2 mb-3 bg-light p-2 border rounded shadow-sm">
+                    <!-- Ô SEARCH ĐA NĂNG: Tên, Mã, Phone -->
+                    <div class="col-md-6">
+                        <label class="small fw-bold text-primary">Tìm kiếm đối tác</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" id="ta_popup_search_all" class="form-control"
+                                placeholder="Nhập Tên, Mã TA hoặc Số điện thoại...">
+                        </div>
+                    </div>
+                    <!-- Ô VAT CODE (Đổi từ Mã đối tác sang) -->
+                    <div class="col-md-3">
+                        <label class="small fw-bold text-primary">VAT Code</label>
+                        <input type="text" id="ta_popup_vat" class="form-control form-control-sm"
+                            placeholder="Mã số thuế...">
+                    </div>
+
+                    <!-- NÚT THỰC THI -->
+                    <div class="col-md-3 d-flex align-items-end">
+                        <button class="btn btn-sm btn-info w-100 fw-bold text-white shadow-sm"
+                            onclick="searchTAInPopup()">
+                            <i class="fas fa-filter me-1"></i> TÌM KIẾM
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bảng kết quả trong Popup -->
+                <div class="table-responsive" style="max-height: 350px;">
+                    <table class="table table-sm table-hover table-bordered small" id="table_ta_results">
+                        <thead class="table-secondary sticky-top">
+                            <tr style="font-size: 11px;">
+                                <th width="100">Mã TA</th>
+                                <th>Tên Công ty / Đại lý Du lịch</th>
+                                <th>Địa chỉ</th>
+                                <th width="80">Chọn</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ta_results_body">
+                            <!-- Kết quả search sẽ render ở đây -->
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">Nhập thông tin để tìm kiếm đối
+                                    tác...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL MORE FILTER: FIND GUEST HAS STATUS -->
+<div class="modal fade" id="modalSearchMore" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content shadow-lg border-top border-4 border-primary">
+            <div class="modal-header py-2 bg-light">
+                <h6 class="modal-title fw-bold small">Find guest has status</h6>
+                <button class="btn-close" type="button" data-coreui-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-3 bg-light">
+                <!-- GRID CHECKBOX MÔ PHỎNG SMILE -->
+                <div class="row g-2 mb-3">
+                    <div class="col-4">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="st_reserved">
+                            <label class="form-check-label" for="st_reserved">Reserved -F4</label>
+                        </div>
+                        <div class="form-check small mt-1">
+                            <input class="form-check-input" type="checkbox" id="st_inhouse" checked>
+                            <label class="form-check-label fw-bold text-primary" for="st_inhouse">In House -F5</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="st_cotoday">
+                            <label class="form-check-label" for="st_cotoday">C/O Today -F7</label>
+                        </div>
+                        <div class="form-check small mt-1">
+                            <input class="form-check-input" type="checkbox" id="st_allco">
+                            <label class="form-check-label" for="st_allco">All C/O -F10</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="st_permanent">
+                            <label class="form-check-label" for="st_permanent">Permanent Folio</label>
+                        </div>
+                        <div class="form-check small mt-1">
+                            <input class="form-check-input" type="checkbox" id="st_notbalance">
+                            <label class="form-check-label" for="st_notbalance">Not Balance</label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-2">
+
+                <!-- LỌC THEO NGÀY (DATE RANGE) -->
+                <div class="row g-2 align-items-center mb-2">
+                    <div class="col-3">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="chk_arrival_range">
+                            <label class="form-check-label" for="chk_arrival_range">Arrival</label>
+                        </div>
+                    </div>
+                    <div class="col-1 small">From</div>
+                    <div class="col-3"><input type="date" class="form-control form-control-sm py-0" id="arr_from"></div>
+                    <div class="col-1 small text-center">To</div>
+                    <div class="col-3"><input type="date" class="form-control form-control-sm py-0" id="arr_to"></div>
+                </div>
+
+                <div class="row g-2 align-items-center">
+                    <div class="col-3">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="chk_departure_range">
+                            <label class="form-check-label" for="chk_departure_range">Departure</label>
+                        </div>
+                    </div>
+                    <div class="col-1 small">From</div>
+                    <div class="col-3"><input type="date" class="form-control form-control-sm py-0" id="dep_from"></div>
+                    <div class="col-1 small text-center">To</div>
+                    <div class="col-3"><input type="date" class="form-control form-control-sm py-0" id="dep_to"></div>
+                </div>
+            </div>
+            <div class="modal-footer py-1 bg-white">
+                <button type="button" class="btn btn-sm btn-secondary px-3" data-coreui-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-sm btn-primary px-4 fw-bold"
+                    onclick="applyMoreFilter()">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% block styles %}
+<!-- Nhúng file CSS vừa tạo -->
+<link rel="stylesheet" href="/static/css/fo/folio_style.css">
+{% endblock %}
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/fo/bill_handler.js"></script>
+{% endblock %}

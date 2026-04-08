@@ -1,0 +1,50 @@
+<!-- THANH ĐỊNH DANH NGHIỆP VỤ - ĐỒNG NHẤT VỚI DASHBOARD -->
+<div class="row mb-2">
+    <div class="col-12">
+        <!-- Giữ nguyên class card shadow-sm và border-start border-4 như Dashboard của bạn -->
+        <div class="card shadow-sm border-0 border-start border-4 border-success bg-white py-1">
+            <div class="card-body py-1 px-3 d-flex justify-content-between align-items-center">
+                
+                <!-- BÊN TRÁI: TIÊU ĐỀ NGHIỆP VỤ (THAY CHO CHỮ DASHBOARD) -->
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0" style="--cui-breadcrumb-divider: '›';">
+                            <li class="breadcrumb-item small"><a href="/dashboard" class="text-decoration-none text-muted">Dashboard</a></li>
+                            <li class="breadcrumb-item small active fw-bold text-success" aria-current="page">Quản lý Bill & Giao dịch (FO)</li>
+                        </ol>
+                    </nav>
+                    
+                    <!-- WebSocket Status Area (Mỏng và gọn) -->
+                    <div class="ms-3 ps-3 border-start d-none d-md-block">
+                        <span class="small text-muted">
+                            <i class="fas fa-circle text-success me-1" id="ws_status_icon" style="font-size: 8px;"></i>
+                            <span id="ws_status_text">iPad System Online</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- BÊN PHẢI: THÔNG TIN THỜI GIAN & USER (GIỮ GIỐNG DASHBOARD) -->
+                <div class="text-end">
+                    <span class="small text-muted">
+                        <i class="far fa-calendar-alt me-1"></i>{{ get_hotel_date(request) }} 
+                        <span class="mx-1">|</span> 
+                        <i class="far fa-user me-1"></i>{{ request.session.get('full_name') }}
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Đảm bảo chiều cao card không bị phình to hơn Dashboard chính */
+    #fo_bill_header_wrapper .card-body {
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+    }
+    /* Hiệu ứng thở cho icon WebSocket */
+    #ws_status_icon.text-success {
+        text-shadow: 0 0 5px rgba(46, 184, 92, 0.5);
+    }
+</style>

@@ -2,26 +2,7 @@
 
 {% block content %}
 <!-- PHẦN CHÀO MỪNG CHUNG -->
-<div class="row mb-2">
-    <div class="col-12">
-        <div class="card shadow-sm border-0 border-start border-4 border-primary bg-white py-1">
-            <div class="card-body py-1 px-3 d-flex justify-content-between align-items-center">
-                <h6 class="mb-0 fw-bold">DASHBOARD: {{ get_hotel_name(request) }}</h6>
-                <span class="small text-muted">{{ get_hotel_date(request) }} - {{ request.session.get('full_name')
-                    }}</span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="alert alert-info">
-    Quyền của bạn trong Session:{{ get_perms(request) | map(attribute='code') | list | tojson }}
-    {% set perms = get_perms(request)|map(attribute='code') %}
-    {% if 'admin' in codes or 'view_fo' in perms %}
-    Chào sếp hoặc người xem!
-    {% endif %}
-    Context global pers {{ get_perms(request) }}
-    Context global hotel date: {{ get_hotel_date(request) }}
-</div>
+{% include 'includes/dashboard_header.html' %}
 <!-- PHẦN NỘI DUNG BIẾN ĐỔI (DYNAMIC) -->
 <div class="row g-3"> <!-- g-3 để tạo khoảng cách giữa các khối -->
 

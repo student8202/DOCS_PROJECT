@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="vi">
 {% include 'includes/header.html' %}
+<style>
+    /* Ép Dropdown Menu luôn nằm trên mọi bảng biểu */
+    .header .dropdown-menu {
+        z-index: 9999 !important;
+    }
 
+    /* Đảm bảo Header chính có z-index cao hơn nội dung trang */
+    .header-sticky {
+        z-index: 1030 !important;
+    }
+</style>
+{% block styles %}
+<!-- <link rel="stylesheet" href="/static/css/fo/folio_style.css"> -->
+{% endblock %}
 <body>
     <!-- 1. SIDEBAR (Dùng class của v5) -->
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
@@ -33,6 +46,8 @@
                     <li class="nav-item"><a class="nav-link" href="/fo/search"><span
                                 class="nav-icon fas fa-search"></span>
                             Tìm kiếm & Ký</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/fo/bill-manage"><span
+                                class="nav-icon fas fa-history"></span> Quản lý bill</a></li>
                     <li class="nav-item"><a class="nav-link" href="/fo/history"><span
                                 class="nav-icon fas fa-history"></span> Lịch sử
                             hồ sơ</a></li>

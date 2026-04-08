@@ -12245,3 +12245,570 @@ AttributeError: 'DocsService' object has no attribute 'get_signed_docs_for_view_
 2026-04-07 14:45:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
 2026-04-07 14:47:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
 2026-04-07 14:47:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-07 14:49:35 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:49:35 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-04-07 14:49:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:49:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.14ms
+2026-04-07 14:49:35 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-07 14:49:35 | INFO     | END   | GET /dashboard | Status: 200 | Time: 17.74ms
+2026-04-07 14:49:35 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:49:35 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:49:37 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:49:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:49:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 486.53ms
+2026-04-07 14:49:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:49:37 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-07 14:49:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-07 14:49:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 105.88ms
+2026-04-07 14:49:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 105.88ms
+2026-04-07 14:49:45 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:49:45 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 40.35ms
+2026-04-07 14:49:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:49:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-07 14:49:49 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:49:49 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-07 14:51:26 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-07 14:51:26 | INFO     | END   | GET / | Status: 200 | Time: 11.24ms
+2026-04-07 14:51:28 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-04-07 14:51:28 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 7.01ms
+2026-04-07 14:51:28 | INFO     | START | POST /api/v1/queue/reset-device | IP: 127.0.0.1
+2026-04-07 14:51:28 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-07 14:51:28 | INFO     | END   | POST /api/v1/queue/reset-device | Status: 200 | Time: 21.36ms
+2026-04-07 14:51:28 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 22.40ms
+2026-04-07 14:51:28 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-07 14:51:28 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 3.56ms
+2026-04-07 14:52:04 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-07 14:52:04 | INFO     | END   | GET / | Status: 200 | Time: 1.00ms
+2026-04-07 14:52:06 | INFO     | START | GET /sign/waiting | IP: 127.0.0.1
+2026-04-07 14:52:06 | INFO     | END   | GET /sign/waiting | Status: 200 | Time: 0.00ms
+2026-04-07 14:52:07 | INFO     | START | POST /api/v1/queue/reset-device | IP: 127.0.0.1
+2026-04-07 14:52:07 | INFO     | START | POST /api/v1/devices/ping | IP: 127.0.0.1
+2026-04-07 14:52:07 | INFO     | START | GET /api/v1/queue/check/FO01 | IP: 127.0.0.1
+2026-04-07 14:52:07 | INFO     | END   | GET /api/v1/queue/check/FO01 | Status: 200 | Time: 10.55ms
+2026-04-07 14:52:07 | INFO     | END   | POST /api/v1/queue/reset-device | Status: 200 | Time: 19.60ms
+2026-04-07 14:52:07 | INFO     | END   | POST /api/v1/devices/ping | Status: 200 | Time: 13.91ms
+2026-04-07 14:55:40 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 57.73ms
+2026-04-07 14:55:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 2.99ms
+2026-04-07 14:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.58ms
+2026-04-07 14:55:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.90ms
+2026-04-07 14:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-07 14:55:41 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 2.57ms
+2026-04-07 14:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-04-07 14:55:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:55:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-07 14:56:19 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:56:19 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 2.45ms
+2026-04-07 14:56:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:56:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.28ms
+2026-04-07 14:56:19 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:56:19 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.69ms
+2026-04-07 14:56:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:56:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-07 14:56:19 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:56:19 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.99ms
+2026-04-07 14:56:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:56:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.03ms
+2026-04-07 14:56:20 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:56:20 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 16.79ms
+2026-04-07 14:56:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:56:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.54ms
+2026-04-07 14:56:20 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:56:20 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.14ms
+2026-04-07 14:56:20 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:56:20 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-07 14:56:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:56:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-07 14:58:53 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 61.72ms
+2026-04-07 14:58:53 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.85ms
+2026-04-07 14:58:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-07 14:58:53 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 5.00ms
+2026-04-07 14:58:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.07ms
+2026-04-07 14:58:53 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.50ms
+2026-04-07 14:58:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:58:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.52ms
+2026-04-07 14:58:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:58:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-07 14:59:04 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 4.04ms
+2026-04-07 14:59:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.92ms
+2026-04-07 14:59:04 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.98ms
+2026-04-07 14:59:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.74ms
+2026-04-07 14:59:04 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 12.10ms
+2026-04-07 14:59:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.42ms
+2026-04-07 14:59:04 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 3.63ms
+2026-04-07 14:59:04 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:59:04 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-07 14:59:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:59:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.96ms
+2026-04-07 14:59:08 | INFO     | START | GET /api/v1/docs/view-list/10349 | IP: 127.0.0.1
+2026-04-07 14:59:08 | INFO     | END   | GET /api/v1/docs/view-list/10349 | Status: 200 | Time: 0.00ms
+2026-04-07 14:59:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-07 14:59:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-07 14:59:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-07 14:59:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-04-08 11:59:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 11:59:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-04-08 12:00:39 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-08 12:00:39 | INFO     | END   | GET / | Status: 200 | Time: 77.99ms
+2026-04-08 12:00:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 12:00:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-08 12:00:45 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-04-08 12:00:46 | INFO     | User admin logged in successfully with 8 perms
+2026-04-08 12:00:46 | INFO     | END   | POST /auth/login | Status: 200 | Time: 499.75ms
+2026-04-08 12:00:47 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 12:00:47 | INFO     | END   | GET /dashboard | Status: 200 | Time: 83.32ms
+2026-04-08 12:00:47 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 12:00:48 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 12:00:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 615.75ms
+2026-04-08 12:00:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 12:00:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 12:00:48 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 12:00:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 114.31ms
+2026-04-08 12:00:48 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 114.31ms
+2026-04-08 12:00:52 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 12:00:52 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 26.69ms
+2026-04-08 12:00:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 12:00:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-08 12:01:06 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 12:01:06 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.97ms
+2026-04-08 12:01:06 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 12:01:06 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 12:01:06 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 116.00ms
+2026-04-08 12:01:06 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 12:01:06 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 12:01:06 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 124.96ms
+2026-04-08 12:01:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 12:01:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.36ms
+2026-04-08 13:11:49 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:11:49 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.15ms
+2026-04-08 13:11:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:11:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:16:38 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:16:38 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 35.15ms
+2026-04-08 13:16:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:16:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:16:48 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:16:48 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-04-08 13:16:48 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:16:49 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:16:49 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 309.35ms
+2026-04-08 13:16:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:16:49 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:16:49 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:16:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 108.21ms
+2026-04-08 13:16:49 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 108.21ms
+2026-04-08 13:16:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:16:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.03ms
+2026-04-08 13:16:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:16:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-08 13:21:24 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:24 | INFO     | END   | GET /dashboard | Status: 200 | Time: 17.52ms
+2026-04-08 13:21:25 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:25 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:25 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 268.91ms
+2026-04-08 13:21:25 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:21:25 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:25 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 121.69ms
+2026-04-08 13:21:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 122.71ms
+2026-04-08 13:21:28 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-04-08 13:21:28 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.18ms
+2026-04-08 13:21:28 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.82ms
+2026-04-08 13:21:28 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:28 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.02ms
+2026-04-08 13:21:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:29 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:29 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 117.46ms
+2026-04-08 13:21:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:29 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:21:29 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:29 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 112.49ms
+2026-04-08 13:21:29 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 112.49ms
+2026-04-08 13:21:38 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:21:38 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-04-08 13:21:38 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:38 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:38 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 178.86ms
+2026-04-08 13:21:38 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:21:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:21:38 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:21:38 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 119.08ms
+2026-04-08 13:21:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 121.11ms
+2026-04-08 13:23:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.10ms
+2026-04-08 13:23:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.40ms
+2026-04-08 13:23:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 0.00ms
+2026-04-08 13:23:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.02ms
+2026-04-08 13:23:15 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:15 | INFO     | END   | GET /dashboard | Status: 200 | Time: 3.52ms
+2026-04-08 13:23:16 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:16 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.47ms
+2026-04-08 13:23:16 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:23:17 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:23:17 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 541.01ms
+2026-04-08 13:23:17 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:23:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:23:17 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:23:17 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 90.62ms
+2026-04-08 13:23:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 91.66ms
+2026-04-08 13:23:20 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:20 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 12.19ms
+2026-04-08 13:23:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:23:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:23:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-08 13:23:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-08 13:23:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-08 13:23:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.46ms
+2026-04-08 13:23:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:23:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.16ms
+2026-04-08 13:23:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:23:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:23:39 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:23:39 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.54ms
+2026-04-08 13:23:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:23:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:23:39 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 102.25ms
+2026-04-08 13:23:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:23:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:23:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:23:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 98.84ms
+2026-04-08 13:23:39 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 98.84ms
+2026-04-08 13:26:07 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:26:07 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.29ms
+2026-04-08 13:26:07 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:08 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:08 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 430.45ms
+2026-04-08 13:26:08 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:08 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:08 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 277.80ms
+2026-04-08 13:26:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 277.80ms
+2026-04-08 13:26:13 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:26:13 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-04-08 13:26:13 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:13 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:13 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 138.78ms
+2026-04-08 13:26:13 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:13 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:13 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 85.45ms
+2026-04-08 13:26:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 85.45ms
+2026-04-08 13:26:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:26:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 14.73ms
+2026-04-08 13:26:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:26:20 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:26:20 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-08 13:26:20 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:26:20 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-08 13:26:20 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:26:20 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-08 13:26:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-04-08 13:26:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:26:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.01ms
+2026-04-08 13:26:31 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:31 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:31 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 137.10ms
+2026-04-08 13:26:31 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:31 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:31 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 117.56ms
+2026-04-08 13:26:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 117.56ms
+2026-04-08 13:26:39 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:26:39 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.51ms
+2026-04-08 13:26:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:40 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 135.25ms
+2026-04-08 13:26:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:40 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:40 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 100.86ms
+2026-04-08 13:26:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 99.87ms
+2026-04-08 13:26:53 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:26:53 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.51ms
+2026-04-08 13:26:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:26:59 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:26:59 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.32ms
+2026-04-08 13:26:59 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:59 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:59 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 152.85ms
+2026-04-08 13:26:59 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:26:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:26:59 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:26:59 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 106.38ms
+2026-04-08 13:26:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 104.37ms
+2026-04-08 13:27:05 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:27:05 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.08ms
+2026-04-08 13:27:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-08 13:27:14 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:27:14 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.30ms
+2026-04-08 13:27:14 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:15 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:15 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 397.77ms
+2026-04-08 13:27:15 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:15 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:15 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 98.50ms
+2026-04-08 13:27:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 6.50ms
+2026-04-08 13:27:23 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:27:23 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.04ms
+2026-04-08 13:27:23 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:23 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.43ms
+2026-04-08 13:27:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:27:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.11ms
+2026-04-08 13:27:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:27 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-08 13:27:31 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:27:31 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.03ms
+2026-04-08 13:27:31 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:31 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:32 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 127.52ms
+2026-04-08 13:27:32 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:32 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:32 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 136.40ms
+2026-04-08 13:27:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-08 13:27:48 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:27:48 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.03ms
+2026-04-08 13:27:48 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:48 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.37ms
+2026-04-08 13:27:53 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:27:53 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.00ms
+2026-04-08 13:27:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:53 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 92.45ms
+2026-04-08 13:27:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:27:53 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:27:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 170.35ms
+2026-04-08 13:27:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:27:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:28:01 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:28:01 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.03ms
+2026-04-08 13:28:01 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:28:01 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:28:01 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 161.23ms
+2026-04-08 13:28:02 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:28:02 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:28:02 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 115.64ms
+2026-04-08 13:28:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:28:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:28:05 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:28:05 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.01ms
+2026-04-08 13:28:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:28:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:30:17 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:30:17 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 20.97ms
+2026-04-08 13:30:17 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:30:17 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.37ms
+2026-04-08 13:30:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.09ms
+2026-04-08 13:30:21 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:30:21 | INFO     | END   | GET /dashboard | Status: 200 | Time: 20.52ms
+2026-04-08 13:30:22 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:22 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:22 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 365.18ms
+2026-04-08 13:30:22 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:22 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:22 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:22 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 98.67ms
+2026-04-08 13:30:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 98.67ms
+2026-04-08 13:30:36 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 361.53ms
+2026-04-08 13:30:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:37 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 99.17ms
+2026-04-08 13:30:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 99.17ms
+2026-04-08 13:30:41 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:30:41 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.26ms
+2026-04-08 13:30:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.19ms
+2026-04-08 13:30:44 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:30:44 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.04ms
+2026-04-08 13:30:44 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:44 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:44 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 109.27ms
+2026-04-08 13:30:44 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:45 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:45 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 100.04ms
+2026-04-08 13:30:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 97.99ms
+2026-04-08 13:30:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:30:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.03ms
+2026-04-08 13:30:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-04-08 13:30:58 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:30:58 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.41ms
+2026-04-08 13:30:59 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:59 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:59 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 115.70ms
+2026-04-08 13:30:59 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:30:59 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:30:59 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 95.43ms
+2026-04-08 13:30:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:30:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.73ms
+2026-04-08 13:31:09 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:09 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.62ms
+2026-04-08 13:31:09 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:31:09 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:31:44 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:44 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.60ms
+2026-04-08 13:31:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.32ms
+2026-04-08 13:31:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.99ms
+2026-04-08 13:31:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.06ms
+2026-04-08 13:31:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-08 13:31:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:31:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.26ms
+2026-04-08 13:31:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:31:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:32:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 10.69ms
+2026-04-08 13:32:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-08 13:32:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.56ms
+2026-04-08 13:32:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-08 13:32:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.71ms
+2026-04-08 13:32:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:32:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.26ms
+2026-04-08 13:32:39 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:32:39 | INFO     | END   | GET /dashboard | Status: 200 | Time: 10.37ms
+2026-04-08 13:32:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:32:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:32:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 487.37ms
+2026-04-08 13:32:40 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:32:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:32:40 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:32:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 281.45ms
+2026-04-08 13:32:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 281.45ms
+2026-04-08 13:32:49 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:32:49 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.44ms
+2026-04-08 13:32:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:32:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-08 13:33:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:33:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 17.06ms
+2026-04-08 13:33:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:33:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-08 13:34:12 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:34:12 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.42ms
+2026-04-08 13:34:12 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:34:12 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:34:12 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 355.83ms
+2026-04-08 13:34:12 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:34:12 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:34:12 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:34:13 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 121.65ms
+2026-04-08 13:34:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 121.13ms
+2026-04-08 13:35:52 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:35:52 | INFO     | END   | GET /dashboard | Status: 200 | Time: 18.58ms
+2026-04-08 13:35:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:35:53 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:35:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 398.86ms
+2026-04-08 13:35:53 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:35:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:35:53 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:35:53 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 97.29ms
+2026-04-08 13:35:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 95.88ms
+2026-04-08 13:36:29 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:36:29 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.97ms
+2026-04-08 13:36:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:36:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-08 13:36:36 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:36:36 | INFO     | END   | GET /dashboard | Status: 200 | Time: 1.15ms
+2026-04-08 13:36:37 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:36:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:36:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 371.83ms
+2026-04-08 13:36:37 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:36:37 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:36:37 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 85.41ms
+2026-04-08 13:36:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:36:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-08 13:36:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:36:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.01ms
+2026-04-08 13:36:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:36:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-08 13:37:14 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:37:14 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.00ms
+2026-04-08 13:37:15 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:37:15 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:37:15 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 443.77ms
+2026-04-08 13:37:15 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:37:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:37:15 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:37:15 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 114.76ms
+2026-04-08 13:37:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 114.76ms
+2026-04-08 13:37:19 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:37:19 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.04ms
+2026-04-08 13:37:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:37:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-08 13:37:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-08 13:37:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 27.44ms
+2026-04-08 13:38:43 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:38:43 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.22ms
+2026-04-08 13:38:43 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-08 13:38:43 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-04-08 13:38:45 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:38:45 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:38:45 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 387.87ms
+2026-04-08 13:38:45 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:38:45 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:38:45 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 111.92ms
+2026-04-08 13:38:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:38:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-04-08 13:39:26 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-08 13:39:26 | INFO     | END   | GET /dashboard | Status: 200 | Time: 19.83ms
+2026-04-08 13:39:26 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-08 13:39:26 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-08 13:39:28 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:39:28 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:39:28 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 446.78ms
+2026-04-08 13:39:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:39:28 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-08 13:39:28 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-08 13:39:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 128.29ms
+2026-04-08 13:39:28 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 127.89ms
+2026-04-08 13:39:38 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-08 13:39:38 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.31ms
+2026-04-08 13:39:38 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-08 13:39:38 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.62ms
+2026-04-08 13:39:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-08 13:39:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms

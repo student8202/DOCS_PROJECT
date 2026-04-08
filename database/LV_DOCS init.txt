@@ -183,6 +183,11 @@ CREATE INDEX idx_sign_dept    ON tbl_SignedDocuments(Owner_Dept, IsDeleted);
 -- Phục vụ tìm kiếm theo thời gian (Báo cáo ngày)
 CREATE INDEX idx_sign_date    ON tbl_SignedDocuments(CreatedAt);
 
+ALTER TABLE dbo.tbl_SignedDocuments 
+ADD Sub_Type NVARCHAR(20), -- Lưu giá trị: TAB_A, TAB_B,...
+ModuleName       NVARCHAR(10),  -- FO, POS, HR, BO
+RefID            NVARCHAR(50),  -- ID thực tế của đối tượng (BookingID, FolioNum, BillNo...)
+
 
 CREATE TABLE tbl_DocumentLogs (
     Log_ID           BIGINT IDENTITY(1,1) PRIMARY KEY,

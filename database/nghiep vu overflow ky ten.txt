@@ -151,7 +151,23 @@ Cách 2: Dùng SignalR hoặc Long Polling (Đẳng cấp nhất)
 Khi Lễ tân gửi ký, Server nhận lệnh.
 Server phát một tín hiệu (Socket) xuống Dashboard: "Này, Folio 12345 vừa chuyển sang Status 1 đấy".
 Dashboard nghe thấy, tự động đổi màu nút cho Folio đó mà Lễ tân không cần làm gì cả.
--------------------------
+------------------------- tạo file pdf dung WeasyPrint
 Python nhưng thiếu các file hệ thống (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
 # (DLL) của GTK trên Windows. WeasyPrint không thể chạy nếu thiếu bộ thư viện này.
 # https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
+-------------------------- Bill FO
+1. Vai trò của hệ thống
+SMILE FO: Là nơi quyết định nội dung. Lễ tân thực hiện gom giao dịch, chia Tab (A, B, C...) trực tiếp trên SMILE.
+LV_DOCS: Là "cái kho" lưu giữ bằng chứng. Nó chỉ quan tâm: "Tôi đang nhận được nội dung của Tab nào, của khách nào, và khách đó đã ký chưa?". LV_DOCS chỉ kế thừa và lưu trữ. Nhiệm vụ chính là các chứng từ được ký: trực tiếp hay upload từ file.
+1. Phân tích: Gom 1 bảng hay Tách bảng?
+Tại sao nên GOM (1 bảng duy nhất):
+Quản lý tập trung: Kế toán hoặc Ban giám đốc có một cái nhìn xuyên suốt (Centralized View). Chỉ cần 1 câu lệnh SQL là ra toàn bộ hồ sơ của một khách từ lúc ở FO cho đến khi ăn tại POS và ký Hợp đồng tại BO.
+Tận dụng hạ tầng: Các hàm xử lý PDF, hàm Archive nhị phân, hàm Restore file bạn đã viết cực hay ở trên sẽ dùng chung được 100%. Nếu tách bảng, bạn phải copy code ra rất nhiều nơi.
+Hiệu năng: SQL Server xử lý bảng 1 triệu dòng vẫn nhanh hơn việc phải liên kết (JOIN) 10 bảng khác nhau.
+Tại sao nên TÁCH (Mỗi phân hệ 1 bảng):
+Dữ liệu đặc thù: Bill của POS có các trường như Table_No, Outlet_Code. BO có Contract_Date, Vendor_Name. Những trường này FO không có. Nếu gom chung, bảng sẽ có rất nhiều cột bị bỏ trống (NULL).
+2. Giải pháp "Trung dung" (Khuyên dùng): Một bảng chính - Nhiều bảng Snapshot
+Tôi đề xuất bạn vẫn dùng 1 bảng chính tbl_SignedDocuments làm kho lưu trữ chứng từ tập trung, nhưng chúng ta sẽ quản lý sự khác biệt bằng 2 cột "thần thánh" mà bạn đã có sẵn:
+ModuleName (Đã có trong Queue): Để biết bản ghi này thuộc về FO, POS hay BO.
+
+
