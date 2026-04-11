@@ -1,11 +1,12 @@
 from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from controllers.rbac_ct import RBACController
-from controllers.fo_ct import FOController
-from services.fo_sv import FOService
+from schemas.fo_bill_sh import  FolioSearchRequest
+from controllers.fo_bill_ctl import FOBillController
+from services.fo_bill_svc import FOBillService
 from core.deps import templates # Import từ deps
 from typing import List
+from loguru import logger
 
 router = APIRouter(prefix="/fo", tags=["FO Bill Management"])
 
@@ -22,3 +23,30 @@ async def bill_manage_page(request: Request):
         }
     )
 
+api_router = APIRouter(prefix="/api/v1/fo/bill", tags=["FO Bill API"])
+
+@api_router.post("/search-folio")
+async def api_search_folio(payload: FolioSearchRequest):
+    try:
+        # Router chỉ nhận payload và chuyển cho Controller xử lý
+        return await FOBillController.search_folios_logic(payload.model_dump())
+    except Exception as e:
+        logger.error(f"RT: Lỗi API cuối cùng - {str(e)}")
+        return {"status": "error", "layer": "RT", "msg": str(e)}
+
+@api_router.get("/transactions/{folio}/{tab}")
+async def api_get_transactions(folio: str, tab: str):
+    try:
+        return await FOBillController.get_transactions_logic(folio, tab)
+    except Exception as e:
+        logger.error(f"RT: Lỗi API cuối cùng - {str(e)}")
+        return {"status": "error", "layer": "RT", "msg": str(e)}
+    
+@api_router.get("/details/{folio}/{id_addition}")
+async def api_get_folio_details(folio: str, id_addition: int):
+    try:
+        # Bạn cần viết thêm logic này trong Controller
+        return await FOBillController.get_folio_details_logic(folio, id_addition)
+    except Exception as e:
+        logger.error(f"RT: Lỗi lấy chi tiết Folio - {str(e)}")
+        return {"status": "error", "layer": "RT", "msg": str(e)}

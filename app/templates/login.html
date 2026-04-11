@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="vi">
 {% include 'includes/header.html' %}
+<style>
+    body {
+        position: relative;
+        /* Đảm bảo nội dung luôn nằm trên lớp nền */
+        z-index: 0;
+    }
+
+    body::before {
+        content: "";
+        position: fixed; /* Giữ nền cố định khi cuộn */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        /* Đường dẫn ảnh của bạn */
+        background-image: url('/static/images/document logo.jpg'); 
+        
+        /* Cấu hình hiển thị ảnh */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* Điều chỉnh độ mờ (0.1 là rất mờ, 0.5 là vừa) */
+        opacity: 0.5; 
+        
+        /* Đẩy lớp này xuống dưới cùng */
+        z-index: -1; 
+    }
+
+    .card {
+        /* Đổ bóng đậm hơn để tạo khối */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+        /* Nền trắng hơi trong suốt nhẹ */
+        background: rgba(255, 255, 255, 0.9) !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        /* Viền mỏng nhẹ cho 3 cạnh còn lại */
+        border-top: 3px solid #0d6efd !important;
+    }
+
+    /* Làm các icon input trông sắc nét hơn */
+        .input-group-text {
+            background-color: #f8f9fa;
+            border-right: none;
+        }
+        .form-control {
+            border-left: none;
+        }
+</style>
+
 <body class="bg-light d-flex align-items-center min-vh-100">
     <div class="container">
         <div class="row justify-content-center">
@@ -18,7 +68,8 @@
                             </div>
                             <div class="input-group mb-4">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input class="form-control" type="password" name="password" placeholder="Mật khẩu" required>
+                                <input class="form-control" type="password" name="password" placeholder="Mật khẩu"
+                                    required>
                             </div>
                             <button class="btn btn-primary w-100 fw-bold" type="submit" id="btnLogin">ĐĂNG NHẬP</button>
                         </form>
@@ -30,4 +81,5 @@
     </div>
     {% include 'includes/footer.html' %}
 </body>
+
 </html>

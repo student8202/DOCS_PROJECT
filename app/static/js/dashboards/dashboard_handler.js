@@ -36,7 +36,19 @@ const DASH_ACTIONS = {
             dom: 't',      // Chỉ hiện bảng, ẩn các nút search/phân trang cho gọn
             order: [[0, 'asc']]
         });
-    }
+    },
+     viewSignedDocsTest: function (folio) {
+        const url = `/api/v1/docs/view-list/${folio}`;
+        // Mở Pop-up rộng 1100px để hiện được khoảng 4 cột hồ sơ
+        const width = 1100;
+        const height = 850;
+        const left = (window.screen.width / 2) - (width / 2);
+        const top = (window.screen.height / 2) - (height / 2);
+
+        window.open(url, 'ViewDocsPopup',
+            `width=${width},height=${height},top=${top},left=${left},scrollbars=yes,resizable=yes`
+        );
+    },
 };
 
 // --- 4. SỰ KIỆN (Events) ---

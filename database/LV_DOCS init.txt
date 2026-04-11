@@ -257,6 +257,10 @@ CREATE TABLE dbo.tbl_SignatureQueue (
     ExpiredAt        DATETIME       -- Link ký có thời hạn (ví dụ 15 phút)
 );
 
+ALTER TABLE dbo.tbl_SignatureQueue 
+ADD Sub_Type NVARCHAR(20), -- Lưu giá trị: TAB_A, TAB_B,...
+
+
 CREATE INDEX idx_queue_lookup ON dbo.tbl_SignatureQueue(ModuleName, DeviceID, Status);
 
 CREATE TABLE dbo.tbl_Devices (

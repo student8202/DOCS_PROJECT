@@ -143,6 +143,7 @@ app.include_router(device_rt.router)
 app.include_router(queue_rt.router) 
 app.include_router(docs_rt.router) 
 app.include_router(fo_bill_rt.router) 
+app.include_router(fo_bill_rt.api_router) 
 # app.include_router(fo.router) # Mở ra khi làm module FO
 
 # Middleware xử lý lỗi 404 (Nếu gõ sai link)

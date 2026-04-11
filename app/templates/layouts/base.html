@@ -260,6 +260,8 @@
     <script>
         // 1. Phải dùng dấu nháy kép bao quanh tag Jinja2
         const GLOBAL_HOTEL_DATE = "{{ get_hotel_date(request) }}";
+        // .js là file tĩnh (static), nó không hiểu Jinja2. Nên ta dùng file HTML làm "trung gian" để gán giá trị từ Python 
+        // vào một biến window.HotelDate cho JS sử dụng.
         const HotelDate = moment(GLOBAL_HOTEL_DATE, "MM/DD/YYYY").toDate();
         // In ra console để kiểm tra ngay tại đây
         console.log("Hotel Date từ Session:", moment(HotelDate).format('DD/MM/YYYY'));
