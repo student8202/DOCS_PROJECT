@@ -13593,3 +13593,464 @@ AttributeError: 'DocsService' object has no attribute 'get_signed_docs_for_view_
 2026-04-11 17:16:42 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
 2026-04-11 17:16:42 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
 2026-04-11 17:16:42 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 122.57ms
+2026-04-13 09:21:02 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-13 09:21:02 | INFO     | END   | GET / | Status: 200 | Time: 96.46ms
+2026-04-13 09:21:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 09:21:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.07ms
+2026-04-13 09:21:15 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-04-13 09:21:15 | INFO     | User admin logged in successfully with 8 perms
+2026-04-13 09:21:15 | INFO     | END   | POST /auth/login | Status: 200 | Time: 527.44ms
+2026-04-13 09:21:16 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-13 09:21:16 | INFO     | END   | GET /dashboard | Status: 200 | Time: 70.43ms
+2026-04-13 09:21:17 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 09:21:17 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 09:21:17 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 502.90ms
+2026-04-13 09:21:17 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 09:21:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 09:21:17 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 09:21:17 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 93.47ms
+2026-04-13 09:21:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 93.47ms
+2026-04-13 09:21:19 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-13 09:21:19 | INFO     | END   | GET /dashboard | Status: 200 | Time: 2.03ms
+2026-04-13 09:21:19 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 09:21:20 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 09:21:20 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 111.27ms
+2026-04-13 09:21:20 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 09:21:20 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 09:21:20 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 92.46ms
+2026-04-13 09:21:20 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 09:21:20 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.12ms
+2026-04-13 09:21:22 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 09:21:22 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 36.08ms
+2026-04-13 09:21:22 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 09:21:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-13 09:21:30 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 09:21:30 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 09:21:30 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 09:21:30 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 78.32ms
+2026-04-13 09:21:49 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 09:21:49 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-13 09:21:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 09:21:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.50ms
+2026-04-13 10:33:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 22.34ms
+2026-04-13 10:33:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.04ms
+2026-04-13 10:33:26 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:26 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.02ms
+2026-04-13 10:33:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.01ms
+2026-04-13 10:33:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.20ms
+2026-04-13 10:33:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.51ms
+2026-04-13 10:33:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-13 10:33:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.26ms
+2026-04-13 10:33:28 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 10:33:28 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-13 10:33:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 10:33:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 4.50ms
+2026-04-13 10:33:31 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 10:33:31 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 10:33:31 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 10:33:31 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 157.60ms
+2026-04-13 10:33:45 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-13 10:33:45 | INFO     | END   | GET / | Status: 200 | Time: 4.99ms
+2026-04-13 10:34:19 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 10:34:19 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.99ms
+2026-04-13 10:34:23 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 10:34:23 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 10:34:23 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 10:34:24 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 110.07ms
+2026-04-13 11:13:29 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:13:29 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.27ms
+2026-04-13 11:13:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:13:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-13 11:13:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 11:13:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-13 11:13:31 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 11:13:31 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 11:13:31 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 11:13:31 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 128.60ms
+2026-04-13 11:59:50 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 11:59:50 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 11:59:50 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 11:59:50 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 108.29ms
+2026-04-13 11:59:53 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:59:53 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.98ms
+2026-04-13 11:59:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:59:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.00ms
+2026-04-13 11:59:53 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:59:53 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-13 11:59:53 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:59:53 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-04-13 11:59:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.00ms
+2026-04-13 11:59:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-13 11:59:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.36ms
+2026-04-13 11:59:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.48ms
+2026-04-13 11:59:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.75ms
+2026-04-13 11:59:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 11:59:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 12:00:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 12:00:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-13 12:01:17 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 12:01:17 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 12:01:17 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 12:01:17 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 137.04ms
+2026-04-13 12:01:31 | INFO     | START | GET /api/v1/fo/bill/details/10439/583 | IP: 127.0.0.1
+2026-04-13 12:01:31 | DEBUG    | CTL: Lấy thông tin Header Folio 10439
+2026-04-13 12:01:31 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 12:01:31 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 12:01:31 | INFO     | END   | GET /api/v1/fo/bill/details/10439/583 | Status: 200 | Time: 43.19ms
+2026-04-13 13:43:02 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-13 13:43:02 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-13 13:43:02 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 13:43:02 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 13:43:02 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 161.65ms
+2026-04-13 13:43:12 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:43:12 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.03ms
+2026-04-13 13:43:12 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:43:12 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.43ms
+2026-04-13 13:43:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:43:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.36ms
+2026-04-13 13:43:24 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:43:24 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:43:24 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:43:24 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 174.53ms
+2026-04-13 13:43:44 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-13 13:43:44 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-13 13:43:44 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 13:43:44 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 13:43:44 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 28.04ms
+2026-04-13 13:47:48 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:47:48 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 30.63ms
+2026-04-13 13:47:48 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:47:48 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.99ms
+2026-04-13 13:48:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:48:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-13 13:51:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:51:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.00ms
+2026-04-13 13:51:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:51:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.58ms
+2026-04-13 13:51:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:51:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-13 13:51:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:51:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.52ms
+2026-04-13 13:51:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:51:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.52ms
+2026-04-13 13:51:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:51:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.18ms
+2026-04-13 13:52:05 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:52:05 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:52:05 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:52:05 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 129.38ms
+2026-04-13 13:52:24 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:24 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.13ms
+2026-04-13 13:52:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.04ms
+2026-04-13 13:52:24 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:24 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.01ms
+2026-04-13 13:52:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.41ms
+2026-04-13 13:52:25 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:25 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.00ms
+2026-04-13 13:52:25 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:25 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 13:52:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:52:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-13 13:52:28 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:52:28 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:52:28 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:52:28 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 26.50ms
+2026-04-13 13:52:53 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:53 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.59ms
+2026-04-13 13:52:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.51ms
+2026-04-13 13:52:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.99ms
+2026-04-13 13:52:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.52ms
+2026-04-13 13:52:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:52:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-13 13:52:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:52:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 13:52:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:52:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-04-13 13:52:57 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:52:57 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:52:57 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:52:57 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 99.73ms
+2026-04-13 13:54:02 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:02 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-13 13:54:02 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:02 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 13:54:02 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:02 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.03ms
+2026-04-13 13:54:02 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:02 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.08ms
+2026-04-13 13:54:02 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:02 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.83ms
+2026-04-13 13:54:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 51.55ms
+2026-04-13 13:54:03 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:03 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-13 13:54:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 13:54:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:54:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-04-13 13:54:05 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:54:05 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:54:05 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:54:05 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 124.85ms
+2026-04-13 13:54:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 11.97ms
+2026-04-13 13:54:45 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:45 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.28ms
+2026-04-13 13:54:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.95ms
+2026-04-13 13:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-04-13 13:54:46 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:46 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.81ms
+2026-04-13 13:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 13:54:46 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:54:46 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.15ms
+2026-04-13 13:54:46 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:54:46 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-13 13:54:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:54:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.30ms
+2026-04-13 13:54:48 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:54:48 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:54:48 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:54:48 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 31.69ms
+2026-04-13 13:55:41 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.08ms
+2026-04-13 13:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.52ms
+2026-04-13 13:55:41 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-13 13:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 13:55:41 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.10ms
+2026-04-13 13:55:41 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.42ms
+2026-04-13 13:55:41 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 13:55:41 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.37ms
+2026-04-13 13:55:42 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 13:55:42 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.09ms
+2026-04-13 13:55:43 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 13:55:43 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.07ms
+2026-04-13 13:55:45 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 13:55:45 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 13:55:45 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 13:55:45 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 101.54ms
+2026-04-13 14:01:34 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:01:34 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-13 14:01:34 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:01:34 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.03ms
+2026-04-13 14:01:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:01:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-13 14:01:41 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:01:41 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:01:41 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:01:41 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 108.20ms
+2026-04-13 14:02:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:02:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.06ms
+2026-04-13 14:02:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:02:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:02:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:02:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.99ms
+2026-04-13 14:02:54 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:02:54 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-04-13 14:02:54 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:02:54 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.57ms
+2026-04-13 14:02:55 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:02:55 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.47ms
+2026-04-13 14:02:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:02:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.19ms
+2026-04-13 14:02:55 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:02:55 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.24ms
+2026-04-13 14:02:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:02:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.71ms
+2026-04-13 14:02:57 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:02:57 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:02:57 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:02:57 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 47.69ms
+2026-04-13 14:11:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:11:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.56ms
+2026-04-13 14:11:16 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:11:16 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-13 14:11:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:11:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.37ms
+2026-04-13 14:11:16 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:11:16 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-04-13 14:11:18 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:11:18 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.15ms
+2026-04-13 14:11:19 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:11:20 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:11:20 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:11:20 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 41.87ms
+2026-04-13 14:11:25 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-13 14:11:25 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-13 14:11:25 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 14:11:25 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 14:11:25 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 7.67ms
+2026-04-13 14:11:29 | INFO     | START | GET /api/v1/fo/bill/details/10349/491 | IP: 127.0.0.1
+2026-04-13 14:11:29 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-13 14:11:29 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 14:11:29 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 14:11:29 | INFO     | END   | GET /api/v1/fo/bill/details/10349/491 | Status: 200 | Time: 4.39ms
+2026-04-13 14:17:08 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:08 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.53ms
+2026-04-13 14:17:08 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:08 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.08ms
+2026-04-13 14:17:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.54ms
+2026-04-13 14:17:08 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:08 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.16ms
+2026-04-13 14:17:08 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:08 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.99ms
+2026-04-13 14:17:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:17:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.33ms
+2026-04-13 14:17:11 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:17:11 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:17:11 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:17:11 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 39.53ms
+2026-04-13 14:17:17 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:17 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.55ms
+2026-04-13 14:17:17 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:17 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-04-13 14:17:18 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:18 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.99ms
+2026-04-13 14:17:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:17:18 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:18 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-13 14:17:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.51ms
+2026-04-13 14:17:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:17:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-13 14:17:21 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:17:21 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:17:21 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:17:21 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 29.08ms
+2026-04-13 14:17:24 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-13 14:17:24 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-13 14:17:24 | ERROR    | SVC: Lỗi SQL Server - No results.  Previous SQL was not a query.
+2026-04-13 14:17:24 | ERROR    | CTL Error (Details): No results.  Previous SQL was not a query.
+2026-04-13 14:17:24 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 4.82ms
+2026-04-13 14:17:36 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:36 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.05ms
+2026-04-13 14:17:36 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:36 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:17:36 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:36 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.03ms
+2026-04-13 14:17:36 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:36 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.13ms
+2026-04-13 14:17:36 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:36 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.19ms
+2026-04-13 14:17:37 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:37 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 14:17:37 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:17:37 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.24ms
+2026-04-13 14:17:37 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:17:37 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-04-13 14:17:38 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:17:38 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-04-13 14:17:43 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:17:43 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:17:43 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:17:43 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 22.24ms
+2026-04-13 14:20:38 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-13 14:20:39 | INFO     | END   | GET /dashboard | Status: 200 | Time: 20.58ms
+2026-04-13 14:20:39 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 14:20:39 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 14:20:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 410.56ms
+2026-04-13 14:20:40 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-13 14:20:40 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:20:40 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-13 14:20:40 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 102.83ms
+2026-04-13 14:20:40 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 101.83ms
+2026-04-13 14:20:44 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:20:44 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.51ms
+2026-04-13 14:22:58 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:22:58 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.03ms
+2026-04-13 14:22:58 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:22:58 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 0.00ms
+2026-04-13 14:23:00 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:23:00 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.75ms
+2026-04-13 14:23:00 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:23:00 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:23:00 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:23:00 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 53.01ms
+2026-04-13 14:23:36 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:23:36 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.01ms
+2026-04-13 14:26:10 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:26:10 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 37.30ms
+2026-04-13 14:26:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:26:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:26:10 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:26:10 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-13 14:26:10 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:26:10 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 14:26:12 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:26:12 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.53ms
+2026-04-13 14:26:13 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:26:13 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:26:13 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:26:13 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 41.26ms
+2026-04-13 14:27:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 24.09ms
+2026-04-13 14:27:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.50ms
+2026-04-13 14:27:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 5.69ms
+2026-04-13 14:27:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.44ms
+2026-04-13 14:27:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-13 14:27:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.23ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.13ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.20ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.43ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.17ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-13 14:27:57 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:57 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-13 14:27:58 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-13 14:27:58 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.20ms
+2026-04-13 14:27:58 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-13 14:27:58 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.03ms
+2026-04-13 14:27:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-13 14:27:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-13 14:28:00 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-13 14:28:00 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-13 14:28:00 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-13 14:28:00 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 42.73ms

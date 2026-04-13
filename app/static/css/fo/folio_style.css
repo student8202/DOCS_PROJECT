@@ -1,54 +1,113 @@
 /* Chỉnh sửa bảng cho giống SMILE nhất */
-        .table-sm td, .table-sm th { padding: 4px 8px; font-size: 12px; vertical-align: middle; }
-        .nav-tabs .nav-link { border-radius: 0; border: none; color: #555; }
-        .nav-tabs .nav-link.active { border-top: 3px solid #0dcaf0; background: #fff; color: #0dcaf0; }
-        #table_folio tbody tr:hover { cursor: pointer; background-color: #e7f1ff !important; }
-        #table_folio tr.selected-row { background-color: #cfe2ff !important; font-weight: bold; border-left: 5px solid #0d6efd; }
-        .test-background {background-color: black;}
+.table-sm td,
+.table-sm th {
+    padding: 4px 8px;
+    font-size: 12px;
+    vertical-align: middle;
+}
 
-      /* Tổng thể bảng giao dịch */
-    #table_trans th, #table_trans td {
-        padding: 2px 5px !important;
-        font-size: 12px;
-        border-color: #ddd;
-    }
-    /* Thiết kế Tab hiện đại, bo góc, dễ bấm trên iPad */
-    .smile-tab-modern {
-        padding: 8px 25px; /* Tăng diện tích để ngón tay dễ chạm */
-        font-size: 13px;
-        font-weight: bold;
-        color: #555;
-        background-color: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 8px 8px 0 0; /* Bo tròn 2 góc trên */
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 100px; /* Đảm bảo nút không quá bé */
-    }
+.nav-tabs .nav-link {
+    border-radius: 0;
+    border: none;
+    color: #555;
+}
 
-    /* Khi Tab đang được chọn */
-    .smile-tab-modern.active {
-        background-color: #ffffff;
-        color: #00daff;
-        border-color: #00daff;
-        border-bottom: 2px solid #fff; /* Tạo hiệu ứng dính liền với bảng */
-        border-top: 3px solid #00daff;
-        box-shadow: 0 -2px 5px rgba(0, 218, 255, 0.1);
-        z-index: 10;
-        margin-bottom: -1px; /* Ép xuống để đè lên viền card-footer */
-    }
+.nav-tabs .nav-link.active {
+    border-top: 3px solid #0dcaf0;
+    background: #fff;
+    color: #0dcaf0;
+}
 
-    /* Hiệu ứng khi rê chuột hoặc chạm nhẹ */
-    .smile-tab-modern:hover:not(.active) {
-        background-color: #e9ecef;
-        border-color: #adb5bd;
-    }
+#table_folio tbody tr:hover {
+    cursor: pointer;
+    background-color: #e7f1ff !important;
+}
 
-    /* Tăng kích thước checkbox cho dễ tích trên iPad */
-    #chk_show_all_bal:checked {
-        background-color: #00daff;
-        border-color: #00daff;
-    }
+#table_folio tr.selected-row {
+    background-color: #cfe2ff !important;
+    font-weight: bold;
+    border-left: 5px solid #0d6efd;
+}
+
+.test-background {
+    background-color: black;
+}
+
+/* Tổng thể bảng giao dịch */
+#table_trans th,
+#table_trans td {
+    padding: 2px 5px !important;
+    font-size: 12px;
+    border-color: #ddd;
+}
+
+/* Thiết kế Tab hiện đại, bo góc, dễ bấm trên iPad */
+.smile-tab-modern {
+    padding: 8px 25px;
+    /* Tăng diện tích để ngón tay dễ chạm */
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+    /* Bo tròn 2 góc trên */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    /* Đảm bảo nút không quá bé */
+}
+
+/* Khi Tab đang được chọn */
+.smile-tab-modern.active {
+    background-color: #ffffff;
+    color: #00daff;
+    border-color: #00daff;
+    border-bottom: 2px solid #fff;
+    /* Tạo hiệu ứng dính liền với bảng */
+    border-top: 3px solid #00daff;
+    box-shadow: 0 -2px 5px rgba(0, 218, 255, 0.1);
+    z-index: 10;
+    margin-bottom: -1px;
+    /* Ép xuống để đè lên viền card-footer */
+}
+
+/* Hiệu ứng khi rê chuột hoặc chạm nhẹ */
+.smile-tab-modern:hover:not(.active) {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Tăng kích thước checkbox cho dễ tích trên iPad */
+#chk_show_all_bal:checked {
+    background-color: #00daff;
+    border-color: #00daff;
+}
+
+.folio-alt-bg {
+    --cui-table-bg: #f4f6f8 !important;
+    --bs-table-bg: #f4f6f8 !important;
+    background-color: #f4f6f8 !important;
+    /* Xám xanh rất nhạt để dịu mắt */
+}
+
+/* Đảm bảo thẻ div bao ngoài có chiều cao cố định hoặc tối đa để xuất hiện thanh cuộn */
+.table-responsive {
+    max-height: 400px;
+    /* Thay đổi chiều cao tùy ý */
+    overflow-y: auto;
+}
+
+/* Neo header */
+#table_folio thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #e9ecef !important;
+    /* Giữ màu nền xám như code cũ của bạn */
+    box-shadow: inset 0 -1px 0 #dee2e6;
+    /* Tạo đường kẻ dưới header */
+}

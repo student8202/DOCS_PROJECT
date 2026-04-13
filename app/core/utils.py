@@ -1,3 +1,5 @@
+from core.config import settings
+
 def tcvn3_to_unicode(tcvn3_str):
     if not tcvn3_str or not isinstance(tcvn3_str, str):
         return tcvn3_str
@@ -43,3 +45,15 @@ def tcvn3_to_unicode(tcvn3_str):
     # Chuyển về kiểu Proper Case (Nguyễn Trần Tuấn Vũ) cho đẹp nếu cần
     # return "".join(res).title().strip() 
     return "".join(res).strip()
+
+def wrap_response(status: str, data=None, message: str = None, error: Exception = None, layer: str = None):
+    result = {"status": status}
+    if data is not None: result["data"] = data
+    if message: result["message"] = message
+    
+    # Chỉ lộ diện khi bật DEBUG
+    if settings.DEBUG:
+        if error: result["detail"] = str(error)
+        if layer: result["layer"] = layer
+        
+    return result

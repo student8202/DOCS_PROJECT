@@ -8,7 +8,55 @@
     window.HotelDate = moment(window.GLOBAL_HOTEL_DATE, "MM/DD/YYYY").toDate();
 </script>
  */
+const API = {
+    // Hàm cốt lõi để gọi API
+    request: async (url, options = {}) => {
+        // Mặc định là hiện Alert nếu có lỗi, trừ khi ta chủ động tắt đi
+        const config = { showError: true, ...options };
+        try {
+            const response = await $.ajax({
+                url: url,
+                type: options.type || 'GET',
+                data: config.data ? JSON.stringify(config.data) : null,
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json'
+            });
 
+            // Nếu status từ Backend là success
+            if (response.status === 'success') {
+                return response; // Trả về nguyên object {status, data, ...}
+            } else {
+                // CHỈ HIỆN ALERT NẾU showError = true
+                if (config.showError) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Thông báo',
+                        text: response.message
+                    });
+                }
+                return response;
+            }
+        } catch (xhr) {
+            // Xử lý lỗi hệ thống (404, 500, 422...)
+            const errorMsg = xhr.responseJSON?.message || "Lỗi kết nối Server";
+            if (config.showError) {
+                Swal.fire({ icon: 'error', title: 'Lỗi', text: errorMsg });
+            }
+            console.error("System Error:", xhr.responseJSON);
+            return null;
+        }
+    }
+};
+/* // example use custom sweet alert 2 sử dụng interface api
+const res = await API.request('/api/sign', { showError: false });
+if (res && res.status === 'error') {
+    Swal.fire({
+        title: 'Ký số thất bại!',
+        html: `Lỗi: <b>${res.message}</b>. <br>Vui lòng kiểm tra lại thiết bị ký.`,
+        icon: 'critical'
+    });
+}
+*/
 const BILL_CONFIG = {
     tableFolio: '#table_folio',
     tableTrans: '#table_trans',
@@ -79,26 +127,71 @@ const BILL_UI = {
 const BILL_ACTIONS = {
     // 1. Khởi tạo DataTable (Hiệu suất cực cao cho bảng nhiều dữ liệu)
     initFolioTable: () => {
+        let currentFlag = false; // Biến cờ để bật/tắt màu
+        let lastFolio = null;
         $(BILL_CONFIG.tableFolio).DataTable({
-            paging: false,      // Vì SP đã lọc sẵn, không cần phân trang phía client
-            scrollY: '200px',   // Cố định chiều cao bảng
-            scrollCollapse: true,
+            data: [],
+            fixedHeader: true,
+            paging: false,
+            responsive: true,
             info: false,        // Ẩn dòng "Showing 1 of..."
             dom: 't',           // Chỉ hiện bảng (Table only)
+            // Sắp xếp theo RoomCode (Index 4)
+            order: [[4, 'asc']],
             columns: [
-                { data: 'Status', className: 'dt-center' },
+                { data: 'AdtStatus', className: 'dt-center' },
                 { data: 'FolioNum' },
                 { data: 'ConfirmNum' },
-                { data: 'GuestName', className: 'fw-bold' },
-                { data: 'RoomNum', className: 'dt-center' },
-                { data: 'Balance', className: 'dt-right text-danger fw-bold', render: d => BILL_UI.formatMoney(d) },
-                { data: 'Mcf' },
-                { data: 'GroupName' },
-                { data: 'Arrival' },
-                { data: 'Departure' }
+                { data: 'LastName', className: 'fw-bold' },
+                { data: 'RoomCode', className: 'dt-center' },
+                {
+                    data: 'Balance',
+                    className: 'dt-right text-danger fw-bold',
+                    render: (data, type, row, meta) => {
+                        // Lấy danh sách tất cả dữ liệu sau khi đã Sort/Filter
+                        const allData = meta.settings.aoData;
+                        const currentIndex = meta.row;
+
+                        // Nếu là dòng đầu tiên của bảng, luôn hiển thị
+                        if (currentIndex === 0) {
+                            return BILL_UI.formatMoney(data);
+                        }
+
+                        // Kiểm tra dòng ngay phía trước (index - 1)
+                        // Nếu FolioNum dòng này giống hệt dòng trước -> Ẩn Balance
+                        const previousRowData = allData[currentIndex - 1]._aData;
+                        if (row.FolioNum === previousRowData.FolioNum) {
+                            return "";
+                        }
+
+                        return BILL_UI.formatMoney(data);
+                    }
+                },
+                { data: 'CMF' },
+                { data: 'GroupCode' },
+                { data: 'ArrivalTime', render: d => d ? moment(d).format('DD/MM/YYYY') : '' },
+                { data: 'DepartureTime', render: d => d ? moment(d).format('DD/MM/YYYY') : '' },
+                { data: 'IdAddition', visible: false, searchable: false, defaultContent: "1" },//  Cột ẩn
             ],
+            // Cần vẽ lại bảng mỗi khi sort/filter để logic render Balance chạy lại chính xác
+            drawCallback: function () {
+                // Callback này đảm bảo khi người dùng nhấn sort thủ công, 
+                // dòng đầu tiên mới của mỗi Folio vẫn sẽ hiện Balance.
+                currentFlag = false; // Reset khi vẽ lại bảng
+                lastFolio = null;
+            },
             // Sự kiện khi Click vào 1 dòng
             createdRow: (row, data) => {
+                // Nếu sang Folio mới thì đảo ngược "công tắc"
+                if (lastFolio !== null && data.FolioNum !== lastFolio) {
+                    currentFlag = !currentFlag;
+                }
+                lastFolio = data.FolioNum;
+
+                // Nếu công tắc đang BẬT thì thêm class màu nền
+                if (currentFlag) {
+                    $(row).addClass('folio-alt-bg');
+                }
                 $(row).css('cursor', 'pointer').on('click', () => {
                     BILL_UI.rowSelected(row);
                     BILL_ACTIONS.selectFolio(data);
@@ -108,7 +201,7 @@ const BILL_ACTIONS = {
     },
 
     // 2. Hàm Search (Gọi lại AJAX cho DataTable)
-    search: () => {
+    search: async () => {
         // Tạo bản copy của filter để ép kiểu an toàn
         const sendData = { ...BILL_STATE.filter };
 
@@ -125,45 +218,41 @@ const BILL_ACTIONS = {
         sendData.groupID = String($('#search_group').val() || "");
         sendData.sTAorARNum = String($('#search_ta').val() || "");
 
-        $.ajax({
-            url: BILL_CONFIG.apiSearch,
+        // GỌI QUA HELPER
+        const res = await API.request(BILL_CONFIG.apiSearch, {
             type: 'POST',
-            data: JSON.stringify(sendData), // Ép thành chuỗi JSON
-            contentType: 'application/json; charset=utf-8', // Chỉ định rõ JSON
-            dataType: 'json',
-            success: function (res) {
-                const table = $(BILL_CONFIG.tableFolio).DataTable();
-                table.clear().rows.add(res.data).draw();
-            },
-            error: function (xhr) {
-                // ĐÂY LÀ CHỖ ĐỂ XEM CHI TIẾT LỖI 422
-                console.log("Lỗi chi tiết từ Server:", xhr.responseJSON);
-            }
+            data: sendData
         });
+
+        // Nếu res hợp lệ (không phải null), ta mới đổ vào Table
+        if (res) {
+            const table = $(BILL_CONFIG.tableFolio).DataTable();
+            // Bạn không cần lo data là gì nữa, vì Backend đã cam kết trả về [] nếu không có dữ liệu
+            table.clear().rows.add(res.data).draw();
+        }
     },
-    selectFolio: (data) => {
+    selectFolio: async (data) => {
         BILL_STATE.selectedFolio = data.FolioNum;
 
-        // Gọi API lấy chi tiết Header (Tên khách, Company, Tabs, MaxID)
-        $.get(`/api/v1/fo/bill/details/${data.FolioNum}/${data.IdAddition || 1}`, function (res) {
-            if (res.status === 'success') {
-                const h = res.data;
-                // Đổ dữ liệu vào vùng Summary bên trái
-                $('#sm_folio').text(h.FolioNum);
-                $('#sm_guest_name').text(`${h.FirstName} ${h.LastName}`);
-                $('#sm_room').text(h.RoomCode);
-                $('#sm_balance').text(BILL_UI.formatMoney(data.Balance));
-                $('#sm_notice').text(h.Notice || 'None');
+        const url = `/api/v1/fo/bill/details/${data.FolioNum}/${data.IdAddition || 1}`;
+        const res = await API.request(url);
 
-                // Hiển thị/Ẩn các Tab dựa trên dữ liệu từ SP CHGetFolioBalanceCode
-                BILL_UI.renderAvailableTabs(h.Tabs);
+        if (res) {
+            const h = res.data;
+            // Đổ dữ liệu vào vùng Summary bên trái
+            $('#sm_folio').text(h.FolioNum);
+            $('#sm_guest_name').text(`${h.FirstName} ${h.LastName}`);
+            $('#sm_room').text(h.RoomCode);
+            $('#sm_balance').text(BILL_UI.formatMoney(data.Balance));
+            $('#sm_notice').text(h.Notice || 'None');
+            // Hiển thị/Ẩn các Tab dựa trên dữ liệu từ SP CHGetFolioBalanceCode
+            BILL_UI.renderAvailableTabs(h.Tabs);
 
-                // Lưu MaxID để theo dõi giao dịch mới
-                BILL_STATE.lastMaxTransID = h.MaxTransactionID;
-            }
-        });
+            // Lưu MaxID để theo dõi giao dịch mới
+            BILL_STATE.lastMaxTransID = h.MaxTransactionID;
+        }
 
-        // Tự động load giao dịch Tab A
+        // Load tab A
         BILL_ACTIONS.loadTransactions(data.FolioNum, 'A');
     },
 

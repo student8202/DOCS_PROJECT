@@ -1,11 +1,14 @@
 from services.fo_bill_svc import FOBillService
 from loguru import logger
+from core.utils import wrap_response
+from core.config import settings
 
 class FOBillController:
     @staticmethod
     async def search_folios_logic(payload: dict):
         # --- DEBUG: Log đầu vào tại Controller ---
-        logger.debug(f"CTL: Bắt đầu xử lý Search cho: {payload.get('sNumInfo')}")
+        if settings.DEBUG:
+            logger.debug(f"CTL: Bắt đầu xử lý Search cho: {payload.get('sNumInfo')}")
         
         try:
             # 1. Gọi Service (Service đang dùng pyodbc nên gọi trực tiếp)
@@ -30,12 +33,16 @@ class FOBillController:
         except Exception as e:
             # Ghi log lỗi chi tiết kèm nội dung Exception
             logger.error(f"CTL Error (Search): {str(e)}")
-            return {
-                "status": "error", 
-                "message": "Lỗi tại Controller khi xử lý dữ liệu", 
-                "detail": str(e),
-                "layer": "CTL"
-            }
+            # --- RESPONSE LỖI ---
+            error_response =  wrap_response(
+                status="error", 
+                message="Lỗi hệ thống khi xử lý dữ liệu", 
+                error=e, 
+                layer="CTL"
+            )
+                
+            return error_response
+        
     @staticmethod
     async def get_folio_details_logic(folio: str, id_addition: int):
         """MỚI: Xử lý gộp dữ liệu Summary bên trái và cấu hình ban đầu"""
