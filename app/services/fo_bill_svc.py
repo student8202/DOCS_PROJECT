@@ -1,5 +1,6 @@
 from database.db_connection import get_smile_fo_db # Import hàm của bạn
 from loguru import logger
+from core.utils import tcvn3_to_unicode_cmt, tcvn3_to_unicode
 
 class FOBillService:
     @staticmethod
@@ -58,6 +59,12 @@ class FOBillService:
             # Chuyển đổi Unicode nếu cần (giống code cũ của bạn dùng tcvn3_to_unicode)
             results = [dict(zip(columns, row)) for row in rows]
             
+            # Xử lý tiếng Việt TCVN3 cho TẤT CẢ các trường có kiểu chuỗi (String)
+            for g in results:
+                for key, value in g.items():
+                    if isinstance(value, str):
+                        g[key] = tcvn3_to_unicode_cmt(value)
+            
             return results
 
         except Exception as e:
@@ -74,28 +81,58 @@ class FOBillService:
         
         try:
             cursor = conn.cursor()
-            # 1. Lấy thông tin Header & Currency (Gộp lệnh để giảm round-trip)
+            # 1. Lấy thông tin Header (Dùng SQL Query thuần thường không bị lỗi nextset)
             sql = """
                 SELECT F.FolioExRate, F.FolioNum, A.FirstName, A.LastName, RoomCode, 
-                       A.ArrivalTime, A.DepartureTime, RateAmount, F.Notice, 
-                       F.TravelAgent1Code, COALESCE(NoPostFlag, 0) AS NoPost, C.NoOfDec
+                    A.ArrivalTime, A.DepartureTime, A.AdtStatus, RateAmount, F.Notice, 
+                    F.TravelAgent1Code, COALESCE(NoPostFlag, 0) AS NoPost, C.NoOfDec
                 FROM Folio F
                 JOIN AdditionalName A ON F.FolioNum = A.FolioNum
                 JOIN CurrencyDef C ON F.FolioCurrencyCode = C.CurrencyCode
                 WHERE A.FolioNum = ? AND A.IdAddition = ?
             """
             cursor.execute(sql, (folio_num, id_addition))
-            header = FOBillService._to_dict(cursor, cursor.fetchone())
+            row = cursor.fetchone()
+            header = FOBillService._to_dict(cursor, row) if row else None
             
             if header:
-                # 2. Lấy danh sách Tab (A, B, V, P)
+                # --- MỚI: Lấy thông tin Company Name ---
+                if header.get('TravelAgent1Code'):
+                    sql_company = "SELECT ClientName FROM CLIENT WHERE ClientFolioNum = ?"
+                    cursor.execute(sql_company, (header['TravelAgent1Code'],))
+                    company_row = cursor.fetchone()
+                    if company_row:
+                        # Lưu ý: Giải mã TCVN3 cho tên công ty luôn
+                        header['CompanyName'] = tcvn3_to_unicode_cmt(company_row[0])
+                    else:
+                        header['CompanyName'] = ""
+                else:
+                    header['CompanyName'] = ""
+                    
+                # Xử lý tiếng Việt cho Header (FirstName, LastName, Notice...)
+                for key, value in header.items():
+                    if isinstance(value, str) and key != 'CompanyName':
+                        header[key] = tcvn3_to_unicode_cmt(value)
+
+                # 2. Lấy danh sách Tab (Dùng CALL Store Procedure nên CẦN nextset)
                 cursor.execute("{CALL CHGetFolioBalanceCode (?, 1)}", (folio_num,))
-                header['Tabs'] = [r[0].strip() for r in cursor.fetchall()]
-            
+                
+                # --- ÁP DỤNG LOGIC AN TOÀN CỦA BẠN ---
+                while cursor.description is None:
+                    if not cursor.nextset(): 
+                        break
+                
+                if cursor.description:
+                    # Lấy danh sách tab, thường là cột đầu tiên [0]
+                    header['Tabs'] = [r[0].strip() for r in cursor.fetchall() if r[0]]
+                else:
+                    header['Tabs'] = []
+
             return header
+
         except Exception as e:
-            logger.error(f"SVC: Lỗi SQL Server - {str(e)}") # Biết ngay lỗi do DB
-            raise e # Ném lỗi lên tầng trên (Controller)
+            logger.error(f"SVC: Lỗi SQL Server (GetSummary) - {str(e)}")
+            raise e 
         finally:
             conn.close()
 

@@ -49,11 +49,13 @@
                         <span class="text-primary fw-bold">Folio# <span id="sm_folio">-----</span></span>
                         <span class="text-primary">Status: <span id="sm_status">--</span></span>
                     </div>
-                    <div class="fw-bold mb-1 text-danger" id="sm_guest_name">GUEST NAME</div>
-
+                    <div class="mb-1 text-primary fw-bold d-flex flex-nowrap align-items-center">
+                        <span class="text-nowrap me-1">Name:</span>
+                        <span class="text-danger text-nowrap" id="sm_guest_name"></span>
+                    </div>
                     <div class="row g-0 mb-1">
-                        <div class="col-6">Room# <span class="fw-bold text-primary" id="sm_room">--</span></div>
-                        <div class="col-6 text-end">Arr/Dept <span id="sm_dates">--/--/-- --/--/--</span></div>
+                        <div class="col-4">Room# <span class="fw-bold text-primary" id="sm_room">--</span></div>
+                        <div class="col-8 text-end">Arr/Dept <span id="sm_dates">--/--/-- --/--/--</span></div>
                     </div>
 
                     <div class="row g-0 mb-1">
@@ -65,10 +67,16 @@
                         <div class="col-6">Balance: <span class="fw-bold text-primary" id="sm_balance">0</span></div>
                         <div class="col-6 text-end text-danger fw-bold">NO POST <input type="checkbox" disabled></div>
                     </div>
-
+                    <div class="mb-1 text-primary fw-bold d-flex flex-nowrap align-items-center">
+                        <span class="text-nowrap me-1">TA Code:</span>
+                        <span class="text-success text-nowrap" id="sm_ta_code"></span>
+                    </div>
                     <div class="small text-success mt-2 border-top pt-1">
-                        TA Code: <span id="sm_ta_code">----</span><br>
-                        Notice: <span id="sm_notice" class="fst-italic">None</span>
+                        <div class="fw-bold">Notice:</div>
+                        <!-- Cố định chiều cao tối đa và thêm thanh cuộn -->
+                        <div id="sm_notice" class="fst-italic"
+                            style="max-height: 50px; overflow-y: auto; white-space: pre-wrap; line-height: 1.2; scrollbar-width: thin;">
+                        </div>
                     </div>
                 </div>
             </div>

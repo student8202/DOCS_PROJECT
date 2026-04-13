@@ -65,7 +65,13 @@ class FOBillController:
             }
         except Exception as e:
             logger.error(f"CTL Error (Details): {str(e)}")
-            return {"status": "error", "message": str(e), "layer": "CTL"}
+            error_response =  wrap_response(
+                status="error", 
+                message="Lỗi hệ thống khi xử lý dữ liệu", 
+                error=e, 
+                layer="CTL"
+            )
+            return error_response
         
     @staticmethod
     async def get_transactions_logic(folio: str, tab: str):

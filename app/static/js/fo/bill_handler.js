@@ -112,6 +112,11 @@ const BILL_UI = {
         const dateFormatted = moment(HotelDate).format('YYYY-MM-DD'); // Chuyển sang format của <input type="date">
         $('#arr_from, #arr_to, #dep_from, #dep_to').val(dateFormatted);
     },
+    // format date
+    formatVNDates: function (data) {
+        const dateFormatted = moment(data).format('DD/MM/YY'); // Chuyển sang format của <input type="date">
+        return dateFormatted;
+    },
     renderAvailableTabs: (tabs) => {
         // Mặc định ẩn V và P
         $('#tab-v, #tab-p').addClass('d-none');
@@ -233,27 +238,43 @@ const BILL_ACTIONS = {
     },
     selectFolio: async (data) => {
         BILL_STATE.selectedFolio = data.FolioNum;
-
+        // console.log(data);
         const url = `/api/v1/fo/bill/details/${data.FolioNum}/${data.IdAddition || 1}`;
         const res = await API.request(url);
 
         if (res) {
             const h = res.data;
+            let ArrDept = BILL_UI.formatVNDates(h.ArrivalTime) + ' ' + BILL_UI.formatVNDates(h.DepartureTime);
+            let TACompany = h.TravelAgent1Code + '-' + h.CompanyName;
             // Đổ dữ liệu vào vùng Summary bên trái
+            $('#sm_status').text(h.AdtStatus);
             $('#sm_folio').text(h.FolioNum);
             $('#sm_guest_name').text(`${h.FirstName} ${h.LastName}`);
             $('#sm_room').text(h.RoomCode);
+            $('#sm_dates').text(ArrDept);
+            $('#sm_rate').text(BILL_UI.formatMoney(h.RateAmount));
+            $('#sm_exrate').text(BILL_UI.formatMoney(h.FolioExRate));
             $('#sm_balance').text(BILL_UI.formatMoney(data.Balance));
-            $('#sm_notice').text(h.Notice || 'None');
+            $('#sm_ta_code').text(TACompany || '');
+            $('#sm_notice').text(h.Notice || '');
             // Hiển thị/Ẩn các Tab dựa trên dữ liệu từ SP CHGetFolioBalanceCode
             BILL_UI.renderAvailableTabs(h.Tabs);
 
             // Lưu MaxID để theo dõi giao dịch mới
             BILL_STATE.lastMaxTransID = h.MaxTransactionID;
         }
+        
+        console.log(res.data.Tabs);
+        if (res.data.Tabs && res.data.Tabs.length > 0) {
+            const firstTab = res.data.Tabs[0]; // Lấy phần tử đầu tiên (ví dụ: 'A')
 
-        // Load tab A
-        BILL_ACTIONS.loadTransactions(data.FolioNum, 'A');
+            console.log("Auto loading tab:", firstTab);
+            BILL_ACTIONS.loadTransactions(data.FolioNum, firstTab);
+            // Đừng quên cập nhật giao diện: Active cái tab tương ứng
+            $(`.smile-tab-modern[data-tab="${firstTab}"]`).addClass('active');
+        } else {
+            console.warn("Không tìm thấy danh sách Tab cho Folio này.");
+        }
     },
 
     loadTransactions: (folio, tab) => {

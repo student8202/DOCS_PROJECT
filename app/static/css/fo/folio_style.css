@@ -96,7 +96,7 @@
 
 /* Đảm bảo thẻ div bao ngoài có chiều cao cố định hoặc tối đa để xuất hiện thanh cuộn */
 .table-responsive {
-    max-height: 400px;
+    max-height: 250px;
     /* Thay đổi chiều cao tùy ý */
     overflow-y: auto;
 }
