@@ -130,8 +130,8 @@
         <div class="card shadow-sm border-0" style="background-color: #f1f1f1; border: 1px solid #00daff !important;">
 
             <!-- BẢNG DỮ LIỆU (GRID) -->
-            <div class="card-body p-0 bg-white" style="height: 350px; overflow-y: auto;">
-                <table class="table table-sm table-bordered mb-0 small text-nowrap" id="table_trans">
+            <div class="table-responsive" style="height: 350px;">
+                <table class="table table-sm table-bordered table-striped table-hover mb-0 small text-nowrap" id="table_trans">
                     <thead style="background-color: #e3e3e3;">
                         <tr class="text-center" style="font-size: 11px;">
                             <th width="80">Date</th>
@@ -140,12 +140,11 @@
                             <th width="100">Ref #</th>
                             <th width="100">Sub Amt</th>
                             <th width="100">Amount</th>
-                            <th width="40">Org</th>
-                            <th width="40">Rm</th>
+                            <th width="40">Org Rm</th>
                             <th width="40">Tax</th>
                             <th width="80">Inv Date</th>
                             <th width="80">User</th>
-                            <th>Comment</th>
+                            <th class="text-start">Comment</th>
                         </tr>
                     </thead>
                     <tbody id="trans_list_body">
@@ -159,7 +158,7 @@
                 <div class="d-flex align-items-center">
                     <span class="small text-danger me-2" style="font-size: 11px;">Balance</span>
                     <span class="fw-bold text-danger" id="total_balance_display"
-                        style="font-size: 16px;">3,645,600</span>
+                        style="font-size: 16px;">0</span>
                 </div>
                 <div class="btn-group shadow-none">
                     <button class="btn btn-outline-secondary btn-sm py-0 px-2" style="font-size: 10px;">Ext Dsc</button>
@@ -171,22 +170,10 @@
             </div>
 
             <!-- THANH TAB (DƯỚI CÙNG) -->
+            <!-- THANH TAB (DƯỚI CÙNG) -->
             <div class="card-footer p-1 border-0 bg-white d-flex justify-content-between align-items-center">
-                <!-- Khu vực Tab: Làm rộng và thoáng hơn -->
-                <div class="d-flex gap-2" id="smile_tabs">
-                    <div class="smile-tab-modern active" data-tab="A">
-                        <i class="fas fa-file-invoice me-1"></i> A - A
-                    </div>
-                    <div class="smile-tab-modern" data-tab="B">
-                        <i class="fas fa-file-invoice me-1"></i> B - B
-                    </div>
-                    <div class="smile-tab-modern text-danger d-none" id="tab-v" data-tab="V">
-                        <i class="fas fa-trash-alt me-1"></i> VOID
-                    </div>
-                    <div class="smile-tab-modern text-success d-none" id="tab-p" data-tab="P">
-                        <i class="fas fa-box-open me-1"></i> PKG
-                    </div>
-                </div>
+                <!-- Khu vực Tab: Để trống để JS đổ dữ liệu vào -->
+                <div class="d-flex gap-2" id="smile_tabs"></div>
 
                 <!-- Checkbox Show All Bal -->
                 <div class="form-check mb-0 pe-2">

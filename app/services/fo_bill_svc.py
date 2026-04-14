@@ -74,7 +74,7 @@ class FOBillService:
             conn.close()
 
     @staticmethod
-    def get_folio_summary(folio_num: str, id_addition: int):
+    def get_folio_summary(folio_num: str, id_addition: int, show_all: int):
         """Gom nhóm thông tin Header khách hàng"""
         conn = get_smile_fo_db()
         if not conn: return None
@@ -115,7 +115,7 @@ class FOBillService:
                         header[key] = tcvn3_to_unicode_cmt(value)
 
                 # 2. Lấy danh sách Tab (Dùng CALL Store Procedure nên CẦN nextset)
-                cursor.execute("{CALL CHGetFolioBalanceCode (?, 1)}", (folio_num,))
+                cursor.execute("{CALL CHGetFolioBalanceCode (?, ?)}", (folio_num, show_all))
                 
                 # --- ÁP DỤNG LOGIC AN TOÀN CỦA BẠN ---
                 while cursor.description is None:
@@ -146,8 +146,17 @@ class FOBillService:
             cursor = conn.cursor()
             # SMILE cần tab có khoảng trắng kiểu 'A '
             cursor.execute("{CALL CHGetFolioTransactionNew (?, ?, 1)}", (folio_num, f"{tab} "))
-            rows = cursor.fetchall()
-            return [FOBillService._to_dict(cursor, r) for r in rows]
+            # --- PHẦN SỬA ĐỔI: Bỏ qua các tập kết quả trống (None) ---
+            while cursor.description is None:
+                if not cursor.nextset():
+                    break
+            
+            # Sau khi thoát vòng lặp, kiểm tra nếu có dữ liệu thì fetch
+            if cursor.description:
+                rows = cursor.fetchall()
+                return [FOBillService._to_dict(cursor, r) for r in rows]
+            
+            return [] # Trả về list rỗng nếu không có dữ liệu sau khi duyệt hết
         except Exception as e:
             logger.error(f"SVC: Lỗi SQL Server - {str(e)}") # Biết ngay lỗi do DB
             raise e # Ném lỗi lên tầng trên (Controller)
@@ -170,7 +179,35 @@ class FOBillService:
             return 0
         finally:
             conn.close()
-
+            
+    @staticmethod
+    def get_available_tabs(folio_num: str, show_all: int):
+        """Thực thi CHGetFolioBalanceCode để lấy danh sách mã Tab"""
+        conn = get_smile_fo_db()
+        if not conn: return []
+        
+        try:
+            cursor = conn.cursor()
+            # Thực thi Procedure
+            cursor.execute("{CALL CHGetFolioBalanceCode (?, ?)}", (folio_num, show_all))
+            
+            # Bỏ qua các tập kết quả trống (None description)
+            while cursor.description is None:
+                if not cursor.nextset():
+                    break
+            
+            if cursor.description:
+                rows = cursor.fetchall()
+                # row[0] là mã Tab (ví dụ: 'A ', 'B ', 'V ')
+                return [row[0].strip() for row in rows if row[0]]
+            
+            return []
+        except Exception as e:
+            logger.error(f"Service Error (get_available_tabs): {str(e)}")
+            raise e
+        finally:
+            conn.close()
+        
     @staticmethod
     def get_client_name(client_folio_num: int):
         """Lấy tên Travel Agent / Company từ ClientFolioNum"""

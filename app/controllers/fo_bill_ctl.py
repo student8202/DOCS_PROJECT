@@ -44,12 +44,12 @@ class FOBillController:
             return error_response
         
     @staticmethod
-    async def get_folio_details_logic(folio: str, id_addition: int):
+    async def get_folio_details_logic(folio: str, id_addition: int, show_all: int):
         """MỚI: Xử lý gộp dữ liệu Summary bên trái và cấu hình ban đầu"""
         logger.debug(f"CTL: Lấy thông tin Header Folio {folio}")
         try:
             # 1. Gọi Service lấy Header, Company Name và Tabs
-            header = FOBillService.get_folio_summary(folio, id_addition)
+            header = FOBillService.get_folio_summary(folio, id_addition, show_all)
             
             if not header:
                 return {"status": "error", "message": "Không tìm thấy thông tin khách"}
@@ -82,10 +82,17 @@ class FOBillController:
             # Ép kiểu an toàn từng dòng và tính tổng
             tab_balance = 0.0
             for row in data:
-                val = row.get('Amount', 0)
-                # Chống lỗi nếu Amount là None
-                row['Amount'] = float(val) if val is not None else 0.0
-                tab_balance += row['Amount']
+                # Lấy giá trị gốc từ DB (có thể là Decimal, float hoặc None)
+                val = row.get('TransactionAmount', 0)
+                
+                # Ép kiểu sang float để tính toán đồng nhất
+                float_val = float(val) if val is not None else 0.0
+                
+                # Cập nhật lại trong row để trả về frontend đồng bộ
+                row['TransactionAmount'] = float_val 
+                
+                # Cộng dồn (bây giờ cả 2 đều là float nên sẽ không lỗi)
+                tab_balance += float_val
             
             return {
                 "status": "success", 
@@ -96,3 +103,20 @@ class FOBillController:
         except Exception as e:
             logger.error(f"CTL Error (Trans): {str(e)}")
             return {"status": "error", "message": str(e), "layer": "CTL"}
+        
+    @staticmethod
+    async def get_tabs(folio, show_all):
+        try:
+            # Gọi xuống lớp Service
+            tabs = FOBillService.get_available_tabs(folio, show_all)
+            
+            return {
+                "status": "success",
+                "data": tabs,
+                "count": len(tabs)
+            }
+        except Exception as e:
+            return {
+                "status": "error",
+                "message": f"Controller Error: {str(e)}"
+            }, 500

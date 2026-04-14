@@ -95,6 +95,7 @@ const BILL_STATE = {
         cruiseCode: ''
     },
     selectedFolio: null,
+    selectedIdAddition: 1, // Mặc định là 1
     currentTab: 'A',
     lastMaxTransID: 0
 };
@@ -118,15 +119,40 @@ const BILL_UI = {
         return dateFormatted;
     },
     renderAvailableTabs: (tabs) => {
-        // Mặc định ẩn V và P
-        $('#tab-v, #tab-p').addClass('d-none');
+        const $container = $('#smile_tabs');
+        $container.empty(); // Xóa sạch tab cũ của Folio trước
 
-        // Duyệt danh sách Tab từ Server trả về
+        if (!tabs || tabs.length === 0) {
+            $container.html('<small class="text-muted">No tabs available</small>');
+            return;
+        }
+
         tabs.forEach(t => {
-            if (t === 'V') $('#tab-v').removeClass('d-none');
-            if (t === 'P') $('#tab-p').removeClass('d-none');
+            let extraClass = '';
+            let icon = 'fa-file-invoice';
+            let label = t;
+
+            // Định dạng riêng cho Tab đặc biệt
+            if (t === 'V') { extraClass = 'text-danger'; icon = 'fa-trash-alt'; label = 'VOID'; }
+            else if (t === 'P') { extraClass = 'text-success'; icon = 'fa-box-open'; label = 'PKG'; }
+
+            const tabHtml = `
+                <div class="smile-tab-modern ${extraClass}" data-tab="${t}">
+                    <i class="fas ${icon} me-1"></i> ${label}
+                </div>`;
+
+            $container.append(tabHtml);
         });
-    }
+
+        // Gán sự kiện click cho các tab vừa tạo
+        $('.smile-tab-modern').on('click', function () {
+            const tabName = $(this).data('tab');
+            $('.smile-tab-modern').removeClass('active');
+            $(this).addClass('active');
+
+            BILL_ACTIONS.loadTransactions(BILL_STATE.selectedFolio, tabName);
+        });
+    },
 };
 
 const BILL_ACTIONS = {
@@ -236,17 +262,20 @@ const BILL_ACTIONS = {
             table.clear().rows.add(res.data).draw();
         }
     },
-    selectFolio: async (data) => {
+    selectFolio: async (data, targetTab = null) => {
         BILL_STATE.selectedFolio = data.FolioNum;
-        // console.log(data);
-        const url = `/api/v1/fo/bill/details/${data.FolioNum}/${data.IdAddition || 1}`;
+        BILL_STATE.selectedIdAddition = data.IdAddition || 1;
+        // 1. Lấy giá trị checkbox hiện tại (để gửi lên Server lấy đúng list Tabs)
+        const isShowAll = $('#chk_show_all_bal').is(':checked') ? 1 : 0;
+
+        const url = `/api/v1/fo/bill/details/${data.FolioNum}/${data.IdAddition || 1}?show_all=${isShowAll}`;
         const res = await API.request(url);
 
-        if (res) {
+        if (res && res.data) {
             const h = res.data;
+
+            // --- Đổ dữ liệu vào vùng Summary (Giữ nguyên logic của bạn) ---
             let ArrDept = BILL_UI.formatVNDates(h.ArrivalTime) + ' ' + BILL_UI.formatVNDates(h.DepartureTime);
-            let TACompany = h.TravelAgent1Code + '-' + h.CompanyName;
-            // Đổ dữ liệu vào vùng Summary bên trái
             $('#sm_status').text(h.AdtStatus);
             $('#sm_folio').text(h.FolioNum);
             $('#sm_guest_name').text(`${h.FirstName} ${h.LastName}`);
@@ -254,37 +283,66 @@ const BILL_ACTIONS = {
             $('#sm_dates').text(ArrDept);
             $('#sm_rate').text(BILL_UI.formatMoney(h.RateAmount));
             $('#sm_exrate').text(BILL_UI.formatMoney(h.FolioExRate));
-            $('#sm_balance').text(BILL_UI.formatMoney(data.Balance));
-            $('#sm_ta_code').text(TACompany || '');
+            $('#sm_balance').text(BILL_UI.formatMoney(data.Balance)); // Lưu ý: data.Balance lấy từ row bên ngoài
+            $('#sm_ta_code').text((h.TravelAgent1Code + '-' + h.CompanyName) || '');
             $('#sm_notice').text(h.Notice || '');
-            // Hiển thị/Ẩn các Tab dựa trên dữ liệu từ SP CHGetFolioBalanceCode
+
+            // 2. Vẽ danh sách Tab động
             BILL_UI.renderAvailableTabs(h.Tabs);
-
-            // Lưu MaxID để theo dõi giao dịch mới
             BILL_STATE.lastMaxTransID = h.MaxTransactionID;
-        }
-        
-        console.log(res.data.Tabs);
-        if (res.data.Tabs && res.data.Tabs.length > 0) {
-            const firstTab = res.data.Tabs[0]; // Lấy phần tử đầu tiên (ví dụ: 'A')
 
-            console.log("Auto loading tab:", firstTab);
-            BILL_ACTIONS.loadTransactions(data.FolioNum, firstTab);
-            // Đừng quên cập nhật giao diện: Active cái tab tương ứng
-            $(`.smile-tab-modern[data-tab="${firstTab}"]`).addClass('active');
-        } else {
-            console.warn("Không tìm thấy danh sách Tab cho Folio này.");
+            // 3. Xử lý chọn Tab nào để Load dữ liệu
+            if (h.Tabs && h.Tabs.length > 0) {
+                // ƯU TIÊN: Nếu có targetTab (từ URL khi F5) và nó tồn tại trong list Tabs mới
+                // NẾU KHÔNG: Chọn tab đầu tiên [0]
+                let tabToActive = (targetTab && h.Tabs.includes(targetTab)) ? targetTab : h.Tabs[0];
+
+                console.log("Loading tab:", tabToActive);
+
+                // Cập nhật giao diện: Active cái tab tương ứng
+                $('.smile-tab-modern').removeClass('active');
+                $(`.smile-tab-modern[data-tab="${tabToActive}"]`).addClass('active');
+
+                // Gọi hàm tải dữ liệu giao dịch
+                BILL_ACTIONS.loadTransactions(data.FolioNum, tabToActive);
+
+                // 4. Cập nhật URL để F5 không bị mất
+                BILL_ACTIONS.updateURL();
+            } else {
+                console.warn("Không tìm thấy danh sách Tab cho Folio này.");
+                $('#transaction_table_body').empty();
+            }
         }
     },
 
     loadTransactions: (folio, tab) => {
         BILL_STATE.currentTab = tab;
-        $('#trans_list_body').html('<tr><td colspan="12" class="text-center">Loading...</td></tr>');
+        // 1. Hủy DataTable cũ nếu đã tồn tại để tránh lỗi re-initialize
+        if ($.fn.DataTable.isDataTable('#table_trans')) {
+            $('#table_trans').DataTable().destroy();
+        }
+
+        $('#trans_list_body').html('<tr><td colspan="12" class="text-center"><div class="text-primary"></div> Loading...</td></tr>');
+        // $('#trans_list_body').html('<tr><td colspan="12" class="text-center">Loading...</td></tr>');
 
         $.get(`/api/v1/fo/bill/transactions/${folio}/${tab}`, function (res) {
             if (res.status === 'success') {
                 BILL_ACTIONS.renderTransTable(res.data);
                 $('#total_balance_display').text(BILL_UI.formatMoney(res.tab_balance));
+                // 4. Khởi tạo DataTable sau khi đã có dữ liệu trong tbody
+                $('#table_trans').DataTable({
+                    fixedHeader: true,
+                    paging: false,
+                    responsive: true,
+                    info: false,        // Ẩn dòng "Showing 1 of..."
+                    // dom: 't',           // Chỉ hiện bảng (Table only)
+                    searching: true,    // Bật ô Filter/Search
+                    language: {
+                        search: "",     // Bỏ chữ "Search:" mặc định
+                        searchPlaceholder: "Lọc nhanh giao dịch..."
+                    },
+                    dom: '<"d-flex justify-content-between align-items-center mb-2"f>t' // Đưa ô Search lên trên
+                });
             }
         });
     },
@@ -292,22 +350,121 @@ const BILL_ACTIONS = {
     renderTransTable: (data) => {
         let html = data.map(item => `
             <tr>
-                <td class="text-center">${item.Date || ''}</td>
-                <td class="text-center">${item.SvcCode || ''}</td>
+                <td class="text-center">${BILL_UI.formatVNDates(item.TransactionDate) || ''}</td>
+                <td class="text-center">${item.TransactionCode || ''}</td>
                 <td>${item.Description || ''}</td>
-                <td>${item.RefNo || ''}</td>
+                <td>${item.RefNumber || ''}</td>
                 <td class="text-end">${BILL_UI.formatMoney(item.SubAmount)}</td>
-                <td class="text-end text-primary fw-bold">${BILL_UI.formatMoney(item.Amount)}</td>
-                <td>${item.OrgCode || ''}</td>
-                <td class="text-center">${item.RoomNum || ''}</td>
-                <td class="text-end">${item.Tax || 0}</td>
-                <td>${item.InvDate || ''}</td>
-                <td>${item.UserName || ''}</td>
-                <td class="small text-muted">${item.Comment || ''}</td>
+                <td class="text-end text-primary fw-bold">${BILL_UI.formatMoney(item.TransactionAmount)}</td>
+                <td>${item.OriginRoom || ''}</td>
+                <td class="text-end">${item.TaxCode || ''}</td>
+                <td>${BILL_UI.formatVNDates(item.SystemTime) || ''}</td>
+                <td>${item.PostingClerkID || ''}</td>
+                <td class="text-start small text-muted">${item.Comment || ''}</td>
             </tr>
         `).join('');
         $('#trans_list_body').html(html || '<tr><td colspan="12" class="text-center">No transactions</td></tr>');
-    }
+
+        $('#trans_list_body').on('click', 'tr', function () {
+            // Xóa màu của dòng cũ
+            $('#trans_list_body tr').removeClass('selected-row');
+            // Highlight dòng vừa click
+            $(this).addClass('selected-row');
+        });
+    },
+    initOnLoad: async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const folio = urlParams.get('folio');
+        const idAdd = urlParams.get('id_addition') || 1;
+        const tab = urlParams.get('tab');
+        const showAll = urlParams.get('show_all');
+
+        if (folio) {
+            $('#chk_show_all_bal').prop('checked', showAll === '1');
+
+            // 1. Chạy search trước để đổ dữ liệu vào bảng danh sách bên trái
+            // Đảm bảo hàm search trả về một Promise (có dùng async/await)
+            await BILL_ACTIONS.search();
+
+            // 2. Sau khi bảng đã có dữ liệu, tiến hành highlight dòng cũ
+            // Tìm dòng <tr> có chứa FolioNum tương ứng (giả sử bạn đặt attr là data-folio)
+            const $targetRow = $(`#table_folio tr[data-folio="${folio}"]`);
+            if ($targetRow.length > 0) {
+                $targetRow.addClass('table-primary active'); // Thêm class highlight
+
+                // Cuộn bảng đến dòng đó nếu danh sách quá dài
+                $targetRow[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
+            }
+
+            // 3. Load chi tiết bên phải
+            await BILL_ACTIONS.selectFolio({ FolioNum: folio, IdAddition: parseInt(idAdd) }, tab);
+        }
+    },
+    // 4. Lắng nghe Checkbox Show All Bal
+    initEvents: () => {
+        // Gán sự kiện cho checkbox
+        $('#chk_show_all_bal').on('change', async function () {
+            await BILL_ACTIONS.toggleShowAll();
+            BILL_ACTIONS.updateURL(); // Lưu trạng thái checkbox vào URL
+        });
+
+        // Đừng quên gọi initOnLoad ở cuối initEvents
+        BILL_ACTIONS.initOnLoad();
+    },
+    toggleShowAll: async function () {
+        const folioNum = BILL_STATE.selectedFolio;
+        if (!folioNum) return;
+
+        // BƯỚC 1: Lưu lại mã Tab người dùng đang đứng trước khi render lại (ví dụ: 'B')
+        const currentTab = $('.smile-tab-modern.active').data('tab');
+
+        // Lấy trạng thái 0/1 từ checkbox
+        const isShowAll = $('#chk_show_all_bal').is(':checked') ? 1 : 0;
+
+        try {
+            // Gọi API lấy danh sách tab mới
+            const res = await API.request(`/api/v1/fo/bill/tabs/${folioNum}/${isShowAll}`);
+
+            if (res && (res.status === "success" || res.data)) {
+                const tabs = res.data;
+
+                // BƯỚC 2: Vẽ lại danh sách Tab động dựa trên dữ liệu mới
+                BILL_UI.renderAvailableTabs(tabs);
+
+                if (tabs && tabs.length > 0) {
+                    // BƯỚC 3: Quyết định Tab nào sẽ được Active
+                    // Ưu tiên giữ lại tab cũ nếu nó vẫn tồn tại trong danh sách mới
+                    let tabToActive = tabs.includes(currentTab) ? currentTab : tabs[0];
+
+                    // BƯỚC 4: Cập nhật giao diện và load dữ liệu giao dịch
+                    $(`.smile-tab-modern`).removeClass('active'); // Xóa hết active cũ
+                    $(`.smile-tab-modern[data-tab="${tabToActive}"]`).addClass('active');
+
+                    console.log(`Switching to tab: ${tabToActive}`);
+                    BILL_ACTIONS.loadTransactions(folioNum, tabToActive);
+                }
+            }
+        } catch (err) {
+            console.error("Lỗi khi tải lại danh sách Tab:", err);
+        }
+    },
+    updateURL: () => {
+        const folio = BILL_STATE.selectedFolio;
+        const idAdd = BILL_STATE.selectedIdAddition; // Lấy từ state
+        const tab = $('.smile-tab-modern.active').data('tab') || 'A';
+        const showAll = $('#chk_show_all_bal').is(':checked') ? 1 : 0;
+
+        if (folio) {
+            const params = new URLSearchParams();
+            params.set('folio', folio);
+            params.set('id_addition', idAdd); // Đưa lên URL
+            params.set('tab', tab);
+            params.set('show_all', showAll);
+
+            const newUrl = `${window.location.pathname}?${params.toString()}`;
+            window.history.replaceState({ path: newUrl }, '', newUrl);
+        }
+    },
 };
 
 // --- SỰ KIỆN (Events) ---
@@ -321,6 +478,8 @@ $(document).ready(function () {
 
     // Nút Search chính
     $('#btn-main-search').on('click', BILL_ACTIONS.search);
+
+    BILL_ACTIONS.initEvents();
 
     // Xử lý Tab A, B, V, P
     $('.smile-tab-modern').on('click', function () {

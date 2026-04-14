@@ -43,10 +43,21 @@ async def api_get_transactions(folio: str, tab: str):
         return {"status": "error", "layer": "RT", "msg": str(e)}
     
 @api_router.get("/details/{folio}/{id_addition}")
-async def api_get_folio_details(folio: str, id_addition: int):
+async def api_get_folio_details(folio: str, id_addition: int, show_all: int = 0):
     try:
         # Bạn cần viết thêm logic này trong Controller
-        return await FOBillController.get_folio_details_logic(folio, id_addition)
+        return await FOBillController.get_folio_details_logic(folio, id_addition, show_all)
     except Exception as e:
         logger.error(f"RT: Lỗi lấy chi tiết Folio - {str(e)}")
+        return {"status": "error", "layer": "RT", "msg": str(e)}
+    
+@api_router.get("/tabs/{folio}/{show_all}")
+async def api_get_tabs(folio: str, show_all: int):
+    """
+    Endpoint riêng để load lại danh sách Tab khi toggle nút 'Show All Bal'
+    """
+    try:
+        return await FOBillController.get_tabs(folio, show_all)
+    except Exception as e:
+        logger.error(f"RT: Lỗi Endpoint lấy danh sách Tab {folio} - {str(e)}")
         return {"status": "error", "layer": "RT", "msg": str(e)}
