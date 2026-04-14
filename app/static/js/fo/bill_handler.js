@@ -97,9 +97,63 @@ const BILL_STATE = {
     selectedFolio: null,
     selectedIdAddition: 1, // Mặc định là 1
     currentTab: 'A',
-    lastMaxTransID: 0
+    lastMaxTransID: 0,
+    isPollingActive: false,
+    pollingTimer: null
 };
+/**
+ * QUẢN LÝ LOGIC KIỂM TRA TỰ ĐỘNG (POLLING)
+ */
+const BILL_POLLING = {
+    start: () => {
+        // Xóa timer cũ nếu có để tránh chạy song song nhiều bộ đếm
+        if (BILL_STATE.pollingTimer) clearInterval(BILL_STATE.pollingTimer);
 
+        BILL_STATE.isPollingActive = true;
+        BILL_STATE.pollingTimer = setInterval(async () => {
+            // Chỉ kiểm tra nếu đang có Folio và tab trình duyệt đang mở (tiết kiệm tài nguyên)
+            if (!BILL_STATE.selectedFolio || document.hidden) return;
+
+            try {
+                // Gọi API siêu nhẹ chỉ để lấy MaxID
+                const checkUrl = `/api/v1/fo/bill/check-update/${BILL_STATE.selectedFolio}`;
+                const res = await API.request(checkUrl);
+
+                if (res && res.status === "success" && res.data.MaxTransactionID > BILL_STATE.lastMaxTransID) {
+                    // 2. Hiện thông báo Toast ở góc trên bên phải
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+
+                    Toast.fire({
+                        icon: 'info',
+                        title: 'Có giao dịch mới vừa được cập nhật!'
+                    });
+
+                    // 3. Gọi nạp lại dữ liệu
+                    await BILL_ACTIONS.selectFolio({
+                        FolioNum: BILL_STATE.selectedFolio,
+                        IdAddition: BILL_STATE.selectedIdAddition
+                    });
+                }
+            } catch (err) {
+                console.error("[Polling] Lỗi kiểm tra cập nhật:", err);
+            }
+        }, 10000); // 10 giây
+    },
+
+    stop: () => {
+        if (BILL_STATE.pollingTimer) {
+            clearInterval(BILL_STATE.pollingTimer);
+            BILL_STATE.pollingTimer = null;
+        }
+        BILL_STATE.isPollingActive = false;
+    }
+};
 const BILL_UI = {
     formatMoney: (num) => new Intl.NumberFormat('vi-VN').format(num || 0),
 
@@ -265,6 +319,10 @@ const BILL_ACTIONS = {
     selectFolio: async (data, targetTab = null) => {
         BILL_STATE.selectedFolio = data.FolioNum;
         BILL_STATE.selectedIdAddition = data.IdAddition || 1;
+        if (targetTab) {
+            BILL_STATE.currentTab = targetTab;
+        }
+        BILL_ACTIONS.updateURL();
         // 1. Lấy giá trị checkbox hiện tại (để gửi lên Server lấy đúng list Tabs)
         const isShowAll = $('#chk_show_all_bal').is(':checked') ? 1 : 0;
 
@@ -289,13 +347,20 @@ const BILL_ACTIONS = {
 
             // 2. Vẽ danh sách Tab động
             BILL_UI.renderAvailableTabs(h.Tabs);
-            BILL_STATE.lastMaxTransID = h.MaxTransactionID;
+            BILL_STATE.lastMaxTransID = h.MaxTransactionID || 0;
+            BILL_POLLING.start();
 
             // 3. Xử lý chọn Tab nào để Load dữ liệu
             if (h.Tabs && h.Tabs.length > 0) {
-                // ƯU TIÊN: Nếu có targetTab (từ URL khi F5) và nó tồn tại trong list Tabs mới
-                // NẾU KHÔNG: Chọn tab đầu tiên [0]
-                let tabToActive = (targetTab && h.Tabs.includes(targetTab)) ? targetTab : h.Tabs[0];
+                // Bước A: Xác định Tab mục tiêu theo thứ tự ưu tiên:
+                // 1. targetTab truyền vào (từ URL)
+                // 2. Tab hiện tại đang chọn (nếu nó vẫn còn trong danh sách Tabs mới)
+                // 3. Cuối cùng mới là Tab đầu tiên của danh sách
+                let tabToActive = (targetTab && h.Tabs.includes(targetTab)) ? targetTab :
+                    (h.Tabs.includes(BILL_STATE.currentTab) ? BILL_STATE.currentTab : h.Tabs[0]);
+
+                // Bước B: Cập nhật đồng bộ vào State
+                BILL_STATE.currentTab = tabToActive;
 
                 console.log("Loading tab:", tabToActive);
 
@@ -310,7 +375,11 @@ const BILL_ACTIONS = {
                 BILL_ACTIONS.updateURL();
             } else {
                 console.warn("Không tìm thấy danh sách Tab cho Folio này.");
-                $('#transaction_table_body').empty();
+                if ($.fn.DataTable.isDataTable('#table_trans')) {
+                    $('#table_trans').DataTable().destroy();
+                }
+                $('#trans_list_body').empty();
+                $('#total_balance_display').text('0');
             }
         }
     },
@@ -345,6 +414,8 @@ const BILL_ACTIONS = {
                 });
             }
         });
+        // QUAN TRỌNG: Cập nhật URL sau khi nạp xong dữ liệu tab
+        BILL_ACTIONS.updateURL();
     },
 
     renderTransTable: (data) => {
@@ -451,19 +522,19 @@ const BILL_ACTIONS = {
     updateURL: () => {
         const folio = BILL_STATE.selectedFolio;
         const idAdd = BILL_STATE.selectedIdAddition; // Lấy từ state
-        const tab = $('.smile-tab-modern.active').data('tab') || 'A';
+        const tab = BILL_STATE.currentTab;
         const showAll = $('#chk_show_all_bal').is(':checked') ? 1 : 0;
+        if (!folio) return;
+        // if (folio) {
+        const params = new URLSearchParams();
+        params.set('folio', folio);
+        params.set('id_addition', idAdd); // Đưa lên URL
+        params.set('tab', tab);
+        params.set('show_all', showAll);
 
-        if (folio) {
-            const params = new URLSearchParams();
-            params.set('folio', folio);
-            params.set('id_addition', idAdd); // Đưa lên URL
-            params.set('tab', tab);
-            params.set('show_all', showAll);
-
-            const newUrl = `${window.location.pathname}?${params.toString()}`;
-            window.history.replaceState({ path: newUrl }, '', newUrl);
-        }
+        const newUrl = `${window.location.pathname}?${params.toString()}`;
+        window.history.replaceState({ path: newUrl }, '', newUrl);
+        // }
     },
 };
 
@@ -483,9 +554,15 @@ $(document).ready(function () {
 
     // Xử lý Tab A, B, V, P
     $('.smile-tab-modern').on('click', function () {
+        const newTab = $(this).data('tab');
+
+        // Cập nhật giao diện
         $('.smile-tab-modern').removeClass('active');
         $(this).addClass('active');
-        BILL_STATE.currentTab = $(this).data('tab');
+
+        // Cập nhật State
+        BILL_STATE.currentTab = newTab;
+
         if (BILL_STATE.selectedFolio) {
             BILL_ACTIONS.loadTransactions(BILL_STATE.selectedFolio, BILL_STATE.currentTab);
         }

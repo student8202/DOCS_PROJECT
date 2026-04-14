@@ -120,3 +120,19 @@ class FOBillController:
                 "status": "error",
                 "message": f"Controller Error: {str(e)}"
             }, 500
+            
+    @staticmethod
+    async def get_max_id_logic(folio: str):
+        try:
+            # Gọi Service lấy MaxID từ DB
+            max_id = FOBillService.get_max_transaction_id(folio)
+            
+            return {
+                "status": "success",
+                "data": {
+                    "MaxTransactionID": max_id
+                }
+            }
+        except Exception as e:
+            logger.error(f"CTL Error (MaxID): {str(e)}")
+            return {"status": "error", "data": {"MaxTransactionID": 0}}

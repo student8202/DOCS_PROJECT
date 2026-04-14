@@ -19512,3 +19512,1076 @@ AttributeError: 'DocsService' object has no attribute 'get_signed_docs_for_view_
 2026-04-14 16:19:45 | INFO     | END   | GET /api/v1/fo/bill/details/10123/1 | Status: 200 | Time: 3.95ms
 2026-04-14 16:19:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
 2026-04-14 16:19:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.41ms
+2026-04-14 16:39:18 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:39:18 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-14 16:39:18 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 16:39:18 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-14 16:39:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-04-14 16:39:21 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:39:21 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:39:21 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:39:21 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 138.24ms
+2026-04-14 16:39:22 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:39:22 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:39:22 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 50.19ms
+2026-04-14 16:39:22 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:39:22 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:39:22 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 56.15ms
+2026-04-14 16:39:22 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:22 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:39:24 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:39:24 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.51ms
+2026-04-14 16:39:24 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 16:39:24 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 5.42ms
+2026-04-14 16:39:25 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:39:25 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:39:25 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 13.05ms
+2026-04-14 16:39:25 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:39:25 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:39:25 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 17.26ms
+2026-04-14 16:39:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 16:39:38 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:39:38 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:39:38 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:39:39 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 31.90ms
+2026-04-14 16:39:40 | INFO     | START | GET /api/v1/fo/bill/details/10126/106 | IP: 127.0.0.1
+2026-04-14 16:39:40 | DEBUG    | CTL: Lấy thông tin Header Folio 10126
+2026-04-14 16:39:40 | INFO     | END   | GET /api/v1/fo/bill/details/10126/106 | Status: 200 | Time: 6.54ms
+2026-04-14 16:39:41 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:39:41 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:39:41 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 6.98ms
+2026-04-14 16:39:41 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:39:41 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:39:41 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 12.49ms
+2026-04-14 16:39:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:39:42 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 16:39:42 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:39:42 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 10.94ms
+2026-04-14 16:39:42 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:39:42 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:39:42 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 9.36ms
+2026-04-14 16:39:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:39:44 | INFO     | START | GET /api/v1/fo/bill/details/10349/491 | IP: 127.0.0.1
+2026-04-14 16:39:44 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:39:44 | INFO     | END   | GET /api/v1/fo/bill/details/10349/491 | Status: 200 | Time: 6.64ms
+2026-04-14 16:39:44 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:39:44 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:39:44 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 8.71ms
+2026-04-14 16:39:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-14 16:39:45 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:39:45 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.51ms
+2026-04-14 16:39:45 | INFO     | START | GET /api/v1/fo/bill/details/10349/491 | IP: 127.0.0.1
+2026-04-14 16:39:45 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:39:45 | INFO     | END   | GET /api/v1/fo/bill/details/10349/491 | Status: 200 | Time: 6.64ms
+2026-04-14 16:39:46 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:39:46 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:39:46 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 9.84ms
+2026-04-14 16:39:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:39:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.30ms
+2026-04-14 16:41:27 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 16:41:27 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-14 16:46:03 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:46:03 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.19ms
+2026-04-14 16:46:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 16:46:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 2.00ms
+2026-04-14 16:46:05 | INFO     | START | GET /api/v1/fo/bill/details/10349/491 | IP: 127.0.0.1
+2026-04-14 16:46:05 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:46:05 | INFO     | END   | GET /api/v1/fo/bill/details/10349/491 | Status: 200 | Time: 108.32ms
+2026-04-14 16:46:05 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:46:05 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:46:05 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:46:05 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 203.67ms
+2026-04-14 16:46:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:05 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:46:05 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:46:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 76.05ms
+2026-04-14 16:46:05 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 76.05ms
+2026-04-14 16:46:15 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:46:15 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:46:15 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 9.55ms
+2026-04-14 16:46:15 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:46:15 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:46:15 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 7.87ms
+2026-04-14 16:46:15 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:15 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:46:17 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:46:17 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:46:17 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 4.67ms
+2026-04-14 16:46:17 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:46:17 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:46:17 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 16.23ms
+2026-04-14 16:46:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:46:19 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:46:19 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.51ms
+2026-04-14 16:46:19 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:46:19 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:46:19 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 6.23ms
+2026-04-14 16:46:19 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:46:19 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:46:19 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 6.20ms
+2026-04-14 16:46:19 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:19 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:46:19 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.24ms
+2026-04-14 16:46:19 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:46:19 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:46:19 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 33.11ms
+2026-04-14 16:46:26 | INFO     | START | GET /api/v1/fo/bill/details/10126/106 | IP: 127.0.0.1
+2026-04-14 16:46:26 | DEBUG    | CTL: Lấy thông tin Header Folio 10126
+2026-04-14 16:46:26 | INFO     | END   | GET /api/v1/fo/bill/details/10126/106 | Status: 200 | Time: 6.85ms
+2026-04-14 16:46:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:46:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-14 16:46:28 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:46:28 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:46:28 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 6.81ms
+2026-04-14 16:46:28 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:46:28 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:46:28 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:46:28 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 5.94ms
+2026-04-14 16:46:28 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:46:28 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:46:28 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 34.69ms
+2026-04-14 16:46:28 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-14 16:46:31 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:46:31 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:31 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 6.99ms
+2026-04-14 16:46:31 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:31 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:31 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 18.10ms
+2026-04-14 16:46:31 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:31 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.93ms
+2026-04-14 16:46:32 | INFO     | START | GET /api/v1/fo/bill/details/10438/582 | IP: 127.0.0.1
+2026-04-14 16:46:32 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:32 | INFO     | END   | GET /api/v1/fo/bill/details/10438/582 | Status: 200 | Time: 5.58ms
+2026-04-14 16:46:32 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:32 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:32 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 9.53ms
+2026-04-14 16:46:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:46:32 | INFO     | START | GET /api/v1/fo/bill/details/10349/492 | IP: 127.0.0.1
+2026-04-14 16:46:32 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:46:32 | INFO     | END   | GET /api/v1/fo/bill/details/10349/492 | Status: 200 | Time: 2.68ms
+2026-04-14 16:46:32 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:46:32 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:46:32 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 12.98ms
+2026-04-14 16:46:32 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:32 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:46:33 | INFO     | START | GET /api/v1/fo/bill/details/10438/582 | IP: 127.0.0.1
+2026-04-14 16:46:33 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:33 | INFO     | END   | GET /api/v1/fo/bill/details/10438/582 | Status: 200 | Time: 3.91ms
+2026-04-14 16:46:33 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:33 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:33 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 3.38ms
+2026-04-14 16:46:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.98ms
+2026-04-14 16:46:34 | INFO     | START | GET /api/v1/fo/bill/details/10126/106 | IP: 127.0.0.1
+2026-04-14 16:46:34 | DEBUG    | CTL: Lấy thông tin Header Folio 10126
+2026-04-14 16:46:34 | INFO     | END   | GET /api/v1/fo/bill/details/10126/106 | Status: 200 | Time: 6.36ms
+2026-04-14 16:46:34 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:46:34 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:46:34 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 7.69ms
+2026-04-14 16:46:34 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:46:34 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:46:34 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 7.75ms
+2026-04-14 16:46:34 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:34 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 16:46:35 | INFO     | START | GET /api/v1/fo/bill/details/10438/582 | IP: 127.0.0.1
+2026-04-14 16:46:35 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:35 | INFO     | END   | GET /api/v1/fo/bill/details/10438/582 | Status: 200 | Time: 6.94ms
+2026-04-14 16:46:35 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:35 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:35 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 11.57ms
+2026-04-14 16:46:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:46:35 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:46:35 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:46:35 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 11.80ms
+2026-04-14 16:46:36 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:46:36 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:36 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 7.79ms
+2026-04-14 16:46:36 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:36 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:36 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 9.91ms
+2026-04-14 16:46:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:46:41 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 16:46:41 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:41 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 6.50ms
+2026-04-14 16:46:41 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:41 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:41 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 8.33ms
+2026-04-14 16:46:41 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:41 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:46:43 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:46:43 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.20ms
+2026-04-14 16:46:44 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 16:46:44 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:46:44 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 8.06ms
+2026-04-14 16:46:44 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:46:44 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:46:44 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 7.41ms
+2026-04-14 16:46:44 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:46:44 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:46:44 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 5.79ms
+2026-04-14 16:46:44 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:46:44 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:46:44 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 34.66ms
+2026-04-14 16:47:04 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 16:47:04 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:47:04 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 51.53ms
+2026-04-14 16:47:04 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:47:04 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:47:04 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 26.51ms
+2026-04-14 16:47:07 | INFO     | START | GET /api/v1/fo/bill/details/10127/107 | IP: 127.0.0.1
+2026-04-14 16:47:07 | DEBUG    | CTL: Lấy thông tin Header Folio 10127
+2026-04-14 16:47:07 | INFO     | END   | GET /api/v1/fo/bill/details/10127/107 | Status: 200 | Time: 3.48ms
+2026-04-14 16:47:08 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 16:47:08 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:47:08 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 5.84ms
+2026-04-14 16:47:08 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:47:08 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:47:08 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 7.40ms
+2026-04-14 16:47:09 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:47:09 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:47:09 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 8.01ms
+2026-04-14 16:47:13 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:47:13 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:47:13 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 5.89ms
+2026-04-14 16:47:13 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:47:13 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:47:13 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 17.59ms
+2026-04-14 16:47:13 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:13 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.22ms
+2026-04-14 16:47:24 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:47:24 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:47:24 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 6.60ms
+2026-04-14 16:47:26 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:47:26 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:47:26 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 11.98ms
+2026-04-14 16:47:26 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:47:26 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:47:26 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 10.02ms
+2026-04-14 16:47:26 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:26 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.64ms
+2026-04-14 16:47:29 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:47:29 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.02ms
+2026-04-14 16:47:30 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 16:47:30 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 16:47:30 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 8.00ms
+2026-04-14 16:47:30 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 16:47:30 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 16:47:30 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 17.39ms
+2026-04-14 16:47:30 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:47:30 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:47:30 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:47:30 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 115.03ms
+2026-04-14 16:47:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.05ms
+2026-04-14 16:47:46 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:47:46 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:47:46 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 10.47ms
+2026-04-14 16:47:46 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:47:46 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:47:46 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 15.37ms
+2026-04-14 16:47:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:47:49 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:47:49 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:47:49 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 10.44ms
+2026-04-14 16:47:50 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:47:50 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.51ms
+2026-04-14 16:47:51 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:47:51 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:47:51 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 5.99ms
+2026-04-14 16:47:51 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:47:51 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:47:51 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:47:51 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:47:51 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:47:51 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 37.76ms
+2026-04-14 16:47:51 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 35.24ms
+2026-04-14 16:47:51 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:51 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.02ms
+2026-04-14 16:47:54 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:47:54 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:47:54 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 7.14ms
+2026-04-14 16:47:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:47:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-14 16:47:56 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:47:56 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:47:56 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 9.71ms
+2026-04-14 16:47:57 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:47:57 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:47:57 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:47:57 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:47:57 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:47:57 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 40.94ms
+2026-04-14 16:47:57 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 40.94ms
+2026-04-14 16:47:57 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:47:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:47:59 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:47:59 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:47:59 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 28.67ms
+2026-04-14 16:50:31 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:31 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.03ms
+2026-04-14 16:50:31 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:31 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.02ms
+2026-04-14 16:50:31 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:31 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.01ms
+2026-04-14 16:50:31 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:31 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.31ms
+2026-04-14 16:50:31 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:31 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.61ms
+2026-04-14 16:50:32 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:32 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.03ms
+2026-04-14 16:50:32 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:32 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.02ms
+2026-04-14 16:50:32 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:32 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.46ms
+2026-04-14 16:50:32 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:32 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.37ms
+2026-04-14 16:50:33 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:50:33 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:50:33 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:50:33 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 118.75ms
+2026-04-14 16:50:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:50:33 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:50:33 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:50:33 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 22.49ms
+2026-04-14 16:50:33 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:50:33 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:50:33 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 36.02ms
+2026-04-14 16:50:39 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:50:39 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:50:39 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 8.19ms
+2026-04-14 16:50:42 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:42 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.08ms
+2026-04-14 16:50:42 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:50:42 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:50:42 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:50:42 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 38.68ms
+2026-04-14 16:50:42 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:50:42 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:50:42 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 6.54ms
+2026-04-14 16:50:42 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:42 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:50:42 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:50:42 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:50:42 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 10.65ms
+2026-04-14 16:50:45 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:50:45 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:50:45 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 6.90ms
+2026-04-14 16:50:47 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:47 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.01ms
+2026-04-14 16:50:47 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:50:47 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:50:47 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:50:47 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 33.04ms
+2026-04-14 16:50:47 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:50:47 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:50:47 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 5.76ms
+2026-04-14 16:50:47 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:47 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:50:47 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:50:47 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:50:47 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 13.72ms
+2026-04-14 16:50:52 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:52 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.31ms
+2026-04-14 16:50:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.02ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.82ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.71ms
+2026-04-14 16:50:55 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:55 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.00ms
+2026-04-14 16:50:56 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:50:56 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.04ms
+2026-04-14 16:50:56 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:56 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:50:57 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:50:57 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:50:57 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:50:57 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 33.10ms
+2026-04-14 16:50:58 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:50:58 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:50:58 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 7.33ms
+2026-04-14 16:50:58 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:50:58 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:50:58 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 20.03ms
+2026-04-14 16:50:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:50:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 16:51:01 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:51:01 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:51:01 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 6.68ms
+2026-04-14 16:51:01 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:51:01 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:51:01 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 12.98ms
+2026-04-14 16:51:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:51:04 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:04 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.05ms
+2026-04-14 16:51:05 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:05 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:05 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:05 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 34.66ms
+2026-04-14 16:51:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 16:51:05 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:51:05 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:51:05 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 6.10ms
+2026-04-14 16:51:05 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:51:05 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:51:05 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 7.43ms
+2026-04-14 16:51:09 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:51:09 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:51:09 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 8.07ms
+2026-04-14 16:51:11 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:11 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 0.54ms
+2026-04-14 16:51:11 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:11 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:11 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:11 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 34.28ms
+2026-04-14 16:51:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.92ms
+2026-04-14 16:51:11 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:51:11 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:51:11 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 5.54ms
+2026-04-14 16:51:11 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:51:11 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:51:11 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 3.47ms
+2026-04-14 16:51:18 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:51:18 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:51:18 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 26.47ms
+2026-04-14 16:51:20 | INFO     | START | GET /api/v1/fo/bill/details/10127/107 | IP: 127.0.0.1
+2026-04-14 16:51:20 | DEBUG    | CTL: Lấy thông tin Header Folio 10127
+2026-04-14 16:51:20 | INFO     | END   | GET /api/v1/fo/bill/details/10127/107 | Status: 200 | Time: 33.88ms
+2026-04-14 16:51:23 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:51:23 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:51:23 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 14.71ms
+2026-04-14 16:51:23 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:51:23 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:51:23 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 23.90ms
+2026-04-14 16:51:25 | INFO     | START | GET /api/v1/fo/bill/details/10116/81 | IP: 127.0.0.1
+2026-04-14 16:51:25 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 16:51:25 | INFO     | END   | GET /api/v1/fo/bill/details/10116/81 | Status: 200 | Time: 6.68ms
+2026-04-14 16:51:29 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:29 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-14 16:51:30 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:30 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:30 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:30 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 106.17ms
+2026-04-14 16:51:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 9.21ms
+2026-04-14 16:51:30 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 16:51:30 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 16:51:30 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 5.54ms
+2026-04-14 16:51:30 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 16:51:30 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 16:51:30 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 7.58ms
+2026-04-14 16:51:35 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:35 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:35 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 11.98ms
+2026-04-14 16:51:35 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:35 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:35 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 14.36ms
+2026-04-14 16:51:35 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:35 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:51:36 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:36 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.07ms
+2026-04-14 16:51:36 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:36 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:36 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:36 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 31.21ms
+2026-04-14 16:51:36 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:36 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:36 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 7.01ms
+2026-04-14 16:51:36 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:36 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 16:51:36 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:36 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:36 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 6.21ms
+2026-04-14 16:51:45 | INFO     | START | GET /api/v1/fo/bill/details/10352/457 | IP: 127.0.0.1
+2026-04-14 16:51:45 | DEBUG    | CTL: Lấy thông tin Header Folio 10352
+2026-04-14 16:51:45 | INFO     | END   | GET /api/v1/fo/bill/details/10352/457 | Status: 200 | Time: 8.57ms
+2026-04-14 16:51:45 | INFO     | START | GET /api/v1/fo/bill/transactions/10352/A | IP: 127.0.0.1
+2026-04-14 16:51:45 | DEBUG    | CTL: Lấy giao dịch Folio 10352, Tab A
+2026-04-14 16:51:45 | INFO     | END   | GET /api/v1/fo/bill/transactions/10352/A | Status: 200 | Time: 14.65ms
+2026-04-14 16:51:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.03ms
+2026-04-14 16:51:46 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:46 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.03ms
+2026-04-14 16:51:46 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:46 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:46 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:46 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 32.97ms
+2026-04-14 16:51:46 | INFO     | START | GET /api/v1/fo/bill/details/10352/457 | IP: 127.0.0.1
+2026-04-14 16:51:46 | DEBUG    | CTL: Lấy thông tin Header Folio 10352
+2026-04-14 16:51:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:46 | INFO     | END   | GET /api/v1/fo/bill/details/10352/457 | Status: 200 | Time: 6.23ms
+2026-04-14 16:51:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.11ms
+2026-04-14 16:51:46 | INFO     | START | GET /api/v1/fo/bill/transactions/10352/A | IP: 127.0.0.1
+2026-04-14 16:51:46 | DEBUG    | CTL: Lấy giao dịch Folio 10352, Tab A
+2026-04-14 16:51:46 | INFO     | END   | GET /api/v1/fo/bill/transactions/10352/A | Status: 200 | Time: 3.45ms
+2026-04-14 16:51:49 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:49 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:49 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 6.92ms
+2026-04-14 16:51:49 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:49 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:49 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 7.26ms
+2026-04-14 16:51:49 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:49 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.25ms
+2026-04-14 16:51:50 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:50 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.51ms
+2026-04-14 16:51:50 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:50 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:50 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:50 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 29.25ms
+2026-04-14 16:51:50 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:50 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:50 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 5.90ms
+2026-04-14 16:51:50 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:50 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-04-14 16:51:50 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:50 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:50 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 5.94ms
+2026-04-14 16:51:53 | INFO     | START | GET /api/v1/fo/bill/details/10442/591 | IP: 127.0.0.1
+2026-04-14 16:51:53 | DEBUG    | CTL: Lấy thông tin Header Folio 10442
+2026-04-14 16:51:53 | INFO     | END   | GET /api/v1/fo/bill/details/10442/591 | Status: 200 | Time: 6.66ms
+2026-04-14 16:51:53 | INFO     | START | GET /api/v1/fo/bill/transactions/10442/A | IP: 127.0.0.1
+2026-04-14 16:51:53 | DEBUG    | CTL: Lấy giao dịch Folio 10442, Tab A
+2026-04-14 16:51:53 | INFO     | END   | GET /api/v1/fo/bill/transactions/10442/A | Status: 200 | Time: 10.13ms
+2026-04-14 16:51:53 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:53 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.16ms
+2026-04-14 16:51:53 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:53 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.18ms
+2026-04-14 16:51:53 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:53 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:53 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:53 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 32.47ms
+2026-04-14 16:51:54 | INFO     | START | GET /api/v1/fo/bill/details/10442/591 | IP: 127.0.0.1
+2026-04-14 16:51:54 | DEBUG    | CTL: Lấy thông tin Header Folio 10442
+2026-04-14 16:51:54 | INFO     | END   | GET /api/v1/fo/bill/details/10442/591 | Status: 200 | Time: 6.04ms
+2026-04-14 16:51:54 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:54 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-04-14 16:51:54 | INFO     | START | GET /api/v1/fo/bill/transactions/10442/A | IP: 127.0.0.1
+2026-04-14 16:51:54 | DEBUG    | CTL: Lấy giao dịch Folio 10442, Tab A
+2026-04-14 16:51:54 | INFO     | END   | GET /api/v1/fo/bill/transactions/10442/A | Status: 200 | Time: 5.08ms
+2026-04-14 16:51:57 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:57 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:57 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 9.37ms
+2026-04-14 16:51:57 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:57 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:57 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 6.54ms
+2026-04-14 16:51:57 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:57 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 16:51:58 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:51:58 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-14 16:51:58 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:51:58 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:51:58 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:51:58 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 27.80ms
+2026-04-14 16:51:58 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:51:58 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:51:58 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 5.78ms
+2026-04-14 16:51:58 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:51:58 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.50ms
+2026-04-14 16:51:58 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:51:58 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:51:58 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 9.42ms
+2026-04-14 16:52:00 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 16:52:00 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-14 16:52:00 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 16:52:00 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 16:52:00 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 16:52:00 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 27.48ms
+2026-04-14 16:52:01 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 16:52:01 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 16:52:01 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 6.20ms
+2026-04-14 16:52:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:52:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.01ms
+2026-04-14 16:52:01 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 16:52:01 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 16:52:01 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 5.93ms
+2026-04-14 16:52:03 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 16:52:03 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 16:52:03 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 10.06ms
+2026-04-14 16:52:03 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 16:52:03 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 16:52:04 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 20.78ms
+2026-04-14 16:52:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 16:52:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 16:52:42 | INFO     | START | GET /api/v1/fo/bill/details/10174/189 | IP: 127.0.0.1
+2026-04-14 16:52:42 | DEBUG    | CTL: Lấy thông tin Header Folio 10174
+2026-04-14 16:52:42 | INFO     | END   | GET /api/v1/fo/bill/details/10174/189 | Status: 200 | Time: 22.54ms
+2026-04-14 17:00:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:00:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 22.24ms
+2026-04-14 17:00:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:00:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.02ms
+2026-04-14 17:00:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:00:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 4.74ms
+2026-04-14 17:00:16 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:00:16 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.00ms
+2026-04-14 17:00:17 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:00:17 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:00:17 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:00:17 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 146.82ms
+2026-04-14 17:00:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:00:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 17:00:17 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 17:00:17 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 17:00:17 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 21.17ms
+2026-04-14 17:00:17 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 17:00:17 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 17:00:17 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 46.87ms
+2026-04-14 17:00:45 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:00:45 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:00:45 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 9.13ms
+2026-04-14 17:00:45 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:00:45 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:00:45 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 17.34ms
+2026-04-14 17:00:45 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:00:45 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 17:01:03 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 17:01:03 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.00ms
+2026-04-14 17:04:59 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 21.17ms
+2026-04-14 17:04:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.01ms
+2026-04-14 17:04:59 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.99ms
+2026-04-14 17:04:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 3.52ms
+2026-04-14 17:04:59 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.51ms
+2026-04-14 17:04:59 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 17:04:59 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.55ms
+2026-04-14 17:05:01 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:05:01 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:05:01 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:05:01 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 139.99ms
+2026-04-14 17:05:01 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:05:01 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:05:01 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 37.87ms
+2026-04-14 17:05:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:05:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.53ms
+2026-04-14 17:05:01 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:05:01 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:05:01 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 32.51ms
+2026-04-14 17:05:52 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:05:52 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:05:52 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 30.83ms
+2026-04-14 17:05:52 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:05:52 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:05:52 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 32.29ms
+2026-04-14 17:05:53 | INFO     | START | GET /api/v1/fo/bill/details/10126/106 | IP: 127.0.0.1
+2026-04-14 17:05:53 | DEBUG    | CTL: Lấy thông tin Header Folio 10126
+2026-04-14 17:05:53 | INFO     | END   | GET /api/v1/fo/bill/details/10126/106 | Status: 200 | Time: 4.08ms
+2026-04-14 17:05:54 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:05:54 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:05:54 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 8.18ms
+2026-04-14 17:05:54 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:05:54 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:05:54 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 6.26ms
+2026-04-14 17:06:04 | INFO     | START | GET /api/v1/fo/bill/details/10438/582 | IP: 127.0.0.1
+2026-04-14 17:06:04 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 17:06:04 | INFO     | END   | GET /api/v1/fo/bill/details/10438/582 | Status: 200 | Time: 11.73ms
+2026-04-14 17:06:04 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 17:06:04 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 17:06:04 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 10.89ms
+2026-04-14 17:06:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.40ms
+2026-04-14 17:06:08 | INFO     | START | GET /api/v1/fo/bill/details/10438/581 | IP: 127.0.0.1
+2026-04-14 17:06:08 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 17:06:08 | INFO     | END   | GET /api/v1/fo/bill/details/10438/581 | Status: 200 | Time: 6.86ms
+2026-04-14 17:06:08 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 17:06:08 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 17:06:08 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 10.86ms
+2026-04-14 17:06:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 17:06:08 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:06:08 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:06:08 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 10.14ms
+2026-04-14 17:06:08 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:06:08 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:06:08 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 6.14ms
+2026-04-14 17:06:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.37ms
+2026-04-14 17:06:10 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 17:06:10 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 17:06:10 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 3.64ms
+2026-04-14 17:06:13 | INFO     | START | GET /api/v1/fo/bill/tabs/10123/1 | IP: 127.0.0.1
+2026-04-14 17:06:13 | INFO     | END   | GET /api/v1/fo/bill/tabs/10123/1 | Status: 200 | Time: 4.11ms
+2026-04-14 17:06:13 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 17:06:13 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 17:06:14 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 3.93ms
+2026-04-14 17:06:14 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:14 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.27ms
+2026-04-14 17:06:15 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/P | IP: 127.0.0.1
+2026-04-14 17:06:15 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab P
+2026-04-14 17:06:15 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/P | Status: 200 | Time: 7.11ms
+2026-04-14 17:06:16 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:06:16 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:06:16 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 22.06ms
+2026-04-14 17:06:17 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 17:06:17 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 17:06:17 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 4.14ms
+2026-04-14 17:06:20 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:06:20 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.02ms
+2026-04-14 17:06:21 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:06:21 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:06:21 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:06:21 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 91.36ms
+2026-04-14 17:06:21 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:21 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 17:06:21 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:06:21 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:06:21 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 6.94ms
+2026-04-14 17:06:21 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 17:06:21 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 17:06:21 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 13.31ms
+2026-04-14 17:06:25 | INFO     | START | GET /api/v1/fo/bill/details/10116/82 | IP: 127.0.0.1
+2026-04-14 17:06:25 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 17:06:25 | INFO     | END   | GET /api/v1/fo/bill/details/10116/82 | Status: 200 | Time: 9.47ms
+2026-04-14 17:06:25 | INFO     | START | GET /api/v1/fo/bill/transactions/10116/P | IP: 127.0.0.1
+2026-04-14 17:06:25 | DEBUG    | CTL: Lấy giao dịch Folio 10116, Tab P
+2026-04-14 17:06:25 | INFO     | END   | GET /api/v1/fo/bill/transactions/10116/P | Status: 200 | Time: 15.02ms
+2026-04-14 17:06:25 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:25 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 17:06:27 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:06:27 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.07ms
+2026-04-14 17:06:27 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:06:27 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:06:27 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:06:27 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 34.54ms
+2026-04-14 17:06:27 | INFO     | START | GET /api/v1/fo/bill/details/10116/82 | IP: 127.0.0.1
+2026-04-14 17:06:27 | DEBUG    | CTL: Lấy thông tin Header Folio 10116
+2026-04-14 17:06:27 | INFO     | END   | GET /api/v1/fo/bill/details/10116/82 | Status: 200 | Time: 6.65ms
+2026-04-14 17:06:27 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:28 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 17:06:28 | INFO     | START | GET /api/v1/fo/bill/transactions/10116/P | IP: 127.0.0.1
+2026-04-14 17:06:28 | DEBUG    | CTL: Lấy giao dịch Folio 10116, Tab P
+2026-04-14 17:06:28 | INFO     | END   | GET /api/v1/fo/bill/transactions/10116/P | Status: 200 | Time: 4.72ms
+2026-04-14 17:06:33 | INFO     | START | GET /api/v1/fo/bill/details/10379/502 | IP: 127.0.0.1
+2026-04-14 17:06:33 | DEBUG    | CTL: Lấy thông tin Header Folio 10379
+2026-04-14 17:06:33 | INFO     | END   | GET /api/v1/fo/bill/details/10379/502 | Status: 200 | Time: 25.58ms
+2026-04-14 17:06:33 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 17:06:33 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 17:06:33 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 28.07ms
+2026-04-14 17:06:33 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:06:33 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 17:06:36 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/V | IP: 127.0.0.1
+2026-04-14 17:06:36 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab V
+2026-04-14 17:06:36 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/V | Status: 200 | Time: 25.64ms
+2026-04-14 17:06:39 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/P | IP: 127.0.0.1
+2026-04-14 17:06:39 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab P
+2026-04-14 17:06:39 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/P | Status: 200 | Time: 23.20ms
+2026-04-14 17:06:40 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/B | IP: 127.0.0.1
+2026-04-14 17:06:40 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab B
+2026-04-14 17:06:40 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/B | Status: 200 | Time: 16.55ms
+2026-04-14 17:06:40 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 17:06:40 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 17:06:40 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 11.20ms
+2026-04-14 17:06:41 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/B | IP: 127.0.0.1
+2026-04-14 17:06:41 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab B
+2026-04-14 17:06:41 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/B | Status: 200 | Time: 7.38ms
+2026-04-14 17:06:42 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/P | IP: 127.0.0.1
+2026-04-14 17:06:42 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab P
+2026-04-14 17:06:42 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/P | Status: 200 | Time: 11.75ms
+2026-04-14 17:06:42 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/V | IP: 127.0.0.1
+2026-04-14 17:06:42 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab V
+2026-04-14 17:06:42 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/V | Status: 200 | Time: 22.11ms
+2026-04-14 17:06:43 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/P | IP: 127.0.0.1
+2026-04-14 17:06:43 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab P
+2026-04-14 17:06:43 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/P | Status: 200 | Time: 8.78ms
+2026-04-14 17:06:43 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/V | IP: 127.0.0.1
+2026-04-14 17:06:43 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab V
+2026-04-14 17:06:43 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/V | Status: 200 | Time: 8.34ms
+2026-04-14 17:06:44 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/P | IP: 127.0.0.1
+2026-04-14 17:06:44 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab P
+2026-04-14 17:06:44 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/P | Status: 200 | Time: 5.95ms
+2026-04-14 17:06:44 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/V | IP: 127.0.0.1
+2026-04-14 17:06:44 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab V
+2026-04-14 17:06:44 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/V | Status: 200 | Time: 8.31ms
+2026-04-14 17:06:50 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/A | IP: 127.0.0.1
+2026-04-14 17:06:50 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab A
+2026-04-14 17:06:50 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/A | Status: 200 | Time: 11.62ms
+2026-04-14 17:06:51 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/B | IP: 127.0.0.1
+2026-04-14 17:06:51 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab B
+2026-04-14 17:06:51 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/B | Status: 200 | Time: 3.83ms
+2026-04-14 17:06:51 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/P | IP: 127.0.0.1
+2026-04-14 17:06:51 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab P
+2026-04-14 17:06:51 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/P | Status: 200 | Time: 13.85ms
+2026-04-14 17:06:52 | INFO     | START | GET /api/v1/fo/bill/transactions/10379/V | IP: 127.0.0.1
+2026-04-14 17:06:52 | DEBUG    | CTL: Lấy giao dịch Folio 10379, Tab V
+2026-04-14 17:06:52 | INFO     | END   | GET /api/v1/fo/bill/transactions/10379/V | Status: 200 | Time: 6.21ms
+2026-04-14 17:07:01 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:07:01 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:07:01 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 25.71ms
+2026-04-14 17:07:01 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:07:01 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:07:01 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 14.99ms
+2026-04-14 17:07:01 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:01 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.02ms
+2026-04-14 17:07:02 | INFO     | START | GET /api/v1/fo/bill/details/10127/107 | IP: 127.0.0.1
+2026-04-14 17:07:02 | DEBUG    | CTL: Lấy thông tin Header Folio 10127
+2026-04-14 17:07:02 | INFO     | END   | GET /api/v1/fo/bill/details/10127/107 | Status: 200 | Time: 4.75ms
+2026-04-14 17:07:02 | INFO     | START | GET /api/v1/fo/bill/transactions/10127/P | IP: 127.0.0.1
+2026-04-14 17:07:02 | DEBUG    | CTL: Lấy giao dịch Folio 10127, Tab P
+2026-04-14 17:07:02 | INFO     | END   | GET /api/v1/fo/bill/transactions/10127/P | Status: 200 | Time: 14.13ms
+2026-04-14 17:07:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.51ms
+2026-04-14 17:07:02 | INFO     | START | GET /api/v1/fo/bill/details/10349/492 | IP: 127.0.0.1
+2026-04-14 17:07:02 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 17:07:02 | INFO     | END   | GET /api/v1/fo/bill/details/10349/492 | Status: 200 | Time: 13.68ms
+2026-04-14 17:07:02 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 17:07:02 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 17:07:02 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 19.00ms
+2026-04-14 17:07:02 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:02 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 17:07:03 | INFO     | START | GET /api/v1/fo/bill/details/10126/106 | IP: 127.0.0.1
+2026-04-14 17:07:03 | DEBUG    | CTL: Lấy thông tin Header Folio 10126
+2026-04-14 17:07:03 | INFO     | END   | GET /api/v1/fo/bill/details/10126/106 | Status: 200 | Time: 8.74ms
+2026-04-14 17:07:03 | INFO     | START | GET /api/v1/fo/bill/transactions/10126/P | IP: 127.0.0.1
+2026-04-14 17:07:03 | DEBUG    | CTL: Lấy giao dịch Folio 10126, Tab P
+2026-04-14 17:07:03 | INFO     | END   | GET /api/v1/fo/bill/transactions/10126/P | Status: 200 | Time: 16.72ms
+2026-04-14 17:07:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.01ms
+2026-04-14 17:07:03 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 17:07:03 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 17:07:03 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 4.82ms
+2026-04-14 17:07:03 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 17:07:03 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 17:07:03 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 11.68ms
+2026-04-14 17:07:03 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:03 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 17:07:04 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:07:04 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:07:04 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 8.51ms
+2026-04-14 17:07:04 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:07:04 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:07:04 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 7.69ms
+2026-04-14 17:07:04 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:04 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.89ms
+2026-04-14 17:07:05 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:07:05 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 1.00ms
+2026-04-14 17:07:05 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:07:05 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:07:05 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:07:05 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 101.55ms
+2026-04-14 17:07:05 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:05 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.04ms
+2026-04-14 17:07:05 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 17:07:05 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 17:07:05 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 6.57ms
+2026-04-14 17:07:05 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 17:07:05 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 17:07:05 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 5.74ms
+2026-04-14 17:07:08 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 17:07:08 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 17:07:08 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 7.55ms
+2026-04-14 17:07:08 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 17:07:08 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 17:07:08 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 10.78ms
+2026-04-14 17:07:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 17:07:10 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 17:07:10 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 2.05ms
+2026-04-14 17:07:10 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 17:07:10 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 17:07:10 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 17:07:10 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 37.81ms
+2026-04-14 17:07:10 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 17:07:10 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 17:07:10 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 6.79ms
+2026-04-14 17:07:10 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 17:07:10 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 3.79ms
+2026-04-14 17:07:10 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 17:07:10 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 17:07:10 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 10.76ms
+2026-04-14 19:41:16 | INFO     | START | GET / | IP: 127.0.0.1
+2026-04-14 19:41:16 | INFO     | END   | GET / | Status: 200 | Time: 94.83ms
+2026-04-14 19:41:17 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:41:17 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-04-14 19:41:27 | INFO     | START | POST /auth/login | IP: 127.0.0.1
+2026-04-14 19:41:28 | INFO     | User admin logged in successfully with 8 perms
+2026-04-14 19:41:28 | INFO     | END   | POST /auth/login | Status: 200 | Time: 946.42ms
+2026-04-14 19:41:29 | INFO     | START | GET /dashboard | IP: 127.0.0.1
+2026-04-14 19:41:29 | INFO     | END   | GET /dashboard | Status: 200 | Time: 119.27ms
+2026-04-14 19:41:29 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-14 19:41:30 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-14 19:41:30 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 831.47ms
+2026-04-14 19:41:30 | INFO     | START | GET /fo/inhouse-list2 | IP: 127.0.0.1
+2026-04-14 19:41:30 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:41:30 | INFO     | DEBUG: Checking status for 96 guests
+2026-04-14 19:41:30 | INFO     | END   | GET /fo/inhouse-list2 | Status: 200 | Time: 151.17ms
+2026-04-14 19:41:30 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 152.17ms
+2026-04-14 19:41:36 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 19:41:36 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 42.63ms
+2026-04-14 19:41:37 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:41:37 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 19:41:38 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 19:41:38 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 19:41:38 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 19:41:38 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 167.56ms
+2026-04-14 19:41:39 | INFO     | START | GET /api/v1/fo/bill/details/10349/492 | IP: 127.0.0.1
+2026-04-14 19:41:39 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 19:41:39 | INFO     | END   | GET /api/v1/fo/bill/details/10349/492 | Status: 200 | Time: 57.83ms
+2026-04-14 19:41:39 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 19:41:39 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 19:41:39 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 77.35ms
+2026-04-14 19:41:39 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:41:39 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.48ms
+2026-04-14 19:41:46 | INFO     | START | GET /api/v1/fo/bill/details/10438/582 | IP: 127.0.0.1
+2026-04-14 19:41:46 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 19:41:46 | INFO     | END   | GET /api/v1/fo/bill/details/10438/582 | Status: 200 | Time: 10.95ms
+2026-04-14 19:41:46 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 19:41:46 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 19:41:46 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 20.17ms
+2026-04-14 19:41:46 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:41:46 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-04-14 19:42:07 | INFO     | START | GET /api/v1/fo/bill/tabs/10438/1 | IP: 127.0.0.1
+2026-04-14 19:42:07 | INFO     | END   | GET /api/v1/fo/bill/tabs/10438/1 | Status: 200 | Time: 13.76ms
+2026-04-14 19:42:07 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 19:42:07 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 19:42:07 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 9.88ms
+2026-04-14 19:42:07 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:42:07 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.14ms
+2026-04-14 19:42:11 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 19:42:11 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 19:42:11 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 9.57ms
+2026-04-14 19:42:11 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 19:42:11 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 19:42:11 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 20.97ms
+2026-04-14 19:42:11 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:42:11 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 19:42:14 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 19:42:14 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 19:42:14 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 5.13ms
+2026-04-14 19:43:52 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/P | IP: 127.0.0.1
+2026-04-14 19:43:52 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab P
+2026-04-14 19:43:52 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/P | Status: 200 | Time: 19.26ms
+2026-04-14 19:43:53 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 19:43:53 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 19:43:53 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 2.08ms
+2026-04-14 19:43:54 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 19:43:54 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 19:43:54 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 1.91ms
+2026-04-14 19:43:56 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 19:43:56 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 19:43:56 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 6.38ms
+2026-04-14 19:43:58 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 19:43:58 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 19:43:58 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 6.21ms
+2026-04-14 19:43:59 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 19:43:59 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 19:43:59 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 5.69ms
+2026-04-14 19:43:59 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 19:43:59 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 19:43:59 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 1.75ms
+2026-04-14 19:44:06 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 19:44:06 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 19:44:06 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 4.52ms
+2026-04-14 19:44:06 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 19:44:06 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 19:44:06 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 9.99ms
+2026-04-14 19:44:06 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:44:06 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 19:44:08 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 19:44:08 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 19:44:08 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 0.00ms
+2026-04-14 19:44:08 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 19:44:08 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 19:44:08 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 9.08ms
+2026-04-14 19:44:08 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 19:44:08 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.00ms
+2026-04-14 21:34:23 | INFO     | START | GET /api/v1/fo/bill/details/10349/492 | IP: 127.0.0.1
+2026-04-14 21:34:23 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 21:34:24 | INFO     | END   | GET /api/v1/fo/bill/details/10349/492 | Status: 200 | Time: 59.13ms
+2026-04-14 21:34:24 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 21:34:24 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 21:34:24 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 39.66ms
+2026-04-14 21:34:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:34:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 21:34:24 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 21:34:24 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 21:34:24 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 3.07ms
+2026-04-14 21:34:24 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 21:34:24 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 21:34:24 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 14.93ms
+2026-04-14 21:34:24 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:34:24 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.94ms
+2026-04-14 21:34:27 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 21:34:27 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 21:34:27 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 21.73ms
+2026-04-14 21:34:27 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 21:34:27 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 21:34:27 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 20.96ms
+2026-04-14 21:35:51 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 21:35:51 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 21:35:51 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 22.72ms
+2026-04-14 21:35:51 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 21:35:51 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 21:35:51 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 33.83ms
+2026-04-14 21:35:52 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 21:35:52 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 21:35:52 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 6.83ms
+2026-04-14 21:35:52 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 21:35:52 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 21:35:52 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 12.38ms
+2026-04-14 21:35:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:35:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.45ms
+2026-04-14 21:35:52 | INFO     | START | GET /api/v1/fo/bill/details/10438/580 | IP: 127.0.0.1
+2026-04-14 21:35:52 | DEBUG    | CTL: Lấy thông tin Header Folio 10438
+2026-04-14 21:35:52 | INFO     | END   | GET /api/v1/fo/bill/details/10438/580 | Status: 200 | Time: 7.71ms
+2026-04-14 21:35:52 | INFO     | START | GET /api/v1/fo/bill/transactions/10438/A | IP: 127.0.0.1
+2026-04-14 21:35:52 | DEBUG    | CTL: Lấy giao dịch Folio 10438, Tab A
+2026-04-14 21:35:52 | INFO     | END   | GET /api/v1/fo/bill/transactions/10438/A | Status: 200 | Time: 6.27ms
+2026-04-14 21:35:52 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:35:52 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 0.00ms
+2026-04-14 21:35:53 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 21:35:53 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 21:35:53 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 21:35:53 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 106.16ms
+2026-04-14 21:35:55 | INFO     | START | GET /api/v1/fo/bill/details/10123/103 | IP: 127.0.0.1
+2026-04-14 21:35:55 | DEBUG    | CTL: Lấy thông tin Header Folio 10123
+2026-04-14 21:35:55 | INFO     | END   | GET /api/v1/fo/bill/details/10123/103 | Status: 200 | Time: 5.77ms
+2026-04-14 21:35:55 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/A | IP: 127.0.0.1
+2026-04-14 21:35:55 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab A
+2026-04-14 21:35:55 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/A | Status: 200 | Time: 12.40ms
+2026-04-14 21:35:55 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:35:55 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 1.56ms
+2026-04-14 21:35:58 | INFO     | START | GET /api/v1/fo/bill/transactions/10123/B | IP: 127.0.0.1
+2026-04-14 21:35:58 | DEBUG    | CTL: Lấy giao dịch Folio 10123, Tab B
+2026-04-14 21:35:58 | INFO     | END   | GET /api/v1/fo/bill/transactions/10123/B | Status: 200 | Time: 20.65ms
+2026-04-14 21:38:56 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 21:38:56 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 25.50ms
+2026-04-14 21:38:59 | INFO     | START | GET /api/v1/fo/bill/details/10349/454 | IP: 127.0.0.1
+2026-04-14 21:38:59 | DEBUG    | CTL: Lấy thông tin Header Folio 10349
+2026-04-14 21:38:59 | INFO     | END   | GET /api/v1/fo/bill/details/10349/454 | Status: 200 | Time: 36.56ms
+2026-04-14 21:38:59 | INFO     | START | GET /api/v1/fo/bill/transactions/10349/A | IP: 127.0.0.1
+2026-04-14 21:38:59 | DEBUG    | CTL: Lấy giao dịch Folio 10349, Tab A
+2026-04-14 21:38:59 | INFO     | END   | GET /api/v1/fo/bill/transactions/10349/A | Status: 200 | Time: 32.67ms
+2026-04-14 21:38:59 | INFO     | START | GET /favicon.ico | IP: 127.0.0.1
+2026-04-14 21:38:59 | INFO     | END   | GET /favicon.ico | Status: 204 | Time: 2.00ms
+2026-04-14 21:56:29 | INFO     | START | GET /fo/bill-manage | IP: 127.0.0.1
+2026-04-14 21:56:29 | INFO     | END   | GET /fo/bill-manage | Status: 200 | Time: 3.72ms
+2026-04-14 21:56:29 | INFO     | START | GET /.well-known/appspecific/com.chrome.devtools.json | IP: 127.0.0.1
+2026-04-14 21:56:29 | INFO     | END   | GET /.well-known/appspecific/com.chrome.devtools.json | Status: 404 | Time: 1.95ms
+2026-04-14 21:56:30 | INFO     | START | POST /api/v1/fo/bill/search-folio | IP: 127.0.0.1
+2026-04-14 21:56:30 | DEBUG    | CTL: Bắt đầu xử lý Search cho: 
+2026-04-14 21:56:31 | DEBUG    | SVC: SQL DEBUG (Copy to SQL Studio): EXEC spSearchFolioTransaction 0, 0, 0, 1, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '02/05/2026', 0, 0, '', 0, ''
+2026-04-14 21:56:31 | INFO     | END   | POST /api/v1/fo/bill/search-folio | Status: 200 | Time: 131.42ms

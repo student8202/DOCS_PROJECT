@@ -61,3 +61,12 @@ async def api_get_tabs(folio: str, show_all: int):
     except Exception as e:
         logger.error(f"RT: Lỗi Endpoint lấy danh sách Tab {folio} - {str(e)}")
         return {"status": "error", "layer": "RT", "msg": str(e)}
+    
+@api_router.get("/check-update/{folio}")
+async def api_check_folio_update(folio: str):
+    try:
+        # Gọi trực tiếp Controller để lấy MaxID
+        return await FOBillController.get_max_id_logic(folio)
+    except Exception as e:
+        logger.error(f"RT Error (CheckUpdate): {str(e)}")
+        return {"status": "error", "data": {"MaxTransactionID": 0}}
